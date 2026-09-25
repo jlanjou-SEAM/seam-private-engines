@@ -100,6 +100,21 @@ def get_compounds():
     except Exception as e:
         return jsonify({'error': f'Failed to load compounds: {str(e)}'}), 500
 
+@app.route('/conditions', methods=['GET'])
+def get_conditions():
+    """Get complete medical conditions library (55 conditions)"""
+    try:
+        conditions_file = Path(__file__).parent / 'conditions_database.json'
+        with open(conditions_file, 'r') as f:
+            data = json.load(f)
+
+        return jsonify({
+            'count': len(data['conditions']),
+            'conditions': data['conditions']
+        })
+    except Exception as e:
+        return jsonify({'error': f'Failed to load conditions: {str(e)}'}), 500
+
 @app.route('/analyze', methods=['POST'])
 def analyze():
     """
