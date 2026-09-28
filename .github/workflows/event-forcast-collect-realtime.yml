@@ -31,7 +31,11 @@ jobs:
           SEAM_COLLECTOR_TIMEOUT_SECONDS: 10
         run: |
           cd ${{ github.workspace }}/backend/event-forcast/step1_raw_data_retrieval
-          python realtime_acquisition.py
+          echo "Starting collectors..."
+          python realtime_acquisition.py 2>&1 | tee collector_output.log
+          echo "Collectors complete. Output written to collector_output.log"
+          echo "Data directory structure:"
+          ls -lR ${{ github.workspace }}/backend/event-forcast/realtime* 2>/dev/null || echo "No realtime data found"
 
       - name: Checkout public frontend repo
         uses: actions/checkout@v4
@@ -56,8 +60,15 @@ jobs:
           cd ${{ github.workspace }}/frontend
           git config user.name "SEAM Bot"
           git config user.email "seam@github.local"
-          git add -A realtime/ nonrealtime/ official/ streams/ state/
+          # Only add directories that exist
+          for dir in realtime nonrealtime official streams state; do
+            if [ -d "$dir" ]; then
+              git add -A "$dir/"
+            fi
+          done
           if ! git diff --quiet --cached; then
             git commit -m "chore: realtime data collection [skip ci]"
             git push origin main
+          else
+            echo "No changes to commit"
           fi
