@@ -25,17 +25,18 @@ jobs:
       - name: Run realtime collectors
         env:
           SEAM_OUTPUT_ROOT: ${{ github.workspace }}/backend/event-forcast
+          SEAM_ROOT: ${{ github.workspace }}/backend/event-forcast
           SEAM_RETRIEVAL_MODE: live
           SEAM_BACKFILL_HOURS: 0
           SEAM_RUN_ONCE: 1
           SEAM_COLLECTOR_TIMEOUT_SECONDS: 10
         run: |
           cd ${{ github.workspace }}/backend/event-forcast/step1_raw_data_retrieval
-          echo "Starting collectors..."
+          echo "Starting collectors from: $(pwd)"
+          echo "Collectors should be at: ${{ github.workspace }}/backend/event-forcast/collectors"
+          ls -la ${{ github.workspace }}/backend/event-forcast/collectors/ 2>/dev/null | head -10 || echo "Collectors dir missing!"
           python realtime_acquisition.py 2>&1 | tee collector_output.log
-          echo "Collectors complete. Output written to collector_output.log"
-          echo "Data directory structure:"
-          ls -lR ${{ github.workspace }}/backend/event-forcast/realtime* 2>/dev/null || echo "No realtime data found"
+          echo "Collectors complete."
 
       - name: Checkout public frontend repo
         uses: actions/checkout@v4
