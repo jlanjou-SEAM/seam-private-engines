@@ -37,7 +37,7 @@ jobs:
           repository: jlanjou-SEAM/Continuum-Event-Forcast
           fetch-depth: 1
           path: frontend
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.SEAM_GITHUB_TOKEN }}
 
       - name: Copy collected data to frontend repo
         run: |
