@@ -27,6 +27,8 @@ jobs:
           SEAM_OUTPUT_ROOT: ${{ github.workspace }}/backend/event-forcast
           SEAM_RETRIEVAL_MODE: live
           SEAM_BACKFILL_HOURS: 0
+          SEAM_RUN_ONCE: 1
+          SEAM_COLLECTOR_TIMEOUT_SECONDS: 10
         run: |
           cd ${{ github.workspace }}/backend/event-forcast/step1_raw_data_retrieval
           python realtime_acquisition.py
