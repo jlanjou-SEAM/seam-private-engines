@@ -1,0 +1,61 @@
+name: Event-Forcast Collect (Realtime)
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout backend repo (self)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          path: backend
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Run realtime collectors
+        env:
+          SEAM_OUTPUT_ROOT: ${{ github.workspace }}/backend/event-forcast
+          SEAM_RETRIEVAL_MODE: live
+          SEAM_BACKFILL_HOURS: 0
+        run: |
+          cd ${{ github.workspace }}/backend/event-forcast/step1_raw_data_retrieval
+          python realtime_acquisition.py
+
+      - name: Checkout public frontend repo
+        uses: actions/checkout@v4
+        with:
+          repository: jlanjou-SEAM/Continuum-Event-Forcast
+          fetch-depth: 1
+          path: frontend
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Copy collected data to frontend repo
+        run: |
+          # Copy data from backend to frontend
+          for dir in realtime nonrealtime official streams state; do
+            if [ -d "${{ github.workspace }}/backend/event-forcast/$dir" ]; then
+              mkdir -p "${{ github.workspace }}/frontend/$dir"
+              cp -r "${{ github.workspace }}/backend/event-forcast/$dir"/* "${{ github.workspace }}/frontend/$dir/" 2>/dev/null || true
+            fi
+          done
+
+      - name: Commit and push to frontend repo
+        run: |
+          cd ${{ github.workspace }}/frontend
+          git config user.name "SEAM Bot"
+          git config user.email "seam@github.local"
+          git add -A realtime/ nonrealtime/ official/ streams/ state/
+          if ! git diff --quiet --cached; then
+            git commit -m "chore: realtime data collection [skip ci]"
+            git push origin main
+          fi

@@ -1,0 +1,48 @@
+name: Event-Forcast Process (Every Minute)
+
+on:
+  schedule:
+    - cron: '* * * * *'
+  workflow_dispatch:
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout backend repo (self)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          path: backend
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Checkout public frontend repo
+        uses: actions/checkout@v4
+        with:
+          repository: jlanjou-SEAM/Continuum-Event-Forcast
+          fetch-depth: 1
+          path: frontend
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update event tracker from manifold
+        env:
+          PUBLIC_REPO_PATH: ${{ github.workspace }}/frontend
+        run: |
+          python ${{ github.workspace }}/backend/event-forcast/backend_processor_live.py
+
+      - name: Commit and push updated tracker
+        run: |
+          cd ${{ github.workspace }}/frontend
+          git config user.name "SEAM Processor"
+          git config user.email "processor@github.local"
+          git add continuum/event_tracker.json public/data/live.json
+          if ! git diff --quiet --cached; then
+            git commit -m "chore: update event register from manifold [skip ci]"
+            git push origin main
+          fi
