@@ -46,10 +46,75 @@ jobs:
           path: frontend
           token: ${{ secrets.SEAM_GITHUB_TOKEN }}
 
+      - name: Generate live.json from manifold analysis
+        run: |
+          python3 << 'EOF'
+          import json
+          from pathlib import Path
+
+          manifold_file = Path("${{ github.workspace }}/backend/event-forcast/continuum/output/volcanic_manifold_analysis.json")
+
+          if manifold_file.exists():
+              with open(manifold_file, 'r') as f:
+                  manifold = json.load(f)
+
+              # Extract volcanic events from matches
+              volcanic_events = []
+              if 'matches' in manifold:
+                  for match in manifold['matches']:
+                      if match.get('signature_class') == 'volcanic':
+                          event = {
+                              "event_id": match.get('event_id'),
+                              "signature_class": "volcanic",
+                              "primary_regime": "volcanic",
+                              "first_detected_utc": match.get('timestamp_utc'),
+                              "status": "active",
+                              "location": {
+                                  "best_effort_lat": match.get('latitude'),
+                                  "best_effort_lon": match.get('longitude'),
+                                  "region": match.get('spatial_region'),
+                                  "city": "Unknown",
+                                  "state_province": "Unknown",
+                                  "country": "Unknown"
+                              },
+                              "signal_summary": match.get('signal_summary', '{}'),
+                              "projected_event_time": match.get('projected_event_time'),
+                              "magnitude": match.get('magnitude'),
+                              "confidence_history": [
+                                  {
+                                      "timestamp_utc": match.get('timestamp_utc'),
+                                      "seam_phi": match.get('seam_phi', 0),
+                                      "phase": "warning" if match.get('seam_phi', 0) < 0.85 else "event",
+                                      "magnitude": match.get('magnitude')
+                                  }
+                              ]
+                          }
+                          volcanic_events.append(event)
+
+              # Create live.json
+              live_data = {
+                  "schema": "SEAM_LIVE_FEED_V1",
+                  "generated_utc": manifold.get('generated_utc'),
+                  "sources_loaded": 118,
+                  "event_count": len(volcanic_events),
+                  "events": volcanic_events
+              }
+
+              # Write to frontend
+              output_dir = Path("${{ github.workspace }}/frontend/public/data")
+              output_dir.mkdir(parents=True, exist_ok=True)
+              with open(output_dir / "live.json", 'w') as f:
+                  json.dump(live_data, f, indent=2)
+
+              print(f"Generated live.json with {len(volcanic_events)} volcanic events")
+          else:
+              print(f"Manifold file not found at {manifold_file}")
+          EOF
+
       - name: Copy collected data to frontend repo
         run: |
           # Copy data from backend to frontend
-          for dir in realtime nonrealtime official streams state; do
+          for dir in realtime nonrealtime official streams state continuum; do
             if [ -d "${{ github.workspace }}/backend/event-forcast/$dir" ]; then
               mkdir -p "${{ github.workspace }}/frontend/$dir"
               cp -r "${{ github.workspace }}/backend/event-forcast/$dir"/* "${{ github.workspace }}/frontend/$dir/" 2>/dev/null || true
@@ -61,8 +126,8 @@ jobs:
           cd ${{ github.workspace }}/frontend
           git config user.name "SEAM Bot"
           git config user.email "seam@github.local"
-          # Only add directories that exist
-          for dir in realtime nonrealtime official streams state; do
+          # Add all directories including public/data
+          for dir in realtime nonrealtime official streams state continuum public; do
             if [ -d "$dir" ]; then
               git add -A "$dir/"
             fi
