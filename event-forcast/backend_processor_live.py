@@ -130,8 +130,8 @@ def find_matching_official_event(manifold_evt, official_sources):
             # Calculate distance (simple euclidean for quick matching)
             dist = math.sqrt((float(evt_lat) - lat)**2 + (float(evt_lon) - lon)**2)
 
-            # If within ~1 degree, likely same event
-            if dist < 1.0:
+            # If within ~0.1 degree (~11km), likely same event. Strict threshold preserves distinct locations
+            if dist < 0.1:
                 return {
                     "status": official_evt.get('status', 'ACTIVE'),
                     "issued_utc": official_evt.get('issued', official_evt.get('timestamp')),
