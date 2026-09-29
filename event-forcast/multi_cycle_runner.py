@@ -6,6 +6,7 @@ Logs timestamps to measure actual cycle duration and event update frequency.
 """
 
 import json
+import os
 import subprocess
 import sys
 import time
