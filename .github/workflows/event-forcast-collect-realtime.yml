@@ -22,7 +22,17 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run Multi-Cycle Collection Pipeline (4-5 complete cycles in 5-min window)
+      - name: Generate 500 test sources
+        run: |
+          cd ${{ github.workspace }}/backend/event-forcast
+          python3 expanded_sources.py
+
+      - name: Test source connectivity and remove non-connecting
+        run: |
+          cd ${{ github.workspace }}/backend/event-forcast
+          python3 test_connectivity.py 2>&1 | tail -50
+
+      - name: Run Multi-Cycle Collection Pipeline (10 cycles in 5-min window)
         env:
           PUBLIC_REPO_PATH: ${{ github.workspace }}/backend/event-forcast
           SEAM_OUTPUT_ROOT: ${{ github.workspace }}/backend/event-forcast
@@ -33,12 +43,11 @@ jobs:
           SEAM_COLLECTOR_TIMEOUT_SECONDS: 10
         run: |
           cd ${{ github.workspace }}/backend/event-forcast
-          echo "Starting multi-cycle runner: 4-5 complete collection cycles within 5-minute window"
-          echo "Each cycle: All 118 sources → SEAM ingest → SEAM engine query → Event update"
+          echo "Starting 10-cycle runner: all data regimes accepted, 500+ sources under test"
+          echo "Each cycle: All sources → SEAM ingest → SEAM engine query → Event update"
           python multi_cycle_runner.py 2>&1 || echo "Multi-cycle runner completed (may have partial cycles)"
-          echo "Multi-cycle pipeline complete."
-          echo "Cycle timing data saved to continuum/cycle_log.json"
-          ls -lh continuum/cycle_log.json 2>/dev/null || echo "Note: cycle_log.json not found"
+          echo "10-cycle pipeline complete."
+          ls -lh continuum/cycle_log.json continuum/source_health.json 2>/dev/null || echo "Logs generating..."
 
       - name: Copy cycle logs to frontend
         run: |
