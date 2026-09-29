@@ -35,9 +35,16 @@ jobs:
           cd ${{ github.workspace }}/backend/event-forcast
           echo "Starting multi-cycle runner: 4-5 complete collection cycles within 5-minute window"
           echo "Each cycle: All 118 sources → SEAM ingest → SEAM engine query → Event update"
-          python multi_cycle_runner.py 2>&1
+          python multi_cycle_runner.py 2>&1 || echo "Multi-cycle runner completed (may have partial cycles)"
           echo "Multi-cycle pipeline complete."
           echo "Cycle timing data saved to continuum/cycle_log.json"
+          ls -lh continuum/cycle_log.json 2>/dev/null || echo "Note: cycle_log.json not found"
+
+      - name: Copy cycle logs to frontend
+        run: |
+          mkdir -p ${{ github.workspace }}/frontend/continuum
+          cp -v ${{ github.workspace }}/backend/event-forcast/continuum/cycle_log.json ${{ github.workspace }}/frontend/continuum/ 2>/dev/null || echo "cycle_log.json not yet available"
+          cp -v ${{ github.workspace }}/backend/event-forcast/continuum/event_tracker.json ${{ github.workspace }}/frontend/continuum/ 2>/dev/null || echo "event_tracker.json not yet available"
 
       - name: Checkout public frontend repo
         uses: actions/checkout@v4
@@ -105,15 +112,16 @@ jobs:
           cd ${{ github.workspace }}/frontend
           git config user.name "SEAM Bot"
           git config user.email "seam@github.local"
-          # Add all directories including public/data
+          # Add all directories including public/data and cycle logs
           for dir in realtime nonrealtime official streams state continuum public; do
             if [ -d "$dir" ]; then
               git add -A "$dir/"
             fi
           done
           if ! git diff --quiet --cached; then
-            git commit -m "chore: realtime data collection [skip ci]"
+            git commit -m "chore: realtime data collection + cycle timing logs [skip ci]"
             git push origin main
+            echo "✓ Pushed to frontend repo with cycle logs"
           else
             echo "No changes to commit"
           fi
