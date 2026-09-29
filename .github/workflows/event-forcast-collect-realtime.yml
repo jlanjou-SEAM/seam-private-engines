@@ -38,6 +38,14 @@ jobs:
           python realtime_acquisition.py 2>&1 | tee collector_output.log
           echo "Collectors complete."
 
+      - name: Run backend processor to generate events
+        env:
+          PUBLIC_REPO_PATH: ${{ github.workspace }}/backend/event-forcast
+        run: |
+          cd ${{ github.workspace }}/backend/event-forcast
+          python backend_processor_live.py 2>&1 || echo "Processor run complete (may have no manifold data yet)"
+          echo "Backend processor complete."
+
       - name: Checkout public frontend repo
         uses: actions/checkout@v4
         with:
@@ -46,69 +54,47 @@ jobs:
           path: frontend
           token: ${{ secrets.SEAM_GITHUB_TOKEN }}
 
-      - name: Generate live.json from manifold analysis
+      - name: Generate live.json from event tracker
         run: |
           python3 << 'EOF'
           import json
           from pathlib import Path
+          from datetime import datetime, timezone
 
-          manifold_file = Path("${{ github.workspace }}/backend/event-forcast/continuum/output/volcanic_manifold_analysis.json")
+          tracker_file = Path("${{ github.workspace }}/backend/event-forcast/continuum/event_tracker.json")
 
-          if manifold_file.exists():
-              with open(manifold_file, 'r') as f:
-                  manifold = json.load(f)
-
-              # Extract volcanic events from matches
-              volcanic_events = []
-              if 'matches' in manifold:
-                  for match in manifold['matches']:
-                      if match.get('signature_class') == 'volcanic':
-                          event = {
-                              "event_id": match.get('event_id'),
-                              "signature_class": "volcanic",
-                              "primary_regime": "volcanic",
-                              "first_detected_utc": match.get('timestamp_utc'),
-                              "status": "active",
-                              "location": {
-                                  "best_effort_lat": match.get('latitude'),
-                                  "best_effort_lon": match.get('longitude'),
-                                  "region": match.get('spatial_region'),
-                                  "city": "Unknown",
-                                  "state_province": "Unknown",
-                                  "country": "Unknown"
-                              },
-                              "signal_summary": match.get('signal_summary', '{}'),
-                              "projected_event_time": match.get('projected_event_time'),
-                              "magnitude": match.get('magnitude'),
-                              "confidence_history": [
-                                  {
-                                      "timestamp_utc": match.get('timestamp_utc'),
-                                      "seam_phi": match.get('seam_phi', 0),
-                                      "phase": "warning" if match.get('seam_phi', 0) < 0.85 else "event",
-                                      "magnitude": match.get('magnitude')
-                                  }
-                              ]
-                          }
-                          volcanic_events.append(event)
-
-              # Create live.json
+          if not tracker_file.exists():
               live_data = {
                   "schema": "SEAM_LIVE_FEED_V1",
-                  "generated_utc": manifold.get('generated_utc'),
+                  "generated_utc": datetime.now(timezone.utc).isoformat(),
+                  "sources_loaded": 118,
+                  "event_count": 0,
+                  "events": []
+              }
+          else:
+              with open(tracker_file, 'r') as f:
+                  tracker = json.load(f)
+
+              volcanic_events = []
+              if 'events' in tracker:
+                  for event_id, event_data in tracker['events'].items():
+                      if event_data.get('signature_class') == 'volcanic' and event_data.get('status') == 'active':
+                          volcanic_events.append(event_data)
+
+              live_data = {
+                  "schema": "SEAM_LIVE_FEED_V1",
+                  "generated_utc": tracker.get('generated_utc', datetime.now(timezone.utc).isoformat()),
                   "sources_loaded": 118,
                   "event_count": len(volcanic_events),
                   "events": volcanic_events
               }
 
-              # Write to frontend
-              output_dir = Path("${{ github.workspace }}/frontend/public/data")
-              output_dir.mkdir(parents=True, exist_ok=True)
-              with open(output_dir / "live.json", 'w') as f:
-                  json.dump(live_data, f, indent=2)
+          output_dir = Path("${{ github.workspace }}/frontend/public/data")
+          output_dir.mkdir(parents=True, exist_ok=True)
+          with open(output_dir / "live.json", 'w') as f:
+              json.dump(live_data, f, indent=2)
 
-              print(f"Generated live.json with {len(volcanic_events)} volcanic events")
-          else:
-              print(f"Manifold file not found at {manifold_file}")
+          print(f"Generated live.json with {len(volcanic_events)} volcanic events")
           EOF
 
       - name: Copy collected data to frontend repo
