@@ -22,8 +22,9 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run realtime collectors
+      - name: Run Multi-Cycle Collection Pipeline (4-5 complete cycles in 5-min window)
         env:
+          PUBLIC_REPO_PATH: ${{ github.workspace }}/backend/event-forcast
           SEAM_OUTPUT_ROOT: ${{ github.workspace }}/backend/event-forcast
           SEAM_ROOT: ${{ github.workspace }}/backend/event-forcast
           SEAM_RETRIEVAL_MODE: live
@@ -31,37 +32,12 @@ jobs:
           SEAM_RUN_ONCE: 1
           SEAM_COLLECTOR_TIMEOUT_SECONDS: 10
         run: |
-          cd ${{ github.workspace }}/backend/event-forcast/step1_raw_data_retrieval
-          echo "Starting collectors from: $(pwd)"
-          echo "Collectors should be at: ${{ github.workspace }}/backend/event-forcast/collectors"
-          ls -la ${{ github.workspace }}/backend/event-forcast/collectors/ 2>/dev/null | head -10 || echo "Collectors dir missing!"
-          python realtime_acquisition.py 2>&1 | tee collector_output.log
-          echo "Collectors complete."
-
-      - name: STEP 2 - SEAM ingest - update manifold with collected data
-        run: |
           cd ${{ github.workspace }}/backend/event-forcast
-          # For each collected data bucket, ingest into manifold.arcv
-          for bucket in realtime nonrealtime official streams; do
-            if [ -d "$bucket" ]; then
-              echo "Ingesting $bucket data into manifold..."
-              for datafile in $bucket/*.json; do
-                if [ -f "$datafile" ]; then
-                  # This would require ingest_runner configured to update manifold
-                  echo "  Processing $datafile"
-                fi
-              done
-            fi
-          done
-          echo "SEAM ingest step complete (manifold.arcv updated with fresh observations)"
-
-      - name: STEP 3-5 - Run backend processor (SEAM query, verify events, check official status)
-        env:
-          PUBLIC_REPO_PATH: ${{ github.workspace }}/backend/event-forcast
-        run: |
-          cd ${{ github.workspace }}/backend/event-forcast
-          python backend_processor_live.py 2>&1 || echo "Processor run complete (may have no manifold data yet)"
-          echo "Backend processor complete."
+          echo "Starting multi-cycle runner: 4-5 complete collection cycles within 5-minute window"
+          echo "Each cycle: All 118 sources → SEAM ingest → SEAM engine query → Event update"
+          python multi_cycle_runner.py 2>&1
+          echo "Multi-cycle pipeline complete."
+          echo "Cycle timing data saved to continuum/cycle_log.json"
 
       - name: Checkout public frontend repo
         uses: actions/checkout@v4
