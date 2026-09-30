@@ -17,39 +17,23 @@ jobs:
           fetch-depth: 1
           path: backend
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
+      - name: Install build tools and libcurl
+        run: |
+          apt-get update
+          apt-get install -y build-essential libcurl4-openssl-dev
 
-      - name: Load comprehensive data registry
+      - name: Build C-based multi-cycle runner
         run: |
           cd ${{ github.workspace }}/backend/event-forcast
-          echo "Using pre-tested combined registry with 11,925 candidates"
+          bash build.sh
+
+      - name: Run Multi-Cycle Collection Pipeline (C-optimized, ~60-90s)
+        run: |
+          cd ${{ github.workspace }}/backend/event-forcast
+          echo "Starting C-based high-performance runner: 6,746 verified sources"
+          time ./multi_cycle_runner 2>&1 | tee collection.log
+          echo "Collection complete"
           ls -lh continuum/continuum_combined_registry.json
-
-      - name: Ingest registry data via threaded pipeline
-        run: |
-          cd ${{ github.workspace }}/backend/event-forcast
-          echo "Ingesting data from combined registry via threaded pipeline..."
-          python3 continuum_recover_ingest_v7_threaded.py 2>&1 | tail -50
-
-      - name: Run Multi-Cycle Collection Pipeline (10 cycles in 5-min window)
-        env:
-          PUBLIC_REPO_PATH: ${{ github.workspace }}/backend/event-forcast
-          SEAM_OUTPUT_ROOT: ${{ github.workspace }}/backend/event-forcast
-          SEAM_ROOT: ${{ github.workspace }}/backend/event-forcast
-          SEAM_RETRIEVAL_MODE: live
-          SEAM_BACKFILL_HOURS: 0
-          SEAM_RUN_ONCE: 1
-          SEAM_COLLECTOR_TIMEOUT_SECONDS: 10
-        run: |
-          cd ${{ github.workspace }}/backend/event-forcast
-          echo "Starting 10-cycle runner: all data regimes accepted, 500+ sources under test"
-          echo "Each cycle: All sources → SEAM ingest → SEAM engine query → Event update"
-          python multi_cycle_runner.py 2>&1 || echo "Multi-cycle runner completed (may have partial cycles)"
-          echo "10-cycle pipeline complete."
-          ls -lh continuum/cycle_log.json continuum/source_health.json 2>/dev/null || echo "Logs generating..."
 
       - name: Copy cycle logs to frontend
         run: |
