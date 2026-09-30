@@ -1,0 +1,2014 @@
+{
+    "@context": [
+        {
+            "schema": "https://schema.org/",
+            "type": "@type",
+            "features": "schema:itemListElement",
+            "FeatureCollection": "schema:itemList"
+        }
+    ],
+    "type": "FeatureCollection",
+    "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime",
+    "features": [
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BF009.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BF009.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BF009.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BF009.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BF009.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BF009.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BF009.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BF009.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BF009.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF003.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF003.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF003.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF003.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF003.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF003.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF003.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF003.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF003.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA004.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA004.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA004.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA004.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA004.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA004.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA004.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA004.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA004.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07GG002.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07GG002.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07GG002.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07GG002.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07GG002.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07GG002.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF003.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF003.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF003.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF003.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF003.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF003.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF003.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF003.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BA001.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BA001.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BA001.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BA001.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BA001.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BA001.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AH003.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AH003.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AH003.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AH003.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AH003.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AH003.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AH003.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AG026.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AG026.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AG026.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AG026.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AG026.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AG026.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AG026.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AG026.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AG026.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF006.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF006.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF006.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF006.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF006.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF006.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF006.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF006.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF006.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AF002.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AF002.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AF002.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AF002.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AF002.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AF002.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BK001.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BK001.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BK001.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BK001.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BK001.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BK001.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BK001.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BK001.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BK001.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BE001.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BE001.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BE001.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BE001.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BE001.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BE001.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BE001.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BE001.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BE001.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BE001.2026-09-01T00:50:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC007.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC007.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC007.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC007.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC007.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AH041.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AH041.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AH041.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AH041.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AH041.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AH041.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07DC001.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07DC001.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07DC001.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07DC001.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07DC001.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07DC001.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07DC001.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07DC001.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA011.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA011.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA011.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA011.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA011.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA011.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA011.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AG007.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AG007.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AG007.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AG007.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AG007.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AG007.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AG007.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AG007.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EA006.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EA006.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EA006.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EA006.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EA006.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EA006.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EA006.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EA006.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EA006.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC008.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC008.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC008.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC008.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC008.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA030.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA030.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA030.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA030.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA030.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA030.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA030.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA030.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA030.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BJ004.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BJ004.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BJ004.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BJ004.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BJ004.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BJ004.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/11AA026.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/11AA026.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/11AA026.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/11AA026.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/11AA026.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/11AA026.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA034.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA034.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA034.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA034.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA034.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA034.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JD004.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JD004.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JD004.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JD004.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JD004.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JD004.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JD004.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JD004.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JD004.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JD004.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF007.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF007.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF007.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF007.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF007.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BN008.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BN008.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BN008.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BN008.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BN008.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BN008.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JC001.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JC001.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JC001.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JC001.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JC001.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JC001.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JC001.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JC001.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JC001.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05FE004.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05FE004.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05FE004.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05FE004.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05FE004.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05FE004.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CE001.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CE001.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CE001.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CE001.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CE001.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CE001.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AF014.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AF014.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AF014.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AF014.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AF014.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JF005.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JF005.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JF005.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JF005.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JF005.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07JF005.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07FD009.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07FD009.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07FD009.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07FD009.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07FD009.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07FD009.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07FD009.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC007.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC007.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC007.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC007.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC007.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC007.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD021.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD021.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD021.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD021.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD021.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD021.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD021.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD021.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD021.2026-09-01T00:50:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD021.2026-09-01T00:55:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CB006.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CB006.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CB006.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CB006.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CB006.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CB006.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CB006.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CB006.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CB006.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CB006.2026-09-01T00:50:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC013.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC013.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC013.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC013.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC013.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC013.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05CC013.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD025.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD025.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD025.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD025.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD025.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD025.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD025.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD025.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD025.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AD025.2026-09-01T00:50:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07HF002.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07HF002.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07HF002.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07HF002.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07HF002.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07HF002.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM020.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM020.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM020.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM020.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM020.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM020.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM020.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM020.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA008.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA008.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA008.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA008.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA008.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07CA008.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF002.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF002.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF002.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF002.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF002.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF002.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF002.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07KF002.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AC017.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AC017.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AC017.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AC017.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AC017.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AC017.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF004.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF004.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF004.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF004.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF004.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05DF004.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05FB002.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05FB002.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05FB002.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05FB002.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05FB002.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07NA007.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07NA007.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07NA007.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07NA007.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07NA007.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07NA007.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07NA007.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07NA007.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EE010.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EE010.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EE010.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EE010.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EE010.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EE010.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05EE010.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BC002.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BC002.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BC002.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BC002.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BC002.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BC002.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07HF001.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07HF001.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07HF001.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07HF001.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07HF001.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07HF001.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07HF001.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BK008.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BK008.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BK008.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BK008.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BK008.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BK008.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BK008.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BK008.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BK008.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07BK008.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05GA010.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05GA010.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05GA010.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05GA010.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05GA010.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC002.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC002.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC002.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC002.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC002.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC002.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC002.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC002.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/06AC002.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AA002.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AA002.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AA002.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AA002.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AA002.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AA002.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AA002.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AA002.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07AA002.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA004.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA004.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA004.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA004.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA004.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA004.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA004.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA004.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AA004.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AF030.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AF030.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AF030.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AF030.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AF030.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AF030.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AF030.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AF030.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BL013.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BL013.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BL013.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BL013.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BL013.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BL013.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07OB003.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07OB003.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07OB003.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07OB003.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07OB003.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07OB003.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07OB003.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07OB003.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07OB003.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AB044.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AB044.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AB044.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AB044.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AB044.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AB044.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AB044.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AB044.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AB044.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05AB044.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM008.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM008.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM008.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM008.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM008.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM008.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM008.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM008.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM008.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/05BM008.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NN003.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NN003.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NN003.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NN003.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NN003.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NN003.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NN003.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NN003.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NN003.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NN003.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NM174.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NM174.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NM174.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NM174.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NM174.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NM174.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NM123.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NM123.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NM123.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NM123.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NM123.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NM123.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07EF002.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07EF002.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07EF002.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07EF002.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07EF002.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/07EF002.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08GA022.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08GA022.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08GA022.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NK022.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NK022.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NK022.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NK022.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NK022.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NK022.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NK022.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NK022.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08NK022.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG010.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG010.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG010.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG010.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG010.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG010.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG010.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG010.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG010.2026-09-01T00:45:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG056.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG056.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG056.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG056.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG056.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG056.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG056.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08LG056.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08FB006.2026-09-01T00:00:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08FB006.2026-09-01T00:05:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08FB006.2026-09-01T00:10:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08FB006.2026-09-01T00:15:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08FB006.2026-09-01T00:20:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08FB006.2026-09-01T00:25:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08FB006.2026-09-01T00:30:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08FB006.2026-09-01T00:35:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08FB006.2026-09-01T00:40:00Z"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-realtime/items/08HB006.2026-09-01T00:25:00Z"
+        }
+    ]
+}

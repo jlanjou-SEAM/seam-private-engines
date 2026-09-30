@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A672F01ED13033",
+  "provider": "NASA Earthdata",
+  "dataset": "upcoming-system-maintenance-lance-modis-viirs",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:00.462978Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/upcoming-system-maintenance-lance-modis-viirs",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/upcoming-system-maintenance-lance-modis-viirs",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 135575,
+  "sha256": "5b0f826c32a0d731b030bcd7c926779337f68e9b910ad5b6a9a1b5757adc5469",
+  "etag": "\"1790745646\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:46 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-A672F01ED13033\\20260930T052000.462978Z_5b0f826c32a0d731.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

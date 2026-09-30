@@ -1,0 +1,693 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>Climate Prediction Center - Global Monsoons</title>
+  <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+  <meta content="NCEP Web Team" name="GENERATOR">
+  <script language="Javascript" type="text/javascript">
+   function show_tab(nam)
+   {
+    document.getElementById("TABWSST").style.display= "none";
+    document.getElementById("TABMSST").style.display= "none";
+    document.getElementById("TABSSST").style.display= "none";
+    document.getElementById("anomTABWSST").style.display= "none";
+    document.getElementById("anomTABMSST").style.display= "none";
+    document.getElementById("anomTABSSST").style.display= "none";
+    document.getElementById("TABMSM").style.display= "none";
+    document.getElementById("TABSSM").style.display= "none";
+    document.getElementById("anomTABMSM").style.display= "none";
+    document.getElementById("anomTABSSM").style.display= "none";
+    document.getElementById("TAB200WWD").style.display= "none";
+    document.getElementById("TAB200MWD").style.display= "none";
+    document.getElementById("TAB200SWD").style.display= "none";
+    document.getElementById("anomTAB200WWD").style.display= "none";
+    document.getElementById("anomTAB200MWD").style.display= "none";
+    document.getElementById("anomTAB200SWD").style.display= "none";
+    document.getElementById("TABWP").style.display= "none";
+    document.getElementById("TABMP").style.display= "none";
+    document.getElementById("TABSP").style.display= "none";
+    document.getElementById("anomTABWP").style.display= "none";
+    document.getElementById("anomTABMP").style.display= "none";
+    document.getElementById("anomTABSP").style.display= "none";
+    document.getElementById("TAB850WWD").style.display= "none";
+    document.getElementById("TAB850MWD").style.display= "none";
+    document.getElementById("TAB850SWD").style.display= "none";
+    document.getElementById("anomTAB850WWD").style.display= "none";
+    document.getElementById("anomTAB850MWD").style.display= "none";
+    document.getElementById("anomTAB850SWD").style.display= "none";
+    document.getElementById("TABWOLR").style.display= "none";
+    document.getElementById("TABMOLR").style.display= "none";
+    document.getElementById("TABSOLR").style.display= "none";
+    document.getElementById("anomTABWOLR").style.display= "none";
+    document.getElementById("anomTABMOLR").style.display= "none";
+    document.getElementById("anomTABSOLR").style.display= "none";
+    document.getElementById("TABW200VPOT").style.display= "none";
+    document.getElementById("TABM200VPOT").style.display= "none";
+    document.getElementById("TABS200VPOT").style.display= "none";
+    document.getElementById("anomTABW200VPOT").style.display= "none";
+    document.getElementById("anomTABM200VPOT").style.display= "none";
+    document.getElementById("anomTABS200VPOT").style.display= "none";
+    document.getElementById("TABWTEMP").style.display= "none";
+    document.getElementById("TABMTEMP").style.display= "none";
+    document.getElementById("TABSTEMP").style.display= "none";
+    document.getElementById("anomTABWTEMP").style.display= "none";
+    document.getElementById("anomTABMTEMP").style.display= "none";
+    document.getElementById("anomTABSTEMP").style.display= "none";
+    document.getElementById(nam).style.display = "block";
+   }
+  </script>
+  <script type="text/javascript" src=menu.js></script>
+  <link href="/nwscwi/main.css" type="text/css" rel="STYLESHEET">
+  <link href="menu.css" type="text/css" rel="stylesheet">
+</head>
+<body leftmargin="0" background="/nwscwi/background-white.gif" topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0" background="/nwscwi/topbanner.jpg" >
+	<tbody>
+		<tr>
+			<td align="right" height="19">
+				<a href="#contents"><img height="1" alt="Skip Navigation Links" src="/nwscwi/skipgraphic.gif" width="1" border="0"></a>
+				<a href="https://www.weather.gov/" class="homepagelinks"><SPAN class="nwslink">www.weather.gov</span></a>&nbsp;
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- -->
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+	<tbody>
+		<tr>
+			<td rowSpan="2"><A href="https://www.noaa.gov/">
+			<img height="78" alt="NOAA logo - Click to go to the NOAA home page" src="/nwscwi/noaaleft.jpg" width="85" border="0"></a></td>
+			<td align="left"><img height="20" alt="National Weather Service" src="/nwscwi/nws_title.jpg" width="500" border="0"></td>
+			<td rowspan="2" width="100%" background="/nwscwi/ncep_bkgrnd.jpg">&nbsp;</td>
+			<td rowspan="2" align="right"><a href="https://www.weather.gov/">
+			<img height="78" alt="NWS logo - Click to go to the NWS home page" src="/nwscwi/nwsright.jpg" width="85" border="0"></a></td>
+		</tr>
+		<tr>
+			<td><img height="58" alt="Climate Prediction Center" src="/nwscwi/cpc.jpg" width="500" border="0"></td>
+		</tr>
+	</tbody>
+</table>
+<!-- -->
+<table cellspacing="0" cellpadding="0" width="100%" background="/nwscwi/navbkgrnd.gif" border="0">
+	<tbody>
+		<tr>
+			<td align="left" width="135"><img height="23" alt="" src="/nwscwi/navbarleft.jpg" width="94" border="0"></td>
+			<td class="nav" align="center" width="10%">
+				<a href="/" class="menu" title="to the climate prediction center home page">home</a>
+			</td>
+			<td class="nav" align="center" width="10%">
+				<a href="/products/site_index.shtml" class="menu" title="to Climate Prediction Center site map">Site Map</a>
+			</td>
+			<td class="nav" align="right" width="10%">
+				<a href="https://www.weather.gov/news/" class="menu" title="to National Weather Service news page">News</a>
+			</td>
+			<td class="nav" align="right" width="19%">
+				<a href="https://www.weather.gov/organization/" class="menu">Organization</a>
+			</td>
+			<td class="searchinput" align="right" width="30%">
+				<form method="get" action="https://search.usa.gov/search" style="margin-bottom:0; margin-top:0;">
+				<label for="Search"><span class="yellow">Search</span>&nbsp;&nbsp;</label>
+				<input type="hidden" name="affiliate" value="weather.gov" />
+				<input type="hidden" name="v:project" value="firstgov" />
+				<input name="query" type="text" value="" size="20" maxlength="256" id="Search" />
+				<input type="submit" value="Go" />
+				</form>
+			</td>
+			<td align="right"><img height="23" alt="" src="/nwscwi/navbarendcap.jpg" width="24" border="0"></td>
+		</tr>
+	</tbody>
+</table>       <!-- Use virtual include, because this should be in a common place within your DocumentRoot. -->
+<table cellspacing="0" cellpadding="0" width="960" border="0">
+  <tr valign="top">
+    <td width="137"><br>
+            <table cellspacing="0" cellpadding="2" width="137" border="0">
+        <!-- Do not remove this section. You will need this when the City,St/zip search is implemented nationwide.-->
+        <!-- <tr align="left" valign="top">
+                <td class="searchinput">
+                  <div id="Layer2" style="position:absolute; width:200px; height:115px; z-index:2; visibility: hidden">Search by city or zip code. Press enter or select the go button to submit request</div>
+                  <form method="POST" action="http://www.srh.noaa.gov/zipcity.php">
+                  <span class="yellow">Local forecast by<br>&quot;City, St&quot; or Zip Code</span><br>
+                  <input type="text" name="inputstring" size="9" value="City, St">
+                  <input type="submit" name="Go2" value="Go"></form></td>
+        </tr> -->
+<!--
+         <tr>
+          <td class="searchinput" align="left">
+            <form action="http://www.firstgov.gov/fgsearch/index.jsp" name="query">
+
+             <label for="search"><span class="yellow">CPC Search</span></label>
+              <input type="hidden" name="parsed" value="true">
+              <input type="hidden" name="rn" value="3">
+              <input type="hidden" name="in0" value="domain">
+              <input type="hidden" name="dom0" value="www.cpc.ncep.noaa.gov">
+              <input type="text" name="mw0" id="search"  size="10" maxLength="256" value="CPC search">&nbsp;
+              <input type="submit" name="Go2" value="Go">
+          </form></td>
+
+         </tr>
+-->
+         <tr>
+          <td class="searchinput" align="left">
+           <form method="get" action="http://usasearch.gov/search" style="margin-bottom:0; margin-top:0;">
+            <label for="Search">
+            <span class="yellow">Search&nbsp;the CPC</span></label>
+            <input type="hidden" name="affiliate" value="ncep.noaa.gov" />
+            <input type="hidden" name="v:sources"
+                  value="firstgov-affiliates-search" />
+            <input type="hidden" name="v:project" value="firstgov" />
+            <input type="hidden" name="query"
+                  value="site:www.cpc.ncep.noaa.gov" />
+            <input name="query" type="text" value="" size="10" maxlength="256"
+                  id="Search"/>
+            <input type="submit" value="Go"  />
+           </form>
+          </td>
+         </tr>
+
+        <tr>
+         <td class="white" id="menuitem">
+         <span class="yellow" >Monsoons</span><br> 
+         <a href="/products/Global_Monsoons/African_Monsoons/African_Monsoons.shtml" class="menu">African Monsoons</a><br>
+          <a href="/products/Global_Monsoons/American_Monsoons/American_Monsoons.shtml" class="menu">American Monsoons</a><br>
+          <a href="/products/Global_Monsoons/Asian_Monsoons/Asian_Monsoons.shtml" class="menu">Asian-Australian Monsoons</a><br><br><br>
+          <a href="other_links.shtml" class="menu">Other Monsoon Monitoring Links</font></a><br><br><br>
+
+         <tr>
+         <td class="white" id="menuitem">
+            <span class="yellow">About Us</span><br>
+            &nbsp;&nbsp;&nbsp;<a href="/information/who_we_are/mission.shtml">Our Mission</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="/information/who_we_are/index.shtml">Who We Are</a><br><br>
+
+            <span class="yellow">Contact Us</span><br>
+
+            &nbsp;&nbsp;&nbsp;<a href="/information/personnel/contacts.shtml">CPC Information</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="/comment-form.html">CPC Web Team</a><br><br>
+            
+          </td>
+        </tr>
+        <TR><TD>&nbsp;</TD></TR>
+        <TR>
+       <TD class="white" id="menuitem"><a href="http://www.firstgov.gov/"><img src="/nwscwi/usagov_logo_color_110wb.gif" alt="USA.gov is the U.S. Government's official Web portal to all Federal, state and local government Web resources and services." width="110" height="30" border="0"></a></TD> 
+       </TR>
+      </table>
+   <!-- Use virtual include, because this should be in a common place within your DocumentRoot. -->
+    </td>
+    <td valign="top" width="823"><a name="contents"></a>
+      <table border="0" cellPadding="0" cellSpacing="0" width="787">                                                                                                
+ <tr>
+  <td colspan="2" valign="left">
+   <font face="verdana,arial,serif" size="1" color="#000000"><a href="/" class="homepagelinks"><strong>HOME</strong></a> &gt; <a href="/products/precip/CWlink/MJO/climwx.shtml" class="homepagelinks">Climate - Weather</a> &gt; Monsoons</font>
+  </td>
+ </tr>
+                                                                                             
+ <tr>    
+  <td width="650" align="center" width="">
+   <font face="Arial,verdana" size="5" color="#990000">Monsoons</font><br>
+  </td>
+  <td width="173">&nbsp;</td>
+ </tr>
+
+ <tr>
+  <td colspan="2"> 
+   <table>
+    <tr>
+     <td>
+      <table style="border-color: black; border-style: solid; border-width: thin;">
+       <tr>
+        <td align="center" width="650">
+         <font class="viv" face="verdana,arial,serif"> Move cursor over product parameter name to display the graphic or click on link to access graphic.</font>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <table cellspacing="0" cellpadding="0" width="650" border="1" align="center" name="Tabs">
+          <tr>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="6" width="300">
+            <font color="#333333" size="1">Sea Surface Temperature</font>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="6" width="300">
+            <font color="#333333" size="1">Soil Moisture</font>
+           </td>
+          </tr>
+
+          <tr>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+            <font color="#333333" size="1">Total</font>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+            <font color="#333333"size="1">Anomaly</font>
+           </td>
+
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+            <font color="#333333" size="1">Total</font>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+            <font color="#333333" size="1">Anomaly</font>
+           </td>
+          </tr>
+
+          <tr>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1" color="#0066FF"><a href="/products/Global_Monsoons/Figures/curr.sst.weekly.figa.gif" OnMouseOver="show_tab('TABWSST')" title="1 Week Sea Surface Temperature" class="homepagelinks">1Week</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.sst.monthly.figa.gif" OnMouseOver="show_tab('TABMSST')" title="4 Week Sea Surface Temperature" class="homepagelinks">4Weeks</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.sst.seasonal.figa.gif" OnMouseOver="show_tab('TABSSST')" title="13 Week Sea Surface Temperature" class="homepagelinks">13Weeks</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.sst.weekly.figb.gif" OnMouseOver="show_tab('anomTABWSST')" title="1 Week Sea Surface Temperature Anomaly" class="homepagelinks">1Week</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.sst.monthly.figb.gif" OnMouseOver="show_tab('anomTABMSST')" title="4 Week Sea Surface Temperature Anomaly" class="homepagelinks">4Weeks</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.sst.seasonal.figb.gif" OnMouseOver="show_tab('anomTABSSST')" title="13 Week Sea Surface Temperature Anomaly" class="homepagelinks">13Weeks</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1" color="#333399">---</font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.w.monthly.figa.gif" OnMouseOver="show_tab('TABMSM')" title="Monthly Soil Moisture" class="homepagelinks">Monthly</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.w.season.figa.gif" OnMouseOver="show_tab('TABSSM')" title="Seasonal Soil Moisture" class="homepagelinks">Seasonal</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1" color="#333399">---</font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.w.monthly.figb.gif" OnMouseOver="show_tab('anomTABMSM')" title="Monthly Soil Moisture Anomaly" class="homepagelinks">Monthly</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.w.season.figb.gif" OnMouseOver="show_tab('anomTABSSM')" title="Seasonal Soil Moisture Anomaly" class="homepagelinks">Seasonal</a></font>
+           </td>
+          </tr>
+
+          <tr> 
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="6" width="300">
+            <font color="#333333" size="1">200-hPa Winds</font>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="6" width="300">
+            <font color="#333333" size="1">Precipitation</font>
+           </td>
+          </tr>
+          <tr>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+            <font color="#333333" size="1">Total</font>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+            <font color="#333333" size="1">Anomaly</font>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+            <font color="#333333" size="1">Total</font>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+            <font color="#333333" size="1">Anomaly</font>
+           </td>
+          </tr>
+          <tr>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"> <a href="/products/Global_Monsoons/Figures/curr.200wind.7day.figa.gif" OnMouseOver="show_tab('TAB200WWD')" title="Weekly 200 hPa Winds" class="homepagelinks">7-day</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.200wind.30day.figa.gif" OnMouseOver="show_tab('TAB200MWD')" title="Monthly 200 hPa Winds" class="homepagelinks">30-day</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.200wind.90day.figa.gif" OnMouseOver="show_tab('TAB200SWD')" title="Seasonal 200 hPa Winds" class="homepagelinks">90-day</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.200wind.7day.figb.gif" OnMouseOver="show_tab('anomTAB200WWD')" title="Weekly 200 hPa Wind Anomaly" class="homepagelinks">7-Day</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.200wind.30day.figb.gif" OnMouseOver="show_tab('anomTAB200MWD')" title="Monthly 200 hPa Winds Anomaly" class="homepagelinks">30-Day</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.200wind.90day.figb.gif" OnMouseOver="show_tab('anomTAB200SWD')" title="seasonal 200 hPa Winds" class="homepagelinks">90-Day</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.p.5day.figa.gif" OnMouseOver="show_tab('TABWP')" title="5-Day Precipitation (millimeters)" class="homepagelinks">5-Day</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.p.30day.figa.gif" OnMouseOver="show_tab('TABMP')" title="Monthly Precipitation (millimeters)" class="homepagelinks">30-Day</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.p.90day.figa.gif" OnMouseOver="show_tab('TABSP')" title="Seasonal Precipitation (millimeters)" class="homepagelinks">90-Day</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.p.5day.figb.gif" OnMouseOver="show_tab('anomTABWP')" title="5-Day Precipitation Anomaly (millimeters)" class="homepagelinks">5-Day</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.p.30day.figb.gif" OnMouseOver="show_tab('anomTABMP')" title="Monthly Precipitation Anomaly (millimeters)" class="homepagelinks">30-Day</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.p.90day.figb.gif" OnMouseOver="show_tab('anomTABSP')" title="Seasonal Precipitation Anomaly (millimeters)" class="homepagelinks">90-Day</a></font>
+           </td>
+          </tr>
+
+          <tr>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="6" width="300">
+            <font color="#333333" size="1">850-hPa Winds</font>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="6" width="300">
+            <font color="#333333" size="1">OLR</font>
+           </td>
+          </tr>
+          <tr>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+            <font color="#333333" size="1">Total</font>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+            <font color="#333333" size="1">Anomaly</font>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+            <font color="#333333" size="1">Total</font>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+            <font color="#333333" size="1">Anomaly</font>
+           </td>
+          </tr>
+          <tr>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"> <a href="/products/Global_Monsoons/Figures/curr.850wind.7day.figa.gif" OnMouseOver="show_tab('TAB850WWD')" title="Weekly 850 hPa Winds" class="homepagelinks">7-day</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.850wind.30day.figa.gif" OnMouseOver="show_tab('TAB850MWD')" title="Monthly 850 hPa Winds" class="homepagelinks">30-day</a></font>
+           </td>
+           <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.850wind.90day.figa.gif" OnMouseOver="show_tab('TAB850SWD')" title="Seasonal 850 hPa Winds" class="homepagelinks">90-day</a></font>
+           </td>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.850wind.7day.figb.gif" OnMouseOver="show_tab('anomTAB850WWD')" title="Weekly 850 hPa Winds Anomaly" class="homepagelinks">7-Day</a></font>
+           </td>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.850wind.30day.figb.gif" OnMouseOver="show_tab('anomTAB850MWD')" title="Monthly 850 hPa Winds Anomaly" class="homepagelinks">30-Day</a></font>
+          </td>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+           <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.850wind.90day.figb.gif" OnMouseOver="show_tab('anomTAB850SWD')" title="Seasonal 850 hPa Winds Anomaly" class="homepagelinks">90-Day</a></font>
+          </td>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+            <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.olr.5day.figa.gif" OnMouseOver="show_tab('TABWOLR')" title="5-Day pentad OLR" class="homepagelinks">5-Day</a></font>
+          </td>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+           <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.olr.30day.figa.gif" OnMouseOver="show_tab('TABMOLR')" title="Monthly OLR" class="homepagelinks">30-Day</a></font>
+          </td>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+           <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.olr.90day.figa.gif" OnMouseOver="show_tab('TABSOLR')" title="Seasonal OLR" class="homepagelinks">90-Day</a></font>
+          </td>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+           <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.olr.5day.figb.gif" OnMouseOver="show_tab('anomTABWOLR')" title="5-Day pentad OLR Anomaly" class="homepagelinks">5-Day</a></font>
+          </td>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+           <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.olr.30day.figb.gif" OnMouseOver="show_tab('anomTABMOLR')" title="Monthly OLR Anomaly" class="homepagelinks">30-Day</a></font>
+          </td>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+           <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.olr.90day.figb.gif" OnMouseOver="show_tab('anomTABSOLR')" title="Seasonal OLR Anomaly" class="homepagelinks">90-Day</a></font>
+          </td>
+         </tr>
+
+         <tr>
+          <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="6" width="300">
+           <font color="#333333" size="1">200-hPa Velocity Potential</font>
+          </td>
+          <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="6" width="300">
+           <font color="#333333" size="1">2m Temperature</font>
+          </td>
+         </tr>
+         <tr>
+          <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+           <font color="#333333" size="1">Total</font>
+          </td>
+          <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+           <font color="#333333" size="1">Anomaly</font>
+          </td>
+          <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+           <font color="#333333" size="1">Total</font>
+          </td>
+          <td class="nav" id="menuitem" align="center" bgcolor="#CCCCCC" colspan="3" width="150">
+           <font color="#333333" size="1">Anomaly</font>
+          </td>
+         </tr>
+         <tr>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+           <font face="verdana,arial,serif" size="1" color="#0066FF"> <a href="/products/Global_Monsoons/Figures/curr.vpt.7day.figa.gif" OnMouseOver="show_tab('TABW200VPOT')" title="Weekly 200 hPa Velocity Potential" class="homepagelinks">7-day</a></font>
+          </td>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+          <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.vpt.30day.figa.gif" OnMouseOver="show_tab('TABM200VPOT')" title="Monthly 200 hPa Velocity Potential" class="homepagelinks">30-day</a></font>
+          </td>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+           <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.vpt.90day.figa.gif" OnMouseOver="show_tab('TABS200VPOT')" title="Seasonal 200 hPa Velocity Potential" class="homepagelinks">90-day</a></font>
+          </td>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+           <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.vpt.7day.figb.gif" OnMouseOver="show_tab('anomTABW200VPOT')" title="Weekly 200 hPa Velocity Potential Anomaly" class="homepagelinks">7-Day</a></font>
+          </td>
+          <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+           <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.vpt.30day.figb.gif" OnMouseOver="show_tab('anomTABM200VPOT')" title="Monthly 200 hPa Velocity Potential Anomaly" class="homepagelinks">30-Day</a></font>
+          </td>
+         <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+           <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.vpt.90day.figb.gif" OnMouseOver="show_tab('anomTABS200VPOT')" title="Seasonal 200 hPa Velocity Potential Anomaly" class="homepagelinks">90-Day</a></font>
+         </td>
+         <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+          <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.t.weekly.figa.gif" OnMouseOver="show_tab('TABWTEMP')" title="Weekly 2 meter Temperature" class="homepagelinks">7-Day</a></font>
+         </td>
+         <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+          <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.t.monthly.figa.gif" OnMouseOver="show_tab('TABMTEMP')" title="Monthly 2 meter Temperature" class="homepagelinks">Monthly</a></font>
+         </td>
+         <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+          <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.t.season.figa.gif" OnMouseOver="show_tab('TABSTEMP')" title="Seasonal 2 meter Temperature" class="homepagelinks">Seasonal</a></font>
+         </td>
+         <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+          <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.t.weekly.figb.gif" OnMouseOver="show_tab('anomTABWTEMP')" title="Weekly 2 meter Temperature Anomaly" class="homepagelinks">7-Day</a></font>
+         </td>
+         <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+          <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.t.monthly.figb.gif" OnMouseOver="show_tab('anomTABMTEMP')" title="Monthly 2 meter Temperature Anomaly" class="homepagelinks">Monthly</a></font>
+         </td>
+         <td class="viv" id="menuitemviv" align="center" bgcolor="#CCCCCC" colspan="1" width="50">
+          <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/Figures/curr.t.season.figb.gif" OnMouseOver="show_tab('anomTABSTEMP')" title="Seasonal 2 meter Temperature Anomaly" class="homepagelinks">Seasonal</a></font>
+           </td>
+          </tr>
+         </table>
+
+         <table width="650" cellpadding="0" cellspacing="0" align="center">
+          <tr>
+           <td>
+            <div id="TABWSST" style="display:block;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.sst.weekly.figa.gif" alt="1-Week Sea Surface Temperature" width="650">
+            </div>
+            <div id="TABMSST" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.sst.monthly.figa.gif" alt="4-Weeks Sea Surface Temperature" width="650">
+            </div>
+            <div id="TABSSST" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.sst.seasonal.figa.gif" alt="13-Weeks Sea Surface Temperature" width="650">
+            </div>
+            <div id="anomTABWSST" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.sst.weekly.figb.gif" alt="1-Week anomaly Sea Surface Temperature" width="650">
+            </div>
+            <div id="anomTABMSST" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.sst.monthly.figb.gif" alt="4-weeks anomaly Sea Surface Temperature" width="650">
+            </div>
+            <div id="anomTABSSST" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.sst.seasonal.figb.gif" alt="13-Weeks anomaly Sea Surface Temperature" width="650">
+            </div>                                                                                                                                                           
+            <div id="TABMSM" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.w.monthly.figa.gif" alt="Monthly Soil Moisture" width="650">
+            </div>
+            <div id="TABSSM" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.w.season.figa.gif" alt="Seasonal Soil Moisture" width="650">
+            </div>
+            <div id="anomTABMSM" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.w.monthly.figb.gif" alt="Monthly anomaly Soil Moisture" width="650">
+            </div>
+            <div id="anomTABSSM" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.w.season.figb.gif" alt="Seasonal anomaly Soil Moisture" width="650">
+            </div>
+
+
+            <div id="TAB200WWD" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.200wind.7day.figa.gif" alt="Weekly 200hPa Winds" width="650">
+            </div>
+            <div id="TAB200MWD" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.200wind.30day.figa.gif" alt="Monthly 200hPa Winds" width="650">
+            </div>
+            <div id="TAB200SWD" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.200wind.90day.figa.gif" alt="Seasonal 200hPa Winds" width="650">
+            </div>
+            <div id="anomTAB200WWD" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.200wind.7day.figb.gif" alt="Weekly anomaly 200hPa Winds" width="650">
+            </div>
+            <div id="anomTAB200MWD" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.200wind.30day.figb.gif" alt="Monthly anomaly 200hPa Winds" width="650">
+            </div>
+            <div id="anomTAB200SWD" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.200wind.90day.figb.gif" alt="Seasonal anomaly 200hPa Winds" width="650">
+            </div>
+
+            <div id="TABWP" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.p.5day.figa.gif" alt="5-Day Precipitation (mm)" width="650">
+            </div>
+            <div id="TABMP" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.p.30day.figa.gif" alt="Monthly Precipitation (mm)" width="650">
+            </div>
+            <div id="TABSP" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.p.90day.figa.gif" alt="Seasonal Precipitation (mm)" width="650">
+            </div>
+            <div id="anomTABWP" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.p.5day.figb.gif" alt="5-Day anomaly Precipitation (mm)" width="650">
+            </div>
+            <div id="anomTABMP" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.p.30day.figb.gif" alt="Monthly anomaly Precipitation (mm)" width="650">
+            </div>
+            <div id="anomTABSP" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.p.90day.figb.gif" alt="Seasonal anomaly Precipitation (mm)" width="650">
+            </div>
+
+            <div id="TAB850WWD" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.850wind.7day.figa.gif" alt="Weekly 850hPa Winds" width="650">
+            </div>
+            <div id="TAB850MWD" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.850wind.30day.figa.gif" alt="Monthly 850hPa Winds" width="650">
+            </div>
+            <div id="TAB850SWD" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.850wind.90day.figa.gif" alt="Seasonal 850hPa Winds" width="650">
+            </div>
+            <div id="anomTAB850WWD" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.850wind.7day.figb.gif" alt="Weekly anomaly 850hPa Winds" width="650">
+            </div>
+            <div id="anomTAB850MWD" style="display:none;" align="center">
+              <img src="/products/Global_Monsoons/Figures/curr.850wind.30day.figb.gif" alt="Monthly anomaly 850hPa Winds" width="650">
+            </div>
+            <div id="anomTAB850SWD" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.850wind.90day.figb.gif" alt="Seasonal anomaly 850hPa Winds" width="650">
+            </div>
+
+            <div id="TABWOLR" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.olr.5day.figa.gif" alt="5-Day pentad OLR" width="650">
+            </div>
+            <div id="TABMOLR" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.olr.30day.figa.gif" alt="Monthly OLR" width="650">
+            </div>
+            <div id="TABSOLR" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.olr.90day.figa.gif" alt="Seasonal OLR" width="650">
+            </div>
+            <div id="anomTABWOLR" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.olr.5day.figb.gif" alt="5-Day pentad anomaly OLR" width="650">
+            </div>
+            <div id="anomTABMOLR" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.olr.30day.figb.gif" alt="Monthly anomaly OLR" width="650">
+            </div>
+            <div id="anomTABSOLR" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.olr.90day.figb.gif" alt="Seasonal anomaly OLR" width="650">
+            </div>
+
+            <div id="TABW200VPOT" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.vpt.7day.figa.gif" alt="Weekly Velocity Potential" width="650">
+            </div>
+            <div id="TABM200VPOT" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.vpt.30day.figa.gif" alt="Monthly Velocity Potential" width="650">
+            </div>
+            <div id="TABS200VPOT" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.vpt.90day.figa.gif" alt="Seasonal Velocity Potential" width="650">
+            </div>
+            <div id="anomTABW200VPOT" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.vpt.7day.figb.gif" alt="Weekly anomaly Velocity Potential" width="650">
+            </div>
+            <div id="anomTABM200VPOT" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.vpt.30day.figb.gif" alt="Monthly anomaly Velocity Potential" width="650">
+            </div>
+            <div id="anomTABS200VPOT" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.vpt.90day.figb.gif" alt="Seasonal anomaly Velocity Potential" width="650">
+            </div>
+
+            <div id="TABWTEMP" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.t.weekly.figa.gif" alt="weekly 2m Temperature" width="650">
+            </div>
+            <div id="TABMTEMP" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.t.monthly.figa.gif" alt="Monthly 2m Temperature" width="650">
+            </div>
+            <div id="TABSTEMP" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.t.season.figa.gif" alt="Seasonal 2m Temperature" width="650">
+            </div>
+            <div id="anomTABWTEMP" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.t.weekly.figb.gif" alt="Weekly anomaly 2m Temperature" width="650">
+            </div>
+            <div id="anomTABMTEMP" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.t.monthly.figb.gif" alt="Monthly anomaly 2m Temperature" width="650">
+            </div>
+            <div id="anomTABSTEMP" style="display:none;" align="center">
+             <img src="/products/Global_Monsoons/Figures/curr.t.season.figb.gif" alt="Seasonal anomaly 2m Temperature" width="650">
+            </div>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+     </td>
+     <td align="center" valign="top" width="173">
+      <table style="border-color: black; border-style: solid; border-width: thin;">
+       <tr>
+        <td align="center" bgcolor="#dddddd" style="border-color: black; border-style: solid; border-width: thin;">
+         <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/gl_obs.shtml"><strong>Global Precipitation Analyses</strong></a><br>
+         <img src="global-precip.gif" />
+        </td>
+       </tr>
+       <tr>
+        <td align="center" bgcolor="#dddddd" style="border-color: black; border-style: solid; border-width: thin;">
+         <font face="verdana,arial,serif" size="1"><a href="/products/Global_Monsoons/gl_clim.shtml"><strong>Global Precipitation Analyses Climatology</strong></a><br>
+         <img src="global-precip-climo.gif" />
+        </td>
+       </tr>
+       <tr>
+<!--        <td align="center" bgcolor="#dddddd" style="border-color: black; border-style: solid; border-width: thin;">
+         <font face="verdana,arial,serif" size="1"><a href="/products/GIS/map_viewer/cpcgis.html"><strong>Climate Prediction Center<br>GIS Portal</strong></a><br>
+         <img src="cpc-gis-portal.gif" />
+        </td>
+       </tr>
+-->
+      </table>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+            <!-- This is the body content file of the current sub-directory. -->
+      <table cellspacing="0" cellpadding="0" width="99%" border="0">
+	<tbody>
+		<tr>
+			<td colspan="3"><hr></td>
+		</tr>
+		<tr valign="top">
+			<td class="gray">
+				<a href="http://www.noaa.gov/" class="homepagelinks"><span class="gray">NOAA/</span></a>
+				<a href="http://www.nws.noaa.gov/" class="homepagelinks"><span class="gray">National Weather Service</span></a><br>
+				<a href="http://www.ncep.noaa.gov/" class="homepagelinks"><span class="gray">NOAA Center for Weather and Climate Prediction </span></a><br>
+				Climate Prediction Center<br>
+				5830 University Research Court <br>
+				Riverdale Park, MD 20737 <br>
+				Page Author:<a href="/comment-form.html" class="homepagelinks"><span class="gray"> Climate Prediction Center Internet Team</span></a><br>
+   <!-- Use virtual include, because this should be in a common place within your DocumentRoot. -->
+      			</td>
+			<td>
+				<a href="http://www.weather.gov/disclaimer.php" class="homepagelinks"><span class="gray">Disclaimer</span></a><br>
+				<a href="http://www.cio.noaa.gov/Policy_Programs/info_quality.html" class="homepagelinks"><span class="gray">Information Quality</span></a><br>
+				<a href="http://www.nws.noaa.gov/credits.php" class="homepagelinks"><span class="gray">Credits</span></a><br>
+				<a href="http://www.nws.noaa.gov/glossary/" class="homepagelinks"><span class="gray">Glossary</span></a><br>
+			</td>
+			<td align="right">
+				<a href="http://www.weather.gov/privacy.php" class="homepagelinks"><span class="gray">Privacy Policy</span></a><br>
+				<a href="http://www.rdc.noaa.gov/%7Efoia/" class="homepagelinks"><span class="gray">Freedom of Information Act (FOIA)</span></a><br>
+				<a href="http://www.nws.noaa.gov/admin.php" class="homepagelinks"><span class="gray">About Us</span></a><br>
+				<a href="http://www.nws.noaa.gov/careers.php" class="homepagelinks"><span class="gray">Career Opportunities</span></a><br>
+			</td>
+		</tr>
+	</tbody>
+</table>
+   <!-- Use virtual include, because this should be in a common place within your DocumentRoot. -->
+    </td>
+  </tr> 
+</table>
+</body>
+</html>

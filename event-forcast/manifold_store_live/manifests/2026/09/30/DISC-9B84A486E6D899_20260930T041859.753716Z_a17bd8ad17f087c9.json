@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-9B84A486E6D899",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "federated-analytics.js",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:59.753716Z",
+  "request_url": "https://hads.ncep.noaa.gov/federated-analytics.js?agency=OAR&sub-agency=ESRLGSD&sp=find&yt=true",
+  "final_url": "https://hads.ncep.noaa.gov/federated-analytics.js?agency=OAR&sub-agency=ESRLGSD&sp=find&yt=true",
+  "status_code": 200,
+  "content_type": "application/javascript",
+  "byte_length": 62585,
+  "sha256": "a17bd8ad17f087c9ac2f9e537d517d23915dc9185f7f63f2f915ed44058f9e70",
+  "etag": null,
+  "last_modified": "Tue, 10 May 2016 17:56:33 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-9B84A486E6D899\\20260930T041859.753716Z_a17bd8ad17f087c9.js",
+  "parent_id": "DISC-984A4AB343800E",
+  "discovery_depth": 2
+}

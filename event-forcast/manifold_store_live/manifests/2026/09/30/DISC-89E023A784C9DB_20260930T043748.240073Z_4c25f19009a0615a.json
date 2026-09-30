@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-89E023A784C9DB",
+  "provider": "NOAA/NCEP",
+  "dataset": "space-weather-overview",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:48.240073Z",
+  "request_url": "https://www.spaceweather.gov/products/space-weather-overview",
+  "final_url": "https://www.spaceweather.gov/products/space-weather-overview",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 67165,
+  "sha256": "4c25f19009a0615a7c0df174c01172d8357ac635574c333bc82c0974b6c7fc13",
+  "etag": "\"1790701301\"",
+  "last_modified": "Tue, 29 Sep 2026 17:01:41 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-89E023A784C9DB\\20260930T043748.240073Z_4c25f19009a0615a.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

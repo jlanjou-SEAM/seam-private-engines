@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-685B77BB1B6BFA",
+  "provider": "NOAA/NCEP",
+  "dataset": "sounding-model-area.php",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:24.824219Z",
+  "request_url": "https://mag.ncep.noaa.gov/sounding-model-area.php",
+  "final_url": "https://mag.ncep.noaa.gov/sounding-model-area.php",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 18441,
+  "sha256": "20d40c87b0d7dd0a7f4bd4c749eaff0fb9002724d61717e811b5937244fac18f",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-685B77BB1B6BFA\\20260930T041924.824219Z_20d40c87b0d7dd0a.php",
+  "parent_id": "DISC-FA58CABCA4D1CB",
+  "discovery_depth": 2
+}

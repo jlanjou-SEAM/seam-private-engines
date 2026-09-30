@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-4F212071004BAD",
+  "provider": "NOAA/NDBC",
+  "dataset": "PEXA2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:32:55.946804Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PEXA2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PEXA2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 609966,
+  "sha256": "2511ee3e92bcc532e691746257016d75eaf0f40d69af9fd58ea96def97df534d",
+  "etag": "\"94eae-65cabafe0524d\"",
+  "last_modified": "Wed, 30 Sep 2026 04:25:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-4F212071004BAD\\20260930T043255.946804Z_2511ee3e92bcc532.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

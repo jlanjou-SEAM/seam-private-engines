@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-76DE8BB61041E1",
+  "provider": "NOAA/NCEI",
+  "dataset": "adt%20hursat%20teaser.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:39.409215Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/adt%20hursat%20teaser.png?itok=oGiGUWvA",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/adt%20hursat%20teaser.png?itok=oGiGUWvA",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 222581,
+  "sha256": "ef7854f70b1d0553f9eb2b35286d8a2c6c9bace9b5e801e30cad87f96b028fc7",
+  "etag": null,
+  "last_modified": "Mon, 02 Mar 2026 20:32:08 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-76DE8BB61041E1\\20260930T044639.409215Z_ef7854f70b1d0553.png",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

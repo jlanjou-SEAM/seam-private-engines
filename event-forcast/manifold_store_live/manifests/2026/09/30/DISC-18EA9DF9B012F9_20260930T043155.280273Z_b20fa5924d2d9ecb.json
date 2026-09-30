@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-18EA9DF9B012F9",
+  "provider": "USGS Water Data",
+  "dataset": "hydrologic-unit-codes",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:31:55.280273Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/hydrologic-unit-codes",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/hydrologic-unit-codes",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 4651,
+  "sha256": "b20fa5924d2d9ecbc2a8944eaf22c387bc4b20130b087fe07061aaa529becb88",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\30\\DISC-18EA9DF9B012F9\\20260930T043155.280273Z_b20fa5924d2d9ecb.json",
+  "parent_id": "DISC-50BE965810B0D9",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-7738BBE6ADA42B",
+  "provider": "NOAA/NCEI",
+  "dataset": "NCEI_reinsurance_Jan17%20Info_final_508c_0.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:21.407594Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2023-07/NCEI_reinsurance_Jan17%20Info_final_508c_0.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2023-07/NCEI_reinsurance_Jan17%20Info_final_508c_0.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 1619119,
+  "sha256": "a5b9712743cf23cba5ee1939895ca64ed8fba639a03f0b693eadaec213d1ffe5",
+  "etag": null,
+  "last_modified": "Mon, 17 Jul 2023 13:49:21 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7738BBE6ADA42B\\20260930T044721.407594Z_a5b9712743cf23cb.pdf",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

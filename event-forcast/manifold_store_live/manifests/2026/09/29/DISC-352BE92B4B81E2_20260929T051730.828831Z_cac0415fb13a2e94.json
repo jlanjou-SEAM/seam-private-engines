@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-352BE92B4B81E2",
+  "provider": "NOAA/SWPC",
+  "dataset": "predicted_monthly_sunspot_number.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-29T05:17:30.828831Z",
+  "request_url": "https://services.swpc.noaa.gov/json/predicted_monthly_sunspot_number.json",
+  "final_url": "https://services.swpc.noaa.gov/json/predicted_monthly_sunspot_number.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 6994,
+  "sha256": "cac0415fb13a2e9487098987035462538c6a1ae497e4c3e6a29c0307d56f90aa",
+  "etag": "\"1b52-65c9842c02867\"",
+  "last_modified": "Tue, 29 Sep 2026 05:14:44 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\29\\DISC-352BE92B4B81E2\\20260929T051730.828831Z_cac0415fb13a2e94.json",
+  "parent_id": "SWPC-JSON",
+  "discovery_depth": 1
+}

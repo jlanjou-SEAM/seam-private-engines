@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-D8729E3261B3AE",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "Bureau_of_Meteorology_warning_products_user_guide.pdf",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:14.251540Z",
+  "request_url": "https://www.bom.gov.au/catalogue/Bureau_of_Meteorology_warning_products_user_guide.pdf",
+  "final_url": "https://www.bom.gov.au/catalogue/Bureau_of_Meteorology_warning_products_user_guide.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 1578976,
+  "sha256": "1a69b3a0e7ec1527f07687aad2eab91b1f066afd6664d5838e452f4322ffab20",
+  "etag": "\"c80ce4-1817e0-657ce4901d400\"",
+  "last_modified": "Thu, 30 Jul 2026 06:36:00 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-D8729E3261B3AE\\20260930T040614.251540Z_1a69b3a0e7ec1527.pdf",
+  "parent_id": "BOM-DATA",
+  "discovery_depth": 1
+}

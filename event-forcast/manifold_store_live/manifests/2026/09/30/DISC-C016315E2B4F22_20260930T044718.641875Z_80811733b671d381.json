@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-C016315E2B4F22",
+  "provider": "NOAA/NCEI",
+  "dataset": "frost-protected-shallow-foundations",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:18.641875Z",
+  "request_url": "https://www.ncei.noaa.gov/products/land-based-station/frost-protected-shallow-foundations",
+  "final_url": "https://www.ncei.noaa.gov/products/land-based-station/frost-protected-shallow-foundations",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 38673,
+  "sha256": "80811733b671d381bd83e3e1654ef140f0d9971cd7475c6d229210357cd243a7",
+  "etag": "\"1790718823-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:53:43 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C016315E2B4F22\\20260930T044718.641875Z_80811733b671d381.html",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

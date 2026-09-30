@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-5255B844C4DDFC",
+  "provider": "UCAR/Unidata",
+  "dataset": "satellite-data",
+  "sector": "research",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:25.224363Z",
+  "request_url": "https://www.unidata.ucar.edu/data/satellite-data",
+  "final_url": "https://www.unidata.ucar.edu/data/satellite-data",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 43581,
+  "sha256": "0be8ac7e248bcebefbf1732509f858aa59059d3f61c842383d5b7e4788670208",
+  "etag": "W/\"1790736247\"",
+  "last_modified": "Wed, 30 Sep 2026 02:44:07 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-5255B844C4DDFC\\20260930T040425.224363Z_0be8ac7e248bcebe.html",
+  "parent_id": "UCAR-IDV",
+  "discovery_depth": 1
+}

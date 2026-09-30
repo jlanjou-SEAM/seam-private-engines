@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-F307923E5EC61B",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "gapfillua_variable_list.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:02:49.444351Z",
+  "request_url": "https://madis.ncep.noaa.gov/gapfillua_variable_list.shtml",
+  "final_url": "https://madis.ncep.noaa.gov/gapfillua_variable_list.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 35795,
+  "sha256": "920ddb2a5c945bc02e6a94c9f223f6ee5e57269afece76960c79eba2b94924aa",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F307923E5EC61B\\20260930T040249.444351Z_920ddb2a5c945bc0.shtml",
+  "parent_id": "NOAA-MADIS",
+  "discovery_depth": 1
+}

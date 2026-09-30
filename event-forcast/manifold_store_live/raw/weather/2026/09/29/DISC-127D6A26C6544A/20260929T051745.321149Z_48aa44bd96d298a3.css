@@ -1,0 +1,236 @@
+/* import "partials/topnav"; */
+nav.nav {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+    border-radius: 0;
+    box-shadow: none;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    min-height: 0px;
+    height:46px;
+    font-size: 1.2rem;
+}
+
+.navbar{
+    display:block;
+    position:relative;
+}
+.navbar.active{ 
+    display:block; 
+}
+
+.m-navbar{
+    display:none;
+    overflow:hidden;
+    background-color:#f4f4f4;
+}
+
+.navbar-toggle{
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-color: #ccc;
+}
+.navbar-toggle:active, .m-navbar .navbar-toggle:focus, {
+    outline:none;
+}
+.navbar-toggle:hover{
+    background-color: #ddd;
+    border-color: #bbb;
+    outline:none;
+}
+.navbar-toggle .icon-bar{
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin-top:4px;
+    border-radius: 1px;
+    background-color: #888;
+}
+.navbar-toggle .icon-bar:first-of-type{
+    margin-top:0px;
+}
+
+
+
+.nav-menu {
+    margin:0 0 0 2.2em;
+    padding:0px;
+    list-style:none;
+}
+.nav-menu li {
+    position:relative;
+    float:left;
+    padding: 0;
+}
+
+.nav-menu li a{
+    display: block;
+    float: left;
+    padding: 10px 12px;
+    position: relative;
+    line-height: 24px;
+    vertical-align: middle;
+    text-decoration: none;
+    color:#777;
+}
+
+a.nav-menu-link{
+    text-transform: uppercase;
+}
+
+.nav-menu li.dropdown.active{
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+.dropdown .chevron{
+    display: inline-block;
+    width: 11px;
+    height: 9px;
+    vertical-align: middle;
+    background:transparent url('../../images/caret_closed.png') right center no-repeat scroll;
+}
+
+.dropdown.active .chevron{
+    background-image: url('../../images/caret_opened.png');
+}
+
+.nav-menu li.dropdown ul.dropdown-menu{
+    display:none;
+}
+.nav-menu li.dropdown.active ul.dropdown-menu{
+    
+    display:block;
+    position:absolute;
+    top:100%;
+    left:0;
+    z-index: 1000;
+    float:left;
+    min-width:160px;
+    padding:5px 0;
+    margin-top:0;
+    text-align:left;
+    list-style:none;
+    background-color:#fff;
+    
+    border:1px solid rgba(0,0,0,.35);
+    border-top:1px solid rgba(0,0,0,.15);
+    border-radius:4px;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+    box-shadow:0 6px 12px rgba(0,0,0,.2);
+}
+.nav-menu li.dropdown:nth-child(n+7) ul.dropdown-menu {
+    left:auto;
+    right:0px;
+}
+.dropdown-menu li {
+    padding:0;
+    display:block;
+    width:100%;
+}
+.dropdown-menu li:hover{
+    background-color:#ececec;
+}
+#menu-search.dropdown-menu li{
+    background-color:transparent;
+}  
+.dropdown-menu li a{
+    font-size:1.2rem;
+    display: block;
+    padding:8px 20px;
+    clear:both;
+    font-weight:400;
+    line-height:1em;
+    color:#333;
+    background-image:none;
+    white-space:nowrap;
+}
+
+@media screen and (max-width:880px){
+    /* styles to keep menu from wrapping as it gets smaller */
+    ul.nav-menu li {padding-right: 0; padding-left: 0;}
+    ul.nav-menu li a { padding: 10px 6px; width:100%; }
+    ul.dropdown-menu li {padding-right: 0; padding-left: 0;}
+    ul.dropdown-menu li a{padding: 6px 20px;}
+}
+
+@media screen and (max-width:768px){
+    nav.nav{ 
+        height:auto;
+        border-top: 1px solid #bbb;
+        background: #cccccc;
+        background: -moz-linear-gradient(top, #dddddd 0%, #e7e7e7 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dddddd), color-stop(100%, #e7e7e7));
+        background: -webkit-linear-gradient(top, #dddddd 0%, #e7e7e7 100%);
+        background: -o-linear-gradient(top, #dddddd 0%, #e7e7e7 100%);
+        background: -ms-linear-gradient(top, #dddddd 0%, #e7e7e7 100%);
+        background: linear-gradient(to bottom, #dddddd 0%, #e7e7e7 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#e7e7e7', GradientType=0);
+    }
+    .m-navbar{ display:block; }
+    .navbar { 
+        display:none; 
+        padding-top: 7.5px;
+    }
+    .navbar.active { 
+        border-top:1px solid #ccc;
+        height:auto;
+    }
+    .navbar .nav-menu {
+        margin:0;
+    }
+    
+    .nav-menu li {
+        padding:0;
+        display:block;
+        width:100%;
+        float:none;
+    }
+    
+    .nav-menu li:hover .nav-menu-link{
+        color:#333;
+    }
+    .nav-menu li .nav-menu-link{
+        display: block;
+        float: none;
+        padding: 7px 15px;
+    }
+    .nav-menu li.dropdown.active{
+        color: #555;
+        background-color: transparent;
+    }
+    .nav-menu li.dropdown.active ul.dropdown-menu {
+        position: static;
+        float:none;
+        width:auto;
+        margin-top:0;
+        border:0;
+        background-color:#ccc;
+        box-shadow:none;
+        overflow: hidden;
+        padding-left:1em;
+    }
+
+    .nav-menu li.dropdown.active ul.dropdown-menu li:hover a{
+        color:#000;
+    }
+    ul.nav-menu li ul#menu-search:hover{
+        background-color:#ccc;
+    }
+    .nav-menu li.dropdown .chevron{
+        margin-top:0;
+        background-position: left center 5px;
+    }
+}

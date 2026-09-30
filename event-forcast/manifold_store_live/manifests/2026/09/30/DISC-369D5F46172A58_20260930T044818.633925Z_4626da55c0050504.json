@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-369D5F46172A58",
+  "provider": "NOAA/NCEI",
+  "dataset": "world-weather-records",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:18.633925Z",
+  "request_url": "https://www.ncei.noaa.gov/products/world-weather-records",
+  "final_url": "https://www.ncei.noaa.gov/products/world-weather-records",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 55843,
+  "sha256": "4626da55c0050504323dc0d8b2227624af0850e0d93b13571ae3b3726ed98bae",
+  "etag": "\"1790715781-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:03:01 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-369D5F46172A58\\20260930T044818.633925Z_4626da55c0050504.html",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

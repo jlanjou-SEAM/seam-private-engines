@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-B51CA7B38D42C9",
+  "provider": "NOAA/NCEI",
+  "dataset": "Deke-Arntd_540_x_500.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:44.921256Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2023-08/Deke-Arntd_540_x_500.jpg",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2023-08/Deke-Arntd_540_x_500.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 84985,
+  "sha256": "666d98a136309eb57deff3fb7aae4cb7016779bfd88d38d55710d6e98578b137",
+  "etag": null,
+  "last_modified": "Tue, 22 Aug 2023 19:20:53 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-B51CA7B38D42C9\\20260930T044644.921256Z_666d98a136309eb5.jpg",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

@@ -1,0 +1,25 @@
+{
+  "candidate_id": "IEM",
+  "provider": "Iowa State University",
+  "dataset": "Iowa Environmental Mesonet",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "surface",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-29T05:16:35.110723Z",
+  "request_url": "https://mesonet.agron.iastate.edu/",
+  "final_url": "https://mesonet.agron.iastate.edu/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 45740,
+  "sha256": "ba201969da617576763686ea87650f5503eb0132b564d377421ab31ce2ed37c7",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\IEM\\20260929T051635.110723Z_ba201969da617576.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

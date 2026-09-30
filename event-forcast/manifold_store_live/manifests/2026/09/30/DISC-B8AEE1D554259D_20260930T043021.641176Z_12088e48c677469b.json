@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-B8AEE1D554259D",
+  "provider": "UCAR/Unidata",
+  "dataset": "archived-data-access-0",
+  "sector": "research",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:30:21.641176Z",
+  "request_url": "https://www.unidata.ucar.edu/data/archived-data-access-0",
+  "final_url": "https://www.unidata.ucar.edu/data/archived-data-access-0",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 51259,
+  "sha256": "12088e48c677469b23ec252c434783305a6e1f4bf6af461cc383d41ea17a2df8",
+  "etag": "W/\"1790742621\"",
+  "last_modified": "Wed, 30 Sep 2026 04:30:21 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-B8AEE1D554259D\\20260930T043021.641176Z_12088e48c677469b.html",
+  "parent_id": "UCAR-IDV",
+  "discovery_depth": 1
+}

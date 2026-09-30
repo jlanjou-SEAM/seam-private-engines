@@ -1,0 +1,1221 @@
+{
+  "urls": {
+    "warning": "warning/data/r8/panel.json",
+    "flood": "flood/data/r8/flood-panel.json",
+    "probability": "probability/data/probability/r8/panel.json",
+    "tornado": "information/data/r8/tornado-panel.json",
+    "kirokuame": "information/data/r8/kirokuame-panel.json",
+    "tanjiyuki": "information/data/r8/tanjiyuki-panel.json",
+    "senjou": "information/data/r8/senjou-panel.json",
+    "heat": "information/data/r8/heat-panel.json",
+    "spheat": "information/data/r8/spheat-panel.json",
+    "quake": "quake/data/quake-panel.json",
+    "ltpgm": "ltpgm/data/ltpgm-panel.json",
+    "tsunami": "tsunami/data/tsunami-panel.json",
+    "ashfall": "volcano/data/ashfall/panel.json",
+    "volcano": "volcano/data/warning.json",
+    "eruption": "volcano/data/eruption.json",
+    "volcanoinfo": "volcano/data/info.json",
+    "volcanolist": "volcano/const/volcano_list.json",
+    "volcanoarea": "panel/const/volcano_area.json",
+    "volcanoname": "panel/const/volcano_name.json"
+  },
+  "lines": [
+    [
+      "tsunamiWarning", "nankaiTrough", "nihonChishima",
+      "earthquakeIntencity", "ltpgm"
+    ],
+    [
+      "probability", "inundation", "landslide", "flood", "wind",
+      "wind_snow", "snow", "wave", "tide", "thunder",
+      "snow_melting", "fog", "dry", "avalanche", "cold",
+      "frost", "ice_accretion", "snow_accretion",
+      "tornado", "kirokuame", "tanjiyuki", "senjouHassei", "senjouChokuzen", "senjouYosoku12h", "spheat", "heat"
+    ],
+    [
+      "volcano"
+    ]
+  ],
+  "panels": {
+    "landslide": {
+      "url": [
+        "warning",
+        "probability"
+      ],
+      "type": "forecast",
+      "name": {
+        "10": "土砂災害<br />[レベル１]",
+        "20": "土砂災害<br />[レベル２]",
+        "30": "土砂災害<br />[レベル３相当]",
+        "40": "土砂災害<br />[レベル４相当]",
+        "50": "土砂災害<br />[レベル５相当]"
+      },
+      "enName": {
+        "10": "Landslide<br />[Level 1]",
+        "20": "Landslide<br />[Level 2]",
+        "30": "Landslide<br />[Level 3 eq.]",
+        "40": "Landslide<br />[Level 4 eq.]",
+        "50": "Landslide<br />[Level 5 eq.]"
+      },
+      "title": "土砂災害",
+      "enTitle": "Landslide",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=landslide&contents=warning",
+          "enUrl": "map.html#elem=landslide&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "hrefLevel1Japan": {
+        "url": "map.html#elem=landslide&contents=probability",
+        "enUrl": "map.html#elem=landslide&contents=probability&lang=en"
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "inundation": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "大雨<br />[レベル２]",
+        "30": "大雨<br />[レベル３相当]",
+        "40": "大雨<br />[レベル４相当]",
+        "50": "大雨<br />[レベル５相当]"
+      },
+      "enName": {
+        "20": "Heavy Rain<br />[Level 2]",
+        "30": "Heavy Rain<br />[Level 3 eq.]",
+        "40": "Heavy Rain<br />[Level 4 eq.]",
+        "50": "Heavy Rain<br />[Level 5 eq.]"
+      },
+      "title": "大雨",
+      "enTitle": "Heavy Rain",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=rain&contents=warning",
+          "enUrl": "map.html#elem=rain&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "flood": {
+      "url": [
+        "flood"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "氾濫<br />[レベル２]",
+        "30": "氾濫<br />[レベル３相当]",
+        "40": "氾濫<br />[レベル４相当]",
+        "50": "氾濫<br />[レベル５相当]"
+      },
+      "enName": {
+        "20": "Flood<br />[Level 2]",
+        "30": "Flood<br />[Level 3 eq.]",
+        "40": "Flood<br />[Level 4 eq.]",
+        "50": "Flood<br />[Level 5 eq.]"
+      },
+      "title": "氾濫",
+      "enTitle": "Flooding",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=flood&contents=warning",
+          "enUrl": "map.html#elem=flood&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "wind": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "強風",
+        "30": "暴風",
+        "50": "暴風"
+      },
+      "enName": {
+        "20": "Gale",
+        "30": "Storm",
+        "50": "Storm"
+      },
+      "title": "暴風・強風",
+      "enTitle": "Storm/Gale",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=wind&contents=warning",
+          "enUrl": "map.html#elem=wind&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "wind_snow": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "風雪",
+        "30": "暴風雪",
+        "50": "暴風雪"
+      },
+      "enName": {
+        "20": "Gale and Snow",
+        "30": "Snowstorm",
+        "50": "Snowstorm"
+      },
+      "title": "暴風雪・風雪",
+      "enTitle": "Snowstorm/Gale and Snow",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=wind_snow&contents=warning",
+          "enUrl": "map.html#elem=wind_snow&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "snow": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "大雪",
+        "30": "大雪",
+        "50": "大雪"
+      },
+      "enName": {
+        "20": "Heavy Snow",
+        "30": "Heavy Snow",
+        "50": "Heavy Snow"
+      },
+      "title": "大雪",
+      "enTitle": "Heavy Snow",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=snow&contents=warning",
+          "enUrl": "map.html#elem=snow&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "wave": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "波浪",
+        "30": "波浪",
+        "50": "波浪"
+      },
+      "enName": {
+        "20": "High Wave",
+        "30": "High Wave",
+        "50": "High Wave"
+      },
+      "title": "波浪",
+      "enTitle": "High Wave",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=wave&contents=warning",
+          "enUrl": "map.html#elem=wave&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "tide": {
+      "url": [
+        "warning",
+        "probability"
+      ],
+      "type": "forecast",
+      "name": {
+        "10": "高潮<br>[レベル１]",
+        "20": "高潮<br />[レベル２]",
+        "30": "高潮<br />[レベル３相当]",
+        "40": "高潮<br />[レベル４相当]",
+        "50": "高潮<br />[レベル５相当]"
+      },
+      "enName": {
+        "10": "Storm Surge<br />[Level 1]",
+        "20": "Storm Surge<br />[Level 2]",
+        "30": "Storm Surge<br />[Level 3 eq.]",
+        "40": "Storm Surge<br />[Level 4 eq.]",
+        "50": "Storm Surge<br />[Level 5 eq.]"
+      },
+      "title": "高潮",
+      "enTitle": "Storm Surge",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=tide&contents=warning",
+          "enUrl": "map.html#elem=tide&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "hrefLevel1Japan": {
+        "url": "map.html#elem=tide&contents=probability",
+        "enUrl": "map.html#elem=tide&contents=probability&lang=en"
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "thunder": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "雷"
+      },
+      "enName": {
+        "20": "Thunder Storm"
+      },
+      "title": "雷",
+      "enTitle": "Thunder Storm",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=thunder&contents=warning",
+          "enUrl": "map.html#elem=thunder&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "snow_melting": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "融雪"
+      },
+      "enName": {
+        "20": "Snow Melting"
+      },
+      "title": "融雪",
+      "enTitle": "Snow Melting",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=snow_melting&contents=warning",
+          "enUrl": "map.html#elem=snow_melting&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "fog": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "濃霧"
+      },
+      "enName": {
+        "20": "Dense Fog"
+      },
+      "title": "濃霧",
+      "enTitle": "Dense Fog",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=fog&contents=warning",
+          "enUrl": "map.html#elem=fog&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "dry": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "乾燥"
+      },
+      "enName": {
+        "20": "Dry Air"
+      },
+      "title": "乾燥",
+      "enTitle": "Dry Air",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=dry&contents=warning",
+          "enUrl": "map.html#elem=dry&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "avalanche": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "なだれ"
+      },
+      "enName": {
+        "20": "Avalanche"
+      },
+      "title": "なだれ",
+      "enTitle": "Avalanche",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=avalanche&contents=warning",
+          "enUrl": "map.html#elem=avalanche&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "cold": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "低温"
+      },
+      "enName": {
+        "20": "Low Temperature"
+      },
+      "title": "低温",
+      "enTitle": "Low Temperature",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=cold&contents=warning",
+          "enUrl": "map.html#elem=cold&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "frost": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "霜"
+      },
+      "enName": {
+        "20": "Frost"
+      },
+      "title": "霜",
+      "enTitle": "Frost",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=frost&contents=warning",
+          "enUrl": "map.html#elem=frost&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "ice_accretion": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "着氷"
+      },
+      "enName": {
+        "20": "Ice Accretion"
+      },
+      "title": "着氷",
+      "enTitle": "Ice Accretion",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=ice_accretion&contents=warning",
+          "enUrl": "map.html#elem=ice_accretion&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "snow_accretion": {
+      "url": [
+        "warning"
+      ],
+      "type": "forecast",
+      "name": {
+        "20": "着雪"
+      },
+      "enName": {
+        "20": "Snow Accretion"
+      },
+      "title": "着雪",
+      "enTitle": "Snow Accretion",
+      "area-possession": true,
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=snow_accretion&contents=warning",
+          "enUrl": "map.html#elem=snow_accretion&contents=warning&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "tornado": {
+      "type": "forecast",
+      "extraNumber": 20000,
+      "url": ["tornado"],
+      "name": {
+        "25": "竜巻"
+      },
+      "enName": {
+        "25": "Hazardous Wind Watch"
+      },
+      "title": "竜巻",
+      "enTitle": "Tornado",
+      "priority": 5,
+      "area-possession": true,
+      "href": {
+        "japan": {
+          "url": "map.html#element=tornado&contents=information",
+          "enUrl": "map.html#element=tornado&contents=information_en&lang=en"
+        },
+        "offices": {
+          "url": "information/#format=table",
+          "enUrl": "map.html#element=tornado&contents=information_en&lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "information/#format=table",
+          "enUrl": "map.html#element=tornado&contents=information_en&lang=en",
+          "area": "offices"
+        }
+      },
+      "reference": {
+        "japan": "class10s",
+        "offices": "class10s",
+        "class20s": "class10s"
+      }
+    },
+    "probability": {
+      "type": "forecast",
+      "url": ["probability"],
+      "name": {
+        "10": "大雨<br>[レベル１]"
+      },
+      "enName": {
+        "10": "Heavy Rain"
+      },
+      "title": "大雨",
+      "enTitle": "Heavy Rain",
+      "relations": ["inundation"],
+      "priority": 5,
+      "area-possession": true,
+      "href": {
+        "japan": {
+          "url": "map.html#elem=rain&contents=probability",
+          "enUrl": "map.html#elem=rain&contents=probability&lang=en"
+        },
+        "offices": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "warning/",
+          "enUrl": "warning/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class10s",
+        "offices": "class10s",
+        "class20s": "class10s"
+      }
+    },
+    "kirokuame": {
+      "extraNumber": 10000,
+      "url": ["kirokuame"],
+      "type": "forecast",
+      "name": {
+        "27": "記録雨"
+      },
+      "enName": {
+        "27": "Heavy Rain"
+      },
+      "title": "記録的短時間大雨情報",
+      "enTitle": "Heavy Rain",
+      "priority": 5,
+      "area-possession": true,
+      "href": {
+        "japan": {
+          "url": "map.html#element=kirokuame&contents=information",
+          "enUrl": "map.html#element=kirokuame&contents=information_en&lang=en"
+        },
+        "offices": {
+          "url": "information/#format=table",
+          "enUrl": "map.html#element=kirokuame&contents=information_en&lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "information/#format=table",
+          "enUrl": "map.html#element=kirokuame&contents=information_en&lang=en",
+          "area": "offices"
+        }
+      },
+      "reference": {
+        "japan": "class10s",
+        "offices": "class10s",
+        "class20s": "class10s"
+      }
+    },
+    "tanjiyuki": {
+      "extraNumber": 10000,
+      "url": ["tanjiyuki"],
+      "type": "forecast",
+      "name": {
+        "27": "短時間大雪"
+      },
+      "enName": {
+        "27": "Heavy Snow"
+      },
+      "title": "気象防災速報（短時間大雪）",
+      "enTitle": "Heavy Snow",
+      "priority": 5,
+      "area-possession": true,
+      "href": {
+        "japan": {
+          "url": "map.html#element=tanjiyuki&contents=information"
+        },
+        "offices": {
+          "url": "information/#format=table",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "information/#format=table",
+          "area": "offices"
+        }
+      },
+      "reference": {
+        "japan": "class10s",
+        "offices": "class10s",
+        "class20s": "class10s"
+      }
+    },
+    "senjouHassei": {
+      "extraNumber": 10000,
+      "url": ["senjou"],
+      "type": "forecast",
+      "name": {
+        "24": "線状降水帯<br />発生"
+      },
+      "enName": {
+        "24": "Torential Rain"
+      },
+      "title": "線状降水帯発生",
+      "enTitle": "Torential Rain",
+      "priority": 5,
+      "area-possession": true,
+      "href": {
+        "japan": {
+          "url": "map.html#element=senjoualert&contents=information"
+        },
+        "offices": {
+          "url": "information/#format=table",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "information/#format=table",
+          "area": "offices"
+        }
+      },
+      "reference": {
+        "japan": "class10s",
+        "offices": "class10s",
+        "class20s": "class10s"
+      }
+    },
+    "senjouChokuzen": {
+      "extraNumber": 10000,
+      "url": ["senjou"],
+      "type": "forecast",
+      "name": {
+        "23": "線状降水帯<br />直前予測"
+      },
+      "enName": {
+        "23": "Just Before Torential Rain"
+      },
+      "title": "線状降水帯発直前",
+      "enTitle": "Just Before Torential Rain",
+      "priority": 5,
+      "area-possession": true,
+      "href": {
+        "japan": {
+          "url": "map.html#element=senjoualert&contents=information"
+        },
+        "offices": {
+          "url": "information/#format=table",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "information/#format=table",
+          "area": "offices"
+        }
+      },
+      "reference": {
+        "japan": "class10s",
+        "offices": "class10s",
+        "class20s": "class10s"
+      }
+    },
+    "senjouYosoku12h": {
+      "extraNumber": 10000,
+      "url": ["senjou"],
+      "type": "forecast",
+      "name": {
+        "22": "線状降水帯<br />半日前予測"
+      },
+      "enName": {
+        "22": "Before Torential Rain"
+      },
+      "title": "線状降水帯半日前予測",
+      "enTitle": "Before Torential Rain",
+      "priority": 5,
+      "area-possession": true,
+      "href": {
+        "japan": {
+          "url": "map.html#element=senjouinfo&contents=information"
+        },
+        "offices": {
+          "url": "information/#format=table",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "information/#format=table",
+          "area": "offices"
+        }
+      },
+      "reference": {
+        "japan": "class10s",
+        "offices": "class10s",
+        "class20s": "class10s"
+      }
+    },
+    "heat": {
+      "extraNumber": 10000,
+      "url": ["heat"],
+      "type": "forecast",
+      "name": {
+        "28": "熱中症警戒<br>アラート"
+      },
+      "enName": {
+        "28": "Heat Stroke Alert"
+      },
+      "title": "熱中症警戒アラート",
+      "enTitle": "Heat Stroke Alert",
+      "relations": ["spheat"],
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "https://www.wbgt.env.go.jp/alert.php",
+          "enUrl": "https://www.wbgt.env.go.jp/en/"
+        },
+        "offices": {
+          "url": "https://www.wbgt.env.go.jp/alert.php",
+          "enUrl": "https://www.wbgt.env.go.jp/en/"
+        },
+        "class20s": {
+          "url": "https://www.wbgt.env.go.jp/alert.php",
+          "enUrl": "https://www.wbgt.env.go.jp/en/"
+        }
+      },
+      "reference": {
+        "japan": "class10s",
+        "offices": "class10s",
+        "class20s": "class10s"
+      }
+    },
+    "spheat": {
+      "extraNumber": 10000,
+      "url": ["spheat"],
+      "type": "forecast",
+      "name": {
+        "29": "熱中症特別<br>警戒アラート"
+      },
+      "enName": {
+        "29": "Special Heat Stroke Alert"
+      },
+      "title": "熱中症特別警戒アラート",
+      "enTitle": "Special Heat Stroke Alert",
+      "priority": 5,
+      "href": {
+        "japan": {
+          "url": "https://www.wbgt.env.go.jp/alert.php",
+          "enUrl": "https://www.wbgt.env.go.jp/en/"
+        },
+        "offices": {
+          "url": "https://www.wbgt.env.go.jp/alert.php",
+          "enUrl": "https://www.wbgt.env.go.jp/en/"
+        },
+        "class20s": {
+          "url": "https://www.wbgt.env.go.jp/alert.php",
+          "enUrl": "https://www.wbgt.env.go.jp/en/"
+        }
+      },
+      "reference": {
+        "japan": "offices",
+        "offices": "offices",
+        "class20s": "offices"
+      }
+    },
+    "tsunamiWarning": {
+      "extraNumber": 10000,
+      "url": ["tsunami"],
+      "type": "tsunami",
+      "name": {
+        "40": "大津波警報",
+        "30": "津波警報",
+        "20": "津波注意報"
+      },
+      "enName": {
+        "40": "Tsunami",
+        "30": "Tsunami",
+        "20": "Tsunami"
+      },
+      "title": "津波警報・注意報",
+      "enTitle": "Tsunami Warnings/Advisories",
+      "priority": 0,
+      "area-possession": true,
+      "href": {
+        "japan": {
+          "url": "map.html#contents=tsunami",
+          "enUrl": "map.html#contents=tsunami&lang=en"
+        },
+        "offices": {
+          "url": "map.html#contents=tsunami",
+          "enUrl": "map.html#contents=tsunami&lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "map.html#contents=tsunami",
+          "enUrl": "map.html#contents=tsunami&lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "earthquakeIntencity": {
+      "url": ["quake"],
+      "type": "quake",
+      "name": {
+        "65": "震度７",
+        "60": "震度６強",
+        "55": "震度６弱",
+        "50": "震度５強",
+        "45": "震度５弱",
+        "40": "震度５弱以上と推定"
+      },
+      "enName": {
+        "65": "Seismic intensity values of 7",
+        "60": "Seismic intensity values of 6 Upper",
+        "55": "Seismic intensity values of 6 Lower",
+        "50": "Seismic intensity values of 5 Upper",
+        "45": "Seismic intensity values of 5 Lower",
+        "40": "Seismic intensity of 5-lower or more"
+      },
+      "title": "地震情報",
+      "enTitle": "Earthquake Information",
+      "priority": 0,
+      "area-possession": true,
+      "href": {
+        "japan": {
+          "url": "map.html#contents=earthquake_map",
+          "enUrl": "map.html#contents=earthquake_map&lang=en"
+        },
+        "offices": {
+          "url": "map.html#contents=earthquake_map",
+          "enUrl": "map.html#contents=earthquake_map&lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "map.html#contents=earthquake_map",
+          "enUrl": "map.html#contents=earthquake_map&lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "ltpgm": {
+      "url": ["ltpgm"],
+      "type": "quake",
+      "name": {
+        "30": "長周期地震動<br>観測情報"
+      },
+      "enName": {
+        "30": "Long-period ground motion Information"
+      },
+      "title": "長周期地震動に関する観測情報",
+      "enTitle": "Long-period ground motion Information",
+      "priority": 0,
+      "area-possession": true,
+      "href": {
+        "japan": {
+          "url": "map.html#contents=ltpgm",
+          "enUrl": "map.html#contents=ltpgm&lang=en"
+        },
+        "offices": {
+          "url": "map.html#contents=ltpgm",
+          "enUrl": "map.html#contents=ltpgm&lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "map.html#contents=ltpgm",
+          "enUrl": "map.html#contents=ltpgm&lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "nankaiTrough": {
+      "url": ["quake"],
+      "type": "quake",
+      "name": {
+        "30": "南海トラフ地震<br>臨時情報"
+      },
+      "enName": {
+        "30": "Nankai Trough Earthquake Extra Information"
+      },
+      "title": "南海トラフ地震臨時情報",
+      "enTitle": "Nankai Trough Earthquake Extra Information",
+      "priority": 0,
+      "area-possession": true,
+      "href": {
+        "japan": {
+          "url": "nteq/",
+          "enUrl": "nteq/#lang=en"
+        },
+        "offices": {
+          "url": "nteq/",
+          "enUrl": "nteq/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "nteq/",
+          "enUrl": "nteq/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    },
+    "nihonChishima": {
+      "url": ["quake"],
+      "type": "quake",
+      "name": {
+        "30": "北海道・三陸沖<br>後発地震<br>注意情報"
+      },
+      "enName": {
+        "30": "<span class='small'>Off the Coast of Hokkaido and Sanriku Subsequent Earthquake Advisory</span>"
+      },
+      "title": "北海道・三陸沖後発地震注意情報",
+      "enTitle": "Off the Coast of Hokkaido and Sanriku Subsequent Earthquake Advisory",
+      "priority": 0,
+      "area-possession": true,
+      "href": {
+        "japan": {
+          "url": "nceq/",
+          "enUrl": "nceq/#lang=en"
+        },
+        "offices": {
+          "url": "nceq/",
+          "enUrl": "nceq/#lang=en",
+          "area": "offices"
+        },
+        "class20s": {
+          "url": "nceq/",
+          "enUrl": "nceq/#lang=en",
+          "area": "class20s"
+        }
+      },
+      "reference": {
+        "japan": "class20s",
+        "offices": "class20s",
+        "class20s": "class20s"
+      }
+    }
+  }
+}

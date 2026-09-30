@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-4162169841EA38",
+  "provider": "Japan Meteorological Agency",
+  "dataset": "river_order.json",
+  "sector": "public",
+  "country": "JP",
+  "scientific_regime": [
+    "weather",
+    "seismic",
+    "hazards"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:06.098514Z",
+  "request_url": "https://www.jma.go.jp/bosai/flood/const/river_order.json",
+  "final_url": "https://www.jma.go.jp/bosai/flood/const/river_order.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 6379,
+  "sha256": "51ae58333d3b5d96b60769e8958a3b0586d8245f6b44ee9027c5fa536c63960d",
+  "etag": "\"09805e45da9b49dd4438a8e02e3d49cb\"",
+  "last_modified": "Tue, 29 Sep 2026 04:55:01 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4162169841EA38\\20260930T041006.098514Z_51ae58333d3b5d96.json",
+  "parent_id": "JMA-BOSAI",
+  "discovery_depth": 1
+}

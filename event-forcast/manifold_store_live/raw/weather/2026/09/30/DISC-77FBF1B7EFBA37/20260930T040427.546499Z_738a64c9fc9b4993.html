@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-select/src/Leaflet.select.css" />
+    <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/leaflet-fullscreen@1.0.2/dist/leaflet.fullscreen.css" />
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #map {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .leaflet-bar a,
+        .leaflet-bar a:hover {
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #555;
+        }
+
+        .legend {
+            color: #555;
+            padding: 6px 8px;
+            font: 13 pxArial, Helvetica, sans-serif;
+            font-weight: bold;
+            background: white;
+            background: rgba(255, 255, 255, 0.8);
+            /*            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
+            border-radius: 5px;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            border-bottom: none;
+            border-bottom-width: initial;
+            border-bottom-style: none;
+            border-bottom-color: initial;
+            border: 2px solid rgba(0, 0, 0, .3);
+            border-radius: 4px;
+            width: 300px;
+        }
+
+        .legend span,
+        .legend label {
+            display: block;
+            width: 55px;
+            height: 18px;
+            float: left;
+            opacity: 0.7;
+            text-align: center;
+            font-size: 80%
+        }
+
+        .legend ul {
+            text-align: center;
+            display: block;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            clear: both;
+        }
+
+        .legend li {
+            display: inline-block;
+            width: 1.25px;
+            height: 22px;
+        }
+
+        .legend .min {
+            float: left;
+            padding-bottom: 5px;
+            padding-left: 20px;
+        }
+
+        .legend .max {
+            float: right;
+            padding-bottom: 5px;
+            padding-right: 20px;
+        }
+
+        .legend span {
+            width: 50px;
+            height: 18px;
+            float: left;
+            margin: 0 8px 0 0;
+            opacity: 0.7;
+        }
+
+
+        .popupImage {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .legend .dropdown {
+            background: transparent;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath fill='%23555' d='M2.2 4.1 6 7.9l3.8-3.8.9.9L6 9.7 1.3 5z'/%3E%3C/svg%3E");
+            background-position: right 10px center;
+            background-repeat: no-repeat;
+            background-size: 12px 12px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            display: block;
+            margin-right: 0px;
+            margin-top: 0px;
+            border: none;
+            font-size: 14px;
+            height: 29px;
+            padding: 0 32px 0 8px;
+            width: 300px;
+        }
+
+        .legend .map-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 300px;
+        }
+
+        .legend .control-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .legend .dropdown.compact {
+            flex: 1;
+            width: auto;
+        }
+
+        .legend .refresh-button {
+            height: 29px;
+            padding: 0 12px;
+            border: 1px solid #b6b6b6;
+            border-radius: 4px;
+            background: #fff;
+            color: #333;
+            cursor: pointer;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+
+        .legend .refresh-button:disabled {
+            cursor: default;
+            opacity: 0.65;
+        }
+
+        .legend .status-text {
+            min-height: 16px;
+            font-size: 12px;
+            text-align: center;
+            color: #444;
+        }
+
+        #map .leaflet-div-icon b {
+            display: inline-block;
+            padding: 3px;
+            border: 1px solid #666;
+            border-radius: 3px;
+            background: #fff;
+            transform: translate(-50%, -50%);
+        }
+
+        #map .leaflet-div-icon {
+            width: 0;
+            height: 0;
+            border: 0;
+            padding: 0;
+        }
+
+        .floating-logo {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+        }
+
+        .floating-logo img {
+            display: block;
+            max-width: 175px;
+            max-height: 175px;
+            width: auto;
+            height: auto;
+        }
+
+        @media only screen and (max-width: 479px) {
+            .legend .legend-content {
+                display: none !important;
+            }
+
+            .leaflet-control-attribution {
+                display: none !important;
+            }
+
+            .legend .dropdown {
+
+                background: transparent;
+                box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                display: block;
+                margin-right: 0px;
+                margin-top: 0px;
+                border: none;
+                font-size: 12px;
+                height: 19px;
+                padding: 0px;
+                width: 100%;
+
+            }
+
+            .legend .map-controls {
+                width: 100%;
+                gap: 4px;
+            }
+
+            .legend .control-row {
+                gap: 4px;
+            }
+
+            .legend .refresh-button {
+                font-size: 12px;
+                padding: 0 8px;
+            }
+
+            .legend .status-text {
+                font-size: 11px;
+            }
+
+            div.info.legend.leaflet-control {
+                width: 1000px;
+                margin-left: 54px;
+            }
+
+            .floating-logo {
+                bottom: 10px;
+                right: 10px;
+                padding: 4px;
+            }
+
+            .floating-logo img {
+                max-width: 60px;
+                max-height: 60px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id='map'></div>
+
+    <!-- Floating MCO Logo -->
+    <div class="floating-logo">
+        <img src="MCO_logo.png" alt="MCO Logo" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ajax/dist/leaflet.ajax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-providers/leaflet-providers.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/geojson/geojson.min.js"></script>
+    <script src="./choropleth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fontawesome@4.7.2/generate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fontawesome/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-select/src/min/Leaflet.select-min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/leaflet-fullscreen/dist/Leaflet.fullscreen.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/spin/dist/spin.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-spin/leaflet.spin.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/chroma-js@2.0.3/chroma.min.js"></script>
+    <script src="https://unpkg.com/flatgeobuf@3.26.2/dist/flatgeobuf-geojson.min.js"></script>
+    <script src="./leaflet-event-forwarder.js"></script>
+    <script src="dateFormat.js" , charset="utf-8"></script>
+    <script src="./mt.geojson.js"></script>
+    <script>
+        const unitHash = {
+            'degF': '°F',
+            'millibar': 'mbar',
+            'in': 'in',
+            'in hr^-1': 'in/hr',
+            'percent': '%',
+            'mS cm^-1': 'mS/cm',
+            'arcdeg': 'deg',
+            'mi hr^-1': 'mi/hr',
+            'mi h^-1': 'mi/hr',
+            'W m^-2': 'W/m²'
+        };
+
+        var vizHash = {
+            'air_temp': { col: 'RdBu', rev: true, mid: 32 },
+            'feels_like': { col: "RdBu", rev: true, mid: 32 },
+            'bp': { col: 'PuRd', rev: false },
+            'ppt': { col: 'BrBG', rev: false },
+            'ppt_midnight': { col: 'BrBG', rev: false },
+            'ppt_24': { col: 'BrBG', rev: false },
+            'ppt_2': { col: 'BrBG', rev: false },
+            'ppt_7': { col: 'BrBG', rev: false },
+            'ppt_14': { col: 'BrBG', rev: false },
+            'ppt_30': { col: 'BrBG', rev: false },
+            'ppt_60': { col: 'BrBG', rev: false },
+            'ppt_90': { col: 'BrBG', rev: false },
+            'ppt_180': { col: 'BrBG', rev: false },
+            'ppt_ytd': { col: 'BrBG', rev: false },
+            'ppt_max_rate': { col: 'BrBG', rev: false },
+            'rh': { col: 'BrBG', rev: false, mid: 50 },
+            'snow_depth': { col: 'Blues', rev: false },
+            'soil_ec_blk_shallow': { col: 'PuRd', rev: false },
+            'soil_ec_blk_mid': { col: 'PuRd', rev: false },
+            'soil_ec_blk_deep': { col: 'PuRd', rev: false },
+            'soil_temp_shallow': { col: 'RdBu', rev: true, mid: 32 },
+            'soil_temp_mid': { col: 'RdBu', rev: true, mid: 32 },
+            'soil_temp_deep': { col: 'RdBu', rev: true, mid: 32 },
+            'soil_vwc_shallow': { col: 'YlGnBu', rev: false },
+            'soil_vwc_mid': { col: 'YlGnBu', rev: false },
+            'soil_vwc_deep': { col: 'YlGnBu', rev: false },
+            'sol_rad': { col: 'YlOrRd', rev: false },
+            'wind_dir': { col: 'Spectral', rev: false },
+            'wind_spd': { col: 'YlGnBu', rev: false },
+            'windgust': { col: 'YlGnBu', rev: false },
+            'windgust_24h': { col: 'YlGnBu', rev: false },
+            'delta_vwc_shallow_1': { col: "BrBG", rev: false, mid: 0 },
+            'delta_vwc_mid_1': { col: "BrBG", rev: false, mid: 0 },
+            'delta_vwc_deep_1': { col: "BrBG", rev: false, mid: 0 },
+            'delta_vwc_shallow_7': { col: "BrBG", rev: false, mid: 0 },
+            'delta_vwc_mid_7': { col: "BrBG", rev: false, mid: 0 },
+            'delta_vwc_deep_7': { col: "BrBG", rev: false, mid: 0 },
+            'delta_vwc_shallow_14': { col: "BrBG", rev: false, mid: 0 },
+            'delta_vwc_mid_14': { col: "BrBG", rev: false, mid: 0 },
+            'delta_vwc_deep_14': { col: "BrBG", rev: false, mid: 0 },
+            'delta_vwc_shallow_30': { col: "BrBG", rev: false, mid: 0 },
+            'delta_vwc_mid_30': { col: "BrBG", rev: false, mid: 0 },
+            'delta_vwc_deep_30': { col: "BrBG", rev: false, mid: 0 },
+            'shallow_saturation': { col: "BrBG", rev: false },
+            'mid_saturation': { col: "BrBG", rev: false },
+            'deep_saturation': { col: "BrBG", rev: false },
+            'frost_depth': { col: "BrBG", rev: true },
+        };
+
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        };
+
+        function getURLS() {
+            const nomid = getQueryParam('nomid');
+            if (nomid) {
+                grouped_url = '/observations/grouped?type=json&nomid=True&callback='
+                element_url = '/elements?type=json&grouped=True&nomid=True&public=True&callback='
+            } else {
+                grouped_url = '/observations/grouped?type=json&callback='
+                element_url = '/elements?type=json&grouped=True&public=True&callback='
+            }
+            return {
+                grouped_url, element_url
+            }
+        }
+        const variableDefinitions = {
+            ppt_mid: {
+                element: 'ppt_midnight',
+                description: 'Precipiation Since Midnight',
+                description_short: 'Precipitation Since Midnight',
+                base_units: 'in',
+                us_units: 'in',
+                sort_order: 3
+            },
+            ppt_24: {
+                element: 'ppt_24',
+                description: '24-hour Precipitation',
+                description_short: '24-hour Precipitation',
+                base_units: 'in',
+                us_units: 'in',
+                sort_order: 3
+            },
+            ppt_2: {
+                element: 'ppt_2',
+                description: '2-day Precipitation',
+                description_short: '2-day Precipitation',
+                base_units: 'in',
+                us_units: 'in',
+                sort_order: 3
+            },
+            ppt_7: {
+                element: 'ppt_7',
+                description: '7-day Precipitation',
+                description_short: '7-day Precipitation',
+                base_units: 'in',
+                us_units: 'in',
+                sort_order: 3
+            },
+            ppt_14: {
+                element: 'ppt_14',
+                description: '14-day Precipitation',
+                description_short: '14-day Precipitation',
+                base_units: 'in',
+                us_units: 'in',
+                sort_order: 3
+            },
+            ppt_30: {
+                element: 'ppt_30',
+                description: '30-day Precipitation',
+                description_short: '30-day Precipitation',
+                base_units: 'in',
+                us_units: 'in',
+                sort_order: 3
+            },
+            ppt_60: {
+                element: 'ppt_60',
+                description: '60-day Precipitation',
+                description_short: '60-day Precipitation',
+                base_units: 'in',
+                us_units: 'in',
+                sort_order: 3
+            },
+            ppt_90: {
+                element: 'ppt_90',
+                description: '90-day Precipitation',
+                description_short: '90-day Precipitation',
+                base_units: 'in',
+                us_units: 'in',
+                sort_order: 3
+            },
+            ppt_180: {
+                element: 'ppt_180',
+                description: '180-day Precipitation',
+                description_short: '180-day Precipitation',
+                base_units: 'in',
+                us_units: 'in',
+                sort_order: 3
+            },
+            ppt_ytd: {
+                element: 'ppt_ytd',
+                description: 'Year to Date Precipitation',
+                description_short: 'Year to Date Precipitation',
+                base_units: 'in',
+                us_units: 'in',
+                sort_order: 3
+            },
+            feels_like: {
+                element: 'feels_like',
+                description: 'Feels Like Temperature',
+                description_short: 'Feels Like Temperature',
+                base_units: 'degF',
+                us_units: 'degF',
+                sort_order: 1
+            },
+            windgust_24h: {
+                element: 'windgust_24h',
+                description: "24-Hour Max Windgust",
+                description_short: "24-Hour Max Windgust",
+                base_units: 'mi hr^-1',
+                us_units: 'mi hr^-1',
+                sort_order: 99
+            },
+            delta_vwc_shallow_1: {
+                element: 'delta_vwc_shallow_1',
+                description: "1-Day Shallow Soil VWC Change (0-4 in)",
+                description_short: "1-Day Shallow Soil VWC Change (0-4 in)",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 99
+            },
+            delta_vwc_mid_1: {
+                element: 'delta_vwc_mid_1',
+                description: "1-Day Mid-depth Soil VWC Change (8-20 in)",
+                description_short: "1-Day Mid-depth Soil VWC Change (8-20 in)",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 99
+            },
+            delta_vwc_deep_1: {
+                element: 'delta_vwc_deep_1',
+                description: "1-Day Deep Soil VWC Change (28-40 in)",
+                description_short: "1-Day Deep Soil VWC Change (28-40 in)",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 99
+            },
+            delta_vwc_shallow_7: {
+                element: 'delta_vwc_shallow_7',
+                description: "7-Day Shallow Soil VWC Change (0-4 in)",
+                description_short: "7-Day Shallow Soil VWC Change (0-4 in)",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 99
+            },
+            delta_vwc_mid_7: {
+                element: 'delta_vwc_mid_7',
+                description: "7-Day Mid-depth Soil VWC Change (8-20 in)",
+                description_short: "7-Day Mid-depth Soil VWC Change (8-20 in)",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 99
+            },
+            delta_vwc_deep_7: {
+                element: 'delta_vwc_deep_7',
+                description: "7-Day Deep Soil VWC Change (28-40 in)",
+                description_short: "7-Day Deep Soil VWC Change (28-40 in)",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 99
+            },
+            delta_vwc_shallow_14: {
+                element: 'delta_vwc_shallow_14',
+                description: "14-Day Shallow Soil VWC Change (0-4 in)",
+                description_short: "14-Day Shallow Soil VWC Change (0-4 in)",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 99
+            },
+            delta_vwc_mid_14: {
+                element: 'delta_vwc_mid_14',
+                description: "14-Day Mid-depth Soil VWC Change (8-20 in)",
+                description_short: "14-Day Mid-depth Soil VWC Change (8-20 in)",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 99
+            },
+            delta_vwc_deep_14: {
+                element: 'delta_vwc_deep_14',
+                description: "14-Day Deep Soil VWC Change (28-40 in)",
+                description_short: "14-Day Deep Soil VWC Change (28-40 in)",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 99
+            },
+            delta_vwc_shallow_30: {
+                element: 'delta_vwc_shallow_30',
+                description: "30-Day Shallow Soil VWC Change (0-4 in)",
+                description_short: "30-Day Shallow Soil VWC Change (0-4 in)",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 99
+            },
+            delta_vwc_mid_30: {
+                element: 'delta_vwc_mid_30',
+                description: "30-Day Mid-depth Soil VWC Change (8-20 in)",
+                description_short: "30-Day Mid-depth Soil VWC Change (8-20 in)",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 99
+            },
+            delta_vwc_deep_30: {
+                element: 'delta_vwc_deep_30',
+                description: "30-Day Deep Soil VWC Change (28-40 in)",
+                description_short: "30-Day Deep Soil VWC Change (28-40 in)",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 99
+            },
+            frost_depth: {
+                element: 'frost_depth',
+                description: 'Frost Depth',
+                description_short: 'Frost Depth',
+                base_units: 'in',
+                us_units: 'in',
+                sort_order: 99
+            },
+            shallow_saturation: {
+                element: 'shallow_saturation',
+                description: "Shallow Percent Saturation",
+                description_short: "Shallow Percent Saturation",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 98
+            },
+            mid_saturation: {
+                element: 'mid_saturation',
+                description: "Mid Depth Percent Saturation",
+                description_short: "Mid Depth Percent Saturation",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 98
+            },
+            deep_saturation: {
+                element: 'deep_saturation',
+                description: "Deep Percent Saturation",
+                description_short: "Deep Percent Saturation",
+                base_units: 'percent',
+                us_units: 'percent',
+                sort_order: 98
+            },
+        };
+
+        // Credit to https://gis.stackexchange.com/questions/382087/how-to-remove-leaflet-tooltip-label-collision
+        function overlap(rect1, rect2) {
+            return (!(rect1.right < rect2.left ||
+                rect1.left > rect2.right ||
+                rect1.bottom < rect2.top ||
+                rect1.top > rect2.bottom));
+        }
+
+        function hideOverlappingTooltips(run = false) {
+            var rects = [];
+            var tooltips = document.getElementsByClassName('myTooltip');
+            for (var i = 0; i < tooltips.length; i++) {
+                tooltips[i].style.visibility = '';
+                rects[i] = tooltips[i].getBoundingClientRect();
+            }
+            for (var i = 0; i < tooltips.length; i++) {
+                if (tooltips[i].style.visibility != 'hidden') {
+                    for (var j = i + 1; j < tooltips.length; j++) {
+                        if (overlap(rects[i], rects[j])) tooltips[j].style.visibility = 'hidden';
+                    }
+                }
+            }
+        }
+
+
+
+
+    </script>
+
+    <!-- MAP SCRIPT -->
+    <script>
+        var retina = false;
+
+        var map = L.map('map', {
+            maxZoom: 11,
+            fullscreenControl: {
+                pseudoFullscreen: false
+            },
+            attributionControl: false
+        }).fitBounds(
+            [
+                [44.3, -116],
+                [49, -103.5]
+            ]
+        );
+
+        const state = {
+            layer: null,
+            data: [],
+            variables: [],
+            newvars: {},
+            stations: null,
+            selectedVariable: null,
+            autoRefreshMs: 0,
+            autoRefreshTimer: null,
+            isRefreshing: false,
+            refreshRequestId: 0,
+            lastRefreshedAt: null,
+            additionalDataByStation: {},
+            controls: {},
+            legendContent: null
+        };
+
+        var selector = L.control({
+            position: 'topright'
+        });
+
+        selector.onAdd = function () {
+            var container = L.DomUtil.create('div', 'map-controls');
+            var variableSelect = L.DomUtil.create('select', 'dropdown variable-dropdown', container);
+            var controlRow = L.DomUtil.create('div', 'control-row', container);
+            var autoRefreshSelect = L.DomUtil.create('select', 'dropdown compact auto-refresh-dropdown', controlRow);
+            var refreshButton = L.DomUtil.create('button', 'refresh-button', controlRow);
+            var statusText = L.DomUtil.create('div', 'status-text', container);
+
+            [
+                { value: '0', label: 'Auto Refresh: Off' },
+                { value: '60000', label: 'Auto Refresh: 1 min' },
+                { value: '300000', label: 'Auto Refresh: 5 min' },
+                { value: '900000', label: 'Auto Refresh: 15 min' }
+            ].forEach(function (optionConfig) {
+                var option = document.createElement('option');
+                option.value = optionConfig.value;
+                option.textContent = optionConfig.label;
+                autoRefreshSelect.appendChild(option);
+            });
+
+            refreshButton.type = 'button';
+            refreshButton.textContent = 'Refresh';
+            statusText.textContent = 'Waiting for first refresh...';
+
+            L.DomEvent.disableClickPropagation(container);
+            L.DomEvent.disableScrollPropagation(container);
+
+            state.controls = {
+                container: container,
+                variableSelect: variableSelect,
+                autoRefreshSelect: autoRefreshSelect,
+                refreshButton: refreshButton,
+                statusText: statusText
+            };
+
+            return container;
+        };
+
+        selector.addTo(map);
+        map.addLayer(
+            new L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                opacity: 1,
+                zIndex: 1,
+                detectRetina: retina,
+                attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+                crossOrigin: true
+            }
+            )
+        );
+
+        L.geoJSON(mt, {
+            style: {
+                opacity: 1,
+                weight: 2,
+                fillOpacity: 0,
+                color: "#000"
+            }
+        }).addTo(map);
+
+        map.addControl(L.control.attribution({
+            position: 'bottomright',
+            prefix: '<a href="https://climate.umt.edu/" target="_blank">MCO</a>'
+        }));
+
+        var legend = L.control({
+            position: 'topright'
+        });
+
+        legend.onAdd = function () {
+            var div = L.DomUtil.create('div', 'info legend');
+            var legendContent = L.DomUtil.create('div', 'legend-content', div);
+
+            div.insertBefore(selector.getContainer(), legendContent);
+            state.legendContent = legendContent;
+            return div;
+        };
+
+        legend.addTo(map);
+
+        var Tooltip = new L.LayerGroup();
+        map.addControl(
+            L.control.layers(
+                null,
+                {
+                    "Radar": new L.tileLayer.wms("https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi", {
+                        layers: 'nexrad-n0r',
+                        format: 'image/png',
+                        transparent: true,
+                        attribution: "Weather data &copy; 2015 IEM Nexrad"
+                    }),
+                    "Display Text Labels": Tooltip
+                },
+                { collapsed: false }
+            )
+        );
+
+        const myEventForwarder = new L.eventForwarder({
+            map: map,
+            events: { click: true, mousemove: false }
+        });
+
+        myEventForwarder.enable();
+
+        function onFgbFeature(feature, layer) {
+            if (feature.properties && feature.properties.name) {
+                layer.bindTooltip(feature.properties.name, { sticky: true });
+            }
+        }
+
+        function formatRefreshTime(date) {
+            if (!date) {
+                return 'Not refreshed yet';
+            }
+
+            return date.toLocaleString("en-US", {
+                timeZone: "America/Denver",
+                timeZoneName: "short"
+            });
+        }
+
+        function updateRefreshStatus(extraText) {
+            if (!state.controls.statusText) {
+                return;
+            }
+
+            var status = 'Last refreshed: ' + formatRefreshTime(state.lastRefreshedAt);
+            if (document.hidden && state.autoRefreshMs > 0) {
+                status += ' (auto refresh paused)';
+            }
+            if (extraText) {
+                status += ' | ' + extraText;
+            }
+
+            state.controls.statusText.textContent = status;
+        }
+
+        function setRefreshButtonState(isRefreshing) {
+            if (!state.controls.refreshButton) {
+                return;
+            }
+
+            state.controls.refreshButton.disabled = isRefreshing;
+            state.controls.refreshButton.textContent = isRefreshing ? 'Refreshing...' : 'Refresh';
+        }
+
+        function clearAutoRefreshTimer() {
+            if (state.autoRefreshTimer) {
+                clearInterval(state.autoRefreshTimer);
+                state.autoRefreshTimer = null;
+            }
+        }
+
+        function scheduleAutoRefresh() {
+            clearAutoRefreshTimer();
+
+            if (!state.autoRefreshMs || document.hidden) {
+                updateRefreshStatus();
+                return;
+            }
+
+            state.autoRefreshTimer = setInterval(function () {
+                refreshMapData({ preserveSelection: true, source: 'auto', showSpinner: false });
+            }, state.autoRefreshMs);
+
+            updateRefreshStatus();
+        }
+
+        function applyAdditionalData(data) {
+            return data.map(function (item) {
+                var extra = state.additionalDataByStation[item.station];
+                return extra ? { ...item, ...extra } : item;
+            });
+        }
+
+        function buildVariables(varsResponse) {
+            var variables = varsResponse.slice();
+            Object.values(variableDefinitions).forEach(function (def) {
+                variables.push(def);
+            });
+
+            variables.sort(function (a, b) {
+                if (a.sort_order < b.sort_order) {
+                    return -1;
+                }
+                if (a.sort_order > b.sort_order) {
+                    return 1;
+                }
+                return 0;
+            });
+
+            return variables;
+        }
+
+        function mergeDatasetRows(dataResponse, pptResponse, feelsResponse, windgustResponse) {
+            return dataResponse.map(function (objA) {
+                var matchingB = pptResponse.find(function (objB) { return objB.station === objA.station; });
+                var matchingC = feelsResponse.find(function (objC) { return objC.station === objA.station; });
+                var matchingD = windgustResponse.find(function (objD) { return objD.station === objA.station; });
+                var merged = objA;
+
+                if (matchingB) {
+                    merged = { ...merged, ...matchingB };
+                }
+
+                if (matchingC) {
+                    merged = { ...merged, ...matchingC };
+                }
+
+                if (matchingD) {
+                    merged = { ...merged, ...matchingD };
+                }
+
+                for (const key in merged) {
+                    if (key.includes("[mi/h]")) {
+                        const newKey = key.replace("[mi/h]", "[mi/hr]");
+                        if (newKey !== key) {
+                            merged[newKey] = merged[key];
+                            delete merged[key];
+                        }
+                    }
+                }
+
+                return merged;
+            });
+        }
+
+        function buildStationsGeoJSON(stationsResponse) {
+            stationsResponse.forEach(function (station) {
+                station.popupContent = `
+                <b>Station: </b> ${station.name} (${station.sub_network})<br>
+                <b>Location: </b> ${station.longitude}, ${station.latitude}<br>
+                <b>Elevation: </b> ${Math.round(station.elevation * 3.281)} feet<br>
+                <b>Date Installed: </b> ${new Date(station.date_installed).toISOString().split('T')[0]}<br>
+                <b>Visualize Data: </b><a href="https://mesonet.climate.umt.edu/dash/${station.station}/" target="_blank">Mesonet Dashboard</a><br>
+                <b>Latest Data: </b><a href="https://mesonet.climate.umt.edu/api/v2/latest/?stations=${station.station}" target="_blank">Mesonet API</a>
+                `;
+            });
+
+            var locations = {};
+            var stations = [];
+
+            stationsResponse.forEach(function (obj) {
+                var key = obj.latitude + '-' + obj.longitude;
+
+                if (locations[key]) {
+                    var oldContent = stations[locations[key] - 1].popupContent;
+                    stations[locations[key] - 1].popupContent = oldContent + '<hr>' + obj.popupContent;
+                } else {
+                    stations.push({
+                        popupContent: obj.popupContent,
+                        latitude: obj.latitude,
+                        longitude: obj.longitude,
+                        station: obj.station,
+                    });
+                }
+
+                locations[key] = stations.length;
+            });
+
+            return GeoJSON.parse(stations, {
+                Point: ['latitude', 'longitude']
+            });
+        }
+
+        function createOptions(selectElement, category, variables) {
+            const optgroup = document.createElement('optgroup');
+            optgroup.label = category;
+
+            variables.forEach(function (item) {
+                const option = document.createElement('option');
+                option.value = item.element;
+                option.textContent = item.description_short + ' [' + unitHash[item.us_units] + ']';
+                option.dataset.category = category;
+                if (item.element.includes("delta_vwc")) {
+                    option.hidden = true;
+                }
+                optgroup.appendChild(option);
+            });
+
+            selectElement.appendChild(optgroup);
+        }
+
+        function populateVariableOptions() {
+            var selectElement = state.controls.variableSelect;
+            if (!selectElement) {
+                return;
+            }
+
+            var previousSelection = state.selectedVariable;
+            selectElement.innerHTML = '';
+
+            const latestWeatherData = state.variables.filter(function (item) {
+                return item.element === 'air_temp' || item.element === 'feels_like' || item.element === 'bp' ||
+                    item.element === 'rh' || item.element === 'wind_spd' || item.element === 'windgust' || item.element === 'windgust_24h' ||
+                    item.element === 'sol_rad';
+            });
+
+            const precipitationMetrics = state.variables.filter(function (item) {
+                return item.element === 'ppt_mid' || item.element === 'ppt_24' || item.element === "ppt_2" || item.element === 'ppt_7' ||
+                    item.element === 'ppt_14' || item.element === 'ppt_30' || item.element === "ppt_60" || item.element === 'ppt_90' ||
+                    item.element === 'ppt_180' || item.element === 'ppt_ytd' || item.element === 'ppt_max_rate' || item.element === 'precipitation' || item.element === 'snow_depth';
+            });
+
+            const soilData = state.variables.filter(function (item) {
+                return item.element === 'shallow_saturation' || item.element === 'mid_saturation' || item.element === 'deep_saturation' ||
+                    item.element === 'soil_ec_blk_shallow' || item.element === 'soil_ec_blk_mid' ||
+                    item.element === 'soil_ec_blk_deep' || item.element === 'soil_temp_shallow' ||
+                    item.element === 'soil_temp_mid' || item.element === 'soil_temp_deep' ||
+                    item.element === 'soil_vwc_shallow' || item.element === 'soil_vwc_mid' || item.element === 'soil_vwc_deep' ||
+                    item.element.includes("delta_vwc") || item.element === 'frost_depth';
+            });
+
+            createOptions(selectElement, 'Latest Weather Data', latestWeatherData);
+            createOptions(selectElement, 'Precipitation Metrics', precipitationMetrics);
+            createOptions(selectElement, 'Soil Data', soilData);
+
+            var fallbackSelection = selectElement.options.length > 0 ? selectElement.options[0].value : null;
+            state.selectedVariable = previousSelection && state.newvars[previousSelection] ? previousSelection : fallbackSelection;
+
+            if (state.selectedVariable) {
+                selectElement.value = state.selectedVariable;
+            }
+        }
+
+        function setDeltaOptionsVisibility(isVisible) {
+            var selectElement = state.controls.variableSelect;
+            if (!selectElement) {
+                return;
+            }
+
+            Array.from(selectElement.options).forEach(function (option) {
+                if (option.value && option.value.includes("delta_vwc")) {
+                    option.hidden = !isVisible;
+                }
+            });
+        }
+
+        function syncStationDatetimes() {
+            if (!state.stations) {
+                return;
+            }
+
+            var dataHash = state.data.reduce(function (hash, item) {
+                if (item.station) {
+                    hash[item.station] = new Date(item.datetime);
+                }
+                return hash;
+            }, {});
+
+            state.stations.features.forEach(function (item) {
+                item.properties.datetime = dataHash[item.properties.station] || null;
+            });
+        }
+
+        function updateGeojson(selectVariable) {
+            if (!state.stations || !selectVariable || !state.newvars[selectVariable]) {
+                return;
+            }
+
+            var theVar = state.newvars[selectVariable].description_short + ' [' + unitHash[state.newvars[selectVariable].us_units] + ']';
+            var dataHash = state.data.reduce(function (hash, item) {
+                if (item.station) {
+                    hash[item.station] = isNaN(item[theVar]) ? null : item[theVar];
+                }
+                return hash;
+            }, {});
+
+            var rmWhitefish = theVar.includes("Soil VWC");
+
+            state.stations.features.forEach(function (item) {
+                item.properties.value = isNaN(dataHash[item.properties.station]) ? null : dataHash[item.properties.station];
+
+                if (rmWhitefish && item.properties.station === "whitshaw") {
+                    item.properties.value = null;
+                }
+
+                if ((new Date() - item.properties.datetime) > (3 * 60 * 60 * 1000)) {
+                    item.properties.value = null;
+                }
+
+                item.properties.displayvalue = item.properties.value;
+            });
+        }
+
+        function make_scale(pal, rev, mid, minVal, maxVal, nColors = 500) {
+            if (mid === null || typeof mid === 'undefined') {
+                pal = chroma.scale(pal).domain([minVal, maxVal]);
+                if (rev) {
+                    pal = pal.reverse();
+                }
+                return pal;
+            }
+
+            pal = chroma.scale(pal).colors(nColors);
+            if (rev) {
+                pal = pal.reverse();
+            }
+
+            var mid_idx = Math.floor(nColors / 2);
+
+            if (mid < minVal) {
+                return chroma.scale(pal.slice(mid_idx)).domain([minVal, maxVal]);
+            } else if (mid > maxVal) {
+                return chroma.scale(pal.slice(0, mid_idx + 1)).domain([minVal, maxVal]);
+            }
+
+            var dist2min = Math.abs(mid - minVal);
+            var dist2max = Math.abs(maxVal - mid);
+            var ratio;
+            var idx;
+
+            if (dist2min > dist2max) {
+                ratio = dist2max / dist2min;
+                idx = Math.round(mid_idx * (1 + ratio));
+                return chroma.scale(pal.slice(0, idx)).domain([minVal, maxVal]);
+            }
+
+            ratio = dist2min / dist2max;
+            idx = Math.round(mid_idx * (1 - ratio));
+            return chroma.scale(pal.slice(idx)).domain([minVal, maxVal]);
+        }
+
+        function updateLayerTooltipPermanence(isPermanent) {
+            if (!state.layer) {
+                return;
+            }
+
+            state.layer.eachLayer(function (marker) {
+                var tooltip = marker.getTooltip();
+                if (!tooltip) {
+                    return;
+                }
+
+                marker.unbindTooltip();
+                tooltip.options.permanent = isPermanent;
+                marker.bindTooltip(tooltip);
+            });
+        }
+
+        Tooltip.on('add', function () {
+            updateLayerTooltipPermanence(true);
+            hideOverlappingTooltips();
+        });
+
+        Tooltip.on('remove', function () {
+            updateLayerTooltipPermanence(false);
+        });
+
+        function updateLayer() {
+            if (!state.stations || !state.selectedVariable || !state.newvars[state.selectedVariable]) {
+                return;
+            }
+
+            var stationCopy = JSON.parse(JSON.stringify(state.stations));
+            stationCopy.features = stationCopy.features.flat();
+
+            var sum = 0;
+            var values = [];
+            for (let i = 0; i < stationCopy.features.length; i++) {
+                var item = stationCopy.features[i];
+                sum += item.properties.value || 0;
+                if (item.properties.value !== null && !isNaN(item.properties.value)) {
+                    values.push(item.properties.value);
+                }
+            }
+
+            if (values.length === 0) {
+                values = [0];
+            }
+
+            var mn = Math.min.apply(null, values);
+            var mx = Math.max.apply(null, values);
+
+            if (state.selectedVariable.startsWith('ppt_')) {
+                for (let i = 0; i < stationCopy.features.length; i++) {
+                    stationCopy.features[i].properties.displayvalue =
+                        stationCopy.features[i].properties.value === null ? null :
+                            Math.round(stationCopy.features[i].properties.value * 100) / 100;
+                }
+            } else if (Math.max(Math.abs(mn), Math.abs(mx)) > 5) {
+                for (let i = 0; i < stationCopy.features.length; i++) {
+                    stationCopy.features[i].properties.displayvalue =
+                        stationCopy.features[i].properties.value === null ? null :
+                            Math.round(stationCopy.features[i].properties.value);
+                }
+            }
+
+            var color_scale = make_scale(
+                vizHash[state.selectedVariable].col,
+                vizHash[state.selectedVariable].rev,
+                vizHash[state.selectedVariable].mid,
+                mn,
+                mx,
+                Math.max(stationCopy.features.length, 2)
+            );
+
+            if (state.layer && map.hasLayer(state.layer)) {
+                map.removeLayer(state.layer);
+            }
+
+            state.layer = L.choropleth(stationCopy, {
+                pointToLayer: function (feature, latlng) {
+                    if (feature.properties.displayvalue === null) {
+                        return null;
+                    }
+                    return L.circleMarker(latlng);
+                },
+                valueProperty: 'value',
+                scale: sum === 0 ? ['white'] : vizHash[state.selectedVariable].col,
+                steps: 220,
+                mode: 'q',
+                reverse: vizHash[state.selectedVariable].rev,
+                style: {
+                    radius: 8,
+                    color: '#000',
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                },
+                onEachFeature: function (feature, layer) {
+                    var val = feature.properties.displayvalue === null ? 'No Data Available' : (feature.properties.displayvalue + '');
+                    var options = ["left", "right", "top", "bottom"];
+
+                    layer.bindPopup(feature.properties.popupContent);
+                    layer.bindTooltip(val, {
+                        permanent: map.hasLayer(Tooltip),
+                        direction: options[Math.floor(Math.random() * options.length)],
+                        className: 'myTooltip'
+                    });
+                    layer.setStyle({
+                        fillColor: color_scale(feature.properties.displayvalue).hex()
+                    });
+                }
+            });
+
+            map.addLayer(state.layer);
+
+            if (map.hasLayer(Tooltip)) {
+                hideOverlappingTooltips();
+            }
+        }
+
+        function updateLegend() {
+            if (!state.legendContent || !state.layer || !state.layer.options.limits || state.layer.options.limits.length === 0) {
+                return;
+            }
+
+            const limits = state.layer.options.limits;
+            const labels = [];
+            const lower_lim = limits[0] < 1 ? Math.round((limits[0] + Number.EPSILON) * 100) / 100 : Math.round(limits[0]);
+            const upper_lim = limits[limits.length - 1] < 1 ? Math.round((limits[limits.length - 1] + Number.EPSILON) * 100) / 100 : Math.round(limits[limits.length - 1]);
+
+            var mn = Math.min.apply(null, limits);
+            var mx = Math.max.apply(null, limits);
+            var numBreaks = 200;
+            var rnge = Array.from({ length: numBreaks }, function (_, i) {
+                return mn + (mx - mn) * i / (numBreaks - 1);
+            });
+            var color_scale = make_scale(
+                vizHash[state.selectedVariable].col,
+                vizHash[state.selectedVariable].rev,
+                vizHash[state.selectedVariable].mid,
+                mn,
+                mx,
+                Math.max(Object.keys(state.layer._layers).length, 2)
+            );
+            var dataCurrentAsOf = state.data.length > 0 && state.data[0].datetime ?
+                new Date(state.data[0].datetime).toLocaleString("en-US", { timeZone: "America/Denver", timeZoneName: "short" }) :
+                'Unavailable';
+
+            state.legendContent.innerHTML = '<br>';
+            state.legendContent.innerHTML += '<br><div class="labels"><div class="min">' + lower_lim + '</div><div class="max">' + upper_lim + '</div></div>';
+
+            rnge.forEach(function (val) {
+                labels.push('<li style="background-color: ' + color_scale(val).hex() + '"></li>');
+            });
+
+            state.legendContent.innerHTML += '<ul>' + labels.join('') + '</ul>';
+            state.legendContent.innerHTML += '<div style="text-align: center; font-size: smaller;">Displayed Data Current as of ' + dataCurrentAsOf + '</div>';
+            state.legendContent.innerHTML += '<div style="text-align: center; font-size: smaller;">Last refreshed at ' + formatRefreshTime(state.lastRefreshedAt) + '</div>';
+            state.legendContent.innerHTML += '<div style="text-align: center; font-size: smaller;">Stations without current data are hidden.</div>';
+        }
+
+        function renderMapData() {
+            if (!state.selectedVariable) {
+                return;
+            }
+
+            updateGeojson(state.selectedVariable);
+            updateLayer();
+            updateLegend();
+            updateRefreshStatus();
+        }
+
+        async function initializeStaticOverlays() {
+            var fgbLayerControl = L.control.layers(null, null, { position: 'topleft', sortLayers: true, collapsed: false }).addTo(map);
+            var layers = {
+                "Tribal Lands": 'https://data.climate.umt.edu/mesonet/fgb/mt_tribes.fgb',
+                "Counties": 'https://data.climate.umt.edu/mesonet/fgb/mt_counties.fgb',
+                "Watersheds": 'https://data.climate.umt.edu/mesonet/fgb/mt_hucs.fgb',
+            };
+
+            for (const [name, url] of Object.entries(layers)) {
+                var grp = [];
+                const data = await fetch(url);
+                for await (const f of flatgeobuf.deserialize(data.body)) {
+                    grp.push(L.geoJSON(f, {
+                        color: 'black',
+                        fillOpacity: 0,
+                        weight: 1,
+                        onEachFeature: onFgbFeature,
+                        interactive: true,
+                    }));
+                }
+
+                var grpAsLayer = L.featureGroup(grp, { interactive: false });
+                fgbLayerControl.addOverlay(grpAsLayer, name);
+            }
+        }
+
+        async function fetchLatestDatasets() {
+            var target_urls = getURLS();
+            const [
+                stationsResponse,
+                dataResponse,
+                pptResponse,
+                windgustResponse,
+                feelsResponse,
+                varsResponse
+            ] = await Promise.all([
+                fetch(`../../stations/?type=json&active=True&callback=`).then(function (res) { return res.json(); }),
+                fetch(`../..${target_urls.grouped_url}`).then(function (res) { return res.json(); }),
+                fetch(`../../derived/ppt?type=json&wide=True&callback=`).then(function (res) { return res.json(); }),
+                fetch(`../../derived/windgust?type=json&callback=`).then(function (res) { return res.json(); }),
+                fetch(`../../derived?type=json&elements=feels_like,frost_depth,cci,percent_saturation&grouped=True&callback=`).then(function (res) { return res.json(); }),
+                fetch(`../..${target_urls.element_url}`).then(function (res) { return res.json(); })
+            ]);
+
+            return {
+                stations: buildStationsGeoJSON(stationsResponse),
+                data: applyAdditionalData(mergeDatasetRows(dataResponse, pptResponse, feelsResponse, windgustResponse)),
+                variables: buildVariables(varsResponse)
+            };
+        }
+
+        async function refreshMapData(options = {}) {
+            if (state.isRefreshing) {
+                return;
+            }
+
+            state.isRefreshing = true;
+            state.refreshRequestId += 1;
+            var requestId = state.refreshRequestId;
+            var showSpinner = options.showSpinner !== false;
+
+            setRefreshButtonState(true);
+            updateRefreshStatus(options.source === 'auto' ? 'Auto refresh running' : 'Refreshing...');
+            if (showSpinner) {
+                map.spin(true);
+            }
+
+            try {
+                var refreshed = await fetchLatestDatasets();
+                if (requestId !== state.refreshRequestId) {
+                    return;
+                }
+
+                state.data = refreshed.data;
+                state.stations = refreshed.stations;
+                syncStationDatetimes();
+
+                if (state.variables.length === 0) {
+                    state.variables = refreshed.variables;
+                    state.newvars = refreshed.variables.reduce(function (hash, item) {
+                        hash[item.element] = item;
+                        return hash;
+                    }, {});
+                    populateVariableOptions();
+                }
+
+                if (!options.preserveSelection || !state.selectedVariable) {
+                    state.selectedVariable = state.controls.variableSelect ? state.controls.variableSelect.value : state.selectedVariable;
+                } else if (state.controls.variableSelect) {
+                    state.controls.variableSelect.value = state.selectedVariable;
+                }
+
+                state.lastRefreshedAt = new Date();
+                renderMapData();
+                updateRefreshStatus();
+            } catch (error) {
+                console.error("Error loading map data:", error);
+                updateRefreshStatus('Refresh failed');
+            } finally {
+                if (requestId === state.refreshRequestId) {
+                    state.isRefreshing = false;
+                    setRefreshButtonState(false);
+                    if (showSpinner) {
+                        map.spin(false);
+                    }
+                }
+            }
+        }
+
+        async function loadAdditionalData(selectElement) {
+            var loadingOption = document.createElement('option');
+            loadingOption.disabled = true;
+            loadingOption.textContent = 'Loading Weekly Change in Soil VWC...';
+            selectElement.appendChild(loadingOption);
+
+            try {
+                const additionalDataResponse = await fetch(`../../derived/change?difference=30,14,7,1&type=json&callback=`).then(function (res) { return res.json(); });
+
+                if (additionalDataResponse && additionalDataResponse.length > 0) {
+                    state.additionalDataByStation = additionalDataResponse.reduce(function (hash, item) {
+                        hash[item.station] = item;
+                        return hash;
+                    }, {});
+                    state.data = applyAdditionalData(state.data);
+                    setDeltaOptionsVisibility(true);
+                }
+            } catch (error) {
+                console.error("Error loading additional data:", error);
+                const errorOption = document.createElement('option');
+                errorOption.disabled = true;
+                errorOption.textContent = '(Some data failed to load)';
+                errorOption.style.color = '#999';
+                selectElement.appendChild(errorOption);
+
+                setTimeout(function () {
+                    if (errorOption.parentNode) {
+                        errorOption.parentNode.removeChild(errorOption);
+                    }
+                }, 10000);
+            } finally {
+                if (loadingOption.parentNode) {
+                    loadingOption.parentNode.removeChild(loadingOption);
+                }
+                renderMapData();
+            }
+        }
+
+        function initializeControlHandlers() {
+            state.controls.variableSelect.addEventListener('change', function () {
+                state.selectedVariable = state.controls.variableSelect.value;
+                renderMapData();
+            });
+
+            state.controls.refreshButton.addEventListener('click', function () {
+                refreshMapData({ preserveSelection: true, source: 'manual' });
+            });
+
+            state.controls.autoRefreshSelect.addEventListener('change', function () {
+                state.autoRefreshMs = Number(state.controls.autoRefreshSelect.value);
+                scheduleAutoRefresh();
+            });
+        }
+
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
+                clearAutoRefreshTimer();
+                updateRefreshStatus();
+                return;
+            }
+
+            scheduleAutoRefresh();
+            if (state.autoRefreshMs > 0) {
+                refreshMapData({ preserveSelection: true, source: 'resume', showSpinner: false });
+            } else {
+                updateRefreshStatus();
+            }
+        });
+
+        window.addEventListener('beforeunload', function () {
+            clearAutoRefreshTimer();
+        });
+
+        map.on('zoomend', function () {
+            hideOverlappingTooltips();
+        });
+
+        async function loadMapData() {
+            try {
+                await initializeStaticOverlays();
+                initializeControlHandlers();
+                await refreshMapData({ preserveSelection: false, source: 'initial' });
+                await loadAdditionalData(state.controls.variableSelect);
+            } catch (error) {
+                console.error("Error initializing map:", error);
+                updateRefreshStatus('Initialization failed');
+                map.spin(false);
+            }
+        }
+
+        loadMapData();
+    </script>
+</body>
+
+</html>

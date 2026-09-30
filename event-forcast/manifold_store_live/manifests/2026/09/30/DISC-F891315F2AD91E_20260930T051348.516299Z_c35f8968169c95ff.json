@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F891315F2AD91E",
+  "provider": "NOAA/NDBC",
+  "dataset": "MISP4.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:13:48.516299Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/MISP4.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/MISP4.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1014448,
+  "sha256": "c35f8968169c95ffb2ff4edd630f2c38e4c37a257c7ab98844bc8c0b18652039",
+  "etag": "\"f7ab0-65cac2d47e290\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-F891315F2AD91E\\20260930T051348.516299Z_c35f8968169c95ff.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

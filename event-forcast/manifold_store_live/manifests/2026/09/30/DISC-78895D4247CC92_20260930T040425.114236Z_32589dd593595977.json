@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-78895D4247CC92",
+  "provider": "UCAR/Unidata",
+  "dataset": "radar-data",
+  "sector": "research",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:25.114236Z",
+  "request_url": "https://www.unidata.ucar.edu/data/radar-data",
+  "final_url": "https://www.unidata.ucar.edu/data/radar-data",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 45301,
+  "sha256": "32589dd593595977fcce5ec9242ea66b4fcc1cf2bc44708b58e6c2f20c9f4b4e",
+  "etag": "W/\"1790741065\"",
+  "last_modified": "Wed, 30 Sep 2026 04:04:25 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-78895D4247CC92\\20260930T040425.114236Z_32589dd593595977.html",
+  "parent_id": "UCAR-IDV",
+  "discovery_depth": 1
+}

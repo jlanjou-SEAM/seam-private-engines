@@ -1,0 +1,646 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.1 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js" dir="ltr">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>Montana Mesonet API - Montana Climate Office</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Colin Brust">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Montana Climate Office">
+<meta property="og:title" content="Montana Mesonet API">
+<meta property="og:url" content="https://climate.umt.edu/mesonet/api/">
+
+
+  <meta property="og:description" content="">
+
+
+
+  <meta property="og:image" content="https://climate.umt.edu/assets/images/mesonet_banner2.png">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://climate.umt.edu/mesonet/api/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Montana Climate Office Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <link rel="shortcut icon" href="/%20/assets/images/favicon.ico">
+
+<!-- Google Analytics -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-96RBQYREG6"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-96RBQYREG6');
+</script>
+
+  </head>
+
+  <body class="layout--single wide">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/MCO_logo_icon_only.png" alt="Montana Climate Office"></a>
+        
+        <a class="site-title" href="/">
+          Montana Climate Office
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/mesonet/"
+                
+                
+              >Mesonet</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/drought/"
+                
+                
+              >Drought</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/climate/"
+                
+                
+              >Climate</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/streamflow/"
+                
+                
+              >Streamflow</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/news/"
+                
+                
+              >News</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/research/"
+                
+                
+              >Research</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/projects/"
+                
+                
+              >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/assets/images/mesonet_banner2.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Montana Mesonet API
+
+        
+      </h1>
+      
+        <p class="page__lead"><br />
+</p>
+      
+      
+
+
+
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+    
+      
+<nav class="nav__list">
+  <h3 class="nav__title" style="padding-inline-start: 0;">Mesonet Resources</h3>
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <a href="/mesonet/"><span class="nav__sub-title">Montana Mesonet Overview</span></a>
+          
+
+          
+          <ul>
+            
+              <li><a href="/mesonet/stations">Mesonet Stations</a></li>
+            
+              <li><a href="https://mesonet.climate.umt.edu/photos">Mesonet Photos</a></li>
+            
+              <li><a href="/mesonet/umrb/">UMRB Project</a></li>
+            
+              <li><a href="/mesonet/variables/">Variables Measured</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/mesonet/ag_tools/"><span class="nav__sub-title">Agricultural Tools</span></a>
+          
+
+          
+          <ul>
+            
+              <li><a href="/mesonet/ag_tools/eto/">Reference ET</a></li>
+            
+              <li><a href="/mesonet/ag_tools/feels_like/">Feels Like Temperature</a></li>
+            
+              <li><a href="/mesonet/ag_tools/gdds/">Growing Degree Days</a></li>
+            
+              <li><a href="/mesonet/ag_tools/soil_profile/">Soil Profile Plots</a></li>
+            
+              <li><a href="/mesonet/ag_tools/risk/">Livestock Risk Index</a></li>
+            
+              <li><a href="/mesonet/ag_tools/swp/">Soil Water Potential</a></li>
+            
+          </ul>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/mesonet/tutorials/"><span class="nav__sub-title">Montana Mesonet Tutorials</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <a href="/mesonet/api/"><span class="nav__sub-title">Montana Mesonet API</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <a href="/mesonet/wfs/"><span class="nav__sub-title">Montana Mesonet Spatial Services</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <a href="/mesonet/app/"><span class="nav__sub-title">Montana Mesonet App</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <a href="/mesonet/qaqc/"><span class="nav__sub-title">Montana Mesonet QA/QC</span></a>
+          
+
+          
+        </li>
+      
+        <li>
+          
+            <a href="/mesonet/citation/"><span class="nav__sub-title">Montana Mesonet Citation</span></a>
+          
+
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Montana Mesonet API">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h1 id="montana-mesonet-api-v2">Montana Mesonet API (v2)</h1>
+
+<p>The Montana Climate Office (MCO) is committed to providing free and easily accessible weather data to the public through the <strong>Montana Mesonet API</strong>. The API utilizes REST architecture and provides a variety of endpoints for querying station metadata, real-time observations, and historical data.</p>
+
+<ul>
+  <li><strong>Base URL</strong>: <code class="language-plaintext highlighter-rouge">https://mesonet.climate.umt.edu/api/v2</code></li>
+  <li><strong>Interactive Documentation</strong>: <a href="https://mesonet.climate.umt.edu/api/v2/docs">Swagger UI</a></li>
+</ul>
+
+<hr />
+
+<h2 id="1-stations">1. Stations</h2>
+<p>Get a list of all active stations in the Montana Mesonet network, including their location and metadata.</p>
+
+<p><strong>Endpoint:</strong> <code class="language-plaintext highlighter-rouge">/stations/</code></p>
+
+<h3 id="example-get-all-active-stations">Example: Get all active stations</h3>
+
+<p><strong>Python</strong></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="c1"># Load station metadata directly into a DataFrame
+</span><span class="n">url</span> <span class="o">=</span> <span class="s">"https://mesonet.climate.umt.edu/api/v2/stations/?type=csv&amp;active=true"</span>
+<span class="n">stations</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">stations</span><span class="p">[[</span><span class="s">'station'</span><span class="p">,</span> <span class="s">'name'</span><span class="p">,</span> <span class="s">'latitude'</span><span class="p">,</span> <span class="s">'longitude'</span><span class="p">]].</span><span class="n">head</span><span class="p">())</span>
+</code></pre></div></div>
+
+<p><strong>Curl</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-X</span> <span class="s1">'GET'</span> <span class="se">\</span>
+  <span class="s1">'https://mesonet.climate.umt.edu/api/v2/stations/?type=json&amp;active=true'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'accept: application/json'</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="2-observations">2. Observations</h2>
+<p>Retrieve weather data from our stations. The API provides three time granularities:</p>
+
+<h3 id="a-latest-latest">a. Latest (<code class="language-plaintext highlighter-rouge">/latest/</code>)</h3>
+<p>Get the most recent observation for one or all stations. Ideal for near real-time monitoring. Readings are updated every 5 minutes.</p>
+
+<p><strong>Optional Parameters:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">stations</code>: Comma-separated list of station identifiers (e.g., <code class="language-plaintext highlighter-rouge">aceabsar,arskeogh</code>).</li>
+  <li><code class="language-plaintext highlighter-rouge">type</code>: <code class="language-plaintext highlighter-rouge">html</code>, <code class="language-plaintext highlighter-rouge">csv</code> or <code class="language-plaintext highlighter-rouge">json</code> (default: <code class="language-plaintext highlighter-rouge">html</code>).</li>
+</ul>
+
+<p><strong>Python</strong></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="c1"># Get latest data for all stations
+</span><span class="n">url</span> <span class="o">=</span> <span class="s">"https://mesonet.climate.umt.edu/api/v2/latest/?type=csv"</span>
+<span class="n">latest_data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">latest_data</span><span class="p">.</span><span class="n">head</span><span class="p">())</span>
+</code></pre></div></div>
+
+<h3 id="b-hourly-observationshourly">b. Hourly (<code class="language-plaintext highlighter-rouge">/observations/hourly/</code>)</h3>
+<p>Get hourly aggregated data. Ideal for short to medium term time-series analysis. The start_time parameter is reccomended; the end_time parameter will default to the current time if left blank.</p>
+
+<p><strong>Optional Parameters:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">stations</code>: Comma-separated list of station identifiers (e.g., <code class="language-plaintext highlighter-rouge">aceabsar,arskeogh</code>).</li>
+  <li><code class="language-plaintext highlighter-rouge">start_time</code>: Start date (YYYY-MM-DD).</li>
+  <li><code class="language-plaintext highlighter-rouge">end_time</code>: End date (YYYY-MM-DD).</li>
+  <li><code class="language-plaintext highlighter-rouge">elements</code>: (Optional) Comma-separated list of variables to retrieve (e.g., <code class="language-plaintext highlighter-rouge">air_temp,ppt</code>).</li>
+  <li><code class="language-plaintext highlighter-rouge">type</code>: <code class="language-plaintext highlighter-rouge">html</code>, <code class="language-plaintext highlighter-rouge">csv</code> or <code class="language-plaintext highlighter-rouge">json</code> (default: <code class="language-plaintext highlighter-rouge">html</code>).</li>
+</ul>
+
+<p><strong>Python</strong></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="c1"># Get hourly air temperature and precipitation for 'aceabsar' for Jan 2024
+</span><span class="n">base_url</span> <span class="o">=</span> <span class="s">"https://mesonet.climate.umt.edu/api/v2/observations/hourly/"</span>
+<span class="n">params</span> <span class="o">=</span> <span class="s">"?stations=aceabsar&amp;start_time=2024-01-01&amp;end_time=2024-02-01&amp;elements=air_temp,ppt&amp;type=csv"</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">base_url</span> <span class="o">+</span> <span class="n">params</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">.</span><span class="n">head</span><span class="p">())</span>
+</code></pre></div></div>
+
+<h3 id="c-daily-observationsdaily">c. Daily (<code class="language-plaintext highlighter-rouge">/observations/daily/</code>)</h3>
+<p>Get daily aggregated summaries (min/max/avg). The start_time parameter is reccomended; the end_time parameter will default to the current day if left blank.</p>
+
+<p><strong>Optional Parameters:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">stations</code>: Comma-separated list of station identifiers (e.g., <code class="language-plaintext highlighter-rouge">aceabsar,arskeogh</code>).</li>
+  <li><code class="language-plaintext highlighter-rouge">start_time</code>: Start date (YYYY-MM-DD).</li>
+  <li><code class="language-plaintext highlighter-rouge">end_time</code>: End date (YYYY-MM-DD).</li>
+  <li><code class="language-plaintext highlighter-rouge">elements</code>: (Optional) Comma-separated list of variables to retrieve (e.g., <code class="language-plaintext highlighter-rouge">air_temp,ppt</code>).</li>
+  <li><code class="language-plaintext highlighter-rouge">type</code>: <code class="language-plaintext highlighter-rouge">html</code>,<code class="language-plaintext highlighter-rouge">csv</code> or <code class="language-plaintext highlighter-rouge">json</code> (default: <code class="language-plaintext highlighter-rouge">html</code>).</li>
+</ul>
+
+<p><strong>Python</strong></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="c1"># Get daily summary for 'aceabsar'
+</span><span class="n">base_url</span> <span class="o">=</span> <span class="s">"https://mesonet.climate.umt.edu/api/v2/observations/daily/"</span>
+<span class="n">params</span> <span class="o">=</span> <span class="s">"?stations=aceabsar&amp;start_time=2024-01-01&amp;end_time=2024-01-10&amp;type=csv"</span>
+<span class="n">daily_df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">base_url</span> <span class="o">+</span> <span class="n">params</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">daily_df</span><span class="p">.</span><span class="n">head</span><span class="p">())</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="3-photos">3. Photos</h2>
+<p>Hydromet stations are equipped with cameras. You can retrieve correct URLs for station photos using this endpoint.</p>
+
+<p><strong>Endpoint:</strong> <code class="language-plaintext highlighter-rouge">/photos/{station}/{direction}/</code></p>
+
+<p><strong>Parameters:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">station</code>: Station identifier (e.g., <code class="language-plaintext highlighter-rouge">aceabsar</code>).</li>
+  <li><code class="language-plaintext highlighter-rouge">direction</code>: <code class="language-plaintext highlighter-rouge">n</code> (North), <code class="language-plaintext highlighter-rouge">s</code> (South), <code class="language-plaintext highlighter-rouge">e</code> (East), <code class="language-plaintext highlighter-rouge">w</code> (West), or <code class="language-plaintext highlighter-rouge">g</code> (Ground).</li>
+</ul>
+
+<h3 id="example">Example</h3>
+<p>View the latest South-facing photo from the Absarokee (aceabsar) station:
+<a href="https://mesonet.climate.umt.edu/api/v2/photos/aceabsar/s/?force=True">https://mesonet.climate.umt.edu/api/v2/photos/aceabsar/s/?force=True</a></p>
+
+<figure class="image">
+    <img src="https://mesonet.climate.umt.edu/api/v2/photos/aceabsar/s/?force=True" alt="Latest south-facing image from Absarokee" />
+    <figcaption>Latest south-facing image from Absarokee</figcaption>
+</figure>
+
+<hr />
+
+<h2 id="4-derived-metrics">4. Derived Metrics</h2>
+<p>The API can calculate complex metrics on the fly, such as Reference Evapotranspiration (ETo) and Growing Degree Days (GDD).</p>
+
+<h3 id="reference-et-hourlydaily">Reference ET (Hourly/Daily)</h3>
+<p><strong>Endpoint:</strong> <code class="language-plaintext highlighter-rouge">/derived/daily/</code></p>
+
+<p><strong>Python</strong></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="c1"># Calculate daily Reference ET (ETo) for a station
+</span><span class="n">url</span> <span class="o">=</span> <span class="s">"https://mesonet.climate.umt.edu/api/v2/derived/daily/?stations=aceabsar&amp;elements=eto&amp;start_time=2023-06-01&amp;end_time=2023-07-01&amp;type=csv"</span>
+<span class="n">eto_data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">eto_data</span><span class="p">.</span><span class="n">head</span><span class="p">())</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="additional-resources">Additional Resources</h2>
+<p>For a complete list of all available parameters, elements, and response schemas, please consult our <strong><a href="https://mesonet.climate.umt.edu/api/v2/docs">Interactive API Documentation</a></strong>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+
+  
+
+
+        
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+    <ul class="social-icons">
+      
+        <li><strong>Follow:</strong></li>
+      
+  
+      
+        
+          
+            <li><a href="https://github.com/mt-climate-office" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="mailto:state.climatologist@umontana.edu" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          
+        
+          
+            <li><a href="https://x.com/mt_climate" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i> X</a></li>
+          
+        
+      
+  
+      
+        <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+      
+    </ul>
+  </div>
+
+<!-- <div class="page__footer-test">
+    <strong>Contact Information: </strong><br>
+    Montana Climate Office <br> Montana Forest & Conservation Experiment Station <br> University of Montana <br> 32 Campus Drive <br> Missoula, MT 59812 <br> Phone: (406) 243-6939 <br> <a href="mailto:state.climatologist@umontana.edu">state.climatologist@umontana.edu</a> <br>
+</div>
+<br> -->
+<div class="page__footer-copyright">&copy; 2026 Montana Climate Office. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    		
+ <script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+
+
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

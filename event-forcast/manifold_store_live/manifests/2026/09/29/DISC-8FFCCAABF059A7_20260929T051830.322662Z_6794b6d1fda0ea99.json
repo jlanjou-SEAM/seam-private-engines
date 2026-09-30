@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-8FFCCAABF059A7",
+  "provider": "NOAA/NCEI",
+  "dataset": "ncei",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:30.322662Z",
+  "request_url": "https://gis.ncdc.noaa.gov/maps/ncei/",
+  "final_url": "https://gis.ncdc.noaa.gov/maps/ncei/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 337,
+  "sha256": "6794b6d1fda0ea999226d0b3f9f04b7a1aedfe186198b7f630d65909ae18c7b7",
+  "etag": "W/\"213-1631539064000\"",
+  "last_modified": "Mon, 13 Sep 2021 13:17:44 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-8FFCCAABF059A7\\20260929T051830.322662Z_6794b6d1fda0ea99.html",
+  "parent_id": "NOAA-CDO",
+  "discovery_depth": 1
+}

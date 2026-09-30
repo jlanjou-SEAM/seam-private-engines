@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-CE4B8AFB6AAB54",
+  "provider": "NOAA/NCEI",
+  "dataset": "crn",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:02.669017Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/crn/",
+  "final_url": "https://www.ncei.noaa.gov/maps/crn/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 18805,
+  "sha256": "5d7dd02780937b717a248d01d7d7913267d245d946cae27c5f568da294ea0510",
+  "etag": "\"48d9-647bb877f7e80\"",
+  "last_modified": "Tue, 06 Jan 2026 17:30:18 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-CE4B8AFB6AAB54\\20260930T044802.669017Z_5d7dd02780937b71.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

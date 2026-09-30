@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-4CC44A9357CBA2",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "maps-satellites",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:41.409575Z",
+  "request_url": "https://www.ncm.gov.ae/maps-satellites?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/maps-satellites?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43531,
+  "sha256": "964179a468390dabf6b2e3904408d380eff4b8848b31ae10889a0d4c8cb9be50",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4CC44A9357CBA2\\20260930T041041.409575Z_964179a468390dab.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

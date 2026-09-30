@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-4C950C114C98CD",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "sydney.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:16.914233Z",
+  "request_url": "https://reg.bom.gov.au/nsw/observations/sydney.shtml",
+  "final_url": "https://reg.bom.gov.au/nsw/observations/sydney.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 88447,
+  "sha256": "5072c22c94c150f3305b93745c23e25f1a53c984494ede4b75e8dd4a75bc675a",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4C950C114C98CD\\20260930T040616.914233Z_5072c22c94c150f3.shtml",
+  "parent_id": "BOM-DATA",
+  "discovery_depth": 1
+}

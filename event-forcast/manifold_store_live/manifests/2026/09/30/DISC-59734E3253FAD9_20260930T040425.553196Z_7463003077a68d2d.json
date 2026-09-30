@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-59734E3253FAD9",
+  "provider": "University of Oklahoma / Oklahoma State",
+  "dataset": "rainrfc.24hr.png",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "soil"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:25.553196Z",
+  "request_url": "https://data.mesonet.org/data/public/mesonet/maps/realtime/rainrfc.24hr.png",
+  "final_url": "https://data.mesonet.org/data/public/mesonet/maps/realtime/rainrfc.24hr.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 110340,
+  "sha256": "7463003077a68d2d4362708b5586b3f27c41c94bb8447b11cc327ad44d36d90b",
+  "etag": "\"1af92e0-1af04-65cab5c692362\"",
+  "last_modified": "Wed, 30 Sep 2026 04:01:59 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-59734E3253FAD9\\20260930T040425.553196Z_7463003077a68d2d.png",
+  "parent_id": "OKMESONET",
+  "discovery_depth": 1
+}

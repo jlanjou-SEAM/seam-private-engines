@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-5E9CE4890A71DE",
+  "provider": "NOAA/NCEI",
+  "dataset": "1818",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:32.423339Z",
+  "request_url": "https://www.ncei.noaa.gov/node/1818",
+  "final_url": "https://www.ncei.noaa.gov/about/our-impact/coral-reef-watch",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 31011,
+  "sha256": "486440bfae7d124d902e6c3d5b7fd73435916e1e08b31f270d38d653a5b3c38a",
+  "etag": "\"1790718743-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:52:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-5E9CE4890A71DE\\20260930T044732.423339Z_486440bfae7d124d.html",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

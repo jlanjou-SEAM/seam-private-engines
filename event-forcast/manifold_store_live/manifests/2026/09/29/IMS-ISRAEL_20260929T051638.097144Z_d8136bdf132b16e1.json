@@ -1,0 +1,23 @@
+{
+  "candidate_id": "IMS-ISRAEL",
+  "provider": "Israel Meteorological Service",
+  "dataset": "Weather/climate data",
+  "sector": "public",
+  "country": "IL",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-29T05:16:38.097144Z",
+  "request_url": "https://ims.gov.il/",
+  "final_url": "https://ims.gov.il/he",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 80285,
+  "sha256": "d8136bdf132b16e17eece5876a7df5fc938f15b894c58630e7cb681aa787fe79",
+  "etag": "\"1790658866\"",
+  "last_modified": "Tue, 29 Sep 2026 05:14:26 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\IMS-ISRAEL\\20260929T051638.097144Z_d8136bdf132b16e1.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

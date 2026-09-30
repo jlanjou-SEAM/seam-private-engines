@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-29A40BBF930EC1",
+  "provider": "NOAA/NCEI",
+  "dataset": "learn%20more%20picture.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:50.862285Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/learn%20more%20picture.png",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/learn%20more%20picture.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 1603002,
+  "sha256": "459407b3433eb8d30194055b4c4ab6b59d5e626c4229dc1a6ed5ecd4a7aba22a",
+  "etag": null,
+  "last_modified": "Mon, 30 Jan 2023 14:05:49 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-29A40BBF930EC1\\20260930T044650.862285Z_459407b3433eb8d3.png",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

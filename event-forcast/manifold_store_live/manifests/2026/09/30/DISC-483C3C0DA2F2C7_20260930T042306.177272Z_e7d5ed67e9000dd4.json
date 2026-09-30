@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-483C3C0DA2F2C7",
+  "provider": "NOAA/NSSL",
+  "dataset": "ProbSevere",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T04:23:06.177272Z",
+  "request_url": "https://mrms.ncep.noaa.gov/ProbSevere/",
+  "final_url": "https://mrms.ncep.noaa.gov/ProbSevere/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 614,
+  "sha256": "e7d5ed67e9000dd499060026dcebe2fce36cae63f6eb988202c6e0d299331d8a",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-483C3C0DA2F2C7\\20260930T042306.177272Z_e7d5ed67e9000dd4.html",
+  "parent_id": "NOAA-MRMS",
+  "discovery_depth": 1
+}

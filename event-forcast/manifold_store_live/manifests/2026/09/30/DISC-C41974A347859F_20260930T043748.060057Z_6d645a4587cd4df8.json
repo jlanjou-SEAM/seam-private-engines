@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C41974A347859F",
+  "provider": "NOAA/NCEP",
+  "dataset": "solar-synoptic-map",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:48.060057Z",
+  "request_url": "https://www.spaceweather.gov/products/solar-synoptic-map",
+  "final_url": "https://www.spaceweather.gov/products/solar-synoptic-map",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 73018,
+  "sha256": "6d645a4587cd4df89659a9c63f44de2ac98f12abb06ad9b6cf9d60a189773a03",
+  "etag": "\"1790734035\"",
+  "last_modified": "Wed, 30 Sep 2026 02:07:15 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C41974A347859F\\20260930T043748.060057Z_6d645a4587cd4df8.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

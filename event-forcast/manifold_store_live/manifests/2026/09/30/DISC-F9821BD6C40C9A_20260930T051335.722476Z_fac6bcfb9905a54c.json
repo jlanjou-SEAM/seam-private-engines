@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F9821BD6C40C9A",
+  "provider": "NOAA/NDBC",
+  "dataset": "MYPF1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:13:35.722476Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/MYPF1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/MYPF1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1008808,
+  "sha256": "fac6bcfb9905a54c080c13dc9e1ec9d1843d34f5257a397c4eb4c09b394f5d80",
+  "etag": "\"f64a8-65cac2d493e37\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-F9821BD6C40C9A\\20260930T051335.722476Z_fac6bcfb9905a54c.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

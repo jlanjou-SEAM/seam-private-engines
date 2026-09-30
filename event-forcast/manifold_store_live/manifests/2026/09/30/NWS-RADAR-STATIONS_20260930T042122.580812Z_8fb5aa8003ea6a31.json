@@ -1,0 +1,23 @@
+{
+  "candidate_id": "NWS-RADAR-STATIONS",
+  "provider": "NOAA/NWS",
+  "dataset": "Radar station metadata",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar"
+  ],
+  "retrieved_utc": "2026-09-30T04:21:22.580812Z",
+  "request_url": "https://api.weather.gov/radar/stations",
+  "final_url": "https://api.weather.gov/radar/stations",
+  "status_code": 200,
+  "content_type": "application/geo+json",
+  "byte_length": 510669,
+  "sha256": "8fb5aa8003ea6a31f028b6d579042ce4f638e4efd975257593860856e03f31ae",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\NWS-RADAR-STATIONS\\20260930T042122.580812Z_8fb5aa8003ea6a31.json",
+  "parent_id": null,
+  "discovery_depth": 0
+}

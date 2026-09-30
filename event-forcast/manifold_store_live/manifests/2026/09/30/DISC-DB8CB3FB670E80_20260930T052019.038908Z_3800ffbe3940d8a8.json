@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-DB8CB3FB670E80",
+  "provider": "NASA Earthdata",
+  "dataset": "airs-nrt-version-7-data-delayed",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:19.038908Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/airs-nrt-version-7-data-delayed",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/airs-nrt-version-7-data-delayed",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 138694,
+  "sha256": "3800ffbe3940d8a8b715c7761a0209702097c627abff5a8928b2c9872af854f1",
+  "etag": "\"1790745620\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-DB8CB3FB670E80\\20260930T052019.038908Z_3800ffbe3940d8a8.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

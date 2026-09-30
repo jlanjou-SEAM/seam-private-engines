@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-38F6663375334D",
+  "provider": "NOAA/SWPC",
+  "dataset": "predicted_fredericksburg_a_index.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:09:37.398714Z",
+  "request_url": "https://services.swpc.noaa.gov/json/predicted_fredericksburg_a_index.json",
+  "final_url": "https://services.swpc.noaa.gov/json/predicted_fredericksburg_a_index.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 2140,
+  "sha256": "90ef3b8c5f4e10a593cebb6d113c0c957aa601460471d72f0cd97912ba6ebf7a",
+  "etag": "\"85c-65cab68d5955e\"",
+  "last_modified": "Wed, 30 Sep 2026 04:05:28 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-38F6663375334D\\20260930T040937.398714Z_90ef3b8c5f4e10a5.json",
+  "parent_id": "SWPC-JSON",
+  "discovery_depth": 1
+}

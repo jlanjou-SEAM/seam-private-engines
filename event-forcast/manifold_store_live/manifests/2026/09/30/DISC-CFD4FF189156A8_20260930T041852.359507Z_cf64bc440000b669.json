@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-CFD4FF189156A8",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "border.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:52.359507Z",
+  "request_url": "https://madis.ncep.noaa.gov/images/border.jpg",
+  "final_url": "https://madis.ncep.noaa.gov/images/border.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 10802,
+  "sha256": "cf64bc440000b6690c306f5b9c878992f4bd0480cb5558fca1f00b186f0022af",
+  "etag": null,
+  "last_modified": "Tue, 29 Nov 2016 23:18:18 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-CFD4FF189156A8\\20260930T041852.359507Z_cf64bc440000b669.jpg",
+  "parent_id": "DISC-F307923E5EC61B",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-F38CE7B5247915",
+  "provider": "NOAA/NSSL",
+  "dataset": "HeightCompositeReflectivity",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:18.607610Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/HeightCompositeReflectivity/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/HeightCompositeReflectivity/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 166527,
+  "sha256": "fbdfd0a6a5df70fdc71924c9338359e67ffcd68053c8fc73e4810517b2595a5e",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F38CE7B5247915\\20260930T050818.607610Z_fbdfd0a6a5df70fd.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

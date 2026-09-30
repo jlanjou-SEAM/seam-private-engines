@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-812B2EB0FE530E",
+  "provider": "NOAA/NDBC",
+  "dataset": "MCGA1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:13:56.569314Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/MCGA1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/MCGA1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1017080,
+  "sha256": "373086823db85994ffec7b28514f91d62a240d09eedad632f20690702d1fceec",
+  "etag": "\"f84f8-65cac2d46ec7a\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-812B2EB0FE530E\\20260930T051356.569314Z_373086823db85994.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-14491E0671D7A6",
+  "provider": "NOAA/NCEI",
+  "dataset": "global-historical-climatology-network-daily",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:42.324667Z",
+  "request_url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+  "final_url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 73438,
+  "sha256": "77d42ce32742da4892c7be2c5f0866eeb6f59affe7bc4e7aad3c76cf9508b8d6",
+  "etag": "\"1790715543-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 20:59:03 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-14491E0671D7A6\\20260930T043942.324667Z_77d42ce32742da48.html",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

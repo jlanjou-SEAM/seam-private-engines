@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-79D2B5837FCB26",
+  "provider": "IPMA",
+  "dataset": "CI_SNMB.geojson",
+  "sector": "public",
+  "country": "PT",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:02.101661Z",
+  "request_url": "https://api.ipma.pt/open-data/observation/biology/bivalves/CI_SNMB.geojson",
+  "final_url": "https://api.ipma.pt/open-data/observation/biology/bivalves/CI_SNMB.geojson",
+  "status_code": 200,
+  "content_type": "text/plain; charset=UTF-8",
+  "byte_length": 3411714,
+  "sha256": "7857c9b07cf333bce76af4ce9984014f03c7a0797f51631ab2823e5e62f2201b",
+  "etag": "\"215f-340f02-65c508d255cb1\"",
+  "last_modified": "Fri, 25 Sep 2026 15:41:35 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-79D2B5837FCB26\\20260930T040602.101661Z_7857c9b07cf333bc.geojson",
+  "parent_id": "IPMA-API",
+  "discovery_depth": 1
+}

@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-47C18FF280AE25",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "acars_restrictions.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:52:45.004866Z",
+  "request_url": "https://madis.ncep.noaa.gov/acars_restrictions.shtml",
+  "final_url": "https://madis.ncep.noaa.gov/acars_restrictions.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 33753,
+  "sha256": "9b1e3d37cf307180b99ce77247c47408db7c7ca03c5ba8dae4d7eef31663fd34",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-47C18FF280AE25\\20260930T045245.004866Z_9b1e3d37cf307180.shtml",
+  "parent_id": "NOAA-MADIS",
+  "discovery_depth": 1
+}

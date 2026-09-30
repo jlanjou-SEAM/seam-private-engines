@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-3A4785EAF42519",
+  "provider": "NOAA/NCEI",
+  "dataset": "FY2024%20Q3%20SOS%20Executive%20Summary.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:17.995099Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2024-07/FY2024%20Q3%20SOS%20Executive%20Summary.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2024-07/FY2024%20Q3%20SOS%20Executive%20Summary.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 845937,
+  "sha256": "3ef74f353c4b12b87e974896853bad027e1b9bc031fa793259b875181a73373a",
+  "etag": null,
+  "last_modified": "Tue, 30 Jul 2024 19:01:47 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-3A4785EAF42519\\20260930T043917.995099Z_3ef74f353c4b12b8.pdf",
+  "parent_id": "DISC-9D0226951FD2F4",
+  "discovery_depth": 2
+}

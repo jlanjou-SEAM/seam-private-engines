@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C73A3896E5D528",
+  "provider": "NOAA/NCEP",
+  "dataset": "planetary-k-index",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:47.742135Z",
+  "request_url": "https://www.spaceweather.gov/products/planetary-k-index",
+  "final_url": "https://www.spaceweather.gov/products/planetary-k-index",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 72228,
+  "sha256": "cfba8f9cb3fdc73db873fb72fad7533ac963a8f354a1732e6b47d809c2bccf73",
+  "etag": "\"1790733598\"",
+  "last_modified": "Wed, 30 Sep 2026 01:59:58 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C73A3896E5D528\\20260930T043747.742135Z_cfba8f9cb3fdc73d.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

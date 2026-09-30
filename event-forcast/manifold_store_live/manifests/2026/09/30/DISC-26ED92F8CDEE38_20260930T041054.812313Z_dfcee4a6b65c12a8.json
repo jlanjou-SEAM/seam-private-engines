@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-26ED92F8CDEE38",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "information-security-policy",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:54.812313Z",
+  "request_url": "https://www.ncm.gov.ae/pages/information-security-policy?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/information-security-policy?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43633,
+  "sha256": "dfcee4a6b65c12a881b46e1e45fa86bbc24edf16b95dbf79515bffcf085c12fc",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-26ED92F8CDEE38\\20260930T041054.812313Z_dfcee4a6b65c12a8.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-9F91D4DCE0EFD4",
+  "provider": "NOAA/SWPC",
+  "dataset": "icao-space-weather-advisories.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-29T05:17:30.740844Z",
+  "request_url": "https://services.swpc.noaa.gov/json/icao-space-weather-advisories.json",
+  "final_url": "https://services.swpc.noaa.gov/json/icao-space-weather-advisories.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 2,
+  "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "etag": "\"2-653d3b5de63a2\"",
+  "last_modified": "Tue, 09 Jun 2026 15:23:34 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\29\\DISC-9F91D4DCE0EFD4\\20260929T051730.740844Z_4f53cda18c2baa0c.json",
+  "parent_id": "SWPC-JSON",
+  "discovery_depth": 1
+}

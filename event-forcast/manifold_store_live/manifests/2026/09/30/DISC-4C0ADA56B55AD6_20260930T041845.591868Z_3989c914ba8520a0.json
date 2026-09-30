@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-4C0ADA56B55AD6",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "gfs_namer_024_sim_radar_comp.gif",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:45.591868Z",
+  "request_url": "https://mag.ncep.noaa.gov/data/gfs/12/namer/sim_radar_comp/gfs_namer_024_sim_radar_comp.gif",
+  "final_url": "https://mag.ncep.noaa.gov/data/gfs/12/namer/sim_radar_comp/gfs_namer_024_sim_radar_comp.gif",
+  "status_code": 200,
+  "content_type": "image/gif",
+  "byte_length": 140405,
+  "sha256": "3989c914ba8520a0321f0256975989807c9bc095829bf2e2682427a80ef4e12e",
+  "etag": null,
+  "last_modified": "Tue, 29 Sep 2026 15:43:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4C0ADA56B55AD6\\20260930T041845.591868Z_3989c914ba8520a0.gif",
+  "parent_id": "DISC-187AADF5F10B84",
+  "discovery_depth": 2
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-04CEF424A28638",
+  "provider": "USGS Water Data",
+  "dataset": "time-zone-codes",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T05:02:28.088545Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-zone-codes",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-zone-codes",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 4378,
+  "sha256": "d123748fd5b9fec526a743ed82b69b304fd37122cd0c66684b98a7172a289611",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\30\\DISC-04CEF424A28638\\20260930T050228.088545Z_d123748fd5b9fec5.json",
+  "parent_id": "DISC-50BE965810B0D9",
+  "discovery_depth": 2
+}

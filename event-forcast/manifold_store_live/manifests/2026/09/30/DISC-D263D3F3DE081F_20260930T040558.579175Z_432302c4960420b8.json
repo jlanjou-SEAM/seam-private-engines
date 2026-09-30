@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-D263D3F3DE081F",
+  "provider": "MET Norway",
+  "dataset": "healthz",
+  "sector": "public",
+  "country": "NO",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "air_quality"
+  ],
+  "retrieved_utc": "2026-09-30T04:05:58.579175Z",
+  "request_url": "https://api.met.no/weatherapi/radar/2.0/healthz?icon",
+  "final_url": "https://api.met.no/images/Disc_Plain_green.svg",
+  "status_code": 200,
+  "content_type": "image/svg+xml",
+  "byte_length": 202,
+  "sha256": "432302c4960420b8edf9e70d566e0964a3e21ae3299707dafc5b9e6e97bf67a9",
+  "etag": "W/\"f07d23bb54be576ee8a17868642b5cdb\"",
+  "last_modified": "Thu, 10 Sep 2026 10:08:11 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-D263D3F3DE081F\\20260930T040558.579175Z_432302c4960420b8.svg",
+  "parent_id": "METNO-API",
+  "discovery_depth": 1
+}

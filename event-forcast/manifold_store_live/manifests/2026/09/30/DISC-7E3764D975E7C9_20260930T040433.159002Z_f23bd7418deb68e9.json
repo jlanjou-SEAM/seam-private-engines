@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-7E3764D975E7C9",
+  "provider": "OpenWeather",
+  "dataset": "map_icon.svg",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:33.159002Z",
+  "request_url": "https://openweathermap.org/payload/api/media/file/map_icon.svg",
+  "final_url": "https://openweathermap.org/payload/api/media/file/map_icon.svg",
+  "status_code": 200,
+  "content_type": "image/svg+xml",
+  "byte_length": 1386,
+  "sha256": "f23bd7418deb68e9c240c77832fc6aa8d732003fe54c365cb483b8713b005367",
+  "etag": "\"6a74cf9b06c986f8b1203fb0\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7E3764D975E7C9\\20260930T040433.159002Z_f23bd7418deb68e9.svg",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

@@ -1,0 +1,796 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Phytoplankton Monitoring Network</title>
+        <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/3.10/js/dojo/dijit/themes/soria/soria.css">
+        <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/3.10/js/esri/dijit/css/Popup.css"/>
+        <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/3.10/js/esri/css/esri.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/mapStyle.css"/>
+
+        <!-- Growler: css -->
+        <link rel="stylesheet" href="../../maps/dijits/js/ncei/Growler.css">
+
+        <style type="text/css">
+            /*ARN added for NCEI header buttons*/
+
+            /*ARN added for NCEI header buttons*/
+            .soria .dijitToolbar .dijitButtonNode
+            {
+                background-color:white;
+                color:black;
+                border: 1px solid #316AC5;
+            }
+            .soria .dijitToolbar .dijitToggleButtonChecked .dijitButtonNode
+            {
+                background-color:#C1D2EE;
+                color:black;
+                border: 1px solid #316AC5;
+            }
+            /*ARN end added for NCEI header buttons*/
+
+            .zoominIcon
+            { background-image: url(images/nav_zoomin.png); width: 16px; height: 16px; }
+
+            .zoomoutIcon
+            { background-image: url(images/nav_zoomout.png); width: 16px; height: 16px; }
+
+            .zoomfullextIcon
+            { background-image: url(images/nav_fullextent.png); width: 16px; height: 16px; }
+
+            .zoomprevIcon
+            { background-image: url(images/nav_previous.png); width: 16px; height: 16px; }
+
+            .zoomnextIcon
+            { background-image: url(images/nav_next.png); width: 16px; height: 16px; }
+
+            .panIcon
+            { background-image: url(images/nav_pan.png); width: 16px; height: 16px; }
+
+            .deactivateIcon
+            { background-image: url(images/nav_decline.png); width: 16px; height: 16px; }
+
+            .downloadIcon
+            { background-image: url(images/download16.png); width: 16px; height: 16px; }
+
+            .metadataIcon
+            { background-image: url(images/metadata16.png); width: 16px; height: 16px; }
+
+            .navToolbar
+            { background: #000; }
+
+            .soria .dijitToolbar
+            {
+                border-bottom:       none;
+                background-color:    transparent;
+                background-image:    none;
+                background-position: 0px 0px;
+                background-repeat:   repeat-x;
+                padding:             2px 0px 2px 4px;
+                margin:              5px;
+                zoom:                1;
+            }
+
+            .soria .dijitReset
+            {
+                color:       black;
+                font-family: Arial, Verdana, Helvetica, sans-serif;
+                font-size:   12px;
+                font-weight: normal;
+            }
+
+            .soria .dijitSelectSelectedOption *
+            {
+                font-weight: bold;
+            }
+
+            .soria .dijitTabChecked
+            {
+                cursor:      default;
+                font-weight: bold;
+            }
+
+            /*JC drop down change*/
+            .nav-item
+            {
+                padding-bottom: 10px;
+                padding-left:   5px;
+                padding-right:  5px;
+            }
+
+            .nav-link
+            {
+                color: white;
+            }
+            /*end JC drop down change*/
+
+            /* Growler: div style and local overrides to external css */
+            .upperRight {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                z-index: 999;
+                width: 450px;
+            }
+            .gis-dijit-Growl .growl {
+                font-size: 13px;
+            }
+            .gis-dijit-Growl .growl h1, .gis-dijit-Growl .growl h2, .gis-dijit-Growl .growl h3 {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .gis-dijit-Growl .growl h4 {
+                font-size: 14px;
+            }
+        </style>
+
+        <!-- Growler -->
+        <script type="text/javascript">
+            var tierDomain = window.location.hostname;
+            var dojoConfig = {
+                waitSeconds: 5,
+                async: false, // needs to be false
+                parseOnLoad: true,
+
+                // list local packages
+                packages: [
+                    {
+                        name: "ncei",
+                        location: "https://"+tierDomain+"/maps/dijits/js/ncei"
+                    }
+                ]
+            };
+        </script>
+
+        <script src="https://js.arcgis.com/3.10/"></script>
+        <script type="text/javascript" src="javascripts/mapFunctions.js"></script>
+        <script type="text/javascript" src="javascripts/species.js"></script>
+        <script type="text/javascript" src="../common/javascripts/Federated-Analytics.js"></script>
+
+        <!-- Growler -->
+        <script type="text/javascript">
+            require([
+                "esri/request",
+                "ncei/Growler",
+                "dojo/ready"
+            ], function (
+                esriRequest,
+                Growler,
+                ready) {
+            ready(function () {
+                setupGrowler();
+    
+                // Growler: load config and set growler, if needed
+                function setupGrowler() {
+                    let growler = new Growler({}, "growlerDijit");
+                    growler.startup();
+    
+                    let configUrl;
+                    if (window.location.hostname == "localhost") {
+                        configUrl = "../config/gis-map-status.json";
+                    } else {
+                        configUrl = "https://" + window.location.hostname + "/maps/config/gis-map-status.json";
+                    }
+                    let request = esriRequest({
+                        url: configUrl,
+                        content: { f: "json" },
+                        handleAs: "json",
+                        callbackParamName: "callback"
+                    });
+                    
+                    request.then(
+                        function(response) {
+                            let config = response;
+                            let nceiSystemId = "gis";
+                            let nceiMapId = "phytoplankton";
+                            let title = "NCEI GIS Maps & Services";
+                            let type = "";
+                            let msg = "";
+    
+                            for (var i=0; i<config.maps.length; i++) {
+                                // gis system
+                                if ((config.maps[i].id === nceiSystemId) && (config.maps[i].active === true)) {
+                                    type = config.maps[i].type;
+                                    msg = config.maps[i].message;
+    
+                                    if (type === "warning") title += " Warning";
+                                    if (type === "error") title += " Error";
+                                    if (type === "info") {
+                                        title += " Notice";
+                                        type = "default";
+                                    }
+                                    growler.growl({
+                                        title: title,
+                                        message: msg,
+                                        level: type,
+                                        timeout: 30000
+                                    });
+                                }
+                                // map id
+                                if ((config.maps[i].id === nceiMapId) && (config.maps[i].active === true)) {
+                                    type = config.maps[i].type;
+                                    msg = config.maps[i].message;
+    
+                                    if (type === "warning") title += " Warning";
+                                    if (type === "error") title += " Error";
+                                    if (type === "info") {
+                                        title += " Notice";
+                                        type = "default";
+                                    }
+                                    growler.growl({
+                                        title: title,
+                                        message: msg,
+                                        level: type,
+                                        timeout: 30000
+                                    });
+                                }
+                            }
+            
+                        }, function(error) {
+                            console.log("Error: ", error.message);
+                        }
+                    );
+                }
+            });
+            }
+        );
+        </script>
+
+        <script type="text/javascript">
+            dojo.require("dijit.dijit");
+            dojo.require("dijit.Dialog");
+            dojo.require("dijit.layout.BorderContainer");
+            dojo.require("dijit.layout.ContentPane");
+            dojo.require("dijit.layout.TabContainer");
+            dojo.require("dijit.form.Button");
+            dojo.require("dijit.form.CheckBox");
+            dojo.require("dijit.form.DateTextBox");
+            dojo.require("dijit.form.NumberTextBox");
+            dojo.require("dijit.form.Form");
+            dojo.require("dijit.form.Select");
+            dojo.require("dijit.form.Slider");
+            dojo.require("dijit.TitlePane");
+            dojo.require("dijit.Toolbar");
+            dojo.require("dojo.DeferredList");
+            dojo.require("dojox.charting.Chart2D");
+            dojo.require("dojox.charting.themes.PrimaryColors");
+            dojo.require("esri.map");
+            dojo.require("esri.arcgis.utils");
+            dojo.require("esri.dijit.Scalebar");
+            dojo.require("esri.layers.FeatureLayer");
+            dojo.require("esri.toolbars.navigation");
+            dojo.require("esri.tasks.query");
+            dojo.require("esri.tasks.identify");
+
+            // JC drop down change
+            dojo.require("dijit.form.DropDownButton");
+            // end JC drop down change
+
+
+            var loading;
+            var map;
+            var navToolbar;
+            var mapOnClick_identifyQueryResults;
+            var idParams;
+            var idTask1, idTask2;
+            var sampleDate = -99;
+            var tsDiv, timeSlider;
+            var tsLabelDiv, timeSliderLabels;
+            var speciesChart;
+            var mainSearch = true;
+            var speciesLabels = [];
+            var speciesCounter = [];
+            var pageCounter = 1;
+            var startExtent;
+            var ua = navigator.userAgent;
+            var usingIE = false;
+
+            function init()
+            {
+
+                // determine browswer
+                if (ua.indexOf("MSIE") != -1)  usingIE = true;
+
+                loading = dojo.byId("loadingImg");
+
+                // actually looking at last 90 days of data
+                var ninty_days_ago = new Date((new Date()).getTime() - 90 * 24 * 60 * 60 * 1000);
+                mth = ninty_days_ago.getMonth() + 1;
+                day = ninty_days_ago.getDate();
+                year = ninty_days_ago.getFullYear();
+                dojo.byId("fromDate").value = year + "-" + ((mth < 10) ? "0" : "") + mth + "-" + ((day < 10) ? "0" : "") + day;
+                var today = new Date();
+                mth = today.getMonth() + 1;
+                day = today.getDate();
+                year = today.getFullYear();
+                dojo.byId("toDate").value = year + "-" + ((mth < 10) ? "0" : "") + mth + "-" + ((day < 10) ? "0" : "") + day;
+
+                var popup = new esri.dijit.Popup({
+                                                     fillSymbol: new esri.symbol.SimpleFillSymbol(esri.symbol.SimpleFillSymbol.STYLE_SOLID, new esri.symbol.SimpleLineSymbol(esri.symbol.SimpleLineSymbol.STYLE_SOLID, new dojo.Color([255, 0, 0]), 2), new dojo.Color([255, 255, 0, 0.25]))
+                                                 }, dojo.create("div"));
+
+                // create map
+                startExtent = new esri.geometry.Extent(-19937494, -3433891, -2756896, 9970105, new esri.SpatialReference({wkid: 3857}));
+                map = new esri.Map("map", {
+                    logo:            false,
+                    slider:          false,
+                    extent:          startExtent,
+                    wrapAround180:   true,
+                    infoWindow:      popup,
+                    showAttribution: false
+                });
+
+                dojo.addClass(map.infoWindow.domNode, "myTheme");
+
+                //after map loads, listen to mouse move and drag events
+                dojo.connect(map, "onMouseMove", showCoordinates);
+                dojo.connect(map, "onMouseDrag", showCoordinates);
+                dojo.connect(map, "onUpdateStart", UpdateStart);
+                dojo.connect(map, "onUpdateEnd", UpdateEnd);
+
+                dojo.connect(map, 'onLoad', function (mapLayout)
+                {
+                    var scalebar = new esri.dijit.Scalebar({
+                                                               map:          map,
+                                                               scalebarUnit: 'english'
+                                                           });
+                    tsDiv = dojo.create("div", null, dojo.byId('timeSliderDiv'));
+                    tsLabelDiv = dojo.create("div", null, dojo.byId('timeSliderLabelsDiv'));
+                    // set up identify task
+                    initIdentifies();
+                    initSearch();
+                    //resize the map when the browser resizes
+                    dojo.connect(dijit.byId('map'), 'resize', map, map.resize);
+                });
+
+                // add layers to map
+                var basemap = new esri.layers.ArcGISTiledMapServiceLayer("https://server.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer");
+                basemap.id = "basemap";
+                map.addLayer(basemap);
+                
+
+                // set up navigation toolbar
+                navToolbar = new esri.toolbars.Navigation(map);
+                //dojo.connect(navToolbar, "onExtentHistoryChange", extentHistoryChangeHandler);
+
+                // show dialog
+                dijit.byId("shutdownPage").hide();
+            }
+
+            // arn - removed here and above to stop buttons from changing.
+            /*function extentHistoryChangeHandler()
+            {
+                dijit.byId("zoomprev").disabled = navToolbar.isFirstExtent();
+                dijit.byId("zoomnext").disabled = navToolbar.isLastExtent();
+            }*/
+
+            dojo.addOnLoad(init);
+        </script>
+
+    </head>
+    <body class="soria">
+        <div class="dijitHidden">
+            <div data-dojo-type="dijit.Dialog" style="width:500px;" id="shutdownPage">
+                <div style="font-family:arial;font-size:18px;height:350px;border:1px solid #769dc4;padding:0 10px;width:500px;">
+                    <p>
+                    <center><b>GOVERNMENT SHUTDOWN</b></center>
+                </div>
+            </div>
+        </div>
+        <div id="mainWindow" dojotype="dijit.layout.BorderContainer" design="headline" gutters="false"
+             style="width:100%; height:100%;">
+            <!--<div id="header" dojotype="dijit.layout.ContentPane" region="top">-->
+            <div id="header" dojotype="dijit.layout.ContentPane" region="top" style=height:115px;">
+
+                <!--ARN update header to ncei type-->
+                <!--<img src="images/PMNSmallBanner.jpg">-->
+
+                <!-- ncei header -->
+                <div id="nceiheader" style="width:100%; background-color:#112E51">
+                    <a href="https://www.ncei.noaa.gov/"
+                       title="National Centers for Environmental Information, National Oceanic and Atmospheric Administration">
+                        <img src="images/map-banner.png"
+                             alt="National Centers for Environmental Information, National Oceanic and Atmospheric Administration"
+                             height="75px" style="vertical-align:middle; padding:3px 5px; margin-right:100px" ;>
+                    </a>
+                    <span style="font-size:20px">Phytoplankton Monitoring Network</span>
+
+                    <!--JC drop down changes-->
+                    <div data-dojo-type="dijit.form.DropDownButton" data-dojo-props="style:'float:right; color:black; padding-top: 15px; padding-right: 15px;'">
+                        <span>Go to...</span>
+
+                        <div data-dojo-type="dijit.layout.ContentPane" style="background-color:#112E51; border: 1px solid black; margin:0px;">
+                            <ul class="" style="list-style-type: none; margin:5px; padding: 0px;">
+                                <li class="nav-item" style="padding-top:0;">
+                                    <a href="https://www.ncei.noaa.gov" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.ncei.noaa.gov/about" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.ncei.noaa.gov/products" class="nav-link">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.ncei.noaa.gov/news" class="nav-link">News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.ncei.noaa.gov/services" class="nav-link">Services</a>
+                                </li>
+                                <li class="nav-item" style="padding-bottom: 0">
+                                    <a href="https://www.ncei.noaa.gov/contact" class="nav-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end JC drop down-->
+
+                </div>
+                <!--end ncei header-->
+
+                <!-- ARN added background color to buttons so they will show up in dark background -->
+                <div id="navToolbar" dojoType="dijit.Toolbar">
+                    <div id="webmap-toolbar-left">
+                        <span style="height: 20px; border-right: 1px solid rgb(99, 108, 108); margin-top: 2px; margin-right: 2px;"></span>
+
+                        <div dojoType="dijit.form.ToggleButton" id="zoomin" title="Draw a box to zoom in."
+                             iconClass="zoominIcon" onClick="zoomInHandler();">Zoom In
+                        </div>
+                        <div dojoType="dijit.form.ToggleButton" id="zoomout" title="Draw a box to zoom out."
+                             iconClass="zoomoutIcon" onClick="zoomOutHandler();">Zoom Out
+                        </div>
+                        <div dojoType="dijit.form.Button" id="zoomfullext" title="Zoom to original map extent."
+                             iconClass="zoomfullextIcon" onClick="zoomToStartExtentHandler();"
+                             >Full Extent
+                        </div>
+                        <div dojoType="dijit.form.Button" id="zoomprev" type="button" title="Step back through previous map changes."
+                             iconClass="zoomprevIcon" onClick="prevExtentHandler();">Prev Extent
+                        </div>
+                        <div dojoType="dijit.form.Button" id="zoomnext" type="button" title="Step forward through map changes."
+                             iconClass="zoomnextIcon" onClick="nextExtentHandler();">Next Extent
+                        </div>
+                        <div dojoType="dijit.form.ToggleButton" id="pan" title="Click and drag map." iconClass="panIcon"
+                             checked="true" onClick="panHandler();">Pan
+                        </div>
+                        <div dojoType="dijit.form.Button" id="deactivate" title="Exit Zoom mode, return to Pan mode."
+                             iconClass="deactivateIcon" onClick="stopZoomHandler()">Stop
+                            Zoom
+                        </div>
+                        <span style="height: 20px; border-right: 1px solid rgb(99, 108, 108); margin-top: 2px; margin-right: 2px;"></span>
+
+                        <div dojoType="dijit.form.Button" id="download" iconClass="downloadIcon"
+                             onClick="dataDownloadPage()">Data Download
+                        </div>
+                        <div dojoType="dijit.form.Button" id="metadata" iconClass="metadataIcon"
+                             onClick="metadataPage()">Metadata
+                        </div>
+                    </div>
+                </div>
+            </div>    <!-- end header -->
+
+
+            <div id="map" dojotype="dijit.layout.ContentPane" region="center">
+                <img id="loadingImg" src="images/Blue-004-loading.gif"
+                     style="position:absolute; right:50%; top:50%; z-index:100;"/>
+
+                <!-- Growler: div -->
+                <div class="upperRight">
+                    <div id="growlerDijit"></div>
+                </div>
+
+                <div id="results"
+                     style="position:absolute; right:10px; top:25px; padding: 2px; border:solid 1px #79663b; color:#000; background-color:#fff; z-index:50; font-family: arial; font-size: 12px;"></div>
+                <div id="timeDate"
+                     style="position:absolute; right: 30%; bottom: 55px; height:10px; font-size:75%; font-weight:bold; color:black; z-index:100;"></div>
+                <div id="timeSliderDiv"
+                     style="position:absolute; right:30%; bottom: 50px; width: 30%; z-index:100;"></div>
+                <div id="timeSliderLabelsDiv"
+                     style="position:absolute; right: 30%; bottom: 40px; width: 30%; z-index:100;"></div>
+                <div id="resetTimeSlider" style="position:absolute; right: 45%; bottom: 20px; z-index: 100;">
+                    <button id="resetButton" name="resetButton" dojoType="dijit.form.Button" type="button"
+                            onClick="mainSearch=true; searchPMNDatabase();"><b>Reset</b></button>
+                </div>
+                <div id="coords"
+                     style="position:absolute; right:10px; bottom:10px; color:#000; z-index:50; font-family: arial; font-size: 12px;"></div>
+            </div>
+            <div dojotype="dijit.layout.ContentPane" region="right" id="rightPane">
+                <div dojoType="dijit.layout.TabContainer">
+                    <div dojoType="dijit.layout.ContentPane" title="Search" selected="true">
+                        <div id="searchDiv">
+                            <div dojoType="dijit.form.Form" id="pmnForm" encType="multipart/form-data" action=""
+                                 method="">
+                                <p/>
+                                <b>Select Date Range:</b>
+                                <table colspan="2">
+                                    <tr>
+                                        <td align="left" width="50"><label for="fromDate"><font face="tahoma"><font
+                                                size="2">From:</font></label></td>
+                                        <td><input id="fromDate" type="text" size="25" name="fromDate" id="fromDate"
+                                                   value="" dojoType="dijit.form.DateTextBox"
+                                                   constraints="{min:'2001-09-13', datePattern: 'yyyy-MM-dd', strict:true}"
+                                                   onChange="dijit.byId('toDate').constraints.min = arguments[0];"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" width="50"><label for="toDate"><font face="tahoma"><font
+                                                size="2">To:</font></label></td>
+                                        <td><input id="toDate" type="text" size="25" name="toDate" id="toDate" value=""
+                                                   dojoType="dijit.form.DateTextBox"
+                                                   constraints="{datePattern: 'yyyy-MM-dd', strict:true}"
+                                                   onChange="dijit.byId('fromDate').constraints.max = arguments[0];"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p/>
+                                <b>Select Species:</b>
+                                <center>
+                                    <select style="width: 250px;" name="sel_species" id="sel_species" align="center"
+                                            dojoType="dijit.form.Select" maxHeight="300">
+                                        <option value="All" SELECTED>All Species</option>
+                                        <option value="Akashiwo sanguinea">Akashiwo sanguinea</option>
+                                        <option value="Alexandrium catenella">Alexandrium catenella</option>
+                                        <option value="Alexandrium fundyense">Alexandrium fundyense</option>
+                                        <option value="Alexandrium monilatum">Alexandrium monilatum</option>
+                                        <option value="Alexandrium spp.">Alexandrium spp.</option>
+                                        <option value="Anabaena spp. (Cyanophyte)">Anabaena spp. (Cyanophyte)</option>
+                                        <option value="Aphanizomenon spp. (Cyanophyte)">Aphanizomenon spp. (Cyanophyte)</option>
+                                        <option value="Asterionellopsis morphotype">Asterionellopsis morphotype</option>
+                                        <option value="Bacillaria sp.">Bacillaria sp.</option>
+                                        <option value="Bacteriastrum spp.">Bacteriastrum spp.</option>
+                                        <option value="Bacterosira sp.">Bacterosira sp.</option>
+                                        <option value="Bacterosira spp.">Bacterosira spp.</option>
+                                        <option value="Ceratium furca morphotype">Ceratium furca morphotype</option>
+                                        <option value="Ceratium fusus morphotype">Ceratium fusus morphotype</option>
+                                        <option value="Ceratium longipes morphotype">Ceratium longipes morphotype</option>
+                                        <option value="Chaetoceros socialis">Chaetoceros socialis</option>
+                                        <option value="Chaetoceros spp.">Chaetoceros spp.</option>
+                                        <option value="Cochlodinium spp.">Cochlodinium spp.</option>
+                                        <option value="Corethron spp.">Corethron spp.</option>
+                                        <option value="Coscinodiscus morphotype">Coscinodiscus morphotype</option>
+                                        <option value="Cylindrospermopsis spp. (Cyanophyte)">Cylindrospermopsis spp. (Cyanophyte)</option>
+                                        <option value="Cylindrotheca closterium">Cylindrotheca closterium</option>
+                                        <option value="Dactyliosolen spp.">Dactyliosolen spp.</option>
+                                        <option value="Detonula spp.">Detonula spp.</option>
+                                        <option value="Dictyocha spp. (Chromophyte)">Dictyocha spp. (Chromophyte)</option>
+                                        <option value="Dinophysis acuminata">Dinophysis acuminata</option>
+                                        <option value="Dinophysis fortii">Dinophysis fortii</option>
+                                        <option value="Dinophysis norvegica">Dinophysis norvegica</option>
+                                        <option value="Dinophysis spp.">Dinophysis spp.</option>
+                                        <option value="Ditylum spp.">Ditylum spp.</option>
+                                        <option value="Entomoneis spp.">Entomoneis spp.</option>
+                                        <option value="Eucampia spp.">Eucampia spp.</option>
+                                        <option value="Euglena spp. (Euglenophyte)">Euglena spp. (Euglenophyte)</option>
+                                        <option value="Fibrocapsa japonica (Raphidophyte)">Fibrocapsa japonica (Raphidophyte)</option>
+                                        <option value="Fragilariopsis spp.">Fragilariopsis spp.</option>
+                                        <option value="Gambierdiscus toxicus">Gambierdiscus toxicus</option>
+                                        <option value="Gonyaulax spinifera">Gonyaulax spinifera</option>
+                                        <option value="Gonyaulax spp.">Gonyaulax spp.</option>
+                                        <option value="Grammatophora spp.">Grammatophora spp.</option>
+                                        <option value="Guinardia spp.">Guinardia spp.</option>
+                                        <option value="Gymodinium morphotype">Gymodinium morphotype</option>
+                                        <option value="Gyrodinium morphotype">Gyrodinium morphotype</option>
+                                        <option value="Hemiaulus spp.">Hemiaulus spp.</option>
+                                        <option value="Heterocapsa spp.">Heterocapsa spp.</option>
+                                        <option value="Heterosigma akashiwo (Raphidophyte)">Heterosigma akashiwo (Raphidophyte)</option>
+                                        <option value="Karenia brevis">Karenia brevis</option>
+                                        <option value="Karenia spp.">Karenia spp.</option>
+                                        <option value="Karlodinium spp.">Karlodinium spp.</option>
+                                        <option value="Leptocylindrus spp.">Leptocylindrus spp.</option>
+                                        <option value="Licmophora spp.">Licmophora spp.</option>
+                                        <option value="Lingulodinium polyedrum">Lingulodinium polyedrum</option>
+                                        <option value="Lioloma spp.">Lioloma spp.</option>
+                                        <option value="Melosira spp.">Melosira spp.</option>
+                                        <option value="Mesodinum rubrum (Cilate)">Mesodinum rubrum (Cilate)</option>
+                                        <option value="Microcystis spp. (Cyanophyte)">Microcystis spp. (Cyanophyte)</option>
+                                        <option value="Navicula morphotype">Navicula morphotype</option>
+                                        <option value="Nitzschia morphotype">Nitzschia morphotype</option>
+                                        <option value="Noctiluca scintillans">Noctiluca scintillans</option>
+                                        <option value="Oblea sp.">Oblea sp.</option>
+                                        <option value="Odontella spp.">Odontella spp.</option>
+                                        <option value="Oscillatoria spp. (Cyanophyte)">Oscillatoria spp. (Cyanophyte)</option>
+                                        <option value="Oxyphysis sp.">Oxyphysis sp.</option>
+                                        <option value="Paralia sp.">Paralia sp.</option>
+                                        <option value="Phaeocystis spp. (Haptophyte)">Phaeocystis spp. (Haptophyte)</option>
+                                        <option value="Pleurosigma morphotype">Pleurosigma morphotype</option>
+                                        <option value="Prorocentrum compressum">Prorocentrum compressum</option>
+                                        <option value="Prorocentrum gracile">Prorocentrum gracile</option>
+                                        <option value="Prorocentrum lima">Prorocentrum lima</option>
+                                        <option value="Prorocentrum micans">Prorocentrum micans</option>
+                                        <option value="Prorocentrum minimum">Prorocentrum minimum</option>
+                                        <option value="Prorocentrum spp.">Prorocentrum spp.</option>
+                                        <option value="Protoperidinium spp.">Protoperidinium spp.</option>
+                                        <option value="Pseudo-nitzschia spp.">Pseudo-nitzschia spp.</option>
+                                        <option value="Pyrodinium spp.">Pyrodinium spp.</option>
+                                        <option value="Pyrophacus spp.">Pyrophacus spp.</option>
+                                        <option value="Rhizosolenia morphotype">Rhizosolenia morphotype</option>
+                                        <option value="Scrippsiella spp.">Scrippsiella spp.</option>
+                                        <option value="Skeletonema spp.">Skeletonema spp.</option>
+                                        <option value="Stephanopyxis spp.">Stephanopyxis spp.</option>
+                                        <option value="Thalassionema spp.">Thalassionema spp.</option>
+                                        <option value="Thalassiosira spp.">Thalassiosira spp.</option>
+                                        <option value="Trichodesmium spp. (Cyanophyte)">Trichodesmium spp. (Cyanophyte)</option>
+                                    </select>
+                                </center>
+                                <p/>
+                                <b>Selected Water Conditions:</b>
+                                <center>
+                                    <table colspan="3">
+                                        <tr>
+                                            <td>
+                                                <select style="width: 125px;" name="condition1" id="condition1"
+                                                        align="left" dojoType="dijit.form.Select">
+                                                    <option value="wtmp">Water Temperature</option>
+                                                    <option value="sal">Salinity</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select style="width: 35px;" name="operator1" id="operator1"
+                                                        align="left" dojoType="dijit.form.Select">
+                                                    <option value="ge">&ge;</option>
+                                                    <option value="gt">&gt;</option>
+                                                    <option value="equal">=</option>
+                                                    <option value="lt">&lt;</option>
+                                                    <option value="le">&le;</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <input type="text" style="width: 35px;" name="cond_value_1"
+                                                       id="cond_value_1" dojoType="dijit.form.NumberTextBox"
+                                                       constraints="{min:0,max:50,places:'0,2',strict:true}"
+                                                       invalidMessage="Number between 0 and 50, maximum 2 decimal places allowed">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select style="width: 125px;" name="condition2" id="condition2"
+                                                        align="left" dojoType="dijit.form.Select">
+                                                    <option value="sal">Salinity</option>
+                                                    <option value="wtmp">Water Temperature</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select style="width: 35px;" name="operator2" id="operator2"
+                                                        align="left" dojoType="dijit.form.Select">
+                                                    <option value="ge">&ge;</option>
+                                                    <option value="gt">&gt;</option>
+                                                    <option value="equal">=</option>
+                                                    <option value="lt">&lt;</option>
+                                                    <option value="le">&le;</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <input type="text" style="width: 35px;" name="cond_value_2"
+                                                       id="cond_value_2" dojoType="dijit.form.NumberTextBox"
+                                                       constraints="{min:0,max:50,places:'0,2',strict:true}"
+                                                       invalidMessage="Number between 0 and 50, maximum 2 decimal places allowed">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                                <p/>
+                                <b>Blooms Only:</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" dojoType="dijit.form.RadioButton" name="bloomsOnly" id="bloomsNo" checked value="No"/>
+                                <label for="bloomsNo">No</label>
+                                <input type="radio" dojoType="dijit.form.RadioButton" name="bloomsOnly" id="bloomsYes" value="Yes"/>
+                                <label for="bloomsYes">Yes</label>
+
+                                <p/>
+                                <center>
+                                    <button dojoType="dijit.form.Button" type="button" name="pmnSearch"
+                                            onClick="mainSearch=true; searchPMNDatabase();"><b>Search Database</b>
+                                    </button>
+                                </center>
+                                <p/>
+                                <center><b>Records by Species:</b></center>
+                                <center>
+                                    <div id="dateRange"></div>
+                                </center>
+                                <div id="chartNode"></div>
+                                <br/>
+                                <center>
+                                    <div id="plotPage"></div>
+                                </center>
+                                <br/>
+                                <center>
+                                    <button id="previous" dojoType="dijit.form.Button" type="button" disabled
+                                            onClick="createAdditionalPlots(-1);"><b>Previous</b></button>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <button id="next" dojoType="dijit.form.Button" type="button" disabled
+                                            onClick="createAdditionalPlots(1);"><b>Next</b></button>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                    <div dojoType="dijit.layout.ContentPane" title="Add Layers">
+                        <u><b>Phytoplankton Monitoring</b></u>
+                        <table colspan=3 class="smallText">
+                            <tr>
+                                <td width="5"></td>
+                                <td><input id="sampleLocations" name="sampleLocations" dojoType="dijit.form.CheckBox"
+                                           value="true" onClick="UpdateMap();"></td>
+                                <td>Sampling Locations</td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <u><b>Meteorology</b></u>
+                        <table colspan=3 class="smallText">
+                            <tr>
+                                <td width="5"></td>
+                                <td><input id="weatherRadar" name="weatherRadar" dojoType="dijit.form.CheckBox"
+                                           value="true" onClick="UpdateMap();"></td>
+                                <td>Current Weather Radar</td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <u><b>Oceanography</b></u>
+                        <table colspan=3 class="smallText">
+                            <tr>
+                                <td width="5"></td>
+                                <td><input id="buoys" name="buoys" dojoType="dijit.form.CheckBox" value="true"
+                                           onClick="UpdateMap();"></td>
+                                <td>Buoy Locations - NOAA NDBC&nbsp;&nbsp;&nbsp;<img src="images/identify.png"
+                                                                                title="Click on buoy locations for more details">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!--   ARN remove for ncei type footer
+                  <div id="footer" dojotype="dijit.layout.ContentPane" region="bottom" >
+                    <table class="footer" align="center">
+                       <tr valign="middle" align="center">
+                         <td>
+                           <a href="https://www.commerce.gov/" title="U.S. Department of Commerce" target="_self"><font color="black">U.S. Department of Commerce</a> |</font>
+                           <a href="https://www.noaa.gov" title="National Oceanic &amp; Atmospheric Administration" target="_self"><font color="black">NOAA</a> |</font>
+                           <a href="https://www.nesdis.noaa.gov" title="National Environmental Satellites, Data, and Information Services" target="_self"><font color="black">NESDIS</a> |</font>
+                           <a href="https://www.ncei.noaa.gov" title="National Centers for Environmental Information" target="_self"><font color="black">NCEI</a></font>
+                           <br/>
+                           <a href="https://www.noaa.gov/disclaimer.html" title="Link to National Oceanic &amp; Atmospheric Administration Disclaimer" target="_self"><font color="black">Disclaimer</a> |</font>
+                           <a href="https://www.noaa.gov/privacy.html" title="Link to National Oceanic &amp; Atmospheric Administration Privacy Policy"><font color="black">Privacy Policy</a> |</font>
+                           <a href="https://www.copyright.gov/title17/92chap4.html#403" title="Copyright Notice"><font color="black">Copyright Notice</a> |</font>
+                           <a href="https://www.usa.gov" target="_self" title="The U.S. Government's Official Web Portal"><font color="black">USA.gov</a></font>
+                         </td>
+                         <td width="20"></td>
+                         <td>
+                           <a href="https://www.cio.noaa.gov/services_programs/info_quality.html" title="Link to National Oceanic &amp; Atmospheric Administration Information Quality" target="_self"><font color="black">Information Quality</a> |</font>
+                           <a href="https://www.noaa.gov/foia-freedom-of-information-act" title="Link to National Oceanic &amp; Atmospheric Administration FOIA"><font color="black">Freedom of Information Act (FOIA)</a></font>
+                           <br/>
+                           <a href="https://www.ncddc.noaa.gov/about-ncddc" title="Contact NCEI-MS"><font color="black">Customer Service</a> |</font>
+                           <a href="mailto:NCEI.Info@noaa.gov?subject=PMN%20%20web%20map" title="Email NCEI-MS webmaster"><font color="black">NCEI.Info@noaa.gov</a></font>
+                         </td>
+                         <td></td>
+                       </tr>
+                    </table>
+                  </div>
+      -->
+            <!-- ncei footer -->
+            <!--<div id="footer" data-dojo-type="dijit.layout.ContentPane"  data-dojo-props="region:'bottom'" style="font-size:12px;font-family:Helvetica,Arial;height:35px;font-weight:bold">-->
+            <div id="footer" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'bottom'"
+                 style="font-size:12px;font-family:Helvetica,Arial;height:20px;font-weight:bold">
+                <table class="footer" align="center">
+                    <tr valign="middle" align="center">
+                        <td>
+                            <a href="https://www.ncei.noaa.gov/privacy" title="NOAA's Privacy Policy">Privacy Policy</a> |
+                            <a href="https://www.noaa.gov/foia-freedom-of-information-act"
+                               title="Freedom of Information Act">Freedom Of Information Act</a> |
+                            <a href="https://www.cio.noaa.gov/services_programs/info_quality.html"
+                               title="Information Quality">Information Quality</a> |
+                            <a href="https://www.noaa.gov/disclaimer.html" title="Disclaimer">Disclaimer</a> |
+                            <!--<a href="https://www.ncdc.noaa.gov/survey" title="Take Our Site Survey">Take Our Survey</a> |-->
+                            <a href="https://www.commerce.gov/" title="United States Department of Commerce">Department  of Commerce</a> |
+                            <a href="https://www.noaa.gov/" title="NOAA">NOAA</a> |</font>
+                            <a href="https://www.nesdis.noaa.gov/" title="NESDIS">NESDIS</a> |
+                            <a href="mailto:ncei.info@noaa.gov" rel="nofollow">Contact Us</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--end ncei footer-->
+
+
+        </div>
+        <script src="https://www.ncei.noaa.gov/maps/config/gis-helper.js"></script>
+    <script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script></body>
+</html>

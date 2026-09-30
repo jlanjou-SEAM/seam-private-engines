@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-8BE7D55C56EA04",
+  "provider": "India Meteorological Department",
+  "dataset": "rss.xml",
+  "sector": "public",
+  "country": "IN",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "cyclone"
+  ],
+  "retrieved_utc": "2026-09-30T04:11:05.830910Z",
+  "request_url": "https://cap-sources.s3.amazonaws.com/in-imd-en/rss.xml",
+  "final_url": "https://cap-sources.s3.amazonaws.com/in-imd-en/rss.xml",
+  "status_code": 200,
+  "content_type": "text/xml",
+  "byte_length": 2724,
+  "sha256": "b4071fa1e89e7fed8cff22656492512a6db86c8546f85c30667279a33a685dd9",
+  "etag": "\"24f48171c32714a464df4f6c7d72c491\"",
+  "last_modified": "Sun, 27 Sep 2026 07:56:08 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-8BE7D55C56EA04\\20260930T041105.830910Z_b4071fa1e89e7fed.xml",
+  "parent_id": "IMD",
+  "discovery_depth": 1
+}

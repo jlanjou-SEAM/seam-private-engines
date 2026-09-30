@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-3072AB8A9B6F0C",
+  "provider": "NOAA/NDBC",
+  "dataset": "OKSI2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:15.420582Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/OKSI2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/OKSI2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 50948,
+  "sha256": "d477dd0c9bee334cb30e14ca1c30758e4f8681339ed5cccf80a9db22e6c2657c",
+  "etag": "\"c704-65caac7713de5\"",
+  "last_modified": "Wed, 30 Sep 2026 03:20:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-3072AB8A9B6F0C\\20260930T043315.420582Z_d477dd0c9bee334c.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

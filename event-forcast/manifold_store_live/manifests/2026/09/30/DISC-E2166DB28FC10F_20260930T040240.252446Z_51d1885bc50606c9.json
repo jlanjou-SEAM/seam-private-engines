@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E2166DB28FC10F",
+  "provider": "NOAA/SWPC",
+  "dataset": "electron_fluence_forecast.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:02:40.252446Z",
+  "request_url": "https://services.swpc.noaa.gov/json/electron_fluence_forecast.json",
+  "final_url": "https://services.swpc.noaa.gov/json/electron_fluence_forecast.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 8954,
+  "sha256": "51d1885bc50606c941126047c985b661c78ee57c4a2c1fd72a1e8bfcbccb05e2",
+  "etag": "\"22fa-65cab56427f3f\"",
+  "last_modified": "Wed, 30 Sep 2026 04:00:16 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-E2166DB28FC10F\\20260930T040240.252446Z_51d1885bc50606c9.json",
+  "parent_id": "SWPC-JSON",
+  "discovery_depth": 1
+}

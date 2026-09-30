@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-F3B54E60D0A6C1",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "perth.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:10.903773Z",
+  "request_url": "https://www.bom.gov.au/wa/observations/perth.shtml?ref=hdr",
+  "final_url": "https://www.bom.gov.au/wa/observations/perth.shtml?ref=hdr",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 64769,
+  "sha256": "29501d3d7faf6bd7f160432cab7ef0629776723b9d9d3504218a6391f7c4217f",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F3B54E60D0A6C1\\20260930T040610.903773Z_29501d3d7faf6bd7.shtml",
+  "parent_id": "BOM-DATA",
+  "discovery_depth": 1
+}

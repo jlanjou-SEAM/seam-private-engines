@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-F35DA0EF2B7C35",
+  "provider": "NOAA/NCEI",
+  "dataset": "global-historical-climatology-network-hourly",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:41.016713Z",
+  "request_url": "https://www.ncei.noaa.gov/products/global-historical-climatology-network-hourly",
+  "final_url": "https://www.ncei.noaa.gov/products/global-historical-climatology-network-hourly",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 47965,
+  "sha256": "bfca0a7ecef972fcb4554121c48c486dca30c5a6d0e217bda8201e18515cb4f9",
+  "etag": "\"1790715665-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:01:05 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F35DA0EF2B7C35\\20260930T043941.016713Z_bfca0a7ecef972fc.html",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

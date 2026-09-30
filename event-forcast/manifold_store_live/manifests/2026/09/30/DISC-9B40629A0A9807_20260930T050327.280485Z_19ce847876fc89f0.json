@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-9B40629A0A9807",
+  "provider": "NOAA/NDBC",
+  "dataset": "PILA2.supl",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:03:27.280485Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PILA2.supl",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PILA2.supl",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 70560,
+  "sha256": "19ce847876fc89f02cdfd9253b608ae136ee658bd31b3dc617ddccd0f845bceb",
+  "etag": "\"113a0-65cac2d695cb9\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:26 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-9B40629A0A9807\\20260930T050327.280485Z_19ce847876fc89f0.supl",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

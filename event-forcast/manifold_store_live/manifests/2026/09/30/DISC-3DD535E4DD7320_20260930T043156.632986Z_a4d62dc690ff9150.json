@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-3DD535E4DD7320",
+  "provider": "Kenya Meteorological Department",
+  "dataset": "cities",
+  "sector": "public",
+  "country": "KE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:31:56.632986Z",
+  "request_url": "https://meteo.go.ke/api/cities",
+  "final_url": "https://meteo.go.ke/api/cities",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 6201,
+  "sha256": "a4d62dc690ff9150ee7cb73f7bd235b1b40bb033fe54ec9e2fc1caf87c2f4f01",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-3DD535E4DD7320\\20260930T043156.632986Z_a4d62dc690ff9150.json",
+  "parent_id": "KMD",
+  "discovery_depth": 1
+}

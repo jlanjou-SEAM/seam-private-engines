@@ -1,0 +1,976 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="description" CONTENT="MADIS (Meteorological Assimilation Data Ingest System)">
+   <META NAME="keywords" CONTENT="METEOROLOGICAL DATA, meteorological data, WEATHER DATA, weather data, METEOROLOGICAL DATA ACCESS, meteorological data access, METEOROLOGICAL DATA ASSIMILATION, meteorological data assimilation">
+   <TITLE>MADIS Meteorological Surface Text/XML Viewer</TITLE>
+    <A HREF="https://madis.ncep.noaa.gov/data_application.shtml">MADIS Data Use Policy and Disclaimer </A>
+
+   <script language="JavaScript" type="text/javascript">
+   <!--
+        var hostname = window.location.hostname;
+	var timeSel = null;
+	var providerSel = null;
+	var variableSel = null;
+	var tmDo = null;	
+	var staDo = null;	
+	var pvdDo = null;	
+	var varDo = null;	
+	var qcDo = null;	
+	var outDo = null;	
+
+	function timeSelection(){
+	   if(timeSel == null)
+	   {
+	   	   timeSel = window.open("../timeSelection.html","Times","width=700,height=200,menubar=yes,resizable=yes,scrollbars=yes,dependent=yes");
+	   }
+	   if (timeSel && timeSel.closed){
+	      timeSel = window.open("../timeSelection.html","Times","width=700,height=200,menubar=yes,resizable=yes,scrollbars=yes,dependent=yes");
+	   }
+	   timeSel.focus();
+	}
+	function providerSelection(){
+	   if(providerSel == null){
+	      providerSel = window.open("../providerSelection.html","Providers","width=700,height=200,menubar=yes,resizable=yes,scrollbars=yes,dependent=yes,status=yes");
+	   }
+	   if (providerSel && providerSel.closed){
+	      providerSel = window.open("../providerSelection.html","Providers","width=700,height=200,menubar=yes,resizable=yes,scrollbars=yes,dependent=yes,status=yes");
+	   }
+	   providerSel.focus();
+	}
+	function variableSelection(){
+	  		
+	   if (variableSel == null){
+	      variableSel = window.open("../variableSelection.html","Variables","width=700,height=200,menubar=yes,resizable=yes,scrollbars=yes,dependent=yes");
+	   }
+	   if (variableSel && variableSel.closed){
+	      variableSel = window.open("../variableSelection.html","Variables","width=700,height=200,menubar=yes,resizable=yes,scrollbars=yes,dependent=yes");
+	   }
+	   variableSel.focus();
+	}
+	function timeHelp(){
+	   tmDoc = window.open("../sfcdump_help.html","TimeHelp","width=700,height=300,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,menubar=yes,dependent=yes");
+	   tmDoc.location = ("../sfcdump_help.html#Time_Window");
+	   tmDoc.focus();
+  	}
+	function stationHelp(){
+	   staDoc = window.open("../sfcdump_help.html","StationHelp","width=700,height=300,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,menubar=yes,dependent=yes");
+	   staDoc.location = ("../sfcdump_help.html#Station_Selection");
+	   staDoc.focus();
+  	}
+	function providerHelp(){
+	   pvdDoc = window.open("../sfcdump_help.html","ProviderHelp","width=700,height=300,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,menubar=yes,dependent=yes");
+	   pvdDoc.location = ("../sfcdump_help.html#Provider_Selection");
+	   pvdDoc.focus();
+  	}
+	function variableHelp(){
+	   varDoc = window.open("../sfcdump_help.html","VariableHelp","width=700,height=300,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,menubar=yes,dependent=yes");
+	   varDoc.location = ("../sfcdump_help.html#Variable_Selection");
+	   varDoc.focus();
+  	}
+	function qcHelp(){
+	   qcDoc = window.open("../sfcdump_help.html","QCHelp","width=700,height=300,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,menubar=yes,dependent=yes");
+	   qcDoc.location = ("../sfcdump_help.html#QC_Selection");
+	   qcDoc.focus();
+  	}
+	function outputHelp(){
+	   outDoc = window.open("../sfcdump_help.html","OutputHelp","width=700,height=300,menubar=yes,resizable=yes,scrollbars=yes,toolbar=yes,menubar=yes,dependent=yes");
+	   outDoc.location = ("../sfcdump_help.html#Output_Selection");
+	   outDoc.focus();
+  	}
+
+	function setStations(var_dfltrsel){
+		if(var_dfltrsel.value == "3")
+		{
+			window.document.mesoOptions.stasel.value = 1;
+		}
+		else
+		{
+			window.document.mesoOptions.stasel.value = 0;
+		}
+	}
+
+
+
+	//-----------------------------------------------------------------------------
+	function checkdate()
+	{
+//	alert('checkdate');
+	  a = document.mesoOptions.time.value;
+//	  alert(a);
+	  // Check for current time
+	   if (a.length == 1 && a == '0'){
+		return true;
+	   }
+		 
+	   	var err=0;
+		var psj=0;
+		// yyyymmdd_hhmm
+		// f   b d  h m 
+		// mm/dd/yyyy hh:mm
+		// b cd ef
+		if (a.length != 13) 
+		{	
+			err=1
+		}
+		f = a.substring(0, 4)// year
+		b = a.substring(4, 6)// month
+		d = a.substring(6, 8)// day
+		e = a.substring(8, 9)// day
+		h = a.substring(9, 11)// hour
+		m = a.substring(11,13)// minute
+
+		//basic error checking
+		if (f<1901 || f>2099) err = 1
+ 		if (b<1 || b>12) err = 1
+		if (d<1 || d>31) err = 1
+		if (e != '_') err = 1
+		if (h<0 || h>59) err = 1
+		if (m<0 || m>59) err = 1
+			
+		//advanced error checking
+		
+		// months with 30 days
+		if (b==4 || b==6 || b==9 || b==11)
+		{
+			if (d==31) err=1
+		}
+	
+		// february, leap year
+		if (b==2)
+		{
+			// feb
+			var g=parseInt(f/4)
+			if (isNaN(g))
+			{
+				err=1
+			}
+
+			if (d>29) err=1
+			if (d==29 && ((f/4)!=parseInt(f/4))) err=1
+		}
+
+		if (err==1)
+		{
+			alert("Unknown time entered: Valid syntax: YYYYMMDD_HHMM Entered: "+a);			
+			document.mesoOptions.time.focus();
+//			document.getElementById('time').focus()
+//			inputTime.focus();
+//			self.document.mesoOptions.time.select();
+			return false;
+		}
+		else
+		{
+//			alert('OK!');
+		}
+		
+		return true;
+	}
+
+
+// Check latitudes are valid and realistic
+	function checkLat() {
+// Southern hemisphere ending latitude
+		if(window.document.mesoOptions.latll.value < 0 && window.document.mesoOptions.latll.value < window.document.mesoOptions.latur.value){
+                  alert("Invalid latutude window, the southern latitude is greater then the northern");
+		  window.document.mesoOptions.latll.focus();
+		  return false;
+		}
+// Northern hemisphere ending latitude
+		else if(window.document.mesoOptions.latll.value >= 0 && window.document.mesoOptions.latll.value > window.document.mesoOptions.latur.value){
+                  alert("Invalid latutude window, the southern latitude is greater then the northern");
+		  window.document.mesoOptions.latll.focus();
+		  return false;
+		}
+		else if(window.document.mesoOptions.latll.value > 90 || window.document.mesoOptions.latll.value < -90){
+		  window.document.mesoOptions.latll.focus();
+		  alert("Invalid southern latitude. Value must be between -90 and 90");
+		  return false;
+		}
+		else if(window.document.mesoOptions.latur.value > 90 || window.document.mesoOptions.latur.value < -90){
+		  window.document.mesoOptions.latur.focus();
+		  alert("Invalid northern latitude. Value must be between -90 and 90");
+		  return false;
+		}
+	  return true;
+	}
+// Check longitudes are valid and realistic
+	function checkLon() {
+		ln1 = Math.max(window.document.mesoOptions.lonll.value,window.document.mesoOptions.lonll.value);
+		ln2 = Math.max(window.document.mesoOptions.lonur.value,window.document.mesoOptions.lonur.value);
+		if(ln1 > ln2){
+		  alert("Invalid longitude window, the western longitude is greater then the eastern "+window.document.mesoOptions.lonll.value+"<>"+window.document.mesoOptions.lonur.value);
+		  window.document.mesoOptions.lonll.focus();
+		  return false;
+		}
+		else if(ln1 > 180 || ln1 < -180){
+		  alert("Invalid western latitude. Value must be between -180 and 180");
+		  window.document.mesoOptions.lonll.focus();
+		  return false;
+		}
+		else if(ln2 > 180 || ln2 < -180){
+		  alert("Invalid western latitude. Value must be between -180 and 180");
+		  window.document.mesoOptions.lonur.focus();
+		  return false;
+		}
+	  return true;
+	}
+
+// If single station is checked, then we must have a value
+	function checkSingleStation() {
+//   		alert(window.document.mesoOptions.stasel.value);
+		if(window.document.mesoOptions.stasel.value == 1) {
+//	  		alert(document.mesoOptions.stanam.value.length);
+			if(document.mesoOptions.stanam.value.length < 2) {
+		  		alert("Please enter a station name.");
+				document.mesoOptions.stanam.focus()
+				return false;
+			}
+		}
+		return true;
+	}
+
+// verify selection and submit form
+        function submitForm(actionUrl){
+	   if(checkdate()){
+		if(checkLat()){
+			if(checkLon()){
+				if(checkSingleStation()){
+				       window.document.mesoOptions.rdr.value = "";
+				    javascript:document.mesoOptions.action = actionUrl;
+				    javascript:document.mesoOptions.submit();
+				}
+			}
+		}
+	   }
+	}
+
+   //-->
+
+   </script>
+
+
+</HEAD>
+<body TEXT="#333333" BGCOLOR="#FFFFFF">
+<table><tr><td VALIGN=CENTER><img SRC="../logo_2.75in.jpg"></td>
+<td VALIGN=CENTER><h1>MADIS Meteorological Surface Text/XML Viewer</h1></td></tr></table>
+
+<p><center><img SRC="../HLINE.gif" HEIGHT=5 WIDTH=100%></center>
+
+<form name="mesoOptions" METHOD="GET"  target="_new">
+
+<INPUT type=hidden  name="rdr"> 
+
+<H3><CENTER>Time Selection<FONT COLOR="#000000"></CENTER></H3>
+<table border="0" width="100%">
+ <tr>
+  <td>
+   <input type=text name="time" size=13 value="0" onChange="checkdate()" onfocus="document.mesoOptions.time.select()"><spacer type="horizontal" size="5">Nominal time in GMT (YYYYMMDD_HHMM or enter 0 for current time) <FONT COLOR="#D00000"><input type="button" onclick="timeSelection()" value="Time Window Options"></input><FONT COLOR="#000000">
+   <input type=hidden name="minbck" value="-59">
+   <input type=hidden name="minfwd" value="0">
+   <input type=hidden name="recwin" value="3">
+   <p>Filter time by  
+    <input type="radio" name="timefilter" value="0" checked> Observation Time
+    <input type="radio" name="timefilter" value="1"> Receipt Time (Real-time only, Nominal time must be 0)
+  </td>
+  <td align="right">
+    <input type="button" onclick="timeHelp()" value="Help"></input>
+  </td>
+ </tr>
+</table>
+<HR>
+<H3><CENTER>Station Selection <FONT COLOR="#000000"></CENTER></H3>
+<table border="0" width="100%">
+ <tr>
+  <td>
+   <table border="3">
+    <tr align="left" valign="top">
+	<td><input type="radio" name="dfltrsel" value="2" onclick="setStations(this)" checked>Get stations within state's box</td>
+	<td><input type="radio" name="dfltrsel" value="1" onclick="setStations(this)">Get stations within latitude/longitude corners</td>
+	<td><input type="radio" name="dfltrsel" value="3" onclick="setStations(this);document.mesoOptions.stanam.focus()">One Station</td>
+	<td><input type="radio" name="dfltrsel" value="0" onclick="setStations(this)">Get all stations</td>
+    </tr>
+    <tr align="left" valign="top">
+	<td>
+	<select name="state" size="1">
+	  <option value="AK">AK</option>
+	  <option value="AL">AL</option>
+	  <option value="AR">AR</option>
+	  <option value="AZ">AZ</option>
+	  <option value="CA">CA</option>
+	  <option value="CO">CO</option>
+	  <option value="CT">CT</option>
+	  <option value="DC">DC</option>
+	  <option value="DE">DE</option>
+	  <option value="FL">FL</option>
+	  <option value="GA">GA</option>
+	  <option value="HI">HI</option>
+	  <option value="IA">IA</option>
+	  <option value="ID">ID</option>
+	  <option value="IL">IL</option>
+	  <option value="IN">IN</option>
+	  <option value="KS">KS</option>
+	  <option value="KY">KY</option>
+	  <option value="LA">LA</option>
+	  <option value="MA">MA</option>
+	  <option value="MD">MD</option>
+	  <option value="ME">ME</option>
+	  <option value="MI">MI</option>
+	  <option value="MN">MN</option>
+	  <option value="MO">MO</option>
+	  <option value="MS">MS</option>
+	  <option value="MT">MT</option>
+	  <option value="NC">NC</option>
+	  <option value="ND">ND</option>
+	  <option value="NE">NE</option>
+	  <option value="NH">NH</option>
+	  <option value="NJ">NJ</option>
+	  <option value="NM">NM</option>
+	  <option value="NV">NV</option>
+	  <option value="NY">NY</option>
+	  <option value="OH">OH</option>
+	  <option value="OK">OK</option>
+	  <option value="OR">OR</option>
+	  <option value="PA">PA</option>
+	  <option value="RI">RI</option>
+	  <option value="SC">SC</option>
+	  <option value="SD">SD</option>
+	  <option value="TN">TN</option>
+	  <option value="TX">TX</option>
+	  <option value="UT">UT</option>
+	  <option value="VA">VA</option>
+	  <option value="VT">VT</option>
+	  <option value="WA">WA</option>
+	  <option value="WI">WI</option>
+	  <option value="WV">WV</option>
+	  <option value="WY">WY</option>
+	</select>(State)
+	</td>
+	<td>
+	<input type=text name="latll" size=6 value="0.0" onfocus="this.select()">
+	<spacer type="horizontal" size="5"> (SW corner latitude - south)<BR>   
+	<input type=text name="lonll" size=6 value="0.0" onfocus="this.select()">
+	<spacer type="horizontal" size="5"> (SW corner longitude - west)<br>
+	<input type=text name="latur" size=6 value="90.0" onfocus="this.select()">
+	<spacer type="horizontal" size="5"> (NE corner latitude - north)<br>
+	<input type=text name="lonur" size=6 value="0.0" onfocus="this.select()">
+	<spacer type="horizontal" size="5"> (NE corner longitude - east)<br>
+	</td>
+	<td>
+	<spacer type="horizontal" size="5"><input type=text name="stanam" size=10 onChange="checkSingleStation()" onfocus="document.mesoOptions.stanam.select()">(Site ID e.g. KDEN)
+	</td>
+	<td>
+	</td>
+    </tr>
+   </table>
+  </td>
+  <td align="right" valign="bottom">
+    <input type="button" onclick="stationHelp()" value="Help"></input>
+  </td>
+ </tr>
+</table>
+<input type="hidden" name="stasel" value="0">
+
+<HR>
+<H3><CENTER>Provider Selection <FONT COLOR="#000000"></CENTER></H3>
+<table border="0" width="100%">
+ <tr>
+  <td>
+
+	<input type="radio" name="pvdrsel" value="0" checked>All providers
+
+	<input type="radio" name="pvdrsel" value="1"  onClick="providerSelection()" >Select providers groups and/or mesonets
+
+  </td>
+  <td align="right" valign="bottom">
+    <input type="button" onclick="providerHelp()" value="Help"></input>
+  </td>
+ </tr>
+</table>
+
+<HR>
+<H3><CENTER>Variable Selection <FONT COLOR="#000000"></CENTER></H3>
+<table border="0" width="100%">
+ <tr>
+  <td>
+
+<input type="radio" name="varsel" value="2" checked>Standard surface variables (TD,RH,T,DD,FF,FFGUST,ALTSE)
+<input type="radio" name="varsel" value="1" onclick="variableSelection()">Select variables
+   <!--
+<input type="radio" name="varsel" value="0">All variables
+   //-->
+  </td>
+  <td align="right" valign="bottom">
+    <input type="button" onclick="variableHelp()" value="Help"></input>
+  </td>
+ </tr>
+</table>
+<HR>
+<H3><CENTER>Quality Control Selection <FONT COLOR="#000000"></CENTER></H3>
+<table border="0" width="100%">
+ <tr>
+  <td>
+<input type="radio" name="qctype" value="0" checked>MADIS QC
+<input type="radio" name="qctype" value="1">RWIS QC (Only RWIS sites displayed)
+  </td>
+  <td align="right" valign="bottom">
+    <input type="button" onclick="qcHelp()" value="Help (TBD)"></input>
+  </td>
+ </tr>
+</table>
+<table border="0" width="100%">
+ <tr>
+  <td>
+<select name="qcsel" size="1">
+  <option value="99">Return observations passing all quality control checks</option>
+  <option value="3">Return observations passing levels 1,2,3</option>
+  <option value="2">Return observations passing levels 1,2</option>
+  <option value="1" selected>Return observations passing level 1</option>
+  <option value="0">Return all observations regardless of quality control results</option>
+</select>
+  </td>
+  <td align="right" valign="bottom">
+    <input type="button" onclick="qcHelp()" value="Help"></input>
+  </td>
+ </tr>
+</table>
+
+<HR>
+<H3><CENTER>Output Selection <FONT COLOR="#000000"></CENTER></H3>
+<table border="0" width="100%">
+ <tr>
+  <td>
+<input type="radio" name="xml" value="0" checked>Text
+<input type="radio" name="xml" value="1">XML
+<input type="radio" name="xml" value="2">CSV (No QC)
+<input type="radio" name="xml" value="3">CSV (QC desc)
+<input type="radio" name="xml" value="4">CSV (QC full)
+<input type="radio" name="xml" value="5">CSV (QC desc with header line)
+<input type="radio" name="xml" value="30">Text with U.S. customary system units
+<p>For CSV missing value use 
+<input type="radio" name="csvmiss" value="0" checked>-99999.000000
+<input type="radio" name="csvmiss" value="1"> blanks
+  </td>
+  <td align="right" valign="bottom">
+    <input type="button" onclick="outputHelp()" value="Help"></input>
+  </td>
+ </tr>
+</table>
+ 
+<HR>
+<p>Click <FONT COLOR="#D00000"><input type="button" onclick="submitForm('/madisNoaa/cgi-bin/madisXmlNoaaDir')" value="submit"></input><FONT COLOR="#000000"> to submit your request.  
+
+Click <input TYPE="reset" VALUE="reset"> to clear
+your request or to start over.
+<pr>
+
+<HR>Last updated 27 Sep 18.
+<H5>
+<table border="0" width="100%">
+ <tr>  
+  <td align="left" valign="bottom">
+    <A HREF="../index.shtml"> MADIS Web Services Portal</A>
+  </td>
+  <td align="right" valign="bottom">
+    <A HREF="https://madis.ncep.noaa.gov/index.shtml">MADIS Home Page </A>
+  </td>
+ </tr>
+</table>
+</H5>
+<!--div id="div1" style="position:absolute;visibility:hidden"-->
+<div id="div1" style="visibility:hidden; font-size: 5px">
+	<select name="pvd" multiple="mulitple" size="1">
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	</select>
+	<select name="nvars" multiple="mulitple" size="1">
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	  <option value=" "></option>
+	</select><FONT COLOR="#000000">
+</div>
+</form>
+
+</body>
+</html>

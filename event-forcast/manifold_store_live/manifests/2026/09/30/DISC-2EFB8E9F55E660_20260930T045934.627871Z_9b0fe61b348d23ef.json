@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-2EFB8E9F55E660",
+  "provider": "NOAA/SWPC",
+  "dataset": "suvi-primary-304.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:59:34.627871Z",
+  "request_url": "https://services.swpc.noaa.gov/products/animations/suvi-primary-304.json",
+  "final_url": "https://services.swpc.noaa.gov/products/animations/suvi-primary-304.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 41412,
+  "sha256": "9b0fe61b348d23ef87c4d5a25b5137c5f68f60e534bbae92bd64fd1f4a63f62b",
+  "etag": "\"a1c4-65cac1f93a254\"",
+  "last_modified": "Wed, 30 Sep 2026 04:56:34 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-2EFB8E9F55E660\\20260930T045934.627871Z_9b0fe61b348d23ef.json",
+  "parent_id": "DISC-DC635460D92E37",
+  "discovery_depth": 2
+}

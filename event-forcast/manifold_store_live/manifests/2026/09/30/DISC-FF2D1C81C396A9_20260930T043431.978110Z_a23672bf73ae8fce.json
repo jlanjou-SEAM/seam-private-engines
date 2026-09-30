@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-FF2D1C81C396A9",
+  "provider": "NOAA/NDBC",
+  "dataset": "AWRT2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:34:31.978110Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/AWRT2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/AWRT2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 129532,
+  "sha256": "a23672bf73ae8fcefe396751bde6ad1130b5c203a8b8d38651defee99f02940c",
+  "etag": "\"1f9fc-65cabc1cc5bb1\"",
+  "last_modified": "Wed, 30 Sep 2026 04:30:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-FF2D1C81C396A9\\20260930T043431.978110Z_a23672bf73ae8fce.txt",
+  "parent_id": "DISC-CE899AD4C09D51",
+  "discovery_depth": 2
+}

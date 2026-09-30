@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-395E9303287F23",
+  "provider": "NOAA/NCEI",
+  "dataset": "faq",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:30.524260Z",
+  "request_url": "https://www.ncei.noaa.gov/cdo-web/faq",
+  "final_url": "https://www.ncei.noaa.gov/cdo-web/faq",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 68835,
+  "sha256": "2169475db1b0b147d0484b6b7bca14e76b28298fe9c088a3237526c17939e6f3",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-395E9303287F23\\20260929T051830.524260Z_2169475db1b0b147.html",
+  "parent_id": "NOAA-CDO",
+  "discovery_depth": 1
+}

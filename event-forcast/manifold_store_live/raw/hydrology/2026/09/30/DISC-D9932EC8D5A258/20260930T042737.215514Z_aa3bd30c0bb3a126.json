@@ -1,0 +1,61 @@
+{
+    "type":"Feature",
+    "properties":{
+        "time_series_id":"cb367c92bfe94359bdadde94c2b95b14",
+        "monitoring_location_id":"USGS-06893890",
+        "parameter_code":"00400",
+        "statistic_id":"00001",
+        "time":"2013-12-31",
+        "value":"8.3",
+        "unit_of_measure":"pH Units",
+        "approval_status":"Approved",
+        "qualifier":null,
+        "last_modified":"2026-03-26T22:57:22.668297+00:00"
+    },
+    "id":"000283cf-8e41-485f-916f-b1549e3d8572",
+    "geometry":{
+        "type":"Point",
+        "coordinates":[
+            -94.3438385191547,
+            39.0255617460734
+        ]
+    },
+    "links":[
+        {
+            "type":"application/json",
+            "rel":"root",
+            "title":"The landing page of this server as JSON",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1?f=json"
+        },
+        {
+            "type":"text/html",
+            "rel":"root",
+            "title":"The landing page of this server as HTML",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1?f=html"
+        },
+        {
+            "rel":"self",
+            "type":"application/geo+json",
+            "title":"This document as JSON",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-daily/items/000283cf-8e41-485f-916f-b1549e3d8572?f=json"
+        },
+        {
+            "rel":"alternate",
+            "type":"application/ld+json",
+            "title":"This document as RDF (JSON-LD)",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-daily/items/000283cf-8e41-485f-916f-b1549e3d8572?f=jsonld"
+        },
+        {
+            "rel":"alternate",
+            "type":"text/html",
+            "title":"This document as HTML",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-daily/items/000283cf-8e41-485f-916f-b1549e3d8572?f=html"
+        },
+        {
+            "rel":"collection",
+            "type":"application/json",
+            "title":"Latest daily values",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-daily"
+        }
+    ]
+}

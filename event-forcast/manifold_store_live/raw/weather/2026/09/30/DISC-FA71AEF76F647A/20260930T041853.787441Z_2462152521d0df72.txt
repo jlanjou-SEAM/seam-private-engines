@@ -1,0 +1,13 @@
+
+           NPN QC Reject List:  "1" => Flag observation as bad
+
+StaID     |Level (01-72, or 00 for all levels)  |Wind  |RASS 
+begin-------------------------------------------------------
+end---------------------------------------------------------
+
+Example Entries ********************************************
+PLTC2     |01                                   |1     |0
+PLTC2     |12                                   |1     |1
+WNCI2     |03                                   |1     |0
+
+

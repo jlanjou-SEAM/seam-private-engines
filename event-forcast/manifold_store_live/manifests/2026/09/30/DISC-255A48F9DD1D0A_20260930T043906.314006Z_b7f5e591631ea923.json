@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-255A48F9DD1D0A",
+  "provider": "NOAA/NCEP",
+  "dataset": "hysplit",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:06.314006Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/hysplit/",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/hysplit/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 2339,
+  "sha256": "b7f5e591631ea92356ce5a4455105ff4f52256b0fd9b037ae62847b25379f19d",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-255A48F9DD1D0A\\20260930T043906.314006Z_b7f5e591631ea923.html",
+  "parent_id": "DISC-B2B6455F50E250",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-33E6251DEA9609",
+  "provider": "India Meteorological Department",
+  "dataset": "mosaic.gif",
+  "sector": "public",
+  "country": "IN",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "cyclone"
+  ],
+  "retrieved_utc": "2026-09-30T04:11:05.689390Z",
+  "request_url": "https://mausam.imd.gov.in/Radar/MOSAIC/Converted/mosaic.gif",
+  "final_url": "https://mausam.imd.gov.in/Radar/MOSAIC/Converted/mosaic.gif",
+  "status_code": 200,
+  "content_type": "image/gif",
+  "byte_length": 1180272,
+  "sha256": "e629aa9232cbc719b51ce6592e78b1181a11ff0b6c1c5b4329ade68608117d29",
+  "etag": null,
+  "last_modified": "Wed, 30 Sep 2026 04:00:13 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-33E6251DEA9609\\20260930T041105.689390Z_e629aa9232cbc719.gif",
+  "parent_id": "IMD",
+  "discovery_depth": 1
+}

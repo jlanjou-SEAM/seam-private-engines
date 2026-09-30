@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-248BDA94CE67D2",
+  "provider": "NOAA/NDBC",
+  "dataset": "SAPF1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:02:40.528229Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/SAPF1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/SAPF1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1016798,
+  "sha256": "df1e3e93159b047268eaf9d2d5fdda0ce497823392248208cbb4b006f875cf66",
+  "etag": "\"f83de-65cac096c39a4\"",
+  "last_modified": "Wed, 30 Sep 2026 04:50:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-248BDA94CE67D2\\20260930T050240.528229Z_df1e3e93159b0472.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

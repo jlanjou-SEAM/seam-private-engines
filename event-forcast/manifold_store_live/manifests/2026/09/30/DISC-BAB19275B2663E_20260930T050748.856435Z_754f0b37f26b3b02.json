@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-BAB19275B2663E",
+  "provider": "NOAA/NCEP",
+  "dataset": "loofs.20260930",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T05:07:48.856435Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/nosofs/prod/loofs.20260930/",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/nosofs/prod/loofs.20260930/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 18706,
+  "sha256": "754f0b37f26b3b02e959b84e399c448714712ee35f3e5df3ef68c4af06b043d5",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-BAB19275B2663E\\20260930T050748.856435Z_754f0b37f26b3b02.20260930",
+  "parent_id": "DISC-B01A88A4443723",
+  "discovery_depth": 2
+}

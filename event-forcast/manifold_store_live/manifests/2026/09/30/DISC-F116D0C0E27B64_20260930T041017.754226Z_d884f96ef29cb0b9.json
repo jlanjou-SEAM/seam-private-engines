@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-F116D0C0E27B64",
+  "provider": "Japan Meteorological Agency",
+  "dataset": "marinevolcano.json",
+  "sector": "public",
+  "country": "JP",
+  "scientific_regime": [
+    "weather",
+    "seismic",
+    "hazards"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:17.754226Z",
+  "request_url": "https://www.jma.go.jp/bosai/marinevolcano/data/marinevolcano.json",
+  "final_url": "https://www.jma.go.jp/bosai/marinevolcano/data/marinevolcano.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 2845,
+  "sha256": "d884f96ef29cb0b9c7a8a66ca20a49f0e587b76cf813ad7d05c1fcf13580e82a",
+  "etag": "\"f5f18a1ef1790353272567b1feb2eb6f\"",
+  "last_modified": "Wed, 09 Sep 2026 02:00:41 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F116D0C0E27B64\\20260930T041017.754226Z_d884f96ef29cb0b9.json",
+  "parent_id": "JMA-BOSAI",
+  "discovery_depth": 1
+}

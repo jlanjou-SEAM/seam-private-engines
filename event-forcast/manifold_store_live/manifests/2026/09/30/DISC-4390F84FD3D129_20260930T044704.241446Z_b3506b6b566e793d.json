@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-4390F84FD3D129",
+  "provider": "NOAA/NCEI",
+  "dataset": "1805",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:04.241446Z",
+  "request_url": "https://www.ncei.noaa.gov/node/1805",
+  "final_url": "https://www.ncei.noaa.gov/about/our-impact",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 65374,
+  "sha256": "b3506b6b566e793dfb01067be790558e3d659bbbd4cf152018f0a2a84fe25019",
+  "etag": "\"1790715649-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:00:49 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4390F84FD3D129\\20260930T044704.241446Z_b3506b6b566e793d.html",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

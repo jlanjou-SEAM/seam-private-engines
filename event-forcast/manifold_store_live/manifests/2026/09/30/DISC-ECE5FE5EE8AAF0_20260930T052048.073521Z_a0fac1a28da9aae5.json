@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-ECE5FE5EE8AAF0",
+  "provider": "Davis Instruments",
+  "dataset": "air-quality-1",
+  "sector": "private",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:48.073521Z",
+  "request_url": "https://www.davisinstruments.com/collections/air-quality-1",
+  "final_url": "https://www.davisinstruments.com/collections/air-quality-1",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 428199,
+  "sha256": "a0fac1a28da9aae5f2d9d40845bccf409d7c59c5660828de82096b40d12e1747",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-ECE5FE5EE8AAF0\\20260930T052048.073521Z_a0fac1a28da9aae5.html",
+  "parent_id": "DISC-81DCBBE51DEC02",
+  "discovery_depth": 2
+}

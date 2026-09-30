@@ -1,0 +1,23 @@
+{
+  "candidate_id": "INMET-BR",
+  "provider": "INMET Brazil",
+  "dataset": "Meteorological data",
+  "sector": "public",
+  "country": "BR",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T03:59:20.341579Z",
+  "request_url": "https://portal.inmet.gov.br/",
+  "final_url": "https://portal.inmet.gov.br/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 78073,
+  "sha256": "78eed53243fe4ab5421bc9a2a8b618fa628d5b3b0bc314397a409b675d44cf51",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\INMET-BR\\20260930T035920.341579Z_78eed53243fe4ab5.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

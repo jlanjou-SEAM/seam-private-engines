@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-D2FC67909940A3",
+  "provider": "USGS Water Data",
+  "dataset": "latest-field-measurements",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T03:59:29.163736Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-field-measurements?f=html",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-field-measurements?f=html",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 30966,
+  "sha256": "2a545e233d82d9cc521a1c276adbb375e3d740def5ed657efa288c6504addc4f",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\30\\DISC-D2FC67909940A3\\20260930T035929.163736Z_2a545e233d82d9cc.html",
+  "parent_id": "USGS-WATER-COLLECTIONS",
+  "discovery_depth": 1
+}

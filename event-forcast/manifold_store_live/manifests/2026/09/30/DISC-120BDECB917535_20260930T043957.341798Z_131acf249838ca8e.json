@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-120BDECB917535",
+  "provider": "NOAA/NCEI",
+  "dataset": "tsunami-sources-poster.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:57.341798Z",
+  "request_url": "https://www.ngdc.noaa.gov/hazard/data/publications/tsunami-sources-poster.pdf",
+  "final_url": "https://www.ngdc.noaa.gov/hazard/data/publications/tsunami-sources-poster.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 47054477,
+  "sha256": "131acf249838ca8e3642a4dcf02138a405ce5a691f562d05f0c9af6966325441",
+  "etag": null,
+  "last_modified": "Wed, 08 Jun 2022 14:20:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-120BDECB917535\\20260930T043957.341798Z_131acf249838ca8e.pdf",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-EDB66C1DB55F94",
+  "provider": "NOAA/NSSL",
+  "dataset": "2D",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:09.180604Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/?C=S;O=A",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/?C=S;O=A",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 19402,
+  "sha256": "dd255f2cecee1070cd8ea569210c2b8d0c686a89ee8489b73f1ba56efedf48d9",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-EDB66C1DB55F94\\20260930T050809.180604Z_dd255f2cecee1070.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

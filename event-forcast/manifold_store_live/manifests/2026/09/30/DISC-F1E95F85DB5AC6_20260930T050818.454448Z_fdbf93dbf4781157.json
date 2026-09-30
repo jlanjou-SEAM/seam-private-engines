@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-F1E95F85DB5AC6",
+  "provider": "NOAA/NSSL",
+  "dataset": "HAWAII",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:18.454448Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/HAWAII/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/HAWAII/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 19680,
+  "sha256": "fdbf93dbf478115730f7a538f20663074860df89a2bd6ea16c59e2561a92d0d1",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F1E95F85DB5AC6\\20260930T050818.454448Z_fdbf93dbf4781157.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

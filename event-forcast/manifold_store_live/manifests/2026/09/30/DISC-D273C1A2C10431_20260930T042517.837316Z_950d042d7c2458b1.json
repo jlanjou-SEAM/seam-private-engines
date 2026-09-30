@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-D273C1A2C10431",
+  "provider": "GeoNet",
+  "dataset": "quake",
+  "sector": "public_research",
+  "country": "NZ",
+  "scientific_regime": [
+    "seismic",
+    "volcanic",
+    "geophysical"
+  ],
+  "retrieved_utc": "2026-09-30T04:25:17.837316Z",
+  "request_url": "https://api.geonet.org.nz/cap/1.2/GPA1.0/feed/atom1.0/quake",
+  "final_url": "https://api.geonet.org.nz/cap/1.2/GPA1.0/feed/atom1.0/quake",
+  "status_code": 200,
+  "content_type": "application/xml",
+  "byte_length": 583,
+  "sha256": "950d042d7c2458b15c48540b2f6f555f231c2b68fabb9033c6ced75844ef0d5d",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\seismic\\2026\\09\\30\\DISC-D273C1A2C10431\\20260930T042517.837316Z_950d042d7c2458b1.xml",
+  "parent_id": "GEONET-NZ",
+  "discovery_depth": 1
+}

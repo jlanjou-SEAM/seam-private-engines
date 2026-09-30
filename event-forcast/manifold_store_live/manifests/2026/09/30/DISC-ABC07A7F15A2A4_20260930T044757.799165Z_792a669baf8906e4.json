@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-ABC07A7F15A2A4",
+  "provider": "NOAA/NCEI",
+  "dataset": "maps.htm",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:57.799165Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/habsos/maps.htm",
+  "final_url": "https://www.ncei.noaa.gov/maps/habsos/maps.htm",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 94709,
+  "sha256": "792a669baf8906e47aedd4b6d63fc67a4c84fc94975565154b223e9f312d5030",
+  "etag": "\"17159-632455e3619c0\"",
+  "last_modified": "Tue, 08 Apr 2025 14:42:55 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-ABC07A7F15A2A4\\20260930T044757.799165Z_792a669baf8906e4.htm",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

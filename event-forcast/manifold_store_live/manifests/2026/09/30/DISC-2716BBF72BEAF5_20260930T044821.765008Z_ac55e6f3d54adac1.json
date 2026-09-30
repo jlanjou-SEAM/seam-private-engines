@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-2716BBF72BEAF5",
+  "provider": "NOAA/NCEI",
+  "dataset": "tree-ring",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:21.765008Z",
+  "request_url": "https://www.ncei.noaa.gov/products/paleoclimatology/tree-ring",
+  "final_url": "https://www.ncei.noaa.gov/products/paleoclimatology/tree-ring",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 42316,
+  "sha256": "ac55e6f3d54adac137b4bbbf04614c06e74189e66a97a3606efe3c76930019b1",
+  "etag": "\"1790715969-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:06:09 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2716BBF72BEAF5\\20260930T044821.765008Z_ac55e6f3d54adac1.html",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

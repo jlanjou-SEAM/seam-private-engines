@@ -1,0 +1,383 @@
+                        README file for MADIS
+                          MADIS Version 4.7
+                          May 11, 2025
+--------------------------------------------------------------------------------
+
+The Meteorological Assimilation Data Ingest System (MADIS) is
+dedicated toward making value-added data available from the National
+Oceanic and Atmospheric Administration's (NOAA) Earth System Research
+Laboratory (ESRL) Global Systems Division (GSD) (formerly the Forecast
+Systems Laboratory (FSL)) for the purpose of improving weather
+forecasting, by providing support for data assimilation, numerical
+weather prediction, and other hydrometeorological applications.
+
+
+Components
+----------
+
+1) A netCDF observational database containing quality controlled meteorological
+   observations that can be obtained from MADIS (see below):
+
+   - Surface datasets
+
+     - ASOS METAR reports (NWS & FAA)
+     - Non-ASOS METAR reports
+     - High frequency METAR reports
+     - SAO reports 
+     - Buoys, ships, C-MAN stations
+     - Modernized NWS Cooperative Observer stations
+     - UrbaNet stations
+     - Mesonets
+     - Climate (CRN,NEPP,HCN)
+     - Mobile
+     - RWIS (road weather data sets)
+     
+   - Radiosondes
+
+   - NOAA Profiler Network (NPN) hourly winds
+
+   - Automated aircraft reports (including ACARS, AMDARS, TAMDARS)
+
+   - Aircraft data profiles at airports
+
+   - Hydrological datasets
+
+     - Mesonets
+
+   - Multi-Agency Profilers (MAP)
+
+   - Radiometers
+
+   - Satellite wind datasets
+
+     - GOES satellites, operational winds
+
+   - Satellite soundings datasets
+
+     - POES satellites
+
+   - Satellite radiance datasets
+
+     - POES satellites
+
+   - Snow 
+
+   - Weather In- Situ Deployment Optimization Method (WISDOM) balloon
+     winds
+
+2) A Fortran-callable Application Program Interface (API) that allows a user
+   to read the database without any knowledge of netCDF.
+
+   The API can also be used to read the point datasets on National Weather
+   Service AWIPS systems.
+
+3) Utility programs that can be used to read station information, observations,
+   and quality control (QC) information for a single time, and dump these to
+   an output text file.  The operation of each program is controlled by a text 
+   parameter file that allows the user to exercise all of the options included 
+   in the MADIS system.  The programs can be run as needed to access any MADIS 
+   data stored on your system, or can be run as a time-scheduled task to get 
+   data keyed to the current time.
+
+   The dump programs (written in Fortran) are also meant as tutorials to 
+   demonstrate how a user can use the MADIS API calls to write his or her 
+   own Fortran programs.
+
+   - sfcdump                    Surface datasets
+
+   - raobdump                   Radiosondes
+
+   - npndump                    NOAA Profiler Network hourly winds
+
+   - acarsdump                  Automated aircraft reports
+
+   - acarspdump                 Aircraft data profiles at airports
+
+   - hydrodump                  Hydrological datasets
+
+   - mapdump                    Multi-Agency Profilers
+
+   - rdmtrdump                  Radiometers
+
+   - satraddump                 Satellite radiance
+
+   - satsnddump                 Satellite soundings
+
+   - satwnddump                 Satellite winds
+
+   - snowdump                   Snow
+
+   - wisdomdump                 WISDOM balloon winds
+
+   In addition, the madis_ingest program is a tutorial to demonstrate how all
+   datasets might be read in together for use in an hourly data assimilation
+   cycle. 
+
+   The utility programs can be used to access either the FSL database, or the
+   AWIPS database.
+
+4) Documentation:
+
+   System
+   ------
+   INSTALL.unix                 How to install for Unix or Linux
+   INSTALL.windows              How to install for Windows
+   README                       General package description
+   RELEASE_NOTES                Chronology of changes for all versions
+   errors.txt                   Error codes, messages, corrective action
+   hydro_providers.txt          Hydro data providers available from MADIS
+   map_providers.txt            Multi-agency profiler providers available from MADIS
+   rdmtr_providers.txt          Radiometer providers available from MADIS
+   satrad_providers.txt         Satellite radiance providers available from MADIS
+   satsnd_providers.txt         Satellite sounding providers available from MADIS
+   satwnd_providers.txt         Satellite wind providers available from MADIS
+   snow_providers.txt           Snow providers available from MADIS
+   sfc_providers.txt            Surface providers available from MADIS
+
+   Utility Programs
+   ----------------
+   acarsdump_usage.txt          The *usage.txt files describe how to run each
+   acarspdump_usage.txt         dump utility, how to set up the parameter files, 
+   hydrodump_usage.txt          etc.
+   mapdump_usage.txt            
+   npndump_usage.txt
+   raobdump_usage.txt
+   rdmtrdump_usage.txt
+   satraddump_usage.txt
+   satsnddump_usage.txt
+   satwnddump_usage.txt
+   snowdump_usage.txt
+   sfcdump_usage.txt
+   wisdomdump_usage.txt
+
+   acarsdump.par                Sample parameter files for each dump utility,
+   acarspdump.par               these will dump all variables with default
+   hydrodump.par                settings on all options.
+   mapdump.par                  
+   npndump.par                  
+   raobdump.par
+   rdmtrdump.par
+   satraddump.par
+   satsnddump.par
+   satwnddump.par
+   snowdump.par
+   sfcdump.par
+   wisdomdump.par
+
+   hydrodump1.par               Sample hydrodump.par - specific-provider option.
+   mapdump1.par                 Sample mapdump.par - tabular output.
+   mapdump2.par                 Sample mapdump.par - specific-provider option.
+   npndump1.par                 Sample npndump.par - tabular output.                
+   raobdump1.par                Sample raobdump.par - tabular output.
+   rdmtrdump1.par               Sample rdmtrdump.par - tabular output.
+   rdmtrdump2.par               Sample rdmtrdump.par - specific-provider option.
+   satraddump1.par              Sample satraddump.par - specific-provider option.
+   satsnddump1.par              Sample satsnddump.par - specific-provider option.
+   satwnddump1.par              Sample satwnddump.par - specific-provider option.
+   snowdump1.par                Sample snowdump.par - specific-provider option.
+   sfcdump1.par                 Sample sfcdump.par file - mesonet-only variables.
+   sfcdump2.par                 Sample sfcdump.par file - specific-provider option.
+
+
+
+   Variables
+   ---------
+   acars_variable_list.txt      The *variable_list.txt files list all variables
+   acarsp_variable_list.txt     available for each dataset, along with their 
+   hydro_variable_list.txt      MADIS variable code names, units, and 
+   map_variable_list.txt        explanatory notes.
+   npn_variable_list.txt        
+   raob_variable_list.txt       
+   rdmtr_variable_list.txt
+   satrad_variable_list.txt
+   satsnd_variable_list.txt
+   satwnd_variable_list.txt
+   sfc_hfmetar_variable_list.txt
+   sfc_sao_variable_list.txt
+   sfc_maritime_variable_list.txt
+   sfc_metar_variable_list.txt
+   sfc_coop_variable_list.txt
+   sfc_urbanet_variable_list.txt
+   sfc_mesonet_variable_list.txt
+   sfc_qc_variable_list.txt
+   snow_variable_list.txt
+   wisdom_variable_list.txt
+
+   QC Information
+   --------------
+   qc_info.txt                  Description of the QC info that's available.
+
+   acars_qc_variable_list.txt   The *qc_variable_list.txt files list the QC
+   acarsp_qc_variable_list.txt  checks applied to the variables for each 
+   hydro_qc_variable_list.txt   dataset.
+   map_qc_variable_list.txt     
+   npn_qc_variable_list.txt
+   raob_qc_variable_list.txt
+   rdmtr_qc_variable_list.txt
+   satrad_qc_variable_list.txt
+   satsnd_qc_variable_list.txt
+   satwnd_qc_variable_list.txt
+   snow_qc_variable_list.txt
+   sfc_qc_variable_list.txt
+   wisdom_qc_variable_list.txt
+
+   Programmer Documentation
+   ------------------------
+   subroutine_list.txt          List of MADIS routines.
+
+   msetdom.txt                  Description of user-callable subroutines that
+   msetwin.txt                  aren't demonstrated in the *dump programs.
+   time_routines.txt
+
+   For the most current documentation (which can be updated outside of the
+   version release cycle)contact MADIS support.
+
+5) Thirteen hours of sample data that can be used to try out the system before
+   requesting real-time or archived data from MADIS.  Contact MADIS support 
+   for the sample data.
+
+
+Supported Systems
+-----------------
+
+The MADIS system has been tested on the following platforms, and
+precompiled binary versions of the software are available (see
+INSTALL.* for how to obtain the distribution).  Note that the lists of
+operating system version numbers and computer models that were tested
+represent only those used in testing the current release, and do not
+imply that other versions of the operating system or other computer
+models in the same family will not work.  Where multiple compilers are
+listed for a given platform, the one specified first in the line is
+the one used in the precompiled binary distribution.  Starting with
+MADIS API version 4.2 only the Linux and Windows versions are tested.
+Starting with MADIS API version 4.4 only the Linux versions are tested.
+Contact madis-support@noaa.gov if you have question on another OS.
+
+1) Platform:              Linux
+   Operating system:      Red Hat Enterprise Linux Server release 7.8 (Maipo)
+   Compilers tested:      gfortran, ifort
+   Binary portability:    Should work on any Intel or Intel-compatible Linux 
+                          platform
+   Last API tested:       Current version
+
+Deprecated platforms
+
+1) Platform:              Hewlett Packard 
+   Operating system:      HP-UX, 10.20
+   Compilers tested:      f77, f90
+   Binary portability:    Should work on any HP PA-RISC 1.1 or 2.0 platform
+   Last API tested:       3.7
+
+2) Platform:              IBM POWERx, PowerPC 
+   Operating system:      AIX, 5.1.0
+   Compilers tested:      xlf, xlf90
+   Binary portability:    Should work on any IBM POWERx or PowerPC platform
+   Last API tested:       3.9
+
+3) Platform:              Sun 
+   Operating system:      SunOS, 5.10
+   Compilers tested:      f77
+   Binary portability:    Should work on any SPARC platform
+   Last API tested:       3.9
+
+4) Platform:              Silicon Graphics 
+   Operating system:      IRIX/IRIX64, 6.5
+   Compilers tested:      f77
+   Binary portability:    Should work on any n32 platform
+   Last API tested:       3.9
+
+5) Platform:              PC running Windows
+   Operating system:      Windows 10
+   Compilers tested:      g77
+   Last API tested:       4.3
+
+
+Limitations
+-----------
+
+1) If you intend to compile and link either the MADIS API or user-written
+   programs that link to the API, Unidata netCDF software must be installed 
+   on the system.  Contact UNIDATA and UCAR for support.
+
+   MADIS stopped OPeNDAP/DODS support with version 3.9.  The information 
+   below is for historical purpose.
+
+2) Fortran logical unit numbers 20-99 are reserved for MADIS library usage.
+   (Only a handful are used.  To modify this, change m_getlun.f.)
+
+
+How to Obtain MADIS Data from ESRL/GSD
+--------------------------------------
+
+MADIS subscribers can receive real-time data or obtain access to an
+on-line archive (back to July 1, 2001 for most datasets) by requesting
+an account on our ftp and/or web server.  For real-time data, LDM
+access is also available.
+
+1) Restrictions on distribution
+
+   Some of the datasets are restricted.  There are four distribution
+   categories set up to handle the restrictions:
+
+   - ESRL/GSD only - no restrictions
+   - NOAA only
+   - Government, research, and education organizations
+   - Full distribution
+
+   The following datasets are available without restriction:
+
+   - Surface (non-mesonet)
+   - Radiosondes
+   - NOAA Profiler Network (NPN) hourly winds
+   - Hydrological (non-mesonet)
+   - Multi-Agency Profilers
+   - Radiometers
+   - Satellite winds
+   - Satellite soundings
+   - Satellite radiance
+   - Snow
+   - WISDOM balloon winds
+
+   The following datasets are available with some restrictions:
+
+   - Automated aircraft reports
+   - Aircraft data profiles at airports
+   - Surface (mesonet)
+   - Hydrological (mesonet)
+
+   The restrictions in the surface and hydrological datasets are on
+   specific mesonet providers.  The list of providers currently
+   available and their disribution categories can be found at the
+   MADIS web pages.
+   
+   The aircraft datasets are proprietary to the airlines providing the data.
+   Requests for access will be forwarded to them for review.  In general, 
+   real-time aircraft reports and profiles are available to organizations 
+   conducting research which is likely to benefit the airlines, and to 
+   government agencies supporting forecasting operations.  Archived data 
+   is available without restriction.
+
+2) Accessing the data (users outside ESRL/GSD)
+
+   To request real-time or archive access to any of the MADIS datasets, 
+   please contact MADIS support.
+    
+3) Accessing the data (ESRL/GSD users)
+
+   The real-time MADIS data is under /public/data/madis.  ESRL/GSD users of
+   the API can point to the files by setting the MADIS_DATA environment 
+   variable:
+
+   setenv MADIS_DATA /public/data/madis
+
+   For archive requests, put in an OTRS request for the desired dates and 
+   directories.
+
+
+Questions/Comments
+------------------
+
+Please send your questions/comments to:
+
+        madis-support@noaa.gov
+

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-32492B98A28398",
+  "provider": "NOAA/NCEP",
+  "dataset": "latest.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:49.337430Z",
+  "request_url": "https://services.swpc.noaa.gov/images/animations/enlil/latest.jpg",
+  "final_url": "https://services.swpc.noaa.gov/images/animations/enlil/latest.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 95902,
+  "sha256": "a629084cea9a07c37b19ad06161b77253c378fc21e315d45220f4c093ad51232",
+  "etag": "\"1769e-65cabd25c3a92\"",
+  "last_modified": "Wed, 30 Sep 2026 04:34:58 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-32492B98A28398\\20260930T043749.337430Z_a629084cea9a07c3.jpg",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

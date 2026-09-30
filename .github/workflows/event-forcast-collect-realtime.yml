@@ -22,15 +22,17 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Generate 500 test sources
+      - name: Load comprehensive data registry
         run: |
           cd ${{ github.workspace }}/backend/event-forcast
-          python3 expanded_sources.py
+          echo "Using pre-tested combined registry with 11,925 candidates"
+          ls -lh continuum/continuum_combined_registry.json
 
-      - name: Test source connectivity and remove non-connecting
+      - name: Ingest registry data via threaded pipeline
         run: |
           cd ${{ github.workspace }}/backend/event-forcast
-          python3 test_connectivity.py 2>&1 | tail -50
+          echo "Ingesting data from combined registry via threaded pipeline..."
+          python3 continuum_recover_ingest_v7_threaded.py 2>&1 | tail -50
 
       - name: Run Multi-Cycle Collection Pipeline (10 cycles in 5-min window)
         env:

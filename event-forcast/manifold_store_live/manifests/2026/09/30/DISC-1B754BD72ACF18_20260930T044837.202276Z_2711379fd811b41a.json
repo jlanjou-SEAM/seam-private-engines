@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-1B754BD72ACF18",
+  "provider": "NOAA/NCEI",
+  "dataset": "national-climate-202606",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:37.202276Z",
+  "request_url": "https://www.ncei.noaa.gov/news/national-climate-202606",
+  "final_url": "https://www.ncei.noaa.gov/news/national-climate-202606",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 46248,
+  "sha256": "2711379fd811b41aca0c3472bdc3c61193bd36971a3fcd671ae0d2e18bbc71d6",
+  "etag": "\"1790715351-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 20:55:51 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-1B754BD72ACF18\\20260930T044837.202276Z_2711379fd811b41a.html",
+  "parent_id": "DISC-84CF7FAE813C86",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-CD303DA384DB98",
+  "provider": "NOAA/NDBC",
+  "dataset": "WASD2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:11:27.209145Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/WASD2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/WASD2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1008902,
+  "sha256": "f00d825f8bb8c536f6b2cd0819ed506610656537e4c09476c8c7705a8e8c1aa9",
+  "etag": "\"f6506-65cab56aa086b\"",
+  "last_modified": "Wed, 30 Sep 2026 04:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-CD303DA384DB98\\20260930T041127.209145Z_f00d825f8bb8c536.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

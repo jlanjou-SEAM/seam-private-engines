@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-85547E71E555AD",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "rsasdump-1.0.tar.gz",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:07.079368Z",
+  "request_url": "https://madis-data.ncep.noaa.gov/binaries/sun/rsasdump-1.0.tar.gz",
+  "final_url": "https://madis-data.ncep.noaa.gov/binaries/sun/rsasdump-1.0.tar.gz",
+  "status_code": 200,
+  "content_type": "application/x-gzip",
+  "byte_length": 81695,
+  "sha256": "760bda8cff105635987a4708baa3127849fc36c190023c79330dc671a9527360",
+  "etag": null,
+  "last_modified": "Thu, 02 Aug 2018 03:44:51 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-85547E71E555AD\\20260930T041907.079368Z_760bda8cff105635.gz",
+  "parent_id": "DISC-E9925F7FEFBC19",
+  "discovery_depth": 2
+}

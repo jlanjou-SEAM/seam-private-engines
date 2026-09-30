@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-55AB52488FE9D3",
+  "provider": "UK Met Office",
+  "dataset": "api-documentation",
+  "sector": "public",
+  "country": "GB",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T05:21:57.294970Z",
+  "request_url": "https://datahub.metoffice.gov.uk/docs/o/category/observations/type/land-observations/api-documentation",
+  "final_url": "https://datahub.metoffice.gov.uk/docs/o/category/observations/type/land-observations/api-documentation",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 32893,
+  "sha256": "afbea8e4f0f22e90f4c95c4d89f7f888804f98b4460477b93c46f6b33712db83",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-55AB52488FE9D3\\20260930T052157.294970Z_afbea8e4f0f22e90.html",
+  "parent_id": "DISC-DDCB1F8C1F1F28",
+  "discovery_depth": 2
+}

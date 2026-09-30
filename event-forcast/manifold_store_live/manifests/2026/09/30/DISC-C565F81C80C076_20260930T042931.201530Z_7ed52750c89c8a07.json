@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C565F81C80C076",
+  "provider": "NOAA/SWPC",
+  "dataset": "geojson_2d_urt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:29:31.201530Z",
+  "request_url": "https://services.swpc.noaa.gov/products/glotec/geojson_2d_urt/",
+  "final_url": "https://services.swpc.noaa.gov/products/glotec/geojson_2d_urt/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 505002,
+  "sha256": "7ed52750c89c8a07197d7c73dd250b0d3822a7619dcb1529a8bb3e73844f95a5",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-C565F81C80C076\\20260930T042931.201530Z_7ed52750c89c8a07.html",
+  "parent_id": "DISC-0174DD6E67039C",
+  "discovery_depth": 2
+}

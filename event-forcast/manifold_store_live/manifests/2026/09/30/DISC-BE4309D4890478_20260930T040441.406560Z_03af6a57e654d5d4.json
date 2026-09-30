@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-BE4309D4890478",
+  "provider": "WeatherAPI.com",
+  "dataset": "llms.txt",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:41.406560Z",
+  "request_url": "https://www.weatherapi.com/llms.txt",
+  "final_url": "https://www.weatherapi.com/llms.txt",
+  "status_code": 200,
+  "content_type": "text/plain",
+  "byte_length": 5490,
+  "sha256": "03af6a57e654d5d4ca144d7622b2f79180bd07ff6358e21e7dd1605d77bd1188",
+  "etag": "\"85323afe82b9dc1:0\"",
+  "last_modified": "Sat, 21 Mar 2026 22:35:17 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-BE4309D4890478\\20260930T040441.406560Z_03af6a57e654d5d4.txt",
+  "parent_id": "WEATHERAPI",
+  "discovery_depth": 1
+}

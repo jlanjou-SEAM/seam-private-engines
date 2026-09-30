@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7A93829E904B1D",
+  "provider": "Met Éireann",
+  "dataset": "collections",
+  "sector": "public",
+  "country": "IE",
+  "scientific_regime": [
+    "weather",
+    "surface"
+  ],
+  "retrieved_utc": "2026-09-30T04:55:00.801093Z",
+  "request_url": "https://opendata2.met.ie/edr/collections",
+  "final_url": "https://opendata2.met.ie/edr/collections",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 50153,
+  "sha256": "8b0746c178a8fff3dfb24a1b7b2f6346b616b6cf8c9aaa9530f6a2dde1294831",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7A93829E904B1D\\20260930T045500.801093Z_8b0746c178a8fff3.json",
+  "parent_id": "METIE-EDR",
+  "discovery_depth": 1
+}

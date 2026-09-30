@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-33DBA9D479F32C",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "IDN60801.95765.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T05:22:56.904956Z",
+  "request_url": "https://www.bom.gov.au/products/IDN60801/IDN60801.95765.shtml",
+  "final_url": "https://www.bom.gov.au/products/IDN60801/IDN60801.95765.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 128737,
+  "sha256": "28c3f15f1ff9a05fb98b6d07afd3afa1ba170375bc69fec99e8316f5f66fab91",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-33DBA9D479F32C\\20260930T052256.904956Z_28c3f15f1ff9a05f.shtml",
+  "parent_id": "DISC-B1E588BDE78812",
+  "discovery_depth": 2
+}

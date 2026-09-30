@@ -1,0 +1,23 @@
+{
+  "candidate_id": "EIA-API",
+  "provider": "US EIA",
+  "dataset": "Electricity and energy API",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "power",
+    "energy"
+  ],
+  "retrieved_utc": "2026-09-30T04:21:23.561025Z",
+  "request_url": "https://www.eia.gov/opendata/",
+  "final_url": "https://www.eia.gov/opendata/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 72400,
+  "sha256": "8779a3bb15b9198e1f63aec7a34de95ff036d8908176e6b66d12c8920815a38c",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\power\\2026\\09\\30\\EIA-API\\20260930T042123.561025Z_8779a3bb15b9198e.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

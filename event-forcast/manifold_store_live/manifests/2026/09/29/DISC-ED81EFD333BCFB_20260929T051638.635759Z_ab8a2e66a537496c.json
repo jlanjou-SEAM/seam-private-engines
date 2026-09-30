@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-ED81EFD333BCFB",
+  "provider": "NOAA/NWS",
+  "dataset": "stations",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface"
+  ],
+  "retrieved_utc": "2026-09-29T05:16:38.635759Z",
+  "request_url": "https://api.weather.gov/stations?limit=500&cursor=eyJzIjo1MDB9",
+  "final_url": "https://api.weather.gov/stations?limit=500&cursor=eyJzIjo1MDB9",
+  "status_code": 200,
+  "content_type": "application/geo+json",
+  "byte_length": 543557,
+  "sha256": "ab8a2e66a537496c0fe3c5f3ac10d46e6d511372d6a26541d1aee5e774317064",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-ED81EFD333BCFB\\20260929T051638.635759Z_ab8a2e66a537496c.json",
+  "parent_id": "NWS-STATIONS",
+  "discovery_depth": 1
+}

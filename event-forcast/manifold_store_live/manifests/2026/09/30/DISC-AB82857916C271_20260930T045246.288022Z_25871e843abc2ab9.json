@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-AB82857916C271",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "snow_providers.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:52:46.288022Z",
+  "request_url": "https://madis.ncep.noaa.gov/snow_providers.shtml",
+  "final_url": "https://madis.ncep.noaa.gov/snow_providers.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 93031,
+  "sha256": "25871e843abc2ab9cfdd759893d8da3ee10adc47c5bb845a874bb0cbf24620e1",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-AB82857916C271\\20260930T045246.288022Z_25871e843abc2ab9.shtml",
+  "parent_id": "NOAA-MADIS",
+  "discovery_depth": 1
+}

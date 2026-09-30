@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7072178D289B73",
+  "provider": "US EPA",
+  "dataset": "states",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "environmental",
+    "air_quality"
+  ],
+  "retrieved_utc": "2026-09-30T04:53:25.332677Z",
+  "request_url": "https://aqs.epa.gov/data/api/list/states?email=test@aqs.api&key=test",
+  "final_url": "https://aqs.epa.gov/data/api/list/states?email=test@aqs.api&key=test",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 4251,
+  "sha256": "952d8c98c72a4df88559a1246f03be4091cdc9703a29e28bb4e0bcb3f7c720b8",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\environmental\\2026\\09\\30\\DISC-7072178D289B73\\20260930T045325.332677Z_952d8c98c72a4df8.json",
+  "parent_id": "EPA-AQS",
+  "discovery_depth": 1
+}

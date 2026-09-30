@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-7C515191336D54",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "IADOTStation.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:11.882073Z",
+  "request_url": "https://madis-data.ncep.noaa.gov/madisPublic1/data/stations/IADOTStation.txt",
+  "final_url": "https://madis-data.ncep.noaa.gov/madisPublic1/data/stations/IADOTStation.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "byte_length": 7491,
+  "sha256": "956b49db41004264b4b5cb3fb97091062b92d264373473104334a2b7f9b3b01b",
+  "etag": "\"1d43-65ca565b43dfc\"",
+  "last_modified": "Tue, 29 Sep 2026 20:55:05 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7C515191336D54\\20260930T041911.882073Z_956b49db41004264.txt",
+  "parent_id": "DISC-A3689D86E0CBCC",
+  "discovery_depth": 2
+}

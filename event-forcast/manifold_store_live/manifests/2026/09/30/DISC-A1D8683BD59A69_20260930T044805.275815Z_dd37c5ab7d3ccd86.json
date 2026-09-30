@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-A1D8683BD59A69",
+  "provider": "NOAA/NCEI",
+  "dataset": "normals",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:05.275815Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/normals/",
+  "final_url": "https://www.ncei.noaa.gov/maps/normals/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 18551,
+  "sha256": "dd37c5ab7d3ccd86e097283444177b0b39f94ed48e633415a920105360db5d43",
+  "etag": "\"47db-647bbbaa38900\"",
+  "last_modified": "Tue, 06 Jan 2026 17:44:36 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A1D8683BD59A69\\20260930T044805.275815Z_dd37c5ab7d3ccd86.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

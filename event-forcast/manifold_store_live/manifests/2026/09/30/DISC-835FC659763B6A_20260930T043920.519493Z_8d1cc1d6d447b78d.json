@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-835FC659763B6A",
+  "provider": "NOAA/NCEI",
+  "dataset": "regional-climate-services-directors",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:20.519493Z",
+  "request_url": "https://www.ncei.noaa.gov/regional/regional-climate-services-directors",
+  "final_url": "https://www.ncei.noaa.gov/regional/regional-climate-services-directors",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 36813,
+  "sha256": "8d1cc1d6d447b78db96c63f419b625234a091cc68eddf3ab2521ee33ca9bfda4",
+  "etag": "\"1790724905-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 23:35:05 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-835FC659763B6A\\20260930T043920.519493Z_8d1cc1d6d447b78d.html",
+  "parent_id": "DISC-3ECC3F5C6D976D",
+  "discovery_depth": 2
+}

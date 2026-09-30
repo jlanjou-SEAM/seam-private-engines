@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-10B4CBCDEA07D5",
+  "provider": "IDEAM Colombia",
+  "dataset": "radar.jpg",
+  "sector": "public",
+  "country": "CO",
+  "scientific_regime": [
+    "weather",
+    "hydrology",
+    "environmental"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:30.401759Z",
+  "request_url": "https://www.ideam.gov.co/sites/default/files/menu_icons/radar.jpg",
+  "final_url": "https://www.ideam.gov.co/sites/default/files/menu_icons/radar.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 5918,
+  "sha256": "793ece8e9d290c9ab558a2e4efd8f586e521f17860d47202c84eaf13a4e12283",
+  "etag": "\"171e-61b30b34028bd\"",
+  "last_modified": "Tue, 18 Jun 2024 21:23:59 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-10B4CBCDEA07D5\\20260930T041030.401759Z_793ece8e9d290c9a.jpg",
+  "parent_id": "IDEAM-CO",
+  "discovery_depth": 1
+}

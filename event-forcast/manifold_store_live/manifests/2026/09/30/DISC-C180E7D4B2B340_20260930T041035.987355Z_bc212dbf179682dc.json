@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C180E7D4B2B340",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "rain-enhancement-operations-section",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:35.987355Z",
+  "request_url": "https://www.ncm.gov.ae/pages/rain-enhancement-operations-section?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/rain-enhancement-operations-section?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43681,
+  "sha256": "bc212dbf179682dc2689808088006a3c5170a91010481be7c9e636964d6f9340",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C180E7D4B2B340\\20260930T041035.987355Z_bc212dbf179682dc.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

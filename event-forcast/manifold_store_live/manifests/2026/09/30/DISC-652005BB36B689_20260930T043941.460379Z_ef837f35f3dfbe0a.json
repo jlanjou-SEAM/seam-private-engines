@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-652005BB36B689",
+  "provider": "NOAA/NCEI",
+  "dataset": "GHCND_sample_pdf.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:41.460379Z",
+  "request_url": "https://www.ncei.noaa.gov/pub/data/cdo/samples/GHCND_sample_pdf.pdf",
+  "final_url": "https://www.ncei.noaa.gov/pub/data/cdo/samples/GHCND_sample_pdf.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 18850,
+  "sha256": "ef837f35f3dfbe0a5de87208a087ba308205dd937d98ec831f725b7f475701ea",
+  "etag": "\"49a2-51452279c9400\"",
+  "last_modified": "Wed, 22 Apr 2015 15:52:48 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-652005BB36B689\\20260930T043941.460379Z_ef837f35f3dfbe0a.pdf",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

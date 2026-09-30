@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-F288522EF7B2D9",
+  "provider": "NOAA/NCEI",
+  "dataset": "services",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:05.821545Z",
+  "request_url": "https://gis.ncdc.noaa.gov/arcgis/rest/services",
+  "final_url": "https://gis.ncdc.noaa.gov/arcgis/rest/services",
+  "status_code": 200,
+  "content_type": "text/html;charset=utf-8",
+  "byte_length": 2277,
+  "sha256": "793feb98a296f02431e405104fe42c75377e2303adb432a3a2ffb11253b15198",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F288522EF7B2D9\\20260930T044805.821545Z_793feb98a296f024.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

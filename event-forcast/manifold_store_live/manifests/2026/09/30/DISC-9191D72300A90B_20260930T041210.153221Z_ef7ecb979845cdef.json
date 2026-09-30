@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-9191D72300A90B",
+  "provider": "NOAA/NDBC",
+  "dataset": "TKPN6.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:12:10.153221Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/TKPN6.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/TKPN6.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1019900,
+  "sha256": "ef7ecb979845cdefa260827393dbaab4e950b9eb41712390a7214ef18fedcf3d",
+  "etag": "\"f8ffc-65c9fd0327f23\"",
+  "last_modified": "Tue, 29 Sep 2026 14:15:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-9191D72300A90B\\20260930T041210.153221Z_ef7ecb979845cdef.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

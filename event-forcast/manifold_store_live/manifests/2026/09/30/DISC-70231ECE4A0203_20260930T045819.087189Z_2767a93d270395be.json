@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-70231ECE4A0203",
+  "provider": "NOAA/NDBC",
+  "dataset": "CWCI.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:58:19.087189Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/CWCI.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/CWCI.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 2538,
+  "sha256": "2767a93d270395bec0f7a16a04eda758f82f3905e7afe98737e31dfbab96b565",
+  "etag": "\"9ea-65cabd3baed8d\"",
+  "last_modified": "Wed, 30 Sep 2026 04:35:21 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-70231ECE4A0203\\20260930T045819.087189Z_2767a93d270395be.txt",
+  "parent_id": "DISC-CE899AD4C09D51",
+  "discovery_depth": 2
+}

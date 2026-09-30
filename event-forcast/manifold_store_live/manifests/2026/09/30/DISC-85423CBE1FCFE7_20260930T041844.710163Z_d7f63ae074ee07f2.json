@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-85423CBE1FCFE7",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "icon-rainstorm.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:44.710163Z",
+  "request_url": "https://www.nco.ncep.noaa.gov/status/css/images/icon-rainstorm.png",
+  "final_url": "https://www.nco.ncep.noaa.gov/status/css/images/icon-rainstorm.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 40563,
+  "sha256": "d7f63ae074ee07f2a4eeb80a11715b1e1c8d5849a93f77c6c12495e5dc6dfff7",
+  "etag": null,
+  "last_modified": "Tue, 14 Feb 2023 16:18:18 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-85423CBE1FCFE7\\20260930T041844.710163Z_d7f63ae074ee07f2.png",
+  "parent_id": "DISC-187AADF5F10B84",
+  "discovery_depth": 2
+}

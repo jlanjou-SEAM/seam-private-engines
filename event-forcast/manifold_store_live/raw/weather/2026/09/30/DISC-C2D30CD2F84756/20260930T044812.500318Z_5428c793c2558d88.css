@@ -1,0 +1,33 @@
+.ui-datepicker-calendar th{background:#FFF;padding:0;font-weight:normal;color:#777}
+.noaa-daterange-container{position:relative!important}
+.noaa-daterange-container.open{background-color:#f0f0f8;padding-top:2px;padding-left:2px}
+.noaa-datepicker-altField{width:100px!important;background-color:#f0f0f8;padding:0;margin-bottom:2px;font-size:14px}
+.noaa-daterange-applybtn{position:relative;bottom:0;right:0;margin:.25em 0}
+.noaa-daterange-backdrop{padding:.25em;width:auto;background:url('/cdo-web/images/icons/step_blue_end.png') center center no-repeat transparent}
+.noaa-daterange-dialog{background-color:#f0f0f8;width:auto;border:1px solid #ccc;filter:Shadow(Color='#777777',Direction=180,Strength=4);filter:progid:DXImageTransform.Microsoft.Shadow(color='#777777',direction=180,strength=4);progid:DXImageTransform.Microsoft.Blur(pixelradius=2) progid:DXImageTransform.Microsoft.Wheel(duration=4);-moz-box-shadow:0 4px 8px rgba(0,0,0,.5);-webkit-box-shadow:0 4px 8px rgba(0,0,0,.5);box-shadow:0 4px 8px rgba(0,0,0,.5)}
+.noaa-daterange-input{border:1px solid #ccc;display:block;border-color:#777 #AAA #AAA;background:url('/cdo-web/images/icons/icon_calendar_tiny.png') 99% center no-repeat #fff;padding:1px 2px}
+.noaa-daterange-quickbuttonpanel{height:33px}
+.noaa-daterange-quickbuttonpanel{display:block;height:auto;width:auto}
+.noaa-daterange-quickbuttonpanel button{float:right;text-transform:uppercase}
+.noaa-daterange-singleinput{width:275px}
+.noaa-daterange-start-day.noaa-daterange-endday a{background:#ffd9d9}
+.noaa-daterange-end-day.noaa-daterange-startday a{background:#d9ffd9}
+.noaa-datepicker-start-container{float:left;margin-right:10px;margin-bottom:10px}
+.noaa-datepicker-end-container{float:right;margin-left:10px;margin-bottom:10px}
+.dateDivider{width:23px;height:175px;background:url('/cdo-web/images/icons/step_blue_end.png') center 65% no-repeat}
+.noaa-daterange-container label{margin-right:5px;line-height:19px;display:inline-block}
+.noaa-datepicker-altField{display:inline-block}
+#startAltField,#endAltField{background-color:transparent!important;border:0;box-shadow:none;display:inline-block;width:85px!important}
+#startAltField:hover,#endAltField:hover{border:none!important}
+.noaa-datepicker-start-container input,.noaa-datepicker-end-container input{margin:0}
+td.noaa-daterange-inrange a.ui-state-default{background-image:none;background-color:#245bab;color:#fff;font-weight:bold}
+td.noaa-daterange-inrange a.ui-state-default:hover{background-color:#4e8cc7}
+td.noaa-daterange-start-day.ui-datepicker-current-day a.ui-state-active{background-image:none;background-color:#0c346f;color:#fff;font-weight:bold}
+td.noaa-daterange-start-day.ui-datepicker-current-day a.ui-state-active:hover{background-color:#245bab}
+td.noaa-daterange-end-day.ui-datepicker-current-day a.ui-state-active{background-image:none;background-color:#0c346f;color:#fff;font-weight:bold}
+td.noaa-daterange-end-day.ui-datepicker-current-day a.ui-state-active:hover{background-color:#245bab}
+.noaa-daterange-applybtn{padding:2px 5px}
+.noaa-daterange-strictapply{position:absolute;bottom:10px;left:5px;font-size:.8em;color:#d00;width:285px;text-align:right}
+.noaa-daterange-cancelbtn{margin:3px 5px 0 0;padding:2px 5px}
+.noaa-daterange-label{font-weight:bold;margin:5px 0 7px 0}
+.ui-datepicker .ui-datepicker-title .ui-datepicker-year,.ui-datepicker .ui-datepicker-title .ui-datepicker-month{width:50%}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-BEC9830196F60C",
+  "provider": "NASA Earthdata",
+  "dataset": "aqua-modis-mini-reprocessing-r2022.0.3",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:28.386189Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/aqua-modis-mini-reprocessing-r2022.0.3",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/aqua-modis-mini-reprocessing-r2022.0.3",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 157575,
+  "sha256": "cbcbdfb58747d1cd8dae0587d86564cb2d33e3cae2ba0ad24e01199c3febfc11",
+  "etag": "\"1790745629\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-BEC9830196F60C\\20260930T052028.386189Z_cbcbdfb58747d1cd.3",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

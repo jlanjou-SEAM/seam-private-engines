@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-F4F81D3596AA5B",
+  "provider": "USGS Water Data",
+  "dataset": "coordinate-accuracy-codes",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:31:54.429435Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/coordinate-accuracy-codes",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/coordinate-accuracy-codes",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 4228,
+  "sha256": "d2f5b83028fb9f0d8bd970a7f3c6eee15ee19682d46c9db6f0c1ae1b9c56d78d",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\30\\DISC-F4F81D3596AA5B\\20260930T043154.429435Z_d2f5b83028fb9f0d.json",
+  "parent_id": "DISC-50BE965810B0D9",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-FFC7BA10529045",
+  "provider": "NASA Earthdata",
+  "dataset": "asdc-has-brief-outage-cumulus-upgrade",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:12.183802Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/asdc-has-brief-outage-cumulus-upgrade",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/asdc-has-brief-outage-cumulus-upgrade",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 135869,
+  "sha256": "9bbbf537d3f63194fa5dc49738dbfb37a524c1929864abd813d4c1fcbecff188",
+  "etag": "\"1790745613\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:13 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-FFC7BA10529045\\20260930T052012.183802Z_9bbbf537d3f63194.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

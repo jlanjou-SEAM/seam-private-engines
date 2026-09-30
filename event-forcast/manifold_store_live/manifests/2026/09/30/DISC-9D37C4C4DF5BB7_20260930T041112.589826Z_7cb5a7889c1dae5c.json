@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-9D37C4C4DF5BB7",
+  "provider": "NOAA/NDBC",
+  "dataset": "WLON7.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:11:12.589826Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/WLON7.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/WLON7.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1012474,
+  "sha256": "7cb5a7889c1dae5cab0a810ead43619ba082d33a9dca1779e8d6013ca884a9b8",
+  "etag": "\"f72fa-65cab56aa8952\"",
+  "last_modified": "Wed, 30 Sep 2026 04:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-9D37C4C4DF5BB7\\20260930T041112.589826Z_7cb5a7889c1dae5c.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

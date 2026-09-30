@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-0F4233CB6747A5",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "mesonet_solar_radiation.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-29T05:17:36.424759Z",
+  "request_url": "https://madis.ncep.noaa.gov/mesonet_solar_radiation.shtml",
+  "final_url": "https://madis.ncep.noaa.gov/mesonet_solar_radiation.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 37098,
+  "sha256": "bf901a6f8edf46b4cc604b1ba5682b5302a6e2475943f1dc3ea7df76e807d2e1",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-0F4233CB6747A5\\20260929T051736.424759Z_bf901a6f8edf46b4.shtml",
+  "parent_id": "NOAA-MADIS",
+  "discovery_depth": 1
+}

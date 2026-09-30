@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-97E3C150A70645",
+  "provider": "Blitzortung.org",
+  "dataset": "image_b_earth.png",
+  "sector": "community",
+  "country": "global",
+  "scientific_regime": [
+    "weather",
+    "lightning"
+  ],
+  "retrieved_utc": "2026-09-30T05:00:54.249289Z",
+  "request_url": "https://www.limaps.org/Current/image_b_earth.png?t=29845679",
+  "final_url": "https://www.limaps.org/Current/image_b_earth.png?t=29845679",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 56924,
+  "sha256": "e51d3cb3f0f4546fc62e1e77ce1c244ecdb7ac8bf7eb779555975ae6ff1388bd",
+  "etag": "\"6abc9753-de5c\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:03 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-97E3C150A70645\\20260930T050054.249289Z_e51d3cb3f0f4546f.png",
+  "parent_id": "BLITZORTUNG",
+  "discovery_depth": 1
+}

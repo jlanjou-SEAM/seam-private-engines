@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-2369A17BC043C4",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "Hive_Cirrus.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:45.080116Z",
+  "request_url": "https://www.nco.ncep.noaa.gov/status/css/images/Hive_Cirrus.png",
+  "final_url": "https://www.nco.ncep.noaa.gov/status/css/images/Hive_Cirrus.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 1634023,
+  "sha256": "7a06bf99b4d11dd1d351181c910e283270e89b6885cd612abdb2095b7ae1bad8",
+  "etag": null,
+  "last_modified": "Wed, 01 Apr 2026 11:58:17 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2369A17BC043C4\\20260930T041845.080116Z_7a06bf99b4d11dd1.png",
+  "parent_id": "DISC-187AADF5F10B84",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-9107E9AEEAA598",
+  "provider": "NOAA/NCEP",
+  "dataset": "predicted-sunspot-number-and-radio-flux",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:45.133835Z",
+  "request_url": "https://www.spaceweather.gov/products/predicted-sunspot-number-and-radio-flux",
+  "final_url": "https://www.spaceweather.gov/products/predicted-sunspot-number-and-radio-flux",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 72606,
+  "sha256": "0760f89eb77a72a63fbc012bef5a6f83ade5bfef9924e4d47c3b28d1def4a933",
+  "etag": "\"1790733710\"",
+  "last_modified": "Wed, 30 Sep 2026 02:01:50 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-9107E9AEEAA598\\20260930T043745.133835Z_0760f89eb77a72a6.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

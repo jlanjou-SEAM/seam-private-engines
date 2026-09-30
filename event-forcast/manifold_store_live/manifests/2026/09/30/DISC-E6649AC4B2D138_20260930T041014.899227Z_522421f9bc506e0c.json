@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-E6649AC4B2D138",
+  "provider": "Japan Meteorological Agency",
+  "dataset": "week_area_name.json",
+  "sector": "public",
+  "country": "JP",
+  "scientific_regime": [
+    "weather",
+    "seismic",
+    "hazards"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:14.899227Z",
+  "request_url": "https://www.jma.go.jp/bosai/forecast/const/week_area_name.json",
+  "final_url": "https://www.jma.go.jp/bosai/forecast/const/week_area_name.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 4939,
+  "sha256": "522421f9bc506e0c77bf494cc72398a622673532460d7632b7d312bb8416cfde",
+  "etag": "\"dfb442a97a180500b34dccd75304eced\"",
+  "last_modified": "Tue, 29 Sep 2026 04:55:01 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E6649AC4B2D138\\20260930T041014.899227Z_522421f9bc506e0c.json",
+  "parent_id": "JMA-BOSAI",
+  "discovery_depth": 1
+}

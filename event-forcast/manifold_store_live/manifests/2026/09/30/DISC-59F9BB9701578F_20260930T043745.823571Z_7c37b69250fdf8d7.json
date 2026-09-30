@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-59F9BB9701578F",
+  "provider": "NOAA/NCEP",
+  "dataset": "geophysical-alert-wwv-text",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:45.823571Z",
+  "request_url": "https://www.spaceweather.gov/products/geophysical-alert-wwv-text",
+  "final_url": "https://www.spaceweather.gov/products/geophysical-alert-wwv-text",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 68607,
+  "sha256": "7c37b69250fdf8d70242eac35a844ae7aaee166d8350b9639e43c1d74c5250e7",
+  "etag": "\"1790734258\"",
+  "last_modified": "Wed, 30 Sep 2026 02:10:58 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-59F9BB9701578F\\20260930T043745.823571Z_7c37b69250fdf8d7.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

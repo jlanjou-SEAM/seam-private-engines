@@ -1,0 +1,23 @@
+{
+  "candidate_id": "ECMWF-OPEN",
+  "provider": "ECMWF",
+  "dataset": "Open data",
+  "sector": "intergovernmental",
+  "country": "EU",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T03:59:17.843005Z",
+  "request_url": "https://data.ecmwf.int/forecasts/",
+  "final_url": "https://data.ecmwf.int/forecasts/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 429767,
+  "sha256": "c03d27b8ef6ee919287f0860f4cd84f9d8ef95fcb0c1b84fe75eee1fb5fc8dcf",
+  "etag": null,
+  "last_modified": "Tue, 29 Sep 2026 06:40:00 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\ECMWF-OPEN\\20260930T035917.843005Z_c03d27b8ef6ee919.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

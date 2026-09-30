@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-4F1CF79D811090",
+  "provider": "NASA Earthdata",
+  "dataset": "terra-satellite-enters-safe-mode",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:19:45.650255Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/terra-satellite-enters-safe-mode",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/terra-satellite-enters-safe-mode",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 161587,
+  "sha256": "2099dd1688c21c0dd704e307c1be6f17b5ee7393089af36172e13e5fd14e97df",
+  "etag": "\"1790745587\"",
+  "last_modified": "Wed, 30 Sep 2026 05:19:47 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-4F1CF79D811090\\20260930T051945.650255Z_2099dd1688c21c0d.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

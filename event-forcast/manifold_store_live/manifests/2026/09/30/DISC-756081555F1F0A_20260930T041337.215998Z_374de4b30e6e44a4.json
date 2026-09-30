@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-756081555F1F0A",
+  "provider": "NOAA/NDBC",
+  "dataset": "BNKF1.rain",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:13:37.215998Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/BNKF1.rain",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/BNKF1.rain",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 19151,
+  "sha256": "374de4b30e6e44a42baa7dd9613febdfcf5578009c2e986015a7fb187d3cea4a",
+  "etag": "\"4acf-65ca64f494d7e\"",
+  "last_modified": "Tue, 29 Sep 2026 22:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-756081555F1F0A\\20260930T041337.215998Z_374de4b30e6e44a4.rain",
+  "parent_id": "DISC-CE899AD4C09D51",
+  "discovery_depth": 2
+}

@@ -1,0 +1,168 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="response" >
+			<xsd:complexType >
+			<xsd:sequence >
+				<xsd:element ref="request_index" />
+				<xsd:element ref="data_source" />
+				<xsd:element ref="request"/>
+				<xsd:element ref="errors"/>
+				<xsd:element ref="warnings"/>
+				<xsd:element ref="time_taken_ms"/>
+				<xsd:element ref="data"/>
+			</xsd:sequence>
+			<xsd:attribute name="version" type="xsd:string" default="1.1"/>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="request_index" type="xsd:int"/>
+	<xsd:element name="data_source" >
+		<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+						Specific source from dataserver request
+						ex: cwas
+						</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:attribute name="name" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="request" >
+		<xsd:annotation>
+				<xsd:documentation xml:lang="en">
+				Request type
+				ex: retrieve
+				</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:attribute name="type" type="xsd:string" />
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="errors">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="0" >
+				<xsd:element ref="error" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="warnings">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="0">
+				<xsd:element ref="warning" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="data" >
+		<xsd:complexType>
+			<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+				<xsd:element ref="CWA"/>
+			</xsd:sequence>
+			<xsd:attribute name="num_results" type="xsd:int"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="warning" type="xsd:string"/>
+	<xsd:element name="error" type="xsd:string"/>
+	<xsd:element name="time_taken_ms" type="xsd:int"/>
+	<xsd:attribute name="num_results" type="xsd:int"/>
+
+	<xsd:element name="CWA">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="raw_text" minOccurs="0"/>
+				<xsd:element ref="cwsu" minOccurs="0"/>
+				<xsd:element ref="series_id" minOccurs="0"/>
+				<xsd:element ref="valid_time_from" minOccurs="0"/>
+				<xsd:element ref="valid_time_to" minOccurs="0"/>
+				<xsd:element ref="hazard" minOccurs="0"/>
+				<xsd:element ref="altitude" minOccurs="0"/>
+				<xsd:element ref="area" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="raw_text" type="xsd:string"/>
+	<xsd:element name="cwsu" type="xsd:string">
+		<xsd:annotation>
+                        <xsd:documentation xml:lang="en">
+                        CWSU identifier
+                        ex: ZAB, ZLC
+                        </xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="series_id" type="xsd:string">
+		<xsd:annotation>
+                        <xsd:documentation xml:lang="en">
+                        Series identifier, typically a 3 digit number, incremented for each new like advisory
+                        ex: 102
+                        </xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="valid_time_from" type="xsd:string">
+		<xsd:annotation>
+                        <xsd:documentation xml:lang="en">
+                        The start time of advisory validity (ISO 8601 date format)
+                        ex: 2023-12-03T23:30:00Z
+                        </xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="valid_time_to" type="xsd:string">
+		<xsd:annotation>
+                        <xsd:documentation xml:lang="en">
+                        The end time of advisory validity (ISO 8601 date format)
+                        ex: 2023-12-04T03:00:00Z
+                        </xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="altitude" >
+		<xsd:annotation>
+				<xsd:documentation xml:lang="en">
+				The bottom and/or top levels the product is valid for in feet above mean sea level
+				ex: base 17000 top 30000
+				</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:attribute name="min_ft_msl" type="xsd:int" />
+			<xsd:attribute name="max_ft_msl" type="xsd:int" />
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="hazard" >
+		<xsd:complexType>
+			<xsd:attribute name="type" type="xsd:string">
+		                <xsd:annotation>
+                                        <xsd:documentation xml:lang="en">
+                                        The hazard type
+                                        ex: TS, TURB, ICE, IFR, PCPN, UNK
+                                        </xsd:documentation>
+		                </xsd:annotation>
+	                </xsd:attribute>
+			<xsd:attribute name="qualifier" type="xsd:string">
+		                <xsd:annotation>
+                                        <xsd:documentation xml:lang="en">
+                                        Additional qualifier of hazard, can be severity
+                                        ex: SEV, SCT
+                                        </xsd:documentation>
+		                </xsd:annotation>
+	                </xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="area" >
+		<xsd:annotation>
+				<xsd:documentation xml:lang="en">
+				The area or line given in latitude, longitude points
+				</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="point" minOccurs="1" maxOccurs="unbounded" />
+			</xsd:sequence>
+			<xsd:attribute name="num_points" type="xsd:integer"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="point">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="longitude" type="xsd:float" minOccurs="1"/>
+				<xsd:element name="latitude" type="xsd:float" minOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-BE0DA761A49193",
+  "provider": "NOAA/NCEP",
+  "dataset": "wsa-enlil-solar-wind-prediction",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-29T05:17:54.394680Z",
+  "request_url": "https://www.swpc.noaa.gov/products/wsa-enlil-solar-wind-prediction",
+  "final_url": "https://www.spaceweather.gov/products/wsa-enlil-solar-wind-prediction",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 73405,
+  "sha256": "c02c3ddc95f764ed7bfe3cd9653bbdeea49b2b6ee500bd631272bf9cd1755e1c",
+  "etag": "\"1790636346\"",
+  "last_modified": "Mon, 28 Sep 2026 22:59:06 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-BE0DA761A49193\\20260929T051754.394680Z_c02c3ddc95f764ed.html",
+  "parent_id": "NOAA-NOMADS",
+  "discovery_depth": 1
+}

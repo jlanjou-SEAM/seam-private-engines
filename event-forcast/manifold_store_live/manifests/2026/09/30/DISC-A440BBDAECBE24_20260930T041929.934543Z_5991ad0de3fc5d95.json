@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A440BBDAECBE24",
+  "provider": "NOAA/NCEP",
+  "dataset": "forecasts",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:29.934543Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/forecasts/",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/forecasts/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 18313,
+  "sha256": "5991ad0de3fc5d959dc7f6f340dd6934af9f0766032ec41c3ade6928f3658ace",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A440BBDAECBE24\\20260930T041929.934543Z_5991ad0de3fc5d95.html",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

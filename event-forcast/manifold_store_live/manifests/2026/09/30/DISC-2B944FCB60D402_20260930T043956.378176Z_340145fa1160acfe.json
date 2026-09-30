@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-2B944FCB60D402",
+  "provider": "NOAA/NCEI",
+  "dataset": "EarthFactsFT_Final.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:56.378176Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/EarthFactsFT_Final.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/EarthFactsFT_Final.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 10448452,
+  "sha256": "340145fa1160acfea2e0d25d41ecd27c30dd66a7e1b40db3092962c2086695c3",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:08:33 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2B944FCB60D402\\20260930T043956.378176Z_340145fa1160acfe.pdf",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

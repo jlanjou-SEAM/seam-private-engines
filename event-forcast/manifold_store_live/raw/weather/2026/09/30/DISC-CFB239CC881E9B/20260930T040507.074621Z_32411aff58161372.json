@@ -1,0 +1,2014 @@
+{
+    "@context": [
+        {
+            "schema": "https://schema.org/",
+            "type": "@type",
+            "features": "schema:itemListElement",
+            "FeatureCollection": "schema:itemList"
+        }
+    ],
+    "type": "FeatureCollection",
+    "@id": "https://api.weather.gc.ca/collections/climate-monthly",
+    "features": [
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1990.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1990.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1990.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1990.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1990.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1990.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1990.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1990.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1990.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1991.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1991.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1991.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1991.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1991.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1991.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1991.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1991.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1991.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1991.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1991.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1991.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1992.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1992.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1992.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1992.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1992.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1992.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1992.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1992.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1992.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1992.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1992.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1992.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1993.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1993.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1993.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1993.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1993.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1993.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1993.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1993.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1993.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1993.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1993.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1993.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1994.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1994.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1994.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/341.1994.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1988.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1988.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1988.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1988.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1988.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1989.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1989.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1989.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1989.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1989.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1989.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1989.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1989.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1989.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1989.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1989.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1989.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1990.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1990.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1990.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1990.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1990.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1990.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1990.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1990.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1990.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1990.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1990.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1990.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1991.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1991.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1991.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1991.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1991.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1991.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1991.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1991.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1991.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1991.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1991.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1991.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1992.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1992.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1992.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1992.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1992.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1992.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1992.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1992.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1992.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1992.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1992.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1993.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1993.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1993.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1993.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1993.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1993.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1993.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1994.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1994.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1994.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1994.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1994.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1994.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1994.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1994.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1994.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1994.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1994.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1995.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1995.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1995.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1995.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1995.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1995.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1995.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1960.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1960.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1960.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1961.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1961.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1961.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1961.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1961.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1961.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1961.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1961.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1961.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1961.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1961.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1961.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1962.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1962.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1962.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1962.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1962.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1962.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1962.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1962.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1962.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1962.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1962.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1962.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1963.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1963.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1963.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1963.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1963.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1963.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1963.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1963.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1963.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1963.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1963.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1963.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1964.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1964.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1964.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1964.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1964.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1964.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1964.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1964.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1964.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1964.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1964.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1964.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1965.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1965.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1965.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1965.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1965.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1965.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1965.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1965.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1965.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1965.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1965.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1965.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1966.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1966.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1966.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1966.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1966.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1966.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1966.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1966.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1966.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1966.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1966.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1966.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1967.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1967.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1967.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1967.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1967.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1967.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1967.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1967.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1967.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1967.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1967.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1967.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1968.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1968.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1968.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1968.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1944.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1944.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1944.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1944.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1944.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1944.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1944.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1944.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1944.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1945.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1945.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1945.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1945.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1945.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1945.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1945.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1945.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1945.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1945.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1945.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1945.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1946.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1946.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1946.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1946.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1946.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1946.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1946.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1946.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1946.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1946.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1946.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1946.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1947.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1947.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1947.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1947.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1947.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1947.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1947.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1947.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1947.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1947.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1947.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1947.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1948.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1948.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1948.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1948.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1948.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1948.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1948.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1948.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1948.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1948.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1948.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1948.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1949.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1949.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1949.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1949.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1949.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1949.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1949.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1949.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1949.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1949.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1949.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1949.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1950.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1950.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1950.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1950.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1950.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1950.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1950.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1950.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1950.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1950.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1950.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1950.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1951.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1951.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1951.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1951.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1951.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1951.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1951.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1951.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1951.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1951.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1951.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1951.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/333.1952.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1962.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1962.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1962.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1962.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1962.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1962.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1962.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1963.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1963.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1963.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1963.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1963.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1963.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1963.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1963.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1963.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1963.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1963.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1963.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1964.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1964.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1964.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1964.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1964.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1964.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1964.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1964.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1964.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1964.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1964.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1964.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1965.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1965.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1965.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1965.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1965.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1965.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1965.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1965.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1965.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1965.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1965.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1965.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1966.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1966.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1966.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1966.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1966.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1966.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1966.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1966.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1966.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1966.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1966.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1966.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1967.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1967.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1967.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1967.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1967.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1967.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1967.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1967.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1967.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1967.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1967.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1967.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1968.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1968.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1968.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1968.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1968.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1968.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1968.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1968.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1968.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1968.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/337.1968.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1928.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1928.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1928.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1928.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1928.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1928.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1928.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1928.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1928.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1928.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1929.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1929.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1929.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1929.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1929.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1929.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1929.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1996.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1996.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1996.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1996.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1996.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1996.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1996.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1996.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1997.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1997.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1997.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1997.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1997.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1997.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1997.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1997.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1997.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1997.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1997.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1997.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1928.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1929.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1929.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1929.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1929.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1929.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1930.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1930.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1930.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1930.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1930.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1930.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1930.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1930.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1930.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1930.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1930.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1930.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1931.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1931.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1931.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1931.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1931.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1931.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1931.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1931.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1931.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1931.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1931.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1931.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1932.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/24.1996.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1932.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1932.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1932.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1932.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1932.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1932.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1932.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1932.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1932.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/330.1932.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1968.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1968.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1968.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1968.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1968.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1968.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1968.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1968.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1969.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1969.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1969.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1969.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1969.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1969.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1969.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1969.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1969.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1969.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1970.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1970.2"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1970.3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1970.4"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1970.5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1970.6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1970.7"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1970.8"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1970.9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1970.10"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1970.11"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1970.12"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1971.1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-monthly/items/345.1971.2"
+        }
+    ]
+}

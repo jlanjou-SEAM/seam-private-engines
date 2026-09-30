@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A834FC0BD52BAF",
+  "provider": "NOAA/NDBC",
+  "dataset": "CMPO1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:13:53.512853Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/CMPO1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/CMPO1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 245340,
+  "sha256": "4c7157f8cf76bdc66a07419ffb1ea910e3dd222030070bcf8b62cb40f2faeaa0",
+  "etag": "\"3be5c-659d276186f51\"",
+  "last_modified": "Mon, 24 Aug 2026 22:25:19 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-A834FC0BD52BAF\\20260930T041353.512853Z_4c7157f8cf76bdc6.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

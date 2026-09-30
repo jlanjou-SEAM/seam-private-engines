@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-27E37AEDCDF4FB",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "overlays.js",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:05.123222Z",
+  "request_url": "https://madis-data.ncep.noaa.gov/MadisAircraftPublic/js/overlays.js",
+  "final_url": "https://madis-data.ncep.noaa.gov/MadisAircraftPublic/js/overlays.js",
+  "status_code": 200,
+  "content_type": "application/javascript",
+  "byte_length": 17989,
+  "sha256": "333e9c8bd29e4168e59a986ef4c55a77a27816ca9bccf59d6342227054059335",
+  "etag": null,
+  "last_modified": "Wed, 27 Aug 2025 15:34:12 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-27E37AEDCDF4FB\\20260930T041905.123222Z_333e9c8bd29e4168.js",
+  "parent_id": "DISC-E07FFAA6C8FF08",
+  "discovery_depth": 2
+}

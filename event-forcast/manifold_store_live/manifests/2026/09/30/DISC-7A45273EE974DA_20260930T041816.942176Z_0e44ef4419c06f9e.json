@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7A45273EE974DA",
+  "provider": "NOAA/SWPC",
+  "dataset": "ccor1-diff",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:16.942176Z",
+  "request_url": "https://services.swpc.noaa.gov/products/animations/ccor1-diff/",
+  "final_url": "https://services.swpc.noaa.gov/products/animations/ccor1-diff/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 514,
+  "sha256": "0e44ef4419c06f9e5e48af7ee0000e790fdc3195c3e055b140a0952bb2737175",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-7A45273EE974DA\\20260930T041816.942176Z_0e44ef4419c06f9e.html",
+  "parent_id": "DISC-DC635460D92E37",
+  "discovery_depth": 2
+}

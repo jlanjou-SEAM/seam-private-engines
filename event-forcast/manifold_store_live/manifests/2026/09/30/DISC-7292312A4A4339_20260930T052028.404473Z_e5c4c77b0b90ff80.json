@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7292312A4A4339",
+  "provider": "NASA Earthdata",
+  "dataset": "correction-gedi-level-4a-version-3-agbd-model-south-american-forests",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:28.404473Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/correction-gedi-level-4a-version-3-agbd-model-south-american-forests",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/correction-gedi-level-4a-version-3-agbd-model-south-american-forests",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 139543,
+  "sha256": "e5c4c77b0b90ff80c057f6a071d4b284f072b513188cbd475c21b76cfa2fb199",
+  "etag": "\"1790745629\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-7292312A4A4339\\20260930T052028.404473Z_e5c4c77b0b90ff80.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

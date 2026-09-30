@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A64347C4A2899C",
+  "provider": "NOAA/NCEP",
+  "dataset": "nws_title.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:28.282822Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/nwscwi/nws_title.jpg",
+  "final_url": "https://www.cpc.ncep.noaa.gov/nwscwi/nws_title.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 3629,
+  "sha256": "d9a2404968e839b88f38a55a7036ba801a5bb3912906304f5f93bdb150432725",
+  "etag": null,
+  "last_modified": "Thu, 13 Jun 2002 09:31:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A64347C4A2899C\\20260930T041928.282822Z_d9a2404968e839b8.jpg",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

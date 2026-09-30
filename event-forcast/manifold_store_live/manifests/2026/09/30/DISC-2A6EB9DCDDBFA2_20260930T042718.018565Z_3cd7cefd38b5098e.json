@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-2A6EB9DCDDBFA2",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "maps-warnings",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:27:18.018565Z",
+  "request_url": "https://www.ncm.gov.ae/maps-warnings?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/maps-warnings?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43519,
+  "sha256": "3cd7cefd38b5098e9072611d240ba6eb8a848057430ba459120063d667e157fb",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2A6EB9DCDDBFA2\\20260930T042718.018565Z_3cd7cefd38b5098e.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

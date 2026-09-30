@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-981F9A46273267",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "https://iris.ncep.noaa.gov",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:59:48.629369Z",
+  "request_url": "https://iris.ncep.noaa.gov",
+  "final_url": "https://sso.noaa.gov:443/openam/SSORedirect/metaAlias/noaa-online/idp?SAMLRequest=fZJPTwIxEMW%2Fyqb33S7sgtAAyQKSkPgvoB68mKYMOkm3rZ0u6re3u0TUg5yavL6Xmd%2FLTEjW2omqCa9mA28NUEg%2Bam1IdB9T1ngjrCQkYWQNJIIS2%2Br6SvSzXDhvg1VWs1%2BR8wlJBD6gNSxZL6fsebXsj1ZlMchXxWhYVvNiNO%2FNL%2FNx73I%2BvBj3Fyx5BE%2FRP2UxHkNEDawNBWlClPL%2BMM3HaZHf56UYjMUgf2LJMjKgkaFLvYbgSHBOZDNjpcxe7EGUZcGtg7ge325vN7BDDyrwGoKsNErirTO1RqMBjjvHkoU1BO3Ic3DqaBKq8T6%2BKdZOo8LAkpX1CrqOp2wvNUFLchfLwAOclOq7m3ZYU4Pfgj%2BggofN1Q8HeqTMKHAnGt62zp2lsAFy7QpsNmk10ZXlZ%2F9HJ%2Fy3b3I8hZvItV7e2bj6Z7t4Lc9g97Jep%2BAu3XdW0RhyoHCPsItIWtv3hQcZImbwDTA%2BOw79e3KzLw%3D%3D&RelayState=https%3A%2F%2Firis.ncep.noaa.gov%2F&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=HsYQKKNEh1rfAdJFGD8f7505yCl0Ni2tDqZPSBWAqTkM09W5GseoaTR08DMTahiDgzyV4aYAVJChKn2q9qoxUMLY29VoU6Ro6F%2BtYts2cc5e4AapXCQQ5Wkc%2BIKJlKiNpdM2xVdKnaCf7h2qrOBlW4T%2BHGch%2B2z4Dm%2Bx5h1stoshw60aPJ%2BcV1qiaOlz3kGcegPOMeK%2BT%2FkmSrMiw4A654qikodwBvirArXj1oqXjtyqqrlroDFHTFixec8zs6cyC37TJqJ3LDVOQUWT3fyuJneDP2dCAvkmjlphwhiM%2FBLSQULn36G5cJY6tcOpoRCoX8egpqyUxmgG2U9udJiqRQ%3D%3D",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 2343,
+  "sha256": "234f7037052d7cd4b74323d1a553037451c01005ce9908e8477034179d278f54",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-981F9A46273267\\20260930T045948.629369Z_234f7037052d7cd4.html",
+  "parent_id": "DISC-187AADF5F10B84",
+  "discovery_depth": 2
+}

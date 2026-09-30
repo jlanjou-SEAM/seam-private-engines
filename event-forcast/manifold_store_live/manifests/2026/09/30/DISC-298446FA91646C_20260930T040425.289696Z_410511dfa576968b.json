@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-298446FA91646C",
+  "provider": "UCAR/Unidata",
+  "dataset": "lightning",
+  "sector": "research",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:25.289696Z",
+  "request_url": "https://www.unidata.ucar.edu/data/lightning",
+  "final_url": "https://www.unidata.ucar.edu/data/lightning",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 47705,
+  "sha256": "410511dfa576968b4f6e4f52c5a668fe54f0c73bc548b7b68c1fd54510e26bf9",
+  "etag": "W/\"1790741066\"",
+  "last_modified": "Wed, 30 Sep 2026 04:04:26 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-298446FA91646C\\20260930T040425.289696Z_410511dfa576968b.html",
+  "parent_id": "UCAR-IDV",
+  "discovery_depth": 1
+}

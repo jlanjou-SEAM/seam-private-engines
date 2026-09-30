@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-E57C178B0CD113",
+  "provider": "NOAA/NCEI",
+  "dataset": "climate-at-a-glance",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:51.920774Z",
+  "request_url": "https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/",
+  "final_url": "https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 671095,
+  "sha256": "428e75f04d08cbbab8ec36f1e894ef82bf054f067528b7893bcbb2c1a7193a96",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E57C178B0CD113\\20260930T043951.920774Z_428e75f04d08cbba.html",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

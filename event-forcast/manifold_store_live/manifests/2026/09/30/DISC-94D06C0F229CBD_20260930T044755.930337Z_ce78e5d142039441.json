@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-94D06C0F229CBD",
+  "provider": "NOAA/NCEI",
+  "dataset": "bathymetry",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:55.930337Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/bathymetry/",
+  "final_url": "https://www.ncei.noaa.gov/maps/bathymetry/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 1481,
+  "sha256": "ce78e5d1420394410d54807584d3ecb3395d1748b56add62ccdaaab24dcf8bd1",
+  "etag": "\"52d-65bb47071a1c0\"",
+  "last_modified": "Thu, 17 Sep 2026 21:26:39 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-94D06C0F229CBD\\20260930T044755.930337Z_ce78e5d142039441.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

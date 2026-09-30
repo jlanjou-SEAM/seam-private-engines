@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A560A2E4EBED87",
+  "provider": "NOAA/NDBC",
+  "dataset": "KGVW.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:34:49.144637Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/KGVW.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/KGVW.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 184992,
+  "sha256": "b47716f78603b2c2a836d9459a2d9d50c7db73f244385115aadc1e9b67a4bf5b",
+  "etag": "\"2d2a0-65cab9e05b5a4\"",
+  "last_modified": "Wed, 30 Sep 2026 04:20:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-A560A2E4EBED87\\20260930T043449.144637Z_b47716f78603b2c2.txt",
+  "parent_id": "DISC-CE899AD4C09D51",
+  "discovery_depth": 2
+}

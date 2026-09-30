@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-D459BE5A28B087",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "marine-forecast-section",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:57:04.396830Z",
+  "request_url": "https://www.ncm.gov.ae/pages/marine-forecast-section?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/marine-forecast-section?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43609,
+  "sha256": "8397384c521c67aa63156b5de57b5ed6d4174882ee75d8cccf63c2b1ec748643",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-D459BE5A28B087\\20260930T045704.396830Z_8397384c521c67aa.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

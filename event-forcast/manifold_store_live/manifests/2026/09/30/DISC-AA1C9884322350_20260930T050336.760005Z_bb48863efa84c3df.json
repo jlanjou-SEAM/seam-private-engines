@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-AA1C9884322350",
+  "provider": "NOAA/NDBC",
+  "dataset": "PCGT2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:03:36.760005Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PCGT2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PCGT2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1009372,
+  "sha256": "bb48863efa84c3df33e9b1cc4b042077a16f660cac600c4f3323d8f3617b5c2c",
+  "etag": "\"f66dc-65cac09677ad2\"",
+  "last_modified": "Wed, 30 Sep 2026 04:50:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-AA1C9884322350\\20260930T050336.760005Z_bb48863efa84c3df.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

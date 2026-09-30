@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-A859A417236280",
+  "provider": "NOAA/NCEI",
+  "dataset": "FAQ%201200x480.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:43.211890Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/sites/default/files/FAQ%201200x480.png",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/sites/default/files/FAQ%201200x480.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 834669,
+  "sha256": "29bb6b37990bc73981e2d95a9ff38ff154a3e7422159d493323487a2e141a7cc",
+  "etag": null,
+  "last_modified": "Tue, 12 May 2026 15:25:52 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A859A417236280\\20260930T044743.211890Z_29bb6b37990bc739.png",
+  "parent_id": "DISC-61F3CBAF63C4CA",
+  "discovery_depth": 2
+}

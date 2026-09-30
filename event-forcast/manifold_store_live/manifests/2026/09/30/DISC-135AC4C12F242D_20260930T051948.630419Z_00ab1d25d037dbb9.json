@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-135AC4C12F242D",
+  "provider": "NASA Earthdata",
+  "dataset": "terra-constellation-exit-data-outage",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:19:48.630419Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/terra-constellation-exit-data-outage",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/terra-constellation-exit-data-outage",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 141269,
+  "sha256": "00ab1d25d037dbb9fbbe819903c8dad6687b860fa11baf41bddea4d3430fbf60",
+  "etag": "\"1790745589\"",
+  "last_modified": "Wed, 30 Sep 2026 05:19:49 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-135AC4C12F242D\\20260930T051948.630419Z_00ab1d25d037dbb9.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-E8FBA66E68D451",
+  "provider": "MET Norway",
+  "dataset": "news",
+  "sector": "public",
+  "country": "NO",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "air_quality"
+  ],
+  "retrieved_utc": "2026-09-30T04:05:53.627388Z",
+  "request_url": "https://api.met.no/feed/news",
+  "final_url": "https://api.met.no/feed/news",
+  "status_code": 200,
+  "content_type": "application/rss+xml",
+  "byte_length": 120416,
+  "sha256": "12779bd893d617f21cc88e0c42f996ea2f988818856cc1671cd8b2a9eb04613d",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E8FBA66E68D451\\20260930T040553.627388Z_12779bd893d617f2.xml",
+  "parent_id": "METNO-API",
+  "discovery_depth": 1
+}

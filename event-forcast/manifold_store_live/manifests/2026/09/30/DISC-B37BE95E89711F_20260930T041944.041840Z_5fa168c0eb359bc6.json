@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-B37BE95E89711F",
+  "provider": "NOAA/NCEP",
+  "dataset": "wind_probhazards_d8_14_contours.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:44.041840Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/predictions/threats/wind_probhazards_d8_14_contours.png",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/predictions/threats/wind_probhazards_d8_14_contours.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 902454,
+  "sha256": "5fa168c0eb359bc615116df1bfabb99754738d0e73e5c260e4f7768a3ee51fd1",
+  "etag": null,
+  "last_modified": "Tue, 29 Sep 2026 19:13:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-B37BE95E89711F\\20260930T041944.041840Z_5fa168c0eb359bc6.png",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

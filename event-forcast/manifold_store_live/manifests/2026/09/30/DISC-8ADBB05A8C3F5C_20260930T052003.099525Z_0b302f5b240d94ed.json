@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-8ADBB05A8C3F5C",
+  "provider": "NASA Earthdata",
+  "dataset": "cmr-degradation-service",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:03.099525Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/cmr-degradation-service",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/cmr-degradation-service",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 133889,
+  "sha256": "0b302f5b240d94ed90242f41f1b52ea1e0b67ff58b8516e128a9fa6f986293fe",
+  "etag": "\"1790745636\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:36 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-8ADBB05A8C3F5C\\20260930T052003.099525Z_0b302f5b240d94ed.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

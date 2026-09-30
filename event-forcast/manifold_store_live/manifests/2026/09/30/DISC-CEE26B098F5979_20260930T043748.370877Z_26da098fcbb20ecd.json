@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-CEE26B098F5979",
+  "provider": "NOAA/NCEP",
+  "dataset": "station-k-and-indices",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:48.370877Z",
+  "request_url": "https://www.spaceweather.gov/products/station-k-and-indices",
+  "final_url": "https://www.spaceweather.gov/products/station-k-and-indices",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 75244,
+  "sha256": "26da098fcbb20ecd7062a7195b009b629d0659be2760d389343b3f73c8298ce3",
+  "etag": "\"1790734369\"",
+  "last_modified": "Wed, 30 Sep 2026 02:12:49 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-CEE26B098F5979\\20260930T043748.370877Z_26da098fcbb20ecd.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

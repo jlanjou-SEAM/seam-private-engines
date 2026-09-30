@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-B8E9CE5197C51D",
+  "provider": "NASA Earthdata",
+  "dataset": "suomi-npp-viirs-data-outage-anomaly-august-2-2026",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:23.613973Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/suomi-npp-viirs-data-outage-anomaly-august-2-2026",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/suomi-npp-viirs-data-outage-anomaly-august-2-2026",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 151408,
+  "sha256": "87368dd6867b097797da2bac1ffddc370049db926d13c7c7eba54469de3ceb66",
+  "etag": "\"1790745625\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:25 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-B8E9CE5197C51D\\20260930T052023.613973Z_87368dd6867b0977.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-E709DE4A9B549C",
+  "provider": "NOAA/NCEI",
+  "dataset": "rsi",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:05.064158Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/rsi/",
+  "final_url": "https://www.ncei.noaa.gov/maps/rsi/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 18772,
+  "sha256": "3236b09daa2762b943cdaea99a4fcec50eeec5c57a4505eb9d8f2acd5c61a70a",
+  "etag": "\"48b8-62617d2fa8280\"",
+  "last_modified": "Mon, 04 Nov 2024 15:20:26 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E709DE4A9B549C\\20260930T044805.064158Z_3236b09daa2762b9.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

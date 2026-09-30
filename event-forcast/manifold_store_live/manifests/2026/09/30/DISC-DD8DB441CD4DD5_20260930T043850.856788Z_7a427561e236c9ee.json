@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-DD8DB441CD4DD5",
+  "provider": "NOAA/NSSL",
+  "dataset": "MergedRhoHV_01.25",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T04:38:50.856788Z",
+  "request_url": "https://mrms.ncep.noaa.gov/3DRhoHV/MergedRhoHV_01.25/",
+  "final_url": "https://mrms.ncep.noaa.gov/3DRhoHV/MergedRhoHV_01.25/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 63746,
+  "sha256": "7a427561e236c9ee6249b66657ced47c8415b6340f4067e3e6b2948f6400b373",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-DD8DB441CD4DD5\\20260930T043850.856788Z_7a427561e236c9ee.25",
+  "parent_id": "DISC-5037E63438C0DA",
+  "discovery_depth": 2
+}

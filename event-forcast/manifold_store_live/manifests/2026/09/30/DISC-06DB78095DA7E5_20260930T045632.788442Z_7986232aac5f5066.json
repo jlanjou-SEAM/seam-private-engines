@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-06DB78095DA7E5",
+  "provider": "NOAA/SWPC",
+  "dataset": "planetary_k_index_1m.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:56:32.788442Z",
+  "request_url": "https://services.swpc.noaa.gov/json/planetary_k_index_1m.json",
+  "final_url": "https://services.swpc.noaa.gov/json/planetary_k_index_1m.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 27925,
+  "sha256": "7986232aac5f50668ce904b89a3e79b8a822a94ba4bf761a2a7a7cf039d9bf12",
+  "etag": "\"6d15-65cac131f201a\"",
+  "last_modified": "Wed, 30 Sep 2026 04:53:05 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-06DB78095DA7E5\\20260930T045632.788442Z_7986232aac5f5066.json",
+  "parent_id": "SWPC-JSON",
+  "discovery_depth": 1
+}

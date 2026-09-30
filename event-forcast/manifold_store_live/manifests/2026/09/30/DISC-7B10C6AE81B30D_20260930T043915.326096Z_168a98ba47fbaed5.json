@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-7B10C6AE81B30D",
+  "provider": "NOAA/NCEI",
+  "dataset": "TX%20Hail%20Glove%20480x480.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:15.326096Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/TX%20Hail%20Glove%20480x480.png?itok=LBXFjY1D",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/TX%20Hail%20Glove%20480x480.png?itok=LBXFjY1D",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 248662,
+  "sha256": "168a98ba47fbaed5aa2e1fca9580fcf9f71120d0038bab049c2936a5174a17d9",
+  "etag": null,
+  "last_modified": "Thu, 30 Apr 2026 16:02:26 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7B10C6AE81B30D\\20260930T043915.326096Z_168a98ba47fbaed5.png",
+  "parent_id": "DISC-55E151143C8956",
+  "discovery_depth": 2
+}

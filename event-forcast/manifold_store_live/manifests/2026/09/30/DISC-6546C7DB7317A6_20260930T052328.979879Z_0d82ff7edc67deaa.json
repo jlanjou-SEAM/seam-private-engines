@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-6546C7DB7317A6",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "adelaide.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T05:23:28.979879Z",
+  "request_url": "https://reg.bom.gov.au/sa/observations/adelaide.shtml?ref=hdr",
+  "final_url": "https://reg.bom.gov.au/sa/observations/adelaide.shtml?ref=hdr",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 69909,
+  "sha256": "0d82ff7edc67deaa362c1a3bfd49490d0e8de82959270f1f9fe24b691576d90f",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6546C7DB7317A6\\20260930T052328.979879Z_0d82ff7edc67deaa.shtml",
+  "parent_id": "DISC-FB35D231555AEB",
+  "discovery_depth": 2
+}

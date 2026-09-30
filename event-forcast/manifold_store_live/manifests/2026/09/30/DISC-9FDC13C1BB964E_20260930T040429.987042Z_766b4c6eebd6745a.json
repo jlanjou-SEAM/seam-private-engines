@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-9FDC13C1BB964E",
+  "provider": "OpenWeather",
+  "dataset": "OpenWeather_T%26C_of_sale.pdf",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:29.987042Z",
+  "request_url": "https://openweather.co.uk/api/files/file/OpenWeather_T%26C_of_sale.pdf",
+  "final_url": "https://openweather.co.uk/api/files/file/OpenWeather_T%26C_of_sale.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 417799,
+  "sha256": "766b4c6eebd6745a6f35fd64704c517e49eed9cc134f00aa76ae3ebf350727df",
+  "etag": "\"6a90537ef5d16c07fd683f46\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-9FDC13C1BB964E\\20260930T040429.987042Z_766b4c6eebd6745a.pdf",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

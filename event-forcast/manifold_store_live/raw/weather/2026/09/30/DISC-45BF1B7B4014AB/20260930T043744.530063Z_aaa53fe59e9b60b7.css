@@ -1,0 +1,46 @@
+#flare_table {
+  margin:  10px 10px 10px 10px;
+  text-align: center;
+}
+
+#flare_table table {
+  table-layout: fixed;
+  max-width:  510px;
+  text-align: left;
+  margin-left:  auto;
+  margin-right: auto;
+}
+#flare_table div {
+  display: inline;
+}
+
+#flare_table th td {
+  margin: 2px 2px 2px 2px;
+}
+
+#header_field {
+  text-align: center;
+  background-color: #D1D1D1;
+}
+
+#flare_table .title_column {
+  width:  15%;
+}
+#flare_table .time_column {
+  width:  33%;
+}
+#flare_table .class_column {
+  width:  10%;
+}
+#flare_table .real_value_column {
+  width:  42%;
+}
+
+#flare_table .row_title_field {
+  font-weight: bold;
+}
+
+#flare_table .class_field {
+  text-align: center;
+}
+

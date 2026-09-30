@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-8CC51BB5EFAEFF",
+  "provider": "NOAA/NDBC",
+  "dataset": "PILL1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:32:51.088498Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PILL1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PILL1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1004296,
+  "sha256": "a882f17fb2d7f69bbfc6a7d00826562f6f4ad76d308c79240d8a2a35b136d0ed",
+  "etag": "\"f5308-65cabc1df010b\"",
+  "last_modified": "Wed, 30 Sep 2026 04:30:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-8CC51BB5EFAEFF\\20260930T043251.088498Z_a882f17fb2d7f69b.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

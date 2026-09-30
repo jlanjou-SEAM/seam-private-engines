@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-D189BE2B4C78A4",
+  "provider": "NOAA/SWPC",
+  "dataset": "solar-cycle-25-ssn-predicted-range.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-29T05:17:30.218235Z",
+  "request_url": "https://services.swpc.noaa.gov/products/solar-cycle-25-ssn-predicted-range.json",
+  "final_url": "https://services.swpc.noaa.gov/products/solar-cycle-25-ssn-predicted-range.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 26840,
+  "sha256": "27b622aa625a32d55db1f67813f0b3474c1899a4ce1738c2a1489824ee4993ea",
+  "etag": "\"68d8-5e9e90e974640\"",
+  "last_modified": "Fri, 30 Sep 2022 18:21:05 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\29\\DISC-D189BE2B4C78A4\\20260929T051730.218235Z_27b622aa625a32d5.json",
+  "parent_id": "SWPC-PRODUCTS",
+  "discovery_depth": 1
+}

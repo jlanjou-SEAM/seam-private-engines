@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-382E88119B2803",
+  "provider": "Ambient Weather",
+  "dataset": "rss",
+  "sector": "private",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface"
+  ],
+  "retrieved_utc": "2026-09-30T04:54:10.469179Z",
+  "request_url": "https://ambientweather.docs.apiary.io/feed/rss",
+  "final_url": "https://ambientweather.docs.apiary.io/feed/rss",
+  "status_code": 200,
+  "content_type": "application/rss+xml; charset=utf-8",
+  "byte_length": 3598,
+  "sha256": "695cbb9c4956557f6de0edfe65f4e6a0c30d454f20b15a23c9e6ff3c845a1ae2",
+  "etag": "W/\"e0e-+E1RzV5J7fvgGpSbRB8SuDeoFvw\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-382E88119B2803\\20260930T045410.469179Z_695cbb9c4956557f.xml",
+  "parent_id": "AMBIENT-WEATHER",
+  "discovery_depth": 1
+}

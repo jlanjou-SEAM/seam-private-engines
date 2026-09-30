@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-A8DBBA0D13E4AD",
+  "provider": "NOAA/NCEI",
+  "dataset": "us_flag_small.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:06.159665Z",
+  "request_url": "https://www.ncei.noaa.gov/libraries/uswds/img/us_flag_small.png",
+  "final_url": "https://www.ncei.noaa.gov/libraries/uswds/img/us_flag_small.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 545,
+  "sha256": "990770b3c37e631586557599e2ab9aa9c2df60246c5b72b3c2c40bb7e0ad73e0",
+  "etag": null,
+  "last_modified": "Thu, 03 Sep 2026 19:42:10 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-A8DBBA0D13E4AD\\20260929T051806.159665Z_990770b3c37e6315.png",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-7C2D53FAD0A87A",
+  "provider": "NOAA/NCEI",
+  "dataset": "reinsurance",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:21.323747Z",
+  "request_url": "https://www.ncei.noaa.gov/about/our-impact/reinsurance",
+  "final_url": "https://www.ncei.noaa.gov/about/our-impact/reinsurance",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 32085,
+  "sha256": "5ed2642a5dda76c4c12ca7bf47befcc3e65cc3834fa8930ded2c873323b837db",
+  "etag": "\"1790720827-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 22:27:07 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7C2D53FAD0A87A\\20260930T044721.323747Z_5ed2642a5dda76c4.html",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

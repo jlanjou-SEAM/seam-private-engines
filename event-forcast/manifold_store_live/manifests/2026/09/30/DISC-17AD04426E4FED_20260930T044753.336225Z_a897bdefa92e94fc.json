@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-17AD04426E4FED",
+  "provider": "NOAA/NCEI",
+  "dataset": "historical-declination",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:53.336225Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/historical-declination",
+  "final_url": "https://www.ncei.noaa.gov/maps/historical-declination/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 724,
+  "sha256": "a897bdefa92e94fc81579b79a955e7fc9ec432604844fce53b543d11e30f099a",
+  "etag": "\"238-633db1b3b7600\"",
+  "last_modified": "Mon, 28 Apr 2025 18:46:48 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-17AD04426E4FED\\20260930T044753.336225Z_a897bdefa92e94fc.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

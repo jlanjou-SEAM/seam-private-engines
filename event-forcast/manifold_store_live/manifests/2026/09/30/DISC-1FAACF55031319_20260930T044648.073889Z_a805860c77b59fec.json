@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-1FAACF55031319",
+  "provider": "NOAA/NCEI",
+  "dataset": "Silver%20Spring.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:48.073889Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/inline-images/Silver%20Spring.png",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/inline-images/Silver%20Spring.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 4444466,
+  "sha256": "a805860c77b59fecc1b2112ad7a2527376729e90f0d0e3665a64d53880fa4fc1",
+  "etag": null,
+  "last_modified": "Thu, 23 May 2024 13:49:34 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-1FAACF55031319\\20260930T044648.073889Z_a805860c77b59fec.png",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

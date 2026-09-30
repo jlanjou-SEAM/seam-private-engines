@@ -1,0 +1,354 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="en">
+<head>
+<title>NCEP Meteorological Assimilation Data Ingest System (MADIS)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+<meta name="author" content="MADIS Support Team">
+<link href="css/header.css" rel="stylesheet" type="text/css" >
+<!--<script type="text/javascript" src="/js/ForecastSearch.js"></script>-->
+
+    <!-- site-wide style sheets -->
+    <link rel="stylesheet" type="text/css" href="css/ncepmadis.css" media="all">
+    
+<!--    <link rel="stylesheet" type="text/css" href="css/print.css" media="print">-->
+    
+    <!-- A style sheet for submenus of submenus -->
+<!--    <link rel="stylesheet" type="text/css" href="css/gsd-more-submenus.css" media="all">-->
+    
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/gsd/css/ie.css" media="all"><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="/gsd/css/ie7.css" media="all"><![endif]-->
+
+<script type="text/javascript" src="css/ie.js"></script>
+    
+<!--<script id="_fed_an_js_tag" type="text/javascript" src="/federated-analytics.js?agency=OAR&amp;sub-agency=ESRLGSD&amp;sp=find&amp;yt=true"></script>
+--></head>
+
+<!--<body onload="startList()">-->
+
+<div id="container">
+<div class="header">
+
+  <div class="header-content">
+    <a href="https://www.noaa.gov" class="header-noaa-icon"><img src="images/header-noaa.png" alt="NOAA"></a>
+    <a href="https://www.weather.gov" class="header-nws-icon"><img src="images/header-nws.png" alt="NOAA"></a>
+    <a href="https://www.commerce.gov" class="header-doc"><img src="images/header_doc.png" alt="United States Department of Commerce"></a>
+    <div class="header-center-text"><a class="header-center-text" href="https://www.nco.ncep.noaa.gov">NCEP CENTRAL OPERATIONS</a></div>
+    <div class="header-noaa-text"><a class="header-noaa-text" href="https://www.noaa.gov">National Oceanic and Atmospheric Administration</a></div>
+  </div>
+</div>
+<div class="header-shadow"><div class="header-shadow-content"></div></div>
+
+     <!-- end major_header -->
+
+  <!-- major navigation -->
+<!-- Top Menu Navigation -->
+<div class="topnav">
+  <ul id="topnav">
+
+    <!-- Home Link -->
+    <li>
+      <div class="section-link">
+        <a href="#">home</a>
+      </div>
+    </li>
+
+    <!-- News Link -->
+    <li>
+      <div class="section-link">
+        <a href="https://www.weather.gov/news">news</a>
+      </div>
+      <div class="drop">
+        <ul>
+          <li><a href="https://www.weather.gov/news">NWS News</a></li>
+          <li><a href="https://www.nws.noaa.gov/com/weatherreadynation/calendar.html">Events</a></li>
+          <li><a href="https://www.weather.gov/socialmedia">Social Media</a></li>
+          <li><a href="https://www.nws.noaa.gov/om/brochures.shtml">Pubs/Brochures/Booklets</a></li>
+          <li><a href="https://www.noaa.gov/NOAA-Communications">NWS Media Contacts</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <!-- Search Link -->
+    <li>
+      <div class="section-link">
+        <a href="https://www.weather.gov/search">search</a>
+      </div>
+      <div class="drop">
+        <div class="site-search">
+          <form method="get" action="https://search.usa.gov/" style="margin-bottom: 0; margin-top: 0;">
+            <input type="hidden" name="v:project" value="firstgov">
+            <label for="query">Search For</label>
+            <input type="text" name="query" id="query" size="12" >
+            <input type="submit" value="Go" >
+            <p>
+              <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" >
+              <label for="nws" class="search-scope">NWS</label>
+              <input type="radio" name="affiliate" value="noaa.gov" id="noaa" >
+              <label for="noaa" class="search-scope">All NOAA</label>
+            </p>
+          </form>
+        </div>
+      </div>
+    </li>
+
+    <!-- Forecast Link -->
+    <li>
+      <div class="section-link">
+        <a href="https://www.weather.gov/search">forecast</a>
+      </div>
+      <div class="drop">
+        <div id="forecast-lookup" class="site-search">
+          <form name="getForecast" id="getForecast" action="https://forecast.weather.gov/zipcity.php" method="get">
+            <label for="inputstring">Local forecast by <br>"City, St" or ZIP code</label>
+            <input id="inputstring" name="inputstring" type="text" size="12" value="Enter location ..." onclick="this.value=''" >
+            <input name="btnSearch" id="btnSearch" type="submit" value="Go" >
+            <div id="txtError">
+            <div id="errorNoResults" style="display:none;">Sorry, the location you searched for was not found. Please try another search.</div>
+            <div id="errorMultipleResults" style="display:none">Multiple locations were found. Please select one of the following:</div>
+            <div id="errorChoices" style="display:none"></div>
+              <input id="btnCloseError" type="button" value="Close" style="display:none" >
+            </div>
+            <div id="txtHelp"><a style="text-decoration: underline;" href="javascript:void(window.open('https://weather.gov/ForecastSearchHelp.html','locsearchhelp','status=0,toolbar=0,location=0,menubar=0,directories=0,resizable=1,scrollbars=1,height=500,width=530').focus());">Location Help</a></div>
+          </form>
+                        </div><!-- <div id="forecast-lookup"> -->
+          </div><!-- <div class="drop"> -->
+    </li>
+    <!-- About Link -->
+    <li>
+      <div class="section-link">
+        <a href="https://www.weather.gov/about">about</a>
+      </div>
+      <div class="drop">
+          <ul>
+            <li><a href="https://www.weather.gov/about">About NWS</a></li>
+            <li><a href="https://www.weather.gov/organization">Organization</a></li>
+            <li><a href="https://www.nws.noaa.gov/sp/">Strategic Plan</a></li>
+            <li><a href="https://sites.google.com/a/noaa.gov/nws-best-practices/">For NWS Employees</a></li>
+            <li><a href="https://www.weather.gov/international/">International</a></li>
+            <li><a href="https://www.weather.gov/organization/ncep">National Centers</a></li>
+            <li><a href="https://www.nws.noaa.gov/tg/">Products and Services</a></li>
+            <li><a href="https://www.weather.gov/contact">Contact Us</a></li>
+            <li><a href="https://w1.weather.gov/glossary/">Glossary</a></li>
+          </ul>
+        </div>
+    </li>
+
+  </ul><!-- End of top nav ul -->
+</div><!-- End of topnav div -->
+
+</div> <!-- end banner -->
+
+<div id="pbody">
+    <!-- minor navigation -->
+            <div id="minor_nav">
+
+<ul id="vertnav">
+<br>
+   <li><a href="index.shtml">Distribution Services Home</a></li>
+</ul>
+<dl>
+ <dt>News</dt>
+</dl>
+<ul id="vertnav">
+ <li><a href="https://madis.ncep.noaa.gov/madis_recent.shtml">What's Here - v4.0!</a></li>
+<!-- <li><a href="madis-data_comingsoon.shtml">What's Coming?</a></li>
+-->
+</ul>
+
+<dl>
+<dt>Resources</dt>
+</dl>
+<ul id="vertnav">
+ <li><!--<a href="https://madis-hweb.ncep.noaa.gov:8004/htdocs/data_application.shtml">--><a href="https://madis.ncep.noaa.gov/data_application.shtml">Data Application Form</a></li>
+<!--<li><a href="index.shtml#distservices">MADIS Distribution Services</a></li>
+-->
+<li><!--<a href="https://madis-hweb.ncep.noaa.gov:8004/htdocs/madis_restrictions.shtml">--><a href="https://madis.ncep.noaa.gov/madis_restrictions.shtml">Dataset Restrictions</a></li>
+<li><a href="madis_api.shtml">API</a></li>
+<li>Text/XML Surface Dumps&nbsp;&nbsp; >
+   <ul>
+ <li><a href="public/sfcdumpguest.shtml">Meteorological Surface (guest)</a></li>
+ <li><a href="public/sfcdump.shtml">Meteorological Surface (public)</a></li>
+ <li><a href="public2/sfcdump.shtml">Meteorological Surface (public2)</a></li>
+ <li><a href="research/sfcdump.shtml">Meteorological Surface (research)</a></li>
+ <li><a href="noaa/sfcdump.shtml">Meteorological Surface (noaa)</a></li>
+ <li><a href="public/hydrodumpguest.shtml">Hydrological Surface (guest)</a></li>
+ <li><a href="public/hydrodump.shtml">Hydrological Surface (public)</a></li>
+ <li><a href="public2/hydrodump.shtml">Hydrological Surface (public2)</a></li>
+ <li><a href="research/hydrodump.shtml">Hydrological Surface (research)</a></li>
+ <li><a href="noaa/hydrodump.shtml">Hydrological Surface (noaa)</a></li>
+  </ul>
+<li>Graphical Displays&nbsp;&nbsp; >
+<ul>
+<li>
+<a href="/MadisSurface/">Meteorological Surface </a></li>
+<li><a href="/MadisMetadata/">Metadata</a></li>
+<li><a href="/MadisAircraftPublic/">Aircraft (Public)</a></li>
+<li><a href="/MadisAircraft/">Aircraft (Restricted)</a></li>
+<li><a href="/cap">Multi-Agencey Profiler (CAP)</a></li>
+</ul>
+<li><a href="wmo_gdc.shtml">GDC-ABO</a></li>
+<!--<li><a href="ioos_intro.shtml">IOOS Data Portal</a></li>
+-->
+</ul>
+<!--
+<dl>
+<dt>Provider Resources</dt>
+</dl>
+<ul id="vertnav">
+<li><a href="ioos_intro.shtml">IOOS Data Portal</a></li>
+-->
+</ul>
+<dl>
+<dt>Support</dt>
+</dl>
+<ul id="vertnav">
+ <li><a href="mailto:madis-support@noaa.gov">Contact Us</a></li>
+ <li><a href="https://www.noaa.gov/protecting-your-privacy">Privacy Policy</a></li>
+</ul>
+<dl>
+<dt>Related Links</dt>
+</dl> 
+<ul id="vertnav">
+<li><a href="http://gdc-abo.wmo.int/">WMO Global Data Center</a></li>
+<li><a href="https://madis.ncep.noaa.gov/index.shtml">MADIS</a></li>
+<li><a href="https://hads.ncep.noaa.gov">HADS</a></li>
+<li><a href="https://amdar.ncep.noaa.gov/index.shtml">AMDAR</a></li>
+<br>
+
+<li><a href="https://ruc.noaa.gov/amdar/">AMDAR Research</a></li>
+</ul>
+
+
+
+</div>
+
+    <div id="content">
+    <a class="textvers" name="content_link">&nbsp;</a>
+
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="description" CONTENT="MADIS (Meteorological Assimilation Data Ingest System)">
+   <META NAME="keywords" CONTENT="METEOROLOGICAL DATA, meteorological data, WEATHER DATA, weather data, METEOROLOGICAL DATA ACCESS, meteorological data access, METEOROLOGICAL DATA ASSIMILATION, meteorological data assimilation">
+   <TITLE>MADIS Tutorial Fortran Programs</TITLE>
+</HEAD>
+<BODY TEXT="#333333" BGCOLOR="#FFFFFF">
+<p><H1>MADIS Tutorial Fortran Programs</H1>
+
+<P>Here's the source code for the MADIS tutorial Fortran programs.  There's
+one program per dataset, that shows how to use all of the options for that
+dataset.  The madis_ingest.f program is an additional tutorial to demonstrate
+how all datasets might be read in together for use in an hourly data 
+assimilation cycle.</p>
+
+
+<p><TABLE BORDER CELLPADDING=10>
+<tr><th>Tutorial Subject</th>         <th>Tutorial Program</th>
+
+<tr><td>Meteorological Surface Dataset</td>
+<td align="center"><A HREF="sfcdump.f">sfcdump.f</A></td></tr>
+
+<tr><td>Radiosonde Dataset</td>
+<td align="center"><A HREF="raobdump.f">raobdump.f</A></td></tr>
+
+<tr><td>NOAA Profiler Network Dataset</td>
+<td align="center"><A HREF="npndump.f">npndump.f</A></td></tr>
+
+<tr><td>Aircraft-Based Dataset<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Aircraft-Based Reports<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Profiles at Airports<br>
+</td>
+<td align="center"><br><A HREF="acarsdump.f">acarsdump.f</a><br>
+        <A HREF="acarspdump.f">acarspdump.f</a>
+</td></tr>
+
+<tr><td>Hydrological Surface Dataset</td>
+<td align="center"><A HREF="hydrodump.f">hydrodump.f</A></td></tr>
+
+<tr><td>Multi-Agency Profiler Dataset</td>
+<td align="center"><A HREF="mapdump.f">mapdump.f</A></td></tr>
+
+<tr><td>Radiometer Dataset</td>
+<td align="center"><A HREF="rdmtrdump.f">rdmtrdump.f</A></td></tr>
+
+<tr><td>Satellite Radiance Dataset</td>
+<td align="center"><A HREF="satraddump.f">satraddump.f</A></td></tr>
+
+<tr><td>Satellite Sounding Dataset</td>
+<td align="center"><A HREF="satsnddump.f">satsnddump.f</A></td></tr>
+
+<tr><td>Satellite Wind Dataset</td>
+<td align="center"><A HREF="satwnddump.f">satwnddump.f</A></td></tr>
+
+<tr><td>Snow Dataset</td>
+<td align="center"><A HREF="snowdump.f">snowdump.f</A></td></tr>
+
+<tr><td>WISDOM Balloon Wind Dataset</td>
+<td align="center"><A HREF="wisdomdump.f">wisdomdump.f</A></td></tr>
+
+<tr><td>Data Assimilation Ingest</td>
+<td align="center"><A HREF="madis_ingest.f">madis_ingest.f</A></td></tr>
+
+</table>
+<p>
+<HR><p align="right">Last updated 16 March 2017</p>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3463124-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</BODY>
+</HTML>
+      
+        <!-- force body content to include the floated "news" element -->
+	<div class="clear">
+        </div>
+    </div> <!-- end body content -->
+</div>   <!-- end pbody -->
+
+<!-- legal footer area -->
+        <div class="footer-legal">
+                                <div class="footer-legal-content">
+                        <div class="footer-legal-gov">
+                                <a href="https://www.usa.gov"><img src="images/usa_gov.png" alt="usa.gov" width="110" height="30" /></a>
+                        </div>
+
+                        <div class="footer-legal-column">
+                                <p>
+                                        <a href="https://www.commerce.gov">US Dept of Commerce</a><br />
+                                <a href="https://www.noaa.gov">National Oceanic and Atmospheric Administration</a><br />
+                                <a href="https://www.weather.gov" >National Weather Service</a><br />
+                                                5830 University Research Ct.<br />College Park, MD 20740<br />
+                                Web Master's Email: <a href='mailto:w-nws.webmaster@noaa.gov'>w-nws.webmaster@noaa.gov</a>                      </p>
+                        </div>
+
+                        <div class="footer-legal-column2">
+                                <a href="https://www.weather.gov/disclaimer">Disclaimer</a><br />
+                                <a href="https://www.cio.noaa.gov/services_programs/info_quality.html">Information Quality</a><br />
+                                <a href="https://www.weather.gov/help">Help</a><br />
+                                <a href="https://www.weather.gov/glossary">Glossary</a>
+                        </div>
+
+                        <div class="footer-legal-column3">
+                                <a href="https://www.weather.gov/privacy">Privacy Policy</a><br />
+                                <a href="https://www.noaa.gov/information-technology/foia">Freedom of Information Act (FOIA)</a><br />
+                                <a href="https://www.weather.gov/about">About Us</a><br />
+                                <a href="https://www.weather.gov/careers">Career Opportunities</a>
+                        </div>
+                </div>
+
+</div><!-- end of <div class="footer-legal">--> 
+
+</div><!-- End of content div -->
+</div><!-- End of center div -->
+
+</div> <!-- end container -->
+</body>
+</html>
+

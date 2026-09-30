@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-F241D2EF4711EE",
+  "provider": "NOAA/NSSL",
+  "dataset": "LVL3_HREET",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:18.802333Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/LVL3_HREET/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/LVL3_HREET/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 141843,
+  "sha256": "be596bdf9c6da93b9f06a186346f7c9aa6f05b2eb7d43b00950cd23cd03da542",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F241D2EF4711EE\\20260930T050818.802333Z_be596bdf9c6da93b.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

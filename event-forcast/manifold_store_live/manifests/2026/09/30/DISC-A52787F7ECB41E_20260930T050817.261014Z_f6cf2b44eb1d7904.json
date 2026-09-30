@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-A52787F7ECB41E",
+  "provider": "NOAA/NSSL",
+  "dataset": "H50_Above_0C",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:17.261014Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/H50_Above_0C/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/H50_Above_0C/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 144747,
+  "sha256": "f6cf2b44eb1d7904badab4cb682b8e0754f7b0a86adae7402e9b1943a62684cb",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A52787F7ECB41E\\20260930T050817.261014Z_f6cf2b44eb1d7904.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

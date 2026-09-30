@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-6C5546E5D7305C",
+  "provider": "Environment and Climate Change Canada",
+  "dataset": "climate-stations",
+  "sector": "public",
+  "country": "CA",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:05:00.024016Z",
+  "request_url": "https://api.weather.gc.ca/collections/climate-stations?f=json",
+  "final_url": "https://api.weather.gc.ca/collections/climate-stations?f=json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 2800,
+  "sha256": "021928a518b9b3e6772edf32aaaf4bd551a6e21107e68b3e39c59bda3860ead9",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6C5546E5D7305C\\20260930T040500.024016Z_021928a518b9b3e6.json",
+  "parent_id": "CANADA-GEOMET-COLLECTIONS",
+  "discovery_depth": 1
+}

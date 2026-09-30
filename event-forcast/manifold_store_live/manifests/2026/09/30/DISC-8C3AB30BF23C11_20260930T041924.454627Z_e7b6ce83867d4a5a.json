@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-8C3AB30BF23C11",
+  "provider": "NOAA/NCEP",
+  "dataset": "tropical-guidance-model-storm.php",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:24.454627Z",
+  "request_url": "https://mag.ncep.noaa.gov/tropical-guidance-model-storm.php",
+  "final_url": "https://mag.ncep.noaa.gov/tropical-guidance-model-storm.php",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 25887,
+  "sha256": "e7b6ce83867d4a5a4963bce276c1854a003e24e111a3e75cc4da76f88ddb7153",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-8C3AB30BF23C11\\20260930T041924.454627Z_e7b6ce83867d4a5a.php",
+  "parent_id": "DISC-FA58CABCA4D1CB",
+  "discovery_depth": 2
+}

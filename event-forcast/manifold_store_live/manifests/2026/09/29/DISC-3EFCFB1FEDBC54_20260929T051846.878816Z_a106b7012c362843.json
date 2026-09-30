@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-3EFCFB1FEDBC54",
+  "provider": "NOAA Aviation Weather Center",
+  "dataset": "pirep",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "aviation",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:46.878816Z",
+  "request_url": "https://aviationweather.gov/data/pirep/",
+  "final_url": "https://aviationweather.gov/data/pirep/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 34357,
+  "sha256": "a106b7012c36284315428968f40a27a06279276f27563bce36bcc09203d19ee0",
+  "etag": "\"6aaaf527-8635\"",
+  "last_modified": "Wed, 16 Sep 2026 19:59:35 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\aviation\\2026\\09\\29\\DISC-3EFCFB1FEDBC54\\20260929T051846.878816Z_a106b7012c362843.html",
+  "parent_id": "AVIATION-WX-API",
+  "discovery_depth": 1
+}

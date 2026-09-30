@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-98A032B3AD4A44",
+  "provider": "NOAA/NDBC",
+  "dataset": "KGRY.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:12:44.246617Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/KGRY.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/KGRY.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 295254,
+  "sha256": "5e4561a03b788452a72cb7e5f612b0d2efa771b303b973f3fc0fb85abd4ec3f4",
+  "etag": "\"48156-65cac2d439505\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-98A032B3AD4A44\\20260930T051244.246617Z_5e4561a03b788452.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

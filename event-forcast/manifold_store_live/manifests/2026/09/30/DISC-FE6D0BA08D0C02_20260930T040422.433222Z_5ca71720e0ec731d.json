@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-FE6D0BA08D0C02",
+  "provider": "Iowa State University",
+  "dataset": "camlapse",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "surface",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:22.433222Z",
+  "request_url": "https://mesonet.agron.iastate.edu/current/camlapse/",
+  "final_url": "https://mesonet.agron.iastate.edu/current/camlapse/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 33288,
+  "sha256": "5ca71720e0ec731d379572d9b0ef4e36426783dd8448e050e4bdf2120260ad92",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-FE6D0BA08D0C02\\20260930T040422.433222Z_5ca71720e0ec731d.html",
+  "parent_id": "IEM",
+  "discovery_depth": 1
+}

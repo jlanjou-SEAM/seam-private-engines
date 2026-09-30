@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C2D05B728C98A2",
+  "provider": "NOAA/NDBC",
+  "dataset": "cmanht.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-29T05:17:28.596202Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/stations/cmanht.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/stations/cmanht.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 3139,
+  "sha256": "efe9cb1b0d796c20e0225a6e3670c0ef443910bf10816aa8ec9419c2c1865666",
+  "etag": "\"c43-65c95afe872a4\"",
+  "last_modified": "Tue, 29 Sep 2026 02:10:31 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\29\\DISC-C2D05B728C98A2\\20260929T051728.596202Z_efe9cb1b0d796c20.txt",
+  "parent_id": "NDBC-STATIONS",
+  "discovery_depth": 1
+}

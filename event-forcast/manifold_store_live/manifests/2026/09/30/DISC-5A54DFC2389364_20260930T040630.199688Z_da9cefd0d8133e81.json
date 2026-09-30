@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-5A54DFC2389364",
+  "provider": "NOAA/NCEP",
+  "dataset": "jquery.autocomplete.1.2.22.min.js",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:30.199688Z",
+  "request_url": "https://nomads.ncep.noaa.gov/bundles/noaatemplating/cdn/js/jquery.autocomplete.1.2.22.min.js?2.3.25",
+  "final_url": "https://nomads.ncep.noaa.gov/bundles/noaatemplating/cdn/js/jquery.autocomplete.1.2.22.min.js?2.3.25",
+  "status_code": 200,
+  "content_type": "text/javascript",
+  "byte_length": 13031,
+  "sha256": "da9cefd0d8133e8138869845a6fe8934ed67a550388fc71e2dbc0f7598b5af24",
+  "etag": null,
+  "last_modified": "Thu, 08 Jun 2023 13:27:10 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-5A54DFC2389364\\20260930T040630.199688Z_da9cefd0d8133e81.js",
+  "parent_id": "NOAA-NOMADS",
+  "discovery_depth": 1
+}

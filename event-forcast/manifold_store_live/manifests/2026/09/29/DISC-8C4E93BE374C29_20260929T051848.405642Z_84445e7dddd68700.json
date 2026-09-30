@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-8C4E93BE374C29",
+  "provider": "USGS",
+  "dataset": "quakeml.php",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:48.405642Z",
+  "request_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/quakeml.php",
+  "final_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/quakeml.php",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 9812,
+  "sha256": "84445e7dddd687008769870973355fbf17d6b5e38e17f394fd91a80afbbf70b8",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\seismic\\2026\\09\\29\\DISC-8C4E93BE374C29\\20260929T051848.405642Z_84445e7dddd68700.php",
+  "parent_id": "USGS-EARTHQUAKE-FDSN",
+  "discovery_depth": 1
+}

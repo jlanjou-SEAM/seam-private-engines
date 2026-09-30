@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-64062FABBB0432",
+  "provider": "NOAA/NCEI",
+  "dataset": "Tourism.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:16.562950Z",
+  "request_url": "http://www.ncei.noaa.gov/sites/default/files/2021-09/Tourism.jpg",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-09/Tourism.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 522165,
+  "sha256": "3cd3ab770e188281e0309f91af81ae883ffad715c6ff2dace58969a61aa3b051",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:34:33 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-64062FABBB0432\\20260930T044716.562950Z_3cd3ab770e188281.jpg",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

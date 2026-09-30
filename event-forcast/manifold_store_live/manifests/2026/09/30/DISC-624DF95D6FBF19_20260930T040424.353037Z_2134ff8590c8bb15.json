@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-624DF95D6FBF19",
+  "provider": "UCAR/Unidata",
+  "dataset": "forecastProdsAndAna.html",
+  "sector": "research",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:24.353037Z",
+  "request_url": "https://thredds.ucar.edu/thredds/catalog/idd/forecastProdsAndAna.html",
+  "final_url": "https://thredds.ucar.edu/thredds/catalog/idd/forecastProdsAndAna.html",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 39902,
+  "sha256": "2134ff8590c8bb15ed29f75444212de2816cd02105b463cd404e2fa1a8a17014",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-624DF95D6FBF19\\20260930T040424.353037Z_2134ff8590c8bb15.html",
+  "parent_id": "UCAR-THREDDS",
+  "discovery_depth": 1
+}

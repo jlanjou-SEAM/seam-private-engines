@@ -1,0 +1,23 @@
+{
+  "candidate_id": "NOAA-ERDDAP",
+  "provider": "NOAA",
+  "dataset": "ERDDAP ocean/environmental data",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "environmental"
+  ],
+  "retrieved_utc": "2026-09-30T04:51:02.490470Z",
+  "request_url": "https://coastwatch.pfeg.noaa.gov/erddap/",
+  "final_url": "https://coastwatch.pfeg.noaa.gov/erddap/index.html",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 27636,
+  "sha256": "6a8913ac51956072bfc4f4ba6ca843e6ae4d50aed9abd6144d3cea8fd0aec3f4",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\NOAA-ERDDAP\\20260930T045102.490470Z_6a8913ac51956072.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

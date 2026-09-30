@@ -1,0 +1,402 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<script src="https://www.weather.gov/source/nws/govshutdown.js" defer></script>
+<head>
+
+  <title>Scripting grib_filter on NCEP's nomads server</title>
+
+  <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+  <meta content="NCEP Web Team" name="GENERATOR">
+  <meta name="keywords"
+  content="GRIB fast downloading NOMADS Climate,Climate Prediction Center,National Weather Service,National Oceanic &amp; Atmospheric Administration, NOAA,El Nino,La Nina,ENSO,climate outlooks,El Nino Advisory,La Nina Advisory,droughts,hurricanes,Threats Assessment,Drought Assessment,Drought Monitor,CLimate Diagnostics Bulletin,6-10 day outlook,8-14 day outlook, 6-10 day forecast,8-14 day forecast,MRF,UV Index,North Atlantic Oscillation,NAO,Pacific Decadal Oscillation,PDO,sea surface temperatures,SST,Palmer Drought Severity Index, African Desk,outlooks,expert assessments,monitoring,advisories,stratosphere,temperature,precipitation,snow cover,snowfall,soil moisture,OLR,ozone,degree days,CLIMATE,CLIMATE PREDICTION CENTER,EL NINO,LA NINA, CLIMATE OUTLOOKS,HURRICANES,ASSESSMENTS,SNOW,STRATOSPHERE,DROUGHT,OZONE,DEGREE DAYS">
+
+
+  <link href="/nwscwi/main.css" type="text/css" rel="STYLESHEET">
+</head>
+<body leftmargin="0" background="/nwscwi/background.gif" 
+      topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+<table cellspacing="0" cellpadding="0" width="100%" background="/nwscwi/topbanner.jpg" border="0">
+  <tr>
+    <td align="right" height="19">
+      <a href="#contents"><img height="1" alt="Skip Navigation Links"
+         src="/nwscwi/skipgraphic.gif" width="1" border="0"></a>
+      <a href="https://www.nws.noaa.gov/" class="homepagelinks"><span class="nwslink">www.nws.noaa.gov</span></a>&nbsp;</td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+  <tr>
+    <td rowspan="2"><a href="https://www.noaa.gov/">
+      <img height="78" alt="NOAA logo - Click to go to the NOAA home page"
+      src="/nwscwi/noaaleft.jpg" width="85" border="0"></a></td>
+    <td align="left"><img height="20" alt="National Weather Service"
+      src="/nwscwi/nws_title.jpg" width="500" border="0"></td>
+    <td rowspan="2" width="100%" background="/nwscwi/ncep_bkgrnd.jpg">&nbsp;</td>
+    <td rowspan="2" align="right"><a href="https://www.nws.noaa.gov/">
+      <img height="78" alt="NWS logo - Click to go to the NWS home page"
+      src="/nwscwi/nwsright.jpg" width="85" border="0"></a></td>
+  </tr>
+  <tr>
+    <td><img height="58" alt="Climate Prediction Center" src="/nwscwi/cpc.jpg"
+             width="500" border="0"></td>    <!-- Put your center header image here. -->
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" background="/nwscwi/navbkgrnd.gif" border="0">
+  <tr>
+    <td align="left" valign="top" width="94"><img height="23" alt="" src="/nwscwi/navbarleft.jpg" width
+="94" border="0"></td>
+    <td class="nav" align="center" width="15%">
+      <a href="https://www.cpc.ncep.noaa.gov/products/site_index.html" class="menu">Site Map</a></td> <!-- Build a text only sitemap, and link to it via this
+                                                    sitemap button just below the banner.
+                                                    The sitemap should include a heirarchy of links
+                                                    from NOAA, to the NWS, to NCEP, and then through your site. -->
+    <td class="nav" align="right" width="15%">
+      <a href="https://www.nws.noaa.gov/pa/" class="menu">News</a></td>
+    <td class="yellow" align="right" width="20%">
+      <form action="https://www.firstgov.gov/fgsearch/index.jsp" name="query">
+        <label for="search">Search</label>&nbsp;</td>
+    <td align="left" class="searchinput" width="20%" nowrap>
+      <input type="hidden" name="parsed" value="true">
+      <input type="hidden" name="rn" value="3">
+      <input type="hidden" name="in0" value="domain">
+      <input type="hidden" name="dom0" value="nws.noaa.gov, weather.gov, wrh.noaa.gov, srh.noaa.gov, crh.noaa.gov, prh.noaa.gov, arh.noaa.gov, alaska.net/~nwsar, erh.noaa.gov, ncep.noaa.gov, ncep.noaa.gov, spc.noaa.gov, nhc.noaa.gov, sec.noaa.gov, aviationweather.gov, aviationweather.noaa.gov, weather.noaa.gov, roc.noaa.gov, nohrsc.nws.gov, nwstc.noaa.gov, wdtb.noaa.gov, npmoc.navy.mil, ndbc.noaa.gov">
+      <input type="text" name="mw0" value="All NWS Search" id="search" size="20" maxlength="256">
+      <input type="submit" name="Go2" value="Go"></td>
+    <td width="10%">&nbsp;</form></td>
+    <td align="right" valign="bottom" width="24"><img height="23" alt="" src="/nwscwi/navbarendcap.jpg"
+ width="24" border="0"></td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="670" border="0">
+  <tr valign="top">
+    <td width="137"><br>
+      <table cellspacing="0" cellpadding="2" width="137" border="0">
+        <!-- Do not remove this section. You will need this when the City,St/zip search is implemented nationwide.-->
+        <!-- <tr align="left" valign="top">
+                <td class="searchinput">
+                  <div id="Layer2" style="position:absolute; width:200px; height:115px; z-index:2; visibility: hidden">Search by city or zip code. Press enter or select the go button to submit request</div>
+                  <form method="POST" action="https://www.srh.noaa.gov/zipcity.php">
+                  <span class="yellow">Local forecast by<br>&quot;City, St&quot; or Zip Code</span><br>
+                  <input type="text" name="inputstring" size="9" value="City, St">
+                  <input type="submit" name="Go2" value="Go"></form></td>
+        </tr> -->
+        <tr>
+          <td class="searchinput" align="left">
+            <form action="https://www.firstgov.gov/fgsearch/index.jsp" name="query">
+              <input type="hidden" name="parsed" value="true">
+              <input type="hidden" name="rn" value="3">
+              <input type="hidden" name="in0" value="domain">
+              <input type="hidden" name="dom0" value="www.cpc.ncep.noaa.gov"> <!-- Change "center.noaa.gov" to your center's domain -->
+              <span class="yellow">CPC Search</span><br>             <!-- Change "Center" to your center's initials -->
+              <input type="text" name="mw0" id="search"  size="9" maxLength="256" value="CPC search"> <!-- Change "Center" to your center's initials -->
+              <input type="submit" name="Go2" value="Go">
+          </form></td>
+        </tr>
+        <tr>
+          <td class="white">
+            <span class="yellow">About Us</span><br>
+            &nbsp;&nbsp;&nbsp;<a href="https://www.cpc.ncep.noaa.gov/information/who_we_are/mission.html" class="menu">Our Mission</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="https://www.cpc.ncep.noaa.gov/information/who_we_are/" class="menu">Who We Are</a><br><br>
+            <span class="yellow">Contact Us</span><br>
+            &nbsp;&nbsp;&nbsp;<a href="https://www.cpc.ncep.noaa.gov/information/personnel/contacts.html" class="menu">CPC Information</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="https://www.cpc.ncep.noaa.gov/comment-form.html" class="menu">CPC Web Team</a><br><br>           
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td valign="top" align="center" width="533"><a name="contents"></a>
+
+<!-- Begin content area -->
+
+<table border="0" cellPadding="2" cellSpacing="0" align="center" width="533">
+ <tr><td>&nbsp;</td></tr>
+ <tr>
+  <td>
+   <font face="verdana,arial,serif" size="1" color="#000000">
+   <a href="https://www.cpc.ncep.noaa.gov/" class="homepagelinks"><b>HOME</b></a> &gt; 
+   <a href="https://www.cpc.ncep.noaa.gov/products/monitoring_and_data/" class="homepagelinks">Monitoring and Data</a> &gt; 
+   <a href="https://www.cpc.ncep.noaa.gov/products/monitoring_and_data/oadata.html" class="homepagelinks">Oceanic & Atmospheric Data</a> &gt;
+   Meteorlogical Data Servers</font>
+  </td>
+ </tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr>
+  <td align="center">
+
+<!-- Change Banner -->
+
+  </td>
+ </tr>
+ <tr><td>&nbsp;</td></tr>
+
+
+<tr><td align="center">
+
+<table cellspacing="2" cellpadding="2" width="530">
+
+<tr><td align="center">
+<font face="verdana,arial,serif" size="4" color="#000000">
+<b>Scripting grib_filter on NCEP's opn nomads server</b><br>
+<b>https://nomads.ncep.noaa.gov</b></font>
+</td></tr>
+
+<tr><td align="center">
+<font face="verdana,arial,serif" size="4" color="#000000">
+<b>Automating of downloads with grib_filter</b>
+</font>
+</td></tr>
+
+<tr><td>&nbsp;</td></tr>
+
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>Introduction</b></font>
+</td></tr>
+
+
+<tr><td>
+<p>
+The grib_filter option on https://nomads.ncep.noaa.gov is used to download
+subsets of NCEP's forecasts.  As the name suggests, the option works with grib (version 2)
+files and is a filter.  This option allows you to select regional subsets as well as level and variables.
+As model resolution grows faster than bandwidth or the money to pay for 
+bandwidth, users will have to start using facilities such as grib_filter.<br>
+
+<p> 
+Grib_filter is an interactive facility to download subsets of the data, so it seems
+unsuited to downloading more than a few files.  However, we were tricky.  Once you learn how
+to download the data interactively, you click a button and generate a magic URL.
+Once you have generated this magic URL, you give the URL to curl or wget to download
+the data. Using scripting 101, you can write a script to download the data for other times and 
+forecast hours.  Using cronjobs 101, you can run that script every day and get your daily forecasts 
+automatically.
+
+
+<p>
+All my examples will be using the bash shell and the curl program.  The procedure
+is simple, so many users have implemented the procedure in different
+programming languages.
+</p>
+
+<p>
+For my example, I am using the 1x1 GFS forecasts on https://nomads.ncep.noaa.gov. I selected directory
+ gfs.2013072218 and file gfs.t18.pgrbf00.grib2.  Then I selected 3 levels:
+500, 700 and 900 mb. 5 variables: HGT, RH, TMP, UGRD, VGRD.  I enabled the
+subregion option ("make subregion") and selected the domain 20N-60N, 250E-330E.
+Finally I select the option "Show the URL only for web programming".
+<br>
+<br>
+<br>
+<img src="./grib_filter1.png" alt="screenshot grib_filter" width="608" height="752">
+
+<p>
+When I click on "Download", I get the magic URL:
+
+<p>
+URL=
+https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs.pl?file=gfs.t18z.pgrbf00.grib2&amp;lev_500_mb=on&amp;lev_700_mb=on&amp;lev_1000_mb=on&amp;var_HGT=on&amp;var_RH=on&amp;var_TMP=on&amp;var_UGRD=on&amp;var_VGRD=on&amp;subregion=&amp;leftlon=250&amp;rightlon=330&amp;toplat=60&amp;bottomlat=20&amp;dir=%2Fgfs.2013072218
+<p>
+If you study the above URL, you see the arguments start after the question mark and
+are separated by ampersands (&amp;).  You may also notice that slashes have been
+replaced by %2F.  This is all standard stuff when working with URLs. If you look closely,
+you see the name of the file being processed (file=gfs.t18z.pgrbf00.grib2) as well as the
+directory (dir=%2Fgfs.2013082218).  (%2F translates into a /.)  
+Here is a prototype script to "execute" the URL and download the file.  In the script,
+I've replaced the date codes and forecast hour with variables.
+
+
+<blockquote>
+#!/bin/sh<br>
+#<br>
+# define URL<br>
+#<br>
+fhr=00<br>
+hr=18<br>
+date=20130821<br>
+URL=&quot;https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs.pl?\<br>
+file=gfs.t${hr}z.pgrbf${fhr}.grib2&amp;\<br>
+lev_500_mb=on&amp;lev_700_mb=on&amp;lev_1000_mb=on&amp;\<br>
+var_HGT=on&amp;var_RH=on&amp;var_TMP=on&amp;var_UGRD=on&amp;\<br>
+var_VGRD=on&amp;subregion=&amp;leftlon=250&amp;\<br>
+rightlon=330&amp;toplat=60&amp;bottomlat=20&amp;\<br>
+dir=%2Fgfs.${date}${hr}&quot;<br>
+<br>
+# download file<br>
+curl &quot;$URL&quot; -o download.grb<br>
+# add a sleep to prevent a denial of service in case of missing file<br>
+sleep 1<br>
+</blockquote>
+<br>
+<p>
+I copied the above script into a file, changed the date code, chmod it to 755.
+It ran.  If it doesn't run, the error message will be in download.grb.
+<p>
+<blockquote>
+ebis@linux-landing:/tmp$ ./test.sh<br>
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current<br>
+                                 Dload  Upload   Total   Spent    Left  Speed<br>
+100 71185    0 71185    0     0    660      0 --:--:--  0:01:47 --:--:--  2821<br>
+ebis@linux-landing:/tmp$ wgrib2 download.grb <br>
+1:0:d=2013082118:HGT:500 mb:anl:<br>
+2:6406:d=2013082118:TMP:500 mb:anl:<br>
+3:9906:d=2013082118:RH:500 mb:anl:<br>
+4:12991:d=2013082118:UGRD:500 mb:anl:<br>
+5:18567:d=2013082118:VGRD:500 mb:anl:<br>
+6:24143:d=2013082118:HGT:700 mb:anl:<br>
+7:30549:d=2013082118:TMP:700 mb:anl:<br>
+8:34049:d=2013082118:RH:700 mb:anl:<br>
+9:37134:d=2013082118:UGRD:700 mb:anl:<br>
+10:42295:d=2013082118:VGRD:700 mb:anl:<br>
+11:47456:d=2013082118:TMP:1000 mb:anl:<br>
+12:51372:d=2013082118:RH:1000 mb:anl:<br>
+13:54457:d=2013082118:UGRD:1000 mb:anl:<br>
+14:59618:d=2013082118:VGRD:1000 mb:anl:<br>
+15:64779:d=2013082118:HGT:1000 mb:anl<br>
+</blockquote>
+
+<p>
+Converting the above script to download the required forecast hours,
+run with the current date and to run as a cron job is scripting 101.
+Have problems, ask your local scripting guru for help.  Want to convert 
+the above bash script to Windows?  I am sure it can be done and a Windows
+guru can help.  
+
+<p>
+Compatibility: as a design criteria, the new versions of grib_filter should
+not break existing user scripts.  The API should not change between versions
+of grib_filter.  However, the model will evolve over
+time and so will the available fields. That can break user scripts.
+
+
+<p>
+Comments: the current grib-filter (1.1.0.beta-6) on nomads.ncep.noaa.gov was written 
+back in June 2008.  The next version of grib-filter will allow interpolation
+to different grids and extraction of values at lon-lat locations.  The API will
+be the same except that the variables and levels will have to be selected from
+the menu.  (This was always the case on the operational nomads but not
+on the development nomdads.)
+
+
+
+<p> The screen capture is based on nomads 2013-08.  Future screens may look different.
+
+<h3><font color=red>Questions?</font></h3>
+
+The site, nomads.ncep.noaa.gov, is run by NCEP Central Operations (NCO).
+Questions should be sent to NCO through the noamds help desk. Jun Wang
+and Wesley Ebisuzaki were responsible for writing the original
+grib_filter (6/2008) which NCO adapted for their nomads site.  
+Neither Jun nor Wesley are involved with nomads.ncep.noaa.gov.
+
+<p>
+Questions? 
+ <a href="https://nomads.ncep.noaa.gov/txt_descriptions/Help_Desk_doc.shtml">
+https://nomads.ncep.noaa.gov/txt_descriptions/Help_Desk_doc.shtml</a>
+
+<p>
+
+<ol>
+<li> This fails: wget -O outputfile https://nomands.ncep.noaa.gov/(rest of line)
+<ul>
+<li> Add quotes: wget -O outputfile "https://nomands.ncep.noaa.gov/(rest of line)"
+</ul>
+<li> This fails: curl -o outputfile https://nomands.ncep.noaa.gov/(rest of line)
+<ul>
+<li> Add quotes: curl -o outputfile "https://nomands.ncep.noaa.gov/(rest of line)"
+</ul>
+<li> grib_filter returns the entire field without subsetting
+<ul>
+<li> requested box is outside of the domain of the data field
+<li> requested box is too small; the box does not enclose a grid point
+<li> incorrect specification of the box, left longitude &lt; right longitude<br>
+   to go from left=10W to right=10E, use left=350 and right=370<br>
+   to go from left=10E to right=10W, use left=10 and right=350   
+<li> grib_filter is not configured correctly (configuration problem)
+<li> wgrib2 does not support the input grid type (configuration problem)
+</ul>
+
+<li> Why isn't XYZ handled by grib_filter?  The data is already on the site.
+<ul>
+<li> Ask the nomads help desk.
+</ul>
+
+<li> The subset takes more disk space than the non-subset grib
+<ul>
+<li> Grib compression can be enabled in the configuration.
+<li> Ask the nomads help desk to enable grib compression.
+</ul>
+
+<li> The downloads are slow, the download session times out
+<ul>
+<li> Ask the nomads help desk for help
+<li> Break the request into two smaller requests
+<li> The problem should be reduced when the input file goes from
+the slow JPEG2000 compression to complex packing.
+</ul>
+<li> Request that grib-filter handle multiple files.
+<ul>
+<li> I don't think it is a good idea.  You don't want a single
+command that can access TBs of data (think a Reanalysis).
+<li> Learn to script multiple requests.
+</ul>
+<li> Why is grib_filter still beta?  Is it going to change?
+<ul>
+<li>  4/2016: The code hasn't been updated since it was first installed 
+back in 2008. I hear that NCO wants to change the code from perl 
+to php.
+</ul>
+
+<li> Is the grib_filter source code available?
+<ul>
+<li> I can't give you the 2008 fork that NCO is running.
+<li> I can give you the development-nomads version of the code (2014).
+</ul>
+<li> How does grib_filter work?
+<ul>
+<li> Grib_filter is a perl script generates the web pages and calls wgrib2 to create the subset.
+</ul>
+
+
+</ol>
+
+</td></tr>
+
+
+</table>
+
+
+<!--  End of Content area  -->
+<!--   ...............................................Footer Portion.........................................    -->
+ <tr>
+  <td>
+   <table width="500">
+    <tr>
+     <td colSpan="3"><hr></td>
+    </tr>
+    <TR vAlign="top">
+     <TD class="gray">
+      <A href="https://www.noaa.gov/" class="homepagelinks"><SPAN class="gray">NOAA/</SPAN></A>
+      <A href="https://www.nws.noaa.gov/" class="homepagelinks"><SPAN class="gray">National Weather Service</SPAN></A><BR>
+      <A href="https://www.ncep.noaa.gov/" class="homepagelinks"><SPAN class="gray">National Centers for Environmental Prediction</SPAN></a><BR>
+        Climate Prediction Center<BR>
+        5830 University Research Court<BR>
+        College Park, Maryland 20740<BR>
+      <A href="https://www.cpc.ncep.noaa.gov/comment-form.html" class="homepagelinks"><SPAN class="gray">Climate Prediction Center Web Team</SPAN></A><BR>
+        Page last modified: August 25, 2016
+     </TD>
+     <TD>
+      <A href="https://www.nws.noaa.gov/disclaimer.html" class="homepagelinks"><SPAN class="gray">Disclaimer</SPAN></A>
+     </TD>
+     <TD align="right">
+      <A href="https://www.noaa.gov/privacy.html" class="homepagelinks"> <SPAN class="gray">Privacy Notice</SPAN></A>
+     </TD>
+    </TR>
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+</tr>
+ </table>
+<p><small><a href="https://www.weather.gov/notice.html">Privacy Policy</a></small></body>
+</html>

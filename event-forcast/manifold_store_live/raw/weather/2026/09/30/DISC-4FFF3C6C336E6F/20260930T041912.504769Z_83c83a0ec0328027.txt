@@ -1,0 +1,58 @@
+#
+#  Station Table format:
+#
+# Mods:
+#  Dec 14 2017 LAB Added new sites provided by provider
+#  Jul 22 2019 LAB Added new site (20) provided by provider
+#  ProviderId|AFOS(HB5)Id|StationName|StationElevation|Latitude|Longitude|localTZ|StationLocation|
+#  StationType|NumberOfInstruments|NumberOfLevels|Maint/CalibSchedules|
+#  SiteDesc|
+#
+#  Provider Sta.Id  - Data provider station id
+#  AFOS(HB5)Id      - The AFOS or Handbook 5 id (NWS assigned)
+#  Name             - Text name of station
+#  Elevation        - Elevation of station (meters)
+#  Latitude         - Latitude of station (decimal)
+#  Longitude        - Longitude of station (decimal)
+#  local TZ         - local Timezone (i.e. MST7MDT)
+#  Station Location - Location of Station (Text)
+#  Station Type     - Type of station (i.e. tower, surface, floating platform,etc.)
+#  Number of Instruments - The number of reporting instruments for the station
+#  Number of Levels      - Number of Reporting Levels for the data (Level
+#                     information should be provided in the instrument table.)
+#  Maintenance/Calibration Schedules - Frequency of Maintenance/Calibration
+#  Site Description      - A text description of the site surroundings
+#
+#  *Note* Do not use the '#' in any of the fields below.  The '#' is a comment
+#  line marker.
+#
+#5char|5char|39char|elev-m|lat|lon|GMT|||1||||
+    1|YP001|Yuma Proving Ground Station 1             |  97.000|32.8356    |-114.3936   |MST7|||1||||
+    2|YP002|Yuma Proving Ground Station 2             | 133.000|32.8897    |-114.3533   |MST7|||1||||
+    3|YP003|Yuma Proving Ground Station 3             | 115.000|32.83      |-114.33     |MST7|||1||||
+    4|YP004|Yuma Proving Ground Station 4             | 231.000|32.8628    |-114.0314   |MST7|||1||||
+    5|YP005|Yuma Proving Ground Station 5             | 145.000|32.9186    |-113.7975   |MST7|||1||||
+    6|YP006|Yuma Proving Ground Station 6             | 131.000|33.04      |-114.43     |MST7|||1||||
+    7|YP007|Yuma Proving Ground Station 7             | 110.000|32.8669    |-114.3225   |MST7|||1||||
+    8|YP008|Yuma Proving Ground Station 8             | 137.000|32.84      |-114.3      |MST7|||1||||
+    9|YP009|Yuma Proving Ground Station 9             | 143.000|32.8836    |-114.3233   |MST7|||1||||
+   10|YP010|Yuma Proving Ground Station 10            | 413.000|33.3464    |-114.2936   |MST7|||1||||
+   11|YP011|Yuma Proving Ground Station 11            | 131.000|32.92      |-114.37     |MST7|||1||||
+   12|YP012|Yuma Proving Ground Station 12            | 238.000|32.86      |-114.11     |MST7|||1||||
+   13|YP013|Yuma Proving Ground Station 13            | 154.000|33.0281    |-114.3939   |MST7|||1||||
+   15|YP015|Yuma Proving Ground Station 15            | 379.000|33.33      |-114.37     |MST7|||1||||
+   16|YP016|Yuma Proving Ground Station 16            | 131.000|32.872     |-114.33     |MST7|||1||||
+   17|YP017|Yuma Proving Ground Station 17            | 143.000|32.94      |-114.38     |MST7|||1||||
+   18|YP018|Yuma Proving Ground Station 18            | 152.000|32.8904    |-114.319    |MST7|||1||||
+   19|YP019|Yuma Proving Ground Station 19            | 377.000|33.4143    |-114.3      |MST7|||1||||
+   20|YP020|Yuma Proving Ground Station 20            | 403.000|33.361245  |-114.275475 |MST7|||1||||
+   84|YP084|Yuma Proving Ground Station 84            | 202.000|32.8242    |-114.196    |MST7|||1||||
+   91|YP091|Yuma Proving Ground Station 91            |  97.000|32.836     |-114.3948   |MST7|||1||||
+   92|YP092|Yuma Proving Ground Station 92            | 148.000|32.85      |-114.27     |MST7|||1||||
+  171|YP171|Yuma Proving Ground Station 171           | 241.000|33.11      |-114.35     |MST7|||1||||
+  172|YP172|Yuma Proving Ground Station 172           | 154.000|33.03      |-114.39     |MST7|||1||||
+  173|YP173|Yuma Proving Ground Station 173           | 107.000|33.03      |-114.45     |MST7|||1||||
+   30|YP030|Yuma Proving Ground Station 30            | 231.000|32.96619   |-114.26468  |MST7|||1||||
+   31|YP031|Yuma Proving Ground Station 31            | 257.000|32.97383   |-114.27437  |MST7|||1||||
+   32|YP032|Yuma Proving Ground Station 32            | 208.000|33.072539  |-114.360222 |MST7|||1||||
+   33|YP033|Yuma Proving Ground Station 33            | 129.000|32.90367   |-114.40388  |MST7|||1||||

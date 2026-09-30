@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7BE4677CA2E472",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "seismic-observatory-section",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:35.758282Z",
+  "request_url": "https://www.ncm.gov.ae/pages/seismic-observatory-section?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/seismic-observatory-section?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43633,
+  "sha256": "b0a7e7b8c2e0e2c1590f86b64d3947457c054b9725783e2af75590ed9c67337e",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7BE4677CA2E472\\20260930T041035.758282Z_b0a7e7b8c2e0e2c1.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

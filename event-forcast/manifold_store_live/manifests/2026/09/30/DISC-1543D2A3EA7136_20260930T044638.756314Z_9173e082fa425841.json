@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-1543D2A3EA7136",
+  "provider": "NOAA/NCEI",
+  "dataset": "Art%C3%ADculosdeNoticiasBiling%C3%BCes",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:38.756314Z",
+  "request_url": "https://www.ncei.noaa.gov/relatedcontent/Art%C3%ADculosdeNoticiasBiling%C3%BCes",
+  "final_url": "https://www.ncei.noaa.gov/relatedcontent/Art%C3%ADculosdeNoticiasBiling%C3%BCes",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 35560,
+  "sha256": "9173e082fa425841f628ea08bdb041db981d71aa3f092a024b9d26360e1de74a",
+  "etag": "\"1790715504-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 20:58:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-1543D2A3EA7136\\20260930T044638.756314Z_9173e082fa425841.html",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

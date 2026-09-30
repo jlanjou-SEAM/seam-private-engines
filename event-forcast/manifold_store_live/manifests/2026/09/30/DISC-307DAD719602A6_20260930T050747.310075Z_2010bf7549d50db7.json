@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-307DAD719602A6",
+  "provider": "NOAA/NCEP",
+  "dataset": "stofs_3d_atl.20260929",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T05:07:47.310075Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/stofs/prod/stofs_3d_atl.20260929/",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/stofs/prod/stofs_3d_atl.20260929/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 29918,
+  "sha256": "2010bf7549d50db7ac3bc81a8889380dd31ec36e671b55b7cf131a77953ccec5",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-307DAD719602A6\\20260930T050747.310075Z_2010bf7549d50db7.20260929",
+  "parent_id": "DISC-9A9BC627D92A54",
+  "discovery_depth": 2
+}

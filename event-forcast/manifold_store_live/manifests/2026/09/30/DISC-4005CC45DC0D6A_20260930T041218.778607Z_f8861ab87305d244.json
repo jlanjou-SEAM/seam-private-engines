@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-4005CC45DC0D6A",
+  "provider": "NOAA/NDBC",
+  "dataset": "THRF1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:12:18.778607Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/THRF1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/THRF1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 75012,
+  "sha256": "f8861ab87305d244ba1f3dbd03352367f86bcc0ba6f68613767152713030837a",
+  "etag": "\"12504-65ca63db300e2\"",
+  "last_modified": "Tue, 29 Sep 2026 21:55:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-4005CC45DC0D6A\\20260930T041218.778607Z_f8861ab87305d244.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

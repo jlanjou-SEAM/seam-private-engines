@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E46729A02CABB1",
+  "provider": "NOAA/NCEP",
+  "dataset": "gth_full.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:51.455770Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/ghaz/gth_full.png",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/ghaz/gth_full.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 510511,
+  "sha256": "c48f367903354408b3f4f7852a240c517ddede910d5f285b19d65c66f43ef15b",
+  "etag": null,
+  "last_modified": "Tue, 29 Sep 2026 19:44:07 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E46729A02CABB1\\20260930T041951.455770Z_c48f367903354408.png",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

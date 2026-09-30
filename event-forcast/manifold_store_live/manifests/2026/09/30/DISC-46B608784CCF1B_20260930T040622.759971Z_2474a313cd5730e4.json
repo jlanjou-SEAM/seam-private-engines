@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-46B608784CCF1B",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "waall.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:22.759971Z",
+  "request_url": "https://www.bom.gov.au/wa/observations/waall.shtml",
+  "final_url": "https://www.bom.gov.au/wa/observations/waall.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 314896,
+  "sha256": "2474a313cd5730e42dea180df99fb5addf70b78d95ce048c273fdda11244a0a7",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-46B608784CCF1B\\20260930T040622.759971Z_2474a313cd5730e4.shtml",
+  "parent_id": "BOM-DATA",
+  "discovery_depth": 1
+}

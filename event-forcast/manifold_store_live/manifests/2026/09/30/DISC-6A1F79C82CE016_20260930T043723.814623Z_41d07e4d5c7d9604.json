@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-6A1F79C82CE016",
+  "provider": "NOAA/NCEP",
+  "dataset": "status.js",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:23.814623Z",
+  "request_url": "https://nomads.ncep.noaa.gov/js/status.js?v=1790740981",
+  "final_url": "https://nomads.ncep.noaa.gov/js/status.js?v=1790740981",
+  "status_code": 200,
+  "content_type": "text/javascript",
+  "byte_length": 4469,
+  "sha256": "41d07e4d5c7d9604722f1f50871810bc9a2180394ff5f7ba4be60889356aa05e",
+  "etag": null,
+  "last_modified": "Tue, 24 Feb 2026 14:24:40 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6A1F79C82CE016\\20260930T043723.814623Z_41d07e4d5c7d9604.js",
+  "parent_id": "DISC-50195E8149B6FD",
+  "discovery_depth": 2
+}

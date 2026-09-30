@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-CB1834776D73DE",
+  "provider": "NOAA/NCEP",
+  "dataset": "index.php",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:37.088036Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/predictions/814day/interactive/index.php",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/predictions/814day/interactive/index.php",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 24480,
+  "sha256": "9cdf1b30c4e66daa990a20dbd2944bfc95f3b660545b6f2386e51aef1f5b3b3a",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-CB1834776D73DE\\20260930T041937.088036Z_9cdf1b30c4e66daa.php",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

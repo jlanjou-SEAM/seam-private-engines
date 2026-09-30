@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-1E2CA270F9BA9D",
+  "provider": "NOAA/NCEI",
+  "dataset": "data-submission",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:07.168322Z",
+  "request_url": "https://www.ncei.noaa.gov/data-submission",
+  "final_url": "https://www.ncei.noaa.gov/data-submission",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 36987,
+  "sha256": "cf215261f4597e40d088f4056910cf39a81cfd34d4778f667e1d2a85cb4baf5e",
+  "etag": "\"1790657220-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 04:47:00 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-1E2CA270F9BA9D\\20260929T051807.168322Z_cf215261f4597e40.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

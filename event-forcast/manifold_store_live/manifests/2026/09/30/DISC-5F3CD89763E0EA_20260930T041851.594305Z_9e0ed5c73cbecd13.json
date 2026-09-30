@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-5F3CD89763E0EA",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "upperair_notes.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:51.594305Z",
+  "request_url": "https://madis.ncep.noaa.gov/upperair_notes.shtml",
+  "final_url": "https://madis.ncep.noaa.gov/upperair_notes.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 65657,
+  "sha256": "9e0ed5c73cbecd13d7440fdbd4cb910d6434eb53128e6460ce820a16dcd8d7f7",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-5F3CD89763E0EA\\20260930T041851.594305Z_9e0ed5c73cbecd13.shtml",
+  "parent_id": "DISC-BCE8A7DBDF55DB",
+  "discovery_depth": 2
+}

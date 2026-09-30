@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-0BE540B0391FF6",
+  "provider": "NOAA/NCEI",
+  "dataset": "lcd",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:02.157623Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/lcd/",
+  "final_url": "https://www.ncei.noaa.gov/maps/lcd/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 736,
+  "sha256": "7428684ba6ecbda42325cb265d5b1a1d73793189670cd107a7f036d459f58b6c",
+  "etag": "\"244-65b8641720280\"",
+  "last_modified": "Tue, 15 Sep 2026 14:20:42 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-0BE540B0391FF6\\20260930T044802.157623Z_7428684ba6ecbda4.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-01D281E7C59CC5",
+  "provider": "NOAA/NSSL",
+  "dataset": "MultiSensor_QPE_03H_Pass1",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:31.712629Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/MultiSensor_QPE_03H_Pass1/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/MultiSensor_QPE_03H_Pass1/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 6123,
+  "sha256": "35e3fc4e999f29e6f44778debe475f09b522c912b62d062d4e44f0fd4a2df9d2",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-01D281E7C59CC5\\20260930T050831.712629Z_35e3fc4e999f29e6.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-18594DAA42312D",
+  "provider": "NOAA/NCEP",
+  "dataset": "27-day-outlook-107-cm-radio-flux-and-geomagnetic-indices",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:44.635635Z",
+  "request_url": "https://www.spaceweather.gov/products/27-day-outlook-107-cm-radio-flux-and-geomagnetic-indices",
+  "final_url": "https://www.spaceweather.gov/products/27-day-outlook-107-cm-radio-flux-and-geomagnetic-indices",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 69091,
+  "sha256": "1f36f8182de3e3a0179e1b52382bbc41b3fbec37b8742ec43fb40c8df6a82355",
+  "etag": "\"1790733864\"",
+  "last_modified": "Wed, 30 Sep 2026 02:04:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-18594DAA42312D\\20260930T043744.635635Z_1f36f8182de3e3a0.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

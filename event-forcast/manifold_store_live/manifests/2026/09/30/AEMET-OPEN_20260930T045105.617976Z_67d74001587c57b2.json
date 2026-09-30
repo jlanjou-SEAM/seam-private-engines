@@ -1,0 +1,23 @@
+{
+  "candidate_id": "AEMET-OPEN",
+  "provider": "AEMET",
+  "dataset": "AEMET OpenData",
+  "sector": "public",
+  "country": "ES",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:51:05.617976Z",
+  "request_url": "https://opendata.aemet.es/",
+  "final_url": "https://opendata.aemet.es/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 432,
+  "sha256": "67d74001587c57b2fd9b5a6b64664645548f2b56d011939bf26cf44ce434766d",
+  "etag": "\"2809bc-1b0-543d9da3c9d53\"",
+  "last_modified": "Sat, 17 Dec 2016 12:30:31 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\AEMET-OPEN\\20260930T045105.617976Z_67d74001587c57b2.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

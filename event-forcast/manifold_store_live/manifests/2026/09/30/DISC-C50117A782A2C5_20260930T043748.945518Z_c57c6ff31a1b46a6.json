@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C50117A782A2C5",
+  "provider": "NOAA/NCEP",
+  "dataset": "icao-space-weather-advisories",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:48.945518Z",
+  "request_url": "https://www.spaceweather.gov/products/icao-space-weather-advisories",
+  "final_url": "https://www.spaceweather.gov/products/icao-space-weather-advisories",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 71882,
+  "sha256": "c57c6ff31a1b46a67fe8adbce913d0b78e0e889d30dc3e24b21904e83b96fd4f",
+  "etag": "\"1790701197\"",
+  "last_modified": "Tue, 29 Sep 2026 16:59:57 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C50117A782A2C5\\20260930T043748.945518Z_c57c6ff31a1b46a6.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

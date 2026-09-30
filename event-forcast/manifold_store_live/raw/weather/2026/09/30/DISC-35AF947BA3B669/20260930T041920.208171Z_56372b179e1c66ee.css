@@ -1,0 +1,131 @@
+/* Layout to push footer to bottom */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-color: #c5e5f5;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main status container styling */
+.status-wrapper {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-left: 5px solid #ccc;
+  box-shadow: none;
+}
+
+/* Status border colors */
+.status-up { border-color: green; }
+.status-degraded { border-color: orange; }
+.status-down { border-color: red; }
+.status-maintenance { border-color: steelblue; }
+
+/* Typography */
+.status-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.status-subtext {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Table */
+.test-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.test-table th,
+.test-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.test-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Test status badges */
+.badge {
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.badge-pass { background-color: green; }
+.badge-fail { background-color: red; }
+
+/* Button area */
+.center-links {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.center-links a {
+  margin: 0 0.5rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #4054b4;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  display: inline-block;
+}
+
+.center-links a:hover {
+  background-color: #2f42a0;
+}
+
+/* Override-specific styling */
+.status-message {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.status-message strong {
+  display: inline-block;
+  width: 160px;
+  color: #444;
+}
+
+.tooltip-icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  border-radius: 50%;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 4px;
+  margin-top: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.tooltip-icon:hover {
+  background-color: #0056b3;
+}

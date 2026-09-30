@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-68FF7CC6BCBE2A",
+  "provider": "NOAA/SWPC",
+  "dataset": "boulder_k_index_1m.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:26:43.488603Z",
+  "request_url": "https://services.swpc.noaa.gov/json/boulder_k_index_1m.json",
+  "final_url": "https://services.swpc.noaa.gov/json/boulder_k_index_1m.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 85921,
+  "sha256": "8d94a82bba0c16504298ffe19b960ce41f5530fe3f3622be5bf7c2e73f882259",
+  "etag": "\"14fa1-65caba18148fc\"",
+  "last_modified": "Wed, 30 Sep 2026 04:21:19 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-68FF7CC6BCBE2A\\20260930T042643.488603Z_8d94a82bba0c1650.json",
+  "parent_id": "SWPC-JSON",
+  "discovery_depth": 1
+}

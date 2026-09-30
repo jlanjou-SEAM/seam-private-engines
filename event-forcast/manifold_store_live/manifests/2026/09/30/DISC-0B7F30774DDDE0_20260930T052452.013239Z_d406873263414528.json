@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-0B7F30774DDDE0",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "brisbane.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T05:24:52.013239Z",
+  "request_url": "https://www.bom.gov.au/qld/observations/brisbane.shtml",
+  "final_url": "https://www.bom.gov.au/qld/observations/brisbane.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 90649,
+  "sha256": "d406873263414528055ff003b50a98fd2011b69bb8f12c28bed5ac324732cf66",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-0B7F30774DDDE0\\20260930T052452.013239Z_d406873263414528.shtml",
+  "parent_id": "DISC-2940EC37B7B185",
+  "discovery_depth": 2
+}

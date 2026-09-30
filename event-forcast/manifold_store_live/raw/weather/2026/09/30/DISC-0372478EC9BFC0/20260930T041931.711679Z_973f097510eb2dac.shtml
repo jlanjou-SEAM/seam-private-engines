@@ -1,0 +1,737 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>CPC - Outreach: Glossary of Terms</title>
+  <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+  <meta content="NCEP Web Team" name="GENERATOR">
+  <link href="/nwscwi/main.css" type="text/css" rel="STYLESHEET">
+</head>
+<body leftmargin="0" background="/nwscwi/background.gif" 
+      topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0" background="/nwscwi/topbanner.jpg" >
+	<tbody>
+		<tr>
+			<td align="right" height="19">
+				<a href="#contents"><img height="1" alt="Skip Navigation Links" src="/nwscwi/skipgraphic.gif" width="1" border="0"></a>
+				<a href="https://www.weather.gov/" class="homepagelinks"><SPAN class="nwslink">www.weather.gov</span></a>&nbsp;
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- -->
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+	<tbody>
+		<tr>
+			<td rowSpan="2"><A href="https://www.noaa.gov/">
+			<img height="78" alt="NOAA logo - Click to go to the NOAA home page" src="/nwscwi/noaaleft.jpg" width="85" border="0"></a></td>
+			<td align="left"><img height="20" alt="National Weather Service" src="/nwscwi/nws_title.jpg" width="500" border="0"></td>
+			<td rowspan="2" width="100%" background="/nwscwi/ncep_bkgrnd.jpg">&nbsp;</td>
+			<td rowspan="2" align="right"><a href="https://www.weather.gov/">
+			<img height="78" alt="NWS logo - Click to go to the NWS home page" src="/nwscwi/nwsright.jpg" width="85" border="0"></a></td>
+		</tr>
+		<tr>
+			<td><img height="58" alt="Climate Prediction Center" src="/nwscwi/cpc.jpg" width="500" border="0"></td>
+		</tr>
+	</tbody>
+</table>
+<!-- -->
+<table cellspacing="0" cellpadding="0" width="100%" background="/nwscwi/navbkgrnd.gif" border="0">
+	<tbody>
+		<tr>
+			<td align="left" width="135"><img height="23" alt="" src="/nwscwi/navbarleft.jpg" width="94" border="0"></td>
+			<td class="nav" align="center" width="10%">
+				<a href="/" class="menu" title="to the climate prediction center home page">home</a>
+			</td>
+			<td class="nav" align="center" width="10%">
+				<a href="/products/site_index.shtml" class="menu" title="to Climate Prediction Center site map">Site Map</a>
+			</td>
+			<td class="nav" align="right" width="10%">
+				<a href="https://www.weather.gov/news/" class="menu" title="to National Weather Service news page">News</a>
+			</td>
+			<td class="nav" align="right" width="19%">
+				<a href="https://www.weather.gov/organization/" class="menu">Organization</a>
+			</td>
+			<td class="searchinput" align="right" width="30%">
+				<form method="get" action="https://search.usa.gov/search" style="margin-bottom:0; margin-top:0;">
+				<label for="Search"><span class="yellow">Search</span>&nbsp;&nbsp;</label>
+				<input type="hidden" name="affiliate" value="weather.gov" />
+				<input type="hidden" name="v:project" value="firstgov" />
+				<input name="query" type="text" value="" size="20" maxlength="256" id="Search" />
+				<input type="submit" value="Go" />
+				</form>
+			</td>
+			<td align="right"><img height="23" alt="" src="/nwscwi/navbarendcap.jpg" width="24" border="0"></td>
+		</tr>
+	</tbody>
+</table>       <!-- Use virtual include, because this should be in a common place within your DocumentRoot. -->
+<table cellspacing="0" cellpadding="0" width="670" border="0">
+  <tr valign="top">
+    <td width="137"><br>
+      <table cellspacing="0" cellpadding="2" width="137" border="0">
+	<tbody>
+		<tr>
+			<td class="searchinput" align="left">
+				<form method="get" action="https://search.usa.gov/search" style="margin-bottom:0; margin-top:0;">
+				<label for="Search">
+				<span class="yellow">Search</span></label>
+				<input type="hidden" name="affiliate" value="weather.gov/ncep" />
+				<input type="hidden" name="v:sources" value="firstgov-affiliates-search" />
+				<input type="hidden" name="v:project" value="firstgov" />
+				<input type="hidden" name="query" value="site:www.cpc.ncep.noaa.gov" />
+				<input name="query" type="text" value="" size="10" maxlength="256" id="Search"/>
+				<input type="submit" value="Go"  />
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td class="white" id="menuitem">
+				<span class="yellow">About Us</span><br>
+				&nbsp;&nbsp;&nbsp;<a href="/information/who_we_are/mission.shtml">Our Mission</a><br>
+				&nbsp;&nbsp;&nbsp;<a href="/information/who_we_are/index.shtml">Who We Are</a><br><br>
+				<span class="yellow">Contact Us</span><br>
+				<!--&nbsp;&nbsp;&nbsp;<a href="/information/personnel/contacts.shtml">CPC Information</a><br>-->
+				&nbsp;&nbsp;&nbsp;<a href="/comment-form.php">Contact Us</a><br><br>
+			</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td class="white" id="menuitem">
+				<a href="https://www.usa.gov/"><img src="/nwscwi/usagov_logo_color_110wb.gif" alt="USA.gov is the U.S. Government's official Web portal to all Federal, state and local government Web resources and services." width="110" height="30" border="0"></a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+   <!-- Use virtual include, because this should be in a common place within your DocumentRoot. -->
+    </td>
+    <td valign="top" align="center" width="533"><a name="contents"></a>
+       <table border="0" cellPadding="2" cellSpacing="0" width="530">
+ <tr>
+  <td>
+   <font face="verdana,arial,serif" size="1" color="#000000"><a href="/" class="homepagelinks"><strong>HOME</strong></a> &gt; <a href="/products/outreach/" class="homepagelinks">Outreach</a> &gt; Climate Glossary</font>
+  </td>
+ </tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr><td align="center"><font face="verdana,arial,serif" size="3" color="#000000"><strong><u>CLIMATE GLOSSARY</u> *</strong></font></td></tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr>
+  <td>
+   <table border="0" width="530" summary="This table used for layout purposes only.">
+    <tr>
+      <td align="center"><strong><font face="verdana,arial"><a href="#A">A</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#B">B</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#C">C</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#D">D</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#E">E</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#F">F</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#G">G</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#H">H</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#I">I</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#J">J</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#K">K</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#L">L</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#M">M</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#N">N</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#O">O</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#P">P</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="no_listings.html">Q</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#R">R</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#S">S</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#T">T</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#U">U</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="no_listings.html">V</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#W">W</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="no_listings.html">X</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="no_listings.html">Y</a></font></strong></td>
+      <td align="center"><strong><font face="verdana,arial"><a href="#Z">Z</a></font></strong></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr>
+  <td>
+   <table align="center" width="520">
+    <tr>
+     <td>
+       <a name="A"></a>                     
+       <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>A</strong> - Used on climate outlooks to indicate areas that are likely to be above normal.</font></P>
+
+       <p align="justify"><a name="#ANOM"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Anomaly</strong> - The deviation of a measurable unit, (e.g., temperature or precipitation) in a given
+          region over a specified period from the long-term average, often the thirty year mean,  for the
+          same region.</font></P>
+
+       <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>AO</strong> - <a href="#AO">See Arctic Oscillation</a></font></P>
+
+       <p><font face="verdana,arial,serif" size="2" color="#000000"><strong>Apparent temperature</strong> - The temperature people perceive under hot and humid conditions. 
+        (See <a href="#EHO">Excessive Heat Outlook</a>).</font></P>
+       <p align="justify"><a name="AO"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Arctic Oscillation (AO)</strong> - The Arctic Oscillation is a pattern in which atmospheric
+         pressure at polar and middle latitudes fluctuates between negative and positive phases. The
+         negative phase brings higher-than-normal pressure over the polar region and lower-than-normal
+         pressure at about 45 degrees north latitude. The negative phase allows cold air to plunge into the
+         Midwestern United States and western Europe, and storms bring rain to the Mediterranean.  The
+         positive phase brings the opposite conditions, steering ocean storms farther north and bringing
+         wetter weather to Alaska, Scotland and Scandinavia and drier conditions to areas such as
+         California, Spain and the Middle East. The <a href="#NAO">North Atlantic Oscillation</a> is often considered to be a 
+         regional manifestation of the AO.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Atmospheric Circulation Model</strong> - A mathematical model for quantitatively describing,
+       simulating, and analyzing the structure of the circulation in the atmosphere and the underlying
+       causes. Sometimes referred to as Atmospheric General Circulation Models or AGCMs (See
+       <a href="#GCM">GCMs</a>)</font></P>
+    <a name="B"></a>                     
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>B</strong> - Is used on climate outlooks to indicate areas that will likely be below normal.</font></P>
+    <a name="C"></a>                     
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Chlorofluorocarbons (CFCs)</strong> - Manufactured substances used as coolants and computer-chip
+       cleaners. When these products break down they destroy <a href="#SO">stratospheric ozone</a>, creating the
+       Antarctic <a href="#OH">Ozone Hole</a> in the Southern Hemisphere spring (Northern Hemisphere fall). While no
+       longer in use, their long lifetime will lead to a very slow removal from the atmosphere.</font></p>
+
+    <p align="justify"><a name="CIRC"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Circulation</strong> - The flow, or movement, of a fluid (e.g., water or air) in or through a given area or
+       volume.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>CL</strong> - An abbreviation used on climate outlook maps to indicate areas where equal chances of
+       experiencing below-normal, normal, or above-normal conditions are possible.</font></P>
+
+    <p align="justify"><a name="CLI"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Climate</strong> - The average of weather over at least a 30-year period. Note that the climate taken over
+       different periods of time (30 years, 1000 years) may be different. The old saying is climate is
+       what we expect and weather is what we get.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Climate Change</strong> - A non-random change in <a href="#CLI">climate</a> that is measured over several decades or
+       longer. The change may be due to natural or human-induced causes.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Climate Diagnostics Bulletin (CDB)</strong> - The monthly <a href="#CPC">CPC</a> Bulletin reports on the previous
+       months' status of the ocean-atmosphere climate system and provides various seasonal ENSO-related outlooks. It is issued by the fifteenth of the month. 
+       (See <a href="http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/bulletin/">
+       http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/bulletin/</a>)</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Climate Diagnostics Center (CDC)</strong> - The mission of <a href="#NOAA">NOAA</a>'s Climate Diagnostics Center is to
+       identify the nature and causes for climate variations on time scales ranging from a month to
+       centuries. (See <a href="http://www.cdc.noaa.gov">http://www.cdc.noaa.gov</a>)</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Climate Model</strong> - Mathematical model for quantitatively describing, simulating, and analyzing the
+       interactions between the atmosphere and underlying surface (e.g., ocean, land, and ice).</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Climate Outlook</strong> - A climate outlook gives probabilities that conditions, averaged over a
+       specified period, will be below-normal, normal, or above-normal.</font></P>
+
+    <p align="justify"><a name="CPC"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Climate Prediction Center (CPC)</strong> - This Center is one of several centers under the <a href="#NCEP">National
+       Centers for Environmental Prediction (NCEP)</a> part of the <a href="#NWS">National Weather Service (NWS)</a> in
+       the <a href="#NOAA">National Oceanic and Atmospheric Administration (NOAA)</a>.  The Center serves the public
+       by assessing and forecasting the impacts of short-term climate variability, emphasizing enhanced
+       risks of weather-related extreme events, for use in mitigating losses and maximizing economic
+       gains.<br>
+       (See <a href="http://www.cpc.ncep.noaa.gov">http://www.cpc.ncep.noaa.gov</a>)</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Climate System</strong> - The system consisting of the atmosphere (gases), hydrosphere (water),
+       lithosphere (solid rocky part of the Earth), and biosphere (living) that determine the Earth's
+       <a href="#CLI">climate</a>.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Climate Test Bed</strong> - The Climate Test Bed is an NCEP project, led by CPC in close 
+       collaboration with EMC and open to the climate community inside and outside NOAA.  Its mission is to accelerate the transition of research 
+       and development into improved NOAA operational climate forecasts, products, and applications.  It will support and promote:  exchange of 
+       climate forecast system software among NCEP, GFDL, NASA, NCAR, COLA, and other potential contributors;  multi-model ensembles;  community-
+       based, reviewed proposals for specific scientific priorities; potential expansion to experimental use of ECMWF, Canadian, Met 
+       Office, MeteoFrance products.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Climatological Outlook</strong> - An outlook based upon climatological statistics for a region,
+       abbreviated as CL on seasonal outlook maps. CL indicates that the climate outlook has an equal
+       chance of being above normal, normal, or below normal.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Climatology</strong> - (1) The description and scientific study of climate. (2) A quantitative description
+       of <a href="#CLI">climate</a> showing the characteristic values of climate variables over a region.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Composite</strong> - An average that is calculated according to specific criteria. For example, one might
+       want a composite for the rainfall at a given location  for all years where the temperature was much above average.</font></P>
+
+    <p align="justify"><a name="COND"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Condensation</strong> - The physical process by which water vapor in the atmosphere changes to liquid
+       in the form of dew, fog or cloud; the opposite of <a href="#EVAP">evaporation</a>.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>CONUS</strong> - Continental United States</font></P>
+
+    <p align="justify"><a name="CONV"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Convection</strong> - Transfer of heat by fluid motion between two areas with different temperatures. In
+       meteorology, the rising and descending air motion caused by heat. Atmospheric convection is
+       almost always turbulent and is the dominant vertical transport process over tropical oceans and
+       during sunny days over continents. The terms "convection" and "thunderstorms" are often use
+       interchangeably, although thunderstorms are only one form of convection.  In the ocean,
+       convection is prominent in regions of high heat loss to the atmosphere and is the main
+       mechanism for deep water formation.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Cooling Degree Days</strong> - A form of <a href="#DD">degree-day</a> used to estimate energy requirements for air
+       conditioning or refrigeration. </font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Coupled Model (or coupled atmosphere-ocean model)</strong> - In the context of climate modeling this
+       usually refers to a numerical model which simulates both atmospheric and oceanic motions and
+       temperatures and which takes into account the effects of each component on the other. </font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Crop Moisture Index</strong> - In 1968, Palmer developed the index to assess short-term crop water
+       conditions and needs across major crop-producing regions.  This index is a useful tool in
+       forecasting short-term drought conditions.
+       (See <a href="#PDSI">Palmer Drought Severity </a> &amp; Crop Moisture <a href="http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/cdus/palmer_drought/index.html">Indices</a>)</font></P>
+
+    <p align="justify"><a name="CYCLONE"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Cyclone</strong> - In general use the term cyclone is applied to any storm, especially violent, small scale
+       <a href="#CIRC">circulations</a> such as tornados, waterspouts, and dust devils. In meteorology, the term refers to a
+       type of atmospheric disturbance centered around a low-pressure center that often results in
+       stormy weather. In common practice the term cyclone, and low, are used interchangeably and are
+       frequently referred to as storms. In the Northern Hemisphere the air rapidly circulates
+       counterclockwise and in the Southern Hemisphere clockwise. Tropical cyclones with sustained
+       winds above 73 miles per hour are known as hurricanes in the North Atlantic Ocean, Caribbean
+       Sea, Gulf of Mexico and the Eastern North Pacific (east of the date line) and cyclones in the
+       Indian Ocean.  They are known as typhoons in other areas or the world. Both mid-latitude and
+       tropical storms serve an important function in transferring warmth away from the tropics to the
+       poles.</font></P>
+    <a name="D"></a>                     
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Decadal</strong> - A consecutive ten year period.</font></P>
+
+    <p align="justify"><a name="DD"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Degree Day</strong> - For any individual day, degree days indicate how far that day's average
+       temperature departed from 65<sup>o</sup>F. Heating Degree Days measure heating energy
+       demand.  It is a measure to indicate how far the average temperature fell below 65<sup>o</sup>F. Similarly,
+       Cooling Degree Days's, which measure cooling energy demand, indicate how far the temperature
+       averaged above 65<sup>o</sup>F. In both cases, smaller values represent less fuel demand, but values below
+       0 are set equal to 0, because energy demand cannot be negative. Furthermore, since energy
+       demand is cumulative, degree day totals for periods exceeding 1 day are simply the sum of each
+       individual day's degree day total. For example, if some location had a mean temperature of 60<sup>o</sup>F
+       on day 1 and 80<sup>o</sup>F on day 2, there would be 5 HDD's for day 1 (65 minus 60) and 0 for day 2 (65
+       minus 80, set to 0). For the day 1 + day 2 period, the HDD total would be 5 + 0 = 5. In contrast,
+       there would be 0 CDD's for day 1 (60 minus 65, reset to 0), 15 CDD's for day 2 (80 minus 65),
+       resulting in a 2-day CDD total of 0 + 15 = 15. </font></P>
+
+    <p align="justify"><a name="DP"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Dew Point</strong> - The point at which the air at a certain temperature contains all the moisture possible
+       without precipitation occurring. When the dew point is 65<sup>o</sup>F, one begins to feel the humidity.
+       The higher the temperature associated with the dew point, the more uncomfortable one feels.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Dobson Unit</strong> - Unit used to measure the abundance of ozone in the atmosphere. One Dobson
+       unit is the equivalent of 2.69 x 10<sup>16</sup> molecules of ozone/cm<sup>2</sup>.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Doppler radar</strong> - Radar that measures speed and direction of a moving object, such as water or ice
+       particles, birds, and insects. </font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Drought</strong> - Drought is a deficiency of moisture that results in adverse impacts on people,
+       animals, or vegetation over a sizeable area. NOAA together with its partners provides short- and
+       long-term <a href="#DASS">Drought Assessments</a>.</font></P>
+
+    <p align="justify"><a name="DASS"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Drought Assessments</strong> - At the end of each month, <a href="#CPC">CPC</a> issues a long-term seasonal drought
+       assessment. On Thursdays of each week, the CPC together with NOAA National Climatic Data
+       Center, the United States Department of Agriculture, and the National Drought Mitigation Center
+       in Lincoln, Nebraska, issues a weekly drought assessment called the United States Drought
+       Monitor. These <a href="http://www.cpc.ncep.noaa.gov/products/expert_assessment/drought_assessment.html">assessments</a> review national drought conditions and indicate potential impacts
+       for various economic sectors, such as agriculture and forestry.</font></P>
+    <a name="E"></a>                     
+    <p align="justify"><a name="#ELNINO"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>El Ni&ntilde;o</strong> -  El Ni&ntilde;o, a phase of <a href="#ENSO">ENSO</a>, is a periodic warming of surface ocean waters in the
+       eastern tropical Pacific along with a shift in <a href="#CONV">convection</a> in the western Pacific further east than
+       the climatological average. These conditions affect weather patterns around the world.  El Ni&ntilde;o
+       episodes occur roughly every four-to-five years and can last up to 12-to-18 months. The preliminary <a href="#CPC">CPC</a> definition of El Ni&ntilde;o 
+              is a phenomenon in the equatorial Pacific Ocean characterized by a <i>positive</i> <a href="#SST">sea surface temperature</a> departure from normal (for the 1971-2000 base period), averaged over three months, greater than 
+       or equal in magnitude to 0.5<sup>o</sup>C in a region defined by 120<sup>o</sup>W-170<sup>o</sup>W and 5<sup>o</sup>N-5<sup>o</sup>S (commonly referred to as <a href="#NINO">Ni&ntilde;o 3.4</a>).
+       El Ni&ntilde;o, which would appear off the coast of Peru around Christmas time,
+       is Spanish for "the boy" referring to the Christ child.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Ensemble Forecast</strong> - Multiple predictions from an ensemble of slightly different initial
+       conditions and/or various versions of models.  The objectives is to improve the accuracy of the
+       forecast through averaging the various forecasts, which eliminates non-predictable components,
+       and to provide reliable information on forecast uncertainties from the diversity amongst
+       ensemble members. Forecasters use this tool to measure the likelihood of a forecast.</font></P>
+
+    <p align="justify"><a name="ENSO"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>ENSO (El Ni&ntilde;o-Southern Oscillation)</strong> - Originally, ENSO referred to El Ni&ntilde;o/ Southern
+       Oscillation, or the combined atmosphere/ocean system during an El Ni&ntilde;o warm event.  The
+       ENSO cycle includes <a href="#LANINA">La Ni&ntilde;a</a> and <a href="#ELNINO">El Ni&ntilde;o</a> phases as well as neutral phases, or ENSO cycle, of
+       the coupled atmosphere/ocean system though sometimes it is still used as originally defined. The
+       Southern Oscillation is quantified by the Southern Oscillation Index (<a href="#SOI">SOI</a>).</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>ENSO Diagnostic Discussion (formerly ENSO Advisory)</strong> - The <a href="#CPC">CPC</a> issues the ENSO
+       Diagnostic Discussion around the middle of the month. The discussion addresses the current
+       oceanic and atmospheric conditions in the Pacific and the seasonal climate outlook for the
+       following one to three seasons. 
+       (See <a href="http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/">http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/</a>)</font></P>
+
+    <p align="justify"><a name="EVAP"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Evaporation</strong> - The physical process by which a liquid or solid is changed to a gas; the opposite
+       of <a href="#COND">condensation</a>.</font></P>
+
+    <p align="justify"><a name="EHO"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Excessive Heat Outlook</strong> - This <a href="#CPC">CPC</a> product, a combination of temperature and humidity over
+       a certain number of days, is designed to provide an indication of areas of the country where
+       people and animals may need to take precautions against the heat during May to November.
+       (See <a href="http://www.cpc.ncep.noaa.gov/products/predictions/hi_307.html">http://www.cpc.ncep.noaa.gov/products/predictions/hi_307.html</a>)</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Experimental Products</strong> - An experimental product is in the final stages of testing and
+       evaluation. If the product proves accurate and valuable to users then the next step is to make it an
+       <a href="#OPPROD">operational product</a>.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Extratropical</strong> - In meteorology, the area north of the Tropic of Cancer and the area south of the
+       Tropic of Capricorn. In other words, the area outside the tropics.</font></P>
+    <a name="F"></a>                     
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Forecasts (Synonymous with predictions and outlooks)</strong> - A weather forecast, or prediction, is an
+       estimation based on special knowledge of the future state of the atmosphere with respect to
+       temperature, precipitation, and wind.  Weather forecasts are now routinely provided for up to 14
+       days in advance and outlooks for seasonal and longer timescales.</font></P>
+    <a name="G"></a>                     
+    <p align="justify"><a name="GCM"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>GCMs (General Circulation Models)</strong> - These computer simulations reproduce the Earth's
+       weather patterns and can be used to predict change in the weather and climate.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Global Warming</strong> - Certain natural and human-produced gases prevent the sun's energy from
+       escaping back to space leading to an overall rise in the temperature of the Earth's atmosphere. </font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>GMT</strong> - <a href="#GMT">Greenwich Mean Time</a></font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Greenhouse Effect</strong> - The atmosphere allows solar radiation to reach the earth relatively easily.
+       The atmosphere absorbs the infrared radiation emitted by the Earth's surface and radiates it back
+       to the Earth in much the same way a greenhouse traps heat as the sun's rays pass through the
+       glass, and the heat generated does not pass back through the glass.  The "greenhouse effect"
+       causes the surface of the Earth to be much warmer that it would be without the atmosphere
+       60<sup>o</sup>F). Without the greenhouse effect, life as we know it might not exist on Earth.</font></p>
+
+    <p align="justify"><a name="GG"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Greenhouse Gas</strong> - Certain gases, such as water vapor, carbon dioxide, and methane, that more
+       effectively trap heat affecting the Earth's surface temperature.</font></P>
+
+    <p align="justify"><a name="GMT"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Greenwich Mean Time</strong> - GMT is the global standard for time that was established in 1884
+       when delegates from 27 nations met in Washington, DC for the Meridian Conference and agreed on a system basically the same as that now in use.  Civilian designations are typically three letter
+       abbreviations (e.g. EST) for most time zones. Military designations use each letter of the
+       alphabet (except 'J') and are known by their phonetic equivalent. For example, Greenwich Mean
+       Time (civilian) or Z = <a href="#ZULU">Zulu</a> (military and aviation). <a href="#UTC">Universal Time Coordinated</a> (UTC) has been substituted for GMT.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Growing Degree Days</strong> - A heat index that relates the development of plants, insects, and disease
+       organisms to environmental air temperature.  The index varies depending on whether it is a cool,
+       warm, or very warm season plant. For example, a corn growing degree day (GDD) is an index
+       used to express crop maturity. The index is computed by subtracting a base temperature of 50<sup>o</sup>F from the average of the maximum and minimum temperatures for the day. Minimum
+       temperatures less than 50<sup>o</sup>F are set to 50, and maximum temperatures greater than 86<sup>o</sup>F are set to
+       86. These substitutions indicate that no appreciable growth is detected with temperatures lower
+       than 50 or greater than 86. If the maximum and minimum temperatures were 85 and 52, you
+       would calculate the GDD by ((85+52/2) - 50) = 18.5 GDD.</font></P>
+    <a name="H"></a>                     
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Hazards Assessment</strong> - <a href="#CPC">CPC</a>'s Hazards Assessment provides emergency managers, planners,
+       forecasters and the public advance notice of potential hazards related to climate, weather and hydrological events.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Heating Degree Days</strong> - A form of <a href="#DD">degree-day</a> used to estimate energy requirements for heating.</font></P>
+
+    <p align="justify"><a name="HPA"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>HectoPascals (hPa)</strong> - 1 hPA= 1 <a href="#MB">millibar</a>, a unit of pressure. </font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>500 hPa</strong> - At this height above sea level half the mass of the atmosphere lies above and below as
+       measured in pressure units.  This area is important for understanding surface weather for upper
+       air storms tend to be steered in the direction of the winds at this level and are highly correlated
+       with surface weather.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Hurricane</strong> - See <a href="#CYCLONE">Cyclone</a></font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Hydrology</strong> - The scientific study of precipitation, evaporation, distribution, and effects of water
+       on the Earth's surface, in the soil and rocks, and in the atmosphere.</font></P>
+    <a name="I"></a>                     
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Intraseasonal Oscillations</strong> - Variability on a timescale less than a season. One example is the
+       <a href="#MJO">Madden-Julian Oscillation</a>.</font></P>
+    <a name="J"></a>                     
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Jet Stream</strong> - Strong winds concentrated within a narrow zone in the atmosphere in the upper
+       <a href="#TROP">troposphere</a>, about 30,000 feet aloft that generally move in an easterly direction that drive
+       weather systems around the globe.  In North America jet streams are more pronounced in winter.</font></p>
+    <a name="K"></a>                     
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Kelvin Waves</strong> - Fluctuations in wind speed at the ocean surface at the Equator result in eastward
+       propagating waves, known as Kelvin Waves.  Kelvin Waves cause variations in the depth of the
+       oceanic <a href="#TC">thermocline</a>, the boundary between warm waters in the upper ocean and cold waters in
+       the deep ocean.  They play an important role in monitoring and predicting <a href="#ELNINO">El Ni&ntilde;o</a> episodes.</font></P>
+    <a name="L"></a>                     
+    <p align="justify"><a name="#LANINA"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>La Ni&ntilde;a</strong> - La Ni&ntilde;a, a phase of <a href="#ENSO">ENSO</a>, is a periodic cooling of surface ocean waters in the eastern
+       tropical Pacific along with a shift in <a href="#CONV">convection</a> in the western Pacific further west than the
+       climatological average. These conditions affect weather patterns around the world. The preliminary <a href="#CPC">CPC</a> definition of La Ni&ntilde;a is a phenomenon in 
+       the equatorial Pacific Ocean characterized by a <i>negative</i> <a href="#SST">sea surface temperature</a> departure from normal (for the 1971-2000 base period), averaged over three 
+       months, greater than or equal in magnitude to 0.5<sup>o</sup>C in a region defined by 150<sup>o</sup>W-160<sup>o</sup>E and 5<sup>o</sup>N-5<sup>o</sup>S (commonly referred to as <a href="#NINO">Ni&ntilde;o 4</a>).</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Long Wave  (or Planetary Wave)</strong> - In meteorology, a long wave in atmospheric circulation in
+       the major belt of westerlies has different characteristics than rapidly moving storms nearer the
+       Earth's surface</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Low Level Jet</strong> - A jet stream that is typically found in the lower 2-3 km, or approximately 6,000
+       to 9, 500 feet, of the <a href="#TROP">troposphere</a>.</font></P>
+    <a name="M"></a>                     
+    <p align="justify"><a name="MJO"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Madden-Julian Oscillation (MJO)</strong> - Tropical rainfall exhibits strong variability on time scales
+       shorter than the seasonal El Ni&ntilde;o-Southern Oscillation <a href="#ENSO">(ENSO)</a>. These fluctuations in tropical
+       rainfall often go through an entire cycle in 30-60 days, and are referred to as the Madden-Julian
+       Oscillation or intraseasonal oscillations. The intraseasonal oscillations are a naturally occurring
+       component of our coupled ocean-atmosphere system. They significantly affect the atmospheric
+       circulation throughout the global Tropics and subtropics, and also strongly affect the wintertime
+       jet stream and atmospheric circulation features over the North Pacific and western North
+       America.  As a result, they have an important impact on storminess and temperatures over the
+       United States.  During the summer these oscillations have a modulating effect on hurricane
+       activity in both the Pacific and Atlantic basins.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Mean</strong> - The arithmetic average, or the middle point between two extremes.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Meteorology</strong> - The scientific study of the physics, chemistry, and dynamics of the Earth's
+       atmosphere, especially weather and climate.</font></P>
+
+    <p align="justify"><a name="MB"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Millibar</strong> - A pressure unit of 1000 dynes cm<sup>-2</sup>, often used for reporting atmospheric pressure
+       where one millibar equals 1 <a href="#HPA">hectopascal</a> (hPA).</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Monsoons</strong> - Seasonal winds. They are caused primarily by the greater annual variation in air
+       temperature over large land surfaces compared to ocean surfaces though other factors like
+       land-relief are important. </font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>MRF</strong> - Medium Range Forecast, usually a reference to a numeric model that extends one to two
+       weeks into the future. </font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>MRF-Based 8-day Guidance</strong> - Based on the MRF model output statistics the Guidance gives a
+      temperature forecast (max and min) with actual values (e.g. high of 50 low of 40) for the next 7
+      days plus probability of precipitation, and mean wind speed and cloudiness in easy-to-understand
+      and use text format.</font></P>
+    <a name="N"></a>                     
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>NAO</strong> - <a href="#NAO">North Atlantic Oscillation</a></font></P>
+
+    <p align="justify"><a name="NAOIND"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>NAO Index</strong> - This index measures the <a href="#ANOM">anomalies</a> in sea level pressure between the Icelandic
+      low pressure system and the Azores high pressure system.  When the difference is positive the
+      northeastern United States sees an increase in temperature and a decrease in snow days; the
+      central US has increased precipitation, the North Sea has an increase in storms; and Norway
+      along with Northern Europe has warmer temperatures and increased precipitation.  When the
+      difference is negative the Tropical Atlantic and Gulf coast have increased number of strong
+      hurricanes; northern Europe is drier, and Turkey along with other Mediterranean countries has
+      increased precipitation.</font></P>
+
+    <p align="justify"><a name="NCEP"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>National Centers for Environmental Prediction (NCEP)</strong> - The National Centers for
+      Environmental Prediction (NCEP), an arm of the <a href="#NOAA">NOAA</a>'s <a href="#NWS">National Weather Service (NWS)</a> 
+      provides national and international weather and climate guidance products to National Weather
+      Service field offices, government agencies, emergency managers, private sector meteorologists,
+      and meteorological organizations and societies throughout the world.  The nine centers are:
+      Aviation Weather Center, <a href="#CPC">Climate Prediction Center</a>, Environmental Modeling Center,
+      Hydrometeorological Prediction Center, Marine Prediction Center,  NCEP Central Operations,
+      Space Environment Center, Storm Prediction Center and Tropical Prediction Center (formerly
+      the National Hurricane Center). (See <a href="http://www.ncep.noaa.gov">http://www.ncep.noaa.gov</a>)</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>National Climatic Data Center (NCDC)</strong> - NCDC maintains the world's largest active archive
+      of weather data. NCDC produces numerous climate publications and responds to data requests
+      from all over the world. (See <a href="http://www.ncdc.noaa.gov/oa/ncdc.html">http://www.ncdc.noaa.gov</a>)</font></P>
+
+    <p align="justify"><a name="NOAA"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>National Oceanic and Atmospheric Administration (NOAA)</strong> - NOAA's historical role has
+      been to predict environmental changes, protect life and property, provide decision makers with
+      reliable scientific information, and foster global environmental stewardship. Today NOAA's
+      mission remains unchanged as it describes and predicts changes in the Earth's environment, and
+      conserves and wisely manages the Nation's coastal and marine resources. (See <a href="http://www.noaa.gov">http://www.noaa.gov</a>)</font></p>
+
+    <p align="justify"><a name="NWS"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>National Weather Service (NWS)</strong> - The National Weather Service (NWS) - provides weather,
+     hydrologic, and climate forecasts and warnings for the United States, its territories, adjacent
+     waters and ocean areas, for the protection of life and property and the enhancement of the
+     national economy. NWS data and products form a national information database and
+     infrastructure which can be used by other governmental agencies, the private sector, the public,
+     and the global community.  (See <a href="http://www.nws.noaa.gov">http://www.nws.noaa.gov</a>)</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>NCEP</strong> - <a href="#NCEP">National Centers for Environmental Prediction</a></font></P>
+
+    <p align="justify"><a name="NINO"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Ni&ntilde;o 1+ 2, 3, 3.4, and 4</strong> - In monitoring the equatorial tropical Pacific for the phases of the
+      ENSO cycle, the area has been divided into 4 sections:</font></p>
+      <ul>  
+       <li><font face="verdana,arial,serif" size="2" color="#000000">Ni&ntilde;o 1+2  (0<sup>o</sup>-10<sup>o</sup> South) (90<sup>o</sup> West-80<sup>o</sup> West)</font></li> 
+       <li><font face="verdana,arial,serif" size="2" color="#000000">Ni&ntilde;o 3 (5<sup>o</sup> North-5<sup>o</sup> South) (150<sup>o</sup> West-90<sup>o</sup> West)</font></li> 
+       <li><font face="verdana,arial,serif" size="2" color="#000000">Ni&ntilde;o 4 (5<sup>o</sup> North-5<sup>o</sup> South) (160<sup>o</sup> East-150<sup>o</sup> West)</font></li> 
+       <li><font face="verdana,arial,serif" size="2" color="#000000">Ni&ntilde;o 3.4  (5<sup>o</sup> North-5<sup>o</sup> South) (170<sup>o</sup>-120<sup>o</sup> West)</font></li>
+      </ul>
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000">The reason for this is that major atmospheric circulation impacts are related to changes in the
+    pattern of <a href="#CONV">convection</a> in these regions. The Ni&ntilde;no 3.4 and Ni&ntilde;no 4 regions encompass the
+    area where slight increases or decreases in SSTs can have a big impact on where convection is
+    found in the western and central Pacific and are the key areas for monitoring and predicting
+    ENSO events.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>NOAA</strong> - <a href="#NOAA">National Oceanic and Atmospheric Administration</a></font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Normal</strong> - To understand whether precipitation and temperature is above or below normal for
+    seasons and longer timescales, normal is defined as the average weather over 30 years.  These
+    averages are recalculated every ten years.  The National Weather Service has just recalculated the
+    baseline period for normal from 1961 to 1990 to 1971 to 2000.  Since the cool decade of the
+    1960's has been replaced with the mild 1990's, normal temperatures in many areas have
+    increased.</font></P>
+
+    <p align="justify"><a name="NAO"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>North Atlantic Oscillation</strong>- The NAO is a large-scale fluctuation in atmospheric pressure
+     between the subtropical high pressure system located near the Azores in the Atlantic Ocean and
+     the sub-polar low pressure system near Iceland and is quantified in the <a href="#NAOIND">NAO Index</a>. The surface
+     pressure drives surface winds and wintertime storms from west to east across the North Atlantic
+     affecting climate from New England to western Europe as far eastward as central Siberia and
+     eastern Mediterranean and southward to West Africa</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Numerical Forecasting (Also called mathematical forecasting, dynamical forecasting, physical
+     forecasting, and numerical weather prediction)</strong> - A computer forecast or prediction based on
+     equations governing the motions and the forces affecting motion of fluids.  The equations are 
+     based, or initialized, on specified weather or climate conditions at a certain place and time. </font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>NWS</strong> - <a href="#NWS">National Weather Service</a></font></P>
+    <a name="O"></a>                     
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Office of Global Programs (OGP)</strong> - The Office of Global Programs (OGP) sponsors focused
+     scientific research, within approximately eleven research elements, aimed at understanding
+     climate variability and its predictability. Through studies in these areas, researchers coordinate
+     activities that jointly contribute to improved predictions and assessments of climate variability
+     over a continuum of timescales from season to season, year to year, and over the course of a
+     decade and beyond.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>OLR</strong> - Outgoing Longwave Radiation is a polar satellite derived measurement of the radiative
+     character of energy radiated from the warmer earth surface to cooler space. This measurement
+     provides information on cloud-top temperature which can be used to estimate tropical
+     precipitation amounts which is important in forecasting weather and climate.</font></P>
+
+    <p align="justify"><a name="OPPROD"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Operational Products</strong> - Products and data that have been fully tested and evaluated that are
+     produced on a regular and ongoing basis.</font></P>
+ 
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Oscillations</strong> - A shift in position of various high and low pressure systems that in climate terms
+     is usually defined as an index (i.e., a single numerically-derived number, that represents the
+     distribution of temperature and pressure over a wide ocean area, such as the <a href="#ENSO">El Ni&ntilde;o-Southern
+     Oscillation</a>, <a href="#NAO">North Atlantic Oscillation</a>, and <a href="#PDO">Pacific Decadal Oscillation</a>). </font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Ozone</strong> - A molecule consisting of three oxygen atoms that is formed by a reaction of oxygen
+     and <a href="#UV">ultraviolet radiation</a>. In the <a href="#STRAT">stratosphere</a>, ozone has beneficial properties where it forms an
+     ozone shield that prevents dangerous radiation from reaching the Earth's surface.  Closer to the
+     planet's surface, ozone is considered an air pollutant that adversely affects humans, plants and
+     animals as well as a <a href="#GG">greenhouse gas</a>.</font></P>
+
+    <p align="justify"><a name="OH"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Ozone Hole</strong> - A severe depletion of stratospheric ozone over Antarctica  that occurs each spring.
+     The possibility exists that a hole could form over the Arctic as well.  The depletion is caused by a
+     chemical reaction involving ozone and chlorine, primarily from human produced sources, cloud
+     particles, and low temperatures.</font></P>
+    <a name="P"></a>                     
+    <p align="justify"><a name="PDO"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Pacific Decadal Oscillation</strong> - A recently described pattern of climate variation similar to <a href="#ENSO">ENSO</a>
+     though on a timescale of decades and not seasons.  It is characterized by <a href="#SST">SST</a> anomalies of one
+     sign in the north-central Pacific and SST anomalies of another sign to the north and east near the
+     Aleutians and the Gulf of Alaska. It primarily affects weather patterns and sea surface
+     temperatures in the Pacific Northwest, Alaska, and northern Pacific Islands.  Two main
+     characteristics distinguish PDO from El Ni&ntilde;o/Southern Oscillation (ENSO): first, 20th century
+     PDO "events" persisted for 20-to-30 years, while typical ENSO events persisted for 6 to 18
+     months; second, the climatic fingerprints of the PDO are most visible in the North Pacific/North
+     American sector, while secondary signatures exist in the tropics- the opposite is true for ENSO.
+     Several independent studies found evidence of just two full PDO cycles in the past century:
+     cool" PDO regimes prevailed from 1890-1924 and again from 1947-1976, while "warm" PDO
+     regimes dominated from 1925-1946 and from 1977 through (at least) the mid-1990's. Causes for
+     the PDO are not currently known. Likewise, the potential predictability for this climate
+     oscillation are not known.</font></P>
+
+    <p align="justify"><a name="PDSI"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Palmer Drought Severity Index (PDSI)</strong> - An index that compares the actual amount of
+     precipitation received in an area during a specified period with the normal or average amount
+     expected during that same period. It was developed to measure lack of moisture over a relatively
+     long period of time and is based on the supply and demand concept of a water balance equation.
+     Included in the equation are amount of evaporation, soil recharge, and runoff and 
+     temperature and precipitation data.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>PRCP</strong> - Abbreviation for precipitation.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Probability</strong> - A chance, or likelihood, that a certain event might happen.</font></P>
+    <a name="R"></a>                     
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"> <strong>Relative humidity</strong> - An estimate of the amount of moisture in the air relative to the amount of
+     moisture that the air can hold at a specific temperature. For example, if it's 70<sup>o</sup>F near dawn on a
+     foggy summer morning, the relative humidity is near 100%. During the afternoon the
+     temperature soars to 95<sup>o</sup>F and the fog disappears. The moisture in the atmosphere has not
+     changed appreciably, but the relative humidity drops to 44% because the air has the capacity to
+     hold much more moisture at a temperature of 95<sup>o</sup>F than it does at 70<sup>o</sup>F.  But even when the
+     relative humidity is "low" at 44%, it's a very humid day when the temperature is 95<sup>o</sup>F.  For this
+     reason, a better measure of comfort is <a href="#DP">dew point</a>.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Retrogression</strong> or <strong>retrograde motion</strong> means motion that is backwards from the usual way things move in the Northern Hemisphere extratropics - which is from west to east.
+     In meterology, the term is used in relation to atmospheric waves or pressure systems. When meterologists say that a pattern will retrograde, they mean that the troughs
+     and ridges will end up further west than they were previously.  Normal motion (over the United States) is progressive, or prograde, which means (weather systems move)
+     from west to east.</font</p> 
+                     
+    <p align="justify"><a name="S"></a><a name="SST"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Sea Surface Temperatures (SSTs)</strong> - The term refers to the mean temperature of the ocean in
+     the upper few meters.</font></P>
+
+    <p align="justify"><a name="SOI"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>SOI (Southern Oscillation Index)</strong> - SOI is based on the (atmospheric) pressure difference
+     between Tahiti and Darwin, Australia. It is highly correlated with tropical sea surface
+     temperature anomaly indices recorded in <a href="#NINO">Ni&ntilde;o3</a>. </font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>SSTs</strong> - <a href="#SST">Sea Surface Temperatures</a></font></P>
+
+    <p align="justify"><a name="STRAT"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Stratosphere</strong> - The region of the atmosphere extending from the top of the <a href="#TROP">troposphere</a> to the
+     base of the mesosphere, an important area for monitoring <a href="#SO">stratospheric ozone</a>.</font></P>
+    
+    <p align="justify"><a name="SO"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Stratospheric ozone</strong> - In the stratosphere, ozone has beneficial properties where it forms an
+     ozone shield that prevents dangerous radiation from reaching the Earth's surface. Recently, it
+     was discovered that in certain parts of the world, especially over the poles, stratospheric ozone
+     was disappearing creating an <a href="#OH">ozone hole</a>.</font></P>
+
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Subtropical</strong> - A climate zone adjacent to the tropics with warm temperatures and little rainfall.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Synoptic scale</strong> - Used to classify large-scale weather systems more than 200 miles across.</font></P>
+    <a name="T"></a>                     
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Teleconnection</strong> - A strong statistical relationship between weather in different parts of the
+     globe. For example, there appears to be a teleconnection between the tropics and North America
+     during <a href="#ELNINO">El Ni&ntilde;o</a>. </font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>TEMP</strong> - Abbreviation for temperature, given in Fahrenheit for <a href="#CPC">CPC</a> products.</font></P>
+
+    <p align="justify"><a name="TC"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Thermocline</strong> - As one descends from the surface of the ocean, the temperature remains nearly
+     the same as it was at the surface, but at a certain depth temperature starts decreasing rapidly with
+     depth. This boundary is called the thermocline. In studying the tropical Pacific Ocean, the depth
+     of 20<sup>o</sup>C water ("the 20<sup>o</sup>C isotherm") is often used as a proxy for the depth of the thermocline.
+     Along the equator, the 20<sup>o</sup>C isotherm is typically located at about 50m depth in the eastern
+     Pacific, sloping downwards to about 150 m in the western Pacific. </font></P>
+
+    <p align="justify"><a name="TROP"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Troposphere</strong> - The lowest portion of the atmosphere which lies next to the earth's surface
+     where most weather occurs.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Typhoon</strong> - See <a href="#CYCLONE">Cyclone</a></font></P>
+    <a name="U"></a>                     
+    <p align="justify"><a name="UV"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Ultraviolet (UV) (or Ultraviolet Radiation)</strong> - Ultraviolet radiation from the sun plays a role in
+     the formation of the ozone layer by acting as a catalyst for a chemical reaction that breaks apart
+     oxygen molecules which then recombine to form ozone.  The absorption of UV by <a href="#SO">stratospheric
+     ozone</a> and atmospheric oxygen prevents very little ultraviolet radiation to reach earth's surfaces
+     where it can detrimental effects on human health and property.</font></P>
+
+    <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Upper-level (or upper air)</strong> - In weather observing, the term applies to the portion of the
+     atmosphere that is above the lower <a href="#TROP">troposphere</a>, generally 850 <a href="#HPA">hPa</a> and above.  </font></P>
+
+       <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Upwelling</strong> - In ocean dynamics, the upward motion of sub-surface water toward the surface of
+        the ocean. This is often a source of cold, nutrient-rich water. Strong upwelling occurs along the
+        equator where easterly winds are present. Upwelling also can occur along coastlines, and is
+        important to fisheries and birds in California and Peru. </font></P>
+
+       <p align="justify"><a name="UTC"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>UTC</strong> - Universal Time Coordinated is the same as <a href="#GMT">Greenwich Mean Time</a></font></P>
+    <a name="W"></a>                     
+       <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Wind Chill</strong> - The portion of the cooling of the human body caused by air motion.  Wind chill
+        becomes important for human health as air motion accelerates the rate of heat loss from a human
+        body, especially when temperatures are below 45<sup>o</sup>F.</font></P>
+
+       <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>Wind Chill Index</strong> - A means of quantifying the threat of heat loss from the human body during
+        windy and cold conditions.</font></P>
+    <a name="Z"></a>                     
+       <p align="justify"><a name="ZULU"></a><font face="verdana,arial,serif" size="2" color="#000000"><strong>Z=Zulu</strong> - See GMT or <a href="#GMT">Greenwich Mean Time</a></font></P>
+
+       <p>&nbsp;</p>
+       <p align="justify"><font face="verdana,arial,serif" size="2" color="#000000"><strong>*</strong> Sources for definitions include: <i>The American Heritage Dictionary</i>, <i>The New York Times Weather Report</i>,
+       <i>American Meteorological Society's Glossary of Meteorology (2000)</i>, and the Internet. </font></P>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+            <!-- This is the body content file of the current sub-directory. -->
+      <table cellspacing="0" cellpadding="0" width="99%" border="0">
+	<tbody>
+		<tr>
+			<td colspan="3"><hr></td>
+		</tr>
+		<tr valign="top">
+			<td class="gray">
+				<a href="http://www.noaa.gov/" class="homepagelinks"><span class="gray">NOAA/</span></a>
+				<a href="http://www.nws.noaa.gov/" class="homepagelinks"><span class="gray">National Weather Service</span></a><br>
+				<a href="http://www.ncep.noaa.gov/" class="homepagelinks"><span class="gray">NOAA Center for Weather and Climate Prediction </span></a><br>
+				Climate Prediction Center<br>
+				5830 University Research Court <br>
+				Riverdale Park, MD 20737 <br>
+				Page Author:<a href="/comment-form.html" class="homepagelinks"><span class="gray"> Climate Prediction Center Internet Team</span></a><br>
+   <!-- Use virtual include, because this should be in a common place within your DocumentRoot. -->
+      Page last modified: September 21, 2004
+      			</td>
+			<td>
+				<a href="http://www.weather.gov/disclaimer.php" class="homepagelinks"><span class="gray">Disclaimer</span></a><br>
+				<a href="http://www.cio.noaa.gov/Policy_Programs/info_quality.html" class="homepagelinks"><span class="gray">Information Quality</span></a><br>
+				<a href="http://www.nws.noaa.gov/credits.php" class="homepagelinks"><span class="gray">Credits</span></a><br>
+				<a href="http://www.nws.noaa.gov/glossary/" class="homepagelinks"><span class="gray">Glossary</span></a><br>
+			</td>
+			<td align="right">
+				<a href="http://www.weather.gov/privacy.php" class="homepagelinks"><span class="gray">Privacy Policy</span></a><br>
+				<a href="http://www.rdc.noaa.gov/%7Efoia/" class="homepagelinks"><span class="gray">Freedom of Information Act (FOIA)</span></a><br>
+				<a href="http://www.nws.noaa.gov/admin.php" class="homepagelinks"><span class="gray">About Us</span></a><br>
+				<a href="http://www.nws.noaa.gov/careers.php" class="homepagelinks"><span class="gray">Career Opportunities</span></a><br>
+			</td>
+		</tr>
+	</tbody>
+</table>
+   <!-- Use virtual include, because this should be in a common place within your DocumentRoot. -->
+    </td>
+  </tr> 
+</table>
+</body>
+</html>

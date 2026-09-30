@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-7A6F46B35B9336",
+  "provider": "India Meteorological Department",
+  "dataset": "radar.php",
+  "sector": "public",
+  "country": "IN",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "cyclone"
+  ],
+  "retrieved_utc": "2026-09-30T04:11:05.626097Z",
+  "request_url": "https://mausam.imd.gov.in/responsive/radar.php",
+  "final_url": "https://mausam.imd.gov.in/responsive/radar.php",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 46993,
+  "sha256": "e027b52375cf7a1ae9361cf2e06a123575b356edc4f2901bf5b98e26284b017b",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7A6F46B35B9336\\20260930T041105.626097Z_e027b52375cf7a1a.php",
+  "parent_id": "IMD",
+  "discovery_depth": 1
+}

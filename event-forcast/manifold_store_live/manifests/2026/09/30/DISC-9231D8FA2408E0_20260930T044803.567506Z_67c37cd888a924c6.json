@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-9231D8FA2408E0",
+  "provider": "NOAA/NCEI",
+  "dataset": "annual",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:03.567506Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/annual/",
+  "final_url": "https://www.ncei.noaa.gov/maps/annual/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 18435,
+  "sha256": "67c37cd888a924c632e749e12ce6428717733705e6b929c43172995a041a23b9",
+  "etag": "\"4767-647bb7e702880\"",
+  "last_modified": "Tue, 06 Jan 2026 17:27:46 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-9231D8FA2408E0\\20260930T044803.567506Z_67c37cd888a924c6.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

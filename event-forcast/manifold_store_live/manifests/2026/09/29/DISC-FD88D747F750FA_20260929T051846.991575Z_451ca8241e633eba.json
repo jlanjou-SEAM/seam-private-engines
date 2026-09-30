@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-FD88D747F750FA",
+  "provider": "NOAA Aviation Weather Center",
+  "dataset": "windtemp",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "aviation",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:46.991575Z",
+  "request_url": "https://aviationweather.gov/data/windtemp/",
+  "final_url": "https://aviationweather.gov/data/windtemp/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 31692,
+  "sha256": "451ca8241e633ebaf8f92de3c172cde2d482b49d4a6083b4f0b5c276211a7b19",
+  "etag": "\"6aaaf527-7bcc\"",
+  "last_modified": "Wed, 16 Sep 2026 19:59:35 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\aviation\\2026\\09\\29\\DISC-FD88D747F750FA\\20260929T051846.991575Z_451ca8241e633eba.html",
+  "parent_id": "AVIATION-WX-API",
+  "discovery_depth": 1
+}

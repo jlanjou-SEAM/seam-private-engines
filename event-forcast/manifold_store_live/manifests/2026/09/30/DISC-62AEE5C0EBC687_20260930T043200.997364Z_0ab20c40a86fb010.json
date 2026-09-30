@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-62AEE5C0EBC687",
+  "provider": "INAMHI Ecuador",
+  "dataset": "feed",
+  "sector": "public",
+  "country": "EC",
+  "scientific_regime": [
+    "weather",
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:32:00.997364Z",
+  "request_url": "https://www.inamhi.gob.ec/comments/feed/",
+  "final_url": "https://www.inamhi.gob.ec/comments/feed/",
+  "status_code": 200,
+  "content_type": "application/rss+xml; charset=UTF-8",
+  "byte_length": 727,
+  "sha256": "0ab20c40a86fb0105dc0f95db4c0c915826e010964e191e6c3a2edbb428e4917",
+  "etag": "\"99b889a9cd748e8b4eca0eb3758d138d\"",
+  "last_modified": "GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-62AEE5C0EBC687\\20260930T043200.997364Z_0ab20c40a86fb010.xml",
+  "parent_id": "INAMHI-EC",
+  "discovery_depth": 1
+}

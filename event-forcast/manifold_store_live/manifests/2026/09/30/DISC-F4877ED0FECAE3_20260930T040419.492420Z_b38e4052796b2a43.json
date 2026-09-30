@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F4877ED0FECAE3",
+  "provider": "US EIA",
+  "dataset": "manifest.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "power",
+    "energy"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:19.492420Z",
+  "request_url": "https://www.eia.gov/opendata/bulk/manifest.txt",
+  "final_url": "https://www.eia.gov/opendata/bulk/manifest.txt",
+  "status_code": 200,
+  "content_type": "text/plain",
+  "byte_length": 28398,
+  "sha256": "b38e4052796b2a43a7766ee0335445b045596bd4d785184f2f1213baa26a2fb9",
+  "etag": "\"80e8dff65e50dd1:0\"",
+  "last_modified": "Tue, 29 Sep 2026 22:07:49 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\power\\2026\\09\\30\\DISC-F4877ED0FECAE3\\20260930T040419.492420Z_b38e4052796b2a43.txt",
+  "parent_id": "EIA-API",
+  "discovery_depth": 1
+}

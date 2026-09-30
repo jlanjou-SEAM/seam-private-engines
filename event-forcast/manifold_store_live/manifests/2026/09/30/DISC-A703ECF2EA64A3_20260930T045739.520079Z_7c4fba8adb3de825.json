@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A703ECF2EA64A3",
+  "provider": "NOAA/NDBC",
+  "dataset": "WNEM4.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:57:39.520079Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/WNEM4.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/WNEM4.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1016140,
+  "sha256": "7c4fba8adb3de8256831bd8da38e3c4cd41592c8eee7fab36e29d4a2e88893c1",
+  "etag": "\"f814c-65cabf773e3da\"",
+  "last_modified": "Wed, 30 Sep 2026 04:45:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-A703ECF2EA64A3\\20260930T045739.520079Z_7c4fba8adb3de825.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

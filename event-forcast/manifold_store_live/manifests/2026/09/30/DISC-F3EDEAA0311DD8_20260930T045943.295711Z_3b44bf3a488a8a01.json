@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F3EDEAA0311DD8",
+  "provider": "NOAA/NDBC",
+  "dataset": "sar2",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:59:43.295711Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/sar2/",
+  "final_url": "https://www.ndbc.noaa.gov/data/sar2/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 193039,
+  "sha256": "3b44bf3a488a8a01843775f63fd81730828d8e113049705855e8fe9e7adb1f90",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-F3EDEAA0311DD8\\20260930T045943.295711Z_3b44bf3a488a8a01.html",
+  "parent_id": "DISC-5A7C0E42A79699",
+  "discovery_depth": 2
+}

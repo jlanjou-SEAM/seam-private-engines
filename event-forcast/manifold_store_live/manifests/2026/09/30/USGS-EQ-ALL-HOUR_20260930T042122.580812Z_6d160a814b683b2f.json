@@ -1,0 +1,22 @@
+{
+  "candidate_id": "USGS-EQ-ALL-HOUR",
+  "provider": "USGS",
+  "dataset": "All earthquakes past hour",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T04:21:22.580812Z",
+  "request_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
+  "final_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 5376,
+  "sha256": "6d160a814b683b2f94d73b53de0bc5e338ac3789b479a800177a5da1709f04c2",
+  "etag": null,
+  "last_modified": "Wed, 30 Sep 2026 04:21:09 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\seismic\\2026\\09\\30\\USGS-EQ-ALL-HOUR\\20260930T042122.580812Z_6d160a814b683b2f.geojson",
+  "parent_id": null,
+  "discovery_depth": 0
+}

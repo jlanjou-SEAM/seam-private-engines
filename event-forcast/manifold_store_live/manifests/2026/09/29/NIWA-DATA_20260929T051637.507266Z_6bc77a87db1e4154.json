@@ -1,0 +1,25 @@
+{
+  "candidate_id": "NIWA-DATA",
+  "provider": "NIWA",
+  "dataset": "Environmental data services",
+  "sector": "public_research",
+  "country": "NZ",
+  "scientific_regime": [
+    "weather",
+    "hydrology",
+    "marine",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-29T05:16:37.507266Z",
+  "request_url": "https://data.niwa.co.nz/",
+  "final_url": "https://data.niwa.co.nz/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 47449,
+  "sha256": "6bc77a87db1e41544e0c3899e32f66d784fd730adb8d4357e31081095de60eb6",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\NIWA-DATA\\20260929T051637.507266Z_6bc77a87db1e4154.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-0AC9569FC4BCB5",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "awarness-sand-storms",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:27:24.383762Z",
+  "request_url": "https://www.ncm.gov.ae/pages/awarness-sand-storms?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/awarness-sand-storms?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43591,
+  "sha256": "d4dbf077b74edfc1f3792d0688f595f82f6a7aeeb605d700742553b1ca5721e2",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-0AC9569FC4BCB5\\20260930T042724.383762Z_d4dbf077b74edfc1.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

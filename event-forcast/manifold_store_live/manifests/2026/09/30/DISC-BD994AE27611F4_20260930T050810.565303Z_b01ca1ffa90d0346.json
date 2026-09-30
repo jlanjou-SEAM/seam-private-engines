@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-BD994AE27611F4",
+  "provider": "NOAA/NSSL",
+  "dataset": "CARIB",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:10.565303Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/CARIB/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/CARIB/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 19678,
+  "sha256": "b01ca1ffa90d03467d9e7d0a898fa79cc50ee69b3e03ef5c677a3810f80c2b46",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-BD994AE27611F4\\20260930T050810.565303Z_b01ca1ffa90d0346.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

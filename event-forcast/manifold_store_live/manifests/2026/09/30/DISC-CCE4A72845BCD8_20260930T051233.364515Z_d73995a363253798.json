@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-CCE4A72845BCD8",
+  "provider": "NOAA/NDBC",
+  "dataset": "MCYI3.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:12:33.364515Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/MCYI3.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/MCYI3.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 287264,
+  "sha256": "d73995a36325379828e4126a3ceff89bb561eddc2848e293102dcf262a60a021",
+  "etag": "\"46220-65cac2d470fa1\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-CCE4A72845BCD8\\20260930T051233.364515Z_d73995a363253798.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

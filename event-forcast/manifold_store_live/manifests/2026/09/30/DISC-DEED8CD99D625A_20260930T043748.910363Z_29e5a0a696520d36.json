@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-DEED8CD99D625A",
+  "provider": "NOAA/NCEP",
+  "dataset": "aurora-viewline-tonight-and-tomorrow-night-experimental",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:48.910363Z",
+  "request_url": "https://www.spaceweather.gov/products/aurora-viewline-tonight-and-tomorrow-night-experimental",
+  "final_url": "https://www.spaceweather.gov/products/aurora-viewline-tonight-and-tomorrow-night-experimental",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 71457,
+  "sha256": "29e5a0a696520d361f768174208eea670bbcf949bef2b260f22a0a497af7dd71",
+  "etag": "\"1790733607\"",
+  "last_modified": "Wed, 30 Sep 2026 02:00:07 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-DEED8CD99D625A\\20260930T043748.910363Z_29e5a0a696520d36.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

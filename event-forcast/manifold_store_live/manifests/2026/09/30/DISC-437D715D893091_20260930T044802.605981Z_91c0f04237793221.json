@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-437D715D893091",
+  "provider": "NOAA/NCEI",
+  "dataset": "paleo",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:02.605981Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/paleo/",
+  "final_url": "https://www.ncei.noaa.gov/maps/paleo/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 18536,
+  "sha256": "91c0f04237793221fb3aa5cb361b353ced6a0e797771ec6c60d10d09677d68f9",
+  "etag": "\"47cc-6026b4a25a040\"",
+  "last_modified": "Tue, 08 Aug 2023 15:48:09 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-437D715D893091\\20260930T044802.605981Z_91c0f04237793221.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

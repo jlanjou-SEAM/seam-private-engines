@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E6D9D708788867",
+  "provider": "NOAA/NDBC",
+  "dataset": "RPLV2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:02:43.769826Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/RPLV2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/RPLV2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1013414,
+  "sha256": "b4582623b4a913bfbd3e3502d6b2e19a1f3c6e7ebbca0b3898ba4605f8af6002",
+  "etag": "\"f76a6-65cac2d52a46c\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-E6D9D708788867\\20260930T050243.769826Z_b4582623b4a913bf.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

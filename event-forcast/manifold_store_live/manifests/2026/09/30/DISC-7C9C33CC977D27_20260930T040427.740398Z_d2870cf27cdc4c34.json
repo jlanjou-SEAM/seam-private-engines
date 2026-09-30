@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7C9C33CC977D27",
+  "provider": "University of Wisconsin CIMSS",
+  "dataset": "feed",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:27.740398Z",
+  "request_url": "https://cimss.ssec.wisc.edu/comments/feed/",
+  "final_url": "https://cimss.ssec.wisc.edu/comments/feed/",
+  "status_code": 200,
+  "content_type": "application/rss+xml; charset=UTF-8",
+  "byte_length": 747,
+  "sha256": "d2870cf27cdc4c3436419a83d8f753c2a29dfb1463dc96a4f49609912b572651",
+  "etag": "\"3b8bf7a3b0df77ed7664ef952fd1324e\"",
+  "last_modified": "Thu, 24 Sep 2026 17:36:34 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-7C9C33CC977D27\\20260930T040427.740398Z_d2870cf27cdc4c34.xml",
+  "parent_id": "CIMSS",
+  "discovery_depth": 1
+}

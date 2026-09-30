@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-772C84F8D2E485",
+  "provider": "NOAA/NDBC",
+  "dataset": "LAPW1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:49.861983Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/LAPW1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/LAPW1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1014918,
+  "sha256": "7ef9b6f2662508aa86047e81039a43707d4d50ce4fb113601ab5593c453d71fc",
+  "etag": "\"f7c86-65cab68590938\"",
+  "last_modified": "Wed, 30 Sep 2026 04:05:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-772C84F8D2E485\\20260930T043349.861983Z_7ef9b6f2662508aa.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

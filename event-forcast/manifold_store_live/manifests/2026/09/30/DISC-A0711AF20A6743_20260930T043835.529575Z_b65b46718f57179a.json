@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-A0711AF20A6743",
+  "provider": "NOAA/NSSL",
+  "dataset": "VIL",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T04:38:35.529575Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/VIL/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/VIL/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 145254,
+  "sha256": "b65b46718f57179a17c3b64d31a3631eb01b94b86eba449adb1cfd36edd5902b",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A0711AF20A6743\\20260930T043835.529575Z_b65b46718f57179a.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

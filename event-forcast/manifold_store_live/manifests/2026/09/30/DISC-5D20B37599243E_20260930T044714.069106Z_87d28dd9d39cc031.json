@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-5D20B37599243E",
+  "provider": "NOAA/NCEI",
+  "dataset": "SectorSheets_energy_final_web508%20%281%29.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:14.069106Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2021-08/SectorSheets_energy_final_web508%20%281%29.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-08/SectorSheets_energy_final_web508%20%281%29.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 369674,
+  "sha256": "87d28dd9d39cc0319c1044913f953e883db3efbdb4b51becc3dbe013d5289e19",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:33:26 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-5D20B37599243E\\20260930T044714.069106Z_87d28dd9d39cc031.pdf",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

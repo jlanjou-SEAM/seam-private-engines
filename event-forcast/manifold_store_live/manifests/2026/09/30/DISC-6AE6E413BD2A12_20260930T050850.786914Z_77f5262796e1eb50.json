@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-6AE6E413BD2A12",
+  "provider": "NOAA/NSSL",
+  "dataset": "WarmRainProbability",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:50.786914Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/WarmRainProbability/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/WarmRainProbability/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 5811,
+  "sha256": "77f5262796e1eb505889c31cb643b52fee81a2c27785e4627c382bac16ae7df4",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6AE6E413BD2A12\\20260930T050850.786914Z_77f5262796e1eb50.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

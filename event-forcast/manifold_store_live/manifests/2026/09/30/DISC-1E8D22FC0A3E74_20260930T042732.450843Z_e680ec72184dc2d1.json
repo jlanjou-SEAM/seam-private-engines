@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-1E8D22FC0A3E74",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "https://suppliers.ncm.gov.ae?lang=ar",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:27:32.450843Z",
+  "request_url": "https://suppliers.ncm.gov.ae?lang=ar",
+  "final_url": "https://iaahbv.fa.ocs.oraclecloud.com/fscmUI/redwood/supplier-registration/register-supplier/register-supplier-verification?id=NUEMW%2F8Hnba75FXuMKe%2BIMKKM0b%2FKQTU3Msx6fqUIBCBv7MuRnzetL%2FM5meyO5SI",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 41694,
+  "sha256": "e680ec72184dc2d133e28c3d14d382131507412b85c7ba7fbff90a3991595196",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-1E8D22FC0A3E74\\20260930T042732.450843Z_e680ec72184dc2d1.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-222DA9EFBAB175",
+  "provider": "NOAA/NDBC",
+  "dataset": "CPNW1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:15:36.161755Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/CPNW1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/CPNW1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1018020,
+  "sha256": "f88633b3e160d5e783aeff75a099b4f61663f65f56396b02346943cfe1b66173",
+  "etag": "\"f88a4-65cac2d3bfbbe\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-222DA9EFBAB175\\20260930T051536.161755Z_f88633b3e160d5e7.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

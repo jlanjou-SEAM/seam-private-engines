@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-18A694498B7D10",
+  "provider": "NOAA/NCEI",
+  "dataset": "noaa-data-value-transportation-sector",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:43.920742Z",
+  "request_url": "https://www.ncei.noaa.gov/news/noaa-data-value-transportation-sector",
+  "final_url": "https://www.ncei.noaa.gov/news/noaa-data-value-transportation-sector",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 42240,
+  "sha256": "117e16dc2b72c56604383d8bd335e5a6124673ae460b1f45683da28c391b8b01",
+  "etag": "\"1790721553-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 22:39:13 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-18A694498B7D10\\20260930T044643.920742Z_117e16dc2b72c566.html",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

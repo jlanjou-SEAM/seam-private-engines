@@ -1,0 +1,1012 @@
+{
+  "season": {
+    "name": "季節予報",
+    "enName": "Seasonal Forecasts",
+    "namespace": "Season",
+    "snippet": "季節予報（1か月予報、3か月予報、暖・寒候期予報）を地図表示で確認できます。",
+    "enSnippet": "Seasonal forecasts (climate outlooks up to six months ahead) in map form",
+    "gps": 8,
+    "selectorFileName": "season.json",
+    "defaultHash": {
+      "elem": "temperature",
+      "pattern": "P1M",
+      "term": "0"
+    },
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 7,
+      "baseMaps": [
+        {
+          "type": "jma-base",
+          "zindex": 20,
+          "name": "basemap"
+        }
+      ]
+    },
+    "movie": true
+  },
+  "information": {
+    "name": "気象防災速報・気象解説情報等",
+    "enName": "Weather Information",
+    "namespace": "Information",
+    "gps": 8,
+    "selectorFileName": "information.json",
+    "defaultHash": {
+      "element": "information"
+    },
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 11,
+      "baseMaps": [
+        {
+          "type": "jma-base",
+          "zindex": 20000,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "information_en": {
+    "enName": "Weather Information",
+    "namespace": "Information",
+    "gps": 8,
+    "selectorFileName": "information.json",
+    "defaultHash": {
+      "element": "information_en"
+    },
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 11,
+      "baseMaps": [
+        {
+          "type": "jma-base",
+          "zindex": 20000,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "tenkou": {
+    "name": "天候情報",
+    "enName": "Weather & climate Information",
+    "namespace": "Information",
+    "gps": 8,
+    "defaultHash": {
+      "element": "tenkou"
+    },
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 11,
+      "baseMaps": [
+        {
+          "type": "jma-base",
+          "zindex": 20000,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "heat": {
+    "name": "熱中症警戒アラート",
+    "enName": "Heat Stroke Alert",
+    "namespace": "Heat",
+    "snippet": "熱中症警戒アラートの発表状況を地図表示で確認できます。",
+    "enSnippet": "Heat Stroke Alerts in map form",
+    "gps": 8,
+    "selectorFileName": "dummy.json",
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 7,
+      "baseMaps": [
+        {
+          "type": "jma-base",
+          "zindex": 20000,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "tornado": {
+    "name": "気象防災速報・気象解説情報等",
+    "enName": "Weather Information",
+    "namespace": "Information",
+    "gps": 8,
+    "selectorFileName": "information.json",
+    "defaultHash": {
+      "element": "tornado"
+    },
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 11,
+      "baseMaps": [
+        {
+          "type": "jma-base",
+          "zindex": 20000,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "sokuhou": {
+    "name": "気象防災速報",
+    "enName": "Weather Alert",
+    "namespace": "Information",
+    "gps": 8,
+    "selectorFileName": "sokuhou.json",
+    "defaultHash": {
+      "element": "sokuhou"
+    },
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 11,
+      "baseMaps": [
+        {
+          "type": "jma-base",
+          "zindex": 20000,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "kaisetsu": {
+    "name": "気象解説情報",
+    "enName": "Weather Information",
+    "namespace": "Information",
+    "gps": 8,
+    "selectorFileName": "kaisetsu.json",
+    "defaultHash": {
+      "element": "kaisetsu"
+    },
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 11,
+      "baseMaps": [
+        {
+          "type": "jma-base",
+          "zindex": 20000,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "seawarning": {
+    "name": "海上警報・予報",
+    "enName": "Marine Warnings/Forecasts",
+    "namespace": "SeaWarning",
+    "snippet": "海上警報・予報（日本近海の船舶向けの気象に関する情報）の発表状況を地図表示で確認できます。",
+    "enSnippet": "Marine warnings and forecasts (weather information for ships in seas around Japan) in map form",
+    "gps": 8,
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 7,
+      "baseMaps": [
+        {
+          "type": "jma-green-class20s",
+          "zindex": -1,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "tidelevel": {
+    "name": "潮位観測情報",
+    "namespace": "TideLevel",
+    "snippet": "検潮所（潮位の観測地点）の地図ページです。",
+    "gps": 8,
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 11,
+      "baseMaps": [
+        {
+          "type": "jma-green-class20s",
+          "zindex": 20,
+          "name": "basemap-green-class20s",
+          "maxZoom": 7
+        },
+        {
+          "type": "jma-base",
+          "zindex": 20,
+          "name": "basemap-base",
+          "minZoom": 8
+        }
+      ]
+    }
+  },
+  "warning": {
+    "name": "気象警報・注意報",
+    "enName": "Weather Warnings/Advisories",
+    "namespace": "Warning",
+    "snippet": "気象警報・注意報（気象特別警報、土砂災害警戒情報も含みます）の発表状況を地図表示で確認できます。",
+    "enSnippet": "Weather warnings and advisories (including Emergency Warnings and Landslide Alert Information) in map form",
+    "gps": 8,
+    "selectorFileName": "warning.json",
+    "defaultHash": {
+      "elem": "all"
+    },
+    "movie": true,
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 11,
+      "baseMaps": [
+        {
+          "type": "jma-base",
+          "zindex": 20,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "probability": {
+    "name": "早期注意情報（警報級の可能性）",
+    "enName": "Probability of warnings",
+    "namespace": "Probability",
+    "snippet": "早期注意情報（警報級の可能性）の発表状況を地図表示で確認できます。",
+    "enSnippet": "Probability of warings in map form",
+    "gps": 7,
+    "selectorFileName": "probability.json",
+    "defaultHash": {
+      "elem": "all"
+    },
+    "movie": true,
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 7,
+      "baseMaps": [
+        {
+          "type": "jma-base",
+          "zindex": 20,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "forecast": {
+    "name": "天気予報",
+    "enName": "Daily Forecasts",
+    "namespace": "Forecast",
+    "snippet": "向こう1週間の天気予報について地図表示で確認できます。",
+    "enSnippet": "Daily weather forecasts for the week ahead in map form",
+    "gps": 8,
+    "movie": true,
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 10,
+      "baseMaps": [
+        {
+          "type": "jma-base",
+          "zindex": 20,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "amedas": {
+    "name": "アメダス",
+    "enName": "Observation Map",
+    "namespace": "Amedas",
+    "snippet": "アメダス（地域気象観測システム）による観測値を地図表示で確認できます。",
+    "enSnippet": "Weather observation data from AMeDAS (the Automated Meteorological Data Acquisition System) in map form",
+    "gps": 8,
+    "selectorFileName": "amedas.json",
+    "defaultHash": {
+      "elem": "temp"
+    },
+    "movie": true,
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 10,
+      "baseMaps": [
+        {
+          "type": "jma-green-cities",
+          "zindex": 20,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "volcano": {
+    "name": "噴火警報・噴火速報",
+    "enName": "Volcanic Warnings",
+    "namespace": "Volcano",
+    "snippet": "噴火警報・予報、噴火速報の発表状況や、噴火警戒レベルの状況を地図表示で確認できます。",
+    "enSnippet": "Volcanic Warnings/Forecasts, Eruption Notices and Volcanic Alert Levels in map form",
+    "gps": 8,
+    "mapProperty": {
+      "scale": true,
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 10,
+      "baseMaps": [
+        {
+          "type": "jma-green-cities",
+          "zindex": 2,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "ashfall": {
+    "name": "降灰予報",
+    "enName": "Volcanic Ash Fall Forecasts",
+    "namespace": "Ashfall",
+    "snippet": "降灰予報（火山噴火に伴い空から降ってくる火山灰の予報）を地図表示で確認できます。",
+    "enSnippet": "Volcanic Ash Fall Forecasts (lapilli, etc.) in map form",
+    "gps": 8,
+    "movie": true,
+    "mapProperty": {
+      "scale": true,
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 10,
+      "baseMaps": [
+        {
+          "type": "jma-green-cities",
+          "zindex": -1,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "wave": {
+    "name": "波浪観測情報",
+    "namespace": "Wave",
+    "snippet": "波浪観測による波の高さを地図表示で確認できます。",
+    "gps": 8,
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 7,
+      "gridLine": {
+        "interval" : 5
+      },
+      "baseMaps": [
+        {
+          "type": "jma-green-class20s",
+          "zindex": 0,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "himawari": {
+    "name": "気象衛星ひまわり",
+    "enName": "Satellite Imagery",
+    "namespace": "Himawari",
+    "snippet": "気象衛星ひまわりによる画像（雲や水蒸気の様子）をご覧いただけます。",
+    "enSnippet": "Himawari meteorological satellite cloud and water vapor imagery",
+    "gps": 8,
+    "selectorFileName": "himawari.json",
+    "defaultHash": {
+      "elem": "ir"
+    },
+    "movie": true,
+    "mapProperty": {
+      "options": {
+        "maxBounds": [
+          [
+            -80.0,
+            20.0
+          ],
+          [
+            80.0,
+            250.0
+          ]
+        ]
+      },
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "minZoom": 4,
+      "maxZoom": 6,
+      "baseMaps": []
+    }
+  },
+  "typhoon": {
+    "name": "台風情報",
+    "enName": "Tropical Cyclone Information",
+    "namespace": "Typhoon",
+    "snippet": "台風の情報（進路予測情報、位置情報、暴風域に入る確率等）を地図表示で確認できます。",
+    "enSnippet": "Tropical Cyclone Information (typhoon routes, locations, 50 kt wind probability, etc.) in map form",
+    "defaultHash": {
+      "elem": "root",
+      "typhoon": "all"
+    },
+    "selectorFileName": "typhoon.json",
+    "gps": 8,
+    "movie": true,
+    "mapProperty": {
+      "options": {
+        "maxBounds": [
+          [
+            -60.0,
+            20.0
+          ],
+          [
+            80.0,
+            250.0
+          ]
+        ]
+      },
+      "gridLine": {
+        "interval" : 5,
+        "zindex" : 30
+      },
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "minZoom": 4,
+      "maxZoom": 8,
+      "baseMaps": []
+    }
+  },
+  "radar": {
+    "name": "雨雲の動き（雨・雷・竜巻）",
+    "enName": "Precipitation Nowcasts",
+    "namespace": "Radar",
+    "gps": 8,
+    "mapProperty": {
+      "thinningMode":true,
+      "zxy": [
+        4,
+        34.5,
+        137
+      ],
+      "minZoom": 5,
+      "maxZoom": 10,
+      "baseMaps": [
+        {
+          "type": "jma-mesh",
+          "zindex": 30,
+          "name": "meshMap",
+          "noThinning":true
+        },{
+          "type": "gsi-pale2",
+          "zindex": 10,
+          "name": "gsiMap",
+          "options":{"className": "rain-bosaitop-gsi-map"},
+          "noThinning":true
+        }
+      ]
+    }
+  },
+  "kaikotan": {
+    "name": "今後の雨",
+    "enName": "Precipitation Analysis",
+    "namespace": "Kaikotan",
+    "gps": 8,
+    "mapProperty": {
+      "thinningMode":true,
+      "zxy": [
+        4,
+        34.5,
+        137
+      ],
+      "minZoom": 5,
+      "maxZoom": 10,
+      "baseMaps": [
+        {
+          "type": "jma-mesh",
+          "zindex": 30,
+          "name": "meshMap",
+          "noThinning":true
+        },{
+          "type": "gsi-pale2",
+          "zindex": 10,
+          "name": "gsiMap",
+          "options":{"className": "rain-bosaitop-gsi-map"},
+          "noThinning":true
+        }
+      ]
+    }
+  },
+  "sjfcst_map": {
+    "name": "線状降水帯予測マップ",
+    "enName": "線状降水帯予測マップ",
+    "namespace": "SjfcstMap",
+    "gps": 8,
+    "mapProperty": {
+      "thinningMode":true,
+      "zxy": [
+        4,
+        34.5,
+        137
+      ],
+      "minZoom": 5,
+      "maxZoom": 10,
+      "baseMaps": [
+        {
+          "type": "jma-mesh",
+          "zindex": 30,
+          "name": "meshMap",
+          "noThinning":true
+        },{
+          "type": "gsi-pale2",
+          "zindex": 10,
+          "name": "gsiMap",
+          "options":{"className": "rain-bosaitop-gsi-map"},
+          "noThinning":true
+        }
+      ]
+    }
+  },
+  "snow": {
+    "name": "今後の雪",
+    "enName": "Snow Analysis/Forecasts",
+    "namespace": "Snow",
+    "gps": 8,
+    "mapProperty": {
+      "thinningMode":true,
+      "zxy": [
+        4,
+        34.5,
+        137
+      ],
+      "minZoom": 5,
+      "maxZoom": 10,
+      "baseMaps": [
+        {
+          "type": "jma-mesh",
+          "zindex": 30,
+          "name": "meshMap",
+          "noThinning":true
+        },{
+          "type": "gsi-pale2",
+          "zindex": 10,
+          "name": "gsiMap",
+          "options":{"className": "rain-bosaitop-gsi-map"},
+          "noThinning":true
+        }
+      ]
+    }
+  },
+  "umimesh": {
+    "name": "海上分布予報",
+    "enName": "Distribution Marine Forecasts",
+    "namespace": "Umimesh",
+    "gps": 8,
+    "mapProperty": {
+      "thinningMode":true,
+      "zxy": [
+        4,
+        34.5,
+        137
+      ],
+      "minZoom": 5,
+      "maxZoom": 8,
+      "baseMaps": [
+        {
+          "type": "jma-mesh",
+          "zindex": 30,
+          "name": "meshMap",
+          "noThinning":true
+        },{
+          "type": "gsi-pale2",
+          "zindex": 10,
+          "name": "gsiMap",
+          "options":{"className": "rain-bosaitop-gsi-map"},
+          "noThinning":true
+        }
+      ]
+    }
+  },
+  "level_landslide": {
+    "name": "土砂キキクル",
+    "enName": "Risk Maps (Landslide)",
+    "namespace": "LevelLandslide",
+    "gps": 8,
+    "mapProperty": {
+      "thinningMode":true,
+      "zxy": [
+        4,
+        34.5,
+        137
+      ],
+      "minZoom": 5,
+      "maxZoom": 10,
+      "baseMaps": [
+        {
+          "type": "jma-mesh",
+          "zindex": 30,
+          "name": "meshMap",
+          "noThinning":true
+        },{
+          "type": "gsi-pale2",
+          "zindex": 10,
+          "name": "gsiMap",
+          "options":{"className": "rain-bosaitop-gsi-map"},
+          "noThinning":true
+        }
+      ]
+    }
+  },
+  "level_rain": {
+    "name": "大雨キキクル",
+    "enName": "Risk Maps (Heavy Rain)",
+    "namespace": "LevelRain",
+    "gps": 8,
+    "mapProperty": {
+      "thinningMode":true,
+      "zxy": [
+        4,
+        34.5,
+        137
+      ],
+      "minZoom": 5,
+      "maxZoom": 10,
+      "baseMaps": [
+        {
+          "type": "jma-mesh",
+          "zindex": 30,
+          "name": "meshMap",
+          "noThinning":true
+        },{
+          "type": "gsi-pale2",
+          "zindex": 10,
+          "name": "gsiMap",
+          "options":{"className": "rain-bosaitop-gsi-map"},
+          "noThinning":true
+        }
+      ]
+    }
+  },
+  "level_inundation": {
+    "name": "浸水キキクル",
+    "enName": "Risk Maps (Inundation)",
+    "namespace": "LevelInundation",
+    "gps": 8,
+    "mapProperty": {
+      "thinningMode":true,
+      "zxy": [
+        4,
+        34.5,
+        137
+      ],
+      "minZoom": 5,
+      "maxZoom": 10,
+      "baseMaps": [
+        {
+          "type": "jma-mesh",
+          "zindex": 30,
+          "name": "meshMap",
+          "noThinning":true
+        },{
+          "type": "gsi-pale2",
+          "zindex": 10,
+          "name": "gsiMap",
+          "options":{"className": "rain-bosaitop-gsi-map"},
+          "noThinning":true
+        }
+      ]
+    }
+  },
+  "level_flood": {
+    "name": "洪水キキクル",
+    "enName": "Risk Maps (Flood)",
+    "namespace": "LevelFlood",
+    "gps": 8,
+    "mapProperty": {
+      "thinningMode":true,
+      "zxy": [
+        4,
+        34.5,
+        137
+      ],
+      "minZoom": 5,
+      "maxZoom": 10,
+      "baseMaps": [
+        {
+          "type": "jma-mesh",
+          "zindex": 30,
+          "name": "meshMap",
+          "noThinning":true
+        },{
+          "type": "gsi-pale2",
+          "zindex": 10,
+          "name": "gsiMap",
+          "options":{"className": "rain-bosaitop-gsi-map"},
+          "noThinning":true
+        }
+      ]
+    }
+  },
+  "windprofiler": {
+    "name": "ウィンドプロファイラ",
+    "namespace": "WindProfiler",
+    "snippet": "ウィンドプロファイラによる上空の風の観測値を地図表示で確認できます。",
+    "gps": 8,
+    "movie": true,
+    "mapProperty": {
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 7,
+      "baseMaps": [
+        {
+          "type": "jma-green-cities",
+          "zindex": 5,
+          "name": "basemap"
+        }
+      ]
+    }
+  },
+  "pacifictsunami": {
+    "enName": "Northwest Pacific Tsunami Advisory",
+    "namespace": "PacificTsunami",
+    "gps": 8,
+    "defaultHash": {
+      "lang": "en"
+    },
+    "mapProperty": {
+      "baseMaps": [
+        {
+          "type": "gsi-english",
+          "zindex": 0,
+          "name": "english"
+        }
+      ],
+      "zxy": [
+        3,
+        5.0,
+        179.0
+      ],
+      "minZoom": 3,
+      "maxZoom": 5,
+      "options": {
+        "maxBounds": [
+          [
+            65,
+            300
+          ],
+          [
+            -60,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "tsunami": {
+    "name": "津波",
+    "enName":"Tsunami Warnings/Advisories",
+    "namespace": "Tsunami",
+    "snippet": "津波警報・注意報、津波情報、津波予報が地図上で確認できます。",
+    "enSnippet": "Tsunami Warnings/Advisories, Tsunami Information and Tsunami Forecasts in map form",
+    "gps": 8,
+    "selectorFileName": "tsunami.json",
+    "defaultHash": {
+      "elem": "warn"
+    },
+    "mapProperty": {
+      "baseMaps": [
+        {
+          "type": "jma-gray-cities",
+          "zindex": 10000,
+          "name": "basemap"
+        }
+      ],
+      "options": {
+        "maxBounds": [
+          [
+            -80.0,
+            -90.0
+          ],
+          [
+            80.0,
+            360.0
+          ]
+        ]
+      },
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "minZoom": 3,
+      "maxZoom": 8,
+      "scale": true
+    }
+  },
+  "earthquake_map": {
+    "name": "地震情報",
+    "enName": "Earthquake Information",
+    "namespace": "Quake",
+    "snippet": "地震情報を地図上で確認できます。",
+    "enSnippet": "Earthquake Information in map form",
+    "gps": 8,
+    "selectorFileName": "quake.json",
+    "defaultHash": {
+      "elem": "int"
+    },
+    "mapProperty": {
+      "baseMaps": [
+        {
+          "type": "gsi-pale2",
+          "zindex": 0,
+          "name": "basemap1"
+        },
+        {
+          "type": "jma-transparent-cities",
+          "zindex": 15000,
+          "name": "basemap2"
+        }
+      ],
+      "options": {
+        "maxBounds": [
+          [
+            -80.0,
+            -90.0
+          ],
+          [
+            80.0,
+            360.0
+          ]
+        ]
+      },
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "minZoom": 3,
+      "maxZoom": 11,
+      "scale": true
+    }
+  },
+  "ltpgm": {
+    "name": "長周期地震動",
+    "enName": "Long-period ground motion Information",
+    "namespace": "Ltpgm",
+    "snippet": "長周期地震動に関する観測情報を地図上で確認できます。",
+    "enSnippet": "Long-period ground motion Information in map form",
+    "gps": 8,
+    "mapProperty": {
+      "baseMaps": [
+        {
+          "type": "gsi-pale2",
+          "zindex": 0,
+          "name": "basemap1"
+        },
+        {
+          "type": "jma-transparent-cities",
+          "zindex": 15000,
+          "name": "basemap2"
+        }
+      ],
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "minZoom": 4,
+      "maxZoom": 11,
+      "scale": true
+    }
+  },
+  "estimated_intensity_map": {
+    "name": "推計震度分布",
+    "namespace": "EstimatedIntensityMap",
+    "snippet": "推計震度分布を地図上で確認できます。",
+    "gps": 8,
+    "mapProperty": {
+      "baseMaps": [
+        {
+          "type": "gsi-pale",
+          "zindex": 0,
+          "name": "basemap1"
+        },
+        {
+          "type": "jma-transparent-cities",
+          "zindex": 20000,
+          "name": "basemap2"
+        }
+      ],
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "maxZoom": 14,
+      "scale": true
+    }
+  },
+  "hypo": {
+    "name": "震央分布",
+    "namespace": "Hypo",
+    "snippet": "震央分布を地図上で確認できます。",
+    "gps": 8,
+    "movie": true,
+    "mapProperty": {
+      "baseMaps": [
+        {
+          "type": "gsi-hillshademap",
+          "zindex": 0,
+          "name": "basemap1"
+        },
+        {
+          "type": "jma-transparent-cities",
+          "zindex": 20000,
+          "name": "basemap2"
+        }
+      ],
+      "zxy": [
+        5,
+        34.5,
+        137
+      ],
+      "minZoom": 4,
+      "maxZoom": 11,
+      "scale": true
+    }
+  }
+}

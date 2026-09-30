@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-080338A7A66D6E",
+  "provider": "WeatherAPI.com",
+  "dataset": "weather_conditions.csv",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:42.501225Z",
+  "request_url": "https://www.weatherapi.com/docs/weather_conditions.csv",
+  "final_url": "https://www.weatherapi.com/docs/weather_conditions.csv",
+  "status_code": 200,
+  "content_type": "application/octet-stream",
+  "byte_length": 2754,
+  "sha256": "1a78eef19360ba660c50f7a0e71bdf3020b12972f3c9e456e20384395ae579d2",
+  "etag": "\"821a834511f7dc1:0\"",
+  "last_modified": "Mon, 08 Jun 2026 06:37:26 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-080338A7A66D6E\\20260930T040442.501225Z_1a78eef19360ba66.csv",
+  "parent_id": "WEATHERAPI",
+  "discovery_depth": 1
+}

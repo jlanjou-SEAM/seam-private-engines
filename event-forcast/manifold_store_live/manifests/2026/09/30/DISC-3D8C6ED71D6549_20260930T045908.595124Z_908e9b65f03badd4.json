@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-3D8C6ED71D6549",
+  "provider": "NOAA/NDBC",
+  "dataset": "POTA2.cwind",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:59:08.595124Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/POTA2.cwind",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/POTA2.cwind",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 260401,
+  "sha256": "908e9b65f03badd4a28b702a5d52d278b0384fa72ff797bb1764e8ff3bda646d",
+  "etag": "\"3f931-65cabe5a6b0c2\"",
+  "last_modified": "Wed, 30 Sep 2026 04:40:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-3D8C6ED71D6549\\20260930T045908.595124Z_908e9b65f03badd4.cwind",
+  "parent_id": "DISC-F3F08DBB3DFBA0",
+  "discovery_depth": 2
+}

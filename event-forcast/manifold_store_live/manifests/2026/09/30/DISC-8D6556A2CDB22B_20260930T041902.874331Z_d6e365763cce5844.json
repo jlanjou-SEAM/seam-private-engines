@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-8D6556A2CDB22B",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "enso-detection-and-monitoring-depends-data",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:02.874331Z",
+  "request_url": "https://www.ncei.noaa.gov/news/enso-detection-and-monitoring-depends-data",
+  "final_url": "https://www.ncei.noaa.gov/news/enso-detection-and-monitoring-depends-data",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 53503,
+  "sha256": "d6e365763cce584430920a30355d1f36b577a23934cf0ef8d590f272d749132b",
+  "etag": "\"1790717268-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:27:48 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-8D6556A2CDB22B\\20260930T041902.874331Z_d6e365763cce5844.html",
+  "parent_id": "DISC-12F9502270D672",
+  "discovery_depth": 2
+}

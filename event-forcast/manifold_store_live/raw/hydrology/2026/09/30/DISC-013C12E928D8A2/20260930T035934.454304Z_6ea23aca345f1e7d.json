@@ -1,0 +1,54 @@
+{
+    "@context": [
+        {
+            "schema": "https://schema.org/",
+            "type": "@type",
+            "features": "schema:itemListElement",
+            "FeatureCollection": "schema:itemList"
+        }
+    ],
+    "type": "FeatureCollection",
+    "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/field-measurements-metadata",
+    "features": [
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/field-measurements-metadata/items/00000438-86c8-4c9c-9183-6ac2bebffea5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/field-measurements-metadata/items/00000a39-c588-49a1-9422-3df66c980394"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/field-measurements-metadata/items/00001437-16cb-4b3d-8bad-64ad8a499959"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/field-measurements-metadata/items/0000144c-ff3c-4f70-a4b8-029dd3014b39"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/field-measurements-metadata/items/00001619-f7e7-4b1f-9a50-7608162a4642"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/field-measurements-metadata/items/00001c34-4bdc-4374-9bfc-2f27b22973f1"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/field-measurements-metadata/items/00002086-91c0-46b0-921f-ea834ed1f5a3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/field-measurements-metadata/items/00002c51-967b-4294-a85c-0cb20ef6707b"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/field-measurements-metadata/items/00002d33-3c11-44cd-9bd2-5ed5a21b498a"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/field-measurements-metadata/items/00002e25-d90b-4c29-b569-e53d05d2dd62"
+        }
+    ]
+}

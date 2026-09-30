@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-ACA962E8AC8B0A",
+  "provider": "NOAA/NCEI",
+  "dataset": "foggy-valley.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:11.186120Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2025-09/foggy-valley.jpg",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2025-09/foggy-valley.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 27560,
+  "sha256": "ffe555a025c6cee025dee1f27c0328a2c1a655fb437ffd239c58f2d90ca202f5",
+  "etag": null,
+  "last_modified": "Fri, 19 Sep 2025 18:41:15 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-ACA962E8AC8B0A\\20260930T044711.186120Z_ffe555a025c6cee0.jpg",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

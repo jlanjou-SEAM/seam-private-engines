@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-4BB25E3EB43191",
+  "provider": "NOAA/NDBC",
+  "dataset": "NLXA2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:04:07.245364Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/NLXA2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/NLXA2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 610436,
+  "sha256": "f4f7f681f5211769a8fe79b944db5cbc46ab24eddde47535ae2010c0a0a4a7e7",
+  "etag": "\"95084-65cac2d4a76b5\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-4BB25E3EB43191\\20260930T050407.245364Z_f4f7f681f5211769.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-849917944D81BA",
+  "provider": "NOAA/SWPC",
+  "dataset": "gong",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:36.191629Z",
+  "request_url": "https://services.swpc.noaa.gov/products/gong/?C=N;O=D",
+  "final_url": "https://services.swpc.noaa.gov/products/gong/?C=N;O=D",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 1048,
+  "sha256": "0f7019ce00d590b3a028bab4c6222f48d9edd92b2b99ab2ebcfb33800ec3ee69",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-849917944D81BA\\20260930T041836.191629Z_0f7019ce00d590b3.html",
+  "parent_id": "DISC-BBC29E6791CFA8",
+  "discovery_depth": 2
+}

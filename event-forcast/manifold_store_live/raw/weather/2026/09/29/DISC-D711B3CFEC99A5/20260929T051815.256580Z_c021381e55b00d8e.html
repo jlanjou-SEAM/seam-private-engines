@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NCEI Search, Discovery, &amp; Data Access</title>
+    <link rel="shortcut icon" href="/access/search/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="/access/search/js/drupalalert.js" defer></script>
+    <link href="/access/search/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+<link href="/access/search/css/documentation.css" rel="stylesheet">
+
+<script src="/access/search/js/documentation.js" defer></script>
+</head>
+<body>
+<script>
+    function toggle() {
+        const govBanner = document.getElementById("gov-banner");
+        if (govBanner.style.display === "none") {
+            govBanner.style.display = "block";
+        } else {
+            govBanner.style.display = "none";
+        }
+    }
+</script>
+<a class="visually-hidden-focusable" href="#main-content">Skip to main content</a>
+<div class="text-sm" style="background-color: #f0f0f0;">
+        <header>
+            <div class="container mx-auto px-4">
+                <div class="d-flex justify-content-center align-items-center gap-2">
+                    <img
+                            src="https://designsystem.digital.gov/assets/img/us_flag_small.png"
+                            alt="U.S. flag"
+                            class="w-auto"
+                            style="height: 10px;"
+                    />
+                    <span style="color: #565c65;">
+                          An official website of the United States government
+                    </span>
+
+                    <button
+                            class="btn ml-auto py-1"
+                            style="color: #005ea2;"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#gov-banner"
+                            aria-expanded="false"
+                            aria-controls="gov-banner"
+                    >
+                        Here's how you know
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div id="gov-banner" class="collapse">
+            <div class="pt-4 pb-8" style="background-color: #f0f0f0">
+                <div class="container mx-auto px-4">
+                    <div class="d-flex">
+                        
+                        <div class="d-flex align-items-start p-2">
+                            <img
+                                    src="https://designsystem.digital.gov/assets/img/icon-dot-gov.svg"
+                                    class="p-2"
+                                    alt="Dot gov"
+                                    style=""
+                            />
+                            <div class="p-2">
+                                <p class="mb-1" style="font-weight: bold;">The .gov means it’s official.</p>
+                                <p>
+                                    Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+                                </p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="d-flex align-items-start p-2">
+                            <img
+                                    src="https://designsystem.digital.gov/assets/img/icon-https.svg"
+                                    class="p-2"
+                                    alt="Https"
+                                    style=""
+                            />
+                            <div class="p-2">
+                                <p class="mb-1" style="font-weight: bold;">The site is secure.</p>
+                                <p class="">
+                                    The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<header>
+    <nav class="navbar container-fluid d-flex" style="background-color: #162e51">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.ncei.noaa.gov" alt="NCEI Home" title="NCEI Home" rel="home">
+            <img src="/access/search/img/logo.svg"
+            alt="National Centers for Environmental Information"
+            title="National Centers for Environmental Information logo" width="320px"
+            />
+            </a>
+        </div>
+    </nav>
+    <nav role="navigation" class="navbar container-fluid" style="background-color: #0076d6;">
+        <div class="container-fluid">
+            <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb" class="mt-3 d-flex align-items-center mb-3 mb-md-0 me-md-auto"><ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="/access/search/" id="access" class="link"><strong>NCEI Search, Discovery, &amp; Data Access</strong></a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="/access/search/documentation/" id="access" class="link"><strong>Documentation</strong></a>
+      </li>
+  <li class="breadcrumb-item">
+    <a href="/access/search/documentation/search-service/" id="collection" class="link">
+      <strong>
+      Search Service
+      </strong>
+    </a>
+  </li>
+</ol>
+
+<style>
+  .breadcrumb {
+      --bs-breadcrumb-divider-color: white;
+      --bs-breadcrumb-item-active-color: white;
+
+      a {
+          text-decoration: none;
+          color: white;
+
+          &:hover, &:focus {
+              text-decoration: underline;
+              text-decoration-thickness: 1px;
+              text-underline-offset: 5px;
+          }
+      }
+  }
+
+
+</style>
+</nav>
+            <nav><ul class="nav">
+    <li class="nav-item dropdown ">
+        <a class="btn api-dropdown nav-link dropdown-toggle"
+           id="apiDocumentationDropdownMenu"
+           href="/access/search/documentation"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            <i class="bi bi-stack"></i>
+            <strong>
+                API Documentation
+            </strong>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="/access/search/documentation/data-service/" class="text-nowrap text-decoration-none dropdown-item">
+                    Data Service
+                </a>
+                
+                <a href="/access/search/documentation/order-service/" class="text-nowrap text-decoration-none dropdown-item">
+                    Order Service
+                </a>
+                
+                <a href="/access/search/documentation/search-service/" class="text-nowrap text-decoration-none dropdown-item">
+                    Search Service
+                </a>
+                
+                <a href="/access/search/documentation/support-service/" class="text-nowrap text-decoration-none dropdown-item">
+                    Support Service
+                </a>
+                
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-pages">
+        <a
+                href="/access/search/order-status"
+        id="order"
+        class="text-nowrap"
+        >
+        <i class="bi bi-check-circle-fill me-1"></i>
+        <strong>
+            Order Status
+        </strong>
+        </a>
+    </li>
+    <li class="nav-item nav-pages">
+        
+        <div id="cartbutton" cartURL="/access/search/cart"></div>
+    </li>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<style>
+    .nav-pages a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+
+        &:hover, &:focus {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 5px;
+        }
+    }
+
+    .api-dropdown {
+        text-decoration: none;
+        color: white;
+        --bs-btn-color: white;
+        --bs-btn-bg: #0076d6;
+        --bs-btn-border-color: #0076d6;
+        --bs-btn-hover-color: white;
+        --bs-btn-hover-bg: #005396;
+        --bs-btn-hover-border-color: #005396;
+        --bs-btn-active-color: white;
+        --bs-btn-active-bg: #003b6b;
+        --bs-btn-active-border-color: #003b6b;
+
+        &:hover, &:focus {
+            text-decoration: none;
+            color: white;
+        }
+
+        a {
+            color: black;
+        }
+    }
+
+
+</style>
+</nav>
+        </div>
+
+    </nav>
+    <div id="ncei-alert" class="container-fluid alert alert-danger m-0 d-flex flex-column align-items-center visually-hidden"></div>
+</header>
+<script src="https://touchpoints.app.cloud.gov/touchpoints/971ed9fd.js" async></script>
+<style>
+    .navbar-brand {
+        display: flex;
+        padding: 19px 0 14.25px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+</style>
+
+
+
+
+<div class="container-fluid">
+    <div class="row header">
+        <div class="documentation-banner col pt-3 ps-3">
+            <h2 style="color: white;">NCEI Access APIs User Documentation</h2>
+            <p style="color: white;" class="lead">
+                View user documentation on how to use our various APIs.
+            </p>
+
+        </div>
+        <div class="documentation-navbar">
+            <div>
+                <div class="d-flex justify-content-around m-2">
+                    
+                    <a href="/access/search/documentation/data-service/" class="text-nowrap" aria-label="Access Data Retrieval Service Documentation">
+                        Data Service
+                    </a>
+                    
+                    <a href="/access/search/documentation/order-service/" class="text-nowrap" aria-label="Access Order Service Documentation">
+                        Order Service
+                    </a>
+                    
+                    <a href="/access/search/documentation/search-service/" class="text-nowrap" aria-label="Access Search Service Documentation">
+                        Search Service
+                    </a>
+                    
+                    <a href="/access/search/documentation/support-service/" class="text-nowrap" aria-label="Access Support Service Documentation">
+                        Support Service
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Access Search Service Documentation -->
+<div class="container-fluid">
+    <div class="documentation">
+        <div id="AccessSearchServiceDocumentation">
+            <div class="mx-3 my-4">
+                <h1>Access Search Service</h1>
+            </div>
+            <div class="mx-3 mb-5">
+                <h2>Overview</h2>
+                <p>
+                    The National Centers for Environmental Information (NCEI) Common Access Search Service provides a
+                    RESTful application programming interface (API) to discover datasets and data based on a set of
+                    parameters
+                    to the <strong> v1/datasets </strong> or <strong> v1/data </strong> URLs, respectively. The NCEI
+                    Common
+                    Access Search Service is only available via HTTP Strict Transport Security (
+                    <a class="icon-link" href="https://tools.ietf.org/html/rfc6797" target="_blank"
+                       rel="noopener nofollow" aria-label="Learn about HTTP Strict Transport Security (HSTS) specification, opens in a new window">
+                        HSTS specification
+                        <svg xmlns="http://www.w3.org/2000/svg" width=".7em" height=".7em" fill="currentColor"
+                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" aria-hidden="true"
+                             role="img">
+                            <path fill-rule="evenodd"
+                                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                            <path fill-rule="evenodd"
+                                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                        </svg>
+                    </a>
+                    ) following
+                    <a class="icon-link" href="https://https.cio.gov/" target="_blank" rel="noopener nofollow"
+                       aria-label="Read Federal Government Policy on HTTPS requirements, opens in a new window">
+                        Federal Government HTTPS Policy
+                        <svg xmlns="http://www.w3.org/2000/svg" width=".7em" height=".7em" fill="currentColor"
+                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" aria-hidden="true"
+                             role="img">
+                            <path fill-rule="evenodd"
+                                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                            <path fill-rule="evenodd"
+                                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                        </svg>
+                    </a>.
+                    Requests use HTTP 1.1
+                    <a class="icon-link" href="https://tools.ietf.org/html/rfc2616#section-9.3" target="_blank"
+                       rel="noopener nofollow" aria-label="Learn about HTTP GET method specification, opens in a new window">
+                        GET method specification
+                        <svg xmlns="http://www.w3.org/2000/svg" width=".7em" height=".7em" fill="currentColor"
+                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" aria-hidden="true"
+                             role="img">
+                            <path fill-rule="evenodd"
+                                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                            <path fill-rule="evenodd"
+                                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                        </svg>
+                    </a>
+                    request and results are formatted as JavaScript Object Notation (
+                    <a class="icon-link" href="https://tools.ietf.org/html/rfc7159" target="_blank"
+                       rel="noopener nofollow" aria-label="Learn about JSON data format specification, opens in a new window">
+                        JSON specification
+                        <svg xmlns="http://www.w3.org/2000/svg" width=".7em" height=".7em" fill="currentColor"
+                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" aria-hidden="true"
+                             role="img">
+                            <path fill-rule="evenodd"
+                                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                            <path fill-rule="evenodd"
+                                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                        </svg>
+                    </a>
+                    ) that contains a results array property.
+                </p>
+            </div>
+
+            <div class="mx-3 mb-5">
+                <h2>Dataset Search Endpoint</h2>
+                <p>
+                    Dataset searches use the <strong> v1/datasets </strong> endpoint to locate datasets available
+                    through
+                    the NCEI Common Access Search Service.
+                </p>
+            </div>
+
+
+            <div class="mx-3 mb-5">
+                <h3>Dataset Search Request Endpoint Parameters</h3>
+                <p>
+                    The NCEI Common Access Search Service dataset search endpoint allows several parameters to select
+                    and retrieve datasets based on the requested search terms passed to the service. The request
+                    parameters are passed using a GET request.
+                </p>
+            </div>
+
+            <div class="mx-3 mb-5">
+                <!-- Temporal Range Parameter -->
+                <h4>Dataset Temporal Range — <code> startDate/endDate </code></h4>
+                <p>
+                    This is the date to select datasets whose period of record (PoR) starts on or after the given
+                    startDate. This parameter is an
+                    <a class="icon-link" href="https://www.iso.org/standard/40874.html" target="_blank"
+                       rel="noopener nofollow" aria-label="Learn about ISO 8601 date and time format standard, opens in a new window">
+                        ISO 8601 date and time format standard
+                        <svg xmlns="http://www.w3.org/2000/svg" width=".7em" height=".7em" fill="currentColor"
+                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" aria-hidden="true"
+                             role="img">
+                            <path fill-rule="evenodd"
+                                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                            <path fill-rule="evenodd"
+                                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                        </svg>
+                    </a>
+                    date (YYYY-MM-DD) -or- ISO 8601 combined date and time format (YYYY-MM-DDTHH:mm:ss).
+                    If using an ISO 8601 combined date and time format, <strong> the T that separates the time is
+                    NOT optional </strong> . The ISO 8601 combined date and time also supports optional time zone
+                    representations. Use Z or z for UTC and +HH:mm or -HH:mm for the offset from UTC. The start and end
+                    dates
+                    are not required. The startDate must come before the endDate parameter. Some datasets are averages
+                    over time
+                    and may ignore parts of a date.
+                </p>
+                <p>ISO 8601 date format examples:</p>
+                <div class="date-example mb-4">
+                    <strong>
+                        1776-07-04
+                        <br>
+                        1941-12-07
+                    </strong>
+                </div>
+                <p>ISO 8601 combined date and time examples:</p>
+                <div class="date-example mb-4">
+                    <strong>
+                        2001-11-02T12:45:00Z
+                        <br>
+                        2001-11-02T12:45:00z
+                        <br>
+                        2001-11-02T08:45:00+04:00
+                    </strong>
+                </div>
+                <section class="api-parameter p-1 mb-4">
+                    ...<code><strong>&startDate=1941-12-07T09:31:20z</strong></code>
+                </section>
+                <p>
+                    For UTC hour and minute offsets ( <strong> HH:mm </strong> ),
+                    the plus symbol (+) must be URL encoded as " <strong> %2B </strong> "
+                    or it will not validate:
+                </p>
+                <section class="api-parameter p-1 mb-4">
+                    ...<code><strong>&startDate=2009-01-27T08:45:00%2B04:00</strong></code>
+                </section>
+                <section class="api-parameter p-1 mb-4">
+                    ...<code><strong>&endDate=1945-07-12</strong></code>
+                </section>
+            </div>
+
+            <div class="mx-3 mb-5">
+                <!-- Bounding Box Parameter -->
+                <h4>Bounding Box (N,W,S,E) — <code> bbox </code></h4>
+                <p>
+                    The bounding box is used to select data from a geographic location contained within the
+                    coordinates, given as four comma separated numbers. North and South range from -90 to 90
+                    and East and West range from -180 to 180. If these are not set the geographic extent defaults
+                    to the entire globe (90,-180,-90,180).
+                </p>
+                <section class="api-parameter p-1 mb-4">
+                    ...<code><strong>&bbox=49.795,-2.073,49.183,-0.992</strong></code>
+                </section>
+            </div>
+
+            <div class="mx-3 mb-5">
+                <!-- Keywords Parameter -->
+                <h4>Keywords — <code> keywords </code></h4>
+                <p>
+                    A comma separated list of Global Change Master Directory (
+                    <a class="icon-link" href="https://earthdata.nasa.gov/about/gcmd" target="_blank"
+                       rel="noopener nofollow" aria-label="Learn about Global Change Master Directory (GCMD) keywords, opens in a new window">
+                        GCMD
+                        <svg xmlns="http://www.w3.org/2000/svg" width=".7em" height=".7em" fill="currentColor"
+                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" aria-hidden="true"
+                             role="img">
+                            <path fill-rule="evenodd"
+                                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                            <path fill-rule="evenodd"
+                                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                        </svg>
+                    </a> )
+                    Keywords or other terms that can be used to locate datasets. The keywords that are available come
+                    from the
+                    <a class="icon-link" href="https://www.iso.org/standard/39229.html" target="_blank"
+                       rel="noopener nofollow" aria-label="Learn about ISO 19115-2 metadata standard, opens in a new window">
+                        ISO 19115-2
+                        <svg xmlns="http://www.w3.org/2000/svg" width=".7em" height=".7em" fill="currentColor"
+                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" aria-hidden="true"
+                             role="img">
+                            <path fill-rule="evenodd"
+                                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                            <path fill-rule="evenodd"
+                                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                        </svg>
+                    </a>
+                    metadata records. A full list is available from the service in an empty query in the <strong>keywords
+                    bucket</strong> array. The complete list of GCMD keywords are available as an XML document
+                    <a class="icon-link"
+                       href="https://gcmdservices.gsfc.nasa.gov/kms/concepts/concept_scheme/sciencekeywords"
+                       target="_blank" rel="noopener nofollow" aria-label="Download complete GCMD keyword list in XML format, opens in a new window">
+                        from the GCMD Science Keywords service
+                        <svg xmlns="http://www.w3.org/2000/svg" width=".7em" height=".7em" fill="currentColor"
+                             class="bi bi-box-arrow-up-right" viewBox="0 0 16 16" aria-hidden="true"
+                             role="img">
+                            <path fill-rule="evenodd"
+                                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                            <path fill-rule="evenodd"
+                                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                        </svg>
+                    </a>
+                    . Here is an example of the keyword parameter.
+                </p>
+                <section class="api-parameter p-1 mb-4">
+                    ...<code><strong>&keywords=precipitation</strong></code>
+                </section>
+            </div>
+
+            <div class="mx-3 mb-5">
+                <!-- Text Parameter -->
+                <h4>Text — <code> text </code></h4>
+                <p>
+                    The text parameter used to locate datasets by matching the terms of the dataset name and
+                    description.
+                </p>
+                <section class="api-parameter p-1 mb-4">
+                    ...<code><strong>&text=rain</strong></code>
+                </section>
+            </div>
+
+            <div class="mx-3 mb-5">
+                <!-- Available Parameter -->
+                <h4>Available — <code> available </code></h4>
+                <p>
+                    A boolean (true or false) used to locate datasets based on whether they are available in the
+                    Data Search Endpoint.
+                </p>
+                <section class="api-parameter p-1 mb-4">
+                    ...<code><strong>&available=true</strong></code>
+                </section>
+            </div>
+
+            <div class="mx-3 mb-5">
+                <!------- Example Requests Section ------->
+                <h2>Dataset Search Example Request</h2>
+                <p>
+                    Below are full URL examples of API requests to the NCEI Common Access Search Service using different datasets. The URLs include the request
+                    endpoint and any request endpoint parameters that are being passed to the service. A successful response will open raw data in the browser.
+                </p>
+                <h5> Example Request URL for the Daily Summary Precipitation Data: </h5>
+                <section class="api-parameter p-1 mb-4">
+                    <a href="https://www.ncei.noaa.gov/access/services/search/v1/data?dataset=daily-summaries&startDate=2010-01-01T00:00:00&endDate=2016-12-31T23:09:59&bbox=35.462327,-82.563951,35.412327,-82.513951&dataTypes=PRCP&stations=USW00003812&limit=10&offset=0"
+                       class="api-link" aria-label="Example search request for daily summary precipitation data from specific weather station">
+                        https://www.ncei.noaa.gov/access/services/search/v1/data?dataset=daily-summaries&startDate=2010-01-01T00:00:00&endDate=2016-12-31T23:09:59&bbox=35.462327,-82.563951,35.412327,-82.513951&dataTypes=PRCP&stations=USW00003812&limit=10&offset=0
+                    </a>
+                </section>
+                <h5> Example Request URL for the Global Hourly Temperature Data: </h5>
+                <section class="api-parameter p-1 mb-4">
+                    <a href="https://www.ncei.noaa.gov/access/services/search/v1/data?dataset=global-hourly&startDate=2016-01-01T00:00:00&endDate=2017-12-31T23:59:59&dataTypes=TMP&limit=10&offset=90"
+                       class="api-link" aria-label="Example search request for global hourly temperature data with pagination">
+                        https://www.ncei.noaa.gov/access/services/search/v1/data?dataset=global-hourly&startDate=2016-01-01T00:00:00&endDate=2017-12-31T23:59:59&dataTypes=TMP&limit=10&offset=90
+                    </a>
+                </section>
+            </div>
+
+            <div class="mx-3 mb-5">
+                <h2>Search Request Responses</h2>
+                <p>
+                    The NCEI Common Access Search Service returns HTTP/1.1 status codes and response headers
+                    depending on the request and service status. These responses follow RFC 2616 (Fielding, et al).
+                </p>
+                <h4>400 - Bad Request</h4>
+                <p>
+                    The request is malformed and needs to be modified in order to execute. The response headers
+                    contain the correct <strong>HTTP/1.1 400 Bad Request</strong> and provide a JSON response.
+                </p>
+                <section class="api-parameter mb-4 p-3">
+                    <code>
+                        <strong>
+                            {
+                            <br>
+                            &nbsp; errorMessage: "Bad Request",
+                            <br>
+                            &nbsp; errorCode: 400,
+                            <br>
+                            &nbsp; errors: [
+                            <br>
+                            &nbsp;&nbsp;&nbsp; {
+                            <br>
+                            <br>
+                            &nbsp;&nbsp;&nbsp; }
+                            <br>
+                            &nbsp; ]
+                            <br>
+                            }
+                        </strong>
+                    </code>
+                </section>
+                <h4>500 - Internal Server Error</h4>
+                <p>The 500 response code is returned when there is an issue with the service.</p>
+                <section class="api-parameter mb-4 p-3">
+                    <code>
+                        <strong>
+                            {
+                            <br>
+                            &nbsp; errorMessage: "An unexpected error occurred while servicing your request.",
+                            <br>
+                            &nbsp; errorCode: 500
+                            <br>
+                            }
+                        </strong>
+                    </code>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+  <div class="main-content">
+    <div class="col-lg-6 mb-3">
+      <a href="/" alt="Home" title="Home" rel="home" class="d-flex align-items-center">
+        <img src="/access/search/img/logo.svg" class="logo-footer mx-auto"
+        alt="National Centers for Environmental Information"
+        title="National Centers for Environmental Information logo" />
+      </a>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <div class="col-lg-3 mb-3">
+      <h5>Follow Us</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="https://www.facebook.com/NOAANCEI/" class="facebook"
+             title="Link to @NOAANCEI Facebook">@NOAANCEI</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.instagram.com/noaadata/" class="instagram"
+             title="Link to @NOAAData Instagram">@NOAAData</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://twitter.com/NOAANCEI" class="twitter" title="Link to @NOAANCEI Twitter">@NOAANCEI</a>
+        </li>
+        <li class="nav-item">
+          <a href="/news.xml" class="rss" title="Link to subscribe to NCEI News Feed">News Feed</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-lg-3 mb-3">
+      <h5>Contact Us</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="mailto:ncei.info@noaa.gov" class="nav-link mailto" title="Contact NCEI NOAA via email"
+             data-extlink="">
+            Email: ncei.info@noaa.gov
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="tel:18282714800" class="nav-link" title="Call NCEI NOAA 828-271-4800">Phone: (828)
+            271-4800</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav
+    role="navigation"
+    class="nesdis-links"
+  >
+    <ul class="container">
+      <li>
+        <a href="/privacy" class="nav-link" data-drupal-link-system-path="node/106">
+          Privacy Policy
+        </a>
+      </li>
+      <li>
+        <a href="http://www.rdc.noaa.gov/~foia/" class="nav-link">
+          Freedom of Information Act
+        </a>
+      </li>
+      <li>
+        <a
+          href="http://www.cio.noaa.gov/services_programs/info_quality.html"
+          class="nav-link"
+        >
+          Information Quality
+        </a>
+      </li>
+      <li>
+        <a href="http://www.noaa.gov/disclaimer.html" class="nav-link">Disclaimer</a>
+      </li>
+      <li>
+        <a href="http://www.ncdc.noaa.gov/survey" class="nav-link">Take Our Survey</a>
+      </li>
+      <li>
+        <a href="http://www.commerce.gov/" class="nav-link">Department of Commerce</a>
+      </li>
+      <li>
+        <a href="http://www.noaa.gov/" class="nav-link">NOAA</a>
+      </li>
+      <li>
+        <a href="http://www.nesdis.noaa.gov/" class="nav-link">NESDIS</a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+
+
+<style>
+    footer {
+        background-color: #162e51;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        * {
+            font-size: 1rem;
+            color: white;
+        }
+
+        h5 {
+            font-size: 1.25rem;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 3rem 0 3rem 0;
+
+            .nav-link {
+                color: #9bdaf1;
+                padding: .1rem 0;
+            }
+
+            .nav-item {
+                margin-bottom: .25rem;
+            }
+
+            svg.mailto {
+                width: 16px;
+                height: 16px;
+                padding-right: 0.2em;
+                fill: #0076d6;
+            }
+
+            .logo-footer {
+                width: 320px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            a {
+                color: #9bdaf1;
+                text-decoration: none;
+
+                &:hover, &:focus {
+                    text-decoration: underline;
+                    text-underline-offset: .25em;
+                }
+
+                &svg{
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &[href^="mailto:"]::after {
+                    background: url("/access/search/icons/extlink_s.png") no-repeat -22px center transparent;
+                    width: 10px;
+                    height: 10px;
+                    padding-left: 12px !important;
+                    text-decoration: none;
+                    display: inline-block;
+                    content: "";
+                    margin-left: 2px;
+                }
+
+                &[href^="tel:"]::after {
+                    background: url("/access/search/icons/extlink_s.png") no-repeat -42px center transparent;
+                    width: 10px;
+                    height: 10px;
+                    padding-left: 12px !important;
+                    text-decoration: none;
+                    display: inline-block;
+                    content: "";
+                    margin-left: 2px;
+                }
+
+                &:after {
+                    margin-left: 5px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    content: " ";
+                    overflow: visible;
+                }
+
+                &.facebook:after {
+                    background-image: url("/access/search/icons/facebook25.svg");
+                    background-size: 26px 26px;
+                }
+
+                &.instagram:after {
+                    background-image: url("/access/search/icons/instagram.svg");
+                    background-size: 15px 15px;
+                }
+
+                &.twitter:after {
+                    background-image: url("/access/search/icons/twitter16.svg");
+                    background-size: 28px 28px;
+                }
+
+                &.rss:after {
+                    background-image: url("/access/search/icons/rss25.svg");
+                    background-size: 22px 22px;
+                }
+            }
+        }
+
+
+        .nesdis-links {
+            background-color: #071628;
+
+            ul {
+                list-style-type: "|   ";
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                padding: .5rem 0;
+                gap: 2rem;
+
+                li:first-child {
+                    list-style-type: none;
+                }
+
+                a {
+                    color: #ffffff;
+
+                    &:hover {
+                        color: #face00
+                    }
+
+                    &:focus {
+                        outline: 2px solid white;
+                        outline-offset: 2px;
+                        border-radius: 6px;
+                        color: #d9d9d9;
+                    }
+
+
+                }
+            }
+
+
+
+
+        }
+    }
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1Q1BML6E5"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E1Q1BML6E5');
+</script>
+<script async src="https://siteimproveanalytics.com/js/siteanalyze_6294131.js"></script>
+<script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script></body>
+</html>

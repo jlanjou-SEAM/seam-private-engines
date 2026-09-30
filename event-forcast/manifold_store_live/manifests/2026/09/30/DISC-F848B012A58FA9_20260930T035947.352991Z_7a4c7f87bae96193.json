@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F848B012A58FA9",
+  "provider": "NOAA/NDBC",
+  "dataset": "22101.drift",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T03:59:47.352991Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/22101.drift",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/22101.drift",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 95319,
+  "sha256": "7a4c7f87bae96193b523a6c132363c95eeeafc8f30ff00e86444c10072843d8a",
+  "etag": "\"17457-65caad9758e12\"",
+  "last_modified": "Wed, 30 Sep 2026 03:25:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-F848B012A58FA9\\20260930T035947.352991Z_7a4c7f87bae96193.drift",
+  "parent_id": "NDBC-REALTIME2",
+  "discovery_depth": 1
+}

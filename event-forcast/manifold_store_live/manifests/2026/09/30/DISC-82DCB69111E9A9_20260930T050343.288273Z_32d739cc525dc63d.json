@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-82DCB69111E9A9",
+  "provider": "NOAA/NDBC",
+  "dataset": "OTNM4.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:03:43.288273Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/OTNM4.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/OTNM4.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 611000,
+  "sha256": "32d739cc525dc63d22f4dfd9d8f55c85d14f0a318154fb2164f7ebed203ebf86",
+  "etag": "\"952b8-65cac1bbbf219\"",
+  "last_modified": "Wed, 30 Sep 2026 04:55:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-82DCB69111E9A9\\20260930T050343.288273Z_32d739cc525dc63d.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

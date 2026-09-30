@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NCEI Search, Discovery, &amp; Data Access</title>
+    <link rel="shortcut icon" href="/access/search/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="/access/search/js/drupalalert.js" defer></script>
+    <link href="/access/search/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.7/d3-tip.min.js"></script>
+<script src="/access/search/js/jsonld-vis.js"></script>
+<link rel="stylesheet" type="text/css" href="/access/search/css/jsonld-vis.css">
+
+<script type="application/ld+json" id="jsonldhead">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Dataset",
+        "@id": "global-historical-climatology-network-hourly",
+        "name": "Global Historical Climatology Network Hourly",
+        "description":  "Global Historical Climatology Network-hourly (GHCNh) is a multisource collection of weather station (meteorological) observations from the late 18th Century to the present from fixed weather stations over land across the globe. It is replacing the Integrated Surface Dataset (ISD) and will be used to generate the Local Climatological Data and Global Summary of the Day datasets. It is constructed to align with GHCN daily. Version 1 contains approximately 110 separate data sources and will be updated daily using the United States Air Force and NOAA Surface Weather Observations data streams. GHCNh v1 contains the following variables: altimeter; dew_point_temperature; precipitation; pressure_3hr_change; pres_wx_AU1; pres_wx_AU2; pres_wx_AU3; pres_wx_AW1; pres_wx_AW2; pres_wx_AW3; pres_wx_MW1; pres_wx_MW2; pres_wx_MW3; relative_humidity; Remarks; sea_level_pressure; sky_cov_baseht_1; sky_cov_baseht_2; sky_cov_baseht_3; sky_cover_1; sky_cover_2; sky_cover_3; station_level_pressure; dry bulb temperature; visibility; wet_bulb_temperature; wind_direction; wind_gust; wind_speed." ,
+        "creator": {
+        "@person" : [
+        
+        {"@id" :"http://localhost:1313/person/menne-matthew-j.html",
+        "name" : "Menne, Matthew J.",
+        "role" : "principalInvestigator",
+        "url"  : "http://orcid.org/0000-0001-9725-248X",
+        "sameAs" : "http://orcid.org/0000-0001-9725-248X" },
+        
+        {"@id" :"http://localhost:1313/person/menne-matthew-j.html",
+        "name" : "Menne, Matthew J.",
+        "role" : "author",
+        "url"  : "http://orcid.org/0000-0001-9725-248X",
+        "sameAs" : "http://orcid.org/0000-0001-9725-248X" },
+        
+        {"@id" :"http://localhost:1313/person/noone-simon.html",
+        "name" : "Noone, Simon",
+        "role" : "author",
+        "url"  : "https://orcid.org/0000-0003-1661-1423",
+        "sameAs" : "https://orcid.org/0000-0003-1661-1423" },
+        
+        {"@id" :"http://localhost:1313/person/casey-nancy-w.html",
+        "name" : "Casey, Nancy W.",
+        "role" : "author",
+        "url"  : "http://orcid.org/0009-0001-7709-889X",
+        "sameAs" : "http://orcid.org/0009-0001-7709-889X" },
+        
+        {"@id" :"http://localhost:1313/person/dunn-robert-h.html",
+        "name" : "Dunn, Robert H.",
+        "role" : "author",
+        "url"  : "https://orcid.org/0000-0003-2469-5989",
+        "sameAs" : "https://orcid.org/0000-0003-2469-5989" },
+        
+        {"@id" :"http://localhost:1313/person/mcneill-shelley.html",
+        "name" : "McNeill, Shelley",
+        "role" : "author",
+        "url"  : "https://orcid.org/0000-0001-8000-6813",
+        "sameAs" : "https://orcid.org/0000-0001-8000-6813" },
+        
+        {"@id" :"http://localhost:1313/person/kantor-diana.html",
+        "name" : "Kantor, Diana",
+        "role" : "author",
+        "url"  : "",
+        "sameAs" : "" },
+        
+        {"@id" :"http://localhost:1313/person/thorne-peter-w.html",
+        "name" : "Thorne, Peter W.",
+        "role" : "author",
+        "url"  : "",
+        "sameAs" : "" },
+        
+        {"@id" :"http://localhost:1313/person/orcutt-karen.html",
+        "name" : "Orcutt, Karen",
+        "role" : "author",
+        "url"  : "",
+        "sameAs" : "" },
+        
+        {"@id" :"http://localhost:1313/person/cunningham-sam.html",
+        "name" : "Cunningham, Sam",
+        "role" : "author",
+        "url"  : "",
+        "sameAs" : "" },
+        
+        {"@id" :"http://localhost:1313/person/risavi-nicholas.html",
+        "name" : "Risavi, Nicholas",
+        "role" : "author",
+        "url"  : "",
+        "sameAs" : "" }]},
+        "license": "Open Data. There are no restrictions on the use of this data. Use of the data should cite NOAA and NESDIS/NCEI as the dataset creator.",
+        "sameAs":"",
+
+        "temporalCoverage": " /",
+        "url": "https:\/\/doi.org\/10.25921\/jp3d-3v19",
+        "keywords": [],
+        "identifier": {
+            "@id": "",
+            "@type": "PropertyValue",
+            "propertyID": "https://registry.identifiers.org/registry/doi",
+            "value": "",
+            "url": "https:\/\/doi.org\/10.25921\/jp3d-3v19"
+          },
+          "contentUrl":"https:\/\/www.ncei.noaa.gov\/access\/search\/data-search\/global-historical-climatology-network-hourly",
+          "spatialCoverage":{
+            "@id" : "GeoShape",
+            "@type":"Place",
+            "geo":{
+               "@type":"GeoShape",
+               "polygon":[]
+            }
+         }
+    }
+</script>
+
+<link rel="stylesheet" href="/access/search/js/bundle.css">
+<script src="/access/search/js/bundle.js" defer></script>
+<script src="/access/search/js/tooltips.js" defer></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsonld/8.3.2/jsonld.min.js" integrity="sha512-z/qF7jT9tc2CTR6DsN5MzG9rAA0Eu8uMwZoUtYF+g8LEN3wiLNAfsmHcAhS5tc451SFj8Ix/fNiVXLNEd2njIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/g/async@1.5.0,jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js)"></script>
+<script src="https://cdn.jsdelivr.net/g/async@1.5.0,jquery@1.11.0,es6-promise@1.0.0,bootstrap@2.3.2,codemirror@3.22.0(codemirror.min.js+addon/lint/lint.js+addon/edit/matchbrackets.js+addon/edit/closebrackets.js+addon/display/placeholder.js+addon/hint/show-hint.js+mode/ntriples/ntriples.js+mode/javascript/javascript.js)"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsonld@8.3.2/dist/jsonld.min.js"></script>
+<script src="/access/search/js/jsonld-vis.js"></script>
+<link rel="stylesheet" type="text/css" href="/access/search/css/jsonld-vis.css">
+
+<script type="application/json" id="datasetMetadata">
+    
+    
+    {
+   "aliases": [
+     "/data-search/global-historical-climatology-network-hourly"
+   ],
+   "draft": false,
+   "featured": true,
+   "filedata": [
+     "datatypes",
+     "fileSize",
+     "periodOfRecord",
+     "station"
+   ],
+   "id": "global-historical-climatology-network-hourly",
+   "iscjklanguage": false,
+   "layout": "dataset-searchable",
+   "name": "Global Historical Climatology Network Hourly",
+   "ncei": {
+     "access": {
+       "order": null,
+       "search": {
+         "datatype": {
+           "component": "DatatypeComponent",
+           "params": [
+             {
+               "autocomplete": "https://www.ncei.noaa.gov/access/services/search/v1/autocomplete?field=dataTypes\u0026dataset=global-historical-climatology-network-hourly.json",
+               "description": "",
+               "documentFieldName": [
+                 "dataTypes.id"
+               ],
+               "id": "dataTypes",
+               "joinCondition": "and",
+               "list": "https://www.ncei.noaa.gov/access/services/support/v4/datatypes/global-historical-climatology-network-hourly.json",
+               "multivalue": true,
+               "nestedFields": [
+                 "endDate",
+                 "startDate"
+               ],
+               "searchInterface": {
+                 "dateFormat": null,
+                 "displayName": "Data Types",
+                 "displayOrder": 1,
+                 "toolTip": "\u003cp\u003eData Types are the elements representing environmental observations in NCEI's data.\u003c/p\u003e \u003ca href='/support/access-search'\u003e\u003cspan class='fa fa-info-circle mr-1'\u003e\u003c/span\u003eFind out more\u003c/a\u003e",
+                 "type": "what"
+               },
+               "type": "term",
+               "values": null
+             }
+           ]
+         },
+         "station": {
+           "component": "StationSearchComponent",
+           "homrprefix": "GHCNH",
+           "params": [
+             {
+               "autocomplete": "https://www.ncei.noaa.gov/access/services/search/v1/autocomplete?field=stations\u0026dataset=global-historical-climatology-network-hourly",
+               "description": null,
+               "documentFieldName": [
+                 "stations.id"
+               ],
+               "id": "stations",
+               "joinCondition": "or",
+               "list": null,
+               "multivalue": true,
+               "nestedFields": [
+                 "dataTypes"
+               ],
+               "searchInterface": {
+                 "dateFormat": null,
+                 "displayName": "Station Search",
+                 "displayOrder": 5,
+                 "toolTip": "Enter a station ID or name term and select from the autocomplete suggestions to search by station.",
+                 "type": null
+               },
+               "type": "term",
+               "values": null
+             }
+           ]
+         },
+         "when": {
+           "component": "WhenSearchInput",
+           "enddate": "2025-03-07",
+           "params": {
+             "dateformat": "Date"
+           },
+           "startdate": "1750-01-01"
+         },
+         "where": {
+           "component": "WhereComponent",
+           "params": [
+             {
+               "autocomplete": null,
+               "description": "",
+               "documentFieldName": [
+                 "location"
+               ],
+               "id": "bbox",
+               "joinCondition": null,
+               "list": null,
+               "multivalue": false,
+               "nestedFields": null,
+               "searchInterface": {
+                 "dateFormat": null,
+                 "displayName": "Bounding Box",
+                 "displayOrder": 1,
+                 "toolTip": "\u003cp\u003eEnter a location or draw a bounding box using the map tool.\u003c/p\u003e \u003cp\u003eExample:\u003cstrong\u003e New York City, NY\u003c/strong\u003e or \u003cstrong\u003eChicago\u003c/strong\u003e\u003c/p\u003e \u003ca href='/support/access-search'\u003e\u003cspan class='fa fa-info-circle mr-1'\u003e\u003c/span\u003eFind out more\u003c/a\u003e",
+                 "type": "where"
+               },
+               "type": "bbox",
+               "values": null
+             }
+           ]
+         }
+       }
+     },
+     "contact": "Email ncei.info@noaa.gov Online Resource NCEI Contact Information https://www.ncei.noaa.gov/contact",
+     "description": "Global Historical Climatology Network-hourly (GHCNh) is a multisource collection of weather station (meteorological) observations from the late 18th Century to the present from fixed weather stations over land across the globe. It is replacing the Integrated Surface Dataset (ISD) and will be used to generate the Local Climatological Data and Global Summary of the Day datasets. It is constructed to align with GHCN daily. Version 1 contains approximately 110 separate data sources and will be updated daily using the United States Air Force and NOAA Surface Weather Observations data streams. GHCNh v1 contains the following variables: altimeter; dew_point_temperature; precipitation; pressure_3hr_change; pres_wx_AU1; pres_wx_AU2; pres_wx_AU3; pres_wx_AW1; pres_wx_AW2; pres_wx_AW3; pres_wx_MW1; pres_wx_MW2; pres_wx_MW3; relative_humidity; Remarks; sea_level_pressure; sky_cov_baseht_1; sky_cov_baseht_2; sky_cov_baseht_3; sky_cover_1; sky_cover_2; sky_cover_3; station_level_pressure; dry bulb temperature; visibility; wet_bulb_temperature; wind_direction; wind_gust; wind_speed.",
+     "documentation": "https://doi.org/10.25921/jp3d-3v19",
+     "ids": {
+       "collectionUuid": null,
+       "dsiNumber": "350503",
+       "fileId": "gov.noaa.ncdc:C01688"
+     },
+     "license": "Open Data. There are no restrictions on the use of this data. Use of the data should cite NOAA and NESDIS/NCEI as the dataset creator.",
+     "links": {
+       "access": [
+         {
+           "name": "ncei dataset search",
+           "type": "search",
+           "url": "https://www.ncei.noaa.gov/access/search/data-search/global-historical-climatology-network-hourly"
+         },
+         {
+           "name": "ncei direct download (dataset files)",
+           "type": "download",
+           "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/index.html#hourly/access/by-year/"
+         },
+         {
+           "name": "ncei direct download (dataset files)",
+           "type": "download",
+           "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/index.html#hourly/access/by-station/"
+         },
+         {
+           "name": "ncei direct download (dataset files)",
+           "type": "download",
+           "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/index.html#hourly/archive/"
+         },
+         {
+           "name": "",
+           "type": "search",
+           "url": "https://www.ncei.noaa.gov/maps/ghcnh/"
+         }
+       ],
+       "documentation": [
+         {
+           "name": "ncei product information page",
+           "type": "information",
+           "url": "https://www.ncei.noaa.gov/products/global-historical-climatology-network-hourly"
+         },
+         {
+           "name": "ncei direct download (documentation files)",
+           "type": "information",
+           "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/index.html#hourly/doc/"
+         }
+       ],
+       "other": [
+         {
+           "name": "ncei dataset landing page",
+           "type": "information",
+           "url": "https://doi.org/10.25921/jp3d-3v19"
+         }
+       ],
+       "samples": null
+     },
+     "managedby": "NOAA National Centers for Environmental Information",
+     "name": "Global Historical Climatology Network-hourly (GHCNh), Version 1",
+     "people": [
+       {
+         "name": "Menne, Matthew J.",
+         "organization": {
+           "name": "NOAA National Centers for Environmental Information"
+         },
+         "position": "Physical Scientist",
+         "role": "principalInvestigator",
+         "url": "http://orcid.org/0000-0001-9725-248X"
+       },
+       {
+         "name": "Menne, Matthew J.",
+         "organization": {
+           "name": "NOAA National Centers for Environmental Information"
+         },
+         "position": "Physical Scientist",
+         "role": "author",
+         "url": "http://orcid.org/0000-0001-9725-248X"
+       },
+       {
+         "name": "Noone, Simon",
+         "organization": {
+           "name": "National University of Ireland Maynooth"
+         },
+         "position": "",
+         "role": "author",
+         "url": "https://orcid.org/0000-0003-1661-1423"
+       },
+       {
+         "name": "Casey, Nancy W.",
+         "organization": {
+           "name": "NOAA National Centers for Environmental Information"
+         },
+         "position": "",
+         "role": "author",
+         "url": "http://orcid.org/0009-0001-7709-889X"
+       },
+       {
+         "name": "Dunn, Robert H.",
+         "organization": {
+           "name": "UK Met Office Hadley Centre"
+         },
+         "position": "",
+         "role": "author",
+         "url": "https://orcid.org/0000-0003-2469-5989"
+       },
+       {
+         "name": "McNeill, Shelley",
+         "organization": {
+           "name": "NOAA National Centers for Environmental Information"
+         },
+         "position": "",
+         "role": "author",
+         "url": "https://orcid.org/0000-0001-8000-6813"
+       },
+       {
+         "name": "Kantor, Diana",
+         "organization": {
+           "name": "NOAA National Centers for Environmental Information"
+         },
+         "position": "",
+         "role": "author",
+         "url": ""
+       },
+       {
+         "name": "Thorne, Peter W.",
+         "organization": {
+           "name": "National University of Ireland Maynooth"
+         },
+         "position": "",
+         "role": "author",
+         "url": ""
+       },
+       {
+         "name": "Orcutt, Karen",
+         "organization": {
+           "name": "NOAA National Centers for Environmental Information"
+         },
+         "position": "",
+         "role": "author",
+         "url": ""
+       },
+       {
+         "name": "Cunningham, Sam",
+         "organization": {
+           "name": "NOAA National Centers for Environmental Information"
+         },
+         "position": "",
+         "role": "author",
+         "url": ""
+       },
+       {
+         "name": "Risavi, Nicholas",
+         "organization": {
+           "name": "NOAA National Centers for Environmental Information"
+         },
+         "position": "",
+         "role": "author",
+         "url": ""
+       }
+     ],
+     "tags": [
+       "Climate"
+     ],
+     "updatefrequency": "daily"
+   },
+   "previewoptions": null,
+   "topics": [
+     "Land/Surface",
+     "Weather",
+     "Climate"
+   ]
+ }
+</script>
+<script type="application/json" id="dataTypes">
+    {"dataTypes":[{"id":"temperature","metricOutputPrecision":0,"name":"Temperature","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"dew_point_temperature","metricOutputPrecision":0,"name":"Dew Point Temperature","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"station_level_pressure","metricOutputPrecision":0,"name":"Station Level Pressure","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sea_level_pressure","metricOutputPrecision":0,"name":"Sea Level Pressure","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"wind_direction","metricOutputPrecision":0,"name":"Wind Direction","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"wind_speed","metricOutputPrecision":0,"name":"Wind Speed","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"wind_gust","metricOutputPrecision":0,"name":"Wind Gust","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"precipitation","metricOutputPrecision":0,"name":"Precipitation","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"relative_humidity","metricOutputPrecision":0,"name":"Relative Humidity","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"wet_bulb_temperature","metricOutputPrecision":0,"name":"Wet Bulb Temperature","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"pres_wx_MW1","metricOutputPrecision":0,"name":"Pres Wx Mw1","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"pres_wx_MW2","metricOutputPrecision":0,"name":"Pres Wx Mw2","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"pres_wx_MW3","metricOutputPrecision":0,"name":"Pres Wx Mw3","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"pres_wx_AU1","metricOutputPrecision":0,"name":"Pres Wx Au1","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"pres_wx_AU2","metricOutputPrecision":0,"name":"Pres Wx Au2","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"pres_wx_AU3","metricOutputPrecision":0,"name":"Pres Wx Au3","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"pres_wx_AW1","metricOutputPrecision":0,"name":"Pres Wx Aw1","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"pres_wx_AW2","metricOutputPrecision":0,"name":"Pres Wx Aw2","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"pres_wx_AW3","metricOutputPrecision":0,"name":"Pres Wx Aw3","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"snow_depth","metricOutputPrecision":0,"name":"Snow Depth","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"visibility","metricOutputPrecision":0,"name":"Visibility","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"altimeter","metricOutputPrecision":0,"name":"Altimeter","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"pressure_3hr_change","metricOutputPrecision":0,"name":"Pressure 3Hr Change","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_condition","metricOutputPrecision":0,"name":"Sky Condition","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_condition_baseht","metricOutputPrecision":0,"name":"Sky Condition Baseht","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"ceiling_height","metricOutputPrecision":0,"name":"Ceiling Height","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_layer_1","metricOutputPrecision":0,"name":"Sky Cover Layer 1","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_layer_2","metricOutputPrecision":0,"name":"Sky Cover Layer 2","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_layer_3","metricOutputPrecision":0,"name":"Sky Cover Layer 3","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_layer_4","metricOutputPrecision":0,"name":"Sky Cover Layer 4","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_layer_baseht_1","metricOutputPrecision":0,"name":"Sky Cover Layer Baseht 1","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_layer_baseht_2","metricOutputPrecision":0,"name":"Sky Cover Layer Baseht 2","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_layer_baseht_3","metricOutputPrecision":0,"name":"Sky Cover Layer Baseht 3","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_layer_baseht_4","metricOutputPrecision":0,"name":"Sky Cover Layer Baseht 4","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_summation_1","metricOutputPrecision":0,"name":"Sky Cover Summation 1","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_summation_2","metricOutputPrecision":0,"name":"Sky Cover Summation 2","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_summation_3","metricOutputPrecision":0,"name":"Sky Cover Summation 3","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_summation_4","metricOutputPrecision":0,"name":"Sky Cover Summation 4","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_summation_baseht_1","metricOutputPrecision":0,"name":"Sky Cover Summation Baseht 1","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_summation_baseht_2","metricOutputPrecision":0,"name":"Sky Cover Summation Baseht 2","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_summation_baseht_3","metricOutputPrecision":0,"name":"Sky Cover Summation Baseht 3","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"sky_cover_summation_baseht_4","metricOutputPrecision":0,"name":"Sky Cover Summation Baseht 4","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"precipitation_5_minute","metricOutputPrecision":0,"name":"Precipitation 5 Minute","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"precipitation_15_minute","metricOutputPrecision":0,"name":"Precipitation 15 Minute","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"precipitation_3_hour","metricOutputPrecision":0,"name":"Precipitation 3 Hour","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"precipitation_6_hour","metricOutputPrecision":0,"name":"Precipitation 6 Hour","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"precipitation_9_hour","metricOutputPrecision":0,"name":"Precipitation 9 Hour","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"precipitation_12_hour","metricOutputPrecision":0,"name":"Precipitation 12 Hour","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"precipitation_15_hour","metricOutputPrecision":0,"name":"Precipitation 15 Hour","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"precipitation_18_hour","metricOutputPrecision":0,"name":"Precipitation 18 Hour","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"precipitation_21_hour","metricOutputPrecision":0,"name":"Precipitation 21 Hour","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"precipitation_24_hour","metricOutputPrecision":0,"name":"Precipitation 24 Hour","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0},{"id":"REM","metricOutputPrecision":0,"name":"Rem","scaleFactor":0,"searchWeight":1,"standardOutputPrecision":0}]}
+</script>
+</head>
+<body>
+<script>
+    function toggle() {
+        const govBanner = document.getElementById("gov-banner");
+        if (govBanner.style.display === "none") {
+            govBanner.style.display = "block";
+        } else {
+            govBanner.style.display = "none";
+        }
+    }
+</script>
+<a class="visually-hidden-focusable" href="#main-content">Skip to main content</a>
+<div class="text-sm" style="background-color: #f0f0f0;">
+        <header>
+            <div class="container mx-auto px-4">
+                <div class="d-flex justify-content-center align-items-center gap-2">
+                    <img
+                            src="https://designsystem.digital.gov/assets/img/us_flag_small.png"
+                            alt="U.S. flag"
+                            class="w-auto"
+                            style="height: 10px;"
+                    />
+                    <span style="color: #565c65;">
+                          An official website of the United States government
+                    </span>
+
+                    <button
+                            class="btn ml-auto py-1"
+                            style="color: #005ea2;"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#gov-banner"
+                            aria-expanded="false"
+                            aria-controls="gov-banner"
+                    >
+                        Here's how you know
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div id="gov-banner" class="collapse">
+            <div class="pt-4 pb-8" style="background-color: #f0f0f0">
+                <div class="container mx-auto px-4">
+                    <div class="d-flex">
+                        
+                        <div class="d-flex align-items-start p-2">
+                            <img
+                                    src="https://designsystem.digital.gov/assets/img/icon-dot-gov.svg"
+                                    class="p-2"
+                                    alt="Dot gov"
+                                    style=""
+                            />
+                            <div class="p-2">
+                                <p class="mb-1" style="font-weight: bold;">The .gov means it’s official.</p>
+                                <p>
+                                    Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+                                </p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="d-flex align-items-start p-2">
+                            <img
+                                    src="https://designsystem.digital.gov/assets/img/icon-https.svg"
+                                    class="p-2"
+                                    alt="Https"
+                                    style=""
+                            />
+                            <div class="p-2">
+                                <p class="mb-1" style="font-weight: bold;">The site is secure.</p>
+                                <p class="">
+                                    The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<header>
+    <nav class="navbar container-fluid d-flex" style="background-color: #162e51">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.ncei.noaa.gov" alt="NCEI Home" title="NCEI Home" rel="home">
+            <img src="/access/search/img/logo.svg"
+            alt="National Centers for Environmental Information"
+            title="National Centers for Environmental Information logo" width="320px"
+            />
+            </a>
+        </div>
+    </nav>
+    <nav role="navigation" class="navbar container-fluid" style="background-color: #0076d6;">
+        <div class="container-fluid">
+            <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb" class="mt-3 d-flex align-items-center mb-3 mb-md-0 me-md-auto"><ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="/access/search/" id="access" class="link"><strong>NCEI Search, Discovery, &amp; Data Access</strong></a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="/access/search/dataset-search" id="access" class="link"><strong>Datasets</strong></a>
+      </li>
+  <li class="breadcrumb-item">
+    <a href="/access/search/datasets/global-historical-climatology-network-hourly/" id="collection" class="link">
+      <strong>
+      Global Historical Climatology Network Hourly
+      </strong>
+    </a>
+  </li>
+</ol>
+
+<style>
+  .breadcrumb {
+      --bs-breadcrumb-divider-color: white;
+      --bs-breadcrumb-item-active-color: white;
+
+      a {
+          text-decoration: none;
+          color: white;
+
+          &:hover, &:focus {
+              text-decoration: underline;
+              text-decoration-thickness: 1px;
+              text-underline-offset: 5px;
+          }
+      }
+  }
+
+
+</style>
+</nav>
+            <nav><ul class="nav">
+    <li class="nav-item dropdown ">
+        <a class="btn api-dropdown nav-link dropdown-toggle"
+           id="apiDocumentationDropdownMenu"
+           href="/access/search/documentation"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            <i class="bi bi-stack"></i>
+            <strong>
+                API Documentation
+            </strong>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="/access/search/documentation/data-service/" class="text-nowrap text-decoration-none dropdown-item">
+                    Data Service
+                </a>
+                
+                <a href="/access/search/documentation/order-service/" class="text-nowrap text-decoration-none dropdown-item">
+                    Order Service
+                </a>
+                
+                <a href="/access/search/documentation/search-service/" class="text-nowrap text-decoration-none dropdown-item">
+                    Search Service
+                </a>
+                
+                <a href="/access/search/documentation/support-service/" class="text-nowrap text-decoration-none dropdown-item">
+                    Support Service
+                </a>
+                
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-pages">
+        <a
+                href="/access/search/order-status"
+        id="order"
+        class="text-nowrap"
+        >
+        <i class="bi bi-check-circle-fill me-1"></i>
+        <strong>
+            Order Status
+        </strong>
+        </a>
+    </li>
+    <li class="nav-item nav-pages">
+        
+        <div id="cartbutton" cartURL="/access/search/cart"></div>
+    </li>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<style>
+    .nav-pages a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+
+        &:hover, &:focus {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 5px;
+        }
+    }
+
+    .api-dropdown {
+        text-decoration: none;
+        color: white;
+        --bs-btn-color: white;
+        --bs-btn-bg: #0076d6;
+        --bs-btn-border-color: #0076d6;
+        --bs-btn-hover-color: white;
+        --bs-btn-hover-bg: #005396;
+        --bs-btn-hover-border-color: #005396;
+        --bs-btn-active-color: white;
+        --bs-btn-active-bg: #003b6b;
+        --bs-btn-active-border-color: #003b6b;
+
+        &:hover, &:focus {
+            text-decoration: none;
+            color: white;
+        }
+
+        a {
+            color: black;
+        }
+    }
+
+
+</style>
+</nav>
+        </div>
+
+    </nav>
+    <div id="ncei-alert" class="container-fluid alert alert-danger m-0 d-flex flex-column align-items-center visually-hidden"></div>
+</header>
+<script src="https://touchpoints.app.cloud.gov/touchpoints/971ed9fd.js" async></script>
+<style>
+    .navbar-brand {
+        display: flex;
+        padding: 19px 0 14.25px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+</style>
+
+
+
+<div id="dataset-searchable"></div>
+
+<div id="dataset-searchable-json"><div class="accordion col-md-8 mx-auto">
+    <div class="accordion-item">
+        <h2 class="accordion-header"> 
+          <button class="accordion-button success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <strong>Expand Structured Data Viewer:  </strong>
+            <span class="badge rounded-pill text-bg-success p-2 m-2">Global Historical Climatology Network Hourly</span>           
+            </button></h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body" id="visualizeld">
+            </div>
+      </div>
+    </div>
+</div>
+<script>
+
+window.onload = function(){
+    lddata = document.getElementById('jsonldhead').textContent;
+    d3.jsonldVis(
+          JSON.parse(lddata), 
+          '#visualizeld');
+}
+</script></div>
+
+<template id="vcps-tooltip">
+  <p>
+    <b> VCP's </b> (Volume Coverage Patterns) are volumetric scanning strategies in which the antenna not only
+    scans near the ground, but raises through multiple elevation angles to obtain data in the vertical. This gives
+    forecasters a better picture of the depth and intensity of storms, and is particularly useful when there are
+    storms near the radar.
+  </p>
+</template>
+<template id="wmo-station-tooltip">
+  <p>
+    WMO location is International four-letter location indicator (CCCC) of the originating station or center from the
+    bulletin published in WMO-No. 9, Volume C1.
+  </p>
+  <a
+    href="https://community.wmo.int/site/knowledge-hub/programmes-and-initiatives/operational-information-service-ois/volume-c1-catalogue-of-meteorological-bulletins?lang=EN"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i class="bi bi-info-square"></i> Find out more
+  </a>
+</template>
+<template id="wmo-heading-tooltip">
+  <p>
+    WMO Telecommunications Abbreaviated Heading TTAAii from WMO No. 386 Manual on the Global Telecommunication System
+  </p>
+  <a
+    href="https://www.weather.gov/tg/tablea"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i class="bi bi-info-square"></i> Find out more
+  </a>
+</template>
+<template id="result-count-limit-tooltip">
+  If your search results exceed the order size restrictions of this dataset
+  certain actions like 'Select All' may be disabled. Order sizes are
+  restricted to reduce wait times. Each dataset has a <b>
+  file count limit.</b>
+</template>
+<template id="disable-certify-tooltip">
+  Orders are only certifiable up to <b> 7 days after completion. </b> If this time
+  frame has passed you will need to reorder the data to start the certification process.
+</template>
+<template id="disable-download-tooltip">
+  <p>
+    Orders can be downloaded up to <b> 7 days after completion. </b> If this time frame
+    has expired you need to reorder the data to download it again.
+  </p>
+</template>
+<template id="preview-data-tooltip">
+  If your search results exceed the order size restrictions of this dataset
+  certain actions like "Select All" may be disabled. Order sizes are restricted
+  to reduce wait times. Each dataset has a <b> file count limit. </b>
+</template>
+<template id="access-level-tooltip">
+  <dl class="col align-items-start">
+    <dt class="row-cols-auto">
+      <i class="bi-download"></i> Downloadable
+    </dt>
+    <dd class="row-cols-auto pb-2">
+      Search and download data immediately.
+    </dd>
+    <dt class="row-cols-auto">
+      <i class="bi-minecart-loaded"></i> Orderable
+    </dt>
+    <dd class="row-cols-auto pb-2">
+      Request data be retrieved, subsetted, or converted.
+    </dd>
+    <dt class="row-cols-auto">
+      <i class="bi-star-fill"></i> Certifiable
+    </dt>
+    <dd class="row-cols-auto pb-2">
+      Data that can be legally certified, for a fee.
+    </dd>
+  </dl>
+</template>
+
+
+<footer>
+  <div class="main-content">
+    <div class="col-lg-6 mb-3">
+      <a href="/" alt="Home" title="Home" rel="home" class="d-flex align-items-center">
+        <img src="/access/search/img/logo.svg" class="logo-footer mx-auto"
+        alt="National Centers for Environmental Information"
+        title="National Centers for Environmental Information logo" />
+      </a>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <div class="col-lg-3 mb-3">
+      <h5>Follow Us</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="https://www.facebook.com/NOAANCEI/" class="facebook"
+             title="Link to @NOAANCEI Facebook">@NOAANCEI</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.instagram.com/noaadata/" class="instagram"
+             title="Link to @NOAAData Instagram">@NOAAData</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://twitter.com/NOAANCEI" class="twitter" title="Link to @NOAANCEI Twitter">@NOAANCEI</a>
+        </li>
+        <li class="nav-item">
+          <a href="/news.xml" class="rss" title="Link to subscribe to NCEI News Feed">News Feed</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-lg-3 mb-3">
+      <h5>Contact Us</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="mailto:ncei.info@noaa.gov" class="nav-link mailto" title="Contact NCEI NOAA via email"
+             data-extlink="">
+            Email: ncei.info@noaa.gov
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="tel:18282714800" class="nav-link" title="Call NCEI NOAA 828-271-4800">Phone: (828)
+            271-4800</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav
+    role="navigation"
+    class="nesdis-links"
+  >
+    <ul class="container">
+      <li>
+        <a href="/privacy" class="nav-link" data-drupal-link-system-path="node/106">
+          Privacy Policy
+        </a>
+      </li>
+      <li>
+        <a href="http://www.rdc.noaa.gov/~foia/" class="nav-link">
+          Freedom of Information Act
+        </a>
+      </li>
+      <li>
+        <a
+          href="http://www.cio.noaa.gov/services_programs/info_quality.html"
+          class="nav-link"
+        >
+          Information Quality
+        </a>
+      </li>
+      <li>
+        <a href="http://www.noaa.gov/disclaimer.html" class="nav-link">Disclaimer</a>
+      </li>
+      <li>
+        <a href="http://www.ncdc.noaa.gov/survey" class="nav-link">Take Our Survey</a>
+      </li>
+      <li>
+        <a href="http://www.commerce.gov/" class="nav-link">Department of Commerce</a>
+      </li>
+      <li>
+        <a href="http://www.noaa.gov/" class="nav-link">NOAA</a>
+      </li>
+      <li>
+        <a href="http://www.nesdis.noaa.gov/" class="nav-link">NESDIS</a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+
+
+<style>
+    footer {
+        background-color: #162e51;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        * {
+            font-size: 1rem;
+            color: white;
+        }
+
+        h5 {
+            font-size: 1.25rem;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 3rem 0 3rem 0;
+
+            .nav-link {
+                color: #9bdaf1;
+                padding: .1rem 0;
+            }
+
+            .nav-item {
+                margin-bottom: .25rem;
+            }
+
+            svg.mailto {
+                width: 16px;
+                height: 16px;
+                padding-right: 0.2em;
+                fill: #0076d6;
+            }
+
+            .logo-footer {
+                width: 320px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            a {
+                color: #9bdaf1;
+                text-decoration: none;
+
+                &:hover, &:focus {
+                    text-decoration: underline;
+                    text-underline-offset: .25em;
+                }
+
+                &svg{
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &[href^="mailto:"]::after {
+                    background: url("/access/search/icons/extlink_s.png") no-repeat -22px center transparent;
+                    width: 10px;
+                    height: 10px;
+                    padding-left: 12px !important;
+                    text-decoration: none;
+                    display: inline-block;
+                    content: "";
+                    margin-left: 2px;
+                }
+
+                &[href^="tel:"]::after {
+                    background: url("/access/search/icons/extlink_s.png") no-repeat -42px center transparent;
+                    width: 10px;
+                    height: 10px;
+                    padding-left: 12px !important;
+                    text-decoration: none;
+                    display: inline-block;
+                    content: "";
+                    margin-left: 2px;
+                }
+
+                &:after {
+                    margin-left: 5px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    content: " ";
+                    overflow: visible;
+                }
+
+                &.facebook:after {
+                    background-image: url("/access/search/icons/facebook25.svg");
+                    background-size: 26px 26px;
+                }
+
+                &.instagram:after {
+                    background-image: url("/access/search/icons/instagram.svg");
+                    background-size: 15px 15px;
+                }
+
+                &.twitter:after {
+                    background-image: url("/access/search/icons/twitter16.svg");
+                    background-size: 28px 28px;
+                }
+
+                &.rss:after {
+                    background-image: url("/access/search/icons/rss25.svg");
+                    background-size: 22px 22px;
+                }
+            }
+        }
+
+
+        .nesdis-links {
+            background-color: #071628;
+
+            ul {
+                list-style-type: "|   ";
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                padding: .5rem 0;
+                gap: 2rem;
+
+                li:first-child {
+                    list-style-type: none;
+                }
+
+                a {
+                    color: #ffffff;
+
+                    &:hover {
+                        color: #face00
+                    }
+
+                    &:focus {
+                        outline: 2px solid white;
+                        outline-offset: 2px;
+                        border-radius: 6px;
+                        color: #d9d9d9;
+                    }
+
+
+                }
+            }
+
+
+
+
+        }
+    }
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1Q1BML6E5"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E1Q1BML6E5');
+</script>
+<script async src="https://siteimproveanalytics.com/js/siteanalyze_6294131.js"></script>
+<script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script></body>
+</html>

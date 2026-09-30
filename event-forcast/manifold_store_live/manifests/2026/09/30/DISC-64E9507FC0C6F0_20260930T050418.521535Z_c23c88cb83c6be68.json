@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-64E9507FC0C6F0",
+  "provider": "NOAA/NDBC",
+  "dataset": "KGNA.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:04:18.521535Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/KGNA.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/KGNA.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 101896,
+  "sha256": "c23c88cb83c6be6813cb35a02305b29d1afe58a4c9d6ea8031238e8bff6e4f1b",
+  "etag": "\"18e08-65cac2d438d36\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-64E9507FC0C6F0\\20260930T050418.521535Z_c23c88cb83c6be68.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

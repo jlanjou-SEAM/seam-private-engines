@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-94B117B04E1AFD",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "IDP_standards",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:41.841757Z",
+  "request_url": "https://www.nco.ncep.noaa.gov/idsb/IDP_standards/",
+  "final_url": "https://www.nco.ncep.noaa.gov/idsb/IDP_standards/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 18234,
+  "sha256": "e3bdcb8e7cfe9d6ff14afe19a5df5a026d1af4dd544c0122de508ffa2292ed67",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-94B117B04E1AFD\\20260930T041841.841757Z_e3bdcb8e7cfe9d6f.html",
+  "parent_id": "DISC-187AADF5F10B84",
+  "discovery_depth": 2
+}

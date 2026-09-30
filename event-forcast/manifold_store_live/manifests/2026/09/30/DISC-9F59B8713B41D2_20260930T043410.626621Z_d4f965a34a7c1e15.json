@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-9F59B8713B41D2",
+  "provider": "NOAA/NDBC",
+  "dataset": "BGXN3.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:34:10.626621Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/BGXN3.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/BGXN3.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 406362,
+  "sha256": "d4f965a34a7c1e1533e9bdb59c4502313da486039feadb82ff88c6d344e21155",
+  "etag": "\"6335a-65cabafdcef21\"",
+  "last_modified": "Wed, 30 Sep 2026 04:25:19 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-9F59B8713B41D2\\20260930T043410.626621Z_d4f965a34a7c1e15.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

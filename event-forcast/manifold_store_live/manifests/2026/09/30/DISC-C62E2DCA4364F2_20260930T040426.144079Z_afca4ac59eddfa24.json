@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-C62E2DCA4364F2",
+  "provider": "University of Oklahoma / Oklahoma State",
+  "dataset": "radar",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "soil"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:26.144079Z",
+  "request_url": "https://www.mesonet.org/weather/radar",
+  "final_url": "https://www.mesonet.org/weather/radar",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 66279,
+  "sha256": "afca4ac59eddfa2408d259f0c97c532c792747cc48e6157d460999e7f9e0285d",
+  "etag": "\"1790741066\"",
+  "last_modified": "Wed, 30 Sep 2026 04:04:26 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C62E2DCA4364F2\\20260930T040426.144079Z_afca4ac59eddfa24.html",
+  "parent_id": "OKMESONET",
+  "discovery_depth": 1
+}

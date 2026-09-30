@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-B4F3E8FF8FE608",
+  "provider": "NOAA/NCEP",
+  "dataset": "observations",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:47.158658Z",
+  "request_url": "https://www.spaceweather.gov/observations",
+  "final_url": "https://www.spaceweather.gov/observations",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 66574,
+  "sha256": "6e6e178dcde13a36106da0bfb2e0b6b211da1db3f5f5dbff8cd039e7589e4785",
+  "etag": "\"1790733796\"",
+  "last_modified": "Wed, 30 Sep 2026 02:03:16 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-B4F3E8FF8FE608\\20260930T043747.158658Z_6e6e178dcde13a36.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

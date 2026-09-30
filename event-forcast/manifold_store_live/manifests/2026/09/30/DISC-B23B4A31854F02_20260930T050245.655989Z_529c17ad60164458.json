@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-B23B4A31854F02",
+  "provider": "NOAA/NDBC",
+  "dataset": "ROBN4.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:02:45.655989Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/ROBN4.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/ROBN4.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1013696,
+  "sha256": "529c17ad60164458456a877305bd4fe5cd7d4963e131ff653f6aa993bee38ca2",
+  "etag": "\"f77c0-65cac2d528cfc\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-B23B4A31854F02\\20260930T050245.655989Z_529c17ad60164458.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

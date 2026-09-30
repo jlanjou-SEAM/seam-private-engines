@@ -1,0 +1,23 @@
+{
+  "candidate_id": "SWPC-MAG-1M",
+  "provider": "NOAA/SWPC",
+  "dataset": "Real-time magnetic field 1-minute",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "geomagnetic"
+  ],
+  "retrieved_utc": "2026-09-29T05:16:34.092836Z",
+  "request_url": "https://services.swpc.noaa.gov/json/rtsw/rtsw_mag_1m.json",
+  "final_url": "https://services.swpc.noaa.gov/json/rtsw/rtsw_mag_1m.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 1581574,
+  "sha256": "045a2d87e2ccd41ba8897174a12cd4073f1d4e14db00751d2fb04f0a8c51009b",
+  "etag": "\"182206-65c983f887b4f\"",
+  "last_modified": "Tue, 29 Sep 2026 05:13:50 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\29\\SWPC-MAG-1M\\20260929T051634.092836Z_045a2d87e2ccd41b.json",
+  "parent_id": null,
+  "discovery_depth": 0
+}

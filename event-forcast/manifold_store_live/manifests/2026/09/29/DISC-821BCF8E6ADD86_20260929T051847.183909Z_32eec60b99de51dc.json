@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-821BCF8E6ADD86",
+  "provider": "NOAA Aviation Weather Center",
+  "dataset": "data",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "aviation",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:47.183909Z",
+  "request_url": "https://aviationweather.gov/help/data/",
+  "final_url": "https://aviationweather.gov/help/data/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 93511,
+  "sha256": "32eec60b99de51dc2c6b0db42349faf16bcbbd827ac2ebb897642d1f07e842e5",
+  "etag": "\"6aaaf527-16d47\"",
+  "last_modified": "Wed, 16 Sep 2026 19:59:35 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\aviation\\2026\\09\\29\\DISC-821BCF8E6ADD86\\20260929T051847.183909Z_32eec60b99de51dc.html",
+  "parent_id": "AVIATION-WX-API",
+  "discovery_depth": 1
+}

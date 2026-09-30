@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7C132AF8A9606E",
+  "provider": "NOAA/NCEP",
+  "dataset": "solar-region-summary",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:48.433641Z",
+  "request_url": "https://www.spaceweather.gov/products/solar-region-summary",
+  "final_url": "https://www.spaceweather.gov/products/solar-region-summary",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 67625,
+  "sha256": "7cf52f8a622b7b03d0cbe5a1feac5409358fc60e135d30beba47ff252e3e0f70",
+  "etag": "\"1790733876\"",
+  "last_modified": "Wed, 30 Sep 2026 02:04:36 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7C132AF8A9606E\\20260930T043748.433641Z_7cf52f8a622b7b03.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-A49BF790E44B7F",
+  "provider": "IPMA",
+  "dataset": "warnings_www.json",
+  "sector": "public",
+  "country": "PT",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:00.614622Z",
+  "request_url": "https://api.ipma.pt/open-data/forecast/warnings/warnings_www.json",
+  "final_url": "https://api.ipma.pt/open-data/forecast/warnings/warnings_www.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 36309,
+  "sha256": "3e92273b3d0925e90d9a07ae83390473a01df6baaa6db37cc27832e3f7997392",
+  "etag": "\"17d1-8dd5-65caab47cc183\"",
+  "last_modified": "Wed, 30 Sep 2026 03:15:02 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A49BF790E44B7F\\20260930T040600.614622Z_3e92273b3d0925e9.json",
+  "parent_id": "IPMA-API",
+  "discovery_depth": 1
+}

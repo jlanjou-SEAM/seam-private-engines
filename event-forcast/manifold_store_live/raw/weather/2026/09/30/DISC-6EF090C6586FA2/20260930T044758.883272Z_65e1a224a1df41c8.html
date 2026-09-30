@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="description" content="Ocean Carbon and Acidification Data Portal">
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>NCEI Ocean Carbon and Acidification Data Portal</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	
+	<link rel="stylesheet" href="https://js.arcgis.com/4.14/esri/css/main.css">
+ 	<link rel="stylesheet" href="https://js.arcgis.com/4.14/dijit/themes/claro/claro.css" />
+	
+	<link rel="stylesheet" href="./css/bootstrap-3.3.7.min.css">
+	<link rel="stylesheet" href="./css/app.css">
+	<link rel="stylesheet" href="./js/app/css/AdditionalTermsWidget.css">
+	<link rel="stylesheet" href="./js/app/css/CategoryWidget.css">
+	<link rel="stylesheet" href="./js/app/css/CollectionWidget.css">
+	<link rel="stylesheet" href="./js/app/css/DrawExtentTool.css">
+	<link rel="stylesheet" href="./js/app/css/ErrorWidget.css">
+	<link rel="stylesheet" href="./js/app/css/InputCoordinatesTool.css">
+	<link rel="stylesheet" href="./js/app/css/ResultsContentWidget.css">
+	<link rel="stylesheet" href="./js/app/css/ResultsItemWidget.css">
+	<link rel="stylesheet" href="./js/app/css/ResultsSearchButtonsWidget.css">
+	<link rel="stylesheet" href="./js/app/css/ResultsSummaryWidget.css">
+	<link rel="stylesheet" href="./js/app/css/ResultsAPIWidget.css">
+	<link rel="stylesheet" href="./js/app/css/SearchResetWidget.css">
+	<link rel="stylesheet" href="./js/app/css/VariablesWidget.css">
+
+	<script>
+		var locationPath = location.pathname.replace(/\/[^\/]*$/, "");
+		window.dojoConfig = {
+			packages: [
+			{
+				name: "app",
+				location: locationPath + "/js/app"
+			}
+			]
+		};
+	</script>
+	<script src="https://js.arcgis.com/4.17/"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body class="claro">
+	<div class="wrapper" id="wrapper">
+
+		<!-- start header -->
+		<div class="box header" id="titleDiv">
+			<a href="https://www.ncei.noaa.gov/" title="National Centers for Environmental Information, National Oceanic and Atmospheric Administration">
+			<img src="images/map-banner.png" alt="National Centers for Environmental Information, National Oceanic and Atmospheric Administration" class="noaaLogo"></a>
+			<div class="ocadsTitle">Ocean Carbon and Acidification Data Portal</div>
+			
+			<div id="helpNavWrapper">
+				<a href="./help.html" target="_blank" title="Help" id="helpLink"><b>&#63;</b></a>
+				
+				<!-- Hamburger Menu -->
+				<div id="ncei-div-nav-hamburger" class="pull-right">
+			    	<nav class="navbar" role="navigation">
+				        <button class="hamburgerBtn" name="navigationLinks" id="hamburgerBtn" data-toggle="dropdown" title="Navigate to NCEI">
+				        	<span class="glyphicon glyphicon-menu-hamburger"></span>
+						</button>
+				        <ul class="hamburgerDropdown" id="hamburgerDropdown" style="display: none;" role="menu">
+				        	<li><a href="https://www.ncei.noaa.gov/" title="Go to the homepage">Home</a></li>
+				            <li><a href="https://www.ncei.noaa.gov/about">About</a></li>
+				            <li><a href="https://www.ncei.noaa.gov/news">News</a></li>
+				            <li><a href="https://www.ncei.noaa.gov/access">Access</a></li>
+				            <li><a href="https://www.ncei.noaa.gov/archive">Archive</a></li>
+				            <li><a href="https://www.ncei.noaa.gov/contact">Contact</a></li>
+						</ul>
+			        </nav>
+				</div>
+			</div>
+			
+			<!-- breadcrumbs -->
+			<div class="subheader">
+				<a href="https://www.ncei.noaa.gov/products/ocean-carbon-acidification-data-system" target="_blank" class="breadcrumbsLink">OCADS Home</a>
+			</div>
+						
+		</div>
+		<!-- end header -->
+
+		<!-- start sidebar -->
+		<div class="sidebar">
+
+			<!-- query -->
+			<div id="sidebarQuery" style="display: flex">
+				<div id="collectionDiv" class="section"></div>
+				<div><hr></div>
+				<div id="variablesDiv" class="varSection">
+					<div id="variablePanelContentDiv" style="margin-left: 25px;"></div>
+				</div>
+				<div><hr></div>
+				<div id="categoryDiv" class="section"></div>
+				<div><hr></div>
+				<div id="additionalTermsDiv" class="section"></div>
+				<div aria-live="assertive" class="additionalTermsHint">
+					 Please use "" to search for an exact phrase (e.g., "Ocean Acidification Program") 
+					 and use ** to match a substring of a keyword (e.g., *SOFS* will bring results containing MOORING_SOFS_142W_46S).
+				</div>
+				<div><hr></div>
+				<div id="obsDatesDiv" class="dateSection"><label for="obsDatesDiv" style="float:left;margin-top:1px;"><b>Observation Dates</b></label>
+					<div class="dateElems">
+						<label for="startDateDiv">Start:&nbsp;</label>
+						<div id="startDateDiv"></div>
+						<label for="endDateDiv">&emsp;End:&nbsp;</label>
+						<div id="endDateDiv"></div>
+					</div>
+					<div aria-live="assertive" class="dateHint">
+					Please use date format: YYYY-MM-DD</div>
+				</div>
+				<div id="searchResetDiv" class="section"></div>
+			</div>
+
+			<!-- results -->
+			<div id="sidebarResults" style="display: none">
+				<div class="resultsSummaryWrapper">
+					<div id="resultsSummaryDiv"></div>
+					<div id="resultsSearchButtonsDiv"></div>	
+				</div>
+				<div id="resultsAPIDiv"></div>
+				<div aria-live="assertive" id="resultsContentDiv"></div>
+			</div>
+
+		</div>
+		<!-- end sidebar -->
+
+		<div class="map" name="Section showing global map" id="viewDiv"></div>
+
+		<div class="box footer" id="footerDiv">
+		    <table class="footer" align="center">
+		    	<tr valign="middle" align="center">
+		    		<td>
+		    			<a href="https://www.ncei.noaa.gov/privacy" title="NOAA's Privacy Policy">Privacy Policy</a> |
+		    			<a href="https://www.noaa.gov/foia-freedom-of-information-act" title="Freedom of Information Act">Freedom Of Information Act</a> |
+		    			<a href="https://www.cio.noaa.gov/services_programs/info_quality.html" title="Information Quality">Information Quality</a> |
+		    			<a href="https://www.noaa.gov/disclaimer.html" title="Disclaimer">Disclaimer</a> |
+		    			<!--<a href="https://www.ncdc.noaa.gov/survey" title="Take Our Site Survey">Take Our Survey</a> |-->
+		    			<a href="https://www.commerce.gov/" title="United States Department of Commerce">Department of Commerce</a> |
+		    			<a href="https://www.noaa.gov/" title="NOAA">NOAA</a> |</font>
+		    			<a href="https://www.nesdis.noaa.gov/" title="NESDIS">NESDIS</a> |
+		    			<a href="mailto:ncei.info@noaa.gov" rel="nofollow">Contact Us</a>
+		    		</td>
+		    	</tr>
+		    </table>
+		</div>
+	</div>
+
+	<div id="errorDiv" style="display:none"></div>
+
+	<div id="loadingDiv">
+		<img src="images/loader_NOAA_66x66.gif">
+	</div>
+<script src="https://www.ncei.noaa.gov/maps/config/gis-helper.js"></script>
+
+<script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script></body>
+</html>

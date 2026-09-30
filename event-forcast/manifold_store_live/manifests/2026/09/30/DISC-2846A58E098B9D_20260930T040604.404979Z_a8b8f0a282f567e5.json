@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-2846A58E098B9D",
+  "provider": "IPMA",
+  "dataset": "1110600.json",
+  "sector": "public",
+  "country": "PT",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:04.404979Z",
+  "request_url": "https://api.ipma.pt/file-example/1110600.json",
+  "final_url": "https://api.ipma.pt/file-example/1110600.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 1056,
+  "sha256": "a8b8f0a282f567e5c0dde2e34920086c31a86b07aef9dfc58cfb9cf1e6f793f1",
+  "etag": "\"1c22-420-563aaf5fc7fa0\"",
+  "last_modified": "Fri, 26 Jan 2018 10:00:06 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2846A58E098B9D\\20260930T040604.404979Z_a8b8f0a282f567e5.json",
+  "parent_id": "IPMA-API",
+  "discovery_depth": 1
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-0F1B5DBB1C33B3",
+  "provider": "NOAA/NCEI",
+  "dataset": "data",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:37.862928Z",
+  "request_url": "https://www.ncei.noaa.gov/products/marine-geology-geophysics/marine-geology/data",
+  "final_url": "https://www.ncei.noaa.gov/products/marine-geology-geophysics/marine-geology/data",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 44143,
+  "sha256": "3faeedd2cb2fb0a0f942b464e3c44045541f90e13cb2c4ad691185399356d18b",
+  "etag": "\"1790717773-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:36:13 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-0F1B5DBB1C33B3\\20260930T044637.862928Z_3faeedd2cb2fb0a0.html",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-608C61A8B43B31",
+  "provider": "NOAA/NCEI",
+  "dataset": "global-summary-of-the-day",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:39.815002Z",
+  "request_url": "https://www.ncei.noaa.gov/access/search/datasets/global-summary-of-the-day/",
+  "final_url": "https://www.ncei.noaa.gov/access/search/datasets/global-summary-of-the-day/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 42028,
+  "sha256": "f09160881fbd225aec1c8f362e35ea61b1c27f6d843ccfdd147ae2e986b09519",
+  "etag": "\"a390-658c669428540\"",
+  "last_modified": "Tue, 11 Aug 2026 14:37:33 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-608C61A8B43B31\\20260930T043939.815002Z_f09160881fbd225a.html",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

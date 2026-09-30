@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-07D684F378F152",
+  "provider": "NASA Earthdata",
+  "dataset": "asdc-maintenance-may-29-2026",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:15.720872Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/asdc-maintenance-may-29-2026",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/asdc-maintenance-may-29-2026",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 135518,
+  "sha256": "4bf4d7eed269ba4a51251203b7d6029ea3133ef057c0f819aed8196875a74c78",
+  "etag": "\"1790745617\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:17 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-07D684F378F152\\20260930T052015.720872Z_4bf4d7eed269ba4a.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

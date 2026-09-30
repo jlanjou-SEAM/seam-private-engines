@@ -1,0 +1,24 @@
+{
+  "candidate_id": "IDEAM-CO",
+  "provider": "IDEAM Colombia",
+  "dataset": "Environmental/hydrometeorological data",
+  "sector": "public",
+  "country": "CO",
+  "scientific_regime": [
+    "weather",
+    "hydrology",
+    "environmental"
+  ],
+  "retrieved_utc": "2026-09-30T03:59:21.221205Z",
+  "request_url": "https://www.ideam.gov.co/",
+  "final_url": "https://www.ideam.gov.co/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 95193,
+  "sha256": "c4e334b62d73cc0056f772a0de236ee0d89a58e4c30469dbe91684d242d34e76",
+  "etag": "\"1790736711\"",
+  "last_modified": "Wed, 30 Sep 2026 02:51:51 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\IDEAM-CO\\20260930T035921.221205Z_c4e334b62d73cc00.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

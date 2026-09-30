@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-6DBD15D0FC2D65",
+  "provider": "NOAA/NCEI",
+  "dataset": "Ecosystems%20Poster%20%281%29.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:16.440807Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2021-09/Ecosystems%20Poster%20%281%29.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-09/Ecosystems%20Poster%20%281%29.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 847060,
+  "sha256": "038df3a6282951ebc9ec5b2f1cfb2d9809804afc5b86d797a23d1914cf1245ac",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:35:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6DBD15D0FC2D65\\20260930T044716.440807Z_038df3a6282951eb.pdf",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

@@ -1,0 +1,513 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="en">
+<head>
+<title>NCEP Meteorological Assimilation Data Ingest System (MADIS)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+<meta name="author" content="MADIS Support Team">
+<link href="css/header.css" rel="stylesheet" type="text/css" >
+<!--<script type="text/javascript" src="/js/ForecastSearch.js"></script>-->
+
+    <!-- site-wide style sheets -->
+    <link rel="stylesheet" type="text/css" href="css/ncepmadis.css" media="all">
+    
+<!--    <link rel="stylesheet" type="text/css" href="css/print.css" media="print">-->
+    
+    <!-- A style sheet for submenus of submenus -->
+<!--    <link rel="stylesheet" type="text/css" href="css/gsd-more-submenus.css" media="all">-->
+    
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/gsd/css/ie.css" media="all"><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="/gsd/css/ie7.css" media="all"><![endif]-->
+
+<script type="text/javascript" src="css/ie.js"></script>
+    
+<!--<script id="_fed_an_js_tag" type="text/javascript" src="/federated-analytics.js?agency=OAR&amp;sub-agency=ESRLGSD&amp;sp=find&amp;yt=true"></script>
+--></head>
+
+<!--<body onload="startList()">-->
+
+<div id="container">
+<div class="header">
+
+  <div class="header-content">
+    <a href="https://www.noaa.gov" class="header-noaa-icon"><img src="images/header-noaa.png" alt="NOAA"></a>
+    <a href="https://www.weather.gov" class="header-nws-icon"><img src="images/header-nws.png" alt="NOAA"></a>
+    <a href="https://www.commerce.gov" class="header-doc"><img src="images/header_doc.png" alt="United States Department of Commerce"></a>
+    <div class="header-center-text"><a class="header-center-text" href="https://www.nco.ncep.noaa.gov">NCEP CENTRAL OPERATIONS</a></div>
+    <div class="header-noaa-text"><a class="header-noaa-text" href="https://www.noaa.gov">National Oceanic and Atmospheric Administration</a></div>
+  </div>
+</div>
+<div class="header-shadow"><div class="header-shadow-content"></div></div>
+
+     <!-- end major_header -->
+
+  <!-- major navigation -->
+<!-- Top Menu Navigation -->
+<div class="topnav">
+  <ul id="topnav">
+
+    <!-- Home Link -->
+    <li>
+      <div class="section-link">
+        <a href="#">home</a>
+      </div>
+    </li>
+
+    <!-- News Link -->
+    <li>
+      <div class="section-link">
+        <a href="https://www.weather.gov/news">news</a>
+      </div>
+      <div class="drop">
+        <ul>
+          <li><a href="https://www.weather.gov/news">NWS News</a></li>
+          <li><a href="https://www.nws.noaa.gov/com/weatherreadynation/calendar.html">Events</a></li>
+          <li><a href="https://www.weather.gov/socialmedia">Social Media</a></li>
+          <li><a href="https://www.nws.noaa.gov/om/brochures.shtml">Pubs/Brochures/Booklets</a></li>
+          <li><a href="https://www.noaa.gov/NOAA-Communications">NWS Media Contacts</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <!-- Search Link -->
+    <li>
+      <div class="section-link">
+        <a href="https://www.weather.gov/search">search</a>
+      </div>
+      <div class="drop">
+        <div class="site-search">
+          <form method="get" action="https://search.usa.gov/" style="margin-bottom: 0; margin-top: 0;">
+            <input type="hidden" name="v:project" value="firstgov">
+            <label for="query">Search For</label>
+            <input type="text" name="query" id="query" size="12" >
+            <input type="submit" value="Go" >
+            <p>
+              <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" >
+              <label for="nws" class="search-scope">NWS</label>
+              <input type="radio" name="affiliate" value="noaa.gov" id="noaa" >
+              <label for="noaa" class="search-scope">All NOAA</label>
+            </p>
+          </form>
+        </div>
+      </div>
+    </li>
+
+    <!-- Forecast Link -->
+    <li>
+      <div class="section-link">
+        <a href="https://www.weather.gov/search">forecast</a>
+      </div>
+      <div class="drop">
+        <div id="forecast-lookup" class="site-search">
+          <form name="getForecast" id="getForecast" action="https://forecast.weather.gov/zipcity.php" method="get">
+            <label for="inputstring">Local forecast by <br>"City, St" or ZIP code</label>
+            <input id="inputstring" name="inputstring" type="text" size="12" value="Enter location ..." onclick="this.value=''" >
+            <input name="btnSearch" id="btnSearch" type="submit" value="Go" >
+            <div id="txtError">
+            <div id="errorNoResults" style="display:none;">Sorry, the location you searched for was not found. Please try another search.</div>
+            <div id="errorMultipleResults" style="display:none">Multiple locations were found. Please select one of the following:</div>
+            <div id="errorChoices" style="display:none"></div>
+              <input id="btnCloseError" type="button" value="Close" style="display:none" >
+            </div>
+            <div id="txtHelp"><a style="text-decoration: underline;" href="javascript:void(window.open('https://weather.gov/ForecastSearchHelp.html','locsearchhelp','status=0,toolbar=0,location=0,menubar=0,directories=0,resizable=1,scrollbars=1,height=500,width=530').focus());">Location Help</a></div>
+          </form>
+                        </div><!-- <div id="forecast-lookup"> -->
+          </div><!-- <div class="drop"> -->
+    </li>
+    <!-- About Link -->
+    <li>
+      <div class="section-link">
+        <a href="https://www.weather.gov/about">about</a>
+      </div>
+      <div class="drop">
+          <ul>
+            <li><a href="https://www.weather.gov/about">About NWS</a></li>
+            <li><a href="https://www.weather.gov/organization">Organization</a></li>
+            <li><a href="https://www.nws.noaa.gov/sp/">Strategic Plan</a></li>
+            <li><a href="https://sites.google.com/a/noaa.gov/nws-best-practices/">For NWS Employees</a></li>
+            <li><a href="https://www.weather.gov/international/">International</a></li>
+            <li><a href="https://www.weather.gov/organization/ncep">National Centers</a></li>
+            <li><a href="https://www.nws.noaa.gov/tg/">Products and Services</a></li>
+            <li><a href="https://www.weather.gov/contact">Contact Us</a></li>
+            <li><a href="https://w1.weather.gov/glossary/">Glossary</a></li>
+          </ul>
+        </div>
+    </li>
+
+  </ul><!-- End of top nav ul -->
+</div><!-- End of topnav div -->
+
+</div> <!-- end banner -->
+
+<div id="pbody">
+    <!-- minor navigation -->
+            <div id="minor_nav">
+
+<ul id="vertnav">
+<br>
+   <li><a href="index.shtml">Distribution Services Home</a></li>
+</ul>
+<dl>
+ <dt>News</dt>
+</dl>
+<ul id="vertnav">
+ <li><a href="https://madis.ncep.noaa.gov/madis_recent.shtml">What's Here - v4.0!</a></li>
+<!-- <li><a href="madis-data_comingsoon.shtml">What's Coming?</a></li>
+-->
+</ul>
+
+<dl>
+<dt>Resources</dt>
+</dl>
+<ul id="vertnav">
+ <li><!--<a href="https://madis-hweb.ncep.noaa.gov:8004/htdocs/data_application.shtml">--><a href="https://madis.ncep.noaa.gov/data_application.shtml">Data Application Form</a></li>
+<!--<li><a href="index.shtml#distservices">MADIS Distribution Services</a></li>
+-->
+<li><!--<a href="https://madis-hweb.ncep.noaa.gov:8004/htdocs/madis_restrictions.shtml">--><a href="https://madis.ncep.noaa.gov/madis_restrictions.shtml">Dataset Restrictions</a></li>
+<li><a href="madis_api.shtml">API</a></li>
+<li>Text/XML Surface Dumps&nbsp;&nbsp; >
+   <ul>
+ <li><a href="public/sfcdumpguest.shtml">Meteorological Surface (guest)</a></li>
+ <li><a href="public/sfcdump.shtml">Meteorological Surface (public)</a></li>
+ <li><a href="public2/sfcdump.shtml">Meteorological Surface (public2)</a></li>
+ <li><a href="research/sfcdump.shtml">Meteorological Surface (research)</a></li>
+ <li><a href="noaa/sfcdump.shtml">Meteorological Surface (noaa)</a></li>
+ <li><a href="public/hydrodumpguest.shtml">Hydrological Surface (guest)</a></li>
+ <li><a href="public/hydrodump.shtml">Hydrological Surface (public)</a></li>
+ <li><a href="public2/hydrodump.shtml">Hydrological Surface (public2)</a></li>
+ <li><a href="research/hydrodump.shtml">Hydrological Surface (research)</a></li>
+ <li><a href="noaa/hydrodump.shtml">Hydrological Surface (noaa)</a></li>
+  </ul>
+<li>Graphical Displays&nbsp;&nbsp; >
+<ul>
+<li>
+<a href="/MadisSurface/">Meteorological Surface </a></li>
+<li><a href="/MadisMetadata/">Metadata</a></li>
+<li><a href="/MadisAircraftPublic/">Aircraft (Public)</a></li>
+<li><a href="/MadisAircraft/">Aircraft (Restricted)</a></li>
+<li><a href="/cap">Multi-Agencey Profiler (CAP)</a></li>
+</ul>
+<li><a href="wmo_gdc.shtml">GDC-ABO</a></li>
+<!--<li><a href="ioos_intro.shtml">IOOS Data Portal</a></li>
+-->
+</ul>
+<!--
+<dl>
+<dt>Provider Resources</dt>
+</dl>
+<ul id="vertnav">
+<li><a href="ioos_intro.shtml">IOOS Data Portal</a></li>
+-->
+</ul>
+<dl>
+<dt>Support</dt>
+</dl>
+<ul id="vertnav">
+ <li><a href="mailto:madis-support@noaa.gov">Contact Us</a></li>
+ <li><a href="https://www.noaa.gov/protecting-your-privacy">Privacy Policy</a></li>
+</ul>
+<dl>
+<dt>Related Links</dt>
+</dl> 
+<ul id="vertnav">
+<li><a href="http://gdc-abo.wmo.int/">WMO Global Data Center</a></li>
+<li><a href="https://madis.ncep.noaa.gov/index.shtml">MADIS</a></li>
+<li><a href="https://hads.ncep.noaa.gov">HADS</a></li>
+<li><a href="https://amdar.ncep.noaa.gov/index.shtml">AMDAR</a></li>
+<br>
+
+<li><a href="https://ruc.noaa.gov/amdar/">AMDAR Research</a></li>
+</ul>
+
+
+
+</div>
+
+    <div id="content">
+    <a class="textvers" name="content_link">&nbsp;</a>
+
+<html><head>
+   <meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+   <meta content="Mozilla/4.04 [en] (X11; I; HP-UX B.10.20 9000/755) [Netscape]" name="GENERATOR"><title>MADIS LDAD Filter </title>
+<style>table {font-family: Arial, Helvetica, sans-serif;
+       font-size:small;}</style>
+</head>
+
+<body alink="#999900" bgcolor="#ffffff" link="#006699" text="#333333" vlink="#999900">
+
+<p><h1>How to filter stations out of the CSV files</h1>
+
+<p>Several of the mesonets available from MADIS are national in scope,
+and contain thousands of stations.  To cut down on the data volume,
+you can filter out the stations that are outside your geographic area
+of interest, by specifying the corners of a latitude/longitude
+rectangle.  Only stations inside the rectangle will be sent into LDAD.
+If the mesonet is Synoptic Public (legacy MesoWest, also called UTMESNET), there's an
+additional option to include only those subproviders that are
+specified by the user.  The filtering scheme will also work with any
+mesonet obtained from a source other than MADIS, as long as the
+mesonet meets this requirement: the first column of the data files
+must contain the same site ID's as found in the first column of the
+station table.  Note that some of the mesonets from MADIS do not meet
+this criteria, and cannot be filtered with this scheme, but these are
+all regional and shouldn't need filtering.  Here is the list of which
+mesonets can and cannot be filtered:</p>
+
+<p><table>
+<tr><th align=left><u>Mesonet</u></th><th><u>Can be Filtered</u></th><th></th><th><u>Has Header</u></th></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;1-min ASOS</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;AFA</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;AIRNow</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;AKDOT</td><td><b>No</b><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;AK-Meso</td><td>Yes<td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;APG</td><td><b>No</b><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;APRSWXNET</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;ARLFRD</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;AWS</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;AWX</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;CA-Hydro</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;CAIC</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;CODOT</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;CO_E-470</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;DCNet</td><td>Yes</td><td></td><td>Yes</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;DDMET</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;DEOS</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;FLDOT</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;FL-Meso</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;GADOT</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;GLDNWS</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;GLOBE</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;GoMOOS</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;GPSMET</td><td>Yes</td><td></td><td>Yes</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;HADS</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;IADOT</td><td><b>No</b><td></td><td>Yes</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;IEM</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;INDOT</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;INTERNET</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;ITD</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;KSDOT</td><td>Yes</td><td></td><td>Yes</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;KYTC-RWIS</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;LCRA</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;LSU-JSU</td><td><b>No</b><td></td><td>Yes</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;MAP</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;MDDOT</td><td><b>No</b><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;MEDOT</td><td><b>No</b><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;Synoptic Public (legacy MesoWest)</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;MISC</td><td>Yes<td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;MNDOT</td><td><b>No</b><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;MOComAgNet</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;MQT-Meso</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;NC-ECONet</td><td>Yes<td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;NDDOT</td><td><b>No</b><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;NEDOR</td><td>Yes</td><td></td><td>Yes</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;NERRS</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;NHDOT</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;NJWxNet</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;NonFedAWOS</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;NOS-NWLON</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;NOS-PORTS</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;NWS-COOP</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;OHDOT</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;OK-Meso</td><td><b>No</b><td></td><td>Yes</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;PADEP</td><td>Yes<td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;RAWS</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;RDMTR</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;SFWMD</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;UDFCD</td><td>Yes</td><td></td><td>Yes</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;UrbaNet</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;USouthAL</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;VADOT</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;VTDOT</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;WIDOT</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;WT-Meso</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;WxFlow</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;WXforYou</td><td>Yes</td><td></td><td>No</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;WYDOT</td><td><b>No</b><td></td><td>No</td></tr>
+</table>
+
+<p>The way this works is that you choose which mesonets you want to filter,
+create the list of stations to be included by running a script, then
+process incoming data files with a second script that will filter
+the unwanted stations and send files containing only the included stations
+into LDAD.</p>
+
+<p>Here are the details:
+
+<ul>
+
+<li> Login to ls1 as user ldad.
+
+<li> Make a directory to use for the filtering.  The example here (and inside the
+  scripts) uses "/ldad/madisfilter", but you can use whatever you like.
+
+<li> Get the scripts from <a href="https://madis-data.ncep.noaa.gov/madisWfo/wfo">https://madis-data.ncep.noaa.gov/madisWfo/wfo</a>:
+
+  <ul>
+  <li> <a href="https://madis-data.ncep.noaa.gov/madisWfo/">https://madis-data.ncep.noaa.gov/madisWfo/</a> [e.g., account= CRP_madis_wfo, password= ?????]
+
+  <li> change directory to wfo/scripts
+    get MADISfilter.pl
+    get build_station_idx.pl
+    quit
+  </ul>
+
+<li> Put the scripts into /ldad/madisfilter, and make them executable.
+
+<li> Make this subdirectory:  /ldad/madisfilter/new.
+
+<li> Edit MADISfilter.pl:
+
+  <ul>
+  <li> For the location of perl (if not in /usr/local/bin/perl).
+
+  <li> For the filter directory (if you're not using /ldad/madisfilter).
+  </ul>
+
+<li> Edit build_station_idx.pl:
+
+  <ul>
+  <li> For the location of perl (if not in /usr/local/bin/perl).
+
+  <li> For the filter directory (if you're not using /ldad/madisfilter).
+
+  <li> For the latitude/longitude corners of the rectangle to use for
+    the filtering.
+
+  <li> For how you want to handle Synoptic Public (legacy MesoWest) data, if applicable.
+  </ul>
+
+<li> Copy over all the *Station.txt files from ds1 /data/fxa/LDAD/data for
+  the mesonets you want to filter.  Then run the build_station_idx.pl
+  script to create an "include list" that specifies only the stations
+  that are in the rectangle:
+
+  <ul>
+  <li> cd /ldad/madisfilter
+  <li> ./build_station_idx.pl
+  </ul>
+
+  <p>The include list that's created is called "included_stations.txt".
+  The script will also save the previous version of that file as
+  "included_stations.txt.old", so you can go back if something goes
+  wrong.</p>
+
+  <p>* Whenever you update your LDAD station tables on ds1, you will also
+    need to update them here on ls1, rerun build_station_idx.pl, and
+    then copy over the filtered station tables back to /data/fxa/LDAD/data.</p>
+
+  <p>The /ldad/madisfilter/new subdirectory will contain versions of the
+  *Station.txt files that only contain stations that are in the
+  include list.  These should be copied to /data/fxa/LDAD/data.  This
+  is important because if you go over 15,000 stations progressive
+  disclosure won't work.</p>
+
+<li> If the desc file for the mesonet to be filtered contains any header
+  variables, these need to be commented out in the desc file.
+
+  <p>As none of the info in the header line of the raw data files is
+  actually needed, this will cause no harm.</p>
+
+<li> If you are using ftp to ingest data:
+
+  <ul>
+  <li> Modify any scripts that put the data files into /data/Incoming
+    to put them somewhere else instead.  Then:
+
+  <li> cat MESOWHATEVER.dat | ./ldad/madisfilter/MADISfilter.pl MESOWHATEVER.dat
+
+    <p>The input file (MESOWHATEVER.dat) can be in any directory you like 
+    *except* /data/Incoming.  You can keep these around if you want to
+    see what was in there before the filtering, or you can just toss
+    them once you're satisfied that the filter is working as expected.</p>
+    
+    <p>The output from the script will be:  /data/Incoming/MESOWHATEVER.dat,
+    which will then be processed in the normal manner by LDAD.</p>
+  </ul>
+
+<li> If you are using ldm to ingest data:
+
+  <ul>
+  <li> Edit your pqact.conf file to change how you're processing incoming data.
+    You probably have something like this:
+<pre>
+
+FSL5	^LDAD\.aws\.(.*)	FILE	-overwrite	-close	/data/Incoming/\1
+FSL5	^LDAD\.raw\.(.*)	FILE	-overwrite	-close	/data/Incoming/\1
+FSL4	^GPSIPW_CSV_(gpsmet\..*)	FILE	-overwrite	-close	/data/Incoming/\1
+
+  - Change that to:
+
+FSL5	^LDAD\.aws\.(.*)	PIPE	-close /ldad/madisfilter/MADISfilter.pl \1
+FSL5	^LDAD\.raw\.(.*)	PIPE	-close /ldad/madisfilter/MADISfilter.pl \1
+FSL4	^GPSIPW_CSV_(gpsmet\..*)	PIPE	-close /ldad/madisfilter/MADISfilter.pl \1
+</pre>
+
+  <li> To activate the changes in pqact.conf:  ldmadmin pqactHUP.
+  </ul>
+</ul>
+
+<p>* The MADIS team would like to thank Clark Safford of FFC for contributing the
+  original software on which this filtering scheme is based.  (Please contact us,
+  however, and not Clark, with any questions.)</p>
+
+<p>
+<hr width="100%"><p align="right">Last updated 16 March 2017</p>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3463124-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</body>
+      
+        <!-- force body content to include the floated "news" element -->
+	<div class="clear">
+        </div>
+    </div> <!-- end body content -->
+</div>   <!-- end pbody -->
+
+<!-- legal footer area -->
+        <div class="footer-legal">
+                                <div class="footer-legal-content">
+                        <div class="footer-legal-gov">
+                                <a href="https://www.usa.gov"><img src="images/usa_gov.png" alt="usa.gov" width="110" height="30" /></a>
+                        </div>
+
+                        <div class="footer-legal-column">
+                                <p>
+                                        <a href="https://www.commerce.gov">US Dept of Commerce</a><br />
+                                <a href="https://www.noaa.gov">National Oceanic and Atmospheric Administration</a><br />
+                                <a href="https://www.weather.gov" >National Weather Service</a><br />
+                                                5830 University Research Ct.<br />College Park, MD 20740<br />
+                                Web Master's Email: <a href='mailto:w-nws.webmaster@noaa.gov'>w-nws.webmaster@noaa.gov</a>                      </p>
+                        </div>
+
+                        <div class="footer-legal-column2">
+                                <a href="https://www.weather.gov/disclaimer">Disclaimer</a><br />
+                                <a href="https://www.cio.noaa.gov/services_programs/info_quality.html">Information Quality</a><br />
+                                <a href="https://www.weather.gov/help">Help</a><br />
+                                <a href="https://www.weather.gov/glossary">Glossary</a>
+                        </div>
+
+                        <div class="footer-legal-column3">
+                                <a href="https://www.weather.gov/privacy">Privacy Policy</a><br />
+                                <a href="https://www.noaa.gov/information-technology/foia">Freedom of Information Act (FOIA)</a><br />
+                                <a href="https://www.weather.gov/about">About Us</a><br />
+                                <a href="https://www.weather.gov/careers">Career Opportunities</a>
+                        </div>
+                </div>
+
+</div><!-- end of <div class="footer-legal">--> 
+
+</div><!-- End of content div -->
+</div><!-- End of center div -->
+
+</div> <!-- end container -->
+</body>
+</html>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-BB1C38342E2ED8",
+  "provider": "NOAA/NDBC",
+  "dataset": "OHBC1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:03:52.326940Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/OHBC1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/OHBC1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 890180,
+  "sha256": "723e14b410154a5be4238833bec4be82f50ed56adebad5c1b5f585c897c0f7b7",
+  "etag": "\"d9544-65cac2d4bda2c\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-BB1C38342E2ED8\\20260930T050352.326940Z_723e14b410154a5b.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

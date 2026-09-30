@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-88484D6EACA470",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "CONUS-LARGE_loop.gif",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:59:50.731321Z",
+  "request_url": "https://radar.weather.gov/ridge/standard/CONUS-LARGE_loop.gif",
+  "final_url": "https://radar.weather.gov/ridge/standard/CONUS-LARGE_loop.gif",
+  "status_code": 200,
+  "content_type": "image/gif",
+  "byte_length": 6470754,
+  "sha256": "d8ee89b50005294c94765d1a986456fa68d6af4346cfa8a85e998735c170dd81",
+  "etag": "\"6abc9638-62bc62\"",
+  "last_modified": "Wed, 30 Sep 2026 04:55:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-88484D6EACA470\\20260930T045950.731321Z_d8ee89b50005294c.gif",
+  "parent_id": "DISC-187AADF5F10B84",
+  "discovery_depth": 2
+}

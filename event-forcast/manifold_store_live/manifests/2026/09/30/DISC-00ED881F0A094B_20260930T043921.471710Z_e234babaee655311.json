@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-00ED881F0A094B",
+  "provider": "NOAA/NCEI",
+  "dataset": "NCEI%20GEO%20Locations-May-2021-V9-01.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:21.471710Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2021-08/NCEI%20GEO%20Locations-May-2021-V9-01.png",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-08/NCEI%20GEO%20Locations-May-2021-V9-01.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 423375,
+  "sha256": "e234babaee655311e52e77715bfeb276b6ed4d9f058358f91a3fb7e2b6b29de7",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:33:14 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-00ED881F0A094B\\20260930T043921.471710Z_e234babaee655311.png",
+  "parent_id": "DISC-3ECC3F5C6D976D",
+  "discovery_depth": 2
+}

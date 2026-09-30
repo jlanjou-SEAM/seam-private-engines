@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-722D685F5C4907",
+  "provider": "NOAA/NDBC",
+  "dataset": "KGHB.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:12:44.134206Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/KGHB.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/KGHB.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 277112,
+  "sha256": "2e12b18e4e00b68768dd32536e87ebc9b51da06a7417078ef7a015a4e08e221a",
+  "etag": "\"43a78-65cac2d43894e\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-722D685F5C4907\\20260930T051244.134206Z_2e12b18e4e00b687.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

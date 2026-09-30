@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-997278FCBA09DA",
+  "provider": "Japan Meteorological Agency",
+  "dataset": "anniversary.json",
+  "sector": "public",
+  "country": "JP",
+  "scientific_regime": [
+    "weather",
+    "seismic",
+    "hazards"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:14.021981Z",
+  "request_url": "https://www.jma.go.jp/bosai/forecast/const/anniversary.json",
+  "final_url": "https://www.jma.go.jp/bosai/forecast/const/anniversary.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 1038,
+  "sha256": "90080ce9cc2831f3cac107c740cf623510fbd5c3b1f8e6e605544edbaf3bd68b",
+  "etag": "\"416ecb5f0b81be578f788486dbc42bac\"",
+  "last_modified": "Tue, 29 Sep 2026 04:55:01 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-997278FCBA09DA\\20260930T041014.021981Z_90080ce9cc2831f3.json",
+  "parent_id": "JMA-BOSAI",
+  "discovery_depth": 1
+}

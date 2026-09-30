@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-FD3A80D8376320",
+  "provider": "Davis Instruments",
+  "dataset": "enviromonitor-gateway",
+  "sector": "private",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:42.642430Z",
+  "request_url": "https://www.davisinstruments.com/products/enviromonitor-gateway",
+  "final_url": "https://www.davisinstruments.com/products/enviromonitor-gateway",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 597279,
+  "sha256": "a7a23b769b70d4f50ef14390ace9209b7ab75114dc5f5437f8458b23c75bcb44",
+  "etag": "W/\"page_cache:51559923873:ProductDetailsController:99180a1a08c78d7523f17564ee092e9e:62b1a0a3e6f38515e1ba729bee211379\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-FD3A80D8376320\\20260930T052042.642430Z_a7a23b769b70d4f5.html",
+  "parent_id": "DISC-81DCBBE51DEC02",
+  "discovery_depth": 2
+}

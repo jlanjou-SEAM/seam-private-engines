@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-659B31FD2F326F",
+  "provider": "Japan Meteorological Agency",
+  "dataset": "data.geojson",
+  "sector": "public",
+  "country": "JP",
+  "scientific_regime": [
+    "weather",
+    "seismic",
+    "hazards"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:24.231350Z",
+  "request_url": "https://www.jma.go.jp/bosai/jmatile/data/map/none/none/none/surf/sea_fcst/data.geojson",
+  "final_url": "https://www.jma.go.jp/bosai/jmatile/data/map/none/none/none/surf/sea_fcst/data.geojson",
+  "status_code": 200,
+  "content_type": "application/geo+json",
+  "byte_length": 550813,
+  "sha256": "bf3ca3943c62e3bbee5d1cc6c6ce294aa8563967c4f4e3cf7cb0b0741d769711",
+  "etag": "\"404dfa20782c21750129d22034e819d4\"",
+  "last_modified": "Mon, 09 Feb 2026 04:20:15 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-659B31FD2F326F\\20260930T041024.231350Z_bf3ca3943c62e3bb.geojson",
+  "parent_id": "JMA-BOSAI",
+  "discovery_depth": 1
+}

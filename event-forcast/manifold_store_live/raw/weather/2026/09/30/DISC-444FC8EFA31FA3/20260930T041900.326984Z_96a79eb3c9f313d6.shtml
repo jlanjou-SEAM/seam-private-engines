@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Access to Interactive Displays - Hydrometeorological Automated Data System - National Weather Service</title>
+<meta name="DC.title" content="Access to Interactive Displays - Hydrometeorological Automated Data System - National Weather Service"/>
+<meta name="DC.description" content="Access to hydrometeorological data relayed via the NESDIS-GOES Data Collection System."/
+>
+<meta name="DC.creator" content="US Department of Commerce,NOAA, National Weather Service"/>
+<meta name="DC.date.created" scheme="ISO8601" content="2005-11-14"/>
+<meta name="DC.date.reviewed" scheme="ISO8601" content="2005-11-29"/>
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US"/>
+<meta name="Keywords" content="HADS, hydrologic data, hydrology, hydrometeorologic data, fire weather data, stream gage,
+ river stage, rainfall, precipitation, RAWS, GOES DCS" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43953030-3', 'noaa.gov');
+  ga('send', 'pageview');
+
+</script>
+<frameset rows="7%,82%,13%">
+   <FRAME SRC="/interactiveDisplays/displayheader.shtml" name="banner" SCROLLING="NO" MARGINWIDTH="0" MARGINHEIGHT="0" RESIZE NORESIZE>
+   <frameset cols="20%,80%">
+       <frame src="/interactiveDisplays/categoryMenu.shtml" name="Contents">
+       <frame src="/interactiveDisplays/emptyFrame.shtml" name="displayContents">
+   </frameset>
+   <frame src="/interactiveDisplays/displayfooter.shtml" name="Contents">
+</frameset>
+
+</html>

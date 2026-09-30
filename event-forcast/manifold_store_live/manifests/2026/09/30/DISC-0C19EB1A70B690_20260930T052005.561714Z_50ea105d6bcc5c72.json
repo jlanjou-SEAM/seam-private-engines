@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-0C19EB1A70B690",
+  "provider": "NASA Earthdata",
+  "dataset": "airs-instrument-anomaly-from-january-19-28-2026",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:05.561714Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/airs-instrument-anomaly-from-january-19-28-2026",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/airs-instrument-anomaly-from-january-19-28-2026",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 142041,
+  "sha256": "50ea105d6bcc5c72fcf8f0e19cef44938dcb1f16bbab75ade3cc40d4c4664e1b",
+  "etag": "\"1790745639\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:39 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-0C19EB1A70B690\\20260930T052005.561714Z_50ea105d6bcc5c72.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

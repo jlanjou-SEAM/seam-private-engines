@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7482AE385C30F9",
+  "provider": "NOAA/NDBC",
+  "dataset": "SKCF1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:13:04.860531Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/SKCF1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/SKCF1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 934830,
+  "sha256": "29ee3e6405c425313247d71082c5f95670f2df067ebd9cf60953f0ac90ce00a6",
+  "etag": "\"e43ae-65cab685ed979\"",
+  "last_modified": "Wed, 30 Sep 2026 04:05:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-7482AE385C30F9\\20260930T041304.860531Z_29ee3e6405c42531.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

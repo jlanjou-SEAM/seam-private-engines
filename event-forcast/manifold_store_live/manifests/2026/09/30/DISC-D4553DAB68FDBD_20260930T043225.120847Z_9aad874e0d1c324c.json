@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-D4553DAB68FDBD",
+  "provider": "NOAA/NDBC",
+  "dataset": "PTOA1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:32:25.120847Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PTOA1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PTOA1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 681782,
+  "sha256": "9aad874e0d1c324c13e456f618aa7e940f0ba56986b02072ef56cd3c0c34e9ee",
+  "etag": "\"a6736-65cabc1e17208\"",
+  "last_modified": "Wed, 30 Sep 2026 04:30:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-D4553DAB68FDBD\\20260930T043225.120847Z_9aad874e0d1c324c.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

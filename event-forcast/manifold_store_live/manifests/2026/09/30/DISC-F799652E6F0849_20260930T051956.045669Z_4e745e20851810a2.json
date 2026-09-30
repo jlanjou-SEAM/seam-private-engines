@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F799652E6F0849",
+  "provider": "NASA Earthdata",
+  "dataset": "smap-data-currently-unavailable",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:19:56.045669Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/smap-data-currently-unavailable",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/smap-data-currently-unavailable",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 135188,
+  "sha256": "4e745e20851810a25f7773db133021f3be0390219040b3881bddd1dab3316fe6",
+  "etag": "\"1790745637\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:37 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-F799652E6F0849\\20260930T051956.045669Z_4e745e20851810a2.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

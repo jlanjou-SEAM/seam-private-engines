@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-9A3A6BC6344FBC",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "raob_accept.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:53.543977Z",
+  "request_url": "https://madis.ncep.noaa.gov/raob_accept.txt",
+  "final_url": "https://madis.ncep.noaa.gov/raob_accept.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "byte_length": 1103,
+  "sha256": "732fee7faec6571c059cb4a9a29ebb60898ce5f79de0720a88324f855b9f937e",
+  "etag": null,
+  "last_modified": "Tue, 30 Dec 2014 18:58:10 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-9A3A6BC6344FBC\\20260930T041853.543977Z_732fee7faec6571c.txt",
+  "parent_id": "DISC-EE816E2740A20E",
+  "discovery_depth": 2
+}

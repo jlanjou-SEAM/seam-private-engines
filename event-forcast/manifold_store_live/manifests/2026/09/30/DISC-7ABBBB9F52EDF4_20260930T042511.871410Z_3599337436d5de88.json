@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-7ABBBB9F52EDF4",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "canberra.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:25:11.871410Z",
+  "request_url": "https://www.bom.gov.au/act/observations/canberra.shtml?ref=hdr",
+  "final_url": "https://www.bom.gov.au/act/observations/canberra.shtml?ref=hdr",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 82807,
+  "sha256": "3599337436d5de88fd94fd46158d163a38c65c90d43a00550a8f7e5314813ead",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7ABBBB9F52EDF4\\20260930T042511.871410Z_3599337436d5de88.shtml",
+  "parent_id": "BOM-DATA",
+  "discovery_depth": 1
+}

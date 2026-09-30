@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-C4605353BE1D41",
+  "provider": "NOAA/NCEI",
+  "dataset": "participating-2025-esip-january-meeting",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:00.017923Z",
+  "request_url": "https://www.ncei.noaa.gov/news/participating-2025-esip-january-meeting",
+  "final_url": "https://www.ncei.noaa.gov/news/participating-2025-esip-january-meeting",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 39900,
+  "sha256": "aaf151e88659b56d1e49cc9ec1864df1a9ecf08d81c48bdb6ab366246592510c",
+  "etag": "\"1790716832-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:20:32 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C4605353BE1D41\\20260930T044700.017923Z_aaf151e88659b56d.html",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

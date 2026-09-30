@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-AD1FB42D880376",
+  "provider": "NOAA/NCEP",
+  "dataset": "comment-form.php",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:29:47.877923Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/comment-form.php",
+  "final_url": "https://www.cpc.ncep.noaa.gov/comment-form.php",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 16727,
+  "sha256": "f32eefeb383e52740ca7e7a6f8d3aa25bdfac5a5c1d0b542a99c2ceb9adf9291",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-AD1FB42D880376\\20260930T042947.877923Z_f32eefeb383e5274.php",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

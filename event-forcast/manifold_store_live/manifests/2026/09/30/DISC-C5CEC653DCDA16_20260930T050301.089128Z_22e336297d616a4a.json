@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C5CEC653DCDA16",
+  "provider": "NOAA/NDBC",
+  "dataset": "PTIT2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:03:01.089128Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PTIT2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PTIT2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1009654,
+  "sha256": "22e336297d616a4ab271b1f244bbf4e0ca581349c27632d1fadd12d4af9ead3d",
+  "etag": "\"f67f6-65cac2d50fe8e\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-C5CEC653DCDA16\\20260930T050301.089128Z_22e336297d616a4a.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

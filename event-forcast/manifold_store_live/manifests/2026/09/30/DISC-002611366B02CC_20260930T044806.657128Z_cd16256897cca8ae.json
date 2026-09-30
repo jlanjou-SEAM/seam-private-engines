@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-002611366B02CC",
+  "provider": "NOAA/NCEI",
+  "dataset": "closer-look-pacific-northwest-coast",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:06.657128Z",
+  "request_url": "https://www.ncei.noaa.gov/news/closer-look-pacific-northwest-coast",
+  "final_url": "https://www.ncei.noaa.gov/news/closer-look-pacific-northwest-coast",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 42461,
+  "sha256": "cd16256897cca8aec4137ca2c66a5cecfd2df12964fe778cc53e1dc4e0be11a2",
+  "etag": "\"1790717177-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:26:17 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-002611366B02CC\\20260930T044806.657128Z_cd16256897cca8ae.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

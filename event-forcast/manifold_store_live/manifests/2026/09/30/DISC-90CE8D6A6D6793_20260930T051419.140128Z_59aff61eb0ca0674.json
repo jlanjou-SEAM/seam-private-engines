@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-90CE8D6A6D6793",
+  "provider": "NOAA/NDBC",
+  "dataset": "KWHH1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:14:19.140128Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/KWHH1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/KWHH1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1017833,
+  "sha256": "59aff61eb0ca06742fd9f156eae316654ae2815358abca7fd61dd7bd2fc23a7b",
+  "etag": "\"f87e9-65cac2d447f64\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-90CE8D6A6D6793\\20260930T051419.140128Z_59aff61eb0ca0674.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

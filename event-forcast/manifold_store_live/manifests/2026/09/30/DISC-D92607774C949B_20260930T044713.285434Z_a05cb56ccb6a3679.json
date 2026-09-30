@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-D92607774C949B",
+  "provider": "NOAA/NCEI",
+  "dataset": "Legal%20Mod_0.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:13.285434Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2021-08/Legal%20Mod_0.jpg",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-08/Legal%20Mod_0.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 374811,
+  "sha256": "a05cb56ccb6a36791330a19fad2d8c8329d9d10200d3e1ba4c4d2a9023ad74b8",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:32:38 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-D92607774C949B\\20260930T044713.285434Z_a05cb56ccb6a3679.jpg",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-93FA7CB2A8164E",
+  "provider": "NOAA/NCEP",
+  "dataset": "wgrib.html",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:01.871394Z",
+  "request_url": "http://www.cpc.ncep.noaa.gov/products/wesley/wgrib.html",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/wesley/wgrib.html",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 15997,
+  "sha256": "b7ad27a80509ad6c4a40255234fcd461701a49f4f60d9f18f2542fbdf54b8b0f",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-93FA7CB2A8164E\\20260930T043901.871394Z_b7ad27a80509ad6c.html",
+  "parent_id": "DISC-B47333F00BE00A",
+  "discovery_depth": 2
+}

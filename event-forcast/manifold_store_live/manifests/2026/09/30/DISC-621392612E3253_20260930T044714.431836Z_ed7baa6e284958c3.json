@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-621392612E3253",
+  "provider": "NOAA/NCEI",
+  "dataset": "Healthcare.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:14.431836Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2021-09/Healthcare.jpg",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-09/Healthcare.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 280101,
+  "sha256": "ed7baa6e284958c3a58cbcadcf3e1464ee539ec44245af5396a6257d5998a7bb",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:34:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-621392612E3253\\20260930T044714.431836Z_ed7baa6e284958c3.jpg",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

@@ -1,0 +1,2502 @@
+This file contains a high-level description of this package's evolution.
+Entries are in reverse chronological order (most recent first).
+
+
+VERSION COMMENTS
+------- --------
+4.7     2024-05-11
+        Add filtering real-time data by receipt time
+	Remove PCP1H FROM HFMETAR
+	Add PCP1HA FOR HFMETAR (ASOS hourly accum starting min 44-59)
+	Add time variables for acars data
+	Change madistmp.f TMP_L1_N1,TMP_L1_N2,TMP_L1_N3,TMP_L2_N2,TMP_L2_N3 index to be a number set in madiscon.f
+	Changed FFGUST QC 99 pass level to level 1
+	
+        FILES CHANGED:
+	
+        doc/INSTALL.unix
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/sfc_hcn_variable_list.txt
+        doc/sfc_crn_variable_list.txt
+        doc/sfc_maritime_variable_list.txt
+        doc/sfc_hfmetar_variable_list.txt
+        doc/sfc_metar_variable_list.txt
+        doc/sfc_mesonet_variable_list.txt
+        doc/sfc_qc_variable_list.txt
+        doc/sfc_nepp_variable_list.txt
+        doc/sfc_rwis_variable_list.txt
+        include/intqc1com1.f
+        include/madiscom.f
+        include/madiscon.f
+        include/madistmp.f
+        src/acarsdump.f
+        src/CMakeLists_madislib.txt
+        src/CMakeLists.txt
+        src/csvnumdump.f
+        src/makefile
+        src/mgetds.f
+        src/mgetuapt.f
+        src/mgtnum.f
+        src/minit.f
+        src/mrdchr.f
+        src/mrddbl1.f
+        src/mrdnum1.f
+        src/msetwin.f
+        src/msfcfltr.f
+        src/msfcpcp.f
+        src/msfcrdsta.f
+        src/msfcsta.f
+        src/msfiles.f
+        src/mtrntim.f
+        src/sfcdump.f
+        static/acarsptbl.txt
+        static/acarspvcn.txt
+        static/acarstbl.txt
+        static/acarsvcn.txt
+        static/sfctbl.txt
+        static/sfcvcn.txt
+
+        FILES ADDED:
+        src/mgetsfct.f
+
+4.6     2024-02-21
+        Increased MXHYDRO_P to 80000
+	Changed hydro netcdf cdf file variable maxStaticIds to 40000
+        Changed mesonet netcdf cdl file variable maxStaticIds to 75000
+
+        FILES CHANGED:
+
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        src/hydrodump.f
+        include/madiscon.f
+
+4.5     2022-02-25
+        Documented aircraft missing ROLL value of 45
+
+        Added RWIS data set
+        Added MOBILE data set
+        Added Comon number dump program
+        Increased ACARS MXACARS_P to 600000
+        Increased ACARSP MXACARSP_P to 1100
+        Increased Surface stations MXSTA_P to 800000
+        Increased MAX_SUBSRC_P = 500
+        Increased MAX_VARCOD_P = 390
+
+        FILES CHANGED:
+
+        doc/acarsdump_usage.txt
+        doc/acarspdump_usage.txt
+        doc/acarsp_variable_list.txt
+        doc/acars_variable_list.txt
+        doc/hydrodump_usage.txt
+        doc/hydro_providers.txt
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/mapdump_usage.txt
+        doc/map_providers.txt
+        doc/npndump_usage.txt
+        doc/npn_variable_list.txt
+        doc/raobdump_usage.txt
+        doc/raob_variable_list.txt
+        doc/rdmtrdump_usage.txt
+        doc/rdmtr_providers.txt
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/satrad_variable_list.txt
+        doc/satsnddump_usage.txt
+        doc/satsnd_variable_list.txt
+        doc/satwnddump_usage.txt
+        doc/satwnd_variable_list.txt
+        doc/sfc_coop_variable_list.txt
+        doc/sfc_crn_variable_list.txt
+        doc/sfcdump_usage.txt
+        doc/sfc_hcn_variable_list.txt
+        doc/sfc_hfmetar_variable_list.txt
+        doc/sfc_maritime_variable_list.txt
+        doc/sfc_mesonet_variable_list.txt
+        doc/sfc_metar_variable_list.txt
+        doc/sfc_nepp_variable_list.txt
+        doc/sfc_providers.txt
+        doc/sfc_sao_variable_list.txt
+        doc/sfc_urbanet_variable_list.txt
+        doc/snowdump_usage.txt
+        doc/snow_providers.txt
+        include/acarscon.f
+        include/acarspcon.f
+        include/intqc1com1.f
+        include/intqc1con1.f
+        include/madiscom.f
+        include/madiscon.f
+        src/acarsdump.f
+        src/hydrodump.f
+        src/madis_ingest.f
+        src/makefile
+        src/mapdump.f
+        src/m_getlun.f
+        src/mgetsfcc.f
+        src/mgetsfc.f
+        src/mgetuapt.f
+        src/mgetvcn.f
+        src/minit.f
+        src/mmadisopen.f
+        src/mraobchr.f
+        src/mraobnum.f
+        src/mrdnum1.f
+        src/msetsfcpvdr.f
+        src/msfcart.f
+        src/msfcelev.f
+        src/msfcfltr.f
+        src/msfcinit.f
+        src/msfcmoi.f
+        src/msfcpchg.f
+        src/msfcpcp.f
+        src/msfcprs.f
+        src/msfcrdlft.f
+        src/msfcrdsta.f
+        src/msfcsnow.f
+        src/msfcsrad.f
+        src/msfcsta.f
+        src/msfctv.f
+        src/msfcwind.f
+        src/rdmtrdump.f
+        src/sfcdump.f
+        src/snowdump.f
+        static/acarsptbl.txt
+        static/acarspvcn.txt
+        static/acarstbl.txt
+        static/acarsvcn.txt
+        static/hydrotbl.txt
+        static/hydrovcn.txt
+        static/sfcsrcin.txt
+        static/sfctbl.txt
+        static/sfcvcn.txt
+        static/wisdomtbl.txt
+        static/wisdomvcn.txt
+
+        FILES ADDED:
+
+        csvnumdump1.par
+        csvnumdump2.par
+        csvnumdump.par
+        csvnumdump_usage.txt
+        sfc_rwis_variable_list.txt
+        src/CMakeLists_madislib.txt
+        src/CMakeLists.txt
+        src/config_build.sh
+        src/csvnumdump.f
+        src/mdssta.f
+        src/mgetds.f
+        src/minitds.f
+        src/m_rdisll.f
+        src/m_rdisllm.f
+        src/msfcqcdep.f
+        src/msfcqcinit.f
+        static/cvfMadis2Rwis.dat
+        static/mobile.template
+        static/rwis.template
+
+4.4     2019-09-30
+      
+        Rolled into 4.5 for RWIS and MOBILE datasets
+
+4.3     2014-06-23
+
+        Fixed single station header line.
+ 
+        Note in 4.2 MSFCSTA routine added a source variable in its argument list.
+
+        Windows XP is no longer supported.
+
+        FILES CHANGED:
+
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        src/sfcdump.f
+        src/madis_ingest.f
+
+4.2     2013-12-27
+
+        Added header line option to sfcdump csv output.  Increased csv size
+        to 800 characters. Windows version is 750.
+
+        Increase satellite winds MXSATW_P to 120,000.
+
+        Increased hydro station to 15,000.
+
+        Increased mas surface station (MXSTA_P) TO 600,000.
+
+        Increased MXDATA_P to 4*MXSTA_P
+
+        Increased max surface variables to 380.
+
+        Fixed NOAA-19 ID.
+
+        Changed msfcsta.f to return the provider's source id number. 
+
+        Added the following variables to the mesonet dataset.
+
+        HEDLIT    Mobile Head Lights
+        MOFRIC    Mobile Friction
+        PCP10M    precip 10 min
+        PCPET     precip end time
+        PCPST     precip start time
+        RDBIS     Surface Black Ice Signal
+        RDCV2     Surface Conductivity V2
+        RDSDP     Road Snow Depth
+        RDSPDP    Road Snowpack Depth
+        RDSS      Surface Salinity
+        SFACR     Snowfall AccumRate
+        TSUN24H   Total Sunshine 24hr
+        VIBWD1    Vibrating wire depth  - 1
+        VIBWD2    Vibrating wire depth  - 2
+        VIBWD3    Vibrating wire depth  - 3
+        VISSIT    VisibilitySituation
+        WIPER     Mobile Wipers
+        ICEPER1   Percent of ice cover on roadway
+        ICETK     Thickness of the ice  
+        PCPYN     Precipitation Yes No
+        WATDP     Depth of the water from a user-defined point 
+
+        FILES CHANGED:
+
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/sfcdump.par
+        doc/sfc_mesonet_variable_list.txt
+        doc/sfc_crn_variable_list.txt
+        doc/sfc_coop_variable_list.txt
+        doc/sfc_hfmetar_variable_list.txt
+        doc/sfc_hcn_variable_list.txt
+        doc/sfc_maritime_variable_list.txt
+        doc/sfc_metar_variable_list.txt
+        doc/sfc_sao_variable_list.txt
+        doc/sfc_nepp_variable_list.txt
+        doc/sfc_urbanet_variable_list.txt
+        include/madiscon.f
+        include/satwcon.f
+        src/hydrodump.f
+        src/minit.f
+        src/msatradrdsta.f
+        src/msatsndrdsta.f
+        src/msfcmoi.f
+        src/msfcprs.f
+        src/msfcsta.f
+        src/sfcdump.f
+        static/sfctbl.txt
+        static/sfcvcn.txt
+
+4.1     2012-09-04
+
+        Fixed out of range format error for text output.
+
+        Fixed single provider csv format for PCPINT, PCPTYPE, and
+        SKYCVLB.  
+
+        Fix bug where CRN RH was returned when the user asked for TD
+
+        Fix bug where RAWMETAR string was incorrectly returned.
+
+        Removed OPeNDAP/DODS support in the linux binary
+
+        Changed cvs text field to 800 characters from 560.
+
+        Added minimum elevation of -500 to sfcdump output.
+
+        FILES CHANGED:
+
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/sfcdump.par
+        src/msfcmoi.f
+        src/msfcprs.f
+        src/sfcdump.f
+        static/sfctbl.txt
+
+4.0     2011-01-04
+
+        Changed OPENDAP/DODS access to recognize HTTPS connections.
+
+        FILES CHANGED:
+
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        src/minit.f
+
+
+3.9     2009-09-29
+
+        Starting Aug 20, 2009 TAMDAR data can be identifed as DATASRC 4, 7 or 8, 
+        whereas before it was only type 4.  Fixed the API to include all the 
+        new types.
+
+        Added the snow level variable to MAP's map_variable_list.txt document.
+
+        FILES CHANGED:
+
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/map_variable_list.txt
+        doc/README
+        doc/RELEASE_NOTES
+        src/muaptmoi.f
+
+
+3.8     2009-09-09
+
+        Added New England Pilot Project stations (NEPP), Historical Climate 
+        Network Modernization (HCN), and Climate Reference Network (CRN) 
+        surface providers.  Note that the NEPP network, and the Alabama 
+        stations in the HCN networks, were formerly in the COOP network.  
+        Archive access to the COOP network prior to this change will still 
+        be available.  Many new variables have been added to these datasets 
+        that were not available in the COOP dataset.  See the variable lists 
+        in this directory for details.
+
+        Added archive temperature and precipitation processing for CRN and 
+        HCN data.  NCDC creates the "official" temperature and accumulated
+        precipitation data a couple hours after real-time.  Both the values
+        reported in real-time, and the official archive values are available.
+        If the user asks for T or PCP1H, and the archive version is available,
+        it will be returned, otherwise the real-time value will be returned.
+        Users wishing to access the real-time and/or archive values directly
+        can specifically request those variables (see sfc_*_variable_list.txt
+        for details).
+
+        * Note that the above dataset changes will only go into effect when
+        the next MADIS processing version release is done, which is
+        expected to be in the September-November 2009 timeframe.
+
+        Added the TAMAIR character variable to ACARS dataset.  This is used
+        to identify which TAMDAR airline provided the data for each observation.
+
+        Added the following WISDOM variables:
+
+        T         air temperature
+        RH        relative humidity
+        CUTDOWN   cutdown flag
+        PCALC     pressure calculated from height
+
+        The WISDOM pressure (P) variable is now measured instead of being 
+        calculated.  The WISDOM circular error (CIRCERR) variable has been 
+        removed.
+        
+        * Note that as of this writing, the P, T, and RH variables are expected 
+        to be of poor quality, and the QC will flag them as "subjectively bad".
+
+        Changed the instructions on how to link to the OPeNDAP/DODS-enabled
+        netCDF library in the makefiles.
+
+        Added additional code value for "ice is present" (ICECOND value 4) 
+        for TAMDAR airlines.  Previously all icing present conditions were
+        mislabled as Delta airlines (value 1).
+
+        Added snow level (SNOWLEV) to MAP dataset.
+
+        Added correct identification for NOAA-19 in the satellite soundings
+        and radiances.  Previously it had been erroneously identified as
+        NOAA-32.
+ 
+        Fixed a bug with the CSV output option in hydrodump.f and sfcdump.f.
+        Those programs were using the last variable asked for by the user to
+        determine the number of records to output.  If the last variable
+        didn't have as many records with non-missing data as did the variable
+        with the most records, then too few records would have been output.
+
+        Changed madis_ingest.f so that it no longer initializes all
+        subsystems at the beginning of the program.  Any programs using the
+        API library can no longer have multiple subsystems initialized at
+        the same time.
+
+        Fixed the distance formula calculation in m_rdisll.f.  With unusually
+        large distances (i.e., 30 degrees of latitude or longitude) errors
+        of up to 15% would occur with the old formula.
+
+        Increased MXNPN_P to 160, MXHYDRO_P to 15000, and MXRDMTR_P to 1800.
+
+        Increased MXSTA_P to 300000.
+
+        Fixed filter options 1, 2, and 3 in WISDOM dataset.
+
+        Increased the size of stations and observations field in the sfcdump 
+        text output to 6 spaces.
+
+        Linux binaries are not long OPeNDAP enabled.  Users will have to 
+        compile source code to create their own OPeNDAP enabled binaries.
+        This is the only way to ensure they are compatible on their system.
+
+        Miscellaneous internal software cleanup changes.
+
+        FILES CHANGED:
+
+        doc/raob_variable_list.txt
+        doc/hydrodump_usage.txt
+        doc/sfcdump_usage.txt
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/errors.txt
+        doc/acars_variable_list.txt
+        doc/subroutine_list.txt
+        doc/wisdom_qc_variable_list.txt
+        doc/sfc_metar_variable_list.txt
+        doc/wisdom_variable_list.txt
+        doc/wisdomdump.par
+        doc/sfcdump.par
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        include/acarscon.f
+        include/acarspcon.f
+        include/intqc1com1.f
+        include/intqc1con1.f
+        include/intqc1con2.f
+        include/madiscom.f
+        include/madiscon.f
+        include/mapcon.f
+        include/npncon.f
+        include/poescon.f
+        include/raobcon.f
+        include/rdmtrcon.f
+        include/satrcon.f
+        include/satscon.f
+        include/satwcon.f
+        include/snowcon.f
+        include/wisdomcon.f
+        src/acarsdump.f
+        src/acarspdump.f
+        src/hydrodump.f
+        src/madis_ingest.f
+        src/merror.f
+        src/m_eswinv.f
+        src/mgetsfc.f
+        src/mgetuapt.f
+        src/mgetwisdom.f
+        src/minit.f
+        src/m_mkdesc.f
+        src/mnpnht.f
+        src/m_rdisll.f
+        src/msatradrdsta.f
+        src/msetsfcpvdr.f
+        src/msfcfltr.f
+        src/msfcinit.f
+        src/msfcmoi.f
+        src/msfcpcp.f
+        src/msfcprs.f
+        src/msfcrdsta.f
+        src/msfctv.f
+        src/muapthtp.f
+        src/muaptmoi.f
+        src/muapttv.f
+        src/mwisdomfltr.f
+        src/m_ztopsa.f
+        src/satsnddump.f
+        src/sfcdump.f
+        static/acarstbl.txt
+        static/maptbl.txt
+        static/mapvcn.txt
+        static/nepp.template
+        static/crn.template
+        static/hcn.template
+        static/rdmtrvcn.txt
+        static/acarsvcn.txt
+        static/sfctbl.txt
+        static/sfcvcn.txt
+        static/wisdomvcn.txt
+        static/wisdomtbl.txt
+        static/wisdomtbl.txt
+        static/wisdom.template
+        static/wisdomvcn.txt
+
+        FILES ADDED:
+
+        include/stdout.f        
+        src/msfcart.f 
+              
+VERSION COMMENTS
+------- --------
+3.7     2008-07-25
+
+        Added the High Frequency METAR data to the surface dataset, and 
+        added the WISDOM balloon wind dataset.  Neither of these datasets
+        is yet available, but will be added to MADIS later this year.
+
+        Fixed a bug in the sfcdump CSV output. The fix removes the 
+        feature which required atleast one mesonet provider site with 
+        data in the output selection.
+
+        Fixed bug that caused bad data for SOA's SKYCVLB.
+
+        Separated each dataset's unique constants into their own include
+        files.  Moved universal constants and commons to their own include
+        files.  This changed the include files used in many subroutines that
+        included MADISCON and/or MADISCOM.
+
+        Subroutines that the include file changed from MADISCON to INTQC1CON1
+         m_chckqc.f
+         mchgtim.f
+         m_clrqc.f
+         m_cnvttm.f
+         m_cvjlmd.f
+         m_cvwftat.f
+         m_eswinv.f
+         m_gti4tm.f
+         m_intht.f
+         m_intp.f
+         minttim.f
+         m_loght.f
+         m_mkfnam.f
+         m_mki4tm.f
+         m_mkwfnm.f
+         m_phtint.f
+         m_setqc.f
+         m_xgrid.f
+         m_ygrid.f
+         m_ztopsa.f
+
+        Subroutines that the include file changed from MADISCON to
+        INTQC1CON2.
+         mrddep.f
+         mrdchr.f
+
+        Subroutines that the include files changed from MADISCON and
+        MADISCOM to INTQC1COM1 and INTQC1CON1.
+         merror.f
+
+        Subroutines that the include file changed from MADISCON to
+        INTQC1CON1 and RAOBCON.
+         m_ctrn2dim.f
+         m_rtrn2dim.f
+
+        Subroutines that the include files changed from MADISCON and
+        MADISCOM to INTQC1COM1, INTQC1CON2, and RAOBCON.
+         mrdraoblev.f
+
+        Moved temporary storage origination up a level in several
+        subroutines to allow more reuse of subroutines.  This affects
+        several routines that included MADISTMP.  The effect is two-fold:
+        changes which subroutines includes MADISTMP, and changes the 
+        number of variables in the subroutine calls.  
+
+        Subroutines that no longer include MADISTMP and MADISCON, but
+        have an additional input argument.
+         m_cswap.f
+         m_dswap.f
+         m_iswap.f
+         m_lswap.f
+         m_rswap.f
+
+        Subroutines that added the include MADISTMP.
+         mgtnum.f
+
+        Reduced the size of MXDATA_P to 32500 from 35000.  This is
+        still larger than any variable's hourly data needs.
+
+        Reduced the memory footprint of the sfcdump.exe binary by
+        reducing the size of the surface csv space to 560 
+        characters from 650.  Also changed how the number of 
+        variables allowed was calculated from a pre-defined number 
+        of variables to length of output string.  This should keep 
+        the count of number-data variables with the full QC output 
+        option about the same as before, but also allow users to 
+        increase the count of number-data variables when using the 
+        only QC data descriptors option.  The limitation is the 
+        number of variables allowed could be reduced from before  
+        when using the large text-data variables.
+        
+        FILES CHANGED:
+
+        doc/acarsdump.par
+        doc/acarspdump.par
+        doc/errors.txt
+        doc/hydrodump1.par
+        doc/hydrodump.par
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/mapdump1.par
+        doc/mapdump2.par
+        doc/mapdump.par
+        doc/map_qc_variable_list.txt
+        doc/npndump1.par
+        doc/npndump.par
+        doc/qc_info.txt
+        doc/raobdump1.par
+        doc/raobdump.par
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/rdmtrdump1.par
+        doc/rdmtrdump2.par
+        doc/rdmtrdump.par
+        doc/satraddump1.par
+        doc/satraddump.par
+        doc/satsnddump1.par
+        doc/satsnddump.par
+        doc/satwnddump1.par
+        doc/satwnddump.par
+        doc/sfcdump1.par
+        doc/sfcdump2.par
+        doc/sfcdump.par
+        doc/sfcdump_usage.txt
+        doc/snow_variable_list.txt
+        doc/snowdump1.par
+        doc/snowdump.par
+        doc/subroutine_list.txt
+        doc/wisdomdump.par
+        include/madiscom.f
+        include/madiscon.f
+        include/madistmp.f
+        include/strccom.f
+        src/acarsdump.f
+        src/acarspdump.f
+        src/makefile
+        src/m_chckqc.f
+        src/mchgtim.f
+        src/m_clrqc.f
+        src/m_cnvttm.f
+        src/m_cvjlmd.f
+        src/m_cvwftat.f
+        src/m_eswinv.f
+        src/m_gti4tm.f
+        src/m_ctrn2dim.f
+        src/m_cswap.f
+        src/m_dswap.f
+        src/merror.f
+        src/mgethydroc.f
+        src/mgetsfcc.f
+        src/mgetsfc.f
+        src/mgetsnowc.f
+        src/mgetuapt.f
+        src/mgetvcn.f
+        src/mgtnum.f
+        src/m_idsubsrc.f
+        src/minit.f
+        src/m_intht.f
+        src/m_intp.f
+        src/minttim.f
+        src/m_loght.f
+        src/m_iswap.f
+        src/m_lswap.f
+        src/mmadisclose.f
+        src/m_mkfnam.f
+        src/m_mki4tm.f
+        src/m_mkwfnm.f
+        src/m_phtint.f
+        src/mrdchr.f
+        src/mraobint.f
+        src/mrddbl.f
+        src/mrddep.f
+        src/mrdnum.f
+        src/mrdraoblev.f
+        src/m_rswap.f
+        src/m_rtrn2dim.f
+        src/m_setqc.f
+        src/msetsfcpvdr.f
+        src/msfcinit.f
+        src/msfcpcp.f
+        src/msfcrdsta.f
+        src/msfcsta.f
+        src/msfiles.f
+        src/msnowinit.f
+        src/muaptwind.f
+        src/m_xgrid.f
+        src/m_ygrid.f
+        src/m_ztopsa.f
+        src/sfcdump.f
+        src/npndump.f
+        src/raobdump.f
+        src/rdmtrdump.f
+        src/satraddump.f
+        src/satsnddump.f
+        src/satwnddump.f
+        src/sfcdump.f
+        src/snowdump.f
+        static/sfcsrcin.txt
+        static/sfctbl.txt
+        static/sfcvcn.txt
+
+        FILES ADDED:
+
+        doc/sfc_coop_variable_list.txt
+        doc/sfc_hfmetar_variable_list.txt
+        doc/sfc_metar_variable_list.txt
+        doc/sfc_maritime_variable_list.txt
+        doc/sfc_mesonet_variable_list.txt
+        doc/sfc_providers.txt
+        doc/sfc_sao_variable_list.txt
+        doc/sfc_urbanet_variable_list.txt
+        doc/wisdom_qc_variable_list.txt
+        doc/wisdomdump_usage.txt
+        doc/wisdomdump.par
+        doc/wisdom_variable_list.txt
+        include/intqc1com1.f
+        include/intqc1con1.f
+        include/intqc1con2.f
+        include/mapcon.f
+        include/acarscon.f
+        include/acarspcon.f
+        include/npncon.f
+        include/poescon.f
+        include/raobcon.f
+        include/rdmtrcon.f
+        include/satrcon.f
+        include/satscon.f
+        include/satwcon.f
+        include/snowcon.f
+        include/wisdomcon.f
+        src/mgetwisdom.f
+        src/mrddbl1.f
+        src/mrdnum1.f
+        src/mwisdomcls.f
+        src/mwisdomfltr.f
+        src/mwisdominit.f
+        src/mwisdomrdsta.f
+        src/mwisdomsta.f
+        src/mwisdomtbl.f
+        src/mwisdomwind.f
+        src/wisdomdump.f
+        static/hfmetar.template
+        static/wisdomtbl.txt
+        static/wisdom.template
+        static/wisdomvcn.txt
+
+        FILES REMOVED:
+
+        doc/sfc_variable_list.txt
+        src/m_ofmold.f
+        src/msfcskylb.f
+        
+VERSION COMMENTS
+------- --------
+3.6     2007-11-21
+
+        Changed the sfcdump behavior when choosing the QC selection to
+        return only those observations passing the highest possible level of
+        QC (selection value 99) for the variables that can have level 3
+        checks.  The level 3 check is only done in North and Central
+        America.  Previously, if a station was outside that area no
+        observations would be returned since they couldn't have passed
+        that level.  This has been changed so that in these cases
+        observations passing level 2 QC will meet the "highest level"
+        criteria.
+
+        Fixed a bug in surface dump where the time window option 2 (return
+        one record per fixed station, closest to start of the window) did not
+        always work right.
+
+        Added 5-min (PCP5M) and 15-min accumulated precipitation (PCP15M)
+        for mesonet.
+
+        Added 5-min accumulated precipitation (PCP5M) for COOP.
+
+        Fixed surface number of observation (nobs) count for multi-element
+        sites so it reflects the number of sites instead of a partial
+        count of the elements with data.  This effects the sky cover
+        layer base, precipitation type and precipitation intensity.
+
+        FILES CHANGED:
+
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/map_variable_list.txt
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/sfcdump1.par
+        doc/sfcdump.par
+        doc/sfc_variable_list.txt
+        include/madiscon.f
+        include/madistmp.f
+        src/mgetsatrad.f
+        src/msfcfltr.f
+        src/msfcmoi.f
+        src/msfcpcp.f
+        src/mgetsfc.f
+        src/mgetsfcc.f
+        src/mqcfltr.f
+        src/msatradrdsta.f
+        src/msatsndmoi.f
+        src/msatsndrdsta.f
+        src/msatsndtv.f
+        src/msfcsta.f
+        src/msnowrdsta.f
+        src/muaptmoi.f
+        src/muapttv.f
+        src/satsnddump.f
+        src/sfcdump.f
+        static/sfctbl.txt
+        static/sfcvcn.txt
+
+
+VERSION COMMENTS
+------- --------
+3.5     2007-07-16
+
+        Added present weather (PRESWEA) to the mesonet dataset.
+        
+        Fixed a bug in the hydrodump XML format causing blank variable names.
+
+        Fixed XML format error in sfcdump for sky layer base (SKYCVLB), 
+        sky cover (SKYCOV), precipitation intensity (PCPINT) and 
+        precipitation type (PCPTYPE) variables.
+
+        Fixed a bug that added a number to the variable name in the sfcdump 
+        XML output for T24MAXT, T24MINT, FOT15M, and LOT15M.  
+
+        Removed first character blank space in XML output lines.
+
+        Added mesonet termination tag to hydro XML otuput.
+
+        Added additional backward compatible check for csv section.
+
+        Changed subprovider field length in the surface csv output to 11 characters.
+
+        Changed the provider field length in the hydro csv output to 10 characters.
+
+        Documentation change for rdmtr_variable_list.txt.
+
+        Fixed bug when sky cover variable does not exist in netcdf file.
+
+        FILES CHANGED:
+
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/rdmtr_variable_list.txt
+        doc/sfc_variable_list.txt
+        src/hydrodump.f
+        src/sfcdump.f
+        src/sfcdump.f
+        src/mgetsfcc.f
+
+3.4     2007-06-23
+
+        Fixed a bug in the Comma-separated-variable (CSV) output format with
+        some all-missing data variables.  Set maximum variables in CSV dump
+        for hydrodump and sfcdump to 14.
+
+        Fixed PAR (photosynthetically active radiation) variable static 
+        id number error.
+
+        Added CBH (cloud base height) variable in the RDMTR dataset to
+        the FSL database.
+
+        Added the following variables to the mesonet dataset.
+
+         NOBSSC    number of sky cover observations
+         SKYCOV    sky cover
+         SKYCVLB   sky cover layer base
+        
+        FILES CHANGED:
+
+        doc/acarsdump.par
+        doc/acarspdump.par
+        doc/hydrodump1.par
+        doc/hydrodump.par
+        doc/hydrodump_usage.txt
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/mapdump1.par
+        doc/mapdump2.par
+        doc/mapdump.par
+        doc/npndump1.par
+        doc/npndump.par
+        doc/raobdump1.par
+        doc/raobdump.par
+        doc/rdmtrdump1.par
+        doc/rdmtrdump2.par
+        doc/rdmtrdump.par
+        doc/rdmtr_qc_variable_list.txt
+        doc/rdmtr_variable_list.txt
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/satraddump1.par
+        doc/satraddump.par
+        doc/satsnddump1.par
+        doc/satsnddump.par
+        doc/satwnddump1.par
+        doc/satwnddump.par
+        doc/sfcdump1.par
+        doc/sfcdump2.par
+        doc/sfcdump.par
+        doc/sfcdump_usage.txt
+        doc/sfc_variable_list.txt
+        doc/snowdump1.par
+        doc/snowdump.par
+        doc/subroutine_list.txt
+        include/madiscon.f
+        src/mgetsfc.f
+        src/mgetsfcc.f
+        src/minit.f
+        src/msfcsrad.f
+        src/rdmtrdump.f
+        src/sfcdump.f
+        static/rdmtrtbl.txt
+        static/rdmtrvcn.txt
+        static/sfctbl.txt
+        static/sfcvcn.txt
+
+        FILES ADDED:
+
+        src/msfcskylb.f
+
+3.3     2007-05-23
+
+        Added Comma-separated-variable (CSV) text output option to
+        sfcdump and hydrodump.  Included options to restrict the
+        amount of QC informtion outputted.  Also, allowed users to 
+        select the missing data value as either -99999.000000 or blanks.
+
+        Added the following variables to the hydro dataset.
+
+         LAT       latitude
+         LON       longitude
+         ELEV      elevation
+         STALOC    station location name
+
+        Added PAR (photosynthetically active radiation) variable to surface
+        dataset.
+
+        Added FLPHASE (phase of flight) variable in the ACARS dataset to
+        the FSL database.
+
+        Changed OPEN/DAP tag recognition to any part of the variable 
+        containing "http://".
+
+        FILES CHANGED:
+
+        doc/acars_variable_list.txt
+        doc/hydrodump1.par
+        doc/hydrodump.par
+        doc/hydrodump_usage.txt
+        doc/hydro_variable_list.txt
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/qc_info.txt
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/sfcdump1.par
+        doc/sfcdump2.par
+        doc/sfcdump.par
+        doc/sfcdump_usage.txt
+        doc/sfc_qc_variable_list.txt
+        doc/sfc_variable_list.txt
+        doc/subroutine_list.txt
+        include/madiscon.f
+        src/hydrodump.f
+        src/mgetsfc.f
+        src/minit.f
+        src/msfcsrad.f
+        src/sfcdump.f
+        static/acarstbl.txt
+        static/hydrovcn.txt
+        static/sfctbl.txt
+        static/sfcvcn.txt
+
+        FILES ADDED:
+
+        src/mgethydroc.f
+
+3.2     2006-11-13
+
+        Added UrbaNet to the set of surface datasets.  Note that this is
+        restricted to NOAA-users only.
+
+        The COOP network is currently in the process of upgrading all of the 
+        Phase II sites with a new software load, which is indicated in MADIS 
+        as data platform type (PLATTYP) 2.  This upgrade has changed what
+        variables are available from these stations.
+
+        Variables that are no longer available for COOP PLATTYP 2 stations:
+
+         TD1H      hourly average dewpoint temperature  
+         RH        relative humidity                    
+         RH1H      hourly average relative humidity     
+         Q         specific humidity                    
+         Q1H       hourly average specific humidity     
+         DPD       dewpoint depression                  
+         DPD1H     hourly average dewpoint depression   
+         AH        absolute humidity                    
+         AH1H      hourly average absolute humidity     
+         WVMR      water vapor mixing ratio             
+         TV        virtual temperature
+         T1H       hourly average temperature           
+         TV1H      hourly average virtual temperature   
+         DD1H      hourly average wind direction        
+         DD24H     daily average wind direction         
+         FF1H      hourly average wind speed            
+         FF24H     daily average wind speed             
+         U1H       hourly average u wind component      
+         U24H      daily average u wind component       
+         V1H       hourly average v wind component      
+         V24H      daily average v wind component       
+         PCPTOTL   total precipitation                  
+         PCP1H     accumulated precip - 1h              
+         PCP24H    accumulated precip - 24h             
+         PCPUDAY   accum. precip - user-defined day     
+         UDSTART   user-defined day start HHMM          
+         PCPRATE   precipitation rate                   
+         T24MIN    24 hour minimum temperature          
+         T24MAX    24 hour maximum temperature          
+         SOILM2    soil moisture percent - 2 inch       
+         SOILM4    soil moisture percent - 4 inch       
+         SOILM8    soil moisture percent - 8 inch       
+         SOILM20   soil moisture percent - 20 inch      
+         SOILM40   soil moisture percent - 40 inch      
+         SOILT2    soil temperature - 2 inch            
+         SOILT4    soil temperature - 4 inch            
+         SOILT8    soil temperature - 8 inch            
+         SOILT20   soil temperature - 20 inch           
+         SOILT40   soil temperature - 40 inch           
+         DDMAX1H   wind dir at hourly max wind speed    
+         FFMAX1H   hourly maximum wind speed            
+         GSRD5M    global solar radiation - 5min        
+         STNSPC1   station specific #1                  
+         STNSPC2   station specific #2                  
+         T24MINT   time of 24 hour minimum temperature  
+         T24MAXT   time of 24 hour maximum temperature  
+
+        Variables that have been added for COOP PLATTYP 2 stations:
+
+         DDGUST    wind dir at gust  (5-minute)
+         FFGUST    wind gust         (5-minute)
+         PCP5M     accumulated precip - 5m              
+         
+        [End of COOP changes section.]
+
+        In version 2.7, we added the ability to add QC structures to variables 
+        that didn't have any QC in previous versions.  If archived data are
+        processed that don't have any QC results, that will be indicated as 
+        "no QC applied" when these data are retrieved.  This didn't work
+        correctly for derived variables (e.g., absolute humidity).  This has
+        now been fixed.
+
+        Set QC level to 2 for SST (sea surface temperature) for MARITIME and 
+        MESONET datasets.
+
+        Changed the binary compile OS version for Red Hat and Sun.  The Red 
+        Hat OS changed from 7.2 to AS 2.1.  The Sun OS changed from 5.6 to 
+        5.10.
+
+        Changed the number of MAP RASS gates to 30 from 15.
+
+        Removed SATPROC, CLDAMT, CLDTOPP, CLDTOPT from the SATSND dataset
+        for lack of any data.
+
+        Removed CLDAMT from the SATRAD dataset for lack of any data.
+
+        Added consensus start times (CSTMW1, CSTMW2, CSTMW3, and CSTMR1),
+        mode averaging periods (APW1, APW2, APW3, and APR1), first gate delays 
+        (DG1W1, DG1W2, DG1W3, and DG1R1), number of mode levels (NLEVW1, NLEVW2, 
+        NLEVW3, and NLEVR1), height of planetary boundary layer (PBLHT), and 
+        RASS Nyquist velocity (NYQVR1) to the MAP dataset.
+
+        Changed MADIS base web page for madis.noaa.gov.
+
+        Added information for using GOES-11 satellite.
+
+        FILES CHANGED:
+
+        doc/acarsdump.par
+        doc/acarspdump.par
+        doc/hydrodump1.par
+        doc/hydrodump.par
+        doc/hydrodump_usage.txt
+        doc/hydro_providers.txt
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/mapdump1.par
+        doc/mapdump2.par
+        doc/mapdump.par
+        doc/mapdump_usage.txt
+        doc/map_providers.txt
+        doc/map_variable_list.txt
+        doc/npndump1.par
+        doc/npndump.par
+        doc/raobdump1.par
+        doc/raobdump.par
+        doc/rdmtrdump1.par
+        doc/rdmtrdump2.par
+        doc/rdmtrdump.par
+        doc/rdmtrdump_usage.txt
+        doc/rdmtr_providers.txt
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/satraddump1.par
+        doc/satraddump.par
+        doc/satrad_variable_list.txt
+        doc/satsnddump1.par
+        doc/satsnddump.par
+        doc/satsnd_variable_list.txt
+        doc/satwnddump1.par
+        doc/satwnddump.par
+        doc/satwnd_providers.txt
+        doc/sfcdump1.par
+        doc/sfcdump2.par
+        doc/sfcdump.par
+        doc/sfcdump_usage.txt
+        doc/sfc_providers.txt
+        doc/sfc_qc_variable_list.txt
+        doc/sfc_variable_list.txt
+        doc/snowdump1.par
+        doc/snowdump.par
+        doc/snowdump_usage.txt
+        doc/subroutine_list.txt
+        include/madiscom.f
+        include/madiscon.f
+        include/madistmp.f
+        src/madis_ingest.f
+        src/makefile
+        src/mapdump.f
+        src/mgenvcn.f
+        src/mgetmapc.f
+        src/mgetsfc.f
+        src/mgetsfcc.f
+        src/mgetuapt.f
+        src/minit.f
+        src/mmapext.f
+        src/msatsndmoi.f
+        src/msatsndtv.f
+        src/msetsfcpvdr.f
+        src/msfcinit.f
+        src/msfcmoi.f
+        src/msfcpcp.f
+        src/msfcprs.f
+        src/msfcrdsta.f
+        src/msfctv.f
+        src/msfcwind.f
+        src/muaptmoi.f
+        src/muapttv.f
+        src/sfcdump.f
+        static/maptbl.txt
+        static/map.template
+        static/mapvcn.txt
+        static/satradtbl.txt
+        static/satradvcn.txt
+        static/satsndtbl.txt
+        static/satsndvcn.txt
+        static/sfcsrcin.txt
+        static/sfctbl.txt
+        static/sfcvcn.txt
+
+        FILES ADDED:
+
+        src/mmapmddbl.f
+        src/mmapmdvar.f
+        src/mmaptime.f
+        static/urbanet.template
+
+VERSION COMMENTS
+------- --------
+3.1     2006-02-14
+
+        Changed the maximum number of RAOB total levels to 405, and the
+        maximum number of significant wind levels to 200.  
+
+        Changes in various raob routines were made in order to keep the 
+        significant winds that have observed pressures in different netCDF 
+        variables from those used for significant winds with observed 
+        heights.  This change was needed to keep MADIS files compatible 
+        with the LAPS analysis software package.
+     
+        Changed the maximum number of surface records to 200000 in sfcdump.f
+        and madis_ingest.f to match the increase in capacity made in version
+        3.0.
+
+        Moved "get station" memory area to level 1, the same as "get data".  
+        Subroutines called by top level "get station" routines are level 2 
+        and so on.  This was to reduce the memory foot print for the hp. The 
+        memory location for mraobint moved to level 3.
+
+        FILES CHANGED:
+
+        doc/acarsdump.par
+        doc/acarspdump.par
+        doc/hydrodump1.par
+        doc/hydrodump.par
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/mapdump1.par
+        doc/mapdump2.par
+        doc/mapdump.par
+        doc/npndump1.par
+        doc/npndump.par
+        doc/raobdump1.par
+        doc/raobdump.par
+        doc/raob_variable_list.txt
+        doc/rdmtrdump1.par
+        doc/rdmtrdump2.par
+        doc/rdmtrdump.par
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/satraddump1.par
+        doc/satraddump.par
+        doc/satsnddump1.par
+        doc/satsnddump.par
+        doc/satwnddump1.par
+        doc/satwnddump.par
+        doc/sfcdump1.par
+        doc/sfcdump2.par
+        doc/sfcdump.par
+        doc/sfc_variable_list.txt
+        doc/snowdump1.par
+        doc/snowdump.par
+        include/madiscom.f
+        include/madiscon.f
+        include/madistmp.f
+        src/madis_ingest.f
+        src/mhydrordsta.f
+        src/mraobint.f
+        src/mrdraoblev.f
+        src/mremraoblv.f
+        src/msatradrdsta.f
+        src/msatradsta.f
+        src/msatsndrdsta.f
+        src/msatsndsta.f
+        src/msatwndrdsta.f
+        src/msatwndsta.f
+        src/msfcfltr.f
+        src/msfcrdsta.f
+        src/msfcsta.f
+        src/msnowrdsta.f
+        src/muaptfltr.f
+        src/muaptrdsta.f
+        src/muaptsta.f
+        src/raobdump.f
+        src/satsnddump.f
+        src/sfcdump.f
+
+3.0     2005-11-30
+        
+        Added SNOW dataset.
+
+        Changed MXSFC_P from 100000 to 200000.
+
+        Raised lower limit for saturation vapor pressure in m_eswinv.f
+        to avoid Compaq compiler underflow error.
+
+        Increased satraddump.f array station size to 80000 to match 
+        madiscon setting.
+
+        Changed double precision variables maximum size to the maximum 
+        number of stations.
+
+        Put several variables local to dataset initialization routines 
+        into common memory space.
+
+        Added a check for rounding to -90 degrees in the grid coordinate 
+        conversion to cover the case of where a latitude *not quite*
+        -90 degrees caused a divide by zero with the Sun compiler.
+
+        Changed raob_variable_list.txt to indicate that the PWIND variable
+        may now include a mix of data created via log(P) interpolation and
+        observed pressures, which are now available from MADIS.  Previously,
+        only the interpolated values had been available.
+
+        FILES CHANGED:
+
+        doc/acarsdump.par
+        doc/acarspdump.par
+        doc/errors.txt
+        doc/hydrodump1.par
+        doc/hydrodump.par
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/mapdump1.par
+        doc/mapdump2.par
+        doc/mapdump.par
+        doc/npndump1.par
+        doc/npndump.par
+        doc/raobdump1.par
+        doc/raobdump.par
+        doc/rdmtrdump1.par
+        doc/rdmtrdump2.par
+        doc/rdmtrdump.par
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/satraddump1.par
+        doc/satraddump.par
+        doc/satsnddump1.par
+        doc/satsnddump.par
+        doc/satwnddump1.par
+        doc/satwnddump.par
+        doc/sfcdump1.par
+        doc/sfcdump2.par
+        doc/sfcdump.par
+        include/madiscom.f
+        include/madiscon.f
+        include/madistmp.f
+        include/strccom.f
+        src/acarsdump.f
+        src/acarspdump.f
+        src/hydrodump.f
+        src/madis_ingest.f
+        src/makefile
+        src/mapdump.f
+        src/m_eswinv.f
+        src/mgenvcn.f
+        src/mgetvcn.f
+        src/mhydrordsta.f
+        src/m_idsubsrc.f
+        src/minit.f
+        src/m_lcllij.f
+        src/mmadisclose.f
+        src/mraobint.f
+        src/mrdraoblev.f
+        src/mrddbl.f
+        src/msatradrdsta.f
+        src/msatsndrdsta.f
+        src/msatwndrdsta.f
+        src/msfcrdsta.f
+        src/msfiles.f
+        src/m_ssh.f
+        src/muaptrdsta.f
+        src/npndump.f
+        src/raobdump.f
+        src/rdmtrdump.f
+        src/satraddump.f
+        src/satsnddump.f
+        src/satwnddump.f
+        src/sfcdump.f
+
+        FILES ADDED:
+
+        doc/snowdump1.par
+        doc/snowdump.par
+        doc/snowdump_usage.txt
+        doc/snow_providers.txt
+        doc/snow_qc_variable_list.txt
+        doc/snow_variable_list.txt
+        src/mgetsnowc.f
+        src/mgetsnow.f
+        src/msetsnowpvdr.f
+        src/msnowcls.f
+        src/msnowfltr.f
+        src/msnowinit.f
+        src/msnowrdsta.f
+        src/msnowsta.f
+        src/msnowtbl.f
+        src/snowdump.f
+        static/snowsrcin.txt
+        static/snowtbl.txt
+        static/snow.template
+        static/snowvcn.txt
+
+2.9     2005-10-27
+        
+        Added SATR (satellite radiance) dataset.
+
+        Added data from NOAA-18 to the SATS and SATR datasets.
+
+        Added the GRIDP variable to the FSL database for SATS data.
+
+        Added provider name to SATS dump output record location line.
+
+        Increased maximum number of SATS soundings from 60000 to 80000,
+        in order to cover a full 3h time window for all three satellites.
+
+        FILES CHANGED:
+
+        doc/acarsdump.par
+        doc/acarspdump.par
+        doc/errors.txt
+        doc/hydrodump1.par
+        doc/hydrodump.par
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/mapdump1.par
+        doc/mapdump2.par
+        doc/mapdump.par
+        doc/npndump1.par
+        doc/npndump.par
+        doc/raobdump1.par
+        doc/raobdump.par
+        doc/rdmtrdump1.par
+        doc/rdmtrdump2.par
+        doc/rdmtrdump.par
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/satsnddump1.par
+        doc/satsnddump.par
+        doc/satsnddump_usage.txt
+        doc/satsnd_providers.txt
+        doc/satsnd_variable_list.txt
+        doc/satwnddump1.par
+        doc/satwnddump.par
+        doc/sfcdump1.par
+        doc/sfcdump2.par
+        doc/sfcdump.par
+        doc/subroutine_list.txt
+        include/madiscom.f
+        include/madiscon.f
+        include/madistmp.f
+        include/strccom.f
+        src/acarsdump.f
+        src/acarspdump.f
+        src/hydrodump.f
+        src/madis_ingest.f
+        src/makefile
+        src/mapdump.f
+        src/mgenvcn.f
+        src/mgetvcn.f
+        src/m_idsubsrc.f
+        src/minit.f
+        src/mmadisclose.f
+        src/msatsndsta.f
+        src/msfiles.f
+        src/npndump.f
+        src/raobdump.f
+        src/rdmtrdump.f
+        src/satsnddump.f
+        src/satwnddump.f
+        src/sfcdump.f
+        static/satsndtbl.txt
+        static/satsndvcn.txt
+
+        FILES ADDED:
+
+        doc/satraddump1.par
+        doc/satraddump.par
+        doc/satraddump_usage.txt
+        doc/satrad_providers.txt
+        src/mgetsatrad.f
+        src/msatradcls.f
+        src/msatradfltr.f
+        src/msatradinit.f
+        src/msatradrdsta.f
+        src/msatradsta.f
+        src/msatradtbl.f
+        src/msetsatradpvdr.f
+        src/satraddump.f
+        static/satradtbl.txt
+        static/satrad.template
+        static/satradvcn.txt
+
+2.8     2005-09-27
+
+        Increased RAOB total levels to 285, temperature 
+        significant levels to 175, and wind significant levels to 80.
+
+        Added the PCPTOTL variable to the FSL database for mesonet data.
+        This variable had previously only been in the COOP data.  This
+        is now in the mesonet database for networks that report this
+        variable.  Other precipitation changes in the FSL mesonet data
+        include adding precipitation from the MesoWest network, as well
+        as forcing the APRSWXNET's 24h accumulated precipitation to 
+        PCP24H (accum. over last 24h) regardless of what type of 
+        accumulation is specified inside the data files.  This allows
+        archived data to be read correctly.  (The data provider had
+        told us this was PCPLM (accum. since local midnight) but we 
+        later learned that the value is really PCP24H.)
+ 
+        Added SOILMP (soil moisture percentage) variable to the FSL 
+        database for mesonet data, with a validity QC check.
+
+        Added MLLW (mean lower low water) to the mesonet data for
+        the NOS-PORTS network.
+
+        Added the SST variable to the FSL database for mesonet data.
+        This variable had previously only been in the maritime data.
+        Validity, temporal consistency, and internal consistency QC
+        checks are done on the mesonet data, and will be added in a
+        future release to the maritime data.
+
+        Added VIBWD1, VIBWD2, and VIBWD3 (vibrating wire depth (1-3))
+        variables to the FSL database for COOP data.  Also added RIMT
+        (precipitation rim temperature) and GSRD5M (global solar 
+        radiation - 5min) variables to the COOP data.
+
+        When calculating specific humidity from WVSS-II aircraft data 
+        we now use the reported mixing ratio in the calculation rather 
+        than using an approximation derived using the dewpoint temperature.
+
+        Shorten comments lines over 72.
+
+        FILES CHANGED:
+
+        doc/acarsdump.par
+        doc/acarspdump.par
+        doc/acars_variable_list.txt
+        doc/acarsp_variable_list.txt
+        doc/hydrodump.par
+        doc/hydrodump1.par
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/mapdump1.par  
+        doc/mapdump2.par  
+        doc/mapdump.par  
+        doc/npndump1.par
+        doc/npndump.par
+        doc/raobdump1.par
+        doc/raobdump.par
+        doc/raob_qc_variable_list.txt
+        doc/raob_variable_list.txt
+        doc/rdmtrdump1.par
+        doc/rdmtrdump2.par
+        doc/rdmtrdump.par
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/satwnddump1.par
+        doc/satwnddump.par
+        doc/sfcdump.par
+        doc/sfcdump1.par
+        doc/sfcdump2.par
+        doc/sfc_variable_list.txt
+        doc/sfc_qc_variable_list.txt
+        include/madiscon.f
+        include/madiscom.f
+        include/strccom.f
+        src/mrdraoblev.f
+        src/madis_ingest.f
+        src/raobdump.f
+        src/mgenvcn.f
+        src/mgetacarsc.f
+        src/mgetuaptc.f
+        src/mraobint.f
+        src/muaptmoi.f
+        src/m_updsrcin.f
+        src/msethydropvdr.f
+        src/msetmappvdr.f
+        src/msfcpcp.f
+        src/msfcsrad.f
+        static/raob.template
+        static/raobvcn.txt
+        static/sfctbl.txt
+        static/sfcvcn.txt
+
+2.7     2005-06-22
+
+        Added SATS (satellite soundings) dataset.
+
+        Added ability to add QC structures to variables that didn't
+        have any QC in previous versions.  If archived data are
+        processed that don't have any QC results, that will be
+        indicated as "no QC applied" when these data are retrieved.
+
+        Added XML output format option to the surface meteorological
+        and hydrological datasets.
+
+        Added PRESWEA variable for COOP, SOLRAD for mesonet (solar 
+        radiation of unknown type), BAROHT and GPSHT for ACARS profiles.
+
+        Made several changes in how the Aircraft and Profiles at Airports 
+        moisture variables are calculated.  Instead of using dewpoint
+        as the base variable used in the calculations of different forms of 
+        moisture we are now using the base variable depending on the source of
+        the data.  For TAMDAR, relative humidity is used, and water vapor
+        mixing ratio is used for WVSS-II data.  As part of this change,
+        the REPWVMR variable has been removed.
+
+        Water vapor mixing ratio, with QC, has been added to the radiosonde,
+        radiometer, and meteorological surface datasets.
+
+        Updated documentation for changes made to the surface meteorological 
+        data processing in order to be consistent about applying QC to 
+        variables regardless of which dataset they're in.  The following QC 
+        additions were made (VC = validity check, TC = temporal consistency 
+        check):
+
+        Increased maximum number of surface station records for a single
+        request from 50000 to 100000.
+
+        METAR         snow cover                   VC, TC
+                      min/max 24 hour temp         VC
+                      wind gust                    VC, TC
+
+        COOP          soil moisture                VC
+
+        SAO           min/max 24 hour temp         VC
+                      wind gust                    VC, TC
+
+        MARITIME      wind gust                    VC, TC
+            
+        MESONET       wind gust                    VC, TC
+                      direction at gust            VC
+                      soil temperature             VC, TC
+
+        Changed Aircraft roll angle flag value for 71 to roll <= 5 degrees.
+
+        FILES CHANGED:
+
+        doc/acarsdump.par
+        doc/acarspdump.par
+        doc/acarsp_variable_list.txt
+        doc/acarsp_qc_variable_list.txt
+        doc/acars_variable_list.txt
+        doc/acars_qc_variable_list.txt
+        doc/errors.txt
+        doc/hydrodump.par
+        doc/hydrodump1.par
+        doc/hydrodump_usage.txt
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/mapdump1.par  
+        doc/mapdump2.par  
+        doc/mapdump.par  
+        doc/npndump1.par
+        doc/npndump.par
+        doc/raobdump1.par
+        doc/raobdump.par
+        doc/raob_variable_list.txt
+        doc/raob_qc_variable_list.txt
+        doc/rdmtrdump1.par
+        doc/rdmtrdump2.par
+        doc/rdmtrdump.par
+        doc/rdmtr_variable_list.txt
+        doc/rdmtr_qc_variable_list.txt
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/satwnddump1.par
+        doc/satwnddump.par
+        doc/sfcdump.par
+        doc/sfcdump1.par
+        doc/sfcdump2.par
+        doc/sfcdump_usage.txt
+        doc/sfc_qc_variable_list.txt
+        doc/sfc_variable_list.txt
+        doc/subroutine_list.txt
+        include/strccom.f
+        include/madiscom.f
+        include/madiscon.f
+        include/madistmp.f
+        src/acarsdump.f
+        src/acarspdump.f
+        src/hydrodump.f
+        src/madis_ingest.f
+        src/makefile
+        src/mapdump.f
+        src/mgenvcn.f
+        src/mgethydro.f
+        src/mgetsatwnd.f
+        src/mgetsfcc.f
+        src/mgetsfc.f
+        src/mgetuapt.f
+        src/mgetvcn.f
+        src/m_idsubsrc.f
+        src/minit.f
+        src/mmadisclose.f
+        src/mmapbeam.f
+        src/mmapvc.f
+        src/mmapwind.f
+        src/mmapwmode.f
+        src/mnpnbeam.f
+        src/mqcfltr.f
+        src/mrdchr.f
+        src/mrddep.f
+        src/mrddim.f
+        src/mrdnum.f
+        src/mrdraoblev.f
+        src/msatwndwind.f
+        src/msfcelev.f
+        src/msfcmoi.f
+        src/msfcpchg.f
+        src/msfcpcp.f
+        src/msfcprs.f
+        src/msfcrdlft.f
+        src/msfcsnow.f
+        src/msfcsrad.f
+        src/msfctv.f
+        src/msfcwind.f
+        src/msfiles.f
+        src/muaptmoi.f
+        src/muapttv.f
+        src/muaptwind.f
+        src/npndump.f
+        src/raobdump.f
+        src/rdmtrdump.f
+        src/satwnddump.f
+        src/sfcdump.f
+        static/acars.template
+        static/acarsp.template
+        static/acarsptbl.txt
+        static/acarspvcn.txt
+        static/acarstbl.txt
+        static/acarsvcn.txt
+        static/rdmtrtbl.txt
+        static/rdmtrvcn.txt
+        static/raobtbl.txt
+        static/raobvcn.txt
+        static/sfctbl.txt
+        static/sfcvcn.txt
+
+        FILES ADDED:
+
+        doc/satsnddump1.par
+        doc/satsnddump.par
+        doc/satsnddump_usage.txt
+        doc/satsnd_providers.txt
+        doc/satsnd_qc_variable_list.txt
+        doc/satsnd_variable_list.txt
+        src/m_eswinv.f
+        src/m_frtchr.f
+        src/mgetsatsnd.f
+        src/m_ptozsa.f       
+        src/msatsndcls.f
+        src/msatsndfltr.f
+        src/msatsndinit.f
+        src/msatsndmoi.f
+        src/msatsndrdsta.f
+        src/msatsndsta.f
+        src/msatsndtbl.f
+        src/msatsndtv.f
+        src/msetsatsndpvdr.f
+        src/m_tmr2.f
+        src/satsnddump.f
+        static/satsnd.template
+        static/satsndtbl.txt
+        static/satsndvcn.txt
+
+2.6     2004-12-17
+
+        Added TAMDAR dewpoint uncertainty variable (TDUNCER) to the
+        ACARS and ACARS profiles datasets.
+
+        FILES CHANGED:
+
+        doc/acarsdump.par
+        doc/acarspdump.par
+        doc/acars_variable_list.txt
+        doc/acarsp_variable_list.txt
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        src/mgenvcn.f
+        static/acars.template
+        static/acarsp.template
+        static/acarsptbl.txt
+        static/acarstbl.txt
+        static/acarspvcn.txt
+        static/acarsvcn.txt
+
+2.5     2004-08-24
+
+        Added ACARS profiles dataset.
+
+        Added a new surface meteorological dataset:  COOP, for the
+        modernized NWS Cooperative Observer network.  COOP includes new
+        sites installed as part of Phase II of the modernization, and
+        later this year will also include the Phase I stations which
+        had been included in the NWS-COOP and HADS mesonets.
+
+        Changed sample parameter files and usage documents to access a
+        new sample data case, from 8/24/04, that includes the new datasets.
+        
+        Changed the acarsdump and sfcdump programs so that they won't
+        output records for character variables that are all blank
+        (i.e., missing).
+
+        Added an option to hydrodump and sfcdump to output the full seven
+        digits of possible precision for latitude and longitude.  This means
+        latitude will have 5 digits after the decimal point and longitude
+        4 digits.  This changed the format of the hydrodump.par and sfcdump.par 
+        files to add an "Output Options" section, but the programs are backward 
+        compatible and will still provide the original 2-digit after the 
+        decimal place values if the old par file format is used.
+
+        Added the TURBIDX variable to the FSL database for ACARS data.
+        This variable had previously only been in the AWIPS database.
+
+        Added Tropospheric Airborne Meteorological Data Reporting (TAMDAR)
+        to the ACARS dataset, which called for the addition of several
+        TAMDAR-only variables and the results of the new "provider QC check" 
+        supplied with the TAMDAR data.  Note that the addition of the
+        provider QC check called for changing the acarsdump.txt format
+        to output 4 digits instead of 3 for the QCA and QCR values.
+
+        Added the SUBPVDR variable for surface MESONET and COOP datasets.
+        This has previously been available as a subset of the STALOC
+        variable for MESONET data, but can now be directly accessed.
+
+        Changed how netCDF files are open and closed so that temporary files
+        can be cleaned up when running dump programs on the MADIS web server.
+
+        FILES CHANGED:
+
+        doc/acars_variable_list.txt
+        doc/acarsp_variable_list.txt
+
+        doc/errors.txt
+        doc/hydrodump1.par
+        doc/hydrodump.par
+        doc/hydrodump_usage.txt
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/mapdump1.par
+        doc/mapdump2.par
+        doc/mapdump.par
+        doc/mapdump_usage.txt
+        doc/npndump1.par
+        doc/npndump.par
+        doc/npndump_usage.txt
+        doc/qc_info.txt
+        doc/raobdump1.par
+        doc/raobdump.par
+        doc/raobdump_usage.txt
+        doc/raob_variable_list.txt
+        doc/rdmtrdump1.par
+        doc/rdmtrdump2.par
+        doc/rdmtrdump.par
+        doc/rdmtrdump_usage.txt
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/satwnddump1.par
+        doc/satwnddump.par
+        doc/satwnddump_usage.txt
+        doc/sfcdump1.par
+        doc/sfcdump2.par
+        doc/sfcdump.par
+        doc/sfcdump_usage.txt
+        doc/sfc_providers.txt
+        doc/sfc_qc_variable_list.txt
+        doc/sfc_variable_list.txt
+        doc/subroutine_list.txt
+        include/madiscom.f
+        include/madiscon.f
+        include/madistmp.f
+        include/strccom.f
+        src/acarsdump.f
+        src/hydrodump.f
+        src/madis_ingest.f
+        src/makefile
+        src/mapdump.f
+        src/mgenvcn.f
+        src/mgetacarsc.f
+        src/mgetsfcc.f
+        src/mgetsfc.f
+        src/mgetuapt.f
+        src/mgetvcn.f
+        src/mhydrocls.f
+        src/mhydrosta.f
+        src/minit.f
+        src/mmadisopen.f
+        src/m_mkdesc.f
+        src/msatwndcls.f
+        src/msatwndsta.f
+        src/msetsfcpvdr.f
+        src/msfccls.f
+        src/msfcinit.f
+        src/msfcmoi.f
+        src/msfcpcp.f
+        src/msfcprs.f
+        src/msfcrdsta.f
+        src/msfcsta.f
+        src/msfctv.f
+        src/msfcwind.f
+        src/muaptcls.f
+        src/muaptfltr.f
+        src/muaptinit.f
+        src/muaptmoi.f
+        src/muaptrdsta.f
+        src/muaptsta.f
+        src/muapttv.f
+        src/npndump.f
+        src/raobdump.f
+        src/rdmtrdump.f
+        src/satwnddump.f
+        src/sfcdump.f
+        static/acarstbl.txt
+        static/acars.template
+        static/acarsvcn.txt
+        static/awips_acarstbl.txt
+        static/mesonet.template
+        static/sfcsrcin.txt
+        static/sfctbl.txt
+        static/sfcvcn.txt
+
+        FILES DELETED:
+
+        src/macarsrt.f
+
+        FILES ADDED:
+
+        doc/acarspdump.par
+        doc/acarspdump_usage.txt
+        doc/acarsp_qc_variable_list.txt
+        doc/acarsp_variable_list.txt
+        src/acarspdump.f
+        src/macarspsta.f
+        src/macarstime.f
+        src/mgetacarspc.f
+        src/mgetacarsp.f
+        src/mmadiscls1.f
+        src/msfcsnow.f
+        static/acarsptbl.txt
+        static/acarsp.template
+        static/acarspvcn.txt
+        static/awips_acarsptbl.txt
+        static/coop.template
+       
+2.4     2003-10-20
+
+        Added the satellite winds dataset.  GOES operational (3 hour) and 
+        experimental (1 hour) high density winds are now available from FSL.  
+        AWIPS database GOES winds (operational, 3 hour) are supported as well.
+
+        Changed sample parameter files and usage documents to access a
+        new sample data case, from 10/1/2003, that includes the new dataset.
+
+        Added a new type of solar radiation (global) to the surface dataset,
+        along with two new durations:  instantaneous and 5-minute.  This 
+        change was made in order to support new solar radiation observations 
+        added to the RAWS mesonet (direct instantaneous, MADIS variable 
+        DSRDINS) and to the OK-Meso mesonet (global 5-minute, MADIS variable 
+        GSRD5M).
+
+        Added support for the OPeNDAP/DODS netCDF client interface to the
+        source code, and to the binary distribution for Linux.  This interface
+        allows for the use of the same software to access MADIS netCDF files
+        stored on a local disk or served over the web from the new MADIS
+        OPeNDAP server.
+
+        Added support for the ACARS dataset in the AWIPS database.  
+
+        Added ICECOND (icing condition), PLATTYP (data platform type), and
+        DATASRC (source that provided the data) variables to the FSL ACARS
+        dataset.
+
+        Added the ability to locate data in archival directories.  If a user
+        sets up archival directories using the same conventions as those
+        used on the MADIS server, (e.g., $MADIS_DATA/2002/08/10 is the top
+        of the directory tree for August 8, 2002 data), data can automatically
+        be found in either the primary directories or the archival directories.
+
+        Fixed two minor bugs:  An undocumented missing flag for the ACARS VACC 
+        variable was discovered and now honored;  a few surface or hydro obs 
+        might have erroneously been tossed if they had observation times that 
+        were in the end minute of the time window and had non-zero seconds.
+
+        FILES CHANGED:
+
+        doc/acarsdump.par
+        doc/acarsdump_usage.txt
+        doc/acars_qc_variable_list.txt
+        doc/acars_variable_list.txt
+        doc/errors.txt
+        doc/hydrodump1.par
+        doc/hydrodump.par
+        doc/hydrodump_usage.txt
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/mapdump1.par
+        doc/mapdump2.par
+        doc/mapdump.par
+        doc/mapdump_usage.txt
+        doc/npndump1.par
+        doc/npndump.par
+        doc/npndump_usage.txt
+        doc/qc_info.txt
+        doc/raobdump1.par
+        doc/raobdump.par
+        doc/raobdump_usage.txt
+        doc/rdmtrdump1.par
+        doc/rdmtrdump2.par
+        doc/rdmtrdump.par
+        doc/rdmtrdump_usage.txt
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/sfcdump1.par
+        doc/sfcdump2.par
+        doc/sfcdump.par
+        doc/sfcdump_usage.txt
+        doc/sfc_providers.txt
+        doc/sfc_qc_variable_list.txt
+        doc/sfc_variable_list.txt
+        doc/subroutine_list.txt
+        include/madiscom.f
+        include/madiscon.f
+        include/madistmp.f
+        include/strccom.f
+        src/acarsdump.f
+        src/hydrodump.f
+        src/macarsrt.f
+        src/macarssta.f
+        src/madis_ingest.f
+        src/makefile
+        src/mapdump.f
+        src/mgenvcn.f
+        src/mgethydro.f
+        src/mgetsfc.f
+        src/mgetuapt.f
+        src/mgetvcn.f
+        src/mhydrofltr.f
+        src/mhydrosta.f
+        src/mhydrotbl.f
+        src/m_idsubsrc.f
+        src/minit.f
+        src/mmadisclose.f
+        src/mqcfltr.f
+        src/mrdnum.f
+        src/msetwin.f
+        src/msfcfltr.f
+        src/msfcprs.f
+        src/msfcsrad.f
+        src/msfcsta.f
+        src/msfctbl.f
+        src/msfiles.f
+        src/muaptmoi.f
+        src/muaptrdsta.f
+        src/muaptsta.f
+        src/muapttbl.f
+        src/npndump.f
+        src/raobdump.f
+        src/rdmtrdump.f
+        src/sfcdump.f
+        static/acarstbl.txt
+        static/acarsvcn.txt
+        static/hydrotbl.txt
+        static/maptbl.txt
+        static/npntbl.txt
+        static/raobtbl.txt
+        static/rdmtrtbl.txt
+        static/sfctbl.txt
+        static/sfcvcn.txt
+
+        FILES DELETED:
+
+        src/mgetsatw.f
+        src/msatwsta.f
+        src/msetsatwpvdr.f
+
+        FILES ADDED:
+
+        doc/satwnddump1.par
+        doc/satwnddump.par
+        doc/satwnddump_usage.txt
+        doc/satwnd_providers.txt
+        doc/satwnd_qc_variable_list.txt
+        doc/satwnd_variable_list.txt
+        src/mgetsatwnd.f
+        src/mmadisopen.f
+        src/msatwndcls.f
+        src/msatwndfltr.f
+        src/msatwndinit.f
+        src/msatwndlt.f
+        src/msatwndrdsta.f
+        src/msatwndsta.f
+        src/msatwndtbl.f
+        src/msatwndwind.f
+        src/msetsatwndpvdr.f
+        src/m_ptozsa.f
+        src/satwnddump.f
+        static/satwndtbl.txt
+        static/satwnd.template
+        static/satwndvcn.txt
+
+2.3     2003-07-08
+
+        Added radiometer dataset.
+
+        Changed sample parameter files and usage documents to access a
+        new sample data case, from 7/4/2003, that includes the new dataset.
+
+        Added AH (absolute humidity) variables to surface, raob, and ACARS
+        datasets.
+
+        Miscellaneous cleanup to get rid of extraneous compiler warnings.
+
+        FILES CHANGED:
+
+        doc/acarsdump.par
+        doc/acarsdump_usage.txt
+        doc/acars_qc_variable_list.txt
+        doc/acars_variable_list.txt
+        doc/errors.txt
+        doc/hydrodump1.par
+        doc/hydrodump.par
+        doc/hydrodump_usage.txt
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/mapdump1.par
+        doc/mapdump2.par
+        doc/mapdump.par
+        doc/mapdump_usage.txt
+        doc/npndump1.par
+        doc/npndump.par
+        doc/npndump_usage.txt
+        doc/qc_info.txt
+        doc/raobdump1.par
+        doc/raobdump.par
+        doc/raobdump_usage.txt
+        doc/raob_qc_variable_list.txt
+        doc/raob_variable_list.txt
+        doc/README
+        doc/README.doc_directory
+        doc/RELEASE_NOTES
+        doc/sfcdump1.par
+        doc/sfcdump2.par
+        doc/sfcdump.par
+        doc/sfcdump_usage.txt
+        doc/sfc_qc_variable_list.txt
+        doc/sfc_variable_list.txt
+        doc/subroutine_list.txt
+        include/madiscom.f
+        include/madiscon.f
+        src/acarsdump.f
+        src/hydrodump.f
+        src/madis_ingest.f
+        src/makefile
+        src/mapdump.f
+        src/mgenvcn.f
+        src/mgetmapc.f
+        src/mgetrdmtrc.f
+        src/mgetrdmtr.f
+        src/mgetsfc.f
+        src/mgetuapt.f
+        src/m_idsubsrc.f
+        src/m_prsalt.f
+        src/minit.f
+        src/msfcmoi.f
+        src/msfcsta.f
+        src/muaptfltr.f
+        src/muaptinit.f
+        src/muaptmoi.f
+        src/muaptrdsta.f
+        src/muaptsta.f
+        src/muapttbl.f
+        src/muapttv.f
+        src/m_updsrcin.f
+        src/npndump.f
+        src/raobdump.f
+        src/sfcdump.f
+        static/acarstbl.txt
+        static/acarsvcn.txt
+        static/raobtbl.txt
+        static/raobvcn.txt
+        static/sfctbl.txt
+        static/sfcvcn.txt
+
+        FILES DELETED:
+
+        src/mmapht.f
+
+        FILES ADDED:
+
+        doc/rdmtrdump1.par
+        doc/rdmtrdump2.par
+        doc/rdmtrdump.par
+        doc/rdmtrdump_usage.txt
+        doc/rdmtr_providers.txt
+        doc/rdmtr_qc_variable_list.txt
+        doc/rdmtr_variable_list.txt
+        src/m_ah2rh.f
+        src/mrdmtrsta.f
+        src/m_rh2ah.f
+        src/msetrdmtrpvdr.f
+        src/m_td2ah.f
+        src/muapthtp.f
+        src/rdmtrdump.f
+        static/radiometer.template
+        static/rdmtrtbl.txt
+        static/rdmtrvcn.txt
+
+2.2     2003-06-13
+
+        Fixed an error in the algorithm used to convert station pressure to
+        altimeter setting (prsalt.f subroutine).  Under most circumstances,
+        the errors were very small (97% of the time error of less than
+        0.5 mb), but under some circumstances, could be up to 12 mb in
+        error.
+
+        Fixed an error revealed only on DEC ALPHA, using mpif90 compiler.
+        Missing flags were not properly filled in when a netCDF variable 
+        doesn't have the _FillValue attribute defined.        
+
+        Removed "AUTO-MTR" surface provider name.  This was based on the
+        "auto station type" variable in the METAR records themselves, and
+        this variable provides results that are too unpredictable, i.e.,
+        a single station could bounce back and forth between automated
+        and non-automated.  All METARs are now either designated as from
+        the "ASOS" or "OTHER-MTR" providers.
+
+        Updated the static/stadic.txt file used to identify ASOS stations.
+
+        Removed the static/hydrosrcin.txt and mapsrcin.txt files, and the
+        sfcsrcin.txt file is no longer updated with new mesonets that
+        are detected in the input data files.  This change was made to
+        allow for the use of the MADIS software in parallelized applications.
+        The only impact on the end user is that if he/she calls the
+        MSET*PVDR routine with a typo in the name of the desired provider,
+        nothing will happen -- in the past, an invalid provider error
+        would be returned.  The sfcsrcin.txt file is being retained so
+        that users of archive data can keep full functionality for data
+        prior to the time that all necessary coded information concerning
+        accumulated precipitation or solar radiation variables were placed
+        into the data files themselves.  For the current list of valid
+        provider names for all MADIS datasets, please see the MADIS web
+        pages for the datasets of interest.
+
+        Increased maximum number of surface station records for a single
+        request from 25000 to 50000.
+
+        Increased maximum number of ACARS records for a single request from 
+        10000 to 60000.
+
+        Added mmadisclose.f to allow users to close all MADIS netCDF files
+        when done using the MADIS library calls in their application.  This
+        is only needed for users who are embedding MADIS library calls in
+        a program that goes on to do subsequent netCDF I/O.
+
+        Added a dummy interface for the satellite winds (SATW) dataset.
+        This dataset will be added in the next MADIS version.  The dummy
+        interface has been put into this version so that users of the
+        WRF 3DVAR package can compile that package with this version of
+        the MADIS library, and add in the SATW dataset later by simply 
+        getting a new MADIS library, with no modifications needed in the 
+        WRF 3DVAR code itself.  Also added a dummy interface for an
+        AWIPS-database version of the ACARS dataset, which will also be
+        added in the next MADIS version.
+
+        Added a validity check before during certain variable conversions.  
+        This was needed to cover the case of *really* bad data from the 
+        AWIPS database, which doesn't have any QC done on it, from blowing 
+        up a calculation.  The validity check limits are very gross, and
+        are designed simply to keep calculations from blowing up.
+                
+        Changed the definition of the SFC dataset's SOILM variable from
+        "Soil moisture" with units in %, to "Soil moisture tension" in kPa.
+
+        FILES CHANGED:
+
+        doc/errors.txt
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/README
+        doc/RELEASE_NOTES
+        doc/sfcdump_usage.txt
+        doc/sfc_providers.txt
+        doc/sfc_variable_list.txt
+        doc/subroutine_list.txt
+        include/madiscom.f
+        src/acarsdump.f
+        src/macarssta.f
+        src/madis_ingest.f
+        src/makefile
+        src/mhydroinit.f
+        src/mhydrordsta.f
+        src/m_idsubsrc.f
+        src/minit.f
+        src/m_prsalt.f
+        src/mrddbl.f
+        src/mrdnum.f
+        src/msethydropvdr.f
+        src/msetmappvdr.f
+        src/msetsfcpvdr.f
+        src/msfcinit.f
+        src/msfcmoi.f
+        src/msfcprs.f
+        src/msfcrdsta.f
+        src/msfctv.f
+        src/muaptinit.f
+        src/muaptmoi.f
+        src/muapttv.f
+        src/m_updsrcin.f
+        src/sfcdump.f
+        static/sfcsrcin.txt
+        static/stadic.txt
+
+        FILES DELETED:
+
+        static/hydrosrcin.txt
+        static/mapsrcin.txt
+
+        FILES ADDED:
+
+        src/mgetsatw.f
+        src/mmadisclose.f
+        src/msatwsta.f
+        src/msetsatwpvdr.f
+
+2.1     2002-06-03
+
+        Added Multi-Agency Profiler (MAP) dataset.
+
+        Increased maximum number of surface station records for a single
+        request from 10000 to 25000.
+
+        Fixed a bug where PCP3H, PCP6H, PCP12H and PCP18H were always
+        returned as "missing" for mesonet surface stations.
+
+        Added automatic update of all fields in static/sfcsrcin.txt from
+        a table added to the input mesonet files.  This allows new mesonets
+        that have accumulated precipitation or solar radiation variables
+        to be dynamically added, without requiring the user to download
+        a new copy of the sfcsrcin.txt file in order to read these
+        variables.
+
+        Restructured internal scratch memory usage to save a lot of space.
+
+        FILES CHANGED:
+
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/README
+        doc/RELEASE_NOTES
+        doc/acarsdump.par
+        doc/acarsdump_usage.txt
+        doc/errors.txt
+        doc/hydrodump.par
+        doc/hydrodump1.par
+        doc/hydrodump_usage.txt
+        doc/npndump.par
+        doc/npndump1.par
+        doc/npndump_usage.txt
+        doc/qc_info.txt
+        doc/raobdump.par
+        doc/raobdump1.par
+        doc/raobdump_usage.txt
+        doc/sfcdump.par
+        doc/sfcdump1.par
+        doc/sfcdump2.par
+        doc/sfcdump_usage.txt
+        doc/subroutine_list.txt
+        include/madiscom.f
+        include/madiscon.f
+        include/strccom.f
+        src/acarsdump.f
+        src/hydrodump.f
+        src/m_cswap.f
+        src/m_dswap.f
+        src/m_idsubsrc.f
+        src/m_iswap.f
+        src/m_lswap.f
+        src/m_rswap.f
+        src/m_rtrn3dim.f
+        src/macarssta.f
+        src/madis_ingest.f
+        src/makefile
+        src/mgenvcn.f
+        src/mgetacarsc.f
+        src/mgethydro.f
+        src/mgetsfc.f
+        src/mgetsfcc.f
+        src/mgetuapt.f
+        src/mgetuaptc.f
+        src/mhydrordsta.f
+        src/mhydrosta.f
+        src/minit.f
+        src/mnpnbeam.f
+        src/mnpnlt.f
+        src/mnpnsta.f
+        src/mraobint.f
+        src/mraobnum.f
+        src/mraobsta.f
+        src/mrdchr.f
+        src/mrddbl.f
+        src/mrdnum.f
+        src/mrdraoblev.f
+        src/mremraoblv.f
+        src/msfcmoi.f
+        src/msfcpcp.f
+        src/msfcprs.f
+        src/msfcsrad.f
+        src/msfcrdsta.f
+        src/msfcsta.f
+        src/msfctv.f
+        src/msfcwind.f
+        src/muaptcls.f
+        src/muaptfltr.f
+        src/muaptinit.f
+        src/muaptmoi.f
+        src/muaptrdsta.f
+        src/muaptsta.f
+        src/muapttv.f
+        src/muaptwind.f
+        src/npndump.f
+        src/raobdump.f
+        src/sfcdump.f
+        static/sfcsrcin.txt
+        static/sfctbl.txt
+
+        FILES DELETED:
+
+        src/m_rtrn3dim.f
+
+        FILES ADDED:
+
+        doc/README.doc_directory
+        doc/map_providers.txt
+        doc/map_qc_variable_list.txt
+        doc/map_variable_list.txt
+        doc/mapdump.par
+        doc/mapdump1.par
+        doc/mapdump2.par
+        doc/mapdump_usage.txt
+        include/madistmp.f
+        src/mgetmap.f
+        src/mgetmapc.f
+        src/mmapsta.f
+        src/msetmappvdr.f
+        src/m_combqc.f
+        src/m_updsrcin.f
+        src/mmapbeam.f
+        src/mmapbeamc.f
+        src/mmapext.f
+        src/mmapht.f
+        src/mmaplt.f
+        src/mmapvc.f
+        src/mmapwind.f
+        src/mmapwmode.f
+        src/mrddep.f
+        static/map.template
+        static/mapsrcin.txt
+        static/maptbl.txt
+        static/mapvcn.txt
+
+2.01    2002-02-01
+
+        Fixed bug in SFC subsystem where the precipitation intensity (PCPINT) 
+        and precipitation type (PCPTYPE) variables were improperly handled.
+
+        Added interpolation of elevations for buoys in Northern Canada lakes
+        (when needed).
+                
+        Miscellaneous updates to documentation.
+
+        FILES CHANGED:
+
+        doc/INSTALL.unix
+        doc/INSTALL.windows
+        doc/README
+        doc/RELEASE_NOTES
+        doc/npn_qc_variable_list.txt
+        doc/qc_info.txt
+        doc/sfc_variable_list.txt
+        include/madiscon.f
+        src/mgetsfc.f
+        src/m_marelv.f
+        src/sfcdump.f        
+
+2.00    2001-08-17
+
+        Original public release.

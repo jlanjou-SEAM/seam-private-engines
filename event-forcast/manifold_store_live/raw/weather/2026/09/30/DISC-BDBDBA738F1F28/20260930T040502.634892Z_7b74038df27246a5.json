@@ -1,0 +1,2014 @@
+{
+    "@context": [
+        {
+            "schema": "https://schema.org/",
+            "type": "@type",
+            "features": "schema:itemListElement",
+            "FeatureCollection": "schema:itemList"
+        }
+    ],
+    "type": "FeatureCollection",
+    "@id": "https://api.weather.gc.ca/collections/climate-stations",
+    "features": [
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/101AE00"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/101C0ME"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/101C04E"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/101F942"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/101HFEE"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/101HFNE"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/101HF66"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/101H6FF"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/101QFEG"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/101QF57"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/101Q6NN"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/101Q655"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1010066"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1010235"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1010595"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1010720"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1010774"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1010780"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1010960"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1010961"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1010965"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/10114FF"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/10114F6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1011467"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1011500"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1011743"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1011745"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1011775"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1011810"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1011860"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1011920"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1011922"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012008"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012010"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012018"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012040"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012046"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012052"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012055"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012190"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012550"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012562"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012566"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012570"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012573"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012628"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012655"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012656"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012700"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012707"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012710"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1012883"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/10130DE"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/10130MN"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1013045"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1013051"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1013240"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1013241"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1013519"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1013720"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1014430"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1014493"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1014530"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1014820"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1014930"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1014931"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1015105"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1015107"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1015109"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1015134"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1015136"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1015150"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1015160"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1015242"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1015628"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1015638"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016RM0"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016120"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016169"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016203"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016335"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016641"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016780"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/10169DK"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/10169MK"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016940"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016941"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016942"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016980"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016990"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016992"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1016995"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1017000"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1017098"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1017101"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1017230"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1017233"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1017329"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1017556"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1017559"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1017560"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1017563"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1017570"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1017575"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1017610"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018FF6"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018590"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018592"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018595"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018600"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018605"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018610"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018611"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018614"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018616"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018617"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018620"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018629"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018640"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018642"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018644"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018648"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018651"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018657"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018658"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018660"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018666"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1018935"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1019010"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1019014"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/102BFHH"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/102ECG0"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/102E3G0"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/102JR88"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/102PG75"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1020270"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1020590"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1020880"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1020885"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1020910"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021230"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021250"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021260"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021261"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021262"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021263"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021264"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021265"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021266"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021320"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021330"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021480"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021737"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021830"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021838"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021850"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021950"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021958"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021960"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021988"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021989"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021990"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1021994"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1022250"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1022430"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1022433"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1022436"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1022560"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1022688"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1023037"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1023042"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1023462"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1023471"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1023590"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1024005"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1024485"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1024590"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1024592"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1024637"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1024638"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1024639"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1024642"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025C70"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025234"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025237"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025240"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025254"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/10253G0"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/10253P0"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025340"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025370"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025371"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025375"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025377"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025915"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025970"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025975"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1025977"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1026170"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1026266"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1026270"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1026274"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1026323"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1026560"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1026563"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1026564"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1026565"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1026639"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1027060"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1027110"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1027112"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1027114"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1027115"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/10277GN"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1027775"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1027870"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1027871"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1028L3M"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1028340"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1030180"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1030185"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1030210"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1030220"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1030230"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1030425"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1030426"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1030550"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1030552"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1030600"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1030605"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1030610"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1030850"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1031110"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1031316"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1031352"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1031353"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1031400"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1031402"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1031413"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1031650"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1031844"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1032660"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1032730"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1033230"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1033232"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1033455"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1033460"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1033479"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1033480"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1033483"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1033485"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1034070"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1034170"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1034175"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1034440"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1034600"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1034725"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1035610"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1035612"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1035614"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1035940"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1036205"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1036206"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1036207"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1036208"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1036210"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1036218"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1036240"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1036243"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1036570"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1036572"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1036907"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1037650"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1037890"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1037899"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1038205"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1038206"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1038207"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1038240"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1038330"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1038331"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1038332"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1038964"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1039030"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1039040"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/104G660"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/104LC3N"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/104PF64"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1040R09"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1040390"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1040400"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1040420"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1040445"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/104090R"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1040908"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1040909"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1040911"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1041050"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1041100"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1041380"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1041490"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1041710"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1042255"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1042470"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1043048"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1043060"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1043150"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1043152"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/10433B0"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1043320"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1043321"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1043504"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1043582"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1043722"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1044680"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1044710"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1044732"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1044840"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1045100"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1045440"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1045960"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1046115"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1046330"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1046360"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1046390"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1046391"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1046400"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1046410"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1046791"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1046795"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1047F6B"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1047170"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1047176"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1047179"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/10476F0"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1047660"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1047662"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1047669"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1047670"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1047671"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1047672"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1047673"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1047770"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1048140"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1048310"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1048816"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1048898"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1048974"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1048975"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/105PA91"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1051350"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1051630"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1052310"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1052639"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1053645"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1054RKF"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1054500"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/10549BN"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1054920"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1054925"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1054926"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1055950"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1056250"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1056590"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1056742"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1057050"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1057192"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1058003"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1058190"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/106C0C5"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/106H130"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/106Q669"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1060080"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1060330"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1060331"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1060446"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1060810"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1060820"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1060840"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1060841"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1060842"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1060901"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1060902"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1061210"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1062295"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1062544"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1062593"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1062646"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1062745"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1062790"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1063086"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1063298"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1063339"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1063690"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1064020"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1064138"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1064227"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1064288"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1064289"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1064290"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1064320"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1064321"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1064322"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1064329"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1064375"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1064497"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1064591"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1065010"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1065130"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1065170"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1065275"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1065310"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1065670"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1065945"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066JFQ"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066K57"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066202"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066336"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066420"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066480"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066481"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066484"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066488"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066492"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066493"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066787"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066788"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066885"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1066900"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1067005"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1067225"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1067740"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1067742"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1067745"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1067776"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1067868"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1067880"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1067881"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1068100"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1068130"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1068131"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1068159"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1068170"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1068201"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1068250"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1068677"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/107ADFE"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/107GHG9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/107G879"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/107P505"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1070150"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1070154"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1070571"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1070572"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1070573"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1070873"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1071092"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1071785"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1072075"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1072692"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1072902"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1073L4F"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1073040"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1073278"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1073347"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1073349"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/107335J"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1073612"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1073615"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1073616"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1074276"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1074328"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1074330"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1074331"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1074336"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1074800"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1075199"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1075200"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1075202"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1075253"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1075384"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1075385"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1075520"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1076638"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1076886"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1077500"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1077505"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1077508"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1078L3D"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1078070"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1078072"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1078074"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1078080"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1078086"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1078209"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/108CFAF"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1080QQ0"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1080283"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1080284"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/climate-stations/items/1080285"
+        }
+    ]
+}

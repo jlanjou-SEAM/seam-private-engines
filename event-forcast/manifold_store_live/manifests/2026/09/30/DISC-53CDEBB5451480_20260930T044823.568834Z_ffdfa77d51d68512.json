@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-53CDEBB5451480",
+  "provider": "NOAA/NCEI",
+  "dataset": "fire-history",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:23.568834Z",
+  "request_url": "https://www.ncei.noaa.gov/products/paleoclimatology/fire-history",
+  "final_url": "https://www.ncei.noaa.gov/products/paleoclimatology/fire-history",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 44783,
+  "sha256": "ffdfa77d51d685120d1ddf220eeddcd1f74b02ffc4e17b20f1a6ea1d187026a7",
+  "etag": "\"1790716213-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:10:13 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-53CDEBB5451480\\20260930T044823.568834Z_ffdfa77d51d68512.html",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

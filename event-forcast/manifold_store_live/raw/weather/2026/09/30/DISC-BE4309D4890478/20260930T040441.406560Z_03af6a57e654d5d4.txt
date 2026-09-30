@@ -1,0 +1,150 @@
+# WeatherAPI.com
+
+> Real-time, forecast, historical, marine, future, astronomy, air quality, pollen, sports, IP lookup, and timezone data via a JSON/XML REST API. Trusted by 850,000+ developers. Average response time ~200ms.
+
+## Authentication
+
+All requests require an API key as a query parameter named `key`.
+
+- Sign up free at https://www.weatherapi.com/signup.aspx
+- Find your key at https://www.weatherapi.com/my/
+- Pass it on every request: `?key=YOUR_API_KEY`
+- No Authorization header needed. Query string only.
+
+## Base URL
+
+https://api.weatherapi.com/v1
+
+## Endpoints
+
+### Current Weather
+GET /current.json?key=YOUR_API_KEY&q=London&aqi=yes
+- Returns real-time weather: temperature, wind, humidity, pressure, UV, visibility, condition
+- Optional: aqi=yes (air quality), pollen=yes (Pro+ plan)
+- Example: https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=London
+
+### Forecast Weather
+GET /forecast.json?key=YOUR_API_KEY&q=London&days=3&alerts=yes&aqi=yes
+- Returns up to 14-day forecast with hourly breakdown and astronomy data
+- Required: days (1-14)
+- Optional: alerts=yes, aqi=yes, pollen=yes, hour=0-23, tp=15 (Enterprise)
+- Example: https://api.weatherapi.com/v1/forecast.json?key=YOUR_API_KEY&q=New+York&days=7
+
+### Historical Weather
+GET /history.json?key=YOUR_API_KEY&q=Paris&dt=2024-06-15
+- Returns historical weather from 1 January 2010 onwards
+- Required: dt (yyyy-MM-dd)
+- Optional: end_dt for date range (Pro+ plan, max 30-day range)
+- Example: https://api.weatherapi.com/v1/history.json?key=YOUR_API_KEY&q=Paris&dt=2024-01-01
+
+### Future Weather (14–300 days ahead)
+GET /future.json?key=YOUR_API_KEY&q=London&dt=2026-06-01
+- Returns 3-hourly weather for a date 14 to 300 days in the future
+- Available on Pro+ plan and above
+- Example: https://api.weatherapi.com/v1/future.json?key=YOUR_API_KEY&q=London&dt=2026-06-01
+
+### Marine Weather
+GET /marine.json?key=YOUR_API_KEY&q=51.5,-1.8&days=3&tides=yes
+- Returns marine/sailing weather: wave height, swell, water temperature
+- Tide data available on Pro+ plan
+- Example: https://api.weatherapi.com/v1/marine.json?key=YOUR_API_KEY&q=51.5,-1.8&days=1
+
+### Weather Alerts
+GET /alerts.json?key=YOUR_API_KEY&q=London
+- Returns government weather alerts (USA, UK, Europe, rest of world)
+- Example: https://api.weatherapi.com/v1/alerts.json?key=YOUR_API_KEY&q=London
+
+### Search / Autocomplete
+GET /search.json?key=YOUR_API_KEY&q=edinb
+- Returns array of matching cities/towns with coordinates and slugs
+- Example: https://api.weatherapi.com/v1/search.json?key=YOUR_API_KEY&q=lond
+
+### IP Lookup
+GET /ip.json?key=YOUR_API_KEY&q=8.8.8.8
+- Returns geolocation for an IP address: city, region, country, lat/lon, timezone
+- Pass q=auto:ip to geolocate the caller automatically
+- Example: https://api.weatherapi.com/v1/ip.json?key=YOUR_API_KEY&q=auto:ip
+
+### Astronomy
+GET /astronomy.json?key=YOUR_API_KEY&q=Tokyo&dt=2026-03-20
+- Returns sunrise, sunset, moonrise, moonset, moon phase, moon illumination
+- Required: dt (yyyy-MM-dd)
+- Example: https://api.weatherapi.com/v1/astronomy.json?key=YOUR_API_KEY&q=London&dt=2026-03-21
+
+### Timezone
+GET /timezone.json?key=YOUR_API_KEY&q=Sydney
+- Returns IANA timezone ID and local time for any location
+- Example: https://api.weatherapi.com/v1/timezone.json?key=YOUR_API_KEY&q=Sydney
+
+### Sports Events
+GET /sports.json?key=YOUR_API_KEY&q=London
+- Returns upcoming football, cricket, and golf events
+- Example: https://api.weatherapi.com/v1/sports.json?key=YOUR_API_KEY&q=London
+
+## Location Query Parameter (q)
+
+The `q` parameter accepts:
+- City name: `q=London`
+- Latitude/longitude: `q=51.5,-0.1`
+- US zip code: `q=10001`
+- UK postcode: `q=SW1`
+- Canada postal code: `q=G2J`
+- METAR code: `q=metar:EGLL`
+- IATA airport code: `q=iata:LHR`
+- IP address: `q=100.0.0.1`
+- Auto IP detection: `q=auto:ip`
+- Location ID from search: `q=id:2801268`
+
+## Bulk Requests
+
+POST /current.json?key=YOUR_API_KEY&q=bulk
+- Send up to 50 locations in a single request (Pro+ plan and above)
+- Each location counts as 1 API call
+- Content-Type: application/json
+- Body: {"locations": [{"q": "London", "custom_id": "loc-1"}, {"q": "Paris", "custom_id": "loc-2"}]}
+
+## Response Format
+
+All responses are JSON (use .json suffix) or XML (use .xml suffix).
+Every response includes a `location` object with name, region, country, lat, lon, tz_id, localtime.
+
+## Error Codes
+
+| HTTP | Code | Meaning |
+|------|------|---------|
+| 401 | 1002 | API key not provided |
+| 400 | 1003 | Parameter q not provided |
+| 400 | 1005 | Invalid request URL |
+| 400 | 1006 | No location found for q |
+| 401 | 2006 | API key invalid |
+| 403 | 2007 | Monthly quota exceeded |
+| 403 | 2008 | API key disabled |
+| 403 | 2009 | Feature not available on your plan |
+
+## Pricing Plans
+
+| Plan | Price | Calls/month | Forecast | History |
+|------|-------|-------------|----------|---------|
+| Free | $0 | 100,000 | 3 days | 1 day |
+| Starter | $7/mo | 3,000,000 | 7 days | 7 days |
+| Pro+ | $25/mo | 5,000,000 | 300 days | 365 days |
+| Business | $65/mo | 10,000,000 | 300 days | 365 days |
+| Enterprise | Custom | Custom | 365 days | From 2010 |
+
+Free plan requires no credit card. Upgrade at any time — API key stays the same.
+
+## OpenAPI Spec
+
+https://www.weatherapi.com/openapi.json
+
+## Documentation
+
+https://www.weatherapi.com/docs/
+
+## API Explorer (interactive testing)
+
+https://www.weatherapi.com/api-explorer.aspx
+
+## SDKs
+
+https://github.com/weatherapicom/ (Python, PHP, Ruby, JavaScript, Java, Go, and more)

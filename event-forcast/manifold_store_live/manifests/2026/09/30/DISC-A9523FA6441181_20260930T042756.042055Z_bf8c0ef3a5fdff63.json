@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A9523FA6441181",
+  "provider": "NOAA/NDBC",
+  "dataset": "TIXC1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:27:56.042055Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/TIXC1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/TIXC1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 406644,
+  "sha256": "bf8c0ef3a5fdff63799dcfc513dd5aeddb47168b7606c8318cfe2b9740cd9939",
+  "etag": "\"63474-65cabafe1e88b\"",
+  "last_modified": "Wed, 30 Sep 2026 04:25:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-A9523FA6441181\\20260930T042756.042055Z_bf8c0ef3a5fdff63.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

@@ -1,0 +1,435 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "00000990-ed8b-4c54-acf9-c1f6d9da5762",
+        "monitoring_location_id": "USGS-08481500",
+        "field_visit_id": "509f7122-229a-dc99-e053-0100007fdd37",
+        "measurement_number": "948",
+        "time": "2013-08-28T20:22:00+00:00",
+        "channel_name": "main",
+        "channel_flow": "11.3",
+        "channel_flow_unit": "ft^3/s",
+        "channel_width": "10.0",
+        "channel_width_unit": "ft",
+        "channel_area": "5.03",
+        "channel_area_unit": "ft^2",
+        "channel_velocity": "2.25",
+        "channel_velocity_unit": "ft/s",
+        "channel_location_distance": "100.00",
+        "channel_location_distance_unit": "ft",
+        "channel_stability": "Firm",
+        "channel_material": "Gravel",
+        "channel_evenness": "Even",
+        "horizontal_velocity_description": "Even",
+        "vertical_velocity_description": "Unknown",
+        "longitudinal_velocity_description": "Unknown",
+        "measurement_type": "Wading",
+        "last_modified": "2026-09-12T02:13:20.625613+00:00",
+        "channel_measurement_type": "point_velocity",
+        "channel_location_direction": "Upstream"
+      },
+      "id": "00000990-ed8b-4c54-acf9-c1f6d9da5762",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.89790277777779,
+          33.144888888888886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "00000b34-1004-4976-8ccd-68e6873695a9",
+        "monitoring_location_id": "USGS-04253775",
+        "field_visit_id": "464357d4-3519-0661-e053-0100007fe647",
+        "measurement_number": "5",
+        "time": "1989-02-01T14:25:00+00:00",
+        "channel_name": "Imported Channel 1",
+        "channel_flow": "0.36",
+        "channel_flow_unit": "ft^3/s",
+        "channel_width": "3.50",
+        "channel_width_unit": "ft",
+        "channel_area": "0.85",
+        "channel_area_unit": "ft^2",
+        "channel_velocity": "0.42",
+        "channel_velocity_unit": "ft/s",
+        "channel_location_distance": "",
+        "channel_location_distance_unit": "",
+        "channel_stability": "Unspecified",
+        "channel_material": "Unspecified",
+        "channel_evenness": "Unspecified",
+        "horizontal_velocity_description": "Unspecified",
+        "vertical_velocity_description": "Unspecified",
+        "longitudinal_velocity_description": "Unknown",
+        "measurement_type": "Wading",
+        "last_modified": "2026-07-26T02:55:26.203779+00:00",
+        "channel_measurement_type": "point_velocity",
+        "channel_location_direction": "Unspecified"
+      },
+      "id": "00000b34-1004-4976-8ccd-68e6873695a9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.909619143812,
+          43.7514556238373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "00001430-3da5-4ad1-b597-8187e68e573c",
+        "monitoring_location_id": "USGS-06601200",
+        "field_visit_id": "4e66414f-52db-3881-e053-0100007f3a9d",
+        "measurement_number": "42",
+        "time": "1956-10-22T15:40:00+00:00",
+        "channel_name": "Imported Channel 1",
+        "channel_flow": "18800",
+        "channel_flow_unit": "ft^3/s",
+        "channel_width": "510",
+        "channel_width_unit": "ft",
+        "channel_area": "6610",
+        "channel_area_unit": "ft^2",
+        "channel_velocity": "2.84",
+        "channel_velocity_unit": "ft/s",
+        "channel_location_distance": "",
+        "channel_location_distance_unit": "",
+        "channel_stability": "Unspecified",
+        "channel_material": "Unspecified",
+        "channel_evenness": "Unspecified",
+        "horizontal_velocity_description": "Unspecified",
+        "vertical_velocity_description": "Unspecified",
+        "longitudinal_velocity_description": "Unknown",
+        "measurement_type": "BridgeCrane",
+        "last_modified": "2026-09-28T20:35:35.874534+00:00",
+        "channel_measurement_type": "point_velocity",
+        "channel_location_direction": "Unspecified"
+      },
+      "id": "00001430-3da5-4ad1-b597-8187e68e573c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.2429166666667,
+          42.0078333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0000145b-3cf1-4437-a08b-7971a76717ff",
+        "monitoring_location_id": "USGS-02196820",
+        "field_visit_id": "4c4ee7ea-542b-b9fa-e053-0100007f2682",
+        "measurement_number": "117",
+        "time": "1981-04-08T05:00:00+00:00",
+        "channel_name": "Imported Channel 1",
+        "channel_flow": "5.71",
+        "channel_flow_unit": "ft^3/s",
+        "channel_width": "10.3",
+        "channel_width_unit": "ft",
+        "channel_area": "8.90",
+        "channel_area_unit": "ft^2",
+        "channel_velocity": "0.64",
+        "channel_velocity_unit": "ft/s",
+        "channel_location_distance": "",
+        "channel_location_distance_unit": "",
+        "channel_stability": "Unspecified",
+        "channel_material": "Unspecified",
+        "channel_evenness": "Unspecified",
+        "horizontal_velocity_description": "Unspecified",
+        "vertical_velocity_description": "Unspecified",
+        "longitudinal_velocity_description": "Unknown",
+        "measurement_type": "Wading",
+        "last_modified": "2026-07-18T02:03:01.567438+00:00",
+        "channel_measurement_type": "point_velocity",
+        "channel_location_direction": "Unspecified"
+      },
+      "id": "0000145b-3cf1-4437-a08b-7971a76717ff",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.1290081834949,
+          33.4431934844403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "00001f5f-96a9-454a-9657-0de856cd0248",
+        "monitoring_location_id": "USGS-13037500",
+        "field_visit_id": "4b1a9a80-61a6-9a7f-e053-0100007f14f5",
+        "measurement_number": "519",
+        "time": "1949-05-26T07:00:00+00:00",
+        "channel_name": "Imported Channel 1",
+        "channel_flow": "14500",
+        "channel_flow_unit": "ft^3/s",
+        "channel_width": "",
+        "channel_width_unit": "",
+        "channel_area": "",
+        "channel_area_unit": "",
+        "channel_velocity": "",
+        "channel_velocity_unit": "",
+        "channel_location_distance": "",
+        "channel_location_distance_unit": "ft",
+        "channel_stability": "Unspecified",
+        "channel_material": "Unspecified",
+        "channel_evenness": "Unspecified",
+        "horizontal_velocity_description": "Unspecified",
+        "vertical_velocity_description": "Unspecified",
+        "longitudinal_velocity_description": "Unknown",
+        "measurement_type": "Unspecified",
+        "last_modified": "2026-09-28T20:45:34.705445+00:00",
+        "channel_measurement_type": "other_method",
+        "channel_location_direction": "Unspecified"
+      },
+      "id": "00001f5f-96a9-454a-9657-0de856cd0248",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.66,
+          43.6125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0000201b-e49f-419a-af22-20e55b719890",
+        "monitoring_location_id": "USGS-07366200",
+        "field_visit_id": "46e167ae-2b8d-83ab-e053-0100007fea7a",
+        "measurement_number": "275",
+        "time": "1978-08-17T05:00:00+00:00",
+        "channel_name": "Imported Channel 1",
+        "channel_flow": "2.01",
+        "channel_flow_unit": "ft^3/s",
+        "channel_width": "7.20",
+        "channel_width_unit": "ft",
+        "channel_area": "2.29",
+        "channel_area_unit": "ft^2",
+        "channel_velocity": "0.88",
+        "channel_velocity_unit": "ft/s",
+        "channel_location_distance": "",
+        "channel_location_distance_unit": "",
+        "channel_stability": "Unspecified",
+        "channel_material": "Unspecified",
+        "channel_evenness": "Unspecified",
+        "horizontal_velocity_description": "Unspecified",
+        "vertical_velocity_description": "Unspecified",
+        "longitudinal_velocity_description": "Unknown",
+        "measurement_type": "Wading",
+        "last_modified": "2026-09-14T21:20:26.112079+00:00",
+        "channel_measurement_type": "point_velocity",
+        "channel_location_direction": "Unspecified"
+      },
+      "id": "0000201b-e49f-419a-af22-20e55b719890",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.63293049607,
+          32.9293064115234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "00002177-fbe4-44ef-88a4-9cc1275c54e3",
+        "monitoring_location_id": "USGS-03514000",
+        "field_visit_id": "4d59e848-385b-b4d5-e053-0100007f808f",
+        "measurement_number": "115",
+        "time": "1952-06-24T05:00:00+00:00",
+        "channel_name": "Imported Channel 1",
+        "channel_flow": "60.6",
+        "channel_flow_unit": "ft^3/s",
+        "channel_width": "",
+        "channel_width_unit": "",
+        "channel_area": "",
+        "channel_area_unit": "",
+        "channel_velocity": "",
+        "channel_velocity_unit": "",
+        "channel_location_distance": "",
+        "channel_location_distance_unit": "",
+        "channel_stability": "Unspecified",
+        "channel_material": "Unspecified",
+        "channel_evenness": "Unspecified",
+        "horizontal_velocity_description": "Unspecified",
+        "vertical_velocity_description": "Unspecified",
+        "longitudinal_velocity_description": "Unknown",
+        "measurement_type": "Unspecified",
+        "last_modified": "2026-07-18T02:22:29.640750+00:00",
+        "channel_measurement_type": "point_velocity",
+        "channel_location_direction": "Unspecified"
+      },
+      "id": "00002177-fbe4-44ef-88a4-9cc1275c54e3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.71600474295,
+          35.4773122254459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "00002739-57fd-4161-b0b3-65fcb1f5581c",
+        "monitoring_location_id": "USGS-10301755",
+        "field_visit_id": "51b32e4b-285a-8d0c-e053-0100007f5740",
+        "measurement_number": "315",
+        "time": "2017-05-16T15:05:30+00:00",
+        "channel_name": "main",
+        "channel_flow": "42.0",
+        "channel_flow_unit": "ft^3/s",
+        "channel_width": "8.25",
+        "channel_width_unit": "ft",
+        "channel_area": "12.5",
+        "channel_area_unit": "ft^2",
+        "channel_velocity": "3.36",
+        "channel_velocity_unit": "ft/s",
+        "channel_location_distance": "10.00",
+        "channel_location_distance_unit": "ft",
+        "channel_stability": "Firm",
+        "channel_material": "BedrockLedgeArtificial",
+        "channel_evenness": "Even",
+        "horizontal_velocity_description": "Even",
+        "vertical_velocity_description": "Unknown",
+        "longitudinal_velocity_description": "Unknown",
+        "measurement_type": "Wading",
+        "last_modified": "2026-09-17T18:05:48.449889+00:00",
+        "channel_measurement_type": "point_velocity",
+        "channel_location_direction": "Upstream"
+      },
+      "id": "00002739-57fd-4161-b0b3-65fcb1f5581c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.861258073546,
+          39.0124202422679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "000027c2-14ad-43bd-a34d-4533d2402671",
+        "monitoring_location_id": "USGS-0214627970",
+        "field_visit_id": "4d5943f1-e655-6843-e053-0100007f1dc3",
+        "measurement_number": "66",
+        "time": "2009-08-04T13:46:30+00:00",
+        "channel_name": "Imported Channel 1",
+        "channel_flow": "5.55",
+        "channel_flow_unit": "ft^3/s",
+        "channel_width": "21.5",
+        "channel_width_unit": "ft",
+        "channel_area": "16.8",
+        "channel_area_unit": "ft^2",
+        "channel_velocity": "0.33",
+        "channel_velocity_unit": "ft/s",
+        "channel_location_distance": "",
+        "channel_location_distance_unit": "",
+        "channel_stability": "Unspecified",
+        "channel_material": "Unspecified",
+        "channel_evenness": "Unspecified",
+        "horizontal_velocity_description": "Unspecified",
+        "vertical_velocity_description": "Unspecified",
+        "longitudinal_velocity_description": "Unknown",
+        "measurement_type": "Wading",
+        "last_modified": "2026-09-28T15:25:46.382853+00:00",
+        "channel_measurement_type": "point_velocity",
+        "channel_location_direction": "Unspecified"
+      },
+      "id": "000027c2-14ad-43bd-a34d-4533d2402671",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.8683333333333,
+          35.2402777777778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "00002833-edf5-44ad-9b7c-031e91e0a4d4",
+        "monitoring_location_id": "USGS-05062200",
+        "field_visit_id": "4f6aee9d-ec11-6e55-e053-0100007f843a",
+        "measurement_number": "2",
+        "time": "1956-04-21T06:00:00+00:00",
+        "channel_name": "Imported Channel 1",
+        "channel_flow": "57.2",
+        "channel_flow_unit": "ft^3/s",
+        "channel_width": "",
+        "channel_width_unit": "",
+        "channel_area": "",
+        "channel_area_unit": "",
+        "channel_velocity": "",
+        "channel_velocity_unit": "",
+        "channel_location_distance": "",
+        "channel_location_distance_unit": "ft",
+        "channel_stability": "Unspecified",
+        "channel_material": "Unspecified",
+        "channel_evenness": "Unspecified",
+        "horizontal_velocity_description": "Unspecified",
+        "vertical_velocity_description": "Unspecified",
+        "longitudinal_velocity_description": "Unknown",
+        "measurement_type": "Unspecified",
+        "last_modified": "2026-07-11T02:03:25.738943+00:00",
+        "channel_measurement_type": "other_method",
+        "channel_location_direction": "Unspecified"
+      },
+      "id": "00002833-edf5-44ad-9b7c-031e91e0a4d4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.1142529734484,
+          47.2916463828648
+        ]
+      }
+    }
+  ],
+  "numberReturned": 10,
+  "links": [
+    {
+      "rel": "next",
+      "href": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items?cursor=MDAwMDI4MzMtZWRmNS00NGFkLTliN2MtMDMxZTkxZTBhNGQ0&f=json",
+      "type": "application/geo+json",
+      "title": "Items (next)"
+    },
+    {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items?f=json"
+    },
+    {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "title": "This document as RDF (JSON-LD)",
+      "href": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items?f=jsonld"
+    },
+    {
+      "type": "text/html",
+      "rel": "alternate",
+      "title": "This document as HTML",
+      "href": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items?f=html"
+    },
+    {
+      "type": "text/csv; charset=utf-8",
+      "rel": "alternate",
+      "title": "This document as CSV",
+      "href": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items?f=csv"
+    },
+    {
+      "type": "application/json",
+      "title": "Channel measurements",
+      "rel": "collection",
+      "href": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements"
+    }
+  ],
+  "timeStamp": "2026-09-30T03:59:33.230463Z"
+}

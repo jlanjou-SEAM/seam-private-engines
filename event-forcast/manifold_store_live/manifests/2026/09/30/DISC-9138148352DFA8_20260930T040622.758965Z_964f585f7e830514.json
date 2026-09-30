@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-9138148352DFA8",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "coastal.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:22.758965Z",
+  "request_url": "https://www.bom.gov.au/wa/observations/coastal.shtml",
+  "final_url": "https://www.bom.gov.au/wa/observations/coastal.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 151263,
+  "sha256": "964f585f7e830514bb628a89c3344b24cacb30043652139880871626550daa0f",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-9138148352DFA8\\20260930T040622.758965Z_964f585f7e830514.shtml",
+  "parent_id": "BOM-DATA",
+  "discovery_depth": 1
+}

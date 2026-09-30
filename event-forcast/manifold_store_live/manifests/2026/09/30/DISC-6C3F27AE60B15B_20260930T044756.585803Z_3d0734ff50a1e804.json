@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-6C3F27AE60B15B",
+  "provider": "NOAA/NCEI",
+  "dataset": "iho-data-centre-digital-bathymetry",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:56.585803Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/iho-data-centre-digital-bathymetry/",
+  "final_url": "https://www.ncei.noaa.gov/maps/iho-data-centre-digital-bathymetry/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 1255,
+  "sha256": "3d0734ff50a1e804cb5b65df86b14472bbfbe31c5e5e52b92896de8e286a3a09",
+  "etag": "\"44b-65bb48b34d400\"",
+  "last_modified": "Thu, 17 Sep 2026 21:34:08 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6C3F27AE60B15B\\20260930T044756.585803Z_3d0734ff50a1e804.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

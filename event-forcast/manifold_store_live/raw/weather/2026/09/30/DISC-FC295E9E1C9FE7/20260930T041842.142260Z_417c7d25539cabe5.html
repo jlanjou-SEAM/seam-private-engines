@@ -1,0 +1,3073 @@
+
+
+
+
+<!doctype html>
+<html>
+<head>
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>NWS Central Operations: SDM Admin Messages</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<meta name="DC.title" content="NWS Central Operations: SDM Admin Messages">
+<meta name="DC.description" content="NWS Central Operations: SDM ADM">
+<meta name="DC.keywords" content="About Operational Monitoring Branch, NCEP Central Operations, Central Operations, National Centers for Environmental Prediction, National Weather Service, NWS Central Operations">
+<meta name="DC.date.created" content="2021-02-11">
+<meta name="DC.date.reviewed" content="2022-06-23">
+<!-- TemplateEndEditable -->
+<meta name="DC.creator" content="NWS Central Operations">
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US">
+<meta name="DC.publisher" content="NWS Central Operations">
+<meta name="DC.contributor" content="NWS Central Operations">
+<meta name="DC.rights" content="https://www.weather.gov/disclaimer.php">
+<meta name="rating" content="General">
+<meta name="robots" content="index,follow">
+<meta http-equiv="refresh" content="900">
+<link href="/css/nco_main_structural.css" rel="stylesheet" type="text/css" medial="all">
+<link href="/css/nco_main_style.css" rel="stylesheet" type="text/css" media="all">
+<!-- TemplateBeginEditable name="OtherScripts" -->
+<style>
+.content_centered {
+  line-height: 1.25em;
+}
+</style>
+<!-- TemplateEndEditable -->
+<!-- Analytics - DAP-->
+  <script async type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA&pga4=G-3FGE2SCD1B"></script>
+
+
+</head>
+
+<body>
+<!--top header-->
+
+<div class="header">
+	<div class="header-content">
+		<a href="https://www.noaa.gov" title="Explore other NOAA products" class="header-noaa-icon">
+		  <img src="/images/header-noaa.png" alt="NOAA" /></a>
+		<a href="https://www.weather.gov" title="Access to the latest watches and warnings" class="header-nws-icon">
+		  <img src="/images/header-nws.png" alt="NWS" /></a>
+		<a href="https://www.commerce.gov" title="Learn about the Department of Commerce" class="header-doc">
+		  <img src="/images/header_doc.png" alt="DOC" /></a>
+		<a href="#contents">
+		  <img height="1" src="/images/skipgraphic.gif" alt="Skip Naviagation Links" width="1"></a>
+	
+		<div class="header-center-text">
+    	    <a class="header-center-text" href="https://www.nco.ncep.noaa.gov">NWS Central Operations</a>
+        </div>
+	  <div class="header-noaa-text">
+	        <a class="header-noaa-text" href="https://www.noaa.gov">National Oceanic and Atmospheric Administration</a>
+	  </div>
+	</div>
+</div>
+<div class="header-shadow">
+	<div class="header-shadow-content">	</div>
+</div>
+<!--End top header-->
+<div class="center">
+  <div class="content">
+    <div>
+    <div class="center">
+  <div class="content">
+    <div class="topnav">
+      <ul id="topnav">
+        <li>
+          <div class="left-section-link">
+              <a href="https://www.nco.ncep.noaa.gov" title="Back to NCO's home page">Home</a> </div>
+        </li>
+        <li>
+          <div class="center-section-link">
+              <a href="https://mag.ncep.noaa.gov" title="NWS Model Graphics">MODELS &#x25BC;</a></div>
+          <div class="drop">
+            <ul>
+              <li><a href="https://mag.ncep.noaa.gov">Model Analyses & Guidance</a></li>
+              <li><a href="/pmb/nwprod/prodstat_new/">Current Model Status</a></li>
+              <li><a href="/status/data/realtime/">Real-Time Data Monitor</a></li>
+              <li><a href="/pmb/nwprod/gdas/">GDAS Data Counts</a></li>
+              <li><a href="/status/nwps/">NWPS WFO Status</a></li>
+              <li><a href="/pmb/products/">Products Inventory</a> </li>
+              <li><a href="/pmb/changes/">Model Changes</a></li>
+              <li><a href="/pmb/codes/nwprod">Model Source Code</a></li>
+              <!--<li><a href=#>WCOSS/Supercomputers (Coming Soon)</a></li> -->
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="center-section-link">
+              <a href="/omb/apps/" title="More about Applications and Services at NCEP">Applications/Services &#x25BC;</a> </div>
+          <div class="drop">
+            <ul>
+              <li><a href="https://www.weather.gov">Weather.gov</a></li>
+              <li><a href="https://www.weather.gov/emwin/">EMWIN</a></li>
+              <li><a href="https://nomads.ncep.noaa.gov/pub/">FTPPRD</a></li>
+              <li><a href="https://inws.ncep.noaa.gov">iNWS</a></li>
+              <li><a href="https://iris.ncep.noaa.gov">IRIS (NOAA access)</a></li>
+              <li><a href="https://madis-data.ncep.noaa.gov/">MADIS</a></li>
+              <li><a href="https://mag.ncep.noaa.gov/">MAG</a></li>
+              <li><a href="https://mrms.ncep.noaa.gov/data/">MRMS</a></li>
+              <li><a href="https://nomads.ncep.noaa.gov">NOMADS</a></li>
+              <li><a href="https://nwschat.nws.noaa.gov/registration/login">NWSChat</a></li>
+              <li><a href="https://radar.weather.gov">Ridge II Radar</a></li>
+              <li><a href="http://tgftp.ncep.noaa.gov">TGFTP</a></li>
+              <li><a href="/pmb/primarysite/">IDP Primary Site</a></li>
+              <li><a href="/idsb/IDP_standards/">IDP Implementation Standards</a></li>
+              <li><a href="/omb/apps/">More...</a></li>
+            
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="center-section-link"> 
+            <!--<a href="https://www.weather.gov/tg/tginfo">The Gateway</a> --> 
+            <a href="/status/" title="More about Operational Status">Operational Status &#x25BC;</a> </div>
+          <div class="drop">
+            <ul>
+              <li><a href="/status/cwd/">Critical Weather Day</a></li>
+	      <li><a href="/status/messages/">SDM Administrative Messages</a></li>
+	      <li><a href="/status/dashboard/">Dashboard (NOAA access)</a></li>
+              <li><a href="/status/data/realtime/">Real-Time Data Monitor</a></li>
+	      <li><a href="/omb/dataqc/">Upper Air & Surface Data QC</a></li>
+	      <li><a href="/status/data/thanks/">Raob &#34;Thanks&#34; Reports</a></li>
+              <li><a href="/status/wsr/">Winter Storm Reconnaissance</a></li>
+              <li><a href="/status/recon/">Aircraft Dropsondes</a></li>
+	      <li><a href="/status/satellite/">Satellite Sectors</a></li>
+	      <li><a href="https://www.weather.gov/nl2/NEXRADView">Radar Level II</a></li>
+	      <li><a href="https://radar3pub.ncep.noaa.gov">Radar Level III</a></li>
+              <li><a href="/pmb/nwprod/prodstat_new/">NWS Model Status</a></li>
+              <li><a href="/status/nwps/">NWPS WFO Status</a></li>
+	      <li><a href="/omb/soe/">Schedule of Events (NOAA access)</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="center-section-link">
+              <a href="https://www.nco.ncep.noaa.gov" title="More about NCO">About NCO &#x25BC;</a> </div>
+          <div class="drop">
+            <ul>
+              <li><a href="/director/">Office of the Director</a></li>
+	      <li><a href="/pmb/">Implementation and Data Services (IDSD)</a></li>
+              <li><a href="/hpc/">High Performance Computing (HPCD)</a></li>
+	      <li><a href="/nsb/">Network and Security (NSD)</a></li>
+              <li><a href="/omb/">Operational Monitoring (OMD)</a></li>
+              <li><a href="/director/orgchart.php">Organizational Chart</a></li>
+              <li><a href="/sitemap/">Web Site Map</a></li>
+	      <!--<li><a href="#">FAQ/History/MissonAndVision (coming soon)</a></li>-->
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="center-section-link"> <a href="https://www.weather.gov/ncep/" title="More about NCEP Centers">Centers &#x25BC;</a> </div>
+          <div class="drop">
+            <ul>
+              <li><a href="https://www.aviationweather.gov">Aviation (AWC)</a></li>
+	      <li><a href="https://www.cpc.ncep.noaa.gov/">Climate (CPC)</a></li>
+              <li><a href="https://www.nhc.noaa.gov">Hurricane (NHC/CPHC)</a></li>
+              <li><a href="https://www.spc.noaa.gov">Storm (SPC)</a></li>
+              <li><a href="https://www.swpc.noaa.gov">Space (SWPC)</a></li>
+              <li><a href="https://tsunami.gov">Tsunami (NTWC/PTWC)</a></li>
+	      <li><a href="https://water.noaa.gov/">Water (NWC)</a></li>
+              <li><a href="https://www.wpc.ncep.noaa.gov">Weather (WPC)</a></li>
+	      <li><a href="https://ocean.weather.gov">Ocean (OPC)</a></li>
+	      <li><a href="https://usicecenter.gov">Ice (USNIC)</a></li>
+              <li><a href="https://www.nco.ncep.noaa.gov">Technology (NCO)</a></li>
+              <li><a href="https://www.emc.ncep.noaa.gov/">Modeling (EMC)</a></li>
+	      <li><a href="https://www.ndbc.noaa.gov">Buoy Data (NDBC)</a></li>
+              <li><a href="https://www.roc.noaa.gov/">Radar Ops (ROC)</a></li>
+	    </ul>
+          </div>
+        </li>
+        <li>
+          <div class="center-section-link"> 
+            <!-- link to noaa/nws website search --> 
+            <a href="https://www.weather.gov/search">Search</a> </div>
+          <div class="dropsearch">
+            <div class="site-search">
+              <form method="get" action="https://search.usa.gov/search" style="margin-bottom: 0; margin-top: 0;">
+                <input type="hidden" name="v:project" value="firstgov"/>
+                <label for="query">Search For</label>
+                <input type="text" name="query" id="query" size="12"/>
+                <input type="submit" value="Go"/>
+                <p>
+                  <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws"/>
+                  <label for="nws" class="search-scope">NWS</label>
+                  <input type="radio" name="affiliate" value="noaa.gov" id="noaa"/>
+                  <label for="noaa" class="search-scope">All NOAA</label>
+                </p>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<br>
+<!--
+<div class="shutdown">
+  </div>
+-->
+  </div>
+  <div class="center-content">
+    <!-- TOP NEW AREA-->
+<!--     <div class="five-sixth-last">
+      <div id="topnews">
+        <div class="icon"><img src="https://www.weather.gov/css/images/news-important.jpg" /></div>
+        <div class="body">
+<h1 style="font-size: 11pt;">Severe Thunderstorms and Locally Heavy Rain Possible</h1>
+            <p>
+                Severe thunderstorms with large hail and damaging winds will be possible from Oklahoma and northeast Texas to Kentucky, West Virginia and parts of Virginia and North Carolina. More isolated strong/severe storms will also be possible across parts of the northern Rockies.  Heavy rain and local flooding are possible in the lower Mississippi Valley and central Appalachians. 
+                <a href="http://www.wpc.ncep.noaa.gov/discussions/hpcdiscussions.php?disc=pmdspd" target="_blank" rel="noopener noreferrer">Read More &gt;</a>
+            </p>        </div>
+      </div>
+    </div>
+-->
+    <div class="full-width-border">
+      <div class="partial-width-borderbottom">
+        <div class="div-full">
+	  <div class="div-full breadcrumb">
+	    <div class='location-breadcrumb'> 
+	    <!-- TemplateBeginEditable name="breadcrumb" --> 
+              <a href="https://www.weather.gov/">NWS</a> &gt;
+              <a href="https://www.nco.ncep.noaa.gov/">NCO</a> &gt;
+              <a href="https://www.nco.ncep.noaa.gov/status">Ops Status</a> &gt; SDM Administrative Messages
+            <!-- TemplateEndEditable --> </div>
+          </div>
+        </div>
+        <div class="div-full"> </div>
+        <div class="div-full cms-content" id="home_page_content">
+          <div class="content_centered"> <!-- TemplateBeginEditable name="content" --> 
+<!-- *******************CONTENT AREA ***************************-->
+        
+        <h1 style="margin-top:0;margin-bottom:.25em; text-align: center">SDM Administrative Messages</h1>
+
+<!--
+        <div class="center">
+        <div class="content">
+-->
+
+        <div class="content-body">
+        <html>
+<body bgcolor=white>
+<br>
+<center><hr></center>
+<center><b>Alert Administrative Messages <a href="https://forecast.weather.gov/product.php?site=NWS&product=ADA&issuedby=SDM">ADASDM</a></b></center>
+<center>Administrative Messages <a href="https://forecast.weather.gov/product.php?site=NWS&product=ADM&issuedby=SDM">ADMSDM</a></center>
+<center><hr></center>
+<pre>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0416Z WED SEP 30 2026
+
+
+...00Z GFS MODEL IS NOW RUNNING ...
+Around 30/04Z, NCO production analysts worked with the model
+developer to resolve an input data issue that prevented the 00Z
+GFS from starting on time.  Model data/products disseminated from
+today's 00Z GFS are estimated to be 62 minutes late.
+
+
+
+Ready/SDM/NCO
+</b>
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0331Z WED SEP 30 2026
+
+
+...00Z GFS DELAYED...
+The start of the 00Z GFS is currently delayed due to a data
+issue.   NCO production analysts are investigating.  No ETR at
+this time. 
+
+
+Please visit https://www.nco.ncep.noaa.gov/status/messages/ for
+further updates.
+
+
+Ready/SDM/NCO
+</b>
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0135Z WED SEP 30 2026
+
+The 00Z NWS model production suite began and is running on time
+with 9 Alaskan, 26 Canadian, 58 CONUS, 15 Mexican, 7 Caribbean,
+and 10 Pacific stations available for ingest.
+
+00Z NAM RAOB RECAP...
+70361/YAK - No report
+70414/SYA - No report
+72206/JAX - No report
+72388/VEF - No report
+72645/GRB - No report
+72694/SLE - No report
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+72274/TWC - 10159
+72327/OHX - 10142
+72493/OAK - 10142
+72365/ABQ - Purged temp, moist 416 to 401 mb, super-adiabatic
+lapse rate
+91366/KWA - Purged spurious winds 851 to 846 mb
+91366/KWA - Purged spurious winds 980 to 978 mb
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+2315Z TUE SEP 29 2026
+
+MDS STATUS...
+GOES-W MDS Sector 1 will be centered over 22N/164.5W from
+30/0000Z to 01/0000Z for monitoring Hurricane Nolo.
+
+GOES-W MDS Sector 2 will be centered over 17.5N/107.5W from
+30/0000Z to 01/0000Z for monitoring Tropical Storm Rachael.
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1503Z TUE SEP 29 2026
+
+12Z NWS model production is running on time with 10
+Alaskan...25 Canadian...43 CONUS...14 Mexican...10
+Caribbean...and 9 Pacific stations available for ingest.
+
+12Z NAM RAOB RECAP...
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72265/MAF - No report
+72363/AMA - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72672/RIW - No report
+72681/BOI - No report
+72694/SLE - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+70200/OME - 10158...Flight equipment failure
+70308/SNP - 10159
+70326/AKN - 10159
+70361/YAK - 10159
+72274/TWC - 10159
+72327/OHX - 10142...Ground equipment failure
+78384/GCM - 10142...Ground equipment failure
+78016/BDA - Missing Part TTBB
+76644/MID - Purged spurious surface wind
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1338Z TUE SEP 29 2026
+
+12Z NWS model production started on time with 10 Alaskan...
+25 Canadian...40 CONUS...13 Mexican...7 Caribbean...and 9
+Pacific stations available for ingest.
+
+12Z NAM RAOB RECAP...
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72265/MAF - No report
+72363/AMA - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72672/RIW - No report
+72681/BOI - No report
+72694/SLE - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+70200/OME - 10158...Flight equipment failure
+70308/SNP - 10159
+70326/AKN - 10159
+70361/YAK - 10159
+72274/TWC - 10159
+72327/OHX - 10142...Ground equipment failure
+78384/GCM - 10142...Ground equipment failure
+78016/BDA - Missing Part TTBB
+76644/MID - Purged spurious surface wind
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0855Z TUE SEP 29 2026
+
+
+CRITICAL WEATHER DAY STATUS...
+The need for CWD to support excessive rainfall and flooding
+operations in New Mexico and other portions of the Southwest is
+being monitored.
+
+
+CRITICAL WEATHER OUTLOOK...
+Tuesday - Caution...Excessive Rainfall, Flooding.
+Wednesday - None.
+Thursday - None.
+
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0328Z TUE SEP 29 2026
+
+
+The 00Z GFS began and is running on time.
+
+
+UPDATED 00Z RAOB RECAP...
+70361/YAK - No report for the NAM...in for the GFS
+70414/SYA - No report for the NAM...in for the GFS
+72694/SLE - No report for the NAM...in for the GFS
+72797/UIL - No report for the NAM...10142 for the GFS
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0137Z TUE SEP 29 2026
+
+
+MDS STATUS...
+GOES-E MDS Sector 2 will be centered over 33.8N/107W from 1220Z
+to 30/1200Z in support of flash flood risk and severe weather
+over the southwest US.
+
+
+The 00Z NWS model production suite began and is running on time
+with 8 Alaskan, 25 Canadian, 56 CONUS, 14 Mexican, 6 Caribbean,
+and 10 Pacific stations available for ingest.
+
+
+00Z NAM RAOB RECAP...
+70361/YAK - No report
+70414/SYA - No report
+72206/JAX - No report
+72251/CRP - No report
+72388/VEF - No report
+72645/GRB - No report
+72659/ABR - No report
+72694/SLE - No report
+72786/OTX - No report
+72797/UIL - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+72274/TWC - 10159
+72327/OHX - 10142
+78384/GCM - 10142
+76225/CUU - Short to 659 mb
+76654/MZL - Short to 479 mb
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+2356Z MON SEP 28 2026
+
+MDS STATUS...
+GOES-E MDS Sector 1 will be centered over 27N/111.1W from
+29/0000Z to 30/0000Z in support of Hurricane Polo.
+
+GOES-E MDS Sector 2 will be centered over 14.9N/105.2W from
+29/0000Z to 30/0000Z in support of Tropical Storm Rachel.
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1538Z MON SEP 28 2026
+
+12Z NWS model production is running on time with 11
+Alaskan...24 Canadian...41 CONUS...14 Mexican...10
+Caribbean...and 8 Pacific stations available for ingest.
+
+12Z GFS RAOB RECAP...
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72672/RIW - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+70308/SNP - 10159
+70326/AKN - 10159
+70361/YAK - 10159
+72274/TWC - 10159
+72327/OHX - 10142...Ground equipment failure
+91285/ITO - 10142...Ground equipment failure
+70414/SYA - Short to 593mb
+78016/BDA - Missing Part TTBB
+
+MDS STATUS...
+GOES-E MDS Sector 1 will be centered over 35.5N/48W from
+1350Z to 29/1300Z in support of monitoring TS Hanna in the
+Atlantic.
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1343Z MON SEP 28 2026
+
+12Z NWS model production started on time with 11 Alaskan...
+24 Canadian...40 CONUS...14 Mexican...9 Caribbean...and 8
+Pacific stations available for ingest.
+
+12Z NAM RAOB RECAP...
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72672/RIW - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+70308/SNP - 10159
+70326/AKN - 10159
+70361/YAK - 10159
+72274/TWC - 10159
+72327/OHX - 10142...Ground equipment failure
+91285/ITO - 10142...Ground equipment failure
+70414/SYA - Short to 593mb
+78016/BDA - Missing Part TTBB
+
+MDS STATUS...
+GOES-E MDS Sector 2 will be centered over 33.8N/107W from
+1755Z to 29/1220Z in support of excessive rainfall and
+flooding ops in the Four Corners Region.
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0857Z MON SEP 28 2026
+
+
+CRITICAL WEATHER DAY STATUS...
+The need for CWD to support excessive rainfall and flooding
+operations in New Mexico and other portions of the Southwest is
+being monitored.
+
+CRITICAL WEATHER OUTLOOK...
+Monday - Caution...Excessive Rainfall, Flooding.
+Tuesday - Caution...Excessive Rainfall, Flooding.
+Wednesday - None.
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0307Z MON SEP 28 2026
+
+
+The 00Z GFS began and is running on time with 9 Alaskan...24
+Canadian...60 CONUS...13 Mexican...8 Caribbean...and 8 Pacific
+raobs available for ingest.
+
+
+UPDATED 00Z RAOB RECAP...
+70414/SYA - No report for the NAM...in for the GFS
+
+
+MDS STATUS...
+GOES-W MDS Sector 1 is centered over 23.4N/112.4W from 00Z until
+29/00Z to support NHC monitoring of Hurricane Polo.
+
+GOES-W MDS Sector 2 is centered over 17.5N/161.3W from 00Z until
+29/00Z to support NHC monitoring of Hurricane Nolo.
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0155Z MON SEP 28 2026
+
+
+The 00Z NAM began and is running on time with 9 Alaskan...24
+Canadian...60 CONUS...13 Mexican...7 Caribbean...and 8 Pacific
+raobs available for ingest.
+
+
+00Z NAM RAOB RECAP...
+70414/SYA - No report
+72206/JAX - No report
+72388/VEF - No report
+72645/GRB - No report
+72786/OTX - No report
+91376/MAJ - No report
+72230/BMX - Flight initialized early...23Z observation
+76743/VHA - Purged temps/moisture 413-409 mb...super-adiabatic
+             lapse rate
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+70361/YAK - 10159
+72274/TWC - 10159
+72327/OHX - 10142
+72659/ABR - 10142
+78384/GCM - 10142
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1504Z SUN SEP 27 2026
+
+The 12Z NWS model production suite continues to run on time with
+12 Alaskan..24 Canadian..37 CONUS..13 Mexican..9 Caribbean..and 9
+Pacific stations available for ingest into the 12Z GFS. In
+addition, there were 10 dropsondes courtesy of USAF Reserve
+aircraft recon missions in the vicinity of Nolo in the Central
+Pacific.
+
+UPDATED 12Z RAOB RECAP...
+72797/UIL - No report for NAM..10159 for GFS
+
+
+Churchill/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1330Z SUN SEP 27 2026
+
+The 12Z NWS model production suite is currently running on time.
+
+12Z NAM RAOB RECAP...
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72672/RIW - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+72797/UIL - No report
+74455/DVN - No report
+70308/SNP - 10159
+70326/AKN - 10159
+72274/TWC - 10159
+72293/NKX - 10159
+72327/OHX - 10142
+72493/OAK - 10159
+72694/SLE - 10159
+78384/GCM - 10142
+76526/ZAC - Short to 462mb
+78016/BDA - Missing TTBB
+
+
+Churchill/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0913Z SUN SEP 27 2026
+
+
+CRITICAL WEATHER DAY STATUS...
+The need for CWD to support excessive rainfall and flooding
+operations in New Mexico and other portions of the Southwest is
+being monitored.
+
+CRITICAL WEATHER OUTLOOK...
+Sunday - None.
+Monday - Caution...Excessive Rainfall, Flooding.
+Tuesday - Caution...Excessive Rainfall, Flooding.
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0348Z SUN SEP 27 2026
+
+
+...CRITICAL WEATHER DAY ENDED...
+
+The Critical Weather Day ended early at 27/03Z.   All NHC
+tropical watches and warnings for the Hawaiian Islands regarding
+Hurricane Nolo have been canceled.
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0308Z SUN SEP 27 2026
+
+
+The 00Z GFS began and is running on time with 9 Alaskan...25
+Canadian...60 CONUS...12 Mexican...9 Caribbean...and 9 Pacific
+raobs available for ingest.
+
+
+UPDATED 00Z RAOB RECAP...
+76654/MZL - 10159
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0138Z SUN SEP 27 2026
+
+
+The 00Z NAM began and is running on time with 9 Alaskan...24
+Canadian...59 CONUS...12 Mexican...9 Caribbean...and 9 Pacific
+raobs available for ingest.
+
+
+00Z NAM RAOB RECAP...
+72206/JAX - No report
+72388/VEF - No report
+72645/GRB - No report
+72786/OTX - No report
+78016/BDA - Missing TTBB
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+72274/TWC - 10159
+72672/RIW - 10158
+70231/MCG - 10142
+72327/OHX - 10142
+78384/GCM - 10142
+
+
+
+MDS STATUS...
+GOES-W MDS Sector 2 is centered over 17N/158W from 0029Z until
+28/0000Z in support of NHC tropical weather ops regarding
+Hurricane Nolo.
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1818Z SAT SEP 26 2026
+
+MDS STATUS...
+GOES-W Meso Sector 1 will be centered over 21N/113W until
+28/0000Z for the monitoring of Hurricane Polo in the Eastern
+Pacific..
+
+
+Gerhardt/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1458Z SAT SEP 26 2026
+
+The 12Z NWS model production suite continues to run on time.
+
+12Z UPDATED RAOB RECAP...
+72202/MFL - No report
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72672/RIW - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+91376/MAJ - No report for NAM; Available for GFS
+70308/SNP - 10159
+72274/TWC - 10159
+72327/OHX - 10142
+78384/GCM - 10142
+78016/BDA - Missing TTBB
+
+
+Gerhardt/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1324Z SAT SEP 26 2026
+
+The 12Z NWS model production suite is currently running on time.
+
+12Z NAM RAOB RECAP...
+72202/MFL - No report
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72672/RIW - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+91376/MAJ - No report
+70308/SNP - 10159
+72274/TWC - 10159
+72327/OHX - 10142
+78384/GCM - 10142
+78016/BDA - Missing TTBB
+
+
+Gerhardt/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1043Z SAT SEP 26 2026
+
+
+MDS STATUS...
+
+GOES-E Meso Sector 2 will be centered over 36.5N/98.9W from
+26/1500Z to 27/0500Z in support of severe weather operations over
+the Southern Plains.
+
+
+Gerhardt/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0900Z SAT SEP 26 2026
+
+
+CRITICAL WEATHER DAY STATUS...
+Critical Weather Day is in effect until 28/12Z in support of
+tropical, heavy rainfall, and flash flood ops in Hawaii.
+
+CRITICAL WEATHER OUTLOOK...
+Saturday - Critical...Excessive Rainfall, Flooding, Tropical
+Cyclone.
+Sunday - Critical...Excessive Rainfall, Flooding, Tropical
+Cyclone.
+Monday - None.
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0331Z SAT SEP 26 2026
+
+
+The 00Z GFS has started and is running on time.
+
+There were 10 Alaskan...25 Canadian...60 CONUS...15 Mexican...
+9 Caribbean and 10 Pacific stations available for GFS ingest. In
+addition, there were 21 dropsondes courtesy of NOAA aircraft
+recon missions in the vicinity of Polo in the Eastern Pacific
+and 15 dropsondes courtesy of USAF Reserve aircraft recon
+missions in the vicinity of Nolo in the Central Pacific.
+
+
+00Z UPDATED RAOB RECAP...CORRECTED
+72206/JAX - No report
+72265/MAF - No report
+72365/ABQ - No report for the NAM...in for the GFS
+72388/VEF - No report
+72645/GRB - No report
+72662/UNR - No report for the NAM...in for the GFS
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+72274/TWC - 10159
+72327/OHX - 10142
+78384/GCM - 10142
+72248/SHV - Missing TTBB
+78016/BDA - Missing TTBB
+71845/YPL - Purged temps 843-840 mb...non-meteorological lapse
+             rates
+72202/MFL - Purged temps 802-681 mb...non-meteorological lapse
+             rates
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0308Z SAT SEP 26 2026
+
+The 00Z GFS has started and is running on time.
+
+There were 10 Alaskan...25 Canadian...60 CONUS...15 Mexican...
+9 Caribbean and 10 Pacific stations available for GFS ingest. In
+addition, there were 21 dropsondes courtesy of NOAA aircraft
+recon missions in the vicinity of Polo in the Eastern Pacific
+and 15 dropsondes courtesy of USAF Reserve aircraft recon
+missions in the vicinity of Nolo in the Central Pacific.
+
+00Z UPDATED RAOB RECAP...
+72206/JAX - No report
+72265/MAF - No report
+72365/ABQ - No report
+72388/VEF - No report
+72645/GRB - No report
+72662/UNR - No report
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+72274/TWC - 10159
+72327/OHX - 10142
+78384/GCM - 10142
+72248/SHV - Missing TTBB
+78016/BDA - Missing TTBB
+71845/YPL - Purged temps 843-840 mb...non-meteorological lapse
+             rates
+72202/MFL - Purged temps 802-681 mb...non-meteorological lapse
+             rates
+
+Handel/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0129Z SAT SEP 26 2026
+
+The 00Z NWS model production is running on time.
+
+00Z NAM RAOB RECAP...
+72206/JAX - No report
+72265/MAF - No report
+72365/ABQ - No report
+72388/VEF - No report
+72645/GRB - No report
+72662/UNR - No report
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+72274/TWC - 10159
+72327/OHX - 10142
+78384/GCM - 10142
+72248/SHV - Missing TTBB
+78016/BDA - Missing TTBB
+71845/YPL - Purged temps 843-840 mb...non-meteorological lapse
+             rates
+72202/MFL - Purged temps 802-681 mb...non-meteorological lapse
+             rates
+
+MDS STATUS...
+GOES-E MDS Sector 1 is centered over 18.0N/112.0W from
+0000Z to 27/0000Z in support of NHC monitoring of Hcn Polo.
+
+GOES-W MDS Sector 2 is centered over 17.5N/156.5W from
+0000Z to 27/0000Z in support of NHC monitoring of Hcn Nolo.
+
+Handel/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1330Z FRI SEP 25 2026
+
+The 12Z NWS model production suite is currently running on time.
+
+12Z NAM RAOB RECAP...
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+70133/OTZ - 10159
+70308/SNP - 10159
+72274/TWC - 10159
+72327/OHX - 10142
+72672/RIW - 10159
+78384/GCM - 10142
+78016/BDA - Missing TTBB
+
+
+MDS STATUS...
+GOES-W Meso Sector 1 will be centered over 34.4N/106.1W from
+25/1330Z to 26/1200Z in support of excessive rainfall and
+flooding ops in New Mexico and Texas.
+
+
+Gerhardt/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0909Z FRI SEP 25 2026
+
+
+CRITICAL WEATHER DAY STATUS...
+Critical Weather Day is in effect until 28/12Z in support of
+tropical, heavy rainfall, and flash flood ops in Hawaii.
+
+CRITICAL WEATHER OUTLOOK...
+Friday - Critical...Excessive Rainfall, Flooding, Tropical
+Cyclone.
+Saturday - Critical...Excessive Rainfall, Flooding, Tropical
+Cyclone.
+Sunday - Critical...Excessive Rainfall, Flooding, Tropical
+Cyclone.
+
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0305Z FRI SEP 25 2026
+
+00Z NWS model production is running on time with 9
+Alaskan...25 Canadian...62 CONUS...15 Mexican...8
+Caribbean...and 9 Pacific stations available for ingest.
+There were also 10 dropsondes in the vicinity of Hurricane
+Nolo in the Central Pacific.
+
+UPDATED 00Z GFS RAOB RECAP...
+70414/SYA - No report...10145...Unfavorable weather
+            conditions
+72206/JAX - No report
+72388/VEF - No report
+72645/GRB - No report
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+72274/TWC - 10159
+71816/YYR - Purged temps/moisture 648-646mb...wet bulb
+            effect
+74794/XMR - Purged temps/moisture 744-680mb...wet bulb
+            effect
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0146Z FRI SEP 25 2026
+
+00Z NWS model production started on time with 9 Alaskan...
+25 Canadian...61 CONUS...14 Mexican...8 Caribbean...and 9
+Pacific stations available for ingest.  There were also
+6 dropsondes in the vicinity of Tropical Storm Nolo in the
+Central Pacific.
+
+00Z NAM RAOB RECAP...
+70414/SYA - No report
+72206/JAX - No report
+72388/VEF - No report
+72645/GRB - No report
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+72274/TWC - 10159
+71816/YYR - Purged temps/moisture 648-646 mb...wet bulb
+            effect
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+2252Z THU SEP 24 2026
+
+MDS STATUS...
+GOES-E MDS Sector 1 will be centered over 17.2N/106.5W from
+2227Z to 26/0000Z in support of monitoring Hurricane Polo
+in the Eastern Pacific.
+
+GOES-W MDS Sector 2 will be centered over 16.2N/155.5W from
+2227Z to 26/0000Z in support of monitoring Tropical Storm
+Nolo in the Central Pacific.
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1458Z THU SEP 24 2026
+
+The 12Z NWS model production suite continues to run on time.
+There were 11 Alaskan...25 Canadian...41 CONUS...14 Mexican...10
+Caribbean and 8 Pacific stations available for ingest.
+
+12Z UPDATED RAOB RECAP...
+70414/SYA - No report
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72649/MPX - No report for NAM; Available for GFS
+72659/ABR - No report
+72662/UNR - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+70133/OTZ - 10159
+70308/SNP - 10159
+72265/MAF - 10159
+72274/TWC - 10159
+72672/RIW - 10159
+78384/GCM - 10142
+91165/LIH - 10142
+78016/BDA - Missing TTBB
+
+
+Gerhardt/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1339Z THU SEP 24 2026
+
+The 12Z NWS model production suite is currently running on time.
+
+12Z NAM RAOB RECAP...
+70414/SYA - No report
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72649/MPX - No report
+72659/ABR - No report
+72662/UNR - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+70133/OTZ - 10159
+70308/SNP - 10159
+72265/MAF - 10159
+72274/TWC - 10159
+72672/RIW - 10159
+78384/GCM - 10142
+91165/LIH - 10142
+78016/BDA - Missing TTBB
+
+
+MDS STATUS...
+
+GOES-W Meso Sector 1 will be centered over 35.5N/106.1W until
+25/1330Z in support of excessive rainfall operations across
+portions of the Southwest and Central/Southern Plains.
+
+
+
+Gerhardt/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0855Z THU SEP 24 2026
+
+
+CRITICAL WEATHER DAY STATUS...
+Critical Weather Day is in effect until 28/12Z in support of
+tropical, heavy rainfall, and flash flood ops in Hawaii.
+
+CRITICAL WEATHER OUTLOOK...
+Thursday - Critical...Excessive Rainfall, Flooding, Tropical
+Cyclone.
+Friday - Critical...Excessive Rainfall, Flooding, Tropical
+Cyclone.
+Saturday - Critical...Excessive Rainfall, Flooding, Tropical
+Cyclone.
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0303Z THU SEP 24 2026
+
+00Z NWS model production is running on time with 9
+Alaskan...25 Canadian...61 CONUS...15 Mexican...7
+Caribbean...and 10 Pacific stations available for ingest.
+
+UPDATED 00Z GFS RAOB RECAP...
+76805/ACA - Purged winds 134-104 mb...too slow.
+76256/GYM - Purged heights/temps/moisture 508-486mb,
+            426-309mb, 200-110mb and winds 200-194mb...
+            erratic
+70414/SYA - No report
+72206/JAX - No report
+72249/FWD - No report for the NAM...Full report in for the
+            GFS
+72251/CRP - No report for the NAM...Full report in for the
+            GFS
+72388/VEF - No report
+72645/GRB - No report
+72662/UNR - No report for the NAM...Full report in for the
+            GFS
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+72274/TWC - 10159
+72649/MPX - 10142...Ground equipment failure
+78384/GCM - 10142...Ground equipment failure
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0142Z THU SEP 24 2026
+
+00Z NWS model production started on time with 9 Alaskan...
+25 Canadian...57 CONUS...15 Mexican...7 Caribbean...and 10
+Pacific stations available for ingest.
+
+00Z NAM RAOB RECAP...
+76805/ACA - Purged winds 134-104 mb...too slow.
+70414/SYA - No report
+72206/JAX - No report
+72249/FWD - No report
+72251/CRP - No report
+72388/VEF - No report
+72645/GRB - No report
+72662/UNR - No report
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+72274/TWC - 10159
+72649/MPX - 10142...Ground equipment failure
+78384/GCM - 10142...Ground equipment failure
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+2137Z WED SEP 23 2026
+
+...CRITICAL WEATHER DAY DECLARED...
+
+Critical Weather Day has been declared for...
+
+- START:  2130Z Wed Sep 23 2026
+- END:    1200Z Mon Sep 28 2026
+- WHO:    NWS Central Operations, National Centers, and
+          Weather Forecast Offices
+- REASON: Tropical Cyclone, Excessive Rainfall, and
+          Flooding ops in Hawaii.
+
+All scheduled software/hardware/network changes for the
+impacted offices will be postponed until the CWD has ended.
+Any emergency changes will be evaluated and approved by
+senior management officials or their designees.  NWS
+offices should contact their sector offices for further
+questions about this CWD.
+
+Please visit the CWD status page for more information:
+https://www.nco.ncep.noaa.gov/status/cwd/
+
+
+Kempisty/SDM/NCO
+</b>
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1405Z WED SEP 23 2026
+
+
+MDS STATUS...
+
+GOES-W Meso Sector 1 will be centered over 36N/106W until
+24/1300Z in support of excessive rainfall operations in New
+Mexico.
+
+
+Gerhardt/SDM/NCO
+</b>
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1335Z WED SEP 23 2026
+
+MDS STATUS...
+
+GOES-E Meso Sector 1 will be centered over 15.3N/102.3W until
+24/2200Z for the monitoring of Hurricane Polo.
+
+GOES-W Meso Sector 2 will be centered over 15.5N/154.8W until
+24/2200Z for the monitoring of 15-E south of the Hawaiian
+Islands.
+
+
+Gerhardt/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1325Z WED SEP 23 2026
+
+The 12Z NWS model production suite is currently running on time.
+
+12Z NAM RAOB RECAP...
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72265/MAF - No report
+72363/AMA - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+70133/OTZ - 10159
+70308/SNP - 10159
+72274/TWC - 10159
+72649/MPX - 10142
+72672/RIW - 10159
+78384/GCM - 10142
+78016/BDA - Missing TTBB
+
+
+Gerhardt/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0902Z WED SEP 23 2026
+
+CRITICAL WEATHER DAY STATUS...
+NCO is monitoring expected heavy rain and flooding conditions
+over New Mexico. In addition, Critical Weather Day is likely in
+support of tropical weather ops in support of Tropical Depression
+Fifteen-E approaching Hawaii.
+
+CRITICAL WEATHER OUTLOOK...
+Wednesday - Caution...Excessive Rainfall, Flooding.
+Thursday - Monitoring for tropical weather ops.
+Friday - Monitoring for tropical weather ops.
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0304Z WED SEP 23 2026
+
+00Z NWS model production is running on time with 9
+Alaskan...25 Canadian...61 CONUS...14 Mexican...7
+Caribbean...and 9 Pacific stations available for ingest.
+There was also 1 dropsonde in the vicinity of Hurricane
+Polo in the Eastern Pacific.
+
+UPDATED 00Z GFS RAOB RECAP...
+72265/MAF - Purged temps/moisture 417-377mb...wet bulb
+            effect
+70414/SYA - No report for the NAM...10159 for the GFS
+72206/JAX - No report
+72388/VEF - No report
+72645/GRB - No report
+72786/OTX - No report
+91376/MAJ - No report for the NAM...Full report in for the
+            GFS
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+72274/TWC - 10159
+72649/MPX - 10142...Ground equipment failure
+76394/MTY - 10142...Ground equipment failure
+78384/GCM - 10142...Ground equipment failure
+76903/TAP - Short to 463mb
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0141Z WED SEP 23 2026
+
+00Z NWS model production started on time with 9 Alaskan...
+25 Canadian...59 CONUS...14 Mexican...7 Caribbean...and 8
+Pacific stations available for ingest.
+
+00Z NAM RAOB RECAP...
+72265/MAF - Purged temps/moisture 417-377mb...wet bulb
+            effect
+70414/SYA - No report
+72206/JAX - No report
+72388/VEF - No report
+72645/GRB - No report
+72786/OTX - No report
+91376/MAJ - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+72274/TWC - 10159
+72649/MPX - 10142...Ground equipment failure
+76394/MTY - 10142...Ground equipment failure
+78384/GCM - 10142...Ground equipment failure
+76903/TAP - Short to 463mb
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0023Z TUE SEP 22 2026
+
+...HAFS MODEL PRODUCTION ISSUE - UPDATE...
+
+The 18Z HAFS-A and HAFS-B models have run passed the
+initial point of failure.  The 18Z HAFS-A for Hurricane
+Polo is expected to be about 70 minutes late.  The 18Z
+HAFS-B is expected to be about 100 minutes late.
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+2316Z TUE SEP 22 2026
+
+...HAFS MODEL PRODUCTION ISSUE...
+
+The 18Z HAFS-A and HAFS-B models for Hurricane Polo failed.
+NCO Support Staff are investigating.  Delays of products
+from this model are expected.
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+2137Z TUE SEP 22 2026
+
+MDS STATUS...
+GOES-2 MDS Sector 2 will be centered over 15.5N/102W from
+2113Z to 24/0000Z in support of monitoring Hurricane Polo
+in the Eastern Pacific.
+
+
+Kempisty/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1800Z TUE SEP 22 2026
+
+...GOES EAST/WEST OUTAGE - FINAL UPDATE...
+
+NESDIS has restored nearly all GOES dataflow after this morning's
+firewall maintenance. A few minor products remain unavailable,
+with troubleshooting ongoing. This will be the final update.
+
+
+Gerhardt/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1341Z TUE SEP 22 2026
+
+
+...GOES EAST/WEST OUTAGE - UPDATE...
+
+NESDIS continues to actively troubleshoot impacts associated with
+recent firewall maintenance and is working to restore all GOES
+satellite data flow. Some satellite data has been restored, but
+impacts remain.
+
+
+MDS STATUS...
+
+GOES-W Meso Sector 1 will be centered over 37N/108W until
+23/1300Z in support of flooding/excessive rainfall ops in New
+Mexico and severe weather operations in Utah.
+
+
+12Z NAM RAOB RECAP...
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72363/AMA - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+91376/MAJ - No report
+70133/OTZ - 10159
+70308/SNP - 10159
+70350/ADQ - 10142
+72265/MAF - 10159
+72274/TWC - 10159
+72649/MPX - 10142
+72672/RIW - 10159
+76256/GYM - 10159
+78384/GCM - 10142
+78016/BDA - Missing TTBB
+
+The 12Z NWS model production suite is currently running on time.
+
+
+Gerhardt/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1224Z TUE SEP 22 2026
+
+...GOES EAST/WEST OUTAGE - UPDATE...
+
+The maintenance associated with the GOES-East and GOES-West
+outage is complete. Some satellite data flow has been restored,
+and NESDIS continues to work to restore all remaining services.
+
+
+Gerhardt/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1106Z TUE SEP 22 2026
+
+
+...GOES EAST/WEST OUTAGE - UPDATE...
+
+The GOES-East and GOES-West outage has been linked to unexpected
+impacts from scheduled maintenance. NESDIS is investigating and
+working to restore service. Additional information will be
+provided as it becomes available.
+
+
+Gerhardt/SDM/NCO
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1035Z TUE SEP 22 2026
+
+...GOES EAST/WEST OUTAGE...
+
+NESDIS is investigating an outage affecting both GOES-East and
+GOES-West satellite data. Additional information will be provided
+as it becomes available.
+
+Please visit https://www.nco.ncep.noaa.gov/status/messages/ for
+further updates.
+
+
+Gerhardt/SDM/NCO
+</b>
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0858Z TUE SEP 22 2026
+
+CRITICAL WEATHER DAY STATUS...
+NCO is monitoring expected heavy rain and flooding conditions
+over New Mexico. Otherwise, Critical Weather Day is not expected
+in the next 3 days.
+
+CRITICAL WEATHER OUTLOOK...
+Tuesday - None.
+Wednesday - None.
+Thursday - None
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0313Z TUE SEP 22 2026
+
+The 00Z NWS model production suite continues to run on time with
+8 Alaskan, 25 Canadian, 63 CONUS, 14 Mexican, 7 Caribbean and 10
+Pacific stations available for ingest.
+
+00Z GFS RAOB RECAP...
+70414/SYA - No report for NAM, in for GFS
+72206/JAX - No report
+72251/CRP - No report for NAM, in for GFS
+72388/VEF - No report
+72645/GRB - No report
+72786/OTX - No report
+91376/MAJ - No report for NAM, in for GFS
+70133/OTZ - 10142
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+70350/ADQ - 10142
+72274/TWC - 10159
+76394/MTY - 10158
+78384/GCM - 10142
+91366/KWA - Short to 524 mb
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0133Z TUE SEP 22 2026
+
+The 00Z NWS model production suite is currently running on time.
+
+00Z NAM RAOB RECAP...
+70414/SYA - No report
+72206/JAX - No report
+72251/CRP - No report
+72388/VEF - No report
+72645/GRB - No report
+72786/OTX - No report
+91376/MAJ - No report
+70133/OTZ - 10142
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+70350/ADQ - 10142
+72274/TWC - 10159
+76394/MTY - 10158
+78384/GCM - 10142
+91366/KWA - Short to 524mb
+
+
+Churchill/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1505Z MON SEP 21 2026
+
+MDS STATUS...
+GOES-E MDS Sector 1 will be centered over 33.8N/101.6W from
+1500Z to 22/0600Z in support of severe storm and excessive
+rainfall
+ops for portions of West Texas.
+
+12Z UPDATED RAOB RECAP...
+70361/YAK - No report
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+91348/PNI - No report for NAM.. in for GFS
+70308/SNP - 10159
+70350/ADQ - 10142
+72265/MAF - 10159
+72274/TWC - 10159
+72672/RIW - 10159
+76256/GYM - 10159
+78384/GCM - 10142
+78016/BDA - Missing TTBB
+
+Green/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1330Z MON SEP 21 2026
+
+MDS STATUS...
+GOES-E MDS Sector 1 will be centered over 37N/82.6W from
+now to 22/1200Z in support of severe storm ops across the
+Southern Appalachians.
+
+12Z NAM RAOB RECAP...
+70361/YAK - No report
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+91348/PNI - No report
+70308/SNP - 10159
+70350/ADQ - 10142
+72265/MAF - 10159
+72274/TWC - 10159
+72672/RIW - 10159
+76256/GYM - 10159
+78384/GCM - 10142
+78016/BDA - Missing TTBB
+
+There were 11 Alaskan...21 Canadian...41 CONUS...13 Mexican...
+8 Caribbean and 8 Pacific stations available for ingest.
+
+Green/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0904Z MON SEP 21 2026
+
+MDS STATUS...
+GOES-W MDS Sector 1 will be centered over 15.3N/104.8W from 1500Z
+to 23/0000Z in support of monitoring Tropical Storm Polo in the
+Pacific.
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0845Z MON SEP 21 2026
+
+CRITICAL WEATHER DAY STATUS...
+Critical Weather Day is not expected in the next 3 days.
+
+CRITICAL WEATHER OUTLOOK...
+Monday - None.
+Tuesday - None.
+Wednesday - None.
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0306Z MON SEP 21 2026
+
+The 00Z NWS model production suite continues to run on time with
+9 Alaskan, 23 Canadian, 61 CONUS, 13 Mexican, 8 Caribbean and 10
+Pacific stations available for ingest.
+
+00Z GFS RAOB RECAP...
+72206/JAX - No report
+72210/TBW - No report for NAM, in for GFS
+72251/CRP - No report for NAM, in for GFS
+72388/VEF - No report
+72645/GRB - No report
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+70350/ADQ - 10142
+72274/TWC - 10159
+72440/SGF - 10145
+78384/GCM - 10142
+71603/YQI - Purged temp, moist 721 to 718 mb, super-adiabatic
+lapse rate
+91366/KWA - Purged spurious wind 1005 to 1001 mb
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0133Z MON SEP 21 2026
+
+The 00Z NWS model production suite began and is running on time
+with 9 Alaskan, 23 Canadian, 58 CONUS, 13 Mexican, 7 Caribbean
+and 9 Pacific stations available for ingest.
+
+00Z NAM RAOB RECAP...
+72206/JAX - No report
+72210/TBW - No report
+72251/CRP - No report
+72388/VEF - No report
+72645/GRB - No report
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+70350/ADQ - 10142
+72274/TWC - 10159
+72440/SGF - 10145
+78384/GCM - 10142
+71603/YQI - Purged temp, moist 721 to 718 mb, super-adiabatic
+lapse rate
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0025Z MON SEP 21 2026
+
+
+MDS STATUS...
+GOES-W MDS Sector 1 has shifted east and is centered over
+53.3N/138.3W until 21/1500Z in support of wx ops at WFOs Juneau
+and Anchorage.
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+2312Z SUN SEP 20 2026
+
+MDS STATUS...
+GOES-E MDS Sector 2 is centered over 34.0N/32.5W until 22/0000Z
+in support of monitoring Tropical Storm Fay in the Atlantic.
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1605Z SUN SEP 20 2026
+
+MDS STATUS...
+GOES-W MDS Sector 1 is centered over 53N/142W from 1603Z to
+21/1500Z in support of wx ops at WFOs Juneau and Anchorage.
+
+Handel/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1458Z SUN SEP 20 2026
+
+The 12Z GFS is running on time.
+
+MDS STATUS...
+GOES-E MDS Sector 1 is centered over 37N/100W from 1440Z to
+21/1200Z in support of severe wx ops over the Central and
+Southern Plains.
+
+Handel/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1336Z SUN SEP 20 2026
+
+The 12Z NWS model production is running on time.
+
+12Z NAM RAOB RECAP...
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72265/MAF - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72672/RIW - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+70308/SNP - 10159
+70350/ADQ - 10142
+72274/TWC - 10159
+78384/GCM - 10142
+78016/BDA - Missing TTBB
+
+Handel/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0942Z SUN SEP 20 2026
+
+MDS STATUS...
+GOES-W MDS Sector 2 will be centered over 13N/105.6W from 15Z to
+21/1500Z in support of tropical cyclone ops, monitoring EP99
+approaching the southwest Mexican coastline
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0907Z SUN SEP 20 2026
+
+...METARS MISSING/DELAYED IN AWIPS - RESTORED...
+
+METAR data that stopped updating in AWIPS WFO systems around 03Z
+on Sunday September 20 was restored with the 08Z observations.
+Some data from 04-07Z were received, but often with a significant
+delay.
+
+
+Renkevens/SDM/NCO
+</b>
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0854Z SUN SEP 20 2026
+
+CRITICAL WEATHER DAY STATUS...
+Critical Weather Day is not expected in the next 3 days.
+
+CRITICAL WEATHER OUTLOOK...
+Sunday - None.
+Monday - None.
+Tuesday - None.
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0356Z SUN SEP 20 2026
+
+...METARS MISSING/DELAYED IN AWIPS...
+
+NCO is aware of an issue affecting METARs in AWIPS beginning at
+03Z with nearly all observations missing. The NCF has observed a
+server issue and is working on the problem.
+
+
+Renkevens/SDM/NCO
+</b>
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0311Z SUN SEP 20 2026
+
+
+The 00Z NWS model production continues to run on time with 9
+Alaskan, 23 Canadian, 60 CONUS, 14 Mexican, 8 Caribbean and 10
+Pacific stations available for ingest.
+
+00Z GFS RAOB RECAP...
+70414/SYA - No report for NAM, in for GFS
+72206/JAX - No report
+72251/CRP - No report
+72388/VEF - No report
+72645/GRB - No report
+72662/UNR - No report for NAM, in for GFS
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+70350/ADQ - 10142
+72215/FFC - 10145
+72274/TWC - 10159
+72363/AMA - Purged temp, moist 501 to 483 mb, super-adiabatic
+lapse rate
+72376/FGZ - Purged temp, moist 572 to 560 mb, super-adiabatic
+lapse rate
+76644/MID - Purged spurious wind at surface
+91366/KWA - Purged wind at 1005 mb
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0200Z SUN SEP 20 2026
+
+...AVIATION WEATHER CENTER WEBSITE RESTORED...
+
+The Aviation Weather Center's website aviationweather.gov has
+been restored.
+
+
+Renkevens/SDM/NCO
+</b>
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0136Z SUN SEP 20 2026
+
+
+The 00Z NWS model production suite began and is running on time
+with 8 Alaskan, 23 Canadian, 57 CONUS, 14 Mexican, 8 Caribbean
+and 9 Pacific stations available for ingest.
+
+00Z NAM RAOB RECAP...
+70414/SYA - No report
+72206/JAX - No report
+72251/CRP - No report
+72388/VEF - No report
+72645/GRB - No report
+72662/UNR - No report
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+70350/ADQ - 10142
+72215/FFC - 10145
+72274/TWC - 10159
+72363/AMA - Purged temp, moist 501 to 483 mb, super-adiabatic
+lapse rate
+72376/FGZ - Purged temp, moist 572 to 560 mb, super-adiabatic
+lapse rate
+76644/MID - Purged spurious wind at surface
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0117Z SUN SEP 20 2026
+
+...AVIATION WEATHER CENTER WEBSITE OUTAGE...
+
+NCO and the Aviation Weather Center are aware of a website outage
+of aviationweather.gov. Support teams have been contacted.
+
+Please visit https://www.nco.ncep.noaa.gov/status/messages/ for
+further updates.
+
+
+Renkevens/SDM/NCO
+</b>
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+2242 SAT SEP 19 2026
+
+
+...RADAR.WEATHER.GOV DATA OUTAGE - RESTORED...
+
+Single-site and national radar data products on radar.weather.gov
+and the weather.gov radar thumbnails have returned at 19/2217Z.
+
+Please visit https://www.nco.ncep.noaa.gov/status/messages/ for
+further updates.
+
+
+Renkevens/SDM/NCO
+</b>
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1929Z SAT SEP 19 2026
+
+
+...RADAR.WEATHER.GOV DATA OUTAGE...
+
+Single-site and national radar data products stopped populating
+on radar.weather.gov and the weather.gov radar thumbnails at
+around 1900Z today. NCO is investigating.
+
+Please visit https://www.nco.ncep.noaa.gov/status/messages/ for
+further updates.
+
+
+Ready/SDM/NCO
+</b>
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1655Z SAT SEP 19 2026
+
+
+MDS STATUS...
+GOES-W MDS Sector 2 was centered over 13.3N/106.3W from 1620Z
+until 20/15Z to support NHC monitoring of invest storm 99E.
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1516Z SAT SEP 19 2026
+
+
+The 12Z GFS began and is running on time with 12 Alaskan...24
+Canadian...38 CONUS...12 Mexican...9 Caribbean...and 8 Pacific
+raobs available for ingest.
+
+
+UPDATED 12Z RAOB RECAP...
+72215/FFC - No report for the NAM...in for the GFS
+72797/UIL - No report for the NAM...10159 for the GFS
+71043/YVQ - Purged temps/moisture at 496 mb, 360 mb, 298 mb and
+             249 mb...non-meteorological and super-adiabatic
+             lapse rate
+
+
+
+MDS STATUS...
+GOES-W MDS Sector 1 is centered over 41.5N/110W from 15Z until
+20/12Z in support of excessive rainfall monitoring in Montana.
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1336Z SAT SEP 19 2026
+
+
+The 12Z NAM began and is running on time with 12 Alaskan...24
+Canadian...38 CONUS...12 Mexican...8 Caribbean...and 8 Pacific
+raobs available for ingest.
+
+
+12Z NAM RAOB RECAP...
+72215/FFC - No report
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72293/NKX - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72672/RIW - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+72797/UIL - No report
+74455/DVN - No report
+70308/SNP - 10159
+70350/ADQ - 10142
+72265/MAF - 10159
+72274/TWC - 10159
+72493/OAK - 10159
+72694/SLE - 10159
+78384/GCM - 10142
+91212/GUM - 10145
+78016/BDA - Missing TTBB
+
+
+MDS STATUS...
+GOES-E MDS Sector 1 is centered over 37.3N/86.6W from 12Z until
+20/12Z in support of SPC severe weather ops.
+
+GOES-E MDS Sector 2 is centered over 37N/98.8W from 12Z until
+20/12Z in support of SPC fire weather ops across OK.
+
+
+
+Ready/SDM/NCO
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0917Z SAT SEP 19 2026
+
+...RADAR.WEATHER.GOV DATA OUTAGE RESTORED...
+
+The outage for radar data products on radar.weather.gov and the
+weather.gov radar thumbnails has been restored as of 19/0832Z.
+
+Please visit https://www.nco.ncep.noaa.gov/status/messages/
+for further updates.
+
+
+Renkevens/SDM/NCO
+</b>
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0912Z SAT SEP 19 2026
+
+CRITICAL WEATHER DAY STATUS...
+NCO is monitoring heavy rain and flooding conditions in the
+Midwest. Otherwise, Critical Weather Day is not expected in the
+next 3 days.
+
+CRITICAL WEATHER OUTLOOK...
+Saturday - None.
+Sunday - None.
+Monday - None.
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0344Z SAT SEP 19 2026
+
+...RADAR.WEATHER.GOV DATA OUTAGE UPDATE...
+
+The outage for single-site and national radar data products on
+radar.weather.gov and the weather.gov radar thumbnails continues.
+NCO support and development teams are actively investigating.
+
+Please visit https://www.nco.ncep.noaa.gov/status/messages/
+for further updates.
+
+
+Renkevens/SDM/NCO
+</b>
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0301Z SAT SEP 19 2026
+
+The 00Z NWS model production suite continues to run on time with
+9 Alaskan, 25 Canadian, 62 CONUS, 14 Mexican, 8 Caribbean and 10
+Pacific stations available for ingest.
+
+00Z GFS RAOB RECAP...
+70414/SYA - No report for NAM, in for GFS
+72206/JAX - No report
+72376/FGZ - No report for NAM, Missing TTAA/TTBB for GFS
+72388/VEF - No report
+72645/GRB - No report
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+70350/ADQ - 10142
+72274/TWC - 10159
+78384/GCM - 10142
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0130Z SAT SEP 19 2026
+
+The 00Z NWS model production suite is currently running on time.
+
+00Z NAM RAOB RECAP...
+70414/SYA - No report
+72206/JAX - No report
+72376/FGZ - No report
+72388/VEF - No report
+72645/GRB - No report
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+70350/ADQ - 10142
+72274/TWC - 10159
+78384/GCM - 10142
+
+
+Churchill/SDM/NCO
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1910Z FRI SEP 18 2026
+
+...RADAR.WEATHER.GOV DATA OUTAGE UPDATE...
+
+Ridge2 failover from CP to BLDR was completed at 1854Z.
+Standard/lite Radar functionality was restored, but NCO support
+teams continue to investigate single-site and national radar
+product dropouts on the high-res radar.weather.gov interface.
+
+
+Churchill/SDM/NCO
+</b>
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1803Z FRI SEP 18 2026
+
+...RADAR.WEATHER.GOV DATA OUTAGE...
+
+Single-site and national radar data products stopped populating
+on radar.weather.gov and the weather.gov radar radar thumbnails
+at around 1730Z today. NCO is investigating.
+
+Please visit https://www.nco.ncep.noaa.gov/status/messages/
+for further updates.
+
+Green/SDM/NCO
+</b>
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1458Z FRI SEP 18 2026
+
+MDS STATUS...
+GOES-W MDS Sector 1 will be centered over 40.8N/111W from
+now to 19/1200Z in support of severe storms across the
+Intermountain West.
+
+12Z UPDATED RAOB RECAP...
+`70361/YAK - No report
+`72240/LCH - No report
+`72248/SHV - No report
+`72250/BRO - No report
+`72251/CRP - No report
+`72363/AMA - No report
+`72364/EPZ - No report
+`72365/ABQ - No report
+`72376/FGZ - No report
+`72451/DDC - No report
+`72476/GJT - No report
+`72558/OAX - No report
+`72562/LBF - No report
+`72582/LKN - No report
+`72597/MFR - No report
+`72645/GRB - No report
+`72659/ABR - No report
+`72662/UNR - No report
+`72672/RIW - No report
+`72681/BOI - No report
+`72712/CAR - No report
+`72764/BIS - No report
+`72768/GGW - No report
+`72786/OTX - No report
+`74455/DVN - No report
+`91376/MAJ - No report
+`70308/SNP - 10159
+`72265/MAF - 10159
+`72274/TWC - 10159
+`76256/GYM - 10159
+`78016/BDA - Missing TTBB
+
+Green/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1323Z FRI SEP 18 2026
+
+MDS STATUS...
+GOES-W MDS Sector 1 will be centered over 39N/116.2W from now
+to 19/1200Z in support of severe storm ops for portions of the
+Intermountain West.
+GOES-E MDS Sector 2 will be centered over 38.4N/95.9W from
+now to 19/1800Z in support of fire wx ops for portions of
+the Southern Plains.
+
+12Z NAM RAOB RECAP...
+70361/YAK - No report
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72672/RIW - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+91376/MAJ - No report
+70308/SNP - 10159
+72265/MAF - 10159
+72274/TWC - 10159
+76256/GYM - 10159
+78016/BDA - Missing TTBB
+
+There were 12 Alaskan...26 Canadian...41 CONUS...13 Mexican...
+10 Caribbean and 8 Pacific stations available for ingest.
+
+Green/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0947Z FRI SEP 18 2026
+
+
+MDS STATUS...
+GOES-E MDS Sector 1 will be centered over 37.3N/81.6W from 1200Z
+to 19/0300Z in support of severe wx ops over GA/SC/NC.
+
+GOES-E MDS Sector 2 will be centered over 38.4N/95.9W from 1200Z
+to 19/1200Z in support of fire wx ops over the Central Plains.
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0902Z FRI SEP 18 2026
+
+CRITICAL WEATHER DAY STATUS...
+Critical Weather Day is not expected in the next 3 days.
+
+CRITICAL WEATHER OUTLOOK...
+Friday - None.
+Saturday - None.
+Sunday - None.
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+<b>
+
+SENIOR DUTY METEOROLOGIST NWS ALERT ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0836Z FRI SEP 18 2026
+
+...RADAR.WEATHER.GOV OUTAGE...
+
+NCO teams are aware of issues with radar data populating
+radar.weather.gov and are working to restore services.
+
+
+Renkevens/SDM/NCO
+</b>
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0315Z FRI SEP 18 2026
+
+The 00Z NWS model production suite continues to run on time with
+10 Alaskan, 26 Canadian, 63 CONUS, 14 Mexican, 8 Caribbean and 9
+Pacific stations available for ingest.
+
+00Z GFS RAOB RECAP...
+70414/SYA - No report for NAM, in for GFS
+72206/JAX - No report
+72388/VEF - No report
+72645/GRB - No report
+72768/GGW - No report for NAM, in for GFS
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+72274/TWC - 10159
+78384/GCM - 10142
+76595/CUN - Short to 630 mb
+76612/GDL - Short to 577 mb
+72251/CRP - Missing TTBB for NAM, in for GFS
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0125Z FRI SEP 18 2026
+
+The 00Z NWS model production suite is currently running on time.
+
+00Z NAM RAOB RECAP...
+70414/SYA - No report
+72206/JAX - No report
+72388/VEF - No report
+72645/GRB - No report
+72768/GGW - No report
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+72274/TWC - 10159
+78384/GCM - 10142
+76595/CUN - Short to 630mb
+76612/GDL - Short to 577mb
+72251/CRP - Missing TTBB
+
+
+Churchill/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+2153Z THU SEP 17 2026
+
+MDS STATUS...
+GOES-W MDS Sector 2 will be centered over 21.2N/157.1W until
+18/2000Z in support of flash flooding ops across Hawaii.
+
+
+Churchill/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+1456Z THU SEP 17 2026
+
+MDS STATUS...
+GOES-E MDS Sector 1 will be centered over 38.5N/99.8W from
+now to 18/0200Z in support of fire wx ops across the Southern
+Plains.
+
+12Z UPDATED RAOB RECAP...
+72240/LCH - No report
+72248/SHV - No report
+72250/BRO - No report
+72251/CRP - No report
+72363/AMA - No report
+72364/EPZ - No report
+72365/ABQ - No report
+72376/FGZ - No report
+72451/DDC - No report
+72476/GJT - No report
+72558/OAX - No report
+72562/LBF - No report
+72582/LKN - No report
+72597/MFR - No report
+72645/GRB - No report
+72659/ABR - No report
+72662/UNR - No report
+72672/RIW - No report
+72681/BOI - No report
+72712/CAR - No report
+72764/BIS - No report
+72768/GGW - No report
+72786/OTX - No report
+74455/DVN - No report
+91376/MAJ - No report
+70308/SNP - 10159
+70326/AKN - 10159
+72274/TWC - 10159
+76256/GYM - 10159
+78384/GCM - 10142
+78016/BDA - Missing TTBB
+76225/CUU - Purged spurious wind 865 to 852 mb..
+
+There were 12 Alaskan...24 Canadian...44 CONUS...13 Mexican...
+10 Caribbean and 9 Pacific stations available for ingest.
+
+Green/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0848Z THU SEP 17 2026
+
+CRITICAL WEATHER DAY STATUS...
+Critical Weather Day is not expected in the next 3 days.
+
+CRITICAL WEATHER OUTLOOK...
+Thursday - None.
+Friday - None.
+Saturday - None.
+
+
+Renkevens/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0304Z THU SEP 17 2026
+
+The 00Z NWS model production suite continues to run on time with
+9 Alaskan..25 Canadian..61 CONUS..13 Mexican..8 Caribbean..and 10
+Pacific stations available for ingest into the 00Z GFS.
+
+UPDATED 00Z GFS RAOB RECAP...
+70414/SYA - No report for NAM..10159 for GFS
+72206/JAX - No report for NAM/GFS
+72251/CRP - No report for NAM..in for GFS
+72388/VEF - No report for NAM/GFS
+72528/BUF - No report for NAM..in for GFS
+72645/GRB - No report for NAM/GFS
+72786/OTX - No report for NAM/GFS
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+72250/BRO - 10142
+72274/TWC - 10159
+78384/GCM - 10142
+74389/GYX - Short to 452mb..10141
+
+
+MDS STATUS...
+GOES-W MDS Sector 1 will be centered over 35.9N/108.9W until
+18/1200Z in support of flash flooding ops (WPC Moderate/Slight
+Risk ERO) across the Four Corners Region (extended duration from
+prior request).
+
+
+Churchill/SDM/NCO
+<br><br><hr>
+
+SENIOR DUTY METEOROLOGIST NWS ADMINISTRATIVE MESSAGE
+NWS CENTRAL OPERATIONS COLLEGE PARK MD
+0128Z THU SEP 17 2026
+
+The 00Z NWS model production suite is currently running on time.
+
+00Z NAM RAOB RECAP...
+70414/SYA - No report
+72206/JAX - No report
+72251/CRP - No report
+72388/VEF - No report
+72528/BUF - No report
+72645/GRB - No report
+72786/OTX - No report
+70133/OTZ - 10159
+70219/BET - 10159
+70308/SNP - 10159
+70326/AKN - 10159
+72250/BRO - 10142
+72274/TWC - 10159
+78384/GCM - 10142
+74389/GYX - Short to 452mb..10141
+
+
+Churchill/SDM/NCO
+</pre>
+<br></body></html>
+
+      <script>
+      // Define an array of objects with phrases and their corresponding URLs
+	const replacements = [
+	{ phrase: "https:\/\/www\.nco\.ncep\.noaa\.gov\/status\/satellite\/", url: "https://www.nco.ncep.noaa.gov/status/satellite/" },
+	{ phrase: "MDS STATUS", url: "https://www.nco.ncep.noaa.gov/status/satellite/" },
+	{ phrase: "GOES STATUS", url: "https://www.nco.ncep.noaa.gov/status/satellite/" },
+	{ phrase: "HIMAWARI STATUS", url: "https://www.nco.ncep.noaa.gov/status/satellite/" },
+	{ phrase: "RAOB RECAP", url: "https://www.nco.ncep.noaa.gov/omb/dataqc/"},
+	{ phrase: "https:\/\/www\.nco\.ncep\.noaa\.gov\/status\/cwd\/", url: "https://www.nco.ncep.noaa.gov/status/cwd/" },
+	{ phrase: "CRITICAL WEATHER DAY STATUS", url: "https://www.nco.ncep.noaa.gov/status/cwd/" },
+	{ phrase: "CRITICAL WEATHER OUTLOOK", url: "https://www.nco.ncep.noaa.gov/status/cwd/#outlook" },
+	{ phrase: "CRITICAL WEATHER STATUS", url: "https://www.nco.ncep.noaa.gov/status/cwd/" },
+	{ phrase: "CWD STATUS", url: "https://www.nco.ncep.noaa.gov/status/cwd/" },
+	{ phrase: "NCEP Model Production", url: "https://www.nco.ncep.noaa.gov/pmb/nwprod/prodstat_new/" },
+	{ phrase: "NCEP model production", url: "https://www.nco.ncep.noaa.gov/pmb/nwprod/prodstat_new/" },
+	{ phrase: "NWS Model Production", url: "https://www.nco.ncep.noaa.gov/pmb/nwprod/prodstat_new/" },
+	{ phrase: "NWS model production", url: "https://www.nco.ncep.noaa.gov/pmb/nwprod/prodstat_new/" },
+	{ phrase: "dropsonde", url: "https://www.nco.ncep.noaa.gov/status/recon/" }
+
+];
+
+	// Function to replace phrases with links
+	function replacePhrasesWithLinks() {
+	   // Get the entire HTML content of the document body
+	   let bodyContent = document.body.innerHTML;
+
+	   // Iterate over each replacement object
+	   replacements.forEach(replacement => {
+	      // Create the link HTML string
+	      const linkHtml = `<a href="${replacement.url}">${replacement.phrase}</a>`;
+	      // Replace all instances of the phrase with the link HTML
+	      const regex = new RegExp(replacement.phrase, 'g');
+	      bodyContent = bodyContent.replace(regex, linkHtml);
+	   });
+
+	   // Update the document body with the new content
+	   document.body.innerHTML = bodyContent;
+	}
+
+	// Call the function to perform the replacements
+	replacePhrasesWithLinks();
+	</script>
+
+      </div>
+<!--
+  </div>
+</div>
+-->
+
+
+
+
+<!-- *******END of CONTENT AREA *********************************--> 
+<!-- TemplateEndEditable --> <!-- TemplateBeginEditable name="Filetime" --> 
+<!-- *********************************************************
+Please change the filemtime to your file name so the date page date last updated is correct 
+********************************************************************************** -->
+            <div id="grayTime">
+              <br>Page last modified: 10 June 2026.            </div>
+            <!-- TemplateEndEditable --> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="full-width-first">
+    <div class="full-width-first communication-links">
+      <div class="one-half-last nopad"> <span class="txt-rt myforecast-current">
+        <!--<div class="myforecast-current"> <a href="/rss_page.php?site_name=cfo" target="_blank" rel = "noopener noreferrer" style="text-decoration:none;font-size:11px;"> <img src="/css/images/rss.png" width="16" height="16" alt="CFO RSS Feed" />&nbsp;&nbsp;CFO RSS Feed </a> </div>
+-->
+        </span> </div>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+  <div style="clear:both;"></div>
+</div>
+<!-- end of <div class="center"> --> 
+
+<!-- sitemap area --> 
+<!-- legal footer area -->
+<div class="footer-legal">
+  <div class="footer-legal">
+    <div class="footer-legal-content">
+      <div class="one-sixth-first" id="footer_legal_gov"> <a href="http://www.usa.gov"> <img src="https://www.weather.gov/bundles/templating/images/footer/usa_gov.png" alt="usa.gov" width="110" height="30" /></a> </div>
+      <div class="one-half-first" id="footer_legal_info">
+        <p> <a href="https://www.commerce.gov">US Dept of Commerce</a><br/>
+          <a href="https://www.noaa.gov">National Oceanic and Atmospheric Administration</a><br/>
+          <a href="https://www.weather.gov">National Weather Service</a><br/>
+          5830 University Research Court<br>
+          Riverdale Park, MD 20737<br>
+          <br/>
+          <br/>
+          <a href="https://www.nco.ncep.noaa.gov/mail_webmaster/">NWS Web Services POCs</a> </p>
+      </div>
+      <!-- end of <div class="one-half-first" id="footer_legal_info"> -->
+      <div class="one-third-last" id="footer_required_links">
+        <div class="div-half"> <a href="https://www.weather.gov/disclaimer">Disclaimer</a><br/>
+          <a href="http://www.cio.noaa.gov/services_programs/info_quality.html">Information Quality</a><br/>
+          <a href="https://www.weather.gov/help">Help</a><br/>
+          <a href="https://www.weather.gov/glossary">Glossary</a> </div>
+        <div class="div-half"> <a href="https://www.weather.gov/privacy">Privacy Policy</a><br/>
+          <a href="https://www.noaa.gov/foia-freedom-of-information-act">Freedom of Information Act (FOIA)</a><br/>
+          <a href="https://www.weather.gov/about">About Us</a><br/>
+          <a href="https://www.weather.gov/careers">Career Opportunities</a> </div>
+      </div>
+      <!-- end of <div class="one-third-last" id="footer_required_links"> --> 
+    </div>
+    <!-- end of <div class="footer-legal-content"> --> 
+  </div>
+  <!-- end of <div class="footer-legal"> --> 
+</div>
+<!-- end of <div class="footer-legal"> -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-E05D244FA2C8DA",
+  "provider": "USGS Water Data",
+  "dataset": "methods",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:31:55.414574Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/methods",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/methods",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 4159,
+  "sha256": "ad452c83dcd74a9882870e1222d86b7bd13a7e9d80436151c93805accac6c73d",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\30\\DISC-E05D244FA2C8DA\\20260930T043155.414574Z_ad452c83dcd74a98.json",
+  "parent_id": "DISC-50BE965810B0D9",
+  "discovery_depth": 2
+}

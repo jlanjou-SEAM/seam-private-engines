@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-2F304C07A2206B",
+  "provider": "OpenWeather",
+  "dataset": "one-call-3",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:30.354268Z",
+  "request_url": "https://openweathermap.org/api/one-call-3",
+  "final_url": "https://openweathermap.org/api/one-call-3",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 961931,
+  "sha256": "9532ac458c7a71539e614462e565f2b158623b4db65174768745e9129d1b1b7a",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2F304C07A2206B\\20260930T040430.354268Z_9532ac458c7a7153.html",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

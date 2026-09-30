@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-08374859A39ED1",
+  "provider": "NOAA/NCEI",
+  "dataset": "education",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:03:20.259708Z",
+  "request_url": "https://www.ncei.noaa.gov/resources/education",
+  "final_url": "https://www.ncei.noaa.gov/resources/education",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 61265,
+  "sha256": "faefbb257e7bc4e9ef9feb979a58a6c970aba78d027fb369589d644265cc779e",
+  "etag": "\"1790716057-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:07:37 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-08374859A39ED1\\20260930T040320.259708Z_faefbb257e7bc4e9.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

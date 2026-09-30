@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E8172E06FF06AA",
+  "provider": "NOAA/SWPC",
+  "dataset": "flares",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:02:39.059451Z",
+  "request_url": "https://services.swpc.noaa.gov/products/flares/",
+  "final_url": "https://services.swpc.noaa.gov/products/flares/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 2254,
+  "sha256": "55bfc559db1f6ea11cc2b71148fec74b2e561e61a6240dd0a90d4f3d40c9e9c3",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-E8172E06FF06AA\\20260930T040239.059451Z_55bfc559db1f6ea1.html",
+  "parent_id": "SWPC-PRODUCTS",
+  "discovery_depth": 1
+}

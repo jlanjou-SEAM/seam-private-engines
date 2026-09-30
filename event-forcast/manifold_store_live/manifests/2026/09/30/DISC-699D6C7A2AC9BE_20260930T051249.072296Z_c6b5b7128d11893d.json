@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-699D6C7A2AC9BE",
+  "provider": "NOAA/NDBC",
+  "dataset": "MRKA2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:12:49.072296Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/MRKA2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/MRKA2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 203980,
+  "sha256": "c6b5b7128d11893dd0247603ee28749b86b227a38403b7c9ad15cbfa843934e4",
+  "etag": "\"31ccc-65cabe58463aa\"",
+  "last_modified": "Wed, 30 Sep 2026 04:40:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-699D6C7A2AC9BE\\20260930T051249.072296Z_c6b5b7128d11893d.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

@@ -1,0 +1,506 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>CPC Verification Summary</title>
+  <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+  <meta content="NCEP Web Team" name="GENERATOR">
+  <link href="/nwscwi/main.css" type="text/css" rel="STYLESHEET">
+	<!-- ======================================================== -->
+	<!--            Import JQuery and other  libraries            -->
+	<!-- ======================================================== -->
+	<!-- jQuery itself -->
+	<!-- <script type="text/javascript" src="/ncep_common/jquery.min.js"></script> -->
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script> -->
+	<script type="text/javascript" src="library/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="library/jquery.browser.min.js"></script>
+	<link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+	<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<!--        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
+	<script type="text/javascript" src="library/jquery.regex.js"> </script>
+    <script type="text/javascript" src="library/jquery.message.js"></script>
+	<!-- jQuery regex selector -->
+	<!-- jQuery tooltips -->
+	<script type="text/javascript" src="library/jquery.qtip.min.js"> </script>
+	<!-- Import FancyBox (image display package) and it's CSS -->
+	<!-- <script type="text/javascript" src="library/jquery.fancybox.js"></script> -->
+<!--        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /> -->
+    <!-- Custom messaging (using jQuery) -->
+
+	<!-- ======================================================== -->
+	<!--             Check for browser compatibility              -->
+	<!-- ======================================================== -->
+	<script type="text/javascript" src="library/BrowserCompatibility.js"> </script>
+	<!-- Make older browsers recognize HTML5 tags -->
+	<script>document.createElement('section');</script>
+
+	<!-- Pass some variables from PHP to Javascript -->
+	<script type="text/javascript">
+		var settings = [];
+		settings['outputType'] = "chart";
+		settings['page'] = "chart";
+	</script>
+
+	<!-- ======================================================== -->
+	<!--                  Import custom libraries                 -->
+	<!-- ======================================================== -->
+	<!-- Utility library -->
+	<script type="text/javascript" src="library/Util.js"> </script>
+	<!-- Messaging library -->
+	<script type="text/javascript" src="library/Messaging.js"> </script>
+	<!-- Static verification library -->
+	<script type="text/javascript" src="library/Static.js"> </script>
+	<!-- ======================================================== -->
+	<!--    Import libraries that set up certain page elements    -->
+	<!-- ======================================================== -->
+	<!-- Set up the jQuery tooltips -->
+	<script type="text/javascript" src="library/setup_tooltips.js"> </script>
+	<!-- ======================================================== -->
+
+	<!-- Set the title -->
+	<!-- ======================================================== -->
+	<!--                 Import CSS style sheets                  -->
+	<!-- ======================================================== -->
+	<!-- jQuery UI -->
+	<link type="text/css" href="styles/jquery-ui-1.8.15.custom.css" rel="Stylesheet" />
+	<!-- qTip Tooltips -->
+	<link type="text/css" href="styles/jquery.qtip.css" rel="Stylesheet" />
+	<!-- Fancybox -->
+	<!-- <link rel="stylesheet" href="library/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" /> -->
+	<!-- Main -->
+	<link rel=StyleSheet href="styles/index.css" type="text/css" />
+
+	<!-- jQuery -->
+	<script>
+		$(document).ready(function() {
+			//-------------------------------------------------------------------------------
+			// Variables and constants
+			//
+
+            //-------------------------------------------------------------------------------
+            // Code to collapse/uncollapse sections
+            //
+            // Hide collapsible content by default
+            $('div.collapsible-content').hide();
+            // Collapse or uncollapse section
+            $('p.collapsible-heading').click(function() {
+                $(this).next('div.collapsible-content').slideToggle(500);
+                $(this).toggleClass('expanded');
+            });
+
+			//-------------------------------------------------------------------------------
+			// Make the tooltip popup on the right side
+			//
+			$('#overviewPanel span[data-tooltip]').qtip('option', { 'position.my': 'left center', 'position.at': 'right center', 'target': $(this) });
+
+			//-------------------------------------------------------------------------------
+			// Listen for a change to any form element
+			//
+			$('#settingsForm :input').change(function() {
+				//-------------------------------------------------------------------------------
+				// Figure out what was changed
+				//
+				// Get the name of the setting that was changed
+				var setting = $(this).closest('li').attr('data-setting');
+				// Get the new value of the setting
+				var value   = $(this).val();
+
+				//-------------------------------------------------------------------------------
+				// Adjust each form setting accordingly, one at a time
+				//
+				// Get all <li> blocks (one per setting), ignoring the <li> block for the
+				// setting that was actually changed (!=), and loop over them (.each())
+				$('#settingsForm li[data-setting][data-setting!='+setting+']').each(function(index_settingBlock, settingBlock) {
+					// Get the name of the current setting in the loop
+					var settingInLoop = $(settingBlock).attr('data-setting');
+					// Get all <div> tags, children of the settingBlock, that are affected by the changed setting
+					var settingDivArray = $(settingBlock).children('div:regex(data-'+setting+',\\b'+value+'\\b)');
+					// Get the number of children <div>s
+					var settingDivArraySize = settingDivArray.children.length;
+					// If there are no <div> tags under the settingBlock, it doesn't change, so go to the next one
+					if (settingDivArraySize < 1) {
+						return true; // jQuery equivalent of "continue" statement
+					}
+					// Get a list of all "data-" attributes (just get it from the first div,
+					// assuming all the divs have the same amount of conditional settings)
+					var attributeArray = $(settingDivArray.children[0]).data();
+
+					//-------------------------------------------------------------------------------
+					// Create a string that can be used by jQuery to select the correct setting <div>
+					//
+					// Initialize empty string
+					var selector = '';
+					// Loop over all the data- attributes
+					$.each(attributeArray, function(key) {
+						// Get the value of this setting from the form
+						var value = $('#settingsForm li[data-setting='+key+'] > div:visible :input').val();
+						// Only append this attribute if it's not a builtin jQuery attribute (apparently
+						// when you call .hide() on an element, it gains a data attribute that begins
+						// with "jQuery")
+						if (! key.match(/^jQuery/)) {
+							// Use the jQuery regex selector (jquery.regex.js)
+							selector += ':regex(data-'+key+',\\b'+value+'\\b)';
+						}
+					});
+					// Hide all <div>s for this setting
+					$('#settingsForm li[data-setting='+settingInLoop+'] > div').hide();
+
+					// See if the winning <div> is empty
+					if (! $.trim($('#settingsForm li[data-setting='+settingInLoop+'] > div'+selector).html()) ) {
+						// Hide the entire row
+						$('#settingsForm li[data-setting='+settingInLoop+'] > div'+selector).parent().hide();
+					} else {
+						// Show the entire row
+						$('#settingsForm li[data-setting='+settingInLoop+'] > div'+selector).parent().show();
+						// show the appropriate <div>
+						$('#settingsForm li[data-setting='+settingInLoop+'] > div'+selector).show();
+						// Inform jQuery that a change was made
+						$('#settingsForm li[data-setting='+settingInLoop+'] > div'+selector+' > :input').trigger('change');
+					}
+				});
+			});
+            //-------------------------------------------------------------------------------
+			// Display messages at the top if there are any notes/warnings
+            //
+			// The notes and warnings are stored in a MySQL database on the server
+            //
+			
+			// Run the updateSettings() method so the page starts with some results displayed
+			Static.updateResults();
+		});
+	</script>
+</head>
+ <body leftmargin="0" background="/nwscwi/background.gif"
+      topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+<table cellspacing="0" cellpadding="0" width="100%" background="/nwscwi/topbanner.jpg" border="0">
+  <tr>
+    <td align="right" height="19">
+      <a href="#contents"><img height="1" alt="Skip Navigation Links"
+         src="/nwscwi/skipgraphic.gif" width="1" border="0"></a>
+      <a href="http://www.nws.noaa.gov/" class="homepagelinks"><span class="nwslink">www.nws.noaa.gov</span></a>&nbsp;</td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+  <tr>
+    <td rowspan="2"><a href="http://www.noaa.gov/"><img height="78" alt="NOAA logo - Click to go to the NOAA home page" src="/nwscwi/noaaleft.jpg" width="85" border="0"></a></td>
+    <td align="left"><img height="20" alt="National Weather Service" src="/nwscwi/nws_title.jpg" width="500" border="0"></td>
+    <td rowspan="2" width="100%" background="/nwscwi/ncep_bkgrnd.jpg">&nbsp;</td>
+    <td rowspan="2" align="right"><a href="http://www.nws.noaa.gov/"><img height="78" alt="NWS logo - Click to go to the NWS home page" src="/nwscwi/nwsright.jpg" width="85" border="0"></a></td>
+  </tr>
+  <tr>
+
+   <td><img height="58" alt="Climate Prediction Center" src="/nwscwi/cpc.jpg"
+             width="500" border="0"></td>  
+  
+   <!-- Put your center header image here. -->
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" background="/nwscwi/navbkgrnd.gif" border="0">
+  <tr>
+    <td align="center" valign="top" width="94"><img height="23" alt="" src="/nwscwi/navbarleft.jpg" width
+="94" border="0"></td>
+     <td class="nav" align="center" width="20%">        
+      <A href="/" class="menu" title="to the Climate Prediction Center home page">Home</A></TD>
+    <td class="nav" align="center" width="10%">
+      <a href="/products/site_index.html" class="menu">Site Map</a></td> <!-- Build a text only sitemap, and link to it via this
+                                                    sitemap button just below the banner.
+                                                    The sitemap should include a heirarchy of links
+                                                    from NOAA, to the NWS, to NCEP, and then through your site. -->
+    <td class="nav" align="right" width="15%">
+      <a href="http://www.nws.noaa.gov/pa/" class="menu">News</a></td>
+    <td class="nav" id="menuitem" align="right" width="20%">
+      <a href="http://www.wrh.noaa.gov/wrhq/nwspage.html" class="menu">Organization</a></td>
+    <td class="yellow" align="right" width="15%">
+      <form action="http://www.firstgov.gov/fgsearch/index.jsp" name="query">
+        <label for="search">Search</label>&nbsp;</td>
+    <td align="left" class="searchinput" width="20%" nowrap>
+      <input type="hidden" name="parsed" value="true">
+      <input type="hidden" name="rn" value="3">
+      <input type="hidden" name="in0" value="domain">
+      <input type="hidden" name="dom0" value="nws.noaa.gov, weather.gov, wrh.noaa.gov, srh.noaa.gov, crh.noaa.gov, prh.noaa.gov, arh.noaa.gov, alaska.net/~nwsar, erh.noaa.gov, ncep.noaa.gov, wwb.noaa.gov, spc.noaa.gov, nhc.noaa.gov, sec.noaa.gov, aviationweather.gov, aviationweather.noaa.gov, weather.noaa.gov, roc.noaa.gov, nohrsc.nws.gov, nwstc.noaa.gov, wdtb.noaa.gov, npmoc.navy.mil, ndbc.noaa.gov">
+      <input type="text" name="mw0" value="All NWS Search" id="search" size="20" maxlength="256">
+      <input type="submit" name="Go2" value="Go"></td>
+    <td width="10%">&nbsp;</form></td>
+    <td align="right" valign="bottom" width="24"><img height="23" alt="" src="/nwscwi/navbarendcap.jpg"
+ width="24" border="0"></td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="670" border="0">
+  <tr valign="top">
+    <td width="137"><br>
+<table cellspacing="0" cellpadding="2" width="137" border="0">
+
+        <!-- Do not remove this section. You will need this when the City,St/zip search is implemented nationwide.-->
+        <!-- <tr align="left" valign="top">
+                <td class="searchinput">
+                  <div id="Layer2" style="position:absolute; width:200px; height:115px; z-index:2; visibility: hidden">Search by city or zip code. Press enter or select the go button to submit request</div>
+                  <form method="POST" action="http://www.srh.noaa.gov/zipcity.php">
+                  <span class="yellow">Local forecast by<br>&quot;City, St&quot; or Zip Code</span><br>
+                  <input type="text" name="inputstring" size="9" value="City, St">
+                  <input type="submit" name="Go2" value="Go"></form></td>
+        </tr> -->
+        <tr>
+          <td class="searchinput" align="left">
+            <form action="http://www.firstgov.gov/fgsearch/index.jsp" name="query">
+              <input type="hidden" name="parsed" value="true">
+              <input type="hidden" name="rn" value="3">
+              <input type="hidden" name="in0" value="domain">
+<!--		  <input type="hidden" name="dom0" value="www.cpc.ncep.noaa.gov"> -->
+		  <!-- Change "center.noaa.gov" to your center\'s domain -->
+
+		  <span class="yellow">CPC Search</span><br>         
+		  <!-- Change "Center" to your center\'s initials -->
+		  <input type="text" name="mw0" id="search"  size="9" maxLength="256" value="CPC search"> 
+		  <!-- Change "Center" to your center's initials -->
+              <input type="submit" name="Go2" value="Go">
+          </form></td>
+        </tr>
+      <tr>
+         <td class="white">
+            <span class="yellow">Related Outlooks</span><br>
+            &nbsp;&nbsp;&nbsp;<a
+	    href="http://www.cpc.ncep.noaa.gov/products/predictions/610day/index.php" class="menu">6-10 Day</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="http://www.cpc.ncep.noaa.gov/products/predictions/814day/index.php" class="menu">8-14 Day</a><br>
+	    &nbsp;&nbsp;&nbsp;<a href="http://www.cpc.ncep.noaa.gov/products/predictions/30day/" class="menu">Monthly</a><br>
+	    &nbsp;&nbsp;&nbsp;<a
+	    href="http://www.cpc.ncep.noaa.gov/products/predictions/long_range/seasonal.php?lead=1" class="menu">Seasonal</a><br>
+	    <br>
+	    
+	    <span class="yellow">Related Observations</span><br>
+            &nbsp;&nbsp;&nbsp;<a
+	    href="http://www.cpc.ncep.noaa.gov/products/tanal/temp_analyses.php"
+	    class="menu">Temperature</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="http://www.cpc.ncep.noaa.gov/products/Global_Monsoons/American_Monsoons/NAMS_precip_monitoring.shtml"
+	    class="menu">Precipitation</a><br>
+	    <br>
+	    
+	    <span class="yellow">Related Verifications</span><br>
+            &nbsp;&nbsp;&nbsp;<a
+	    href="http://www.cpc.ncep.noaa.gov/products/predictions/short_range/verifications/html/"
+	    class="menu">6-10 Day / 8-14 Day</a><br>
+            &nbsp;&nbsp;&nbsp;<a
+	    href="http://www.cpc.ncep.noaa.gov/products/predictions/long_range/tools/briefing/mon_veri.grid.php"
+	    class="menu">Monthly</a><br>
+	    &nbsp;&nbsp;&nbsp;<a href="http://www.cpc.ncep.noaa.gov/products/predictions/long_range/tools/briefing/seas_veri.grid.php"
+	    class="menu">Seasonal</a><br><br>
+	    <!-- 
+	    &nbsp;&nbsp;&nbsp;<a href="http://www.cpc.ncep.noaa.gov/products/predictions/814day/index.php"
+	    class="menu">Interactive Web Tool</a><br>
+	    <br>
+	    -->
+	    
+	    <span class="yellow">About Us</span><br>
+            &nbsp;&nbsp;&nbsp;<a href="http://www.cpc.ncep.noaa.gov/information/who_we_are/mission.shtml" class="menu">Our Mission</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="/information/who_we_are/" class="menu">Who We Are</a><br><br>
+
+            <span class="yellow">Contact Us</span><br>
+            &nbsp;&nbsp;&nbsp;<a href="http://www.cpc.ncep.noaa.gov/information/personnel/contacts.shtml" class="menu">CPC Information</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="/comment-form.html" class="menu">CPC Web Team</a><br><br>           
+           
+          </td>
+
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+          <td class="white" id="menuitem" align="center"><a href="http://www.firstgov.gov/"><img src="/nwscwi/firstgov_logo_color_110w.gif" alt="FirstGov.gov is the U.S. Government's official Web portal to all Federal, state and local government Web resources and services." border="0" height="30" width="110"></a></td>
+        </tr>
+      </table>
+    </td>
+    <td valign="top" align="center" width="533"><a name="contents"></a>
+	<div id="outerContainer">
+		<!-- Header containing the banner -->
+		<header id="banner">
+			<h1>CPC Verification Summary</h1>
+			<p id='user_tip-vwt_announcement'></p>
+			<!-- <script>$('#user_tip-vwt_announcement').message("<a target='_blank' href=http://www.vwt.ncep.noaa.gov>Click here</a> to access the interactive Verification Web Tool",'note')</script> -->
+		</header>
+		<!-- News panel for displaying messages to users -->
+		<section id="newsPanel">
+		</section>
+		<!-- Tabs to switch between chart and map verification and the tutorial page -->
+		<ul id="pageTabs" class="tabs pageTabs">
+			<li class="selected"><a href="/products/verification/summary/index.php?page=chart">Chart</a></li>
+			<li class="unselected"><a href="/products/verification/summary/index.php?page=map">Map</a></li>
+			<li class="unselected"><a href="/products/verification/summary/index.php?page=tutorial">Tutorial</a></li>
+		</ul>
+		<div id="innerContainer">
+						<!-- Overview Panel -->
+			<div id="overviewContainer">
+				<section id="overviewPanel" class="panel">
+					<h2>Overview</h2>
+					<div class="content">
+						<!-- Get contents of the overviewPanel -->
+						<p>This is a summary verification page of CPC's official outlooks. Verification indicates the
+skill of outlooks, which is a relative measure of how the outlooks performed.
+Knowledge of the skill of the outlooks can help users for decision making purposes.</p>
+<p>Instructions for Use:</p>
+<ol>
+<li>Select type of skill score output desired ("Chart" or "Map") from the tabs above
+<li>Select options in the panel to the right
+<li>Click on the "Get scores" button 
+</ol>
+
+<span data-label="More info" data-tooltip='
+<p>
+<b>Results display:</b>
+</p>
+<p>
+The results are displayed below the options area. You can click on any graphic for a larger version. Some images may not be available. You can click on the "Why?" link in the box for more information.
+</p>
+<p>
+<b>Warnings and Errors panel:</b>
+</p>
+<p>
+Below the results display is a panel that displays any warnings or errors that cause graphics to not be displayed.
+</p>
+
+<p>
+<b>Information panel:</b>
+</p>
+<p>
+Below the warnings and errors panel is the information panel which shows information about the type of skill score selected.
+</p>
+<p>
+<b>Download Data:</b>
+</p>
+<p>
+View/download data by clicking on the download links under each graphic. Details on the file are in the "Tutorial" tab.
+</p>
+<b>Additional Information:</b>
+</p>
+<p>
+For more detailed information, select the "Tutorial" tab.  For more information on any options, click on any of the question marks next to the options.
+</p>
+
+'> Click here for more information </span>
+
+					</div>
+				</section>
+			</div>
+			<!-- Form - must surround the datesValid panel and the settings panel, since they both have form elements -->
+			<form id="settingsForm">
+				<!-- Settings Panel -->
+				<section id="settingsPanel" class="panel">
+					<h2>Options</h2>
+									<!-- Set input type (on the Map page you only want a single fcstSource chosen...so a radio button) -->
+								<ul>
+					<!-- Variable -->
+					<li data-setting="variable">
+						<span class="settingLabel">Field [<span data-label="Field" data-tooltip="Forecast field to calculate skill score for."> ? </span>]</span>
+						<div>
+							<select name="variable">
+								<option value="temp">temperature</option>
+								<option value="precip">precipitation</option>
+							</select>
+						</div>
+					</li>
+					<!-- Forecast type -->
+					<li data-setting="fcsttype">
+						<span class="settingLabel">Period [<span data-label="Period" data-tooltip="Range of time that the forecast covers."> ? </span>]</span>
+						<div>
+							<select name="fcstType">
+								<option value="6-10day">6-10 Day Period</option>
+								<option value="8-14day">8-14 Day Period</option>
+								<option value="monthly">Monthly</option>
+								<option value="monthly Updated">Monthly Updated</option>
+								<option value="seasonal">Seasonal</option>
+							</select>
+						</div>
+					</li>
+					<!-- Score Type -->
+					<li data-setting="scoretype">
+						<span class="settingLabel">Skill Score [<span data-label="Skill Score" data-tooltip="Skill score to calculate for verification."> ? </span>]</span>
+						<div>
+							<select name="scoreType">
+								<option value="heidke">heidke</option>
+								<option value="rpss">ranked probability</option>
+							</select>
+						</div>
+					</li>
+					<!-- Submit button -->
+					<li>
+						<input type=button value='Get scores' onClick='Static.updateResults();'>
+					</li>
+					<!--<p style="text-align:center"><a target="_blank" href=http://www.vwt.ncep.noaa.gov>Interactive Verification Web Tool</a></p>-->
+				</ul>
+                                <!-- Commented out for now
+				<span>For additional options, try our <br><a target="_blank" href="#">interactive verification tool</a></span> -->
+
+				</section>
+			</form>
+			<!-- Results Panel -->
+			<section id="resultsPanel" class="panel">
+				<h2>Results</h2>
+				<p id="user_tip-click_images_to_expand-chart"></p>
+				<script>$('#user_tip-click_images_to_expand-chart').message("Tip: Click images below to see them full size",'note')</script>
+				<div class="content">
+				</div>
+			</section>
+			<!-- Error Panel -->
+			<section id="errorPanel" class="panel">
+				<h2>Warnings and Errors</h2>
+				<p class="content" id="errorPanelText"></p>
+			</section>
+			<!-- Information Panel -->
+			<section id="infoPanel" class="panel">
+				<h2>Information</h2>
+				<p class="content" id="infoPanelText"></p>
+			</section>
+		</div> <!-- id="innerContainer" -->
+	</div> <!-- id="outerContainer" -->
+<!-- #######################################################################
+# Displayed links for forecast tool default forecast page
+######################################################################## -->
+        <table align="left"> 
+
+            <tr><td></td></tr>
+            <tr><td>&nbsp;</td></tr>
+          
+<!-- Footer -->
+            <tr>  
+                <td valign="top" align="center" width="533"><a name="contents"></a>
+<TABLE cellSpacing="0" cellPadding="0" width="99%" border="0">
+	<TBODY>
+		<TR>
+			<TD colSpan="3"><HR></TD>
+		</TR>
+		<TR vAlign="top">
+			<TD class="gray">
+				<A href="http://www.noaa.gov/" class="homepagelinks"><SPAN class="gray">NOAA/</SPAN></A>
+				<A href="http://www.nws.noaa.gov/" class="homepagelinks"><SPAN class="gray">National Weather Service</SPAN></A><BR>
+				<A href="http://www.ncep.noaa.gov/" class="homepagelinks"><SPAN class="gray">National Centers for Environmental Prediction</SPAN></a><BR>
+				Climate Prediction Center<BR>
+				5830 University Research Court <BR>
+				Riverdale Park, MD 20737 <BR>
+				Page Author:<A href="/comment-form.html" class="homepagelinks"><SPAN class="gray"> Climate Prediction Center Internet Team</SPAN></A><BR>
+				Page last modified: December 12, 2005
+			</TD>
+			<TD>
+				<A href="http://www.weather.gov/disclaimer.php" class="homepagelinks">
+				<SPAN class="gray">Disclaimer</SPAN></A><br>
+				<A href="http://www.cio.noaa.gov/Policy_Programs/info_quality.html" class="homepagelinks">
+				<SPAN class="gray">Information Quality</SPAN></A><br>
+				<A href="http://www.nws.noaa.gov/credits.php" class="homepagelinks">
+				<SPAN class="gray">Credits</SPAN></A><br>
+				<A href="http://www.nws.noaa.gov/glossary/" class="homepagelinks">
+				<SPAN class="gray">Glossary</SPAN></A><br>
+			</TD>
+			<TD align="right"><A href="http://www.weather.gov/privacy.php" class="homepagelinks">
+				<SPAN class="gray">Privacy Policy</SPAN></A><br>
+				<A href="http://www.rdc.noaa.gov/%7Efoia/" class="homepagelinks">
+				<SPAN class="gray">Freedom of Information Act (FOIA)</SPAN></A><br>
+				<A href="http://www.nws.noaa.gov/admin.php" class="homepagelinks">
+				<SPAN class="gray">About Us</SPAN></A><br>
+				<A href="http://www.nws.noaa.gov/careers.php" class="homepagelinks">
+				<SPAN class="gray">Career Opportunities</SPAN></A><br>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+                </td>
+           </tr>
+    </table>
+</table>
+</body>
+</html>
+

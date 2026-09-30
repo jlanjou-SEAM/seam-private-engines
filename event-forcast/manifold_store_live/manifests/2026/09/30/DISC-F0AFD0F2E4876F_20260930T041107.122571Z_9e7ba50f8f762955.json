@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F0AFD0F2E4876F",
+  "provider": "NOAA/NDBC",
+  "dataset": "YRSV2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:11:07.122571Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/YRSV2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/YRSV2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 388502,
+  "sha256": "9e7ba50f8f762955f8567cc4b428566ed154d94f6224a6866f666021fe591d5c",
+  "etag": "\"5ed96-65cab45317113\"",
+  "last_modified": "Wed, 30 Sep 2026 03:55:30 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-F0AFD0F2E4876F\\20260930T041107.122571Z_9e7ba50f8f762955.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

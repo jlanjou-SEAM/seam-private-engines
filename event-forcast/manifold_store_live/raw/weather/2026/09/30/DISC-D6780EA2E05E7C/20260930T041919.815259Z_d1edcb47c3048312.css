@@ -1,0 +1,345 @@
+body {
+  font-family: Arial, Helvetica, San Serif;
+}
+h1 {
+  font-size:large;
+  text-align:center;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size:medium;
+}
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+p {
+  margin-top: 10px;
+}
+p.large {
+  font-size:large;
+}
+p.medium {
+  font-size:medium;
+}
+.nomads_header_bar {
+  font-size:20px;
+  font-weight:bold;
+  padding:10px 2px 10px 0px;
+  text-align:center;
+  background-color:#3f51b5; /* w3-indigo */
+  color:white;
+}
+
+/* Line of links below NOMADS main header bar */
+.help_line {
+  margin:auto 0;
+  margin-top:0px;
+  padding-top:0px;
+  margin-bottom:10px;
+  border-bottom:1px solid black;
+  text-align: center;
+}
+.help_item {
+  text-decoration:none;
+  color:blue;
+}
+.links_line ul {
+  list-style-type: none;
+  font-size:12px;
+  margin: 0;
+  padding: 0;
+}
+.links_line li {
+  display:inline;
+  font-size:16px;
+}
+.links_line a {
+   text-decoration:none;
+   color:#1a1aff;
+}
+.links_line a:hover {
+  color:red;
+  text-decoration:underline;
+}
+.breadcrumb {
+  font-size:14px;
+  color:black;
+}
+#version_line {
+  margin: 0 auto;
+  margin-bottom:5px;
+  text-align:center;
+  font-size:small;
+  color:black;
+}
+
+#home_body {
+  margin-top:10px;
+  margin: 0 auto;
+  height:auto;
+  max-width:900px;
+  overflow:auto;
+}
+#home_body p {
+  font-size:medium;
+}
+#home_body a {
+    text-decoration: none;
+    color: blue;
+}
+#home_body a:hover {
+    text-decoration: underline;
+    color: red;
+}
+#home_body li {
+  font-size:medium;
+}
+.info_page {
+  margin: 0 auto;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:50px;
+  padding-right:50px;
+  max-width:800px;
+}
+.info_page p {
+  font-size:medium;
+}
+.info_page a {
+    text-decoration: none;
+    color: blue;
+}
+.info_page a:hover {
+    text-decoration: underline;
+    color: red;
+}
+.text-container {
+   max-width:600px;
+   padding:10px;
+}
+#nomads_message {
+  margin: 0 auto;
+  margin-top:10px;
+  margin-bottom:10px;
+  max-width:900px;
+  overflow:auto;
+  border:solid 2px red;
+  padding:8px;
+}
+#nomads_message pre {
+  font-family: Arial, Helvetica, San Serif;
+  font-size:14px;
+  font-weight:bold;
+  color:black;
+  background-color:white;
+  border:0;
+}
+#grib_filter_body {
+   margin-top:20px;
+   margin-left:20px;
+   margin-right:20px;
+   font-size:14px;
+}
+.help_item:hover {
+  text-decoration:underline;
+  color:red;
+  cursor:pointer;
+}
+/* Columns for Datasets, Cycles/Area, Filenames */
+#col_container {
+  margin:10px;
+  padding:10px;
+  border:solid 1px black;
+  height:auto;
+  max-width:900px;
+  overflow:auto;
+}
+.col_1 {
+  width:22%;
+  height:auto;
+  float:left;
+  text-align: left;
+}
+.col_2 {
+  width:22%;
+  height:auto;
+  float:left;
+  text-align: center;
+}
+.col_3 {
+  width:56%;
+  height:auto;
+  float:left;
+  text-align: left;
+}
+.center {
+  margin: 0 auto;
+}
+
+.selectable:hover{
+  text-decoration:underline;
+  cursor:pointer;
+}
+.unselected {
+  color: blue;
+  text-decoration:none;
+}
+.selected {
+  color: red;
+  text-decoration:underline;
+  font-weight:bold;
+}
+.dirNoChoice {
+  color: red;
+  text-decoration:none;
+  font-weight:bold;
+}
+.xarea {
+  color: red;
+  font-weight:bold;
+}
+.highlight:hover {
+  background-color:#c2c2d6;
+  cursor:pointer;
+}
+.highlighted {
+  color: blue;
+  text-decoration:underline;
+  background-color:#ffff99;
+}
+.ds_info {
+  color:blue;
+  cursor:pointer;
+}
+.ds_info:hover {
+  color:red;
+  text-decoration:underline;
+}
+/* ----  Modal Boxes ----  */
+/* Modal Background */
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 30; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+   background-color: #fefefe;
+   margin: 15% auto; /* 15% from the top and centered */
+   padding: 10px;
+   border: 1px solid #888;
+   border: 10px double #3f51b5;
+   width: 80%;
+   max-width:918px; /* 80% of max-width set in weather.css, 1148 */
+   font-family: Arial, Helvetica, San Serif;
+   font-size:14px;
+}
+.modal-heading {
+   font-weight: bold;
+   text-align:center;
+   margin-bottom:10px;
+}
+/* The Modal Close Button */
+.close {
+   color: #aaa;
+   color: #3f51b5;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+.close:hover,
+.close:focus {
+   color: red;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+/* Main Page */
+
+#nomads_body {
+   margin-top:20px;
+   margin-left:20px;
+   margin-right:20px;
+   font-size:12px;
+}
+.main_table {
+  border:1px solid black;
+  text-align:center;
+  border-collapse:collapse;
+}
+.main_table td,th {
+  border-style: solid;
+  border-width: 1px;
+  text-align:center;
+  padding:2px;
+}
+.header_row {
+  font-size: 16px;
+  font-weight: bold;
+  background-color:#ffffe0;
+}
+
+img {
+  max-width:100%;
+}
+
+.migration_guide_note, 
+.migration_guide_note li {
+  font-size: small !important;
+  font-weight: bold;
+  color: #1a1aff;
+}
+
+#migration_guide p i {
+  color: gray;
+  font-size: small;
+  font-weight: bold;
+}
+
+#migration_guide h2 {
+  font-size: 1.5em;
+}
+
+#migration_guide h3 {
+  color: darkblue;
+  font-size: 1.5em;
+}
+
+#migration_guide table {
+  border-collapse: collapse;
+  border-color: darkgray;
+  margin-bottom: 1em;
+}
+
+#migration_guide thead {
+  font-size: 1.5em;
+}
+
+#migration_guide th {
+  text-align: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+#migration_guide tbody td {
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  font-size: 1.25em;
+}
+
+#migration_guide h2 > h3 {
+  margin-top: 1em;
+}
+
+.wrap {
+  overflow-wrap: anywhere;
+}

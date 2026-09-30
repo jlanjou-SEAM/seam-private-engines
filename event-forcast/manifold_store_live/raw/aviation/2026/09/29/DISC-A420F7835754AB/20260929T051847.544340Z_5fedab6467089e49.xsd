@@ -1,0 +1,122 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="response" >
+        <xsd:complexType >
+            <xsd:sequence >
+                <xsd:element ref="request_index" />
+                <xsd:element ref="data_source" />
+                <xsd:element ref="request"/>
+                <xsd:element ref="errors"/>
+                <xsd:element ref="warnings"/>
+                <xsd:element ref="time_taken_ms"/>
+                <xsd:element ref="data"/>
+            </xsd:sequence>
+            <xsd:attribute name="version" type="xsd:string" default="1.0"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="request_index" type="xsd:int"/>
+    <xsd:element name="data_source" >
+        <xsd:complexType>
+            <xsd:attribute name="name" type="xsd:string"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="request" >
+        <xsd:complexType>
+            <xsd:attribute name="type" type="xsd:string" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="errors">
+        <xsd:complexType>
+            <xsd:sequence minOccurs="0" >
+                <xsd:element ref="error" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="warnings">
+        <xsd:complexType>
+            <xsd:sequence minOccurs="0">
+                <xsd:element ref="warning" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="data" >
+        <xsd:complexType>
+            <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+                <xsd:element ref="GAIRMET"/>
+            </xsd:sequence>
+            <xsd:attribute name="num_results" type="xsd:int"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="warning" type="xsd:string"/>
+    <xsd:element name="error" type="xsd:string"/>
+    <xsd:element name="time_taken_ms" type="xsd:int"/>
+    <xsd:attribute name="num_results" type="xsd:int"/>
+
+    <xsd:element name="GAIRMET">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="receiptTime" minOccurs="1"/>
+                <xsd:element ref="issueTime" minOccurs="1"/>
+                <xsd:element ref="expireTime" minOccurs="1"/>
+                <xsd:element ref="product" minOccurs="1"/>
+                <xsd:element ref="forecastHour" minOccurs="1"/>
+                <xsd:element ref="validTime" minOccurs="1"/>
+                <xsd:element ref="hazard" minOccurs="1"/>
+                <xsd:element ref="geometryType" minOccurs="1"/>
+                <xsd:element ref="frequency" minOccurs="0"/>
+                <xsd:element ref="due_to" minOccurs="0"/>
+                <xsd:element ref="status" minOccurs="0"/>
+                <xsd:element ref="altitude" minOccurs="0"/>
+                <xsd:element ref="fzl_altitude" minOccurs="0"/>
+                <xsd:element ref="level" minOccurs="0"/>
+                <xsd:element ref="area" minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="receiptTime" type="xsd:string"/>
+    <xsd:element name="issueTime" type="xsd:string"/>
+    <xsd:element name="expireTime" type="xsd:string"/>
+    <xsd:element name="product" type="xsd:string"/>
+    <xsd:element name="forecastHour" type="xsd:integer"/>
+    <xsd:element name="validTime" type="xsd:string"/>
+    <xsd:element name="hazard" >
+        <xsd:complexType>
+            <xsd:attribute name="type" type="xsd:string" />
+            <xsd:attribute name="severity" type="xsd:string" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="geometryType" type="xsd:string"/>
+    <xsd:element name="frequency" type="xsd:string"/>
+    <xsd:element name="due_to" type="xsd:string"/>
+    <xsd:element name="status" type="xsd:string"/>
+    <xsd:element name="altitude" >
+        <xsd:complexType>
+            <xsd:attribute name="min_ft_msl" type="xsd:int" />
+            <xsd:attribute name="max_ft_msl" type="xsd:int" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="fzl_altitude" >
+        <xsd:complexType>
+            <xsd:attribute name="min_ft_msl" type="xsd:int" />
+            <xsd:attribute name="max_ft_msl" type="xsd:int" />
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="level" type="xsd:integer"/>
+    <xsd:element name="area" >
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="point" minOccurs="1" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:attribute name="num_points" type="xsd:integer"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="point">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="longitude" type="xsd:float" minOccurs="1"/>
+                <xsd:element name="latitude" type="xsd:float" minOccurs="1"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

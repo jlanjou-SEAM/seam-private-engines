@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-7C538E4509613D",
+  "provider": "NOAA/NCEI",
+  "dataset": "support-service",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:15.326807Z",
+  "request_url": "https://www.ncei.noaa.gov/access/search/documentation/support-service/",
+  "final_url": "https://www.ncei.noaa.gov/access/search/documentation/support-service/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 28640,
+  "sha256": "b45c38d3e0b39d127d6db367c506a6a5f1a7304a2c8f37c00a5de882eb216606",
+  "etag": "\"6f44-658c669428540\"",
+  "last_modified": "Tue, 11 Aug 2026 14:37:33 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-7C538E4509613D\\20260929T051815.326807Z_b45c38d3e0b39d12.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-0CCC8EA3815FEA",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "HLINE.gif",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:00.573865Z",
+  "request_url": "https://madis-data.ncep.noaa.gov/HLINE.gif",
+  "final_url": "https://madis-data.ncep.noaa.gov/HLINE.gif",
+  "status_code": 200,
+  "content_type": "image/gif",
+  "byte_length": 2424,
+  "sha256": "5031d7464dd339d02d0ce10c387073e68f5a28675dee310c09ead5a45525d566",
+  "etag": null,
+  "last_modified": "Thu, 02 Aug 2018 03:52:46 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-0CCC8EA3815FEA\\20260930T041900.573865Z_5031d7464dd339d0.gif",
+  "parent_id": "DISC-257E4F11ACC505",
+  "discovery_depth": 2
+}

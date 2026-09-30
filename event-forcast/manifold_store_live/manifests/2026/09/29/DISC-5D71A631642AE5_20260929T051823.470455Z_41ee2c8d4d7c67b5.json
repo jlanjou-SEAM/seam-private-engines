@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-5D71A631642AE5",
+  "provider": "NOAA/NCEI",
+  "dataset": "apple-touch-icon-114x114.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:23.470455Z",
+  "request_url": "https://www.ncei.noaa.gov/shared/v1/images/apple-touch-icon-114x114.png",
+  "final_url": "https://www.ncei.noaa.gov/shared/v1/images/apple-touch-icon-114x114.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 4516,
+  "sha256": "41ee2c8d4d7c67b5fd892d9368ff3d045beb0bd39345c17be9d1e8599c887261",
+  "etag": "\"11a4-54fa4dd903680\"",
+  "last_modified": "Tue, 16 May 2017 14:19:54 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-5D71A631642AE5\\20260929T051823.470455Z_41ee2c8d4d7c67b5.png",
+  "parent_id": "NOAA-CDO",
+  "discovery_depth": 1
+}

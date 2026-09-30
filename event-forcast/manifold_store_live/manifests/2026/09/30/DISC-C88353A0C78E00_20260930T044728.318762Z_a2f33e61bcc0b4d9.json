@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-C88353A0C78E00",
+  "provider": "NOAA/NCEI",
+  "dataset": "1813",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:28.318762Z",
+  "request_url": "https://www.ncei.noaa.gov/node/1813",
+  "final_url": "https://www.ncei.noaa.gov/about/our-impact/adapt-n-agriculture",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 30993,
+  "sha256": "a2f33e61bcc0b4d965bcbadefed1ab2ec5fcdee6130523d57da06beb62c8846d",
+  "etag": "\"1790717143-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:25:43 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C88353A0C78E00\\20260930T044728.318762Z_a2f33e61bcc0b4d9.html",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-68B2374BDCBF82",
+  "provider": "NOAA/NSSL",
+  "dataset": "RotationTrack1440min",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:46.095011Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/RotationTrack1440min/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/RotationTrack1440min/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 11023,
+  "sha256": "2616ea8cbe9df54e5d889286a3a6bb2d9ed1dc3c6243bbb74d52ccf8c100983c",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-68B2374BDCBF82\\20260930T050846.095011Z_2616ea8cbe9df54e.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

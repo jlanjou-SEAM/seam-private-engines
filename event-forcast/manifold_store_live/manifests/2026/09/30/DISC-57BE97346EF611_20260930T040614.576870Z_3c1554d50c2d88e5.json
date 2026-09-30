@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-57BE97346EF611",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "Bureau_of_Meteorology_spatial_data_user_guide.pdf",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:14.576870Z",
+  "request_url": "https://www.bom.gov.au/catalogue/Bureau_of_Meteorology_spatial_data_user_guide.pdf",
+  "final_url": "https://www.bom.gov.au/catalogue/Bureau_of_Meteorology_spatial_data_user_guide.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 743059,
+  "sha256": "3c1554d50c2d88e5dd84bbc57b00506a9e8a52b299282a5e3abf202058789280",
+  "etag": "\"803c22-b5693-6460944315e40\"",
+  "last_modified": "Tue, 16 Dec 2025 03:24:33 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-57BE97346EF611\\20260930T040614.576870Z_3c1554d50c2d88e5.pdf",
+  "parent_id": "BOM-DATA",
+  "discovery_depth": 1
+}

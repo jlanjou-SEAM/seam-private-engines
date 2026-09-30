@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-752AE6EC5308E7",
+  "provider": "NOAA/NCEI",
+  "dataset": "boulder.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:02.413670Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2021-10/boulder.png",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-10/boulder.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 667098,
+  "sha256": "14927b20035539a2e6648235965db8a838b2caab2732a422476f09ab8cbfa674",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:35:38 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-752AE6EC5308E7\\20260930T044702.413670Z_14927b20035539a2.png",
+  "parent_id": "DISC-469667E7F9FB99",
+  "discovery_depth": 2
+}

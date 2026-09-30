@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-C66DEED9992148",
+  "provider": "NOAA/NCEI",
+  "dataset": "NCEI_Retail_and_Manufacturing_Infographic_final_508c.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:22.239958Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2023-07/NCEI_Retail_and_Manufacturing_Infographic_final_508c.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2023-07/NCEI_Retail_and_Manufacturing_Infographic_final_508c.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 826882,
+  "sha256": "901d4879f084977cdf9fbbc2e8879d31734f2643301e1fbe3c781422c0f1bea9",
+  "etag": null,
+  "last_modified": "Mon, 17 Jul 2023 13:55:53 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C66DEED9992148\\20260930T044722.239958Z_901d4879f084977c.pdf",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-B35BA52828E19B",
+  "provider": "NOAA/NDBC",
+  "dataset": "PRJC1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:32:39.450748Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PRJC1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PRJC1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1014918,
+  "sha256": "da3b977d914649526cd406b0d2c000a07af479dc0ecab2ce3b625dcb4121105c",
+  "etag": "\"f7c86-65cabc1e0398a\"",
+  "last_modified": "Wed, 30 Sep 2026 04:30:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-B35BA52828E19B\\20260930T043239.450748Z_da3b977d91464952.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

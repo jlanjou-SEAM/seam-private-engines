@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-340609D3F4C18B",
+  "provider": "NOAA/NWS",
+  "dataset": "openapi.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:09:38.450056Z",
+  "request_url": "https://api.weather.gov/openapi.json",
+  "final_url": "https://api.weather.gov/openapi.json",
+  "status_code": 200,
+  "content_type": "application/vnd.oai.openapi+json;version=3.1",
+  "byte_length": 121410,
+  "sha256": "04543cdd93e6a8c7f745a822f50834db6094ee09888171718c560ca8bb3328b4",
+  "etag": "\"fcfa4494a93adba20ef11ebac36c0d9a35ba3163:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-340609D3F4C18B\\20260930T040938.450056Z_04543cdd93e6a8c7.json",
+  "parent_id": "NWS-API-ROOT",
+  "discovery_depth": 1
+}

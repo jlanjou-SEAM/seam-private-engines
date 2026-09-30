@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-BD9FFB2EF93676",
+  "provider": "NOAA/NCEI",
+  "dataset": "citizen-science",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:36.988442Z",
+  "request_url": "https://www.ncei.noaa.gov/taxonomy/tags/citizen-science",
+  "final_url": "https://www.ncei.noaa.gov/taxonomy/tags/citizen-science",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 30725,
+  "sha256": "da95b90d84b96aca5e08b8831d3459a88b513873e943a5a659229a64e4eaa9ad",
+  "etag": "\"1790723318-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 23:08:38 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-BD9FFB2EF93676\\20260930T044636.988442Z_da95b90d84b96aca.html",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

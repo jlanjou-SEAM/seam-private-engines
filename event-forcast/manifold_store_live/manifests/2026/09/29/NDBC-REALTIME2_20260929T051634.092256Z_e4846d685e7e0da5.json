@@ -1,0 +1,23 @@
+{
+  "candidate_id": "NDBC-REALTIME2",
+  "provider": "NOAA/NDBC",
+  "dataset": "Realtime buoy data directory",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-29T05:16:34.092256Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 546470,
+  "sha256": "e4846d685e7e0da571340d2b460a311b4b5b79d21276bfd9f2d6e4e729610205",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\29\\NDBC-REALTIME2\\20260929T051634.092256Z_e4846d685e7e0da5.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-089B6F6B85EB0A",
+  "provider": "NOAA/SWPC",
+  "dataset": "suvi-secondary-094-rtheta-grid.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:15.875052Z",
+  "request_url": "https://services.swpc.noaa.gov/products/flares/suvi-secondary-094-rtheta-grid.json",
+  "final_url": "https://services.swpc.noaa.gov/products/flares/suvi-secondary-094-rtheta-grid.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 912,
+  "sha256": "bd73668881d01081eb8633018439af0aaf9dead4ddce5f2a1f77bbc210da2d5c",
+  "etag": "\"390-65cab8f897b43\"",
+  "last_modified": "Wed, 30 Sep 2026 04:16:17 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-089B6F6B85EB0A\\20260930T041815.875052Z_bd73668881d01081.json",
+  "parent_id": "DISC-E8172E06FF06AA",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A6A88C6FE257C5",
+  "provider": "NOAA/NDBC",
+  "dataset": "ICYA2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:14:37.856103Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/ICYA2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/ICYA2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 605454,
+  "sha256": "dec5c95899ae7f38e75b89e21394c4bfc9863725f37fc7dc25b3097ea0d91240",
+  "etag": "\"93d0e-65cac50d38743\"",
+  "last_modified": "Wed, 30 Sep 2026 05:10:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-A6A88C6FE257C5\\20260930T051437.856103Z_dec5c95899ae7f38.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

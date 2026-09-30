@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-BAFC08680965C1",
+  "provider": "NOAA/NSSL",
+  "dataset": "LightningProbabilityNext30min",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:21.703549Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/LightningProbabilityNext30min/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/LightningProbabilityNext30min/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 178119,
+  "sha256": "b782573e3a89094259e8d1b75f1b323837078ad4aba8b8cca04934449116f858",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-BAFC08680965C1\\20260930T050821.703549Z_b782573e3a890942.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

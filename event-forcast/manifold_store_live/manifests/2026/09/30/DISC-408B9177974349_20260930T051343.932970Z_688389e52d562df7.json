@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-408B9177974349",
+  "provider": "NOAA/NDBC",
+  "dataset": "MNPV2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:13:43.932970Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/MNPV2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/MNPV2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1012098,
+  "sha256": "688389e52d562df78eb3acd0fdc492782538da22f63427b317f64efd9ece5a20",
+  "etag": "\"f7182-65cac2d484c08\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-408B9177974349\\20260930T051343.932970Z_688389e52d562df7.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

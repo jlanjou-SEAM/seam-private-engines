@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-B3662285CA4794",
+  "provider": "OpenWeather",
+  "dataset": "accumulated-parameters",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:32.552873Z",
+  "request_url": "https://openweathermap.org/api/accumulated-parameters",
+  "final_url": "https://openweathermap.org/api/accumulated-parameters",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 273160,
+  "sha256": "51a2c0450710e71bc510766ad8073b533e569b8f2e6b0b449579916f13d1f38b",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-B3662285CA4794\\20260930T040432.552873Z_51a2c0450710e71b.html",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F53663E27C335F",
+  "provider": "NOAA/NDBC",
+  "dataset": "VDZA2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:27:47.423206Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/VDZA2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/VDZA2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1015200,
+  "sha256": "a5d888df30c916680ff476c7e778567f8e11c98c3172d70edb93ade6ddcf9d96",
+  "etag": "\"f7da0-65cab8c3a8246\"",
+  "last_modified": "Wed, 30 Sep 2026 04:15:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-F53663E27C335F\\20260930T042747.423206Z_a5d888df30c91668.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

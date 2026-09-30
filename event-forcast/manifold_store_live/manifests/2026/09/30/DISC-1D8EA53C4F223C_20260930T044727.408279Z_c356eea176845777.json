@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-1D8EA53C4F223C",
+  "provider": "NOAA/NCEI",
+  "dataset": "NCEI_Transport_and_Logistics_Infographic_FINAL_508.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:27.408279Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2023-07/NCEI_Transport_and_Logistics_Infographic_FINAL_508.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2023-07/NCEI_Transport_and_Logistics_Infographic_FINAL_508.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 1263404,
+  "sha256": "c356eea176845777496a5a6894c611a47e05827d68e5702ff84dd3e2e65a6958",
+  "etag": null,
+  "last_modified": "Mon, 17 Jul 2023 14:18:55 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-1D8EA53C4F223C\\20260930T044727.408279Z_c356eea176845777.pdf",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

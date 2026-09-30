@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-85EF4688D172DE",
+  "provider": "NASA Earthdata",
+  "dataset": "aqua-modis-data-loss-march-22-through-25-2024",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:19:50.260770Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/aqua-modis-data-loss-march-22-through-25-2024",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/aqua-modis-data-loss-march-22-through-25-2024",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 139962,
+  "sha256": "d679113ee292ce02b38266db3cf0105f59c9ef62bbb943bfa96d92dd49d09c1f",
+  "etag": "\"1790745648\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:48 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-85EF4688D172DE\\20260930T051950.260770Z_d679113ee292ce02.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

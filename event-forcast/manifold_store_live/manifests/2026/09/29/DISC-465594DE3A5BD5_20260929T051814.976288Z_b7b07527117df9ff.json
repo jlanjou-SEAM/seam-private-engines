@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-465594DE3A5BD5",
+  "provider": "NOAA/NCEI",
+  "dataset": "geoportal",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:14.976288Z",
+  "request_url": "https://www.ncei.noaa.gov/metadata/geoportal/",
+  "final_url": "https://www.ncei.noaa.gov/metadata/geoportal/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 3503,
+  "sha256": "b7b07527117df9ffa6be49d4567027852a8ba7341d42e2d2e9b39c60fd4cbd88",
+  "etag": "W/\"3347-1748453336000\"",
+  "last_modified": "Wed, 28 May 2025 17:28:56 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-465594DE3A5BD5\\20260929T051814.976288Z_b7b07527117df9ff.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

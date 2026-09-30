@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-F0AC9565748DDB",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "qcweek.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:20:04.237336Z",
+  "request_url": "https://madis-data.ncep.noaa.gov/qcms_data/qc5/qcweek.txt",
+  "final_url": "https://madis-data.ncep.noaa.gov/qcms_data/qc5/qcweek.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "byte_length": 11683,
+  "sha256": "bec73f400399115e6293c8ddc335ea2894ac5420b09eba57620092806f03c180",
+  "etag": null,
+  "last_modified": "Thu, 24 Sep 2026 00:16:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F0AC9565748DDB\\20260930T042004.237336Z_bec73f400399115e.txt",
+  "parent_id": "DISC-C3ED0EB44C19B6",
+  "discovery_depth": 2
+}

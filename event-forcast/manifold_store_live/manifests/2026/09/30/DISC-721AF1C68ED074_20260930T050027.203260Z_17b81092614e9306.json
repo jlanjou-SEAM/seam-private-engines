@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-721AF1C68ED074",
+  "provider": "NOAA/NCEP",
+  "dataset": "hiurma.20260921",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T05:00:27.203260Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/urma/prod/hiurma.20260921/",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/urma/prod/hiurma.20260921/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 9661,
+  "sha256": "17b81092614e9306dcee10f37362a8dc5d2b8408d1b30c057128bc8b59f02e70",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-721AF1C68ED074\\20260930T050027.203260Z_17b81092614e9306.20260921",
+  "parent_id": "DISC-6F33D0BD0FFA53",
+  "discovery_depth": 2
+}

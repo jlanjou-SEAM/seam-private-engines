@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-EEA5D60B6E0903",
+  "provider": "NOAA/NCEI",
+  "dataset": "Ecosystems.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:15.560568Z",
+  "request_url": "http://www.ncei.noaa.gov/sites/default/files/2021-09/Ecosystems.jpg",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-09/Ecosystems.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 417405,
+  "sha256": "5712d50edd918f8c7dd2b58fd5f00e1251639dd107810e0bf8ad0276b21b2329",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:34:32 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-EEA5D60B6E0903\\20260930T044715.560568Z_5712d50edd918f8c.jpg",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

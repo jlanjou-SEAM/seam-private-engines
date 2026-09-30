@@ -1,0 +1,59 @@
+/* Iconify css - Nick 4-27-2026 */
+/* Iconify css for accordion + hootstrap card */
+.main {
+  --font-size: 20px;
+  --icon-size: 40px;
+  --icon-color: #084FC9;
+
+  /* Accordion */
+  .accordion {
+    .btn-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: var(--icon-size);
+
+
+      .accordion-icon-text-wrapper {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        gap: 0.5em;
+        font-size: var(--font-size);
+      }
+    }
+  }
+
+  /* END Accordion  */
+
+
+  /* Card */
+  & .card {
+    & .card-body {}
+  }
+
+  /* END Card */
+}
+
+/* END Iconify css for accordion + hootstrap card */
+
+/* Icon styling */
+.iconify-icons {
+  --font-size: 20px;
+  --icon-size: 40px;
+  --icon-color: #084FC9;
+
+  & .iconify-icon {
+    & svg {
+      width: var(--icon-size);
+      height: var(--icon-size);
+
+      & path {
+        fill: var(--icon-color);
+      }
+    }
+  }
+}
+
+/* END Icon styling */
+/* END Iconify css - Nick 4-27-2026 */

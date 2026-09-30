@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-7AA7F7F477834B",
+  "provider": "IPMA",
+  "dataset": "prec-p1d-continental-obssup-idw-concelhos-20d.csv",
+  "sector": "public",
+  "country": "PT",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:01.303282Z",
+  "request_url": "https://api.ipma.pt/open-data/observation/climate/precipitation/prec-p1d-continental-obssup-idw-concelhos-20d.csv",
+  "final_url": "https://api.ipma.pt/open-data/observation/climate/precipitation/prec-p1d-continental-obssup-idw-concelhos-20d.csv",
+  "status_code": 200,
+  "content_type": "text/csv",
+  "byte_length": 627089,
+  "sha256": "8ea1398f638bd57bd4dd18e3421ce06567c10727ba8dd81e1b4c7b43482ad6f8",
+  "etag": "\"20be3-99191-65caaa2896639\"",
+  "last_modified": "Wed, 30 Sep 2026 03:10:01 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7AA7F7F477834B\\20260930T040601.303282Z_8ea1398f638bd57b.csv",
+  "parent_id": "IPMA-API",
+  "discovery_depth": 1
+}

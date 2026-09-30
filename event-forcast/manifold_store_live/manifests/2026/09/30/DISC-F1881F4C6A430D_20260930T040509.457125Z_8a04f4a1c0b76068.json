@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-F1881F4C6A430D",
+  "provider": "Environment and Climate Change Canada",
+  "dataset": "citypageweather-realtime",
+  "sector": "public",
+  "country": "CA",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:05:09.457125Z",
+  "request_url": "https://api.weather.gc.ca/collections/citypageweather-realtime?f=html",
+  "final_url": "https://api.weather.gc.ca/collections/citypageweather-realtime?f=html",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 20982,
+  "sha256": "8a04f4a1c0b76068d349ada2272e6946639724479e7498486011494e93f3b514",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F1881F4C6A430D\\20260930T040509.457125Z_8a04f4a1c0b76068.html",
+  "parent_id": "CANADA-GEOMET-COLLECTIONS",
+  "discovery_depth": 1
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-39C68849CE5F43",
+  "provider": "NOAA/NCEI",
+  "dataset": "NESDIS%20DAA%20Memo_External%20Data%20Sources_Feb%202020%20v12%20with%20Appendix%20-%20MP%20signed.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:16.358440Z",
+  "request_url": "http://www.ncei.noaa.gov/sites/default/files/2021-02/NESDIS%20DAA%20Memo_External%20Data%20Sources_Feb%202020%20v12%20with%20Appendix%20-%20MP%20signed.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-02/NESDIS%20DAA%20Memo_External%20Data%20Sources_Feb%202020%20v12%20with%20Appendix%20-%20MP%20signed.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 274642,
+  "sha256": "4627e85a0a8dc9a4d697c9e68be017cf2444e48856b8c8856cefb647e8ce999d",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:30:21 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-39C68849CE5F43\\20260930T043916.358440Z_4627e85a0a8dc9a4.pdf",
+  "parent_id": "DISC-1E2CA270F9BA9D",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-C634F515733A39",
+  "provider": "NOAA/NCEI",
+  "dataset": "lcdv2-station-list.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:39.409111Z",
+  "request_url": "https://www.ncei.noaa.gov/oa/local-climatological-data/v2/doc/lcdv2-station-list.txt",
+  "final_url": "https://www.ncei.noaa.gov/oa/local-climatological-data/v2/doc/lcdv2-station-list.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "byte_length": 2070192,
+  "sha256": "708c24f51a0eb72be8cb3d078e657723172da0f14fa167e67a97dbd596e46e1c",
+  "etag": "\"d1947ab070fc1fe386b8cba25c50ea16\"",
+  "last_modified": "Tue, 15 Apr 2025 19:31:58 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C634F515733A39\\20260930T043939.409111Z_708c24f51a0eb72b.txt",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-7EC7FF43DE0DE7",
+  "provider": "NOAA/NCEI",
+  "dataset": "global-summary-of-the-year",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:11.401352Z",
+  "request_url": "https://www.ncei.noaa.gov/access/search/data-search/global-summary-of-the-year",
+  "final_url": "https://www.ncei.noaa.gov/access/search/data-search/global-summary-of-the-year/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 466,
+  "sha256": "7593dbcecd1fd33db2608fc3d3b23c15d6d72f964f77d975950361d52d4b0ba8",
+  "etag": "\"1d2-658c669334300\"",
+  "last_modified": "Tue, 11 Aug 2026 14:37:32 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-7EC7FF43DE0DE7\\20260929T051811.401352Z_7593dbcecd1fd33d.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

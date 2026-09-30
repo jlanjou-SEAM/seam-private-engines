@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-7D44DC60BE4268",
+  "provider": "NOAA/NSSL",
+  "dataset": "VIL_Density",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T04:38:35.678128Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/VIL_Density/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/VIL_Density/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 158070,
+  "sha256": "b8b11e726c3c415b6c80dbc2557df1d81c8dabe19b5e64402ed5ad85c6a208d4",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7D44DC60BE4268\\20260930T043835.678128Z_b8b11e726c3c415b.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

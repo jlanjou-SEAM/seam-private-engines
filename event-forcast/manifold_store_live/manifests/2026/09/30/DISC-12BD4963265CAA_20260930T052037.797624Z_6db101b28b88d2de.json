@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-12BD4963265CAA",
+  "provider": "Iowa State University",
+  "dataset": "ISUC-006_202609300325.jpg",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "surface",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:37.797624Z",
+  "request_url": "https://mesonet.agron.iastate.edu/archive/data/2026/09/30/camera/ISUC-006/ISUC-006_202609300325.jpg",
+  "final_url": "https://mesonet.agron.iastate.edu/archive/data/2026/09/30/camera/ISUC-006/ISUC-006_202609300325.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 220357,
+  "sha256": "6db101b28b88d2de299a9b42eb5ba31d129fd533a0285df51f582da5779aeb3a",
+  "etag": "\"35cc5-65caad8ae8724\"",
+  "last_modified": "Wed, 30 Sep 2026 03:25:09 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-12BD4963265CAA\\20260930T052037.797624Z_6db101b28b88d2de.jpg",
+  "parent_id": "DISC-8485EBE5BFFAF5",
+  "discovery_depth": 2
+}

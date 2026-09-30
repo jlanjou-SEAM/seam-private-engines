@@ -1,0 +1,25 @@
+{
+  "candidate_id": "JMA-DATA",
+  "provider": "Japan Meteorological Agency",
+  "dataset": "JMA data portal",
+  "sector": "public",
+  "country": "JP",
+  "scientific_regime": [
+    "weather",
+    "seismic",
+    "volcanic",
+    "tsunami"
+  ],
+  "retrieved_utc": "2026-09-29T05:16:37.518811Z",
+  "request_url": "https://www.data.jma.go.jp/",
+  "final_url": "https://www.data.jma.go.jp/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 114,
+  "sha256": "d2404657a9d49c1aa6f134851acaac680cc31112941742b71d00f349f7fe4aea",
+  "etag": "\"40835cad42a6ef14fb94d280e1da94d9\"",
+  "last_modified": "Fri, 11 Apr 2025 05:09:53 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\JMA-DATA\\20260929T051637.518811Z_d2404657a9d49c1a.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

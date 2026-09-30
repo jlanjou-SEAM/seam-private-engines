@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-4EA952E019D6E4",
+  "provider": "NOAA/SWPC",
+  "dataset": "ctipe-tec.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:18.081404Z",
+  "request_url": "https://services.swpc.noaa.gov/products/animations/ctipe-tec.json",
+  "final_url": "https://services.swpc.noaa.gov/products/animations/ctipe-tec.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 15515,
+  "sha256": "f8c95a78063601f039d7bc9b9caa3b112b20bbd61746a3de042fcc21d3d54c83",
+  "etag": "\"3c9b-64e6d19c93de0\"",
+  "last_modified": "Wed, 01 Apr 2026 21:52:31 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-4EA952E019D6E4\\20260930T041818.081404Z_f8c95a78063601f0.json",
+  "parent_id": "DISC-DC635460D92E37",
+  "discovery_depth": 2
+}

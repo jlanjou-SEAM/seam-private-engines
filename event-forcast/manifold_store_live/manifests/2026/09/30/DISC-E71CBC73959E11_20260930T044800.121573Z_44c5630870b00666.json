@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-E71CBC73959E11",
+  "provider": "NOAA/NCEI",
+  "dataset": "viewer.htm",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:00.121573Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/phytoplankton/viewer.htm",
+  "final_url": "https://www.ncei.noaa.gov/maps/phytoplankton/viewer.htm",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 47791,
+  "sha256": "44c5630870b006664367f56232f8a3678dd87898c2df3facbd478575d0b3426a",
+  "etag": "\"ba13-631bcd5369240\"",
+  "last_modified": "Tue, 01 Apr 2025 19:49:21 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E71CBC73959E11\\20260930T044800.121573Z_44c5630870b00666.htm",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7321DBBA031714",
+  "provider": "NOAA/SWPC",
+  "dataset": "enlil_time_series.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-29T05:17:30.500973Z",
+  "request_url": "https://services.swpc.noaa.gov/json/enlil_time_series.json",
+  "final_url": "https://services.swpc.noaa.gov/json/enlil_time_series.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 1604712,
+  "sha256": "b808a2a6058ddb99fe67ef74de255c0b6bb656d79bb37fb7017638ecd043a53c",
+  "etag": "\"187c68-65c9842577183\"",
+  "last_modified": "Tue, 29 Sep 2026 05:14:38 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\29\\DISC-7321DBBA031714\\20260929T051730.500973Z_b808a2a6058ddb99.json",
+  "parent_id": "SWPC-JSON",
+  "discovery_depth": 1
+}

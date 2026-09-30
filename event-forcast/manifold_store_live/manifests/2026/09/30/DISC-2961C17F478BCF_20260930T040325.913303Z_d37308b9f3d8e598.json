@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-2961C17F478BCF",
+  "provider": "NOAA/NCEI",
+  "dataset": "privacy",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:03:25.913303Z",
+  "request_url": "https://www.ncei.noaa.gov/privacy",
+  "final_url": "https://www.ncei.noaa.gov/privacy",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 40582,
+  "sha256": "d37308b9f3d8e598a3d0a2a158bab5f14dfb8a37f072d29c609c7fee857f993f",
+  "etag": "\"1790715978-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:06:18 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2961C17F478BCF\\20260930T040325.913303Z_d37308b9f3d8e598.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

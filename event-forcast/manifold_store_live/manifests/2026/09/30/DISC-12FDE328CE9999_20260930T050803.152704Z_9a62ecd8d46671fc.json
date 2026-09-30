@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-12FDE328CE9999",
+  "provider": "NOAA/NSSL",
+  "dataset": "GUAM",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:03.152704Z",
+  "request_url": "https://mrms.ncep.noaa.gov/3DRefl/GUAM/",
+  "final_url": "https://mrms.ncep.noaa.gov/3DRefl/GUAM/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 5679,
+  "sha256": "9a62ecd8d46671fc9a6d90ecb47db9bb3b0c711d830c45094fa91ef8b4ee2b28",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-12FDE328CE9999\\20260930T050803.152704Z_9a62ecd8d46671fc.html",
+  "parent_id": "DISC-F28105040B029F",
+  "discovery_depth": 2
+}

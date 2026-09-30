@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-D10DA40C62C1B6",
+  "provider": "NOAA/NDBC",
+  "dataset": "KBMG1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:14:29.774251Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/KBMG1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/KBMG1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1013884,
+  "sha256": "5c129b3f7349878749630d73e8408e4998f76b330db1c8582a07361f07544a6d",
+  "etag": "\"f787c-65cac2d431fd6\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-D10DA40C62C1B6\\20260930T051429.774251Z_5c129b3f73498787.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

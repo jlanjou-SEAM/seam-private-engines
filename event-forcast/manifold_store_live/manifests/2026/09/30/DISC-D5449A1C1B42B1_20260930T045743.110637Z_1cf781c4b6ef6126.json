@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-D5449A1C1B42B1",
+  "provider": "NOAA/NDBC",
+  "dataset": "VENF1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:57:43.110637Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/VENF1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/VENF1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 603386,
+  "sha256": "1cf781c4b6ef612681d7dfe363a50adbfee43080f792c59c712850b10b1c4c2b",
+  "etag": "\"934fa-65cac1bbe575f\"",
+  "last_modified": "Wed, 30 Sep 2026 04:55:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-D5449A1C1B42B1\\20260930T045743.110637Z_1cf781c4b6ef6126.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-8E12818FE9638E",
+  "provider": "NOAA/NDBC",
+  "dataset": "KGUL.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:12:44.490252Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/KGUL.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/KGUL.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 240546,
+  "sha256": "0117a2934796dfbc22c4054373d48e6c65c575b86fa42ec58c47cb674ad39af0",
+  "etag": "\"3aba2-65cac2d4398ed\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-8E12818FE9638E\\20260930T051244.490252Z_0117a2934796dfbc.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

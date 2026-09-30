@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-E85972841FDE30",
+  "provider": "University at Albany",
+  "dataset": "current-geojson-DVK99E_A.js",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "soil"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:26.746657Z",
+  "request_url": "https://www.nysmesonet.org/assets/current-geojson-DVK99E_A.js",
+  "final_url": "https://www.nysmesonet.org/assets/current-geojson-DVK99E_A.js",
+  "status_code": 200,
+  "content_type": "application/javascript; charset=UTF-8",
+  "byte_length": 1971,
+  "sha256": "e61872429a59627fd6e271b33c5daccd3106ebede1aee0115b7272ae54eba9ea",
+  "etag": "W/\"7b3-1a0a14d9634\"",
+  "last_modified": "Mon, 14 Sep 2026 19:03:31 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E85972841FDE30\\20260930T040426.746657Z_e61872429a59627f.js",
+  "parent_id": "NYMESONET",
+  "discovery_depth": 1
+}

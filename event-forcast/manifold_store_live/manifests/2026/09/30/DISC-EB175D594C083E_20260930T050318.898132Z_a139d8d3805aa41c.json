@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-EB175D594C083E",
+  "provider": "NOAA/NDBC",
+  "dataset": "PORT2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:03:18.898132Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PORT2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PORT2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1016706,
+  "sha256": "a139d8d3805aa41cc72fe03c0c34f36825ae0ecb4624d9ac163e2fbb1ff0068c",
+  "etag": "\"f8382-65cac096918e0\"",
+  "last_modified": "Wed, 30 Sep 2026 04:50:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-EB175D594C083E\\20260930T050318.898132Z_a139d8d3805aa41c.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-84D23E98F3BC4A",
+  "provider": "NOAA/NCEI",
+  "dataset": "access",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:51.120082Z",
+  "request_url": "https://www.ncei.noaa.gov/data/ncep-charts/access/",
+  "final_url": "https://www.ncei.noaa.gov/data/ncep-charts/access/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 3686,
+  "sha256": "7c83bef1e32d0a905074f54621ba21b6c3c3af8aad6bae44e40593534acff6d3",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-84D23E98F3BC4A\\20260930T043951.120082Z_7c83bef1e32d0a90.html",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

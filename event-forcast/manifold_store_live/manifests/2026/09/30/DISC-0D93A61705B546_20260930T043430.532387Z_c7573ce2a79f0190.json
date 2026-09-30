@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-0D93A61705B546",
+  "provider": "NOAA/NDBC",
+  "dataset": "45194.spec",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:34:30.532387Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/45194.spec",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/45194.spec",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 108361,
+  "sha256": "c7573ce2a79f019034eed4a7003945f616d5e29fe40a2f1bdcdf1e22b2722cf0",
+  "etag": "\"1a749-65cab8c6da3e1\"",
+  "last_modified": "Wed, 30 Sep 2026 04:15:25 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-0D93A61705B546\\20260930T043430.532387Z_c7573ce2a79f0190.spec",
+  "parent_id": "DISC-CE899AD4C09D51",
+  "discovery_depth": 2
+}

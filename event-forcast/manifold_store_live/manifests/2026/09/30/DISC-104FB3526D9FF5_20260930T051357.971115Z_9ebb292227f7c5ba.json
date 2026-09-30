@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-104FB3526D9FF5",
+  "provider": "NOAA/NDBC",
+  "dataset": "MBRM4.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:13:57.971115Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/MBRM4.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/MBRM4.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1014448,
+  "sha256": "9ebb292227f7c5ba6981d7587bdd1dfdfd43177afd87977285dd09f122fdef3e",
+  "etag": "\"f7ab0-65cac2d46d122\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-104FB3526D9FF5\\20260930T051357.971115Z_9ebb292227f7c5ba.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

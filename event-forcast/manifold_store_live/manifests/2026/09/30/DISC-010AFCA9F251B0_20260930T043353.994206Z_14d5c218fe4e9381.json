@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-010AFCA9F251B0",
+  "provider": "NOAA/NDBC",
+  "dataset": "HHLO1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:53.994206Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/HHLO1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/HHLO1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 611282,
+  "sha256": "14d5c218fe4e9381aac277bbdcc6fda803fe9549a856c2e87d94a7f4908f8c5e",
+  "etag": "\"953d2-65cab7a3e30e6\"",
+  "last_modified": "Wed, 30 Sep 2026 04:10:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-010AFCA9F251B0\\20260930T043353.994206Z_14d5c218fe4e9381.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

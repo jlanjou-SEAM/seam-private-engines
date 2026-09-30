@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-FAFD52D465C1A4",
+  "provider": "INMET Brazil",
+  "dataset": "manifest.json",
+  "sector": "public",
+  "country": "BR",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:11:02.397854Z",
+  "request_url": "https://portal.inmet.gov.br/favicons/manifest.json",
+  "final_url": "https://portal.inmet.gov.br/favicons/manifest.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 422,
+  "sha256": "47e04b85367cf59804721183c402526a006a508866ba512f7a255b8a3b25194b",
+  "etag": "\"1a6-596b16ce6dc00\"",
+  "last_modified": "Wed, 06 Nov 2019 18:07:44 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-FAFD52D465C1A4\\20260930T041102.397854Z_47e04b85367cf598.json",
+  "parent_id": "INMET-BR",
+  "discovery_depth": 1
+}

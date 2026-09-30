@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F042B6509A10DC",
+  "provider": "NASA Earthdata",
+  "dataset": "asdc-planned-monthly-maintenance-september-21-2026",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:26.401594Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/asdc-planned-monthly-maintenance-september-21-2026",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/asdc-planned-monthly-maintenance-september-21-2026",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 135509,
+  "sha256": "f64e0262011b153e4acb47cedf2e28537ce13cbb31ab6713c8b2edca1a2d3b3d",
+  "etag": "\"1790745627\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:27 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-F042B6509A10DC\\20260930T052026.401594Z_f64e0262011b153e.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

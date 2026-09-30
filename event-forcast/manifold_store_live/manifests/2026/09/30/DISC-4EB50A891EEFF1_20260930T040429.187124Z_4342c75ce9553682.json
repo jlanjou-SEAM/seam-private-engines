@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-4EB50A891EEFF1",
+  "provider": "OpenWeather",
+  "dataset": "Google_Play.svg",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:29.187124Z",
+  "request_url": "https://openweathermap.org/payload/api/media/file/Google_Play.svg",
+  "final_url": "https://openweathermap.org/payload/api/media/file/Google_Play.svg",
+  "status_code": 200,
+  "content_type": "image/svg+xml",
+  "byte_length": 9192,
+  "sha256": "4342c75ce95536822297d22db94e65f9f4bcc736d8b5b213a36f2543ac6e79d5",
+  "etag": "\"6a74cf9906c986f8b1203f85\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4EB50A891EEFF1\\20260930T040429.187124Z_4342c75ce9553682.svg",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

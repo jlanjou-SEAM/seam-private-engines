@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-08E7F82AE48A19",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "tasall.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T05:24:49.506229Z",
+  "request_url": "https://reg.bom.gov.au/tas/observations/tasall.shtml",
+  "final_url": "https://reg.bom.gov.au/tas/observations/tasall.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 161410,
+  "sha256": "dd6856b7b88cdc7f369d20ff2232e029115a20156aa26be70c04f71b9ef3e98d",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-08E7F82AE48A19\\20260930T052449.506229Z_dd6856b7b88cdc7f.shtml",
+  "parent_id": "DISC-D2279F230AF32C",
+  "discovery_depth": 2
+}

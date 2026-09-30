@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F2880CBF7F77BF",
+  "provider": "NOAA/NDBC",
+  "dataset": "VCAT2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:11:39.954508Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/VCAT2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/VCAT2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1015952,
+  "sha256": "fd765a7bf06472de8302abc2823a4d9869281eaece87743f02841d62f2ca0a4f",
+  "etag": "\"f8090-65cab6860351f\"",
+  "last_modified": "Wed, 30 Sep 2026 04:05:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-F2880CBF7F77BF\\20260930T041139.954508Z_fd765a7bf06472de.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

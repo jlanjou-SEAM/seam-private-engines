@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-314B10BD2E8EC5",
+  "provider": "NOAA/NCEI",
+  "dataset": "WDS_Logo%20%28High%29.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:15.722738Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/styles/max_325x325/public/2021-08/WDS_Logo%20%28High%29.jpg?itok=kjR03fcO",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/styles/max_325x325/public/2021-08/WDS_Logo%20%28High%29.jpg?itok=kjR03fcO",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 16801,
+  "sha256": "63c2095010ace811d7f788dacc4bb2e628e51b7330d9fe7cb8460b5f08dd0026",
+  "etag": null,
+  "last_modified": "Tue, 24 Jan 2023 14:12:10 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-314B10BD2E8EC5\\20260930T044815.722738Z_63c2095010ace811.jpg",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

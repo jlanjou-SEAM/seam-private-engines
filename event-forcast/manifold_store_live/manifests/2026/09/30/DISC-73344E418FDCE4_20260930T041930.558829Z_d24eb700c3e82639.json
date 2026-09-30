@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-73344E418FDCE4",
+  "provider": "NOAA/NCEP",
+  "dataset": "GODAS",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:30.558829Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/GODAS/",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/GODAS/",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 42010,
+  "sha256": "d24eb700c3e826394fcc80e415316b35dce3af9e54f8cb3b3e72e0816fae850c",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-73344E418FDCE4\\20260930T041930.558829Z_d24eb700c3e82639.html",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

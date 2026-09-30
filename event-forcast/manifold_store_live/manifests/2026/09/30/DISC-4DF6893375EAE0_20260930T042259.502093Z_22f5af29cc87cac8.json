@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-4DF6893375EAE0",
+  "provider": "NOAA/NCEP",
+  "dataset": "prod",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:22:59.502093Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/seaice_drift/prod",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/seaice_drift/prod/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 2398,
+  "sha256": "22f5af29cc87cac88288b82c5a9fac8a83eb7b384499d554824fe5a57e3f150b",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4DF6893375EAE0\\20260930T042259.502093Z_22f5af29cc87cac8.html",
+  "parent_id": "NOAA-NOMADS",
+  "discovery_depth": 1
+}

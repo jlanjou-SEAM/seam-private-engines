@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-16EA89DC008B90",
+  "provider": "NOAA/NCEI",
+  "dataset": "Scott-Hausman_540_x_500.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:46.191836Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2023-08/Scott-Hausman_540_x_500.jpg",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2023-08/Scott-Hausman_540_x_500.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 67671,
+  "sha256": "e22722647a4d699b3fa7a2be963bb510f279f8262325ffbde0396386a0e70821",
+  "etag": null,
+  "last_modified": "Tue, 22 Aug 2023 19:21:43 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-16EA89DC008B90\\20260930T044646.191836Z_e22722647a4d699b.jpg",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

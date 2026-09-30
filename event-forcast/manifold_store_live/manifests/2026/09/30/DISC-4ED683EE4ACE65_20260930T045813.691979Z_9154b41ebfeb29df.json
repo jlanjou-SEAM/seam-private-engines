@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-4ED683EE4ACE65",
+  "provider": "NOAA/NDBC",
+  "dataset": "SJNP4.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:58:13.691979Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/SJNP4.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/SJNP4.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1016610,
+  "sha256": "9154b41ebfeb29dfeb851e6b7eb9674ac84bc50a23a12a6875dd46fba19516fe",
+  "etag": "\"f8322-65cac096ce583\"",
+  "last_modified": "Wed, 30 Sep 2026 04:50:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-4ED683EE4ACE65\\20260930T045813.691979Z_9154b41ebfeb29df.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

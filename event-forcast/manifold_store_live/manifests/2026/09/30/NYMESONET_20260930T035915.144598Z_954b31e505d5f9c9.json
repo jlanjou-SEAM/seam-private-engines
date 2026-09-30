@@ -1,0 +1,24 @@
+{
+  "candidate_id": "NYMESONET",
+  "provider": "University at Albany",
+  "dataset": "New York State Mesonet",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "soil"
+  ],
+  "retrieved_utc": "2026-09-30T03:59:15.144598Z",
+  "request_url": "https://www.nysmesonet.org/",
+  "final_url": "https://www.nysmesonet.org/",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 33249,
+  "sha256": "954b31e505d5f9c936f49c59b0617e59d33d3b03eb19983e126082e6e820a69f",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\NYMESONET\\20260930T035915.144598Z_954b31e505d5f9c9.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

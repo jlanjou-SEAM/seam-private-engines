@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-4851FDD2FF1B3A",
+  "provider": "University of Oklahoma / Oklahoma State",
+  "dataset": "current.WSPD.grad.png",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "soil"
+  ],
+  "retrieved_utc": "2026-09-30T04:54:09.113177Z",
+  "request_url": "https://data.mesonet.org/data/public/mesonet/maps/realtime/current.WSPD.grad.png",
+  "final_url": "https://data.mesonet.org/data/public/mesonet/maps/realtime/current.WSPD.grad.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 166392,
+  "sha256": "8d1627fb559e4e986021c4e073f0dfffe4ca350e04777f813668e1911e2dc247",
+  "etag": "\"2ca257c-289f8-65cac0d1b53d1\"",
+  "last_modified": "Wed, 30 Sep 2026 04:51:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4851FDD2FF1B3A\\20260930T045409.113177Z_8d1627fb559e4e98.png",
+  "parent_id": "OKMESONET",
+  "discovery_depth": 1
+}

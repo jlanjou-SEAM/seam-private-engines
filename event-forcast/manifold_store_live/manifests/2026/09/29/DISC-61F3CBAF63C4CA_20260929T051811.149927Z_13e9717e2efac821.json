@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-61F3CBAF63C4CA",
+  "provider": "NOAA/NCEI",
+  "dataset": "cloud-migration-FAQ",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:11.149927Z",
+  "request_url": "https://www.ncei.noaa.gov/news/cloud-migration-FAQ",
+  "final_url": "https://www.ncei.noaa.gov/news/cloud-migration-FAQ",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 32755,
+  "sha256": "13e9717e2efac821245ce87db8c064beed82052455c8c62623679302f30330c2",
+  "etag": "\"1790657663-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 04:54:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-61F3CBAF63C4CA\\20260929T051811.149927Z_13e9717e2efac821.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-1FCDDCC132E695",
+  "provider": "NOAA/NCEI",
+  "dataset": "accessibility",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:16.480661Z",
+  "request_url": "https://www.ncei.noaa.gov/accessibility",
+  "final_url": "https://www.ncei.noaa.gov/accessibility",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 37044,
+  "sha256": "113e27d52d443e96add128641464ba0eba4b4ce0d52b1ec738eb56a6eadb0468",
+  "etag": "\"1790657233-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 04:47:13 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-1FCDDCC132E695\\20260929T051816.480661Z_113e27d52d443e96.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

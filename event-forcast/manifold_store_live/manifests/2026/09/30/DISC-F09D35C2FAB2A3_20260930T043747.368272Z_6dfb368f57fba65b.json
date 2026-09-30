@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F09D35C2FAB2A3",
+  "provider": "NOAA/NCEP",
+  "dataset": "coronagraph",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:47.368272Z",
+  "request_url": "https://www.spaceweather.gov/products/coronagraph",
+  "final_url": "https://www.spaceweather.gov/products/coronagraph",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 89755,
+  "sha256": "6dfb368f57fba65bf7bd61ad300bd5618775608da4cb4ebd4c99bd5a8e5fc96c",
+  "etag": "\"1790733603\"",
+  "last_modified": "Wed, 30 Sep 2026 02:00:03 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F09D35C2FAB2A3\\20260930T043747.368272Z_6dfb368f57fba65b.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

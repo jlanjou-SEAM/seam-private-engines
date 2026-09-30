@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>NOAA-ESRL-GSD-MADIS Aircraft Display</title>
+	<link rel="stylesheet" href="https://js.arcgis.com/3.37/dijit/themes/claro/claro.css">
+	<link rel="stylesheet" href="https://js.arcgis.com/3.37/esri/css/esri.css">
+	<link rel="stylesheet" href="https://js.arcgis.com/3.37/dojox/form/resources/RangeSlider.css">
+	<link rel="stylesheet" href="css/app.css">
+
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.3/pixi.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
+	<script data-dojo-config="async: true" src='https://js.arcgis.com/3.37/'></script>
+	<script src="js/paper-core.min.js"></script>
+	<!-- <script src="js/MadisAircraft_obs.js"></script> -->
+	<script src="js/JsClientServer.js"></script>
+	<script src="js/JsClientOnly.js"></script>
+	<script src="js/ui.js"></script>
+	<script src="js/EsriBase.js"></script>
+	<script src="js/overlays.js"></script>
+	<script src="js/routines.js"></script>
+	<script src="js/webGL.js"></script>
+	<script src="js/app.js"></script>
+	<style>
+		#rangeSlider .dijitSliderProgressBar {
+			background: #174B77;
+			border-color: blue;
+			height: 12px;
+			overflow: visible;
+			margin-top: -5px;
+			border-style: solid;
+			outline: 1px;
+		}
+
+		.claro .dijitSliderDecrementIconH {
+			background-color: #A82323;
+		}
+
+		.claro .dijitSliderIncrementIconH {
+			background-color: #2983DE;
+		}
+	</style>
+
+</head>
+
+<body class="claro" oncontextmenu="return false;" data-maq-flow-layout="true" data-maq-comptype="desktop" class="claro"
+	data-maq-ws="collapse" data-maq-appstates="{}" id="myapp">
+	<!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+	<noscript>
+		<div
+			style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+			Your web browser must have JavaScript enabled in order for this application to display correctly.</div>
+	</noscript>
+	<div style="visibility: hidden">Build time-stamp: 2020-08-04 05:09:18 MDT</div>
+	<div style="position: absolute; right: 0px; top: 0px; width: 100%; height: 100%; background-color: #E4F0F2;">
+		<div id="mapContainerDiv" style="position: relative; width: 100%; height: 90%;">
+			<div id="mapDiv" style="position: absolute; width: 100%; height: 100%; z-Index: 101;">
+				<div style="position: absolute; right: 20px; top: 10px; z-Index: 999;">
+					<div data-dojo-type="dijit/TitlePane"
+						data-dojo-props="title:'SwitchBasemap', closable:false, open:false">
+						<div data-dojo-type="dijit/layout/ContentPane"
+							style="width: 380px; height: 280px; overflow: auto;">
+							<div id="basemapGallery"></div>
+						</div>
+					</div>
+				</div>
+				<div id="busyDiv"
+					style="position: fixed; top: 12px; left: 70px; z-Index: 999; width: 60px; height: 60px;"></div>
+			</div>
+			<!-- 			<canvas id="mapCanvas" style="position: absolute; right: 0px; top: 0px; width: 100%; height: 100%; z-Index: 102;"></canvas> -->
+		</div>
+		<div id="controlsDiv" style="position: relative; width: 100%; background-color: #E4F0F2;">
+			<table border="0" style="border-collapse: collapse; table-layout: fixed; width: 100%; height: 100%;">
+				<tbody>
+					<tr>
+						<td style="width: 18%;" align="left">
+							<button id="datasetsBtn" type="button" class="toolBarBtn">Datasets</button>
+							<button id="dataLoadBtn" type="button" class="toolBarBtn">Data Load</button>
+							<button id="settingsBtn" type="button" class="toolBarBtn">Settings</button>
+							<button id="logBtn" type="button" class="toolBarBtn">Log</button>
+						</td>
+						<td style="width: 18%;" align="left">
+							<label for="windSpeedChkBox" class="toolBarLabel">Wind Speed</label>
+							<input type="checkbox" id="windSpeedChkBox" class="toolBarChkBox"
+								data-dojo-type="dijit/form/CheckBox"></input>
+							<label for="windBarbChkBox" class="toolBarLabel">Wind Barbs</label>
+							<input type="checkbox" id="windBarbChkBox" class="toolBarChkBox"
+								data-dojo-type="dijit/form/CheckBox"></input>
+						</td>
+						<td style="width: 5%;" align="center">
+							<div id="serverWaiting"
+								style="float: left; width: 20px; height: 20px; background-color: #3A4166;"></div>
+						</td>
+						<td style="width: 25%;" align="center">
+							<input readonly id="altitudeRangeLabel" value="Altitude: -1,000 ft to 45,000 ft"></input>
+						</td>
+						<td style="width: 16%;" align="center">
+							<input style="width: 100%;" readonly id="dataRange"
+								value="2016-04-25T20:35:21 -> 2016-04-25T23:35:21"></input>
+						</td>
+						<td style="width: auto;" align="right">
+							<button id="refreshBtn" type="button" class="toolBarBtn">Refresh</button>
+							<button id="resetDisplayBtn" type="button" class="toolBarBtn">Reset</button>
+							<button id="saveDisplayBtn" type="button" class="toolBarBtn">Save Display</button>
+							<button id="docBtn" type="button" class="toolBarBtn">Doc</button>
+						</td>
+
+					</tr>
+					<tr>
+						<td style="width: 20%;">
+							<label id="pcDisplayedLabel"> Stations loaded:</label>
+							<input readonly id="pcDisplayedValue" value="0 / 0 (100.00%)"></input>
+						</td>
+						<td style="width: 10%;" align="left">
+							<label class="toolBarLabel">Flight Path lines:</label>
+							<input type="checkbox" id="fpLinesChkBox" class="toolBarChkBox"
+								data-dojo-type="dijit/form/CheckBox" checked="false"></input>
+						</td>
+						<td></td>
+						<td style="width: 25%;" align="center">
+							<div id="rangeSlider">
+								<ol dojoType="dijit/form/HorizontalRuleLabels" container="topDecoration"
+									constraints="{pattern:'#.00'}"
+									data-dojo-props="labelStyle:'font-style:monospace;font-size:.8em;'">
+									<li><a id='al0' class="alrl">0Kft </li>
+									<li><a id='al5' class="alrl">5Kft</a></li>
+									<li><a id='al16' class="alrl">16Kft</a></li>
+									<li><a id='al28' class="alrl">28Kft</a></li>
+									<li><a id='al39' class="alrl">39Kft</a></li>
+									<li><a id='al45' class="alrl">45Kft</a></li>
+								</ol>
+								<div dojoType="dijit/form/HorizontalRule" container="topDecoration" count=6
+									style="height: 4px;"></div>
+							</div>
+						</td>
+						<td></td>
+						<td align="right" style="width: auto;">
+							<label class="lat_Lon_Utc">Lat:</label>
+							<input readonly id="latVal" class="lat_Lon_Utc" style="width: 20%;" value="040.57"></input>
+							<label class="lat_Lon_Utc">Lon:</label>
+							<input readonly id="lonVal" class="lat_Lon_Utc" style="width: 20%;" value="-101.38"></input>
+							<!-- 								<label class="lat_Lon_Utc">UTC:</label> -->
+							<input readonly id="utcVal" class="lat_Lon_Utc" value="2015 Jul 9 22:03:18Z"></input>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div id="datasetsPane" data-dojo-type="dijit/layout/ContentPane" title="Pane" doLayout="false"
+		style="visibility: hidden">
+		<div style="width: 100%; height: 80%;">
+			<table style="border-collapse: collapse; table-layout: fixed; width: 100%; height: auto;" border="0">
+				<colgroup>
+					<col>
+					</col>
+					<col>
+					</col>
+					<col>
+					</col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>
+							<input id="dsACARS" type="checkbox" class="dsCheckBox" checked="true"
+								data-dojo-type="dijit/form/CheckBox"></input>
+							<label>ACARS</label>
+						</td>
+						<td>
+							<input id="dsMDCRS" type="checkbox" class="dsCheckBox" checked="true"
+								data-dojo-type="dijit/form/CheckBox"></input>
+							<label>MDCRS</label>
+						</td>
+						<td>
+							<input id="dsAMDAR" type="checkbox" class="dsCheckBox" checked="true"
+								data-dojo-type="dijit/form/CheckBox"></input>
+							<label>AMDAR</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input id="dsTAMDAR_rsch" type="checkbox" class="dsCheckBox" checked="true"
+								data-dojo-type="dijit/form/CheckBox"></input>
+							<label>TAM rsch</label>
+						</td>
+						<td>
+							<input id="dsCanadian" type="checkbox" class="dsCheckBox" checked="true"
+								data-dojo-type="dijit/form/CheckBox"></input>
+							<label>Canadian</label>
+						</td>
+						<td>
+							<input id="dsE_AMDAR" type="checkbox" class="dsCheckBox" checked="true"
+								data-dojo-type="dijit/form/CheckBox"></input>
+							<label>E-AMDAR</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input id="dsTAM_ops" type="checkbox" class="dsCheckBox" checked="true"
+								data-dojo-type="dijit/form/CheckBox"></input>
+							<label>TAM_OPS</label>
+						</td>
+						<td>
+							<input id="dsMMMX" type="checkbox" class="dsCheckBox" checked="true"
+								data-dojo-type="dijit/form/CheckBox"></input>
+							<label>MMMX</label>
+						</td>
+						<td>
+							<input id="dsMODES" type="checkbox" class="dsCheckBox" checked="true"
+								data-dojo-type="dijit/form/CheckBox"></input>
+							<label>MODES</label>
+						</td>
+						
+					</tr>
+					<tr>
+						<td>
+						        <input id="dsAFIR" type="checkbox" class="dsCheckBox" checked="true"
+								data-dojo-type="dijit/form/CheckBox"></input>
+							<label>AFIR</label>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="width: 100%; height: 20%">
+			<hr />
+			<button id="dsSelectAllBtn" type="button" class="toolBarBtn" style="float: left;">Deselect All</button>
+			<button id="dsCloseBtn" type="button" class="toolBarBtn" style="float: right;">Close</button>
+		</div>
+	</div>
+	<div id="dataLoadPane" data-dojo-type="dijit/layout/ContentPane" title="Pane" doLayout="false"
+		style="visibility: hidden">
+		<div style="width: 100%; height: 80%;">
+			<table style="width: 100%; border-collapse: collapse; table-layout: auto;">
+				<colgroup>
+					<col>
+					</col>
+					<col>
+					</col>
+					<col>
+					</col>
+					<col>
+					</col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<td colspan="4">
+							<label>Load Latest:</label>
+							<input type="checkbox" class="orLatest" id="orLatest" data-dojo-type="dijit/form/CheckBox"></input>
+	<!-- type="checkbox" class="orLatest" id="orLatest" data-dojo-type="dijit/form/CheckBox" checked="true"  -->
+							
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<label>OR</label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label>Start date:</label>
+						</td>
+						<td colspan="2">
+							<label>Start time:</label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="text" id="startDate" data-dojo-type="dijit/form/DateTextBox" value="now"
+								style="width: 100px;"></input>
+						</td>
+						<td colspan="2">
+							<input id="startTime" data-dojo-type="dijit/form/TimeTextBox" data-dojo-props='type:"text", name:"time2", value:"T12:00:00",
+					constraints:{timePattern:"HH:mm:ss"},
+					required:true,
+					invalidMessage:"Invalid time. Use HH:mm:ss where HH is 00 - 23 hours."' />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<hr />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label> Hours to load (1 -> 12) :</label>
+						</td>
+						<td colspan="2">
+							<input type="text" id="hoursToLoad" style="width: 30px;"
+								data-dojo-type="dijit/form/NumberTextBox" constraints="{min:1,max:12,places:0}"
+								value="4"></input>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<hr />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label> Sensor type:</label>
+						</td>
+						<!-- <td colspan="3">
+							<label>All:</label>
+							<input type="checkbox" id="sensorAll" data-dojo-type="dijit/form/CheckBox" checked="true"></input>
+						</td> -->
+					</tr>
+					<tr>
+						<td colspan="1">
+							<label>Turbulence:</label>
+							<input type="checkbox" id="sensorTurbulence" data-dojo-type="dijit/form/CheckBox"
+								checked="true"></input>
+						</td>
+						<td colspan="1">
+							<label>Vapor:</label>
+							<input type="checkbox" id="sensorVapor" data-dojo-type="dijit/form/CheckBox"
+								checked="true"></input>
+						</td>
+						<td colspan="1">
+							<label>Icing:</label>
+							<input type="checkbox" id="sensorIcing" data-dojo-type="dijit/form/CheckBox"
+								checked="true"></input>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<hr />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<label>Progressive disclosure, stations to display:</label>
+						</td>
+					</tr>
+					<tr style="width: auto; height: 40px;">
+						<td colspan="3">
+							<div id="stationsToDisplaySlider">
+								<ol dojoType="dijit/form/HorizontalRuleLabels" container="topDecoration"
+									constraints="{pattern:'#.00'}">
+									<li><a class="stdsrl">Min</li>
+									<li><a class="stdsrl">Max</a></li>
+								</ol>
+								<div dojoType="dijit/form/HorizontalRule" container="topDecoration" count=6
+									style="height: 4px;"></div>
+							</div>
+						</td>
+						<td colspan="3">
+							<label id="pdSlidervaluePC">12.4%</label>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="width: 100%; height: 20%;">
+			<hr />
+			<button id="dataLoadReloadBtn" type="button" class="toolBarBtn" style="float: left;">Re-load Data</button>
+			<button id="dataLoadCloseBtn" type="button" class="toolBarBtn" style="float: right;">Close</button>
+		</div>
+	</div>
+
+	<div id="settingsPane" data-dojo-type="dijit/layout/ContentPane" title="Pane" doLayout="false"
+		style="visibility: hidden">
+		<span id="settingsPane_TabContainer" data-dojo-type="dijit/layout/TabContainer" style="width: 100%; height: 80%;"
+			controllerWidget="dijit.layout.TabController">
+			<div id="settingsPane_General_Pane" data-dojo-type="dijit/layout/ContentPane" title="General" extractContent="false" preventCache="false"
+				preload="false" refreshOnShow="false" selected="true" closable="false" doLayout="false">
+				<div id="settingsPane_General_Form" data-dojo-type="dijit/form/Form" class="toolBarForm">
+					<table id="settingsPane_General_Table" style="border-collapse: collapse; table-layout: fixed; width: 100%; height: auto;">
+						<colgroup>
+							<col>
+							</col>
+							<col>
+							</col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<td>
+									<label>ACAR size:</label>
+								</td>
+								<td>
+									<input type="text" id="acarSize" style="width: 30px;"
+										data-dojo-type="dijit/form/NumberTextBox" constraints="{min:5,max:20,places:0}"
+										value="5"></input>
+									<button id="acarSizeApply" type="button" class="toolBarBtn">Apply</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label>Show only ACARS with Sounding:</label>
+								</td>
+								<td>
+									<input type="checkbox" id="onlyCARSWithSounding" data-dojo-type="dijit/form/CheckBox"
+										checked="false"></input>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label>Pin ACAR details:</label>
+								</td>
+								<td>
+									<input type="checkbox" id="hideACARMouseOver" data-dojo-type="dijit/form/CheckBox"
+										checked="false"></input>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label>Compute Ground Elevation, altitude-differential:</label>
+								</td>
+								<td>
+									<input type="checkbox" id="computeGroundElev" data-dojo-type="dijit/form/CheckBox"
+										checked="false"></input>
+								</td>
+							</tr>
+							<tr>
+								<td "colspan=2">
+									<hr />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label>Auto display of flight-path lines:</label>
+								</td>
+								<td>
+									<input type="checkbox" id="autoFpLines" data-dojo-type="dijit/form/CheckBox"
+										checked="true"></input>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label>Auto display threshold (#flights):</label>
+								</td>
+								<td>
+									<input type="text" id="fpAutoThreshold" style="width: 80px;"
+										data-dojo-type="dijit/form/NumberTextBox" constraints="{min:3,max:600,places:0}"
+										value="30"></input>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="OverlaysDiv" data-dojo-type="dijit/layout/ContentPane" title="Overlays" extractContent="false"
+				preventCache="false" preload="false" refreshOnShow="false" selected="false" closable="false"
+				doLayout="false">
+				<table style="border-collapse: collapse; table-layout: fixed; width: 100%; height: auto;" border="0">
+					<colgroup>
+						<col>
+						</col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<td>
+								<input class="overlayCheckBox" id="overlayAirportsChkBox" type="checkbox"
+									data-dojo-type="dijit/form/CheckBox"></input>
+								<label> Airports</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="overlayCheckBox" id="overlayRAOBsChkBox" type="checkbox"
+									data-dojo-type="dijit/form/CheckBox"></input>
+								<label> RAOBs</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="overlayCheckBox" id="overlayUSVORsChkBox" type="checkbox"
+									data-dojo-type="dijit/form/CheckBox"></input>
+								<label> US VORs</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="overlayCheckBox" id="overlayARTCCboundariesChkBox" type="checkbox"
+									data-dojo-type="dijit/form/CheckBox"></input>
+								<label> ARTCC boundaries</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="overlayCheckBox" id="overlayWorldFIRboundariesChkBox" type="checkbox"
+									data-dojo-type="dijit/form/CheckBox"></input>
+								<label>World FIR boundaries</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="overlayCheckBox" id="overlayFIRboundariesChkBox" type="checkbox"
+									data-dojo-type="dijit/form/CheckBox"></input>
+								<label> FIR boundaries</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="overlayCheckBox" id="overlayFIRHighChkBox" type="checkbox"
+									data-dojo-type="dijit/form/CheckBox"></input>
+								<label> FIR High boundaries</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="overlayCheckBox" id="overlayFIRLowChkBox" type="checkbox"
+									data-dojo-type="dijit/form/CheckBox"></input>
+								<label> FIR Low boundaries</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="ToolsDiv" data-dojo-type="dijit/layout/ContentPane" title="Tools" extractContent="false"
+				preventCache="false" preload="false" refreshOnShow="false" selected="false" closable="false"
+				doLayout="false">
+				<table style="border-collapse: collapse; table-layout: fixed; width: 100%; height: auto;" border="0">
+					<colgroup>
+						<col>
+						</col>
+						<col>
+						</col>
+						<col>
+						</col>
+						<col>
+						</col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<td colspan="1">
+								<label>FSL Tail ID:</label>
+							</td>
+							<td colspan="2">
+								<input type="text" id="tailIdForSearch" style="width: 100px;" />
+							</td>
+							<td colspan="1">
+								<button id="tailIdLocateBtn" type="button" class="toolBarBtn">Locate</button>
+							</td>
+							<td>
+								<button id="tailIdClearBtn" type="button" class="toolBarBtn">Clear</button>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="AdvDiv" data-dojo-type="dijit/layout/ContentPane" title="Adv" extractContent="false"
+				preventCache="false" preload="false" refreshOnShow="false" selected="false" closable="false"
+				doLayout="false">
+				<table style="border-collapse: collapse; table-layout: fixed; width: 100%; height: auto;" border="0">
+					<colgroup>
+						<col>
+						</col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<td>
+								<button id="advDataCacheClearBtn" type="button" class="toolBarBtn"
+									style="float: left;">Clear Server
+									Data Cache</button>
+							</td>
+							<td>
+								<button id="advRunServerTestsBtn" type="button" class="toolBarBtn"
+									style="float: left;">Clear Server in-memory cache</button>
+							</td>
+						</tr>
+						<!--<tr>
+							<td>
+								<label>Clear Cache Before Sounding Load:</label>
+							</td>
+							<td>
+								<input type="checkbox" id="clearCacheBeforeSoundingLoad"
+									data-dojo-type="dijit/form/CheckBox" checked="false"></input>
+							</td>
+						</tr>-->
+						<tr>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</span>
+		<div style="width: 100%; height: 20%;">
+			<hr />
+			<button id="settingsCloseBtn" type="button" class="toolBarBtn" style="float: right;">Close</button>
+		</div>
+	</div>
+	<div id="logPane" data-dojo-type="dijit/layout/ContentPane" title="Overlays" extractContent="false"
+		preventCache="false" preload="false" refreshOnShow="false" selected="false" closable="false" doLayout="false"
+		style="visibility: hidden">
+		<div style="width: 100%; height: 80%;">
+			<input type="text" id="log" data-dojo-type="dijit/form/SimpleTextarea" readOnly="true"
+				style="width: 100%; height: 100%;"></input>
+		</div>
+		<div style="width: 100%; height: 20%;">
+			<hr />
+			<button id="logCloseBtn" type="button" class="toolBarBtn" style="float: right;">Close</button>
+		</div>
+	</div>
+</body>
+
+</html>
+
+
+

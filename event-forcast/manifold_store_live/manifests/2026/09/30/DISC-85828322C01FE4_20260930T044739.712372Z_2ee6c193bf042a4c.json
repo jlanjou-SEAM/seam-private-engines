@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-85828322C01FE4",
+  "provider": "NOAA/NCEI",
+  "dataset": "ctd_gulf_credit_noaa_480x480.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:39.712372Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/ctd_gulf_credit_noaa_480x480.jpg?itok=eJqLHF35",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/ctd_gulf_credit_noaa_480x480.jpg?itok=eJqLHF35",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 31595,
+  "sha256": "2ee6c193bf042a4c0a9be1493fb96734e4990daf71e531c459ab5a840d8c5a9c",
+  "etag": null,
+  "last_modified": "Wed, 08 Feb 2023 20:56:51 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-85828322C01FE4\\20260930T044739.712372Z_2ee6c193bf042a4c.jpg",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

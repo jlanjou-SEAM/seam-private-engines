@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-414AFA1EEAA276",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "nmesonet_soil_temperature.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:52:41.983602Z",
+  "request_url": "https://madis.ncep.noaa.gov/nmesonet_soil_temperature.shtml",
+  "final_url": "https://madis.ncep.noaa.gov/nmesonet_soil_temperature.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 31066,
+  "sha256": "7f42ef25670eb98a06e975ec5c54c4d49543977384acd0f303af68a44bc96a20",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-414AFA1EEAA276\\20260930T045241.983602Z_7f42ef25670eb98a.shtml",
+  "parent_id": "NOAA-MADIS",
+  "discovery_depth": 1
+}

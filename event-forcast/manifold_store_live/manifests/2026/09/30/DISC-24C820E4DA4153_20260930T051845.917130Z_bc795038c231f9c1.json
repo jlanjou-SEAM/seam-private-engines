@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-24C820E4DA4153",
+  "provider": "NOAA/NDBC",
+  "dataset": "AMAA2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:18:45.917130Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/AMAA2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/AMAA2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 204074,
+  "sha256": "bc795038c231f9c18a322c6570fbb4ebfc95868f1f9f87e1ba9cbe2fe4baff54",
+  "etag": "\"31d2a-65cac50d1f105\"",
+  "last_modified": "Wed, 30 Sep 2026 05:10:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-24C820E4DA4153\\20260930T051845.917130Z_bc795038c231f9c1.txt",
+  "parent_id": "DISC-CE899AD4C09D51",
+  "discovery_depth": 2
+}

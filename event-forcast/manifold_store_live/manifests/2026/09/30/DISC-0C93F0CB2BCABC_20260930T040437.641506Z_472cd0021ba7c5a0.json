@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-0C93F0CB2BCABC",
+  "provider": "OpenWeather",
+  "dataset": "relief",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:37.641506Z",
+  "request_url": "https://openweathermap.org/api/relief",
+  "final_url": "https://openweathermap.org/api/relief",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 275809,
+  "sha256": "472cd0021ba7c5a03cd96681a155f084e8fce051c7f8a4267bb49fd6bbac41eb",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-0C93F0CB2BCABC\\20260930T040437.641506Z_472cd0021ba7c5a0.html",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

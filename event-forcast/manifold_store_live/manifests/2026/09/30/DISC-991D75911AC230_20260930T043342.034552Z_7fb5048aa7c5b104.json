@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-991D75911AC230",
+  "provider": "NOAA/NDBC",
+  "dataset": "LMRF1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:42.034552Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/LMRF1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/LMRF1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 73602,
+  "sha256": "7fb5048aa7c5b104138c5ca0a828b9bc638cb0b29660e38597a257ad006fea4d",
+  "etag": "\"11f82-65ca64f2f68b4\"",
+  "last_modified": "Tue, 29 Sep 2026 22:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-991D75911AC230\\20260930T043342.034552Z_7fb5048aa7c5b104.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

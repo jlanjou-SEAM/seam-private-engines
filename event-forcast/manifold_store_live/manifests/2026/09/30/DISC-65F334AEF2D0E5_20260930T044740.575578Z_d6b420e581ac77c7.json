@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-65F334AEF2D0E5",
+  "provider": "NOAA/NCEI",
+  "dataset": "chicago%20teaser%20updated.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:40.575578Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/chicago%20teaser%20updated.png?itok=2BDiP6Gp",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/chicago%20teaser%20updated.png?itok=2BDiP6Gp",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 142891,
+  "sha256": "d6b420e581ac77c7ffa9c43e6627038001f6b857b1d82b8da011307e46ca7adf",
+  "etag": null,
+  "last_modified": "Mon, 18 May 2026 14:49:11 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-65F334AEF2D0E5\\20260930T044740.575578Z_d6b420e581ac77c7.png",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

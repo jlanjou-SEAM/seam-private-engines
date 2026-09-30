@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-170496AF07EAEB",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "download-marine-bulletin",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:44.831901Z",
+  "request_url": "https://www.ncm.gov.ae/services/download-marine-bulletin?lang=ar",
+  "final_url": "https://assets.ncm.gov.ae/assets/bulletins/2026/09/2-20260930000615.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 156314,
+  "sha256": "3f109289f2f1b4304d8ae9153fc63fb738ad226de21388dc9806ab5fae7990b9",
+  "etag": null,
+  "last_modified": "Tue, 29 Sep 2026 20:06:15 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-170496AF07EAEB\\20260930T041044.831901Z_3f109289f2f1b430.pdf",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

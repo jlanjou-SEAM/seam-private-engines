@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-75BBB577C1D2A0",
+  "provider": "NOAA/NCEI",
+  "dataset": "NCEI_NOAA_Weather_Service_Providers_Infographic_Final_508c.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:25.335161Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2023-07/NCEI_NOAA_Weather_Service_Providers_Infographic_Final_508c.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2023-07/NCEI_NOAA_Weather_Service_Providers_Infographic_Final_508c.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 2180930,
+  "sha256": "e1f88ef1e6f167f4102ffae90a830e185ee45a40c01de53116bb64db90c98f77",
+  "etag": null,
+  "last_modified": "Mon, 17 Jul 2023 14:03:38 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-75BBB577C1D2A0\\20260930T044725.335161Z_e1f88ef1e6f167f4.pdf",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

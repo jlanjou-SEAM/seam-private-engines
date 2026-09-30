@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-67D4382F0F56CF",
+  "provider": "NOAA/NDBC",
+  "dataset": "KGCA2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:14:26.378675Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/KGCA2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/KGCA2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1017362,
+  "sha256": "10aaa8956a7220544916c7598a04fe1723c05b25c348e5a1d022a1bb8f7a9a17",
+  "etag": "\"f8612-65cac2d437d96\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-67D4382F0F56CF\\20260930T051426.378675Z_10aaa8956a722054.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-559EF64DF776A6",
+  "provider": "NOAA/NCEI",
+  "dataset": "local-climatological-data-v2",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:38.148584Z",
+  "request_url": "https://www.ncei.noaa.gov/access/search/data-search/local-climatological-data-v2",
+  "final_url": "https://www.ncei.noaa.gov/access/search/data-search/local-climatological-data-v2/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 472,
+  "sha256": "20c8652f57057e388562b34a5104bcb2c7bcf8dc19753103f1e2f9b738fb95f3",
+  "etag": "\"1d8-658c669334300\"",
+  "last_modified": "Tue, 11 Aug 2026 14:37:32 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-559EF64DF776A6\\20260930T043938.148584Z_20c8652f57057e38.html",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

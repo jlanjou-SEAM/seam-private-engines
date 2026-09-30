@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-76394363F1CAF7",
+  "provider": "NOAA/NCEI",
+  "dataset": "480x480%20Global%20July%202026.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:36.226147Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/styles/max_325x325/public/field/image/480x480%20Global%20July%202026.png?itok=K58iKkO8",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/styles/max_325x325/public/field/image/480x480%20Global%20July%202026.png?itok=K58iKkO8",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 244776,
+  "sha256": "7591a69efdbc3437c8b853e9147ea9e6013a136a7397d893a652f7e2c9b408d8",
+  "etag": null,
+  "last_modified": "Tue, 11 Aug 2026 15:51:38 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-76394363F1CAF7\\20260930T044836.226147Z_7591a69efdbc3437.png",
+  "parent_id": "DISC-84CF7FAE813C86",
+  "discovery_depth": 2
+}

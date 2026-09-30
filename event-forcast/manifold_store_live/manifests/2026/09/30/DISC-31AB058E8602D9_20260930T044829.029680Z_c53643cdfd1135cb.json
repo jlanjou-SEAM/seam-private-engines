@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-31AB058E8602D9",
+  "provider": "NOAA/NCEI",
+  "dataset": "participating-2025-ams-annual-meeting",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:29.029680Z",
+  "request_url": "https://www.ncei.noaa.gov/news/participating-2025-ams-annual-meeting",
+  "final_url": "https://www.ncei.noaa.gov/news/participating-2025-ams-annual-meeting",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 39094,
+  "sha256": "c53643cdfd1135cb0a39b20d4112b92e6720ab3de764fa7e1e63782cce7b11f3",
+  "etag": "\"1790724615-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 23:30:15 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-31AB058E8602D9\\20260930T044829.029680Z_c53643cdfd1135cb.html",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

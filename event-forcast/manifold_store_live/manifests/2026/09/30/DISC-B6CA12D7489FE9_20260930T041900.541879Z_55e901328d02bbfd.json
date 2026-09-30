@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-B6CA12D7489FE9",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "moped.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:00.541879Z",
+  "request_url": "https://madis.ncep.noaa.gov/images/moped.png",
+  "final_url": "https://madis.ncep.noaa.gov/images/moped.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 402933,
+  "sha256": "55e901328d02bbfd14c188366088e044625accfa26ddf3bf2d53bc1e13b30b86",
+  "etag": null,
+  "last_modified": "Thu, 02 Aug 2018 04:09:08 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-B6CA12D7489FE9\\20260930T041900.541879Z_55e901328d02bbfd.png",
+  "parent_id": "DISC-6C4719E100A3B0",
+  "discovery_depth": 2
+}

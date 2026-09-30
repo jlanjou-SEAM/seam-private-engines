@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-57500B3C244480",
+  "provider": "NOAA/NDBC",
+  "dataset": "PMNT2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:32:47.718309Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PMNT2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PMNT2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1016422,
+  "sha256": "e59668c32058595b59e99b2f0ce3941415149391dd6db2f8d2c47ccacef99916",
+  "etag": "\"f8266-65cabc1df56fb\"",
+  "last_modified": "Wed, 30 Sep 2026 04:30:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-57500B3C244480\\20260930T043247.718309Z_e59668c32058595b.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

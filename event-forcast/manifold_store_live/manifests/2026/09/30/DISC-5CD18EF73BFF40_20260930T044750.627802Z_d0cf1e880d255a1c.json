@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-5CD18EF73BFF40",
+  "provider": "NOAA/NCEI",
+  "dataset": "data-management",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:50.627802Z",
+  "request_url": "https://www.ncei.noaa.gov/taxonomy/tags/data-management",
+  "final_url": "https://www.ncei.noaa.gov/taxonomy/tags/data-management",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 33809,
+  "sha256": "d0cf1e880d255a1c80ca728752877541e87bdd67a772e7ace7460e77045cdc2f",
+  "etag": "\"1790722227-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 22:50:27 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-5CD18EF73BFF40\\20260930T044750.627802Z_d0cf1e880d255a1c.html",
+  "parent_id": "DISC-CA6844F9CC2B89",
+  "discovery_depth": 2
+}

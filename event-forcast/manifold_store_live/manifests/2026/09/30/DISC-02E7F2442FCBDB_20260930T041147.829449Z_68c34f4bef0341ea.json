@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-02E7F2442FCBDB",
+  "provider": "NOAA/NDBC",
+  "dataset": "UQXA2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:11:47.829449Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/UQXA2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/UQXA2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 609966,
+  "sha256": "68c34f4bef0341ea3d92ae6a2584b16befec6db0061276aa8ab72cb42a83a85f",
+  "etag": "\"94eae-65cab7a41ab82\"",
+  "last_modified": "Wed, 30 Sep 2026 04:10:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-02E7F2442FCBDB\\20260930T041147.829449Z_68c34f4bef0341ea.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

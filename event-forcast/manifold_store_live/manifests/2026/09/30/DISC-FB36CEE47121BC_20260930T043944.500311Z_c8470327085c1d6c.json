@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-FB36CEE47121BC",
+  "provider": "NOAA/NCEI",
+  "dataset": "gsom_sample_pdf.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:44.500311Z",
+  "request_url": "https://www.ncei.noaa.gov/pub/data/cdo/samples/gsom_sample_pdf.pdf",
+  "final_url": "https://www.ncei.noaa.gov/pub/data/cdo/samples/gsom_sample_pdf.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 3322,
+  "sha256": "c8470327085c1d6cc7d4305b38e6ad0624615ee1f57884ec3483edde2ad22685",
+  "etag": "\"cfa-535b8f5fff440\"",
+  "last_modified": "Mon, 20 Jun 2016 17:23:21 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-FB36CEE47121BC\\20260930T043944.500311Z_c8470327085c1d6c.pdf",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

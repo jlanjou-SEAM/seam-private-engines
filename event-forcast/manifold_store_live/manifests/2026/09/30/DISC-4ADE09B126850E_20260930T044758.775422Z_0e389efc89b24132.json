@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-4ADE09B126850E",
+  "provider": "NOAA/NCEI",
+  "dataset": "deep-sea-corals-portal",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:58.775422Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/deep-sea-corals-portal/",
+  "final_url": "https://www.ncei.noaa.gov/maps/deep-sea-corals-portal/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 5168,
+  "sha256": "0e389efc89b2413228af40674fd5a9a3dcf3537f5624ff26fce552792a26a587",
+  "etag": "\"1394-65a0eeff33780\"",
+  "last_modified": "Thu, 27 Aug 2026 22:34:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4ADE09B126850E\\20260930T044758.775422Z_0e389efc89b24132.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-88BE3E214164BC",
+  "provider": "NOAA/CO-OPS",
+  "dataset": "datagetter",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "hydrology",
+    "coastal"
+  ],
+  "retrieved_utc": "2026-09-30T04:23:29.560156Z",
+  "request_url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?date=today&amp;station=EPT0003&amp;product=currents_predictions&amp;time_zone=gmt&amp;interval=10&amp;units=english&amp;application=DataAPI_Sample&amp;format=xml&amp;bin=14",
+  "final_url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?date=today&amp;station=EPT0003&amp;product=currents_predictions&amp;time_zone=gmt&amp;interval=10&amp;units=english&amp;application=DataAPI_Sample&amp;format=xml&amp;bin=14",
+  "status_code": 200,
+  "content_type": "text/xml;charset=UTF-8",
+  "byte_length": 24316,
+  "sha256": "421982f57076cf4ec72416275557ba6d648fb41f93735974559fbf3ae8ce83cf",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-88BE3E214164BC\\20260930T042329.560156Z_421982f57076cf4e.xml",
+  "parent_id": "NOAA-COOPS",
+  "discovery_depth": 1
+}

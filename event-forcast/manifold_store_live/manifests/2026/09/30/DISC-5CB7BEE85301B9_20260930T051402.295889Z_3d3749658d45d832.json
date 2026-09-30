@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-5CB7BEE85301B9",
+  "provider": "NOAA/NDBC",
+  "dataset": "LWSD1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:14:02.295889Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/LWSD1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/LWSD1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1013038,
+  "sha256": "3d3749658d45d832d61aef4bb299e2ebbea6687c5e204e2ceb90de224d1772bf",
+  "etag": "\"f752e-65cac2d465bf2\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-5CB7BEE85301B9\\20260930T051402.295889Z_3d3749658d45d832.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

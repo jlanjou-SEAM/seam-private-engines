@@ -1,0 +1,24 @@
+{
+  "candidate_id": "FMI-OPEN",
+  "provider": "Finnish Meteorological Institute",
+  "dataset": "FMI open data",
+  "sector": "public",
+  "country": "FI",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "air_quality"
+  ],
+  "retrieved_utc": "2026-09-30T04:51:05.268199Z",
+  "request_url": "https://en.ilmatieteenlaitos.fi/open-data",
+  "final_url": "https://en.ilmatieteenlaitos.fi/open-data",
+  "status_code": 200,
+  "content_type": "text/html;charset=utf-8",
+  "byte_length": 289832,
+  "sha256": "4bf064a622aa3b88094c38928e56482b13ac1a5c885e7d5a04a03e1eaf66b011",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\FMI-OPEN\\20260930T045105.268199Z_4bf064a622aa3b88.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

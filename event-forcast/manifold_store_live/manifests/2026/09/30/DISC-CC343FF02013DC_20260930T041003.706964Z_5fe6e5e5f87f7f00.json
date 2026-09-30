@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-CC343FF02013DC",
+  "provider": "Japan Meteorological Agency",
+  "dataset": "default_set_rain_snow.json",
+  "sector": "public",
+  "country": "JP",
+  "scientific_regime": [
+    "weather",
+    "seismic",
+    "hazards"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:03.706964Z",
+  "request_url": "https://www.jma.go.jp/bosai/const/default_set_rain_snow.json",
+  "final_url": "https://www.jma.go.jp/bosai/const/default_set_rain_snow.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 2323,
+  "sha256": "5fe6e5e5f87f7f00199b811d670e909012558a45007f9d9d7ea2be3a848158f1",
+  "etag": "\"65077212ab08b672336e2a8877281282\"",
+  "last_modified": "Tue, 29 Sep 2026 04:55:00 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-CC343FF02013DC\\20260930T041003.706964Z_5fe6e5e5f87f7f00.json",
+  "parent_id": "JMA-BOSAI",
+  "discovery_depth": 1
+}

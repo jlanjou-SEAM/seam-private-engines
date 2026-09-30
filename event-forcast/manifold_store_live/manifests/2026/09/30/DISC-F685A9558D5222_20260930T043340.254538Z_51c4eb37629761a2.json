@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F685A9558D5222",
+  "provider": "NOAA/NDBC",
+  "dataset": "MDKF1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:40.254538Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/MDKF1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/MDKF1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 75012,
+  "sha256": "51c4eb37629761a21c7d4bf601fe399c4ff3465293227d7e97a8110cfb65cc79",
+  "etag": "\"12504-65ca63dafefbe\"",
+  "last_modified": "Tue, 29 Sep 2026 21:55:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-F685A9558D5222\\20260930T043340.254538Z_51c4eb37629761a2.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7CBF07370B5F82",
+  "provider": "NASA Earthdata",
+  "dataset": "asdc-maintenance-outage-july-31-2026",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:23.397291Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/asdc-maintenance-outage-july-31-2026",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/asdc-maintenance-outage-july-31-2026",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 135225,
+  "sha256": "903e1d2352a511d7a1278982dd367b7ef15c8a738a789fae6cd0fe514c19d7c0",
+  "etag": "\"1790745624\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-7CBF07370B5F82\\20260930T052023.397291Z_903e1d2352a511d7.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-384AA16F99BAFD",
+  "provider": "INMET Brazil",
+  "dataset": "catalogoman",
+  "sector": "public",
+  "country": "BR",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:11:02.801409Z",
+  "request_url": "https://portal.inmet.gov.br/paginas/catalogoman",
+  "final_url": "https://portal.inmet.gov.br/paginas/catalogoman",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 59084,
+  "sha256": "0d09484152da74cdf7ff2d9afa7630aef637407a88c3fbfd478c1086e9d73e3b",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-384AA16F99BAFD\\20260930T041102.801409Z_0d09484152da74cd.html",
+  "parent_id": "INMET-BR",
+  "discovery_depth": 1
+}

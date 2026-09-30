@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-65231786B79840",
+  "provider": "UK Met Office",
+  "dataset": "observations",
+  "sector": "public",
+  "country": "GB",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:55:01.559564Z",
+  "request_url": "https://datahub.metoffice.gov.uk/pricing/observations",
+  "final_url": "https://datahub.metoffice.gov.uk/pricing/observations",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 31228,
+  "sha256": "b008badf88e70c5f8e3cb3efe8e4851ec23e48e13aa540007e521fd51289bedc",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-65231786B79840\\20260930T045501.559564Z_b008badf88e70c5f.html",
+  "parent_id": "UK-METOFFICE",
+  "discovery_depth": 1
+}

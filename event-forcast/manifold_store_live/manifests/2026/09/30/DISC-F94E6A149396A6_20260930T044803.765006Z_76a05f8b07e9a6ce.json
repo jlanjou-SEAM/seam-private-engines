@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-F94E6A149396A6",
+  "provider": "NOAA/NCEI",
+  "dataset": "daily",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:03.765006Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/daily/",
+  "final_url": "https://www.ncei.noaa.gov/maps/daily/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 18426,
+  "sha256": "76a05f8b07e9a6cea45bdd1b989d3204aea8ee07b44f635dec473602de9c050e",
+  "etag": "\"475e-647bb8b318a00\"",
+  "last_modified": "Tue, 06 Jan 2026 17:31:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F94E6A149396A6\\20260930T044803.765006Z_76a05f8b07e9a6ce.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

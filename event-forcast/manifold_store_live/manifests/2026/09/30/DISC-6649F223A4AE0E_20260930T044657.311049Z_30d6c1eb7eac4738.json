@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-6649F223A4AE0E",
+  "provider": "NOAA/NCEI",
+  "dataset": "nasa-develop-ncei-spring-2025-term",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:57.311049Z",
+  "request_url": "https://www.ncei.noaa.gov/news/nasa-develop-ncei-spring-2025-term",
+  "final_url": "https://www.ncei.noaa.gov/news/nasa-develop-ncei-spring-2025-term",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 39228,
+  "sha256": "30d6c1eb7eac4738f0b027f25be9755dee774e118c1b5ea2b1c8d0cc300b6000",
+  "etag": "\"1790716477-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:14:37 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6649F223A4AE0E\\20260930T044657.311049Z_30d6c1eb7eac4738.html",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

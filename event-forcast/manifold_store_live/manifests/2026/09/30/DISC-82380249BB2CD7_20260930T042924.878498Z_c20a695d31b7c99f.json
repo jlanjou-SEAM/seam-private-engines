@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-82380249BB2CD7",
+  "provider": "NOAA/SWPC",
+  "dataset": "solar-wind-mag-field.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:29:24.878498Z",
+  "request_url": "https://services.swpc.noaa.gov/products/summary/solar-wind-mag-field.json",
+  "final_url": "https://services.swpc.noaa.gov/products/summary/solar-wind-mag-field.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 60,
+  "sha256": "c20a695d31b7c99ffbe676c0ccd8864f629faef160af0d05661944fecdd4ad9b",
+  "etag": "\"3c-65cabb6617d1e\"",
+  "last_modified": "Wed, 30 Sep 2026 04:27:09 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-82380249BB2CD7\\20260930T042924.878498Z_c20a695d31b7c99f.json",
+  "parent_id": "DISC-E9DCF2D47D27D9",
+  "discovery_depth": 2
+}

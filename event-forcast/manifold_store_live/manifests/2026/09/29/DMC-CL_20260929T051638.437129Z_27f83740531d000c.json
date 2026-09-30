@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DMC-CL",
+  "provider": "Dirección Meteorológica de Chile",
+  "dataset": "Meteorological data",
+  "sector": "public",
+  "country": "CL",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-29T05:16:38.437129Z",
+  "request_url": "https://climatologia.meteochile.gob.cl/",
+  "final_url": "https://climatologia.meteochile.gob.cl/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 132319,
+  "sha256": "27f83740531d000c8e4f7a24402e18356ea997840b8819af915c5b93c85114bf",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DMC-CL\\20260929T051638.437129Z_27f83740531d000c.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

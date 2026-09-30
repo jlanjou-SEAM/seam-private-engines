@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-4A77DAAD43E82D",
+  "provider": "Japan Meteorological Agency",
+  "dataset": "no_wave_tide.json",
+  "sector": "public",
+  "country": "JP",
+  "scientific_regime": [
+    "weather",
+    "seismic",
+    "hazards"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:11.040036Z",
+  "request_url": "https://www.jma.go.jp/bosai/warning/const/no_wave_tide.json",
+  "final_url": "https://www.jma.go.jp/bosai/warning/const/no_wave_tide.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 27202,
+  "sha256": "3768bf5285a67d8f0f451b92066ac45d84cf85017d20bc541f7db305c704b997",
+  "etag": "\"cafec632f929ab4bb331cf6da13a5fac\"",
+  "last_modified": "Tue, 29 Sep 2026 04:55:04 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4A77DAAD43E82D\\20260930T041011.040036Z_3768bf5285a67d8f.json",
+  "parent_id": "JMA-BOSAI",
+  "discovery_depth": 1
+}

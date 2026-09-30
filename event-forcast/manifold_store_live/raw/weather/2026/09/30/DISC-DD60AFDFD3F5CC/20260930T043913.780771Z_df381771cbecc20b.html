@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<title>Local Climatological Data (LCD) | Data Tools | Climate Data Online (CDO) | National Climatic Data Center (NCDC)</title>
+<meta name="description" content="Data Tools built using weather and climate data from Climate Data Online (CDO).">
+<meta name="application-name" content="Climate Data Online (CDO)">
+<meta name="msapplication-tooltip" content="Climate Data Online (CDO)" />
+
+<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="National Centers for Environmental Information (NCEI)">
+
+<link rel="shortcut icon" href="/shared/v1/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="144x144" href="/shared/v1/images/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/shared/v1/images/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/shared/v1/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="57x57" href="/shared/v1/images/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" href="/shared/v1/images/apple-touch-icon.png">
+
+<meta name="msapplication-task" content="name=NCEI;action-uri=https://www.ncei.noaa.gov/;icon-uri=https://www.ncei.noaa.gov/favicon.ico">
+<meta name="msapplication-TileColor" content="#007EC6">
+<meta name="msapplication-TileImage" content="/shared/v1/images/apple-touch-icon-144.png">
+<meta name="verify-v1" content="DjxBYfR0oM2KSNJl6i2BbxfTcXOGUnbglkT0QQj5KtI=">
+
+<!-- The following is a speed hack for IE browsers -->
+<!--[if IE]><![endif]-->
+<link type="text/css" rel="stylesheet" media="all" href="/shared/v1/css/reset.css">
+<link type="text/css" rel="stylesheet" media="all" href="/shared/v1/css/shared.css">
+<link type="text/css" rel="stylesheet" media="all" href="/shared/v1/css/layouts.css">
+<link type="text/css" rel="stylesheet" media="all" href="/shared/v1/css/messages.css">
+
+<link type="text/css" rel="stylesheet" media="screen and (max-width: 659px)" href="/shared/v1/css/layout_320.css"> 
+<link type="text/css" rel="stylesheet" media="screen and (min-width: 660px) and (max-width: 1023px)" href="/shared/v1/css/layout_640.css"> 
+<link type="text/css" rel="stylesheet" media="screen and (min-width: 1024px)" href="/shared/v1/css/layout_1024.css">
+
+<!--[if LTE IE 8]>
+	<link rel="stylesheet" type="text/css" media="all" href="/shared/v1/css/layout_1024.css">
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" media="all" href="/shared/v1/css/smoothness/jquery-ui-1.10.2.custom.min.css">
+
+
+
+	
+		
+		<link rel="stylesheet" type="text/css" media="all" href="/cdo-web/resources-3.7/css/min/application.min.css">
+		<link rel="stylesheet" type="text/css" media="all" href="/cdo-web/resources-3.7/css/min/jquery-ui-1.10.2.custom.min.css">
+		<link rel="stylesheet" type="text/css" media="all" href="/cdo-web/resources-3.7/css/min/jquery-ui-override.min.css">
+		
+		<link rel="stylesheet" type="text/css" media="print" href="/cdo-web/resources-3.7/css/min/print.min.css">
+	
+	
+
+
+
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/shared/v1/css/ie.css">
+<![endif]-->
+
+<noscript>
+	<link rel="stylesheet" type="text/css" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:400,700|Bitter:700,400">
+</noscript>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+<script>WebFont.load({ google: { families: ['Open+Sans', 'Bitter'] } });</script>
+
+
+
+
+	
+		
+		
+		<link rel="stylesheet" type="text/css" media="all" href="/cdo-web/resources-3.7/css/min/datatools.min.css" />
+
+	
+	
+
+
+
+</head>
+
+<body class="lcd">
+	<div id="main">
+
+		
+		<header>
+	<div id="header" class="clearfix" role="banner">
+		<div class="inset clearfix">
+			<a class="noaalink" href="http://www.noaa.gov/"></a>
+			<div class="title"><a href="http://www.ncei.noaa.gov/" title="National Centers for Environmental Information">National Centers for Environmental Information<span>&nbsp;</span></a></div>
+			<a href="http://www.commerce.gov/" id="headDOC" title="Click to visit the U.S. Department of Commerce Website"></a>
+		</div>
+	</div>
+
+	
+	<div class="element-invisible">
+		<a class="element-invisible element-focusable" href="#main-content">Skip to main content</a><br>
+		<a class="element-invisible element-focusable" href="#site-search">Skip to site search</a>
+	</div>
+
+	<nav id="nav" class="clearfix" role="navigation">
+		<div class="inset">
+			<ul class="mainNav" role="menubar">
+				<li><a role="menuitem" href="https://www.ncei.noaa.gov/" title="Home">Home</a></li>
+				<li><a role="menuitem" href="https://www.ncei.noaa.gov/monitoring" title="Climate Information">Climate Information</a></li>
+				<li><a role="menuitem" href="https://www.ncei.noaa.gov/access" title="Data Access">Data Access</a></li>
+				<li><a role="menuitem" href="https://www.ncei.noaa.gov/contact" title="Contact Us">Contact</a></li>
+				<li><a role="menuitem" href="https://www.ncei.noaa.gov/about" title="About">About</a></li>
+			</ul>
+			<div class="navSearchForm" role="search">
+				<form name="sitesearchform" method="get" action="https://search.usa.gov/search">
+					<a id="site-search"></a>
+					<fieldset>
+						<legend>Search for articles, products, and data at the National Centers for Environmental Information</legend>
+						<input type="hidden" name="affiliate" value="NCDC">
+						<label for="sitesearch">Search Field:</label>
+						<input type="text" name="query" class="searchtext inputbox" id="sitesearch" value="Search" maxlength="50" tabindex="1">
+						<label for="sitesearchbutton">Search button:</label>
+						<input type="submit" class="submitbutton" id="sitesearchbutton" value="Search" tabindex="2">
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+</header>
+
+		
+
+		
+		<div id="breadcrumbs">
+			<div class="inset">
+				<a href="//www.ncei.noaa.gov/" title="National Center for Environmental Information" role="link">Home</a>&nbsp;&gt;&nbsp;<a href="/cdo-web/" role="link" title="Climate Data Online">Climate Data Online</a>&nbsp;&gt;&nbsp;<a href="/cdo-web/datatools" role="link" title="Data Tools">Data Tools</a>&nbsp;&gt;&nbsp;Local Climatological Data (LCD)
+				<ul class="extraLinks" role="menu">
+	<li role="menuitem"><a href="/cdo-web/datasets"><span class="linkBox cdoBrandDataSet"></span>Datasets</a></li>
+	<li role="menuitem"><a href="/cdo-web/search"><span class="linkBox cdoBrandSearch"></span>Search Tool</a></li>
+	<li role="menuitem"><a href="https://gis.ncdc.noaa.gov/maps/ncei/"><span class="linkBox cdoBrandMap"></span>Mapping Tool</a></li>
+	<li role="menuitem"><a href="/cdo-web/datatools"><span class="linkBox cdoBrandDataTool"></span>Data Tools</a></li>
+	<li role="menuitem"><a href="/cdo-web/faq"><span class="linkBox cdoBrandHelp"></span>Help</a></li>
+</ul>
+			</div>
+		</div>
+		
+
+		
+		<div id="content" class="clearfix" role="main">
+			<div class="inset">
+
+								<a id="maincontent"></a>
+
+				
+
+				<noscript>
+					<div id="scriptCookiesError" class="messageBlock msgError msgCookie">
+						<div>
+							<p>
+								Javascript has either been disabled or is not supported in your browser<br>
+								<em>Some of this site's functionality requires Javascript to be enabled.</em>
+							</p>
+						</div>
+					</div>
+				</noscript>
+
+				<h1><span class="cdoBrandBlock cdoBrandDataTool"></span>Data Tools: Local Climatological Data (LCD)</h1>
+
+				<p>Local Climatological Data (LCD) is only available for stations and locations within the United States and its territories. Select the state or territory, location, and time to view specific data. Click the station name to view details or click "ADD TO CART" to order that station's data.</p>
+
+				
+				
+				<p style="font-size: xx-large; text-align: center;">
+					<a href="https://gis.ncdc.noaa.gov/maps/ncei/lcd">Map Tool</a>
+				</p>
+				
+				<div class="selectLocationFilters">
+					<div class="locationCategoryContainer slideContainer" >
+						<div class="locationCategoryFilter slideElement" data-bind="css:{slideVisible: selectedDataset() != null}">
+							<label for="locationCategorySelect">Select a Location Type</label>
+							<select id="locationCategorySelect" class="selectFilter" name="locationCategorySelect" size="8" data-bind="options: availableLocationCategories, optionsText: 'name', value: selectedLocationCategory"></select>
+						</div>
+					</div><div class="lcdLocationContainer slideContainer">
+						 <div class="countryFilter slideElement" data-bind="css:{slideVisible:filterVisibility().country}">
+							<label for="selectedCountry">Select a Country</label>
+							<select id="selectedCountry" class="selectFilter" size="8" data-bind="options: availableCountries, optionsText: 'name', value: selectedCountry"></select>
+						</div>
+						<div class="territoryFilter slideElement" data-bind="css:{slideVisible:filterVisibility().territory}">
+							<label for="selectedTerritory">Select a US Territory</label>
+							<select id="selectedTerritory" class="selectFilter" size="8" data-bind="options: availableTerritories, optionsText: 'name', value: selectedTerritory"></select>
+						</div>
+						<div class="stateFilter slideElement" data-bind="css:{slideVisible:filterVisibility().state}">
+							<label for="selectedState">Select a State</label>
+							<select id="selectedState" class="selectFilter" size="8" data-bind="options: availableStates, optionsText: 'name', value: selectedState"></select>
+						</div>
+						<div class="countyContainer slideElement" data-bind="css:{slideVisible:filterVisibility().county}">
+							<div class="countyStateFilter" style="display:inline-block">
+								<label for="selectedState">Select a State</label>
+								<select id="selectedCountyState" class="selectFilter" size="8" data-bind="options: availableStates, optionsText: 'name', value: selectedState"></select>
+							</div><div class="countyFilter" style="display:inline-block">
+								<label for="selectedCounty">Select a County</label>
+								<select id="selectedCounty" class="selectFilter" size="8" 
+									data-bind="disable: stateHasNoCounties, options: availableCounties, optionsText: 'name', value: selectedCounty"></select>
+							</div>
+						</div>
+						<div class="zipFilter slideElement" data-bind="css:{slideVisible:filterVisibility().zip}">
+							<label for="selectedZip">Enter 5-digit ZIP code</label>
+							<input type="text" id="selectedZip" class="selectFilter" maxlength="5" placeholder="ex: 28801" data-bind="value: selectedZip, hasFocus: filterVisibility().zip, valueUpdate: 'keyup', event: { keydown: zipSubmit}">
+						</div>
+					 </div>
+				</div>
+
+				<div class="mainOutputContainer">
+
+					<div class="messageBlock msgAlert" data-bind="visible: emptyResults">
+						<p>Unfortunately, Climate Data Online was unable to find any locations for your selection.</p>
+					</div>
+
+					<div class="addLocationContainer" data-bind="visible: stations().length > 0">
+						<h2 class="addLocationLabel" data-bind="html: locationLabel"></h2>
+					</div>
+
+					<ul id="locationPagination" class="pagination clearfix" data-bind="visible: (stationCount() > 0 && stations().length > 0 )">
+						<li data-bind="visible: selectedPage() > 1"><a class="tab" href="" data-bind="click: decrementPage">&lt;</a></li>
+						<li class="middle"><span data-bind="text: first"></span>&ndash;<span data-bind="text: last"></span> of <span data-bind="text: stationCount"></span> Stations</li>
+						<li data-bind="visible: stationCount() > selectedPageSize() && stationCount() >= selectedPage() * selectedPageSize()"><a class="tab" href="" data-bind="click: incrementPage">&gt;</a></li>
+					</ul>
+
+					<table class="stationsTable" id="stationsTable" data-bind="css{recordsLoading: loading}" summary="A table of stations based on the selections made in the form above.">
+						<caption>DATASET NAME HERE: LOCATION TYPE &amp; MORE</caption>
+						<thead data-bind="visible: loading() != true && stations().length > 0">
+							<tr>
+								<th colspan="2">Station Details</th>
+							</tr>
+						</thead>
+						<tbody data-bind="foreach:stations">
+							<tr>
+								<td class="itemDesc">
+									<a class="title" target="_blank" href="" data-bind="attr: {href: '/cdo-web/datasets/' + $root.selectedDataset().id + '/stations/' + id + '/detail'}, text: name"></a>
+									<div class="itemDetails">
+										<div><a class="linkQuickDetails" href="" target="_blank" data-bind="attr: {href: '/cdo-web/datasets/' + $root.selectedDataset().id + '/stations/' + id + '/detail'}">View Full Details</a></div>
+										<div><em>Station ID:</em> <span class="stationID" data-bind="text:id"></span></div>
+										<div><em>Period of Record:</em> <span data-bind="text:mindate"></span> to <span data-bind="text:maxdate"></span></div>
+									</div>
+								</td>
+								<td class="cart"><input type="button" class="button cartButton addToCartButton" data-bind="click: $root.addStationToCart.bind($data, $element, {id:id}), css:{disabled: $root.isInCart({id:id})}, enable: !$root.isInCart({id:id})" value="ADD TO CART"></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<ul id="locationPagination" class="pagination clearfix" data-bind="visible: (stationCount() > 0 && stations().length > 0 )">
+						<li data-bind="visible: selectedPage() > 1"><a class="tab" href="" data-bind="click: decrementPage">&lt;</a></li>
+						<li class="middle"><span data-bind="text: first"></span>&ndash;<span data-bind="text: last"></span> of <span data-bind="text: stationCount"></span> Stations</li>
+						<li data-bind="visible: stationCount() > selectedPageSize() && stationCount() >= selectedPage() * selectedPageSize()"><a class="tab" href="" data-bind="click: incrementPage">&gt;</a></li>
+					</ul>
+
+					<div class="loadingOverlay" data-bind="visible: loading"></div>
+
+				</div>
+
+				
+				<div id="cartWidget"></div>
+
+				
+				<div id="confirmDialog" style="display:none">
+					<p>The Climate Data Online cart currently only supports ordering data from one dataset at a time. Changing datasets will remove all items in your cart. Do you wish to proceed?</p>
+				</div>
+
+			</div>
+		</div>
+
+		
+		<footer id="footer" class="clearfix">
+	<div class="inset">
+
+		<div class="subfooter">
+			<a role="link" href="https://www.commerce.gov/" rel="nofollow"><img src="/shared/v1/images/logos/logo_doc_dark.png" alt="Click to visit the U.S. Department of Commerce Website"></a>
+			<a role="link" href="https://www.usa.gov" rel="nofollow"><img src="/shared/v1/images/logos/logo_usagov.png" alt="Click to visit USA.gov"></a>
+			<a role="link" href="https://www.ready.gov" rel="nofollow"><img src="/shared/v1/images/logos/logo_ready.png" alt="Click to visit Ready.gov"></a>
+		</div>
+
+		<ul class="menu">
+			<li><a role="link" title="NCDC" href="//www.ncei.noaa.gov/">NCEI</a></li>
+			<li><a role="link" title="About" href="//www.ncei.noaa.gov/about">About</a></li>
+			<li><a role="link" title="General help section" href="//www.ncei.noaa.gov/sitemap">Site Map</a></li>
+		</ul>
+
+		<ul class="menu">
+			<li><a role="link" title="NOAA's Privacy Policy" href="http://www.noaa.gov/privacy.html" rel="external nofollow">Privacy</a></li>
+			<li><a role="link" title="Freedom of Information Act" href="http://www.rdc.noaa.gov/%7Efoia/" rel="external nofollow">FOIA</a></li>
+			<li><a role="link" title="Information Quality" href="http://www.cio.noaa.gov/Policy_Programs/info_quality.html" rel="external nofollow">Information Quality</a></li>
+			<li><a role="link" title="Disclaimer" href="http://www.noaa.gov/disclaimer.html" rel="external nofollow">Disclaimer</a></li>
+		</ul>
+
+		<ul class="menu last">
+			<li><a role="link" title="United States Department of Commerce" href="http://www.commerce.gov/" rel="external nofollow">Department of Commerce</a></li>
+			<li><a role="link" title="NOAA" href="http://www.noaa.gov" rel="external nofollow">NOAA</a></li>
+			<li><a role="link" title="NESDIS" href="http://www.nesdis.noaa.gov/" rel="external nofollow">NESDIS</a></li>
+		</ul>
+
+		<div class="clearfix"></div>
+
+		<div id="footerCrumbs" class="clearfix">
+			<a class="ext" href="//www.commerce.gov/" target="_blank" title="Department of Commerce">Department of Commerce</a><span class="ext">&nbsp;</span>&nbsp;&gt;&nbsp;<a class="ext" href="//www.noaa.gov/" target="_blank" title="NOAA">NOAA</a><span class="ext">&nbsp;</span>&nbsp;&gt;&nbsp;<a class="ext" href="//www.nesdis.noaa.gov/" target="_blank" title="NESDIS">NESDIS</a><span class="ext">&nbsp;</span>&nbsp;&gt;&nbsp;<a href="//www.ncei.noaa.gov/" title="NCEI">NCEI</a>
+		</div>
+
+	</div>
+</footer>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1Q1BML6E5"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E1Q1BML6E5', { 'anonymize_ip': true });
+        gtag('event', 'page_view')
+    </script>
+
+
+		
+
+	</div>
+
+	
+	
+	
+	
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="/shared/v1/js/lib/html5shiv.min.js"></script>
+	<script type="text/javascript" src="/shared/v1/js/lib/html5shiv-printshiv.min.js"></script>
+<![endif]-->
+
+
+	
+		<script src="/cdo-web/resources-3.7/js/min/jquery.min.js"></script>
+		<script src="/cdo-web/resources-3.7/js/min/knockout.min.js"></script>
+		<script src="/cdo-web/resources-3.7/js/min/cdo.min.js"></script>
+		
+		<script type="text/javascript" src="/shared/v1/js/application.min.js"></script>
+	
+	
+
+
+	
+
+	
+	
+		
+			<script src="/cdo-web/resources-3.7/js/min/selectlocation.js"></script>
+		
+		
+	
+	
+	<script>
+		ko.applyBindings(new SelectLocation.ViewModel('', true));
+	</script>
+	
+	
+	
+	
+	
+	
+<script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script></body>
+</html>

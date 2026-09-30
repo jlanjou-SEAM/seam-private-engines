@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="description" content="Mapviewer-Template">
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Global Marine Data</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+	<link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/css/main.css">
+ 	<link rel="stylesheet" href="https://js.arcgis.com/4.19/dijit/themes/claro/claro.css" />
+
+	<link rel="stylesheet" href="./css/app.css">
+	<link rel="stylesheet" href="./js/app/css/ErrorWidget.css">
+	<link rel="stylesheet" href="./js/app/css/InfoWidget.css">
+	<link rel="stylesheet" href="./js/app/css/ToolsWidget.css">
+
+	<!-- Growler: css -->
+	<link rel="stylesheet" href="../../maps/dijits/js/ncei/Growler.css">
+
+	<!-- Growler: div style -->
+	<style>
+		.upperRight {
+			position: absolute;
+			top: 70px;
+			right: 20px;
+			z-index: 40;
+			width: 450px;
+		}
+	</style>
+
+	<script>
+		var tierDomain = window.location.hostname;
+		var locationPath = location.pathname.replace(/\/[^\/]*$/, "");
+		window.dojoConfig = {
+			packages: [
+			{
+				name: 'app',
+				location: locationPath + '/js/app'
+			},
+			// Growler: loading widget
+			{
+				name: 'ncei',
+				location: "https://"+tierDomain+"/maps/dijits/js/ncei"
+			}
+			]
+		};
+	</script>
+	<script src="https://js.arcgis.com/4.19/"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body class="claro">
+
+	<!-- start wrapper -->
+	<div class="wrapper" id="wrapper">
+
+		<!-- Growler: div -->
+		<div class="upperRight">
+			<div id="growlerDijit"></div>
+		</div>
+
+		<!-- start header -->
+		<div class="header" id="headerDiv">
+			<div id="logoDiv">
+				<a href="https://www.ncei.noaa.gov/" title="Link to National Centers for Environmental Information home">
+					<img src="images/logo.svg" alt="Link to National Centers for Environmental Information home">
+				</a>
+			</div>
+			<div id="titleDiv">Global Marine Data</div>
+			<div id="helpDiv">
+				<button class="help-button" id="infoBtn" type="button">Info</button>
+				<button class="help-button" id="helpBtn" type="button">Help</button>
+			</div>
+		</div>
+		<!-- end header -->
+	
+		<!-- map -->
+		<div class="map" name="Section showing global map" id="viewDiv"></div>
+
+		<!-- start footer -->
+		<div class="footer" id="footerDiv">
+	    	<div id="footer-content">
+	      		<div id="footer-structure">
+		            <ul>
+		            	<li><a href="https://www.ncei.noaa.gov/sitemap" title="NCEI's Sitemap">Sitemap</a></li>
+			            <li><a href="https://www.ncei.noaa.gov/privacy" title="NOAA's Privacy Policy">Privacy Policy</a></li>
+			            <li><a href="https://www.noaa.gov/foia-freedom-of-information-act" title="Freedom of Information Act">Freedom Of Information Act</a></li>
+			            <li><a href="https://www.cio.noaa.gov/services_programs/info_quality.html" title="Information Quality">Information Quality</a></li>
+			            <li><a href="https://www.noaa.gov/disclaimer.html" title="Disclaimer">Disclaimer</a></li>
+			            <!--<li><a href="https://www.ncdc.noaa.gov/survey" title="Take Our Site Survey">Take Our Survey</a></li>-->
+			            <li><a href="https://www.commerce.gov/" title="United States Department of Commerce">Department of Commerce</a></li>
+			            <li><a href="http://www.noaa.gov" title="NOAA">NOAA</a></li>
+			            <li><a href="https://www.nesdis.noaa.gov/" title="NESDIS">NESDIS</a></li>
+			            <li><a href="https://www.ncei.noaa.gov/contact" title="Contact Us">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end footer -->
+	</div>
+	<!-- end wrapper -->
+
+	<div id="errorDiv" style="display:none"></div>
+
+	<div id="coordinateDiv"></div>
+
+	<div id="basemapDiv">
+		<div id="instructionDiv">Please select a basemap:</div>
+		<div id="galleryDiv"></div>
+	</div>
+
+	<!-- start dashboard -->
+	<div class="dashboard" id="dashboardDiv">
+		<div id="dashboardTitleDiv"><b>DASHBOARD</b></div>
+		<hr width="90%"/>
+
+		<!-- instructions -->
+		<div id="instructionsDiv">
+			<b>Instructions</b>
+			<ul class="b">
+				<li>Adjust <b>Date Range</b> as desired (31 day max range)</li>
+				<li>Click the <b>Draw</b> button and select an area of interest by left clicking and drawing a rectangle on the map</li>
+				<li>Move/resize your area of interest as needed</li>
+				<li>Click the <b>Access Data</b> button to order data; for direct access to Marine Data Search, click <span id="accessAnchor">here</span></li>
+			</ul>
+		</div>
+		<hr width="90%"/>
+
+		<!-- date range components -->
+		<div id="datesTitleDiv">Date Range</div>
+		<div id="datesDiv">
+			<div id="startDateContainer">
+				<label for="startDateDiv"><b>Start:</b></label>
+				<div id="startDateDiv"></div>
+			</div>
+			<div id="endDateContainer">
+				<label for="endDateDiv"><b>End:</b></label>
+				<div id="endDateDiv"></div>
+			</div>
+		</div>
+		<div id="dateFormatDiv">Date format: YYYY-MM-DD; note: 31 day max range</div>
+		<div id="porDiv"></div>
+		<hr width="90%"/>
+
+		<!-- bbox components -->
+		<div id="bboxTitleDiv">Area of Interest</div>
+		<div id="bboxWrapper">
+			<div id="bboxNorthDiv"></div>
+			<div id="bboxDiv">
+				<div id="bboxWestDiv"></div>
+				<div id="bboxCenterDiv">
+					<div class="bboxSpacerDiv"></div>
+					<div id="bboxCenterInnerDiv">no selection</div>
+					<div class="bboxSpacerDiv"></div>
+				</div>
+				<div id="bboxEastDiv"></div>
+			</div>
+			<div id="bboxSouthDiv"></div>
+		</div>
+		<hr width="90%"/>
+	
+		<!-- tools widget-->
+		<div id="toolsDiv"></div>
+	</div>
+	<!-- end dashboard -->
+
+	<!-- info modal -->
+	<div id="infoModalDiv" class="infoModal">
+		<div id="infoDiv" style="display:none" ></div>
+	</div>
+
+	<script src="https://www.ncei.noaa.gov/maps/config/gis-helper.js"></script>
+<script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script></body>
+</html>

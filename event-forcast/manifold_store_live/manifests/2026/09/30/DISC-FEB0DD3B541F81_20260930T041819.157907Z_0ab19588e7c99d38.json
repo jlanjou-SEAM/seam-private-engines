@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-FEB0DD3B541F81",
+  "provider": "NOAA/SWPC",
+  "dataset": "ovation_north_24h.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:19.157907Z",
+  "request_url": "https://services.swpc.noaa.gov/products/animations/ovation_north_24h.json",
+  "final_url": "https://services.swpc.noaa.gov/products/animations/ovation_north_24h.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 31680,
+  "sha256": "0ab19588e7c99d388faa091c394b29f8487e016faf1d0a88318d2f187d9ee9fa",
+  "etag": "\"7bc0-65cab8f78217e\"",
+  "last_modified": "Wed, 30 Sep 2026 04:16:16 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-FEB0DD3B541F81\\20260930T041819.157907Z_0ab19588e7c99d38.json",
+  "parent_id": "DISC-DC635460D92E37",
+  "discovery_depth": 2
+}

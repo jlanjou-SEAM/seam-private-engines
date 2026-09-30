@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-216D80F4F49BA0",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "vicall.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:09.733645Z",
+  "request_url": "https://www.bom.gov.au/vic/observations/vicall.shtml?ref=hdr",
+  "final_url": "https://www.bom.gov.au/vic/observations/vicall.shtml?ref=hdr",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 228589,
+  "sha256": "37cfcc5a6622728b58957cd94a8ed72f86bf907ef916d193117c7d84b53c127f",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-216D80F4F49BA0\\20260930T040609.733645Z_37cfcc5a6622728b.shtml",
+  "parent_id": "BOM-DATA",
+  "discovery_depth": 1
+}

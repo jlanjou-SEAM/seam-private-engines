@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-CBB3D23FEB240A",
+  "provider": "NASA Earthdata",
+  "dataset": "anomaly-affecting-opera-dswx-s1-product",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:02.712207Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/anomaly-affecting-opera-dswx-s1-product",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/anomaly-affecting-opera-dswx-s1-product",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 136244,
+  "sha256": "726ca26520d0fffa868b3bd0425511ef6af758011338e04f13fecb25616d5ee4",
+  "etag": "\"1790745603\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:03 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-CBB3D23FEB240A\\20260930T052002.712207Z_726ca26520d0fffa.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

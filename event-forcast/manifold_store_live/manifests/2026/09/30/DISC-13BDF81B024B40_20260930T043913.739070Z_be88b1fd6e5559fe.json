@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-13BDF81B024B40",
+  "provider": "NOAA/NCEI",
+  "dataset": "NCEI%20Form%20CD-64%20-%20Certification_Deke.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:13.739070Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2023-04/NCEI%20Form%20CD-64%20-%20Certification_Deke.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2023-04/NCEI%20Form%20CD-64%20-%20Certification_Deke.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 103755,
+  "sha256": "be88b1fd6e5559fe0fde2dfc18ce854d03eed40f2559a5fb2f0a48e9787bb464",
+  "etag": null,
+  "last_modified": "Mon, 03 Apr 2023 15:12:19 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-13BDF81B024B40\\20260930T043913.739070Z_be88b1fd6e5559fe.pdf",
+  "parent_id": "DISC-55E151143C8956",
+  "discovery_depth": 2
+}

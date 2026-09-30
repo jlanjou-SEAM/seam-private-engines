@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-02618E931415F3",
+  "provider": "NASA Earthdata",
+  "dataset": "lp-daac-unplanned-data-outage-06-10-2025-resolved",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:19:59.178709Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/lp-daac-unplanned-data-outage-06-10-2025-resolved",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/lp-daac-unplanned-data-outage-06-10-2025-resolved",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 136338,
+  "sha256": "f376fbe99254e46c987222ee27bac8ac93457072d79593e3727b09a205fc04d9",
+  "etag": "\"1790745642\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:42 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-02618E931415F3\\20260930T051959.178709Z_f376fbe99254e46c.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

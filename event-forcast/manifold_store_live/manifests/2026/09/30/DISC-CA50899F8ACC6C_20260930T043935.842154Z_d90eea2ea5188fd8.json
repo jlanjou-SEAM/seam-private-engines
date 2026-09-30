@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-CA50899F8ACC6C",
+  "provider": "NOAA/NCEI",
+  "dataset": "sotc",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:35.842154Z",
+  "request_url": "https://www.ncdc.noaa.gov/sotc/",
+  "final_url": "https://www.ncei.noaa.gov/access/monitoring/monthly-report/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 508863,
+  "sha256": "d90eea2ea5188fd890b7b889c9eb74480ab20e22b89dca7cba2853a582b44ee9",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-CA50899F8ACC6C\\20260930T043935.842154Z_d90eea2ea5188fd8.html",
+  "parent_id": "DISC-75E894A6737DF7",
+  "discovery_depth": 2
+}

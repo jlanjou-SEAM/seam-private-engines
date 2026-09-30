@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-0A38CE07CD37A5",
+  "provider": "NASA Earthdata",
+  "dataset": "copernicus-sentinel-5p-unavailability-4-april-2026",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:10.051836Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/copernicus-sentinel-5p-unavailability-4-april-2026",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/copernicus-sentinel-5p-unavailability-4-april-2026",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 143229,
+  "sha256": "8c24af4755436f36f5e61869a665512d295ead084065ae8e7730f1eaddd398c1",
+  "etag": "\"1790745611\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:11 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-0A38CE07CD37A5\\20260930T052010.051836Z_8c24af4755436f36.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

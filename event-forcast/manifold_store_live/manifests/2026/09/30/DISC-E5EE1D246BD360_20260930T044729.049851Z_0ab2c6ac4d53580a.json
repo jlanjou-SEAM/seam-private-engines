@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-E5EE1D246BD360",
+  "provider": "NOAA/NCEI",
+  "dataset": "1816",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:29.049851Z",
+  "request_url": "https://www.ncei.noaa.gov/node/1816",
+  "final_url": "https://www.ncei.noaa.gov/about/our-impact/aviation",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 30089,
+  "sha256": "0ab2c6ac4d53580a73f2d995acc9057346585af7fe28aa9c625bcf6c467fc6fc",
+  "etag": "\"1790726290-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 23:58:10 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E5EE1D246BD360\\20260930T044729.049851Z_0ab2c6ac4d53580a.html",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

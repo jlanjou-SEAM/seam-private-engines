@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C1CBCC0EB5D6F5",
+  "provider": "NOAA/NDBC",
+  "dataset": "SEIM1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:02:39.769716Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/SEIM1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/SEIM1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1009654,
+  "sha256": "7a82da52c94d347d2676264554cbdd4cf09552c0f02fe49eb9c27373fa2262d7",
+  "etag": "\"f67f6-65cac2d5386fb\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-C1CBCC0EB5D6F5\\20260930T050239.769716Z_7a82da52c94d347d.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

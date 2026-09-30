@@ -1,0 +1,54 @@
+{
+    "@context": [
+        {
+            "schema": "https://schema.org/",
+            "type": "@type",
+            "features": "schema:itemListElement",
+            "FeatureCollection": "schema:itemList"
+        }
+    ],
+    "type": "FeatureCollection",
+    "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily",
+    "features": [
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items/00000008-ed00-43a9-9b23-375d44fe725b"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items/0000000c-7ef4-47e4-a577-677fe973cfb0"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items/0000001c-e90a-4e10-9417-7bd65508a418"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items/0000001d-1a87-4da7-a4c8-b4e3d751aa5f"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items/00000024-532a-4774-b226-bafdd02c1ccd"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items/00000033-1bf5-4b89-80d1-2212608f94c0"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items/00000035-a657-4ba7-8011-f2dd2c372cd0"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items/0000003c-4ffc-4da5-a6da-466fbe30e906"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items/0000003c-b805-4840-b484-99c65aa81a51"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items/00000059-e424-4d95-b25c-0a441f68131e"
+        }
+    ]
+}

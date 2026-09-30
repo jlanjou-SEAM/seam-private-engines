@@ -1,0 +1,82 @@
+<HTML>
+	<script src="https://www.weather.gov/source/nws/govshutdown.js" defer></script>
+<HEAD>
+<TITLE>Reading GRIB Files</TITLE>
+</HEAD>
+<body BGCOLOR="#FFFFFF">
+
+<font color=red>
+<H2 align=center>Reading GRIB Files</H2>
+<font color=black>
+
+<font color=red>
+<h3 align=center> What is GRIB?</h3>
+<font color=black>
+
+
+<p> 
+GRIB is a 
+WMO format for gridded data.  GRIB is used by the operational meteorological 
+centers for storage and the exchange of gridded fields.  GRIB's major 
+advantages are files are typically 1/2 to 1/3 of the size of normal 
+binary files (floats), the fields are self describing, and GRIB is an 
+open, international standard.  
+
+
+<font color=red>
+<h3 align=center>What is in this GRIB File?</h3>
+<font color=black>
+
+
+A major advantage of GRIB is that is self describing. Each record
+has information such as: resolution of the grid, time, variable, 
+level, who created the field.  There are a number of programs
+to create GRIB inventories.  My favorite is the Ginsu of grib 
+inventory programs, <a href="https://www.cpc.ncep.noaa.gov/products/wesley/wgrib.html">wgrib</a>.
+This program was written in C and works on all reasonable machines
+ranging from PCs to Crays.  Once you've installed wgrib, an
+inventory is a single command line away.  You should never have to
+ask, "What is in this file?".
+
+<font color=red>
+<h3 align=center>How do I Read GRIB?</h3>
+<font color=black>
+
+There are a number of GRIB decoders available.  My favorite
+is the Ginsu of grib decoders, <a href="https://www.cpc.ncep.noaa.gov/products/wesley/wgrib.html">wgrib</a>.
+Once you've installed wgrib, decoding grib takes a single command 
+line.  The output from wgrib can then be read by fortran, C or even 
+BASIC programs.  The GRIB format may look complicated but reading 
+GRIB is painless.  You should never have to ask, "How do I read this data?".
+
+<font color=red>
+<h3 align=center>How do I Display GRIB Files?</h3>
+<font color=black>
+
+Gempack and IDL can directly or indirectly display GRIB data.
+However, my favorite is the the Ginsu of display programs,
+<a href="links_grads.html">GrADS</a>.  Grads is powerful enough that
+some people do many of their computations using the GrADS scripting
+language.  The demonstration program on the BAMS cd-rom (March 1996)
+and the annual Reanalysis CD-ROMs shows a sample of GRADS' abilities.
+GrADS will run under MS-DOS and on many UNIX boxes.  Very powerful, 
+freely available. and highly recommended.
+
+
+<font color=red>
+<h3 align=center>Suggestions</h3>
+<font color=black>
+
+One's first impulse is to convert the GRIB file into some
+"understandable" format.  It is better remove the unwanted data
+and leave the rest in GRIB. Then you extract the data
+at the last minute.  The advantages are that it saves disk space 
+(who has enough disk space?), it is self documenting (what is 
+record 33?) and is machine
+independent.  This is similar strategy to using "compressed" files.  You 
+don't need to know the format of a compressed file except 
+that you can easily uncompress it, and you only uncompress the
+data just before use.
+
+</BODY>
+</HTML>

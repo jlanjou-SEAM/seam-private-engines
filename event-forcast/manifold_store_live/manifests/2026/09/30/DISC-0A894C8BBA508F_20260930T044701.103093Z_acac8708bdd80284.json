@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-0A894C8BBA508F",
+  "provider": "NOAA/NCEI",
+  "dataset": "ESIP%20MEETING%20JANUARY%202025%20480x480.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:01.103093Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/ESIP%20MEETING%20JANUARY%202025%20480x480.png?itok=vNKPzGya",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/ESIP%20MEETING%20JANUARY%202025%20480x480.png?itok=vNKPzGya",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 317696,
+  "sha256": "acac8708bdd80284ae9bd7c1e2ad565476fa96a784c1a32132ea6d0fe58bb871",
+  "etag": null,
+  "last_modified": "Tue, 14 Jan 2025 14:40:07 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-0A894C8BBA508F\\20260930T044701.103093Z_acac8708bdd80284.png",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

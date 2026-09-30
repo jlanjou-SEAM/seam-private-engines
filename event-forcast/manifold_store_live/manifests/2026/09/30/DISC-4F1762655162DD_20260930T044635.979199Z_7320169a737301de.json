@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-4F1762655162DD",
+  "provider": "NOAA/NCEI",
+  "dataset": "easy-ways-become-citizen-scientist",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:35.979199Z",
+  "request_url": "https://www.ncei.noaa.gov/news/easy-ways-become-citizen-scientist",
+  "final_url": "https://www.ncei.noaa.gov/news/easy-ways-become-citizen-scientist",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43293,
+  "sha256": "7320169a737301deff58ecb10d69a06ee2caaa4aa38267b5bbc6db2e370702fb",
+  "etag": "\"1790718349-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:45:49 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4F1762655162DD\\20260930T044635.979199Z_7320169a737301de.html",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-EAB66C1E869F75",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "nmesonet_temporal_frequency.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:29:42.303130Z",
+  "request_url": "https://madis.ncep.noaa.gov/nmesonet_temporal_frequency.shtml",
+  "final_url": "https://madis.ncep.noaa.gov/nmesonet_temporal_frequency.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 31716,
+  "sha256": "a7bcb291524fa58f7aeddd7ed9c303f72262d60f3e14b546d11effd9fd0a7ff1",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-EAB66C1E869F75\\20260930T042942.303130Z_a7bcb291524fa58f.shtml",
+  "parent_id": "DISC-7DFCB0F17CA89B",
+  "discovery_depth": 2
+}

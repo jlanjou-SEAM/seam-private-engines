@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-13685AF47DF797",
+  "provider": "NASA Earthdata",
+  "dataset": "modaps-maintenance-june-15-16-affects-lance-laads-daac-firms",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:15.910744Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/modaps-maintenance-june-15-16-affects-lance-laads-daac-firms",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/modaps-maintenance-june-15-16-affects-lance-laads-daac-firms",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 135999,
+  "sha256": "59afcc768736ab66c09ee2eaf1d0107d792654f5e339687b97972b639bc4d3a7",
+  "etag": "\"1790745617\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:17 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-13685AF47DF797\\20260930T052015.910744Z_59afcc768736ab66.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "CPTEC-INPE",
+  "provider": "INPE/CPTEC Brazil",
+  "dataset": "Weather and satellite data",
+  "sector": "public_research",
+  "country": "BR",
+  "scientific_regime": [
+    "weather",
+    "satellite",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T03:59:20.358953Z",
+  "request_url": "https://www.cptec.inpe.br/",
+  "final_url": "https://www.cptec.inpe.br/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 162714,
+  "sha256": "935d8e9cbee1d9e7040eef0d802735de4a22dfb8df83dfef7503aed848999c5e",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\CPTEC-INPE\\20260930T035920.358953Z_935d8e9cbee1d9e7.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

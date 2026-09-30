@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-ED009206AC846A",
+  "provider": "NOAA/NCEI",
+  "dataset": "1811",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:21.566306Z",
+  "request_url": "https://www.ncei.noaa.gov/node/1811",
+  "final_url": "https://www.ncei.noaa.gov/about/our-impact/retail-manufacturing",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 31765,
+  "sha256": "1f6ee52af9c1a4938f8d323b2025f2e3190ee55eb2f0ba4722b3fbc665927c8f",
+  "etag": "\"1790715506-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 20:58:26 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-ED009206AC846A\\20260930T044721.566306Z_1f6ee52af9c1a493.html",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

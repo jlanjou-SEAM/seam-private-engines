@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-77541A5EA9A8F1",
+  "provider": "NOAA/NDBC",
+  "dataset": "SLIM2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:28:11.367646Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/SLIM2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/SLIM2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1012474,
+  "sha256": "a5a87f8ec0ef5d7da880dfc96c2ee0e3d0fc255699e9b57b8f78ec36114fd84d",
+  "etag": "\"f72fa-65cab8c380979\"",
+  "last_modified": "Wed, 30 Sep 2026 04:15:21 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-77541A5EA9A8F1\\20260930T042811.367646Z_a5a87f8ec0ef5d7d.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

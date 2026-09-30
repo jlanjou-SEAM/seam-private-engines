@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-35328F53319FEB",
+  "provider": "GeoSphere Austria",
+  "dataset": "stationsdaten",
+  "sector": "public",
+  "country": "AT",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T05:21:50.550242Z",
+  "request_url": "https://data.hub.geosphere.at/en/group/stationsdaten?lang=en",
+  "final_url": "https://data.hub.geosphere.at/en/group/stationsdaten?lang=en",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 16425,
+  "sha256": "656af1714f7f61249191a536315439767ef8a6b009d672cd80b992b22f106ee0",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-35328F53319FEB\\20260930T052150.550242Z_656af1714f7f6124.html",
+  "parent_id": "DISC-2C52D8C036D3EB",
+  "discovery_depth": 2
+}

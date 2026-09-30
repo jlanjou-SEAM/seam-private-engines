@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-2563E34243775F",
+  "provider": "NOAA/NCEI",
+  "dataset": "bams-state-of-climate",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:09.168132Z",
+  "request_url": "https://www.ncei.noaa.gov/bams-state-of-climate",
+  "final_url": "https://www.ncei.noaa.gov/bams-state-of-climate",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 56384,
+  "sha256": "adde5fb0f270117ba3e0c95880b9a1318799a3b1750a0fc3af49f3caa3e7444b",
+  "etag": "\"1790657369-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 04:49:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-2563E34243775F\\20260929T051809.168132Z_adde5fb0f270117b.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

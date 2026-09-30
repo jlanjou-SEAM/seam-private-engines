@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-EB8692BA467FA8",
+  "provider": "NOAA/NCEP",
+  "dataset": "swmf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T05:07:54.017604Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/swmf/",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/swmf/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 2193,
+  "sha256": "327ea2b7ba71b90b5958fb4e32868267b44154a03b924fe6f7959f7df19670d5",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-EB8692BA467FA8\\20260930T050754.017604Z_327ea2b7ba71b90b.html",
+  "parent_id": "DISC-92906527F09537",
+  "discovery_depth": 2
+}

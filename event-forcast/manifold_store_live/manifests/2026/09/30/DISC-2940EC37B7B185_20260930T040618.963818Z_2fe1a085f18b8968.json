@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-2940EC37B7B185",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "qldall.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:18.963818Z",
+  "request_url": "https://www.bom.gov.au/qld/observations/qldall.shtml",
+  "final_url": "https://www.bom.gov.au/qld/observations/qldall.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 331270,
+  "sha256": "2fe1a085f18b896883d537f40b14c4d1d9a7f8e74d3060cca5ce1a67edbcdaa5",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2940EC37B7B185\\20260930T040618.963818Z_2fe1a085f18b8968.shtml",
+  "parent_id": "BOM-DATA",
+  "discovery_depth": 1
+}

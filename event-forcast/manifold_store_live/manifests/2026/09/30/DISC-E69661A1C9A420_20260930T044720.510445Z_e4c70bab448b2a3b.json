@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-E69661A1C9A420",
+  "provider": "NOAA/NCEI",
+  "dataset": "redti",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:20.510445Z",
+  "request_url": "https://www.ncei.noaa.gov/access/monitoring/redti/",
+  "final_url": "https://www.ncei.noaa.gov/access/monitoring/redti/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 10111,
+  "sha256": "e4c70bab448b2a3b6b1e3990cc92589799eaaa1c83dc7a97ecc32dcfa989ba07",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E69661A1C9A420\\20260930T044720.510445Z_e4c70bab448b2a3b.html",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-46ABEB0EF10C48",
+  "provider": "Iowa State University",
+  "dataset": "api",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:23.727392Z",
+  "request_url": "https://www.weatherbit.io/api/",
+  "final_url": "https://www.weatherbit.io/api/",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 273267,
+  "sha256": "04f9de1e582eaf443bd1aa1bb3be0248f4f70f4133d7babed429bef01a607f70",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-46ABEB0EF10C48\\20260930T040423.727392Z_04f9de1e582eaf44.html",
+  "parent_id": "IEM-API",
+  "discovery_depth": 1
+}

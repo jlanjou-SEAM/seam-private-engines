@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-C77C518A6C6EDE",
+  "provider": "NOAA/NCEI",
+  "dataset": "bridge_4.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:05.234329Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/bridge_4.png",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/bridge_4.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 371222,
+  "sha256": "e246f1c6d834cab33c56ac976d9e7a8d6aa3b930cf7d7c838b25954372c8e559",
+  "etag": null,
+  "last_modified": "Tue, 24 Feb 2026 15:28:47 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C77C518A6C6EDE\\20260930T044705.234329Z_e246f1c6d834cab3.png",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

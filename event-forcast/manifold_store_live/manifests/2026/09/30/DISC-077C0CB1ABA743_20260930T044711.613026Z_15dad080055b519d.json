@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-077C0CB1ABA743",
+  "provider": "NOAA/NCEI",
+  "dataset": "Agriculture%20mod_1.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:11.613026Z",
+  "request_url": "http://www.ncei.noaa.gov/sites/default/files/2021-08/Agriculture%20mod_1.jpg",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-08/Agriculture%20mod_1.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 534384,
+  "sha256": "15dad080055b519da29a115eec43ac2c6e0a8ae755cf0f02828ec8b685ec4592",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:33:26 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-077C0CB1ABA743\\20260930T044711.613026Z_15dad080055b519d.jpg",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

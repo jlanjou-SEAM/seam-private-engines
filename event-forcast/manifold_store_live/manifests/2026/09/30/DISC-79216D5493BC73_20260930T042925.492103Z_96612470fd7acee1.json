@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-79216D5493BC73",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "realtime",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:29:25.492103Z",
+  "request_url": "https://www.nco.ncep.noaa.gov/status/data/realtime/",
+  "final_url": "https://www.nco.ncep.noaa.gov/status/data/realtime/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 35230,
+  "sha256": "96612470fd7acee1808a19cc9d2220668d0f30bdfdf48f2b94d903be64809a24",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-79216D5493BC73\\20260930T042925.492103Z_96612470fd7acee1.html",
+  "parent_id": "DISC-187AADF5F10B84",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-60F47CFCEE35C6",
+  "provider": "NOAA/NCEI",
+  "dataset": "content",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:53:02.725870Z",
+  "request_url": "https://www.ncei.noaa.gov/search/content",
+  "final_url": "https://www.ncei.noaa.gov/search/content",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 72932,
+  "sha256": "6c7bf68f4ef5f1ecf6f9a84f9032adf65e6cfa6c7bf3a217350d5d41fb67fab7",
+  "etag": "\"1790743983-gzip\"",
+  "last_modified": "Wed, 30 Sep 2026 04:53:03 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-60F47CFCEE35C6\\20260930T045302.725870Z_6c7bf68f4ef5f1ec.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

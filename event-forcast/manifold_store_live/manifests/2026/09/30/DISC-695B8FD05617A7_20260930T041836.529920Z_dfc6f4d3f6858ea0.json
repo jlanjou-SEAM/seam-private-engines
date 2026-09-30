@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-695B8FD05617A7",
+  "provider": "NOAA/SWPC",
+  "dataset": "bqs",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:36.529920Z",
+  "request_url": "https://services.swpc.noaa.gov/products/gong/bqs/",
+  "final_url": "https://services.swpc.noaa.gov/products/gong/bqs/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 8127,
+  "sha256": "dfc6f4d3f6858ea0d0890a9a2a2b1c01b17c65203c480815afb8f16d512af2a3",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-695B8FD05617A7\\20260930T041836.529920Z_dfc6f4d3f6858ea0.html",
+  "parent_id": "DISC-BBC29E6791CFA8",
+  "discovery_depth": 2
+}

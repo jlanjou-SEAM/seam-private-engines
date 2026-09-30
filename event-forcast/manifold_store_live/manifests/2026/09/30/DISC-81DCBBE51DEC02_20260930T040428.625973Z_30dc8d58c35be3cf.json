@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-81DCBBE51DEC02",
+  "provider": "Davis Instruments",
+  "dataset": "airlink-professional-air-quality-sensor",
+  "sector": "private",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:28.625973Z",
+  "request_url": "https://www.davisinstruments.com/product/airlink-professional-air-quality-sensor/",
+  "final_url": "https://www.davisinstruments.com/products/airlink-professional-air-quality-monitor",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 631470,
+  "sha256": "30dc8d58c35be3cffc114c86a76d99f23c9e1bd472aca00ea4588f2f016fd333",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-81DCBBE51DEC02\\20260930T040428.625973Z_30dc8d58c35be3cf.html",
+  "parent_id": "WEATHERLINK",
+  "discovery_depth": 1
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-155D055A118EE9",
+  "provider": "NOAA/NCEP",
+  "dataset": "WK34temp.gif",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:39.791843Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/predictions/WK34/gifs/WK34temp.gif",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/predictions/WK34/gifs/WK34temp.gif",
+  "status_code": 200,
+  "content_type": "image/gif",
+  "byte_length": 257093,
+  "sha256": "b095fba5f2881e6dac92b75c0e432afd90aea194a392b61deca3475c8961265f",
+  "etag": null,
+  "last_modified": "Fri, 25 Sep 2026 19:01:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-155D055A118EE9\\20260930T041939.791843Z_b095fba5f2881e6d.gif",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

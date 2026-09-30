@@ -1,0 +1,1450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Harmful Algal Blooms Observing System</title>
+        <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/3.21/dijit/themes/soria/soria.css">
+        <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/3.21/esri/dijit/css/Popup.css"/>
+        <link rel="stylesheet" type="text/css"
+              href="https://js.arcgis.com/3.21/dojox/layout/resources/ExpandoPane.css"/>
+        <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/3.21/esri/css/esri.css"/>
+        <link rel="stylesheet" type="text/css"
+              href="https://js.arcgis.com/3.21/dojox/layout/resources/FloatingPane.css"/>
+        <link rel="stylesheet" type="text/css"
+              href="https://js.arcgis.com/3.21/dojox/layout/resources/ResizeHandle.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/mapStyle.css"/>
+        <!--<style type="text/css">-->
+        <style>
+            /*@import "https://js.arcgis.com/3.11/dijit/themes/soria/soria.css";*/
+
+            /*ARN added for NCEI header buttons*/
+            .soria .dijitToolbar .dijitButtonNode
+            {
+                background-color:white;
+                color:black;
+                border: 1px solid #316AC5;
+            }
+            .soria .dijitToolbar .dijitToggleButtonChecked .dijitButtonNode
+            {
+                background-color:#C1D2EE;
+                color:black;
+                border: 1px solid #316AC5;
+            }
+            /*ARN end added for NCEI header buttons*/
+
+            .zoominIcon
+            { background-image: url(images/nav_zoomin.png); width: 16px; height: 16px; }
+
+            .zoomoutIcon
+            { background-image: url(images/nav_zoomout.png); width: 16px; height: 16px; }
+
+            .zoomfullextIcon
+            { background-image: url(images/nav_fullextent.png); width: 16px; height: 16px; }
+
+            .zoomprevIcon
+            { background-image: url(images/nav_previous.png); width: 16px; height: 16px; }
+
+            .zoomnextIcon
+            { background-image: url(images/nav_next.png); width: 16px; height: 16px; }
+
+            .panIcon
+            { background-image: url(images/nav_pan.png); width: 16px; height: 16px; }
+
+            .deactivateIcon
+            { background-image: url(images/nav_decline.png); width: 16px; height: 16px; }
+
+            .downloadIcon
+            { background-image: url(images/download16.png); width: 16px; height: 16px; }
+
+            .metadataIcon
+            { background-image: url(images/metadata16.png); width: 16px; height: 16px; }
+
+            .documentIcon
+            { background-image: url(images/document16.png); width: 16px; height: 16px; }
+
+            .homeIcon
+            { background-image: url(images/home16.png); width: 16px; height: 16px; }
+
+            .navToolbar
+            { background: #000; }
+
+            .soria .dijitToolbar
+            {
+                border-bottom:       none;
+                background-color:    transparent;
+                background-image:    none;
+                background-position: 0px 0px;
+                background-repeat:   repeat-x;
+                padding:             2px 0px 2px 4px;
+                margin:              5px;
+                zoom:                1;
+            }
+
+            .soria .dijitReset
+            {
+                color:       black;
+                font-family: Arial, Verdana, Helvetica, sans-serif;
+                font-size:   12px;
+                font-weight: normal;
+            }
+
+            .soria .dijitSelect *
+            {
+                font-size: 12px;
+            }
+
+            .soria .dijitSelectSelectedOption *
+            {
+                font-weight: bold;
+            }
+
+            .soria .dijitTabChecked
+            {
+                cursor:      default;
+                font-weight: bold;
+            }
+
+            #titlePane
+            {
+                width: 300px;
+            }
+
+            .soria .dijitTitlePaneTitle
+            {
+                background:  url('images/tabContainerSprite.gif') repeat-x scroll 0px -50px transparent;
+                font-weight: 600;
+                border:      solid 1px #000000;
+            }
+
+            .soria .dijitTitlePaneTitleHover
+            {
+                background: 'images/tabContainerSprite.gif') no-repeat scroll 0 px - 300 px transparent;
+            }
+
+            .soria .dijitTitlePaneTitleActive
+            {
+                background: 'images/tabContainerSprite.gif') no-repeat scroll 0 px - 300 px transparent;
+            }
+
+            .soria .dijitTitlePaneContentOuter
+            {
+                border-right:  solid 1px #000000 !important;
+                border-bottom: solid 1px #000000 !important;
+                border-left:   solid 1px #000000 !important;
+            }
+
+            .details
+            {
+                font-size: 8pt;
+            }
+
+            #preloader
+            {
+                position:   absolute;
+                top:        0;
+                left:       0;
+                width:      100%;
+                height:     100%;
+                margin:     0;
+                padding:    0;
+                background: #aaa;
+                z-index:    999;
+            }
+
+            #preloaderContent
+            {
+                position:           absolute;
+                border:             2px solid #fff;
+                color:              #fff;
+                padding:            25px;
+                -moz-border-radius: 15px;
+                border-radius:      15px;
+            }
+
+            .oceanBasemapIcon
+            { background-image: url(images/basemap_thumbnails/oceans_5_0_gulf.jpg); width: 150px; height: 99px; }
+
+            .imageryBasemapIcon
+            { background-image: url(images/basemap_thumbnails/satellite_imagery.jpg); width: 150px; height: 99px; }
+
+            .natgeoBasemapIcon
+            { background-image: url(images/basemap_thumbnails/natgeo.jpg); width: 150px; height: 99px; }
+
+            .topoBasemapIcon
+            { background-image: url(images/basemap_thumbnails/topo_map_2.jpg); width: 150px; height: 99px; }
+        </style>
+
+        <!--
+            <script type="text/javascript">
+              !document.firstChild.children && (document.firstChild.children = true);
+              var dojoConfig = {
+                parseOnLoad: true
+              };
+            </script>
+         -->
+        <script src="https://js.arcgis.com/3.21/"></script>
+        <script type="text/javascript" src="../config/habsos.js"></script>
+        <script type="text/javascript" src="javascripts/mapFunctions.js"></script>
+        <script type="text/javascript" src="javascripts/setupDates.js"></script>
+       
+
+        <script type="text/javascript">
+
+            var loading;
+            var map;
+            var basemap,basemap_label,baseMapChanged;
+            var navToolbar;
+            var mapOnClick_identifyQueryResults;
+            var idParams;
+			var idTask1, idTask2, idTask3, idTask4, idTask5, idTask6, idTask7;
+            var sampleDate = -99;
+            var tsDiv, timeSlider;
+            var tsLabelDiv, timeSliderLabels;
+            var calcDistanceListener, startGraphic, endGraphic, units;
+            var totalDistance = 0;
+            var inputPoints = [];
+            var startExtent;
+            var ua = navigator.userAgent;
+            var usingIE = false;
+            var updatingMap = false;
+            var pFloatingPane;
+      		var precipIndex;
+            var newVectorLayer;
+
+             require([
+                "dojo/parser",
+                "dijit/dijit",
+                "dijit/Dialog",
+                "dijit/layout/AccordionContainer",
+                "dijit/layout/BorderContainer",
+                "dijit/layout/ContentPane",
+                "dijit/layout/TabContainer",
+                "dijit/form/Button",
+                "dijit/form/CheckBox",
+                "dijit/form/DateTextBox",
+                "dijit/form/FilteringSelect",
+                "dijit/form/Form",
+                "dijit/form/Select",
+                "dijit/form/Slider",
+                "dijit/TitlePane",
+                "dijit/Toolbar",
+                "dojo/data/ItemFileReadStore",
+                "dojo/DeferredList",
+                "dojox/layout/ExpandoPane",
+                "dojox/layout/FloatingPane",
+                "dojo/fx/easing",
+                "esri/map",                
+                "esri/arcgis/utils",
+                "esri/dijit/Popup",
+                "esri/dijit/Scalebar",
+                "esri/layers/FeatureLayer",
+                "esri/layers/KMLLayer",
+                "esri/layers/MapImageLayer",
+                "esri/tasks/geometry",
+                "esri/tasks/query",
+                "esri/tasks/IdentifyTask",
+                "esri/tasks/IdentifyParameters",
+                "esri/toolbars/navigation",
+                "esri/request",
+                "esri/config",
+                "esri/layers/ArcGISDynamicMapServiceLayer",
+                "esri/layers/VectorTileLayer",
+                "esri/TimeExtent",
+                "dojo/domReady!",
+                "esri/layers/WMSLayer",
+                "esri/layers/WMSLayerInfo",
+                "esri/geometry/Extent",
+                "dojo/_base/array",
+                "dojo/dom",
+                "dojo/dom-construct",
+                "esri/dijit/BasemapLayer"
+], function(parser,dijit,dialog,AccordionContainer,BorderContainer,ContentPane,TabContainer,Button,CheckBox,DateTextBox,FilteringSelect,Form,Select,Slider,TitlePane,Toolbar,ItemFileReadStore,DeferredList,ExpandoPane,FloatingPane,easing,Map,arcgisUtils,Popup,Scalebar,FeatureLayer,KMLLayer,MapImageLayer,geometry,query,IdentifyTask,IdentifyParameters,navigation,esriRequest,esriConfig,ArcGISDynamicMapServiceLayer,VectorTileLayer,TimeExtent,WMSLayer,WMSLayerInfo,Extent,array,dom,domConstruct,BasemapLayer) {
+    
+                newVectorLayer = VectorTileLayer;
+
+                // overlay content until dojo has been parsed ... then display page
+                showPreloader();
+                dojo.parser.parse();
+                hidePreloader();
+                
+
+                // determine browser
+                if (ua.indexOf("MSIE") != -1)  usingIE = true;
+
+                loading = dojo.byId("loadingImg");
+
+                // actually looking at half year of data
+                var thirty_days_ago = new Date((new Date()).getTime() - 30 * 24 * 60 * 60 * 1000);
+                mth = thirty_days_ago.getMonth() + 1;
+                day = thirty_days_ago.getDate();
+                year = thirty_days_ago.getFullYear();
+                dojo.byId("fromDate").value = year + "-" + ((mth < 10) ? "0" : "") + mth + "-" + ((day < 10) ? "0" : "") + day;
+                var today = new Date();
+                mth = today.getMonth() + 1;
+                day = today.getDate();
+                year = today.getFullYear();
+                dojo.byId("toDate").value = year + "-" + ((mth < 10) ? "0" : "") + mth + "-" + ((day < 10) ? "0" : "") + day;
+                calculateFormDates();
+
+                var popup = new esri.dijit.Popup({
+                                                     fillSymbol: new esri.symbol.SimpleFillSymbol(esri.symbol.SimpleFillSymbol.STYLE_SOLID, new esri.symbol.SimpleLineSymbol(esri.symbol.SimpleLineSymbol.STYLE_SOLID, new dojo.Color([255, 0, 0]), 2), new dojo.Color([255, 255, 0, 0.25]))
+                                                 }, dojo.create("div"));
+                                                 
+        		esri.config.defaults.io.corsEnabledServers.push("nowcoast.noaa.gov");
+                
+
+                // create map
+        		//startExtent = new esri.geometry.Extent(-12076098,1092402,-7692893,4449294, new esri.SpatialReference({wkid:3857}));
+        		startExtent = new esri.geometry.Extent(-11202683,2155424,-8651839,3803505, new esri.SpatialReference({wkid:3857}));
+                map = new esri.Map("map", {
+                    logo:             true,
+                    slider:           false,
+                    extent:           startExtent,
+                    wrapAround180:    true,
+                    infoWindow:       popup,
+                    attributionWidth: 0.20,
+                    showAttribution:  true
+                });
+
+                dojo.addClass(map.infoWindow.domNode, "myTheme");
+
+                dojo.connect(map, "onMouseMove", showCoordinates);
+                dojo.connect(map, "onMouseDrag", showCoordinates);
+                dojo.connect(map, "onUpdateStart", UpdateStart);
+                dojo.connect(map, "onUpdateEnd", UpdateEnd);
+
+                dojo.connect(map, 'onLoad', function (mapLayout)
+                {                    
+                    var scalebar = new esri.dijit.Scalebar({
+                                                               map:          map,
+                                                               scalebarUnit: 'english'
+                                                           });
+                    tsDiv = dojo.create("div", null, dojo.byId('timeSliderDiv'));
+                    tsLabelDiv = dojo.create("div", null, dojo.byId('timeSliderLabelsDiv'));
+                    
+                    // set up identify task                    
+                    initIdentifies();                    
+                    initSearch();
+                    //resize the map when the browser resizes
+                    dojo.connect(dijit.byId('map'), 'resize', map, map.resize);
+                });
+
+                // add popup floating pane
+                var dock = new dojox.layout.Dock({
+                                                     id:    'dock',
+                                                     style: 'position:absolute; bottom:0; right:0; height:500px; width:0px; display:none; z-index:0;'
+                                                 }, dojo.create('div', null, dojo.body()));
+                //find size of the map so to get the best possible initial size for the user
+                var popX = map.width;
+                var popY = map.height - 30;
+                pFloatingPane = new dojox.layout.FloatingPane({
+                                                                  title:     "Download Menu",
+                                                                  resizable: true, //allow resizing
+                                                                  closable:  false, //we never want to close a floating pane - this method destroys the dijit
+                                                                  dockable:  true, // yes we want to dock it
+                                                                  dockTo:    dock,
+                                                                  style:     'position:absolute;top:100px;right:10px;width:275px;height:325px;visibility:hidden;overflow:hidden;z-index:999 !important',
+                                                                  id:        "pFloatingPane"
+                                                              }, dojo.create('div', null, dojo.body()));
+                dojo.connect(pFloatingPane, 'onFocus', function ()
+                {
+                    dijit.byId('pFloatingPane').bringToTop()
+                });
+                //do the same for onShow
+                dojo.connect(pFloatingPane, 'onShow', function ()
+                {
+                    dijit.byId('pFloatingPane').bringToTop()
+                });
+                pFloatingPane.startup();
+
+                // define the basemap layer          
+                basemap = new esri.layers.ArcGISTiledMapServiceLayer("https://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer");
+                basemap_label = new newVectorLayer("https://www.arcgis.com/sharing/rest/content/items/6061e78281f94bb6a671d11253d41f6e/resources/styles/root.json?f=pjson")
+                basemap.id = "Basemap";
+                basemap_label.id = "Basemap Label";  
+                map.addLayer(basemap);
+                map.addLayer(basemap_label);
+                
+                baseMapChanged = false;			
+
+                // set up navigation toolbar
+                navToolbar = new esri.toolbars.Navigation(map);
+                //dojo.connect(navToolbar, "onExtentHistoryChange", extentHistoryChangeHandler);
+
+});      // init/onload function
+
+
+            var hidePreloader = function ()
+            {
+                // This really hides the preloader
+                var hide = function ()
+                {
+                    dojo.fadeOut({
+                                     node:     "preloader",
+                                     duration: 700,
+                                     onEnd:    function ()
+                                     {
+                                         dojo.style("preloader", "display", "none");
+                                     }
+                                 }).play();
+                };
+                // Set a timeout to ensure the preloader is visible.
+                // This is only for testing !!!
+                setTimeout(hide, 5000);
+            };
+
+            function showPreloader()
+            {
+                // Show the preloader centered in the viewport
+                var ps = dojo.position('preloaderContent');
+                var ws = dojo.window.getBox();
+                dojo.style("preloaderContent", "top", (ws.h / 2 - ps.h / 2) + "px");
+                dojo.style("preloaderContent", "left", (ws.w / 2 - ps.w / 2) + "px");
+                dojo.style("preloaderContent", "visibility", "visible");
+            };
+        </script>
+
+    </head>
+    <body class="soria">
+        <div id="preloader">
+            <div id="preloaderContent" style="visibility: hidden;">
+                <strong>Loading HABSOS Mapping Application</strong>
+
+                <p/>
+                <center><img src="images/ajax-loader.gif"></center>
+            </div>
+        </div>
+        <div id="mainWindow" dojotype="dijit.layout.BorderContainer" design="headline" gutters="false"
+             style="width:100%; height:100%;">
+            <div id="header" dojotype="dijit.layout.ContentPane" region="top" style=height:92px;">
+                <!--<img src="images/habsos-small-banner.jpg">-->
+                <!--ARN update header to ncei type-->
+
+                <!-- GWR ncei header -->
+                <div id="nceiheader" style="width:100%; background-color:#112E51">
+                    <a href="https://www.ncei.noaa.gov/" title="National Centers for Environmental Information, National Oceanic and Atmospheric Administration">
+                        <img src="images/map-banner.png" alt="National Centers for Environmental Information, National Oceanic and Atmospheric Administration" height="50px" style="vertical-align:middle; padding:3px 5px; margin-right:100px";></a>
+                    <!--<a href="https://deepseacoraldata.noaa.gov/" title="Deep Sea Coral Data"><span style="font-size:20px">Deepwater Horizon Respncse Data Atlas</span></a>-->
+                    <div style="display:inline-block">
+                        <span style="font-size:20px">Harmful Algal BloomS Observing System</span>
+                    </div>
+
+                    <!--JC drop down changes-->
+                    <div data-dojo-type="dijit.form.DropDownButton" data-dojo-props="style:'float:right; color:black; padding-top: 15px; padding-right: 15px;'">
+                        <span>Go to...</span>
+
+                        <div data-dojo-type="dijit.layout.ContentPane" style="background-color:white; border: 1px solid black; margin:0px;">
+                            <ul class="" style="list-style-type: none; margin:5px; padding: 0px;">
+                                <li class="nav-item" style="padding-top:0;">
+                                    <a href="https://www.ncei.noaa.gov" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.ncei.noaa.gov/about" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.ncei.noaa.gov/products" class="nav-link">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.ncei.noaa.gov/news" class="nav-link">News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.ncei.noaa.gov/services" class="nav-link">Services</a>
+                                </li>
+                                <li class="nav-item" style="padding-bottom: 0">
+                                    <a href="https://www.ncei.noaa.gov/contact" class="nav-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!--end JC drop down-->
+                <!--end ncei header changes-->
+
+                <!--transition banner while services are unavailable-->
+                <!--<div class="soria" id="warning" style="color:red; background-color:white; font-size:14px">
+                        Notice:  
+                </div>-->
+
+
+
+                <div id="navToolbar" dojoType="dijit.Toolbar">
+                    <div id="webmap-toolbar-left">
+                        <span style="height: 20px; border-right: 1px solid rgb(99, 108, 108); margin-top: 2px; margin-right: 2px;"></span>
+
+                        <div dojoType="dijit.form.ToggleButton" id="zoomin" title="Draw a box to zoom in."
+                             iconClass="zoominIcon" onClick="zoomInHandler();">Zoom In
+                        </div>
+                        <div dojoType="dijit.form.ToggleButton" id="zoomout" title="Draw a box to zoom out."
+                             iconClass="zoomoutIcon" onClick="zoomOutHandler();">Zoom Out
+                        </div>
+                        <div dojoType="dijit.form.Button" id="zoomfullext" title="Zoom to original map extent."
+                             iconClass="zoomfullextIcon" onClick="zoomToStartExtentHandler();">Full Extent
+                        </div>
+                        <div dojoType="dijit.form.Button" id="zoomprev" type="button" title="Step back through previous map changes."
+                             iconClass="zoomprevIcon" onClick="prevExtentHandler();">Prev Extent
+                        </div>
+                        <div dojoType="dijit.form.Button" id="zoomnext" type="button" title="Step forward through map changes."
+                             iconClass="zoomnextIcon" onClick="nextExtentHandler();">Next Extent
+                        </div>
+                        <div dojoType="dijit.form.ToggleButton" id="pan" title="Click and drag map." iconClass="panIcon"
+                             checked="true" onClick="panHandler();">Pan
+                        </div>
+                        <div dojoType="dijit.form.Button" id="deactivate" title="Exit Zoom mode, return to Pan mode."
+                             iconClass="deactivateIcon" onClick="stopZoomHandler()">Stop Zoom
+                        </div>
+                        <!--<span style="height: 20px; border-right: 1px solid rgb(99, 108, 108); margin-top: 2px; margin-right: 2px;"></span>-->
+                        <!--
+                                  <div dojoType="dijit.form.Button" id="download" iconClass="downloadIcon" onClick="dataDownloadPage()">Data Download</div>
+                                  <div dojoType="dijit.form.Button" id="download" iconClass="downloadIcon" onClick="dataDownloadConstructionPage()">Data Download</div>
+                         -->
+                        <div dojoType="dijit.form.Button" id="metadata" iconClass="metadataIcon"
+                             onClick="metadataPage()" style="background-color:aliceblue">Metadata
+                        </div>
+                        <div dojoType="dijit.form.Button" id="document" iconClass="documentIcon"
+                             onClick="documentPage()" style="background-color:aliceblue">Map Information
+                        </div>
+                        <!--<span style="height: 20px; border-right: 1px solid rgb(99, 108, 108); margin-top: 2px; margin-right: 2px;"></span>-->
+                        <!--<span style="height: 20px; border-right: 1px solid rgb(99, 108, 108); margin-top: 2px; margin-right: 2px;"></span>-->
+
+                        <div dojoType="dijit.form.Button" id="home" iconClass="homeIcon" onClick="gotoMainPage()" style="background-color:aliceblue">HABSOS
+                            Main Page
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div dojoType="dojox.layout.ExpandoPane" duration="1000" title="Hide/Collapse" region="left"
+                 maxWidth="325px;" easeIn="dojo.fx.easing.linear" easeOut="dojo.fx.easing.linear" style="width:325px;">
+                <div dojotype="dijit.layout.ContentPane" region="left" id="leftPane">
+                    <div dojoType="dijit.layout.TabContainer">
+                        <div dojoType="dijit.layout.ContentPane" title="Search" selected="true">
+                            <div id="searchDiv">
+                                <div dojoType="dijit.form.Form" id="habsosForm" encType="multipart/form-data" action=""
+                                     method="">
+                                    
+                                    <b>Select Harmful Algae Species:</b><br/>
+                                    &nbsp;&nbsp;<select style="width: 250px;" name="sel_species" id="sel_species"
+                                                        align="center" dojoType="dijit.form.Select" onChange="mainSearch=true; searchHABSOSDatabase();">>
+                                    <!--
+                                                <option value="Alexandrium monilatum">Alexandrium monilatum</option>
+                                                <option value="Aureoumbra lagunensis">Aureoumbra lagunensis</option>
+                                                <option value="Coolia spp.">Coolia spp.</option>
+                                                <option value="Dinophysis spp.">Dinophysis spp.</option>
+                                                <option value="Gambierdiscus spp.">Gambierdiscus spp.</option>
+                                     -->
+									<option value="Nobrevis" >None</option>
+                                    <option value="Karenia brevis" selected="selected">Karenia brevis</option>
+                                    <!--<option value="Karenia mikimotoi">Karenia mikimotoi</option>
+                                               <!-- <option value="Karenia selliformis">Karenia selliformis</option>
+                                                <option value="Karlodinium veneficum">Karlodinium veneficum </option>
+                                                <option value="Ostreopsis spp.">Ostreopsis spp.</option>
+                                                <option value="Prorocentrum spp.">Prorocentrum spp.</option>
+                                                <option value="Prymnesium parvum">Prymnesium parvum</option>
+                                                <option value="Pseudo-nitzschia spp.">Pseudo-nitzschia spp.</option>
+                                                <option value="Pyrodinium bahamense">Pyrodinium bahamense</option>
+                                                <option value="Takayama pulchella">Takayama pulchella</option>
+                                     -->
+                                </select>
+									
+                                    <p>
+                                        <b>Select Date Range:</b><br/>
+                                    <table colspan="2">
+                                        <tr>
+                                            <td align="left" width="50"><label for="fromDate"><font face="tahoma"><font
+                                                    size="2">From:</font></label></td>
+                                            <td><input id="fromDate" type="text" size="25" name="fromDate" value=""
+                                                       dojoType="dijit.form.DateTextBox"
+                                                       constraints="{datePattern: 'yyyy-MM-dd', strict:true}"
+                                                       onChange="dijit.byId('toDate').constraints.min = arguments[0];"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" width="50"><label for="toDate"><font face="tahoma"><font
+                                                    size="2">To:</font></label></td>
+                                            <td><input id="toDate" type="text" size="25" name="toDate" value=""
+                                                       dojoType="dijit.form.DateTextBox"
+                                                       constraints="{datePattern: 'yyyy-MM-dd', strict:true}"
+                                                       onChange="dijit.byId('fromDate').constraints.max = arguments[0];"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p/>
+									<p>
+                                    <b>Select Predefined Condition:</b><br/>
+                                    &nbsp;&nbsp;<select style="width: 250px;" name="sel_condition" id="sel_condition"
+                                                        align="center" dojoType="dijit.form.Select">
+                                    <option value="0">None</option>
+                                    <option value="1">Possible Closures (>5,000)</option>
+                                    <option value="2">Possible Remote Sensing Detection (>50,000)</option>
+                                    <option value="3">Possible Fish Kills (>100,000)</option>
+                                </select>
+                                    <p/>
+									<p>
+                                    <center>
+                                        <button dojoType="dijit.form.Button" type="button" name="habsosSearch"
+                                                onClick="mainSearch=true; searchHABSOSDatabase();"><b>Search
+                                            Database</b></button>
+                                    </center>
+                                    <p/>
+									<p>
+                                    <center><input id="CC_PresentOnly" name="CC_PresentOnly"
+                                                   dojoType="dijit.form.CheckBox" value="true"
+                                                   onClick="mainSearch=true; searchHABSOSDatabase();">&nbsp;&nbsp;Exclude
+                                        "Not Observed" Reports &nbsp;&nbsp;(<b>X</b>)
+                                    </center>
+                                    <p/>
+									<p>
+                                    <center>Click on any of the displayed analysis points to get additional
+                                        information.
+                                    </center>
+                                    <br/>
+                                    <b>Classification of Report Values:</b>
+                                    <table colspan=3 class="smallText">
+                                        <tr>
+                                            <td width="10"></td>
+                                            <td><img src="images/kb_NotObserved.png" height="10" width="10"></td>
+                                            <td>Not Observed</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10"></td>
+                                            <td><img src="images/kb_VeryLow.png" height="10" width="10"></td>
+                                            <td>Very Low (1 - 10,000 cells/L)</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10"></td>
+                                            <td><img src="images/kb_Low.png" height="12" width="12"></td>
+                                            <td>Low (10,000 - 100,000 cells/L)</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10"></td>
+                                            <td><img src="images/kb_Medium.png" height="14" width="14"></td>
+                                            <td>Medium (100,000 - 1,000,000 cells/L)</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="10"></td>
+                                            <td><img src="images/kb_High.png" height="16" width="16"></td>
+                                            <td>High (1,000,000+ cells/L)</td>
+                                        </tr>
+                                    </table>
+									<hr width="90%">
+									<br/>
+									<p/>
+									<p>
+								<b>Select Cyanobacteria Type:</b><br/>
+                                    &nbsp;&nbsp;<select style="width: 250px;" name="cyano_species" id="cyano_species"
+                                                        align="center" dojoType="dijit.form.Select" onChange="UpdateMap()">>
+									<option value="none" selected="selected">None</option>
+                                    <option value="cyano">All Cyanobacteria (2019 only)</option>
+                                    <option value="cyanoMicro">Microcystin (2019 only)</option>
+									<option value="cyanoPhyco">Phycocyanin (2019 only)</option>
+                                </select>
+								<p/>
+								<p>
+									<center><img src="images/legends/Cyano.png"></center>
+                       
+                                <p/>
+                                </div>
+                            </div>
+                        </div>
+                        <div dojoType="dijit.layout.ContentPane" title="Add Layers">
+                            <div id="accordionLayers" dojoType="dijit.layout.AccordionContainer">
+                                <div class="element" title="Foundation Layers" dojoType="dijit.layout.ContentPane">
+                                    <div align="right">
+                                        <button dojoType="dijit.form.Button" type="button" name="updateMap"
+                                                onClick="UpdateMap(); "><b>Update Map</b></button>
+                                    </div>
+                                    <table colspan=3 class="smallText">
+                                        <!--
+                                                        <tr><td width="5"></td><td><input id="buoys" name="buoys" dojoType="dijit.form.CheckBox" value="true"></td><td title="Buoys across the Gulf that take ocean and air measurement">Buoys - NDBC&nbsp;&nbsp;&nbsp;<img src="images/information_frame.png" title="Click on buoys to get more information"></td></tr>
+                                                        <tr><td width="5"></td><td></td><td align="center" style="font-family: arial; font-size: 10px;"><div id="msgBuoys"></div></td></tr>
+                                                        <tr><td width="5"></td><td><input id="metar" name="metar" dojoType="dijit.form.CheckBox" value="true"></td><td title="The national network of U.S. METAR Stations">Weather Stations - METAR&nbsp;&nbsp;&nbsp;<img src="images/information_frame.png" title="Click on stations to get more information"</td></tr>
+                                                        <tr><td width="5"></td><td></td><td align="center" style="font-family: arial; font-size: 10px;"><div id="msgMETAR"></div></td></tr>
+                                          -->
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="usgsGauges" name="usgsGauges" dojoType="dijit.form.CheckBox"
+                                                       value="true"></td>
+                                            <td title="Discharge of United States rivers">U.S. River Streamflow - USGS&nbsp;&nbsp;&nbsp;<img
+                                                    src="images/information_frame.png"
+                                                    title="Click on gauges to get more information"</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgGauges"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="bathymetry" name="bathymetry" dojoType="dijit.form.CheckBox"
+                                                       value="true"></td>
+                                            <td title="Contour lines showing depth of seafloor">Bathymetry - NGDC</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgBathy"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="estuarine_reserves" name="estuarine_reserves"
+                                                       dojoType="dijit.form.CheckBox" value="true"></td>
+                                            <td>Estuarine Reserves</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgNERRS"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="marine_sanctuaries" name="marine_sanctuaries"
+                                                       dojoType="dijit.form.CheckBox" value="true"></td>
+                                            <td>Marine Sanctuaries</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgNMSP"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="shellfish_areas" name="shellfish_areas"
+                                                       dojoType="dijit.form.CheckBox" value="true"></td>
+                                            <td>Eastern Oyster Beds</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgOysters"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="graticule" name="graticule" dojoType="dijit.form.CheckBox"
+                                                       value="true"></td>
+                                            <td>Latitude-Longitude Graticule</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgGrid"></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="element" title="Remotely Sensed Imagery"
+                                     dojoType="dijit.layout.ContentPane">
+                                    <div align="right">
+                                        <button dojoType="dijit.form.Button" type="button" name="updateMap"
+                                                onClick="UpdateMap(); "><b>Update Map</b></button>
+                                    </div>
+                                    <p/>
+                                    NOAA CoastWatch
+                                    <table colspan=3 class="smallText">
+                                        <tr title="CURRENTLY UNAVAILABLE">
+                                            <td width="5"></td>
+                                            <td><input id="chlorophyll_thredds" name="chlorophyll_thredds" disabled = "true"
+                                                       dojoType="dijit.form.CheckBox" value="true"></td>
+                                            <td title="MODIS imagery - CoastWatch">Chlorophyll 3-day Composite<br/>
+                                                <select style="width:200px;" name="chl_thredds_timeframe" disabled = "true"
+                                                        id="chl_thredds_timeframe" dojoType="dijit.form.FilteringSelect"
+                                                        autoComplete="true" forceValidOption="false" maxHeight="200">
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgChlorophyll"></div>
+                                            </td>
+                                        </tr>
+                                        <tr title="CURRENTLY UNAVAILABLE">
+                                            <td width="5"></td>
+                                            <td><input id="chlorophyll_anomaly" name="chlorophyll_anomaly" disabled = "true"
+                                                       dojoType="dijit.form.CheckBox" value="true"></td>
+                                            <td title="MODIS imagery - CoastWatch">Chlorophyll Anomaly<br/>
+                                                <select style="width:200px;" name="chl_anomaly_timeframe" disabled = "true"
+                                                        id="chl_anomaly_timeframe" dojoType="dijit.form.FilteringSelect"
+                                                        autoComplete="true" forceValidOption="false" maxHeight="200">
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgChlorophyllAnomaly"></div>
+                                            </td>
+                                        </tr>
+                                        <!--
+                                                        <tr><td width="5"></td><td><input id="sst_anomaly" name="sst_anomaly" dojoType="dijit.form.CheckBox" value="true"></td><td title="MODIS imagery - CoastWatch">Sea Surface Temperature (Anomaly)<br/>
+                                                          <select style="width:200px;" name="sst_anomaly_timeframe" id="sst_anomaly_timeframe" dojoType="dijit.form.FilteringSelect" autoComplete="true" forceValidOption="false" maxHeight="200">
+                                                          </select>
+                                                        </td></tr>
+                                         -->
+                                    </table>
+                                    <p/>
+                                    USF Marine Remote Sensing Group
+                                    <table colspan=3 class="smallText">
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="chl_climo_usf" name="chl_climo_usf"
+                                                       dojoType="dijit.form.CheckBox" value="true"></td>
+                                            <td title="MODIS Imagery - USF">Chlorophyll - Monthly Climatology<br/>
+                                                <select style="width: 100px;" name="chl_climo_usf_month"
+                                                        id="chl_climo_usf_month" dojoType="dijit.form.Select">
+                                                    <option value="1" selected>January</option>
+                                                    <option value="2">February</option>
+                                                    <option value="3">March</option>
+                                                    <option value="4">April</option>
+                                                    <option value="5">May</option>
+                                                    <option value="6">June</option>
+                                                    <option value="7">July</option>
+                                                    <option value="8">August</option>
+                                                    <option value="9">September</option>
+                                                    <option value="10">October</option>
+                                                    <option value="11">November</option>
+                                                    <option value="12">December</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgUSF_Chlorophyll"></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p/>
+                                    USF Optical Oceanography Laboratory
+                                    <table colspan=3 class="smallText">
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="ergb_usf" name="ergb_usf" dojoType="dijit.form.CheckBox"
+                                                       value="true"></td>
+                                            <td title="MODIS imagery - USF">Enhanced True Color (RGB)<br/>
+                                                <select style="width:200px;" name="ergb_usf_timeframe"
+                                                        id="ergb_usf_timeframe" dojoType="dijit.form.FilteringSelect"
+                                                        autoComplete="true" forceValidOption="false" maxHeight="200">
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgUSF_ergb"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="nflh_usf" name="nflh_usf" dojoType="dijit.form.CheckBox"
+                                                       value="true"></td>
+                                            <td title="MODIS imagery - USF">Normalized Fluorescence Line Height<br/>
+                                                <select style="width:200px;" name="nflh_usf_timeframe"
+                                                        id="nflh_usf_timeframe" dojoType="dijit.form.FilteringSelect"
+                                                        autoComplete="true" forceValidOption="false" maxHeight="200">
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgUSF_nflh"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="sst_usf" name="sst_usf" dojoType="dijit.form.CheckBox"
+                                                       value="true"></td>
+                                            <td title="MODIS imagery - USF">Sea Surface Temperature<br/>
+                                                <select style="width:200px;" name="sst_usf_timeframe"
+                                                        id="sst_usf_timeframe" dojoType="dijit.form.FilteringSelect"
+                                                        autoComplete="true" forceValidOption="false" maxHeight="200">
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgUSF_sst"></div>
+                                            </td>
+                                        </tr>
+										<tr>
+                                            <td width="5"></td>
+                                            <td><input id="sargassum" name="sargassum" dojoType="dijit.form.CheckBox"
+                                                       value="true"></td>
+                                            <td title="Sargassum Density 7-Day">Sargassum Density<br/>
+                                                <select style="width:200px;" name="sarg_timeframe"
+                                                        id="sarg_timeframe" dojoType="dijit.form.FilteringSelect"
+                                                        autoComplete="true" forceValidOption="false" maxHeight="200">
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgSargassum"></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br/>
+                                </div>
+                                <div class="element" title="Oceanography" dojoType="dijit.layout.ContentPane">
+                                    <div align="right">
+                                        <button dojoType="dijit.form.Button" type="button" name="updateMap"
+                                                onClick="UpdateMap(); "><b>Update Map</b></button>
+                                    </div>
+                                    <table colspan=3 class="smallText">
+										<tr>
+                                            <td width="5"></td>
+                                            <td><input id="oisst_cwtg" name="oisst_cwtg"
+                                                       dojoType="dijit.form.CheckBox" value="true"></td>
+                                            <td title="Daily Optimally Interpolated Sea Surface Temperature - Image shows average temperatures from within the past 24 hours"> Daily Optimum Interpolation Sea Surface Temperature (DOISST)</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgOisst"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="buoys" name="buoys" dojoType="dijit.form.CheckBox"
+                                                       value="true"></td>
+                                            <td title="Buoys across the Gulf that take ocean and air measurement">Buoys
+                                                - NDBC&nbsp;&nbsp;&nbsp;<img src="images/information_frame.png"
+                                                                             title="Click on buoys to get more information">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgBuoys"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="tabsBuoys" name="tabsBuoys" dojoType="dijit.form.CheckBox"
+                                                       value="true"></td>
+                                            <td title="TABS is a collection of buoys off the Texas coast taking water and air measurements">
+                                                Texas Buoys - Currents&nbsp;&nbsp;&nbsp;<img
+                                                    src="images/information_frame.png"
+                                                    title="Click on arrows to get more information"</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgOcn_TABS"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="portsBuoys" name="portsBuoys" dojoType="dijit.form.CheckBox"
+                                                       value="true"></td>
+                                            <td title="NOAA's NOS CO-OPS PORTS system, buoys stationed in national ports to assist in ship traffic">
+                                                NOS CO-OPS Ports Buoys - Currents&nbsp;&nbsp;&nbsp;<img
+                                                    src="images/information_frame.png"
+                                                    title="Click on stations to get more information"</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgOcn_PORTS"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="wtmp" name="wtmp" dojoType="dijit.form.CheckBox"
+                                                       value="true"></td>
+                                            <td>NCEI Water Temperatures (Historical)<br/>
+                                                <select style="width: 100px;" name="wtmp_month" id="wtmp_month"
+                                                        dojoType="dijit.form.Select">
+                                                    <option value="0" selected>January</option>
+                                                    <option value="1">February</option>
+                                                    <option value="2">March</option>
+                                                    <option value="3">April</option>
+                                                    <option value="4">May</option>
+                                                    <option value="5">June</option>
+                                                    <option value="6">July</option>
+                                                    <option value="7">August</option>
+                                                    <option value="8">September</option>
+                                                    <option value="9">October</option>
+                                                    <option value="10">November</option>
+                                                    <option value="11">December</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgOcnWTmp"></div>
+                                            </td>
+                                        </tr>
+<!--                                            NOTE: when Sea Surface Currents, Heights, Salinity, and Water Temperatures
+                                                become available, remove 'disabled="disabled' and
+                                                '<font color="grey">...</font>' and 'Currently unavailable -'
+                                                from the appropriate following html.
+-->
+										<tr title="Aerosol Model">
+                                            <td width="5"></td>
+                                            <td><input id="aerosol" name="aerosol"
+                                                       dojoType="dijit.form.CheckBox" value="true"></td> 
+                                            <td><font color="black">USGODAE Aerosol Model</font><br/>
+                                                <select style="width:250px;" name="aero_timeframe" id="aero_timeframe"
+                                                        dojoType="dijit.form.FilteringSelect" autoComplete="true"
+                                                        forceValidOption="false" maxHeight="200"'>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgaerosol"></div>
+                                            </td>
+                                        </tr>
+                                        <!--  <tr title="Navy models of sea surface currents"> 
+										<tr title="CURRENTLY UNAVAILABLE">
+                                            <td width="5"></td>
+                                            <td><input id="ssc_forecast" name="ssc_forecast" disabled = "true"
+                                                       dojoType="dijit.form.CheckBox" value="true" ></td>
+                                            <td><font color="black">Sea Surface Currents
+                                                (Forecasts & Hindcasts</font>)<br/>
+                                                <select style="width:250px;" name="ssc_timeframe" id="ssc_timeframe" disabled = "true"
+                                                        dojoType="dijit.form.FilteringSelect" autoComplete="true"
+                                                        forceValidOption="false" maxHeight="200" >
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgOcnModels_ssc"></div>
+                                            </td>
+                                        </tr>
+                                        <!--  <tr title="Navy models of sea surface heights">   -->
+										<tr title="CURRENTLY UNAVAILABLE">
+                                            <td width="5"></td>
+                                            <td><input id="ssh_forecast" name="ssh_forecast" disabled = "true"
+                                                       dojoType="dijit.form.CheckBox" value="true" ></td>
+                                            <td><font color="black">Sea Surface Heights
+                                                (Forecasts & Hindcasts</font>)<br/>
+                                                <select style="width:250px;" name="ssh_timeframe" id="ssh_timeframe" disabled = "true"
+                                                        dojoType="dijit.form.FilteringSelect" autoComplete="true"
+                                                        forceValidOption="false" maxHeight="200" >
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgOcnModels_ssh"></div>
+                                            </td>
+                                        </tr>
+                                        <!-- <tr title="Navy models of sea surface salinity">  -->
+										<tr title="CURRENTLY UNAVAILABLE">
+                                            <td width="5"></td>
+                                            <td><input id="sss_forecast" name="sss_forecast" disabled = "true"
+                                                       dojoType="dijit.form.CheckBox" value="true" ></td>
+                                            <td><font color="black">Sea Surface Salinity
+                                                (Forecasts & Hindcasts)</font><br/>
+                                                <select style="width:250px;" name="sss_timeframe" id="sss_timeframe" disabled = "true"
+                                                        dojoType="dijit.form.FilteringSelect" autoComplete="true"
+                                                        forceValidOption="false" maxHeight="200" >
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgOcnModels_sss"></div>
+                                            </td>
+                                        </tr>
+                                        <!--<tr title="Navy models of water temperature">  -->
+										<tr title="CURRENTLY UNAVAILABLE">
+                                            <td width="5"></td>
+                                            <td><input id="sst_forecast" name="sst_forecast" disabled = "true"
+                                                       dojoType="dijit.form.CheckBox" value="true" ></td>
+                                            <td><font color="black">Water Temperatures (Forecasts &
+                                                Hindcasts</font>)<br/>
+                                                <select style="width:250px;" name="sst_timeframe" id="sst_timeframe" disabled = "true"
+                                                        dojoType="dijit.form.FilteringSelect" autoComplete="true"
+                                                        forceValidOption="false" maxHeight="200" >
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgOcnModels_sst"></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br/>
+                                </div>
+                                <div class="element" title="Meteorology" dojoType="dijit.layout.ContentPane"
+                                     selected="true">
+                                    <div align="right">
+                                        <button dojoType="dijit.form.Button" type="button" name="updateMap"
+                                                onClick="UpdateMap(); "><b>Update Map</b></button>
+                                    </div>
+                                    <table colspan=3 class="smallText">
+										<tr>
+                                            <td width="5"></td>
+                                            <td><input id="weatherRadar" name="weatherRadar"
+                                                       dojoType="dijit.form.CheckBox" value="true"></td>
+                                            <td>NWS Current Weather Radar</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgWeatherRadar"></div>
+                                            </td>
+                                        </tr>
+                                        <tr title="nowCOAST NDFD Wind Speed">
+                                            <td width="5"></td>
+                                            <td><input id="wmsPrecip" name="wmsPrecip" dojoType="dijit.form.CheckBox"
+                                            value="true" disabled="false"></td>
+                                            <td>12-Hour Precipitation Forecast<br/>
+                                                <!-- <select style="width:250px;" name="wmsPrecip_forecast" id="wmsPrecip_forecast"
+                                                        dojoType="dijit.form.FilteringSelect" autoComplete="true"
+                                                    forceValidOption="false" disabled="false">
+                                                </select> -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgwmsPrecip"></div>
+                                            </td>
+                                        </tr>
+                                        <tr title="nowCOAST NDFD Precipitation Forecast">
+                                            <td width="5"></td>
+                                            <td><input id="wmsWind" name="wmsWind" dojoType="dijit.form.CheckBox"
+                                            value="true" disabled="false"></td>
+                                            <td>Current Wind Speeds<br/>
+                                                <!-- <select style="width:250px;" name="wmsWind_forecast" id="wmsWind_forecast"
+                                                        dojoType="dijit.form.FilteringSelect" autoComplete="true"
+                                                    forceValidOption="false" disabled="false">
+                                                </select> -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgwmsWind"></div>
+                                            </td>
+                                        </tr>						
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="atmp" name="atmp" dojoType="dijit.form.CheckBox"
+                                                       value="true"></td>
+                                            <td>NWS Maximum Air Temperature (Forecasts)<br/>
+                                                <select style="width:250px;" name="atmp_forecast" id="atmp_forecast"
+                                                        dojoType="dijit.form.FilteringSelect" autoComplete="true"
+                                                        forceValidOption="false">
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgMetModels_atmp"></div>
+                                            </td>
+                                        </tr>
+                                        <tr title="CURRENTLY UNAVAILABLE">
+                                            <td width="5"></td>
+                                            <td><input id="pop12" name="pop12" dojoType="dijit.form.CheckBox"
+                                            value="true" disabled="disabled"></td>
+<!--                                            <td><font color="grey">Probability of Precipitation (Forecasts) nowCOAST</font><br/>-->
+                                            <td>Probability of Precipitation (Forecasts) nowCOAST<br/>
+                                                <select style="width:250px;" name="pop12_forecast" id="pop12_forecast"
+                                                        dojoType="dijit.form.FilteringSelect" autoComplete="true"
+                                                    forceValidOption="false" disabled="disabled">
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgMetModels_pop12"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="qpf" name="qpf" dojoType="dijit.form.CheckBox" value="true">
+                                            </td>
+                                            <td>NWS Precipitation Amount (Forecasts)<br/>
+                                                <select style="width:250px;" name="qpf_forecast" id="qpf_forecast"
+                                                        dojoType="dijit.form.FilteringSelect" autoComplete="true"
+                                                        forceValidOption="false">
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgMetModels_qpf"></div>
+                                            </td>
+                                        </tr>
+                                        <tr title="CURRENTLY UNAVAILABLE">
+                                            <td width="5"></td>
+                                            <td><input id="nam12Winds" name="nam12Winds" dojoType="dijit.form.CheckBox"
+                                                       value="true" disabled="disabled"></td>
+                                            <td>Wind Speeds (Forecasts)<br/>
+                                                <select style="width:230px;" name="nam12Winds_forecast"
+                                                        id="nam12Winds_forecast" dojoType="dijit.form.FilteringSelect"
+                                                        autoComplete="true" forceValidOption="false" disabled="disabled">
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgMetModels_nam12winds"></div>
+                                            </td>
+                                        </tr>
+<!--										
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="windsBuoys" name="windsBuoys" dojoType="dijit.form.CheckBox"
+                                                       value="true"></td>
+                                            <td>Winds - NDBC Buoys</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td></td>
+                                            <td align="center" style="font-family: arial; font-size: 10px;">
+                                                <div id="msgMet_NDBCWinds"></div>
+                                            </td>
+                                        </tr>
+-->										
+										<tr title="Weather Observations">
+											<td width="5"></td>
+											<td><input id="weatherObsWinds" name="weatherObsWinds" dojoType="dijit.form.CheckBox" 
+														value="true"></td>
+											<td title="Weather Observations">Weather Observations&nbsp;&nbsp;&nbsp;<img 
+													src="images/information_frame.png" 
+													title="Click on the center of the station graphic to get more information.  More stations will appear as the map is zoomed in."></td></tr>
+										<tr>
+											<td width="5"></td><td></td>
+											<td align="center" style="font-family: arial; font-size: 10px;">
+											<div id="msgweatherObsWinds"></div></td>
+										</tr>
+                                    </table>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                        <div dojoType="dijit.layout.ContentPane" title="Legend" id="Legend" onShow="drawLegend();">
+                        </div>
+                        <div dojoType="dijit.layout.ContentPane" title="Tools" id="Tools">
+                            <div id="accordionTools" dojoType="dijit.layout.AccordionContainer">
+                                <div class="element" title="Change Basemap" dojoType="dijit.layout.ContentPane">
+                                    <div id="ChangeBasemap">
+                                        <center>
+                                            <p/>
+                                            <table colspan="1">
+                                                <tr>
+                                                    <td align="center">
+                                                        <div data-dojo-type="dijit.form.Button" id="ocean_basemap"
+                                                             title="Ocean Basemap" iconClass="oceanBasemapIcon"
+                                                             showLabel=false onClick="switchBasemap('ocean')"></div>
+                                                        <br/>Ocean
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center">
+                                                        <div data-dojo-type="dijit.form.Button" id="imagery_basemap"
+                                                             title="Imagery Basemap" iconClass="imageryBasemapIcon"
+                                                             showLabel=false onClick="switchBasemap('satellite')"></div>
+                                                        <br/>Satellite
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center">
+                                                        <div data-dojo-type="dijit.form.Button" id="natgeo_basemap"
+                                                             title="NatGeo Basemap" iconClass="natgeoBasemapIcon"
+                                                             showLabel=false onClick="switchBasemap('natgeo')"></div>
+                                                        <br/>National Geographic
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center">
+                                                        <div data-dojo-type="dijit.form.Button" id="topo_basemap"
+                                                             title="Topo Basemap" iconClass="topoBasemapIcon"
+                                                             showLabel=false onClick="switchBasemap('topo')"></div>
+                                                        <br/>Topographic
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div dojoType="dijit.layout.ContentPane" title="Calculate Distances" id="Measure"
+                                     selected="true">
+                                    <p/>
+                                    <center>Click two or more input points on the map to calculate a distance</center>
+                                    <p/>
+                                    <table colspan="3">
+                                        <tr>
+                                            <td width="5"></td>
+                                            <td><input id="distanceTool" name="distanceTool"
+                                                       dojoType="dijit.form.CheckBox" value="true"
+                                                       onClick="calculateDistanceTool();"></td>
+                                            <td>Use Measure Tool</td>
+                                        </tr>
+                                    </table>
+                                    <p/>
+
+                                    <div id="distanceDetails" style="padding:5px;overflow:auto;display:none;">
+                                    </div>
+                                    <p/>
+
+                                    <div dojoType="dijit.form.Button" id="clearRouteButton" onClick="clearRoute();">
+                                        Clear Route
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="map" dojotype="dijit.layout.ContentPane" region="center">
+                <img id="loadingImg" src="images/Blue-004-loading.gif"
+                     style="position:absolute; right:45%; top:45%; z-index:100;"/>
+
+                <div id="results"
+                     style="position:absolute; right:5px; top:5px; padding: 2px; border:solid 1px #79663b; color:#000; background-color:#fff; z-index:50; font-family: arial; font-size: 12px;"></div>
+                <div id="timeDate"
+                     style="position:absolute; right: 30%; bottom: 55px; height:10px; font-size:75%; font-weight:bold; color:black; z-index:100;"></div>
+                <div id="timeSliderDiv"
+                     style="position:absolute; right: 30%; bottom: 50px; width: 30%; z-index:100;"></div>
+                <div id="timeSliderLabelsDiv"
+                     style="position:absolute; right: 30%; bottom: 40px; width: 30%; z-index:100;"></div>
+                <div id="resetTimeSlider" style="position:absolute; right: 45%; bottom: 20px; z-index: 100;">
+                    <button dojoType="dijit.form.Button" onClick="mainSearch=true; searchHABSOSDatabase();">Reset
+                    </button>
+                </div>
+                <div id="coords"
+                     style="position:absolute; left:10px; bottom:5px; color:#808080; background-color:white; padding:2px; z-index:50; font-family: arial; font-size: 12px;"></div>
+                <div id="query_msg" style="position:absolute; right:50%; top:50%; z-index:100;"></div>
+                <div style="position:absolute; left:5px; top:5px; z-index:998;">
+                    <div id="titlePane" data-dojo-type="dijit.TitlePane"
+                         data-dojo-props="title:'List of Added Layers', closable:'false', open:'false'">
+                        <div class="details">
+                            <div id="layersDetails" style="padding:5px;overflow:auto;max-height:300px;">You currently
+                                have no additional layers drawn on the map.<p/>As you add layers to the map, they will
+                                be listed in this panel.<p/>You may use this panel to remove any layers added to the
+                                map. You can also go back to the "Add Layers" tab to remove layers.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div id="footer" dojotype="dijit.layout.ContentPane" region="bottom">
+                <table class="footer" align="center">
+                    <tr valign="middle" align="center">
+                        <td>
+                            <a href="https://www.commerce.gov/" target="_blank" title="U.S. Department of Commerce"
+                               target="_self"><font color="black">U.S. Department of Commerce</a> |</font>
+                            <a href="https://www.noaa.gov" target="_blank"
+                               title="National Oceanic &amp; Atmospheric Administration" target="_self"><font
+                                    color="black">NOAA</a> |</font>
+                            <a href="https://www.nesdis.noaa.gov" target="_blank"
+                               title="National Environmental Satellites, Data, and Information Services" target="_self"><font
+                                    color="black">NESDIS</a> |</font>
+                            <a href="https://www.ncei.noaa.gov" target="_blank"
+                               title="National Centers for Environmental Information" target="_self"><font
+                                    color="black">NCEI</a></font>
+                            <br/>
+                            <a href="https://www.noaa.gov/disclaimer" target="_blank"
+                               title="Link to National Oceanic &amp; Atmospheric Administration Disclaimer"
+                               target="_self"><font color="black">Disclaimer</a> |</font>
+                            <a href="https://www.noaa.gov/protecting-your-privacy" target="_blank"
+                               title="Link to National Oceanic &amp; Atmospheric Administration Privacy Policy"><font
+                                    color="black">Privacy Policy</a> |</font>
+                            <a href="https://www.copyright.gov/title17/92chap4.html#403" target="_blank"
+                               title="Copyright Notice"><font color="black">Copyright Notice</a> |</font>
+                            <a href="https://www.usa.gov" target="_blank"
+                               title="The U.S. Government's Official Web Portal"><font color="black">USA.gov</a></font>
+                        </td>
+                        <td width="20"></td>
+                        <td>
+                            <a href="https://www.cio.noaa.gov/services_programs/info_quality.html" target="_blank"
+                               title="Link to National Oceanic &amp; Atmospheric Administration Information Quality"
+                               target="_blank"><font color="black">Information Quality</a> |</font>
+                            <a href="https://www.noaa.gov/foia-freedom-of-information-act" target="_blank"
+                               title="Link to National Oceanic &amp; Atmospheric Administration FOIA"><font
+                                    color="black">Freedom of Information Act (FOIA)</a></font>
+                            <br/>
+                            <a href="https://www.ncddc.noaa.gov/about-ncddc" target="_blank"
+                               title="Contact NCEI-MS"><font color="black">Customer Service</a> |</font>
+                            <a href="mailto:NCEI.Info@noaa.gov?subject=HABSOS" target="_blank"
+                               title="Email HABSOS staff"><font color="black">NCEI.Info@noaa.gov</a></font>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            -->
+
+            <!-- GWR ncei footer -->
+            <!--<div id="footer" data-dojo-type="dijit.layout.ContentPane"  data-dojo-props="region:'bottom'" style="font-size:12px;font-family:Helvetica,Arial;height:35px;font-weight:bold">-->
+            <div id="footer" data-dojo-type="dijit.layout.ContentPane"  data-dojo-props="region:'bottom'" style="font-size:12px;font-family:Helvetica,Arial;height:20px;font-weight:bold">
+                <table class="footer" align="center">
+                    <tr valign="middle" align="center">
+                        <td>
+                            <a href="https://www.ncei.noaa.gov/privacy" title="NOAA's Privacy Policy">Privacy Policy</a> |
+                            <a href="https://www.noaa.gov/foia-freedom-of-information-act" title="Freedom of Information Act">Freedom Of Information Act</a> |
+                            <a href="https://www.cio.noaa.gov/services_programs/info_quality.html" title="Information Quality">Information Quality</a> |
+                            <a href="https://www.noaa.gov/disclaimer.html" title="Disclaimer">Disclaimer</a> |
+                            <!--<a href="https://www.ncdc.noaa.gov/survey" title="Take Our Site Survey">Take Our Survey</a> |-->
+                            <a href="https://www.commerce.gov/" title="United States Department of Commerce">Department of Commerce</a> |
+                            <a href="https://www.noaa.gov/" title="NOAA">NOAA</a> |</font>
+                            <a href="https://www.nesdis.noaa.gov/" title="NESDIS">NESDIS</a> |
+                            <a href="mailto:ncei.info@noaa.gov" rel="nofollow">Contact Us</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--end GWR ncei footer-->
+
+        </div>
+        
+        <script src="https://www.ncei.noaa.gov/maps/config/gis-helper.js"></script>
+    <script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script></body>
+</html>

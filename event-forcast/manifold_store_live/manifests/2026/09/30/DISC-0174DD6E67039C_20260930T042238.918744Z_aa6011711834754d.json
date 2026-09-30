@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-0174DD6E67039C",
+  "provider": "NOAA/SWPC",
+  "dataset": "glotec",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:22:38.918744Z",
+  "request_url": "https://services.swpc.noaa.gov/products/glotec/",
+  "final_url": "https://services.swpc.noaa.gov/products/glotec/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 634,
+  "sha256": "aa6011711834754d62bfb437c2b3ba073bee620eee54fe70d5ecac4f3275ff53",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-0174DD6E67039C\\20260930T042238.918744Z_aa6011711834754d.html",
+  "parent_id": "SWPC-PRODUCTS",
+  "discovery_depth": 1
+}

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>World Ocean Database Select</title>
+<meta name="DC.title" content="World Ocean Database Select">
+<meta name="author" content="">
+<meta name="DC.language" content="en">
+<meta name="keywords" content="oceanography,ocean,data,archive,marine,coast,temperature,salinity,buoy,ocean climate,world ocean atlas,nitrate,phosphate,silicate,CTD,XBT,ADCP,SST,circulation,currents,sea level,altimetry,chlorophyll,plankton,ocean chemistry,ocean physics,ocean biology,ocean profiles,ocean time series,GTSPP,WOCE,JGOFS,World Data Center,alkalinity,pH,nitrite,dissolved oxygen,satellite,remote sensing,wave height,GODAR,NODC">
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="https://www.ncei.noaa.gov/themes/custom/ncei/favicon.ico">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+.ncei-static-fadein-js #ncei-static-body-inner { display: none; }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+  <link rel="stylesheet" media="all" href="/data/oceans/filter/stable/css/ncei-static.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+
+
+	<style type="text/css">
+.container {
+  font-family: 'Source Sans Pro',sans-serif;
+}
+.wod18 p:first-child {
+  margin: 0;
+}
+	</style>
+      </head>
+  
+  <body>
+<a href="#main-content" class="ncei-static-skip-link">Skip to main content</a>
+    
+    <div id="ncei-static-body" class="">
+      
+      <div id="ncei-static-body-inner">
+	<div class="ncei-static-container">
+	  <div id="ncei-static-header" class="ncei-static ncei-static-header">
+	    <header role="banner">
+	      <div class="ncei-static-logo">
+		<a href="/">
+		  <img src="https://www.ncei.noaa.gov/themes/custom/ncei/logo.svg" title="Link to NCEI's Homepage" alt="Link to NCEI's Homepage">
+		</a>
+	      </div>
+	    </header>
+	    <nav class="ncei-static-nav">
+	      <div class="ncei-static-mobile-menu">
+		<a href="#">
+		  <div> </div>
+		  <div> </div>
+		  <div> </div>
+		</a>
+	      </div>
+	      <div id="ncei-static-navigation" class="ncei-static-menu"><ul>
+		  <li><a href="/">Home</a></li>
+		  <li><a href="/products">Products</a></li>
+		  <li>
+<a href="/services">Services</a>
+		    <ul>
+		     <li><a href="/access">Access</a></li>
+		     <li><a href="/archive">Archive</a></li>
+		     <li><a href="/certification">Certification</a></li>
+		     <li><a href="/maps-and-geospatial-products">Maps</a></li>
+		     <li><a href="/monitoring">Monitoring</a></li>
+		     <li><a href="/online-store">Online Store</a></li>
+		     <li><a href="/regional">Regional</a></li>
+		     <li><a href="/services/world-data-system">World Data System</a></li>
+		    </ul>
+		  </li>
+		  <li>
+<a href="/resources">Resources</a>
+		    <ul>
+		     <li><a href="/alerts">Alerts</a></li>
+		     <li><a href="/resources/education">Education</a></li>
+		     <li><a href="/resources/metadata">Metadata</a></li>
+		     <li><a href="/resources/newis">NEWIS</a></li>
+		     <li><a href="/weather-climate-links">Quick Links</a></li>
+		     
+		    </ul>
+		  </li>
+		  <li>
+<a href="/news">News</a>
+		    <ul>
+		      <li><a href="/bams-state-of-climate">BAMS</a></li>
+		      <li><a href="https://repository.library.noaa.gov/gsearch?terms=national%20centers%20for%20environmental%20information">Publications</a></li>
+		    </ul>
+		  </li>
+		  <li>
+<a href="/about">About</a>
+		    <ul>
+		      <li><a href="/about/locations">Locations</a></li>
+		      <li><a href="/about/our-impact">Our Impact</a></li>
+		    </ul>
+		  </li>
+		  <li><a href="/contact">Contact</a></li>
+		  <li class="ncei-static-search">
+		    <form title="Search NCEI" action="https://search.usa.gov/search" accept-charset="UTF-8" method="GET">
+		      <input type="hidden" name="utf8" value="✓">
+		      <input type="hidden" name="affiliate" id="affiliate" value="nceinoaa">
+		      <input type="text" name="query" autocomplete="off" placeholder="Search NCEI" tabindex="0">
+		      <button name="commit" type="submit">
+			<img src="https://www.ncei.noaa.gov/themes/custom/ncei/images/icons/src/search.svg" alt="magnifying glass" title="magnifying glass">
+			Search
+		      </button>
+		    </form>
+		  </li>
+		</ul></div>
+	      
+	    </nav>
+	  </div>
+	</div>
+
+	
+	<a href="#content" id="main-content"></a>
+
+	
+	<div id="ncei-static-site-alert" style="display: none;" class="ncei-static-site-alert">
+	  
+	  <a class="ncei-static-alert-endpoint" href="/alerts/maryland/api"></a>
+	  
+	  <div class="ncei-static-alert-wrapper" role="alert">
+	    <div class="ncei-static-alert-body">
+	      <div class="ncei-static-alert-text"></div>
+	    </div>
+	  </div>
+	</div>
+
+	<div id="ncei-static-main-container">
+	  
+	  <div id="ncei-static-main-content" class="">
+<style type="text/css">
+    a:link {
+     color: #261E9E; !important;
+     }
+     a:visited {
+     color: #261E9E; !important;
+      }
+
+     a:focus {
+      color: #261E9E;
+     }
+
+</style>
+<div class="container">
+
+<form action="bin/builder.pl" method="post">
+
+<div class="pt-2" style="width: 780">
+
+<p>
+<img src="images/title.gif" title="World Ocean Database Select and Search" alt="World Ocean Database Select and Search" width="511" height="62">
+</p>
+
+<p>
+The World Ocean Database (WOD) is a NOAA NCEI data product and an activity of the 
+<a href="https://www.iode.org/" class="offsite" target="_blank">IODE</a> (International Oceanographic Data and Information Exchange) 
+as well as the World Data Service for Oceanography of the World Data System hosted at NCEI.
+</p>
+
+
+<p class="mb-1">
+The WOD<i>select</i>
+web application enables users to retrieve and access the World Ocean Database data as well as quarterly updated/added new data 
+by utilizing various search criteria specified by the user. 
+The query results will provide a distribution map, cast count, and the option to select data formats such as
+WOD native (ascii), Comma Separated Value (.csv), or netCDF (.nc) based on customized search criteria. The data will be extracted and placed on the NCEI data server, and the data links will be provided in the user's email.
+More detailed information can be found in the <a href="https://www.ncei.noaa.gov/data/oceans/woa/WOD/DOC/wod_intro.pdf" target="_blank">Introduction</a> 
+to the WOD and <a href="https://www.ncei.noaa.gov/data/oceans/woa/WOD/DOC/wodreadme.pdf" target="_blank">User's Manual</a>.
+</p>
+
+<img src="oclab/images/hrline.gif" alt="Blue horizontal line" title="Blue horizontal line" width="740" height="2"><br>
+<p class="font-weight-bold text-secondary mt-1 mb-1">
+To build a user defined search query:</p>
+
+<ol class="mt-0 mb-1">
+<li>Place check mark in front of any number of criteria.</li>
+<li>Press the "Build a query" button.</li> 
+</ol>
+
+<p class="italic mb-1 pb-0">(If any criteria below are not checked, the default will apply).
+</p>
+
+<img src="oclab/images/hrline.gif" alt="Blue horizontal line" title="Blue horizontal line" width="740" height="1"> 
+
+</div>
+
+<div class="pt-2">
+<table width="600">
+<tr class="text-secondary">
+<td>
+<b>SEARCH CRITERIA:</b> (<a href="select_definitions.html">definitions</a>)</td>
+<td><b>DEFAULT:</b></td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="geosearch"> <span class="bold">Geographic Coordinates</span>
+</td>
+<td> - whole world</td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="datesearch"> <span class="bold">Observation Dates</span>
+ - <span class="italic">e.g., Year(s), Month(s), Day(s)</span>
+</td>
+<td> - all years/months/days</td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="instrumentsearch"> <span class="bold">Dataset</span>
+ - <span class="italic">e.g., OSD, CTD, XBT</span>
+</td>
+<td> - all datasets</td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="varisearch"> <span class="bold">Measured Variables</span>
+ - <span class="italic">e.g., Temperature, Salinity, Nutrients</span>
+</td>
+<td> - all available variables</td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="biosearch"> <span class="bold">Biology</span>
+ - <span class="italic">e.g., Phytoplankton, Zooplankton</span>
+</td>
+<td> - all available plankton</td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="depthsearch"> <span class="bold">Deepest Measurement</span>
+</td>
+<td> - all depths</td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="countrysearch"> <span class="bold">Country</span>
+</td>
+<td> - all countries</td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="shipsearch"> <span class="bold">Ship/Platform</span>
+</td>
+<td> - all ships/platforms</td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="cruisesearch"> <span class="bold">Cruise</span>
+</td>
+<td> - all cruises</td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="accsearch"> <span class="bold">Accession #</span>
+</td>
+<td> - all accessions</td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="projectsearch"> <span class="bold">Project</span>
+</td>
+<td> - all projects</td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="institutesearch"> <span class="bold">Institute</span>
+</td>
+<td> - all institutes</td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="flagsearch"> <span class="bold">Data Exclusion Using WOD Quality Control Flags</span>
+</td>
+<td> - no exclusion</td>
+</tr>
+
+<tr class="reg">
+<td align="left" nowrap>
+<input type="checkbox" name="search_criterion" value="newdatasearch"> <span class="bold">Data Additions</span>
+</td>
+<td> - WOD23 released data</td>
+</tr>
+
+
+
+</table>
+
+<p>
+<img src="oclab/images/hrline.gif" alt="Blue horizontal line" title="Blue horizontal line" width="740" height="1">
+</p>
+<p>
+<input type="submit" value="Build a query">  <input type="reset" value="      Reset      ">
+</p>
+
+<p>
+<img src="oclab/images/hrline.gif" alt="Blue horizontal line" title="Blue horizontal line" width="740" height="2">
+</p>
+
+</div>
+</form>
+
+</div>
+
+</div>
+	</div>
+
+	<div class="ncei-static-stretch"></div>
+
+	<div class="ncei-static-container">
+	  <div class="ncei-static ncei-static-footer">
+	    <div class="ncei-static-logo">
+	      <a href="/">
+		<img src="https://www.ncei.noaa.gov/themes/custom/ncei/components/images/logo/logo.svg" title="Link to NCEI's Homepage" alt="Link to NCEI's Homepage">
+	      </a>
+	    </div>
+	    <div class="ncei-static-reference">
+	      <div>
+		<h2 class="ncei-static-title">Follow us</h2>
+		<ul>
+		  <li>
+		    <a href="https://www.facebook.com/NOAANCEI/" title="Link to @NOAANCEI Facebook" target="_blank" rel="noopener noreferrer">
+		      @NOAANCEI
+		      <img src="https://www.ncei.noaa.gov/themes/custom/ncei/images/social-icons/svg/light/facebook25.svg" title="NCEI Facebook" alt="NCEI Facebook">
+		    </a>
+		  </li>
+		  <li>
+		    <a href="https://www.instagram.com/noaadata/" title="Link to @NOAAData Instagram" target="_blank" rel="noopener noreferrer">
+		      @NOAAData
+		      <img src="https://www.ncei.noaa.gov/themes/custom/ncei/images/social-icons/svg/light/instagram.svg" title="NOAA Data Instagram" alt="NOAA Data Instagram">
+		    </a>
+		  </li>
+		  <li>
+		    <a href="https://twitter.com/NOAANCEI" title="Link to @NOAANCEI Twitter" target="_blank" rel="noopener noreferrer">
+		      @NOAANCEI
+		      <img src="https://www.ncei.noaa.gov/themes/custom/ncei/images/social-icons/svg/light/twitter16.svg" title="NCEI Twitter" alt="NCEI Twitter">
+		    </a>
+		  </li>
+		  <li>
+		    <a href="/news.xml" title="Link to subscribe to NCEI News Feed">
+		      News Feed
+		      <img src="https://www.ncei.noaa.gov/themes/custom/ncei/images/social-icons/svg/light/rss25.svg" title="NCEI RSS Feed" alt="NCEI RSS Feed">
+		    </a>
+		  </li>
+		</ul>
+	      </div>
+	    </div>
+	    <div class="ncei-static-reference">
+	      <div>
+	      <h2 class="ncei-static-title">Contact us</h2>
+	      <ul>
+		<li>
+		  <a class="ncei-static-contact ncei-static-mailto" href="mailto:ncei.info@noaa.gov" title="Contact NCEI NOAA via email">
+		    Email: ncei.info@noaa.gov
+		  </a>
+		</li>
+		<li>
+		  <a class="ncei-static-contact ncei-static-telephone" href="tel:8282714800" title="Call NCEI NOAA 828-271-4800">
+		    Phone: (828) 271-4800
+		  </a>
+		</li>
+	      </ul>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="ncei-static-container ncei-static-grey-background">
+	  <div class="ncei-static ncei-static-footer-links">
+	    <nav>
+	      <ul>
+		<li>
+		  <a href="/sitemap">Sitemap</a>
+		</li>
+		<li>
+		  <a href="/privacy">Privacy Policy</a>
+		</li>
+		<li>
+		  <a href="https://www.noaa.gov/foia-freedom-of-information-act">Freedom of Information Act</a>
+		</li>
+		<li>
+		  <a href="https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality">Information Quality</a>
+		</li>
+		<li>
+		  <a href="https://www.noaa.gov/disclaimer.html">Disclaimer</a>
+		</li>
+		<li>
+		  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYcbKOaK50do35QbgTprXAVSnBDC00eY22HPPA2aRdkbhujg/viewform">Take Our Survey</a>
+		</li>
+		<li>
+		  <a href="https://www.commerce.gov/">Department of Commerce</a>
+		</li>
+		<li>
+		  <a href="https://www.noaa.gov/">NOAA</a>
+		</li>
+		<li>
+		  <a href="https://www.nesdis.noaa.gov/">NESDIS</a>
+		</li>
+	      </ul>
+	    </nav>
+	  </div>
+	</div>
+      </div>
+    </div>
+    <script language="Javascript">
+if ($('#ncei-static-body').hasClass('ncei-static-fadein')) {
+  $('#ncei-static-body').addClass('ncei-static-fadein-js');
+  $(window).on('load', function() {$('#ncei-static-body-inner').fadeIn(400); });
+}
+var nceiStaticAlertEndpoints = $('.ncei-static-alert-endpoint').detach();
+var nceiStaticAlertTemplate = $('.ncei-static-alert-wrapper').detach();
+function nceiStaticAlertAdd(alerts) {
+  alerts.forEach(function(a) {
+    y = nceiStaticAlertTemplate.clone();
+    t = y.find('.ncei-static-alert-text');
+    a.body.forEach(function(b) {
+      t.append(b.value);
+    });
+    a.field_alert_type.forEach(function(at) {
+      y.addClass(at.value);
+    });
+    $('#ncei-static-site-alert').append(y);
+    $('#ncei-static-site-alert').show();
+  });
+};
+nceiStaticAlertEndpoints.each(function(k, api) {
+  $.getJSON(api.href, nceiStaticAlertAdd);
+});
+    </script>
+  <script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script></body>
+</html>

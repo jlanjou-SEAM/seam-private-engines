@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-C94DEA0063C0AE",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "nowCOAST.PNG",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:45.861610Z",
+  "request_url": "https://www.nco.ncep.noaa.gov/status/css/images/nowCOAST.PNG",
+  "final_url": "https://www.nco.ncep.noaa.gov/status/css/images/nowCOAST.PNG",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 1190791,
+  "sha256": "fd16a7344c98f648b480e77de372423bb6a395048511ab87b02ef41cfa2d4e6b",
+  "etag": null,
+  "last_modified": "Tue, 14 Feb 2023 19:01:02 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C94DEA0063C0AE\\20260930T041845.861610Z_fd16a7344c98f648.PNG",
+  "parent_id": "DISC-187AADF5F10B84",
+  "discovery_depth": 2
+}

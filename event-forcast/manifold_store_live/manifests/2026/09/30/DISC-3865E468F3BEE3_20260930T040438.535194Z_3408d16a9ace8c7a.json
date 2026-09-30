@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-3865E468F3BEE3",
+  "provider": "OpenWeather",
+  "dataset": "geocoding-api",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:38.535194Z",
+  "request_url": "https://openweathermap.org/api/geocoding-api",
+  "final_url": "https://openweathermap.org/api/geocoding-api",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 255036,
+  "sha256": "3408d16a9ace8c7ac0dca5c8da46a1dea91c59817eb8b8aa0b6f262c1f527e73",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-3865E468F3BEE3\\20260930T040438.535194Z_3408d16a9ace8c7a.html",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

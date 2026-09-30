@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-F9F14591A1D5D0",
+  "provider": "NOAA/NCEI",
+  "dataset": "news",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:38.758070Z",
+  "request_url": "https://www.ncei.noaa.gov/news?page=1",
+  "final_url": "https://www.ncei.noaa.gov/news?page=1",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 49003,
+  "sha256": "3d421e8c7aeb0ffdf0f6792deda80469136a82c8652a7926cbc0a6b612c11f23",
+  "etag": "\"1790716656-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:17:36 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F9F14591A1D5D0\\20260930T044838.758070Z_3d421e8c7aeb0ffd.html",
+  "parent_id": "DISC-84CF7FAE813C86",
+  "discovery_depth": 2
+}

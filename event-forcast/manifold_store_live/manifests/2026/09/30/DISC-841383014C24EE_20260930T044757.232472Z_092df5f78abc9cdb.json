@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-841383014C24EE",
+  "provider": "NOAA/NCEI",
+  "dataset": "mapsAtlas.htm",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:57.232472Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/dwh-atlas/mapsAtlas.htm",
+  "final_url": "https://www.ncei.noaa.gov/maps/dwh-atlas/mapsAtlas.htm",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 25851,
+  "sha256": "092df5f78abc9cdbb1d543d77a4ecb77617339900682b70adfac46e6c19ab126",
+  "etag": "\"645f-631ce48488480\"",
+  "last_modified": "Wed, 02 Apr 2025 16:38:26 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-841383014C24EE\\20260930T044757.232472Z_092df5f78abc9cdb.htm",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

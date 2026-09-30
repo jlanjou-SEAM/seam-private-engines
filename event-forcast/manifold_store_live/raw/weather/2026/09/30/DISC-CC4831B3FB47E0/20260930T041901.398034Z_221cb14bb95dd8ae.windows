@@ -1,0 +1,245 @@
+                   INSTALL file for MADIS (Windows)
+                          MADIS Version 4.3
+                          June 23, 2014
+--------------------------------------------------------------------------------
+
+MADIS support of windows API is deprecated and no longer supported
+
+1)  Get the package
+
+    For MADIS source code and prebuilt windows binary contact MADIS support.
+
+    From the "Software Download" section on that page, there will be links
+    to the madis-4.3.zip file containing:
+
+    - Windows source & binaries
+
+    This file contains the MADIS source, binaries and additional support 
+    packages necessary to build MADIS.  If you don't plan on creating Fortran
+    programs that call the MADIS library routines, you can delete the support
+    packages after installation.
+
+
+2)  Install the package
+
+    - Decide where you want to install the package.  
+
+      The rest of this document assumes the top-level folder is c:\madis, but 
+      it can be anything you want.  Also note that the full path through the 
+      c:\madis folder must be < 239 characters.
+
+    - Extract the contents of the zip file into c:\madis using WinZip (or a 
+      similar utility that supports long filenames).
+
+    - Decide if you want to use the binaries or build your own.
+
+      If you're not planning on creating your own Fortran programs, you should
+      use the binaries, and skip down to section 6 below.
+    
+3)  Support packages
+
+    The MADIS system was originally developed on a Unix system, and requires
+    a Fortran compiler and the Unidata netCDF package.  To accomodate users
+    users who don't need Fortran or netCDF for any other purpose, and to 
+    simplify the port to Windows, we chose to use public domain packages that
+    effectively emulate enough of a Unix/Linux environment to build the MADIS
+    software.  Here are the support packages that have been used and that
+    are included in the MADIS distribution for Windows:
+
+    Cywin installation
+#    Fortran compiler package (gcc-2.95.2)
+#    -------------------------------------
+
+#    The c:\madis\gcc-2.95.2 folder contains the MinGW ("Minimalist GNU for 
+#    Windows") version of the GNU compiler toolchain, including the g77 
+#    Fortran compiler, the GNU make program, and other necessary utilities.  
+#
+#    - The packaged used was gcc-2.95.2 (the MinGW version, using the CRTDLL)
+
+    NetCDF package (netcdf-3.4)
+    ---------------------------
+
+    The c:\madis\netcdf-3.4 folder contains a netCDF package built with the
+    g77 compiler included in the MinGW 2.95.2.  This was obtained from:
+    ftp://ftp.nanotech.wisc.edu/pub/khan/gnu-win32/mingw32/ports/netcdf-3.4.zip.
+
+    Miscellaneous GNU utilities (cygwin)
+    ------------------------------------
+   
+    The c:\madis\cygwin folder contains a few Unix commands that are used in 
+    the makefile that aren't included in the gcc-2.95.2 package (bash, cp, 
+    mkdir, rm, sh).  These were obtained from the Cygwin package, which is 
+    another Unix-emulation for Windows.
+
+    Note that we only use these utilities as part of the make, and the MADIS
+    Windows binary package won't run in a Cygwin environment.
+
+    Alternative approaches
+    ----------------------
+
+    To build and run MADIS with another Fortran compiler or under another
+    Unix-emulation (e.g., Cygwin, UWIN), you will first need to build the 
+    netCDF library from source.  For information on the netCDF distribution 
+    and instructions for how to build it contact UCAR UNIDATA.
+
+    Then MADIS will have to be built.  If you aren't running one of the 
+    Unix-emulation systems, you'll also have to modify the MADIS makefile to 
+    run in your environment.  If you are using Unix-emulation, you can 
+    follow the instructions in sections 4 and 5 (with any necessary path
+    modifications).
+
+    Unidata does offer a pre-built netCDF 3.5.0 package for Windows, but
+    because we support the Unix-emulation version of MADIS/netCDF described
+    above, we have not tried to build and run MADIS using the Unidata
+    Windows netCDF package.
+
+4)  Build the API library and utility programs
+
+    - The "SYSTEM DEPENDENT CONFIGURATION" section near the top of 
+      c:\madis\src\makefile needs to be edited for your environment.
+      The following four items need to be set:
+
+      1) Location of the netCDF package. (NETCDF_INC, NETCDF_LIB)
+      2) Name of the fortran compiler.   (FC)
+      3) Compilation flags.              (FFLAGS)
+      4) Load flags.                     (LDFLAGS)
+
+      The makefile has sections showing the choices made for the systems for 
+      which binaries are distributed.  You may find this useful in determining
+      the settings for other environments.
+
+    - The following folders need to be added to your PATH environment variable:
+
+      c:\madis\gcc-2.95.2\bin
+      c:\madis\cygwin\bin
+
+      For instructions on how to set environment variables on the different
+      Windows systems, see the Appendix below.
+
+    - cd c:\madis\src
+      make clean       (will clear out object files from previous version)
+      make             (will make the utilities & library)
+
+5)  Compiling/linking user-written programs
+
+    - You need to link to the MADIS library and to the netCDF library.
+      A sample compilation/link command would be:
+
+      g77 -o a.exe a.f c:\madis\lib\madislib.a c:\madis\netcdf-3.4\lib\libnetcdf.a
+
+6)  Set up the run-time environment
+
+    The MADIS data directories are all relative to a top-level folder.  You can 
+    setup one or more sets of folders (for real-time, test data, archive, etc.) 
+    then point to the one you want with the MADIS_DATA environment variable.  
+
+    The c:\madis\data folder included in the binary distribution is already set 
+    up with subordinate folders for the full set of MADIS datasets.  You may 
+    want to delete folders for datasets that you don't plan on using, or you may 
+    want to set up a new set, so here's the list of datasets vs. folders:
+
+    MADIS Dataset                           Directory
+    -------------                           ---------
+    Surface (all sfc datasets)              c:\madis\data\point\maritime\netcdf
+                                            c:\madis\data\point\metar\netcdf
+                                            c:\madis\data\point\sao\netcdf
+                                            c:\madis\data\LDAD\coop\netCDF
+                                            c:\madis\data\LDAD\mesonet\netCDF
+                                            c:\madis\data\LDAD\urbanet\netCDF
+                                            c:\madis\data\LDAD\hfmetar\netCDF
+                                            c:\madis\data\LDAD\crn\netCDF
+                                            c:\madis\data\LDAD\mobile\netCDF
+                                            c:\madis\data\LDAD\nepp\netCDF
+                                            c:\madis\data\LDAD\rwis\netCDF
+    Surface (mesonet only)                  c:\madis\data\LDAD\mesonet\netCDF
+    Radiosondes                             c:\madis\data\point\raob\netcdf
+    NPN hourly winds                        c:\madis\data\point\profiler\netcdf
+    Aircraft data                           c:\madis\data\point\acars\netcdf
+    Aircraft data profiles at airports      c:\madis\data\point\acarsProfiles\netcdf
+    Radiometers                             c:\madis\data\point\radiometer\netcdf
+    Hydrological datasets                   c:\madis\data\LDAD\hydro\netCDF
+    Multi-Agency Profilers (MAP)            c:\madis\data\LDAD\profiler\netCDF
+    Satellite winds (operational )          c:\madis\data\point\HDW\netcdf
+                    (experimental 1h)       c:\madis\data\point\HDW1h\netcdf
+    Satellite soundings                     c:\madis\data\point\POES\netcdf
+    Satellite radiance                      c:\madis\data\point\satrad\netcdf
+    Snow dataset                            c:\madis\data\LDAD\snow\netCDF
+    WISDOM balloon winds                    c:\madis\data\LDAD\WISDOM\netCDF
+
+    Note that the full path through the c:\madis\data directory must be < 239
+    characters.
+
+    MADIS requires two environment variables at run-time:  
+
+    - MADIS_STATIC points to the static directory in the MADIS installation
+
+    - MADIS_DATA points to the top of the directory tree where the MADIS 
+      data files are stored.
+
+      For instructions on how to set environment variables on the different
+      Windows systems, see the Appendix below.
+
+    You also will probably want to put c:\madis\bin into your path.
+
+    The MADIS utility programs are rather large, so you may need to adjust
+    your virtual memory paging file size.  (You'll need to do this if you
+    get an error message saying "The system cannot execute the specified
+    program".)  These are the configurations that have been successfully tested:
+
+    - Windows 10
+
+7)  Disk space requirements
+
+    - The MADIS prebuilt binary software takes about 40 MB after
+      installation.
+
+    - Typical requirements per day for the different datasets can
+      be found by contacting MADIS support.
+
+8)  Sample data installation
+
+    Thirteen hours of data files are available for most of the datasets.
+    These are made available for anyone who wants to download some
+    data and try out the system before requesting real-time or archived 
+    data from MADIS.  Contact MADIS support for location of the data.
+
+9)  How to run the utility programs
+
+    The utility programs are designed to be run from a DOS batch file,
+    as contrasted with double-clicking on the icon to run the program.
+    Each program has a "usage" file in the doc directory 
+    (e.g., sfcdump_usage.txt).  This file explains how to set up a text
+    parameter file that will be used to tell the program what to do, what
+    directory you should be in, and what output files will be produced.
+
+--------------------------------------------------------------------------------
+Appendix:  Setting Environment Variables
+----------------------------------------
+
+Windows 10
+----------------
+
+Use a text editor and add these lines to c:\AUTOEXEC.BAT:
+
+SET MADIS_DATA=c:\madis\data
+SET MADIS_STATIC=c:\madis\static
+
+If you'll be building Fortran programs:
+
+SET PATH=%PATH%;c:\madis\bin;c:\madis\gcc-2.95.2\bin;c:\madis\cygwin\bin
+
+If not:
+
+SET PATH=%PATH%;c:\madis\bin
+
+Windows 10
+----------
+
+Control Panel --> User Accounts and Family Safety --> User Accounts --> Change my environment variables --> New
+
+Then add the variables and their values to the User Variables list,
+as shown in the Window NT section.
+
+Windows 10
+----------
+TBD Cygwin Installation on Windows 10 

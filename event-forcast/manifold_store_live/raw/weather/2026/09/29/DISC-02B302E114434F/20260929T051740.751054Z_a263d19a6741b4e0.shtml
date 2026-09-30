@@ -1,0 +1,299 @@
+
+<p><H1>MADIS Data Application</H1>
+<p>
+<h2><font color="#3333FF">Form Instructions</font></h2>
+<p>The purpose of this Data Application is to become a registered MADIS
+User to retrieve MADIS data products. The following form fields are 
+required:</p>
+<ol>
+  <li>Applicant Information (all fields)</li>
+  <li>Data Communications Information (all fields) </li>
+  <li>Organization Information (all fields) </li>
+  <li>Data Request Information: Request Type </li>
+</ol>
+<p>Under <b>Data Request Information</b> be sure to select one or more datasets.</p>
+<p>MADIS Data Applications are sent to <a href="mailto:NCEP.List.MADIS_Support@noaa.gov">
+MADIS Support</a> for review. Data Applications received by COB Thursday (21:00 UTC) will
+be processed the following Monday. A MADIS Support Senior Production Analyst
+will contact you once your account has been created to provide you with your 
+MADIS login credentials.</p><br>
+
+<h2><font color="#3333FF">Data Use Policy</font></h2>
+
+<p>Recipients of MADIS data from the National Oceanic and Atmospheric
+Administration (NOAA) are expected to complete this application and
+acknowledge having read the disclaimer information and usage
+suggestions detailed below.  For more information please contact 
+NCEP.List.MADIS_Support@noaa.gov.</p>
+
+<p>Some of the datasets are restricted.  Those receiving these
+datasets are expected to comply with the restrictions.
+Click <A HREF="madis_restrictions.shtml"> here</A> for details.</p>
+
+<p>This form can be used to establish new accounts, make changes
+in existing accounts, or to request archived data.</p>
+<br>
+<h2><a name="disclaimer"><font color="#3333FF">Disclaimer Regarding Data Usage</font></a></h2>
+
+<p>No
+warranties are expressed or implied regarding the accuracy,
+completeness, or reliability of the information provided.
+Data users are cautioned to consider the provisional nature of the
+data before using it for decision making.
+Mesonet data, in particular, should be considered experimental and not
+always reliable or accurate.  NOAA does not own or operate mesonet
+sites and is not responsible for site maintenance or data accuracy.
+The user assumes the entire risk related to use of the data. 
+NOAA and its data providers disclaim
+liability of any kind whatsoever, including, without limitation,
+liability for quality, performance, merchantability and fitness for a
+particular purpose arising out of the use, or inability to use the
+data.</p>
+
+<p>MADIS runs operationally in real-time in National Weather Service
+facilities.  MADIS also runs quasi-operationally in a research test
+environment at the NOAA Earth System Research Laboratory (ESRL) Global
+Systems Division (GSD), where new advances are developed and tested
+prior to being put into operations.  The ESRL/GSD system also has an
+archive of saved real-time data, and serves as the backup to the
+operational system.  Note that the ESRL/GSD system is not an
+operational data facility.</p>
+
+<P>MADIS data providers request that users not redistribute the data
+or display it on web pages without notifying NOAA.  To notify NOAA,
+contact the MADIS team at NCEP.List.MADIS_Support@noaa.gov.  Redistribution of
+data in distribution categories other than "full distribution" is not
+allowed.</p>
+
+<P>It would also be very helpful to the MADIS data providers, particularly the
+providers of aircraft and mesonet data, if publications and web pages
+that depend upon substantial use of their data acknowledge their
+contribution by including a statement similar to:  This study was made
+possible in part due to the data made available to the National Oceanic
+and Atmospheric Administration
+by ---- (fill in the provider name or names, 
+e.g. "the Kansas Department
+of Transportation", "SYNOPTIC public", or "the following commercial airlines:
+American, Delta, Federal Express, Northwest, United, and United Parcel
+Service").</p>
+
+<script type="text/javascript" src="js/formComplete.js"></script>
+<form id="madisForm" METHOD="POST" ACTION="php/process_form.php" onsubmit="return isValidForm(this);">
+<?php session_start(); ?>
+<input type="hidden" name="check_submit" value="Y">
+<HR>
+<br><H3><CENTER>Applicant Information</CENTER></H3>
+<table width="100%" border="0">
+<tr valign="top"><td><b>
+Name</b></td>
+<td> <input type="text" name="realname" size="40" maxlength="500" required placeholder="Enter Full Name">
+</td>
+</tr>
+<tr valign="top"><td><b>
+Address</b><td>
+<textarea name="address" rows="5" cols="40" placeholder="123 Main Street, City, ST ZIP" required></textarea> </td>
+</tr>
+<tr valign="top"><td><b>
+Phone number</b><td>
+<input type="text" name="phone" size="40" maxlength="50" placeholder="Telephone number (+1-www-xxx-yyyy)" required>
+</td>
+<tr valign="top"><td><b>
+Email address</b><td>
+ <input type="email" name="email" size="40" maxlength="150" required placeholder="E-mail address"></td>
+</table>
+
+
+<HR>
+<br><H3><CENTER>Data Communications Information</CENTER></H3>
+<table width="100%" border="0">
+<tr valign="top"><td><b>
+Distribution method</b></td>
+<td>
+<input type="checkbox" name="comms_type[]" value="ldm">&nbsp;LDM<br>
+<input type="checkbox" name="comms_type[]" value="ftp">&nbsp;FTP<br>
+<input type="checkbox" name="comms_type[]" value="textXML" checked>&nbsp;Text/XML Viewer (Surface Observation Datasets Only)</td></tr>
+<tr valign="top"><td><b>
+Hostname(s)</b><td>
+ <textarea name="host_name" required rows="3" cols="50"></textarea></td></tr>
+<tr valign="top"><td><b>
+IP address(es)</b><td>
+ <textarea name="host_ip_address" required rows="3" cols="50" placeholder="Enter IPv4 addresses only."></textarea></td></tr>
+</table>
+
+<p>You can receive real-time data or obtain access to the on-line
+archive of saved real-time data by requesting an ftp, OPeNDAP or
+Text/XML Viewer account.  For real-time data, LDM access is also
+available.  OPeNDAP and Text/XML Viewer accounts are recommended for
+those who have a need for data on-demand, as contrasted with
+continuous real-time access.  In general, users who require a
+continuous datafeed will get better performance by accessing the data
+via ftp or LDM.</p>
+
+<p>Also note that at this time, the
+Text/XML Viewer can only be used for the surface observation datasets.</p>
+
+<p>If you will be receiving the data via LDM, the hostname and IP
+address of your LDM server is what should be specified here.  If you
+will be using FTP, OPeNDAP or the Text/XML Viewer, enter the name and
+address of the machine from which you will be logging on to the MADIS
+FTP or Web Services servers.  If you don't know your IP or have a rotating
+IP, please enter that information.  If you want to specify multiple
+machines, please list them in the <b>"Remarks"</b> section below.</p>
+
+<HR>
+<br><H3><CENTER>Organization Information</CENTER></H3>
+<table width="100%" border="0">
+<tr valign="top"><td><b>
+Organization name</b></td>
+<td><input type="text" name="organization_name" size="50" maxlength="500" required placeholder="Name of organization"></td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr>
+<tr valign="top"><td><b>
+Type of organization</b></td>
+<td><input type="radio" name="organization_type" value="private" checked>&nbsp;Private individual or company<br>
+<input type="radio" name="organization_type" value="government">&nbsp;Government agency<br>
+<input type="radio" name="organization_type" value="research">&nbsp;Research institute<br>
+<input type="radio" name="organization_type" value="education">&nbsp;Educational organization</td>
+</tr>
+<p>
+<tr></tr><tr></tr><tr></tr><tr></tr>
+<tr valign="top"><td><b>
+Briefly describe the <br>intended use of <br>the data</b></td>
+<td> <textarea name="intended_use" rows="5" cols="50" required placeholder="Describe intended use."></textarea></td></tr>
+</table>
+
+<HR>
+<br><H3><CENTER>Data Request Information</CENTER></H3>
+<table width="100%" border="0">
+<tr valign="top"><td><b>
+Request type</b></td>
+<td><input type="radio" name="request_type" required value="realtime" checked>&nbsp;Real-time<br>
+<input type="radio" name="request_type" required value="archive">&nbsp;Archive (saved real-time data -- observations only, not grids)</td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr>
+<tr valign="top"><td><b>
+Datasets<br>(Choose all <br>desired)</b></td><td>
+Observations<br><br>
+<blockquote>&nbsp;&nbsp;&nbsp;&nbsp;Meteorological Surface<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="sfc-metar" value="y">&nbsp;METAR (standard)<br>
+<spacer type="horizontal" size="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="sfc-sao" value="y">&nbsp;SAO<br>
+<spacer type="horizontal" size="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="sfc-maritime" value="y">&nbsp;Maritime<br>
+<spacer type="horizontal" size="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="sfc-mesonet" value="y">&nbsp;Integrated Mesonet<br>
+<spacer type="horizontal" size="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="sfc-urbanet" value="y">&nbsp;National Mesonet/UrbaNet<br>
+<spacer type="horizontal" size="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="sfc-OMO" value="y">&nbsp;1-minute ASOS<br>
+<spacer type="horizontal" size="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="sfc-crn" value="y">&nbsp;Climate Reference Network (CRN)<br>
+<spacer type="horizontal" size="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="sfc-hcn" value="y">&nbsp;U.S. Historical Climatology Network - Modernization (USHCN-M)<br>
+<spacer type="horizontal" size="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="sfc-nepp" value="y">&nbsp;New England Pilot Project (NEPP)</blockquote><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="radiosonde" value="y">&nbsp;Radiosonde<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="profiler" value="y">&nbsp;NOAA Profiler Network<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="radiometer" value="y">&nbsp;Radiometer<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Satellite Wind<br>
+<blockquote><spacer type="horizontal" size="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="goes-hdw" value="y">&nbsp;GOES Operational 3-Hour<br>
+<spacer type="horizontal" size="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="goes-hdw1h" value="y">&nbsp;GOES Experimental 1-Hour<br></blockquote>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="satsnd" value="y">&nbsp;Satellite Sounding<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="satrad" value="y">&nbsp;Satellite Radiance<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Aircraft Based<br>
+<blockquote>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="aircraft" value="y">&nbsp;Aircraft Based Reports<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="aircraft-profiles" value="y">&nbsp;Profiles at Airports<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="edr" value="y">&nbsp;Eddy Disimination Rate (EDR)<br>
+</blockquote><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="hydro-mesonet" value="y">&nbsp;Hydrological Surface<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="snow" value="y">&nbsp;Snow<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="map" value="y">&nbsp;Multi-Agency Profiler<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="wisdom" value="y">&nbsp;WISDOM Balloon Wind
+</blockquote><br><br>
+Grids<br><br>
+<blockquote>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="rsas" value="y">&nbsp;Rapid Update Cycle (RUC) Surface Assimilation System (RSAS) Surface Analysis Grids<br>
+</blockquote>
+</td></tr>
+<tr></tr><tr></tr><tr></tr><tr></tr>
+</table><br>
+The start dates of the datasets are shown below:
+<p><table width="60%" border="0">
+
+<tr><td>Meteorological Surface<br>(METAR, Maritime, Integrated Mesonet)</td><td>July 1, 2001</td></tr>
+<tr><td>Modernized NWS Cooperative Observer</td><td>May 4, 2004</td></tr>
+<tr><td>National Mesonet/UrbaNet</td><td>December 1, 2006</td></tr>
+<tr><td>1-minute ASOS</td><td>February 24, 2009</td></tr>
+<tr><td>Hydrological Surface</td><td>July 1, 2001</td></tr>
+<tr><td>Radiosonde</td><td>July 1, 2001</td></tr>
+<tr><td>NOAA Profiler Network</td><td>July 1, 2001</td></tr>
+<tr><td>Aircraft Based Reports</td><td>July 1, 2001</td></tr>
+<tr><td>Profiles at Airports</td><td>June 18, 2004</td></tr>
+<tr><td>Multi-Agency Profiler</td><td>June 1, 2002</td></tr>
+<tr><td>Radiometer</td><td>July 8, 2003</td></tr>
+<tr><td>Satellite Wind</td><td>November 4, 2003</td></tr>
+<tr><td>Satellite Sounding</td><td>June 9, 2005</td></tr>
+<tr><td>Satellite Radiance</td><td>November 1, 2005</td></tr>
+<tr><td>Snow</td><td>November 18, 2005</td></tr>
+<tr><td>WISDOM</td><td>August 8, 2008</td></tr>
+</table>
+<p>Note that while RSAS grids are not archived, the latest 50
+days are available online.</p>
+
+<HR>
+<br><H3><CENTER>Remarks</CENTER></H3>
+<table width="100%" border="0">
+<tr valign="top"><td>
+Additional remarks<br>or special requests<br>
+<font color="#CC0000">(Don't use "<" or ">" characters<br>
+these will break the form)</font></td>
+<td> <textarea name="remarks" rows="5" cols="50"></textarea></td></tr>
+</table>
+
+<br><HR>
+<br><H3><CENTER>Submission</CENTER></H3>
+
+<br>
+<div style="width:50%; float:left; background-color:yellow; font-weight:bold; font-size:20px;">
+Have you read the <a href="#disclaimer">disclaimer and usage</a> information?
+</div>
+<div style="float:left; font-weight:bold; font-size:20px; padding-left: 10px;">
+<input id="cb0_rd" type="checkbox" name="read_disclaimer" required value="y">&nbsp;Yes 
+</div>
+<div style="width:50%; float:left; background-color:yellow; font-weight:bold; font-size:20px;">
+Do you agree to comply with the <a href="madis_restrictions.shtml">data restrictions</a>? 
+</div>
+<div style="width:45%; float:left; font-weight:bold; font-size:20px; padding-left: 10px;">
+<input id="cb1_ar" type="checkbox" name="agree_restrictions" value="y" required>&nbsp;Yes
+</div>
+<div class="secureimage">
+  <img id="captcha" src="/ncep_common/securimage/securimage_show.php" alt="CAPTCHA Image" />
+  <br>
+  Enter the characters above.<br>
+  <input type="text" name="captcha_code" size="17" maxlength="6" placeholder="(required)" required/>
+  Can't read them?
+  <a href="#" onclick="document.getElementById('captcha').src = '/ncep_common/securimage/securimage_show.php?' + Math.random(); return false">
+    Click here to refresh.</a>
+</div>
+<br>
+<p style="padding-top:50px;">
+Click <input id="submit" TYPE="submit" VALUE="Submit" > to submit your data application.
+Click <input TYPE="reset" VALUE="Reset"> to clear your data application or to start over.
+
+<input type="hidden" name="author" value="NCO MADIS Support" >
+<input type="hidden" name="recipient" value="ncep.madis_support" >
+<input type="hidden" name="subject" value="MADIS Data Application Request" >
+<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT" >
+<input type="hidden" name="url" value="https://madis.ncep.noaa.gov" >
+<input type="hidden" name="spchk" value="" >
+<input type="hidden" name="required" value="realname,address,phone,email,comms_type,host_name,host_ip_address,organization_name,organization_type,intended_use,request_type,read_disclaimer,agree_restrictions" id="required" >
+
+</form>
+
+<HR>
+<br><A HREF="https://www.noaa.gov/protecting-your-privacy">Privacy Policy</A>
+
+<p align="right">Last updated 06 May 2025</p>
+
+<!--<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3463124-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>-->
+
+</body>
+</html>

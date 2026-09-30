@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-B1B75275C2CDC8",
+  "provider": "NOAA/NCEI",
+  "dataset": "access",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:51.144823Z",
+  "request_url": "https://www.ncei.noaa.gov/data/climate-maps-deprecated/access/",
+  "final_url": "https://www.ncei.noaa.gov/data/climate-maps-deprecated/access/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 1731149,
+  "sha256": "e0d9d1aa1e859dbccf81471ff56e3405b1a60188559ea20d5a97f70522021817",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-B1B75275C2CDC8\\20260930T043951.144823Z_e0d9d1aa1e859dbc.html",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

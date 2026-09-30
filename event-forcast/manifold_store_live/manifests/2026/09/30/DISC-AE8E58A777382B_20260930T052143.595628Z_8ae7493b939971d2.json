@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-AE8E58A777382B",
+  "provider": "Environment and Climate Change Canada",
+  "dataset": "bc-23",
+  "sector": "public",
+  "country": "CA",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T05:21:43.595628Z",
+  "request_url": "https://api.weather.gc.ca/collections/citypageweather-realtime/items/bc-23?lang=en",
+  "final_url": "https://api.weather.gc.ca/collections/citypageweather-realtime/items/bc-23?lang=en",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 34567,
+  "sha256": "8ae7493b939971d225c69ddbc3e8829fa946d8450c6c81de7c6543c0e356b08c",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-AE8E58A777382B\\20260930T052143.595628Z_8ae7493b939971d2.json",
+  "parent_id": "DISC-A5CD94634C1C89",
+  "discovery_depth": 2
+}

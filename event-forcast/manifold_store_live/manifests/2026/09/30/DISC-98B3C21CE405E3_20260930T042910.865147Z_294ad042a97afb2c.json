@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-98B3C21CE405E3",
+  "provider": "NOAA/SWPC",
+  "dataset": "wam-ipe",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:29:10.865147Z",
+  "request_url": "https://services.swpc.noaa.gov/products/animations/wam-ipe/",
+  "final_url": "https://services.swpc.noaa.gov/products/animations/wam-ipe/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 1089,
+  "sha256": "294ad042a97afb2cd874cf04c9ddaf5ab3501708276a05026f72bc757466f19c",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-98B3C21CE405E3\\20260930T042910.865147Z_294ad042a97afb2c.html",
+  "parent_id": "DISC-DC635460D92E37",
+  "discovery_depth": 2
+}

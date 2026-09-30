@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-441D2176C8BB04",
+  "provider": "NOAA/NCEP",
+  "dataset": "navo",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:50.292848Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/navo/",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/navo/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 2123,
+  "sha256": "98eb92a3cb9b95aa8563d5296a0ea2f754f8bb323b785755484ddb28ec09060d",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-441D2176C8BB04\\20260930T043750.292848Z_98eb92a3cb9b95aa.html",
+  "parent_id": "DISC-BB585ADF798726",
+  "discovery_depth": 2
+}

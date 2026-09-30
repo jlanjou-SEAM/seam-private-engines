@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E06956A30AFE05",
+  "provider": "NOAA/NCEP",
+  "dataset": "lead14",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:35.521889Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/predictions/long_range/lead14/",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/predictions/long_range/lead14/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 11777,
+  "sha256": "dda64852f6b606dc143c6b2a7c1ac84fe6745e1f28fc2209a11c67868a19ddd6",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E06956A30AFE05\\20260930T041935.521889Z_dda64852f6b606dc.html",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

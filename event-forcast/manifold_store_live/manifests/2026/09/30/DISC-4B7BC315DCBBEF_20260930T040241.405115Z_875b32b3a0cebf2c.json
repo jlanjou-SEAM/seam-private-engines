@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-4B7BC315DCBBEF",
+  "provider": "NOAA/SWPC",
+  "dataset": "solar-radio-flux.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:02:41.405115Z",
+  "request_url": "https://services.swpc.noaa.gov/json/solar-radio-flux.json",
+  "final_url": "https://services.swpc.noaa.gov/json/solar-radio-flux.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 43238,
+  "sha256": "875b32b3a0cebf2c90b0e8a067c8acb01d3f1262d67337658336fb1663aeb186",
+  "etag": "\"a8e6-65cab50955487\"",
+  "last_modified": "Wed, 30 Sep 2026 03:58:41 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-4B7BC315DCBBEF\\20260930T040241.405115Z_875b32b3a0cebf2c.json",
+  "parent_id": "SWPC-JSON",
+  "discovery_depth": 1
+}

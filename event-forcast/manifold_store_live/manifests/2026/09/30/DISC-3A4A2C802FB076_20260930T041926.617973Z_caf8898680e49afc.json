@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-3A4A2C802FB076",
+  "provider": "NOAA/NCEP",
+  "dataset": "store+json.1.3.20.min.js",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:26.617973Z",
+  "request_url": "https://mag.ncep.noaa.gov/bundles/noaatemplating/cdn/js/store+json.1.3.20.min.js?MAGv7.0.0",
+  "final_url": "https://mag.ncep.noaa.gov/bundles/noaatemplating/cdn/js/store+json.1.3.20.min.js?MAGv7.0.0",
+  "status_code": 200,
+  "content_type": "application/javascript",
+  "byte_length": 6783,
+  "sha256": "caf8898680e49afc243ff4e6d2ee695898485656a3fa36a83f8b71be1fe65890",
+  "etag": null,
+  "last_modified": "Mon, 17 Aug 2026 18:43:06 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-3A4A2C802FB076\\20260930T041926.617973Z_caf8898680e49afc.js",
+  "parent_id": "DISC-FA58CABCA4D1CB",
+  "discovery_depth": 2
+}

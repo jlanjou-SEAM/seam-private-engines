@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-C60B13C8F40546",
+  "provider": "NOAA/NCEI",
+  "dataset": "SectorSheet_agriculture_Final_201812%20%281%29.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:11.993542Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2021-08/SectorSheet_agriculture_Final_201812%20%281%29.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-08/SectorSheet_agriculture_Final_201812%20%281%29.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 1936429,
+  "sha256": "c9cc8bec261cbb58e50648310ed69dfd86e6b3db66aed3a91784da7f652778cb",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:33:27 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C60B13C8F40546\\20260930T044711.993542Z_c9cc8bec261cbb58.pdf",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

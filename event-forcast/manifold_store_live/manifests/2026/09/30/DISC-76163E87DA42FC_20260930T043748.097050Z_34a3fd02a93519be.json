@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-76163E87DA42FC",
+  "provider": "NOAA/NCEP",
+  "dataset": "solar-wind",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:48.097050Z",
+  "request_url": "https://www.spaceweather.gov/products/solar-wind",
+  "final_url": "https://www.spaceweather.gov/products/solar-wind",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 74678,
+  "sha256": "34a3fd02a93519be1a31d9aa2ab510dcdf9905ef249d975a53c95ce4515e4b88",
+  "etag": "\"1790733619\"",
+  "last_modified": "Wed, 30 Sep 2026 02:00:19 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-76163E87DA42FC\\20260930T043748.097050Z_34a3fd02a93519be.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

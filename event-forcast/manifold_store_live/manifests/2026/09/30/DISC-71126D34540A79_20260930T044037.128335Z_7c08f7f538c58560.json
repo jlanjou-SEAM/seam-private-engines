@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-71126D34540A79",
+  "provider": "NOAA/NCEI",
+  "dataset": "CAAG_geographic_regions.mp4",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:40:37.128335Z",
+  "request_url": "https://www.ncei.noaa.gov/monitoring-content/cag/videos/CAAG_geographic_regions.mp4",
+  "final_url": "https://www.ncei.noaa.gov/monitoring-content/cag/videos/CAAG_geographic_regions.mp4",
+  "status_code": 200,
+  "content_type": "video/mp4",
+  "byte_length": 67108864,
+  "sha256": "7c08f7f538c58560906aab70c4a4b02e25de5a3a1cca8a16d189980bbfdfc07e",
+  "etag": "\"a38c699-63e9bef8d8a10\"",
+  "last_modified": "Fri, 12 Sep 2025 15:02:00 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-71126D34540A79\\20260930T044037.128335Z_7c08f7f538c58560.mp4",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

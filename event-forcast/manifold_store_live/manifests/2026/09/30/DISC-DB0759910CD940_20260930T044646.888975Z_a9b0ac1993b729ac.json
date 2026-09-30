@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-DB0759910CD940",
+  "provider": "NOAA/NCEI",
+  "dataset": "Aric%20Whatley%20Close%20Crop.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:46.888975Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2024-11/Aric%20Whatley%20Close%20Crop.png",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2024-11/Aric%20Whatley%20Close%20Crop.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 448430,
+  "sha256": "a9b0ac1993b729ac298a22b04c226b1d8bc60760efe2656d01b5e108fcbb202e",
+  "etag": null,
+  "last_modified": "Tue, 19 Nov 2024 13:50:39 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-DB0759910CD940\\20260930T044646.888975Z_a9b0ac1993b729ac.png",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

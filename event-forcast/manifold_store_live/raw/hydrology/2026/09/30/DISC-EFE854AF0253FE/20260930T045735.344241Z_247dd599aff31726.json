@@ -1,0 +1,54 @@
+{
+    "@context": [
+        {
+            "schema": "https://schema.org/",
+            "type": "@type",
+            "features": "schema:itemListElement",
+            "FeatureCollection": "schema:itemList"
+        }
+    ],
+    "type": "FeatureCollection",
+    "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily",
+    "features": [
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily/items/AR008-331103091063001"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily/items/AR008-331856091114601"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily/items/AR008-334909091201501"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily/items/AR008-334933091153501"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily/items/AR008-335246091271101"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily/items/AR008-335353091242101"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily/items/AR008-335428091173901"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily/items/AR008-340600091240001"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily/items/AR008-341800091265000"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily/items/AR008-341930091373501"
+        }
+    ]
+}

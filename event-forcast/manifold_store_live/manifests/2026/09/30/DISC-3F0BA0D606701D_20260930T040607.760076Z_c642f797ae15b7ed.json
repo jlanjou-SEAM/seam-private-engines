@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-3F0BA0D606701D",
+  "provider": "UK Met Office",
+  "dataset": "observations.png",
+  "sector": "public",
+  "country": "GB",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:07.760076Z",
+  "request_url": "https://datahub.metoffice.gov.uk/images/homepage/observations.png",
+  "final_url": "https://datahub.metoffice.gov.uk/images/homepage/observations.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 144907,
+  "sha256": "c642f797ae15b7edb1eb278a0fb3efd368f0017e20302c9613331a1e0b8a5abb",
+  "etag": null,
+  "last_modified": "Wed, 23 Sep 2026 14:01:39 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-3F0BA0D606701D\\20260930T040607.760076Z_c642f797ae15b7ed.png",
+  "parent_id": "UK-METOFFICE",
+  "discovery_depth": 1
+}

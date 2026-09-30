@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E47402A5C99782",
+  "provider": "LightningMaps.org",
+  "dataset": "index.php",
+  "sector": "private_or_community",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "lightning"
+  ],
+  "retrieved_utc": "2026-09-30T04:30:18.870703Z",
+  "request_url": "https://www.lightningmaps.org/min/index.php?f=js/realtime.js&1787766104",
+  "final_url": "https://www.lightningmaps.org/min/index.php?f=js/realtime.js&1787766104",
+  "status_code": 200,
+  "content_type": "application/x-javascript; charset=utf-8",
+  "byte_length": 114449,
+  "sha256": "c96ecf6f3a1171a80af1df20883ff5c36b27e966f479a71f3c9d6cb428b961ad",
+  "etag": "\"pub1787766104\"",
+  "last_modified": "Wed, 26 Aug 2026 17:41:44 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E47402A5C99782\\20260930T043018.870703Z_c96ecf6f3a1171a8.php",
+  "parent_id": "LIGHTNINGMAPS-001",
+  "discovery_depth": 1
+}

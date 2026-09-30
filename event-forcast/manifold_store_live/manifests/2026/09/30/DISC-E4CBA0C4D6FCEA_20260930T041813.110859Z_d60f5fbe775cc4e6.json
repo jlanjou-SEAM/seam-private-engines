@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E4CBA0C4D6FCEA",
+  "provider": "NOAA/NDBC",
+  "dataset": "stations",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:13.110859Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/stations/?C=S;O=D",
+  "final_url": "https://www.ndbc.noaa.gov/data/stations/?C=S;O=D",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 2159,
+  "sha256": "d60f5fbe775cc4e6245bb07694ff0d87b899e7b62562d432e50d50c950573a7a",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-E4CBA0C4D6FCEA\\20260930T041813.110859Z_d60f5fbe775cc4e6.html",
+  "parent_id": "DISC-8C582A55368FC1",
+  "discovery_depth": 2
+}

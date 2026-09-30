@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-42B36D60553AAC",
+  "provider": "IPMA",
+  "dataset": "wind-speed-daily-classe.json",
+  "sector": "public",
+  "country": "PT",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:03.079330Z",
+  "request_url": "https://api.ipma.pt/open-data/wind-speed-daily-classe.json",
+  "final_url": "https://api.ipma.pt/open-data/wind-speed-daily-classe.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 644,
+  "sha256": "c747a9932e4c866165568585ffc6b1754b94ab5858e0ddd8e1085fbaba17867c",
+  "etag": "\"196e-284-56310993e6c70\"",
+  "last_modified": "Thu, 18 Jan 2018 17:50:25 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-42B36D60553AAC\\20260930T040603.079330Z_c747a9932e4c8661.json",
+  "parent_id": "IPMA-API",
+  "discovery_depth": 1
+}

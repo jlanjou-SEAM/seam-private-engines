@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A236426F755245",
+  "provider": "NOAA/NCEP",
+  "dataset": "geospace-magnetosphere-movies",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:46.619209Z",
+  "request_url": "https://www.spaceweather.gov/products/geospace-magnetosphere-movies",
+  "final_url": "https://www.spaceweather.gov/products/geospace-magnetosphere-movies",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 72917,
+  "sha256": "cd9bd304751e7c4f9269cf7fe0c82a5b4d0759f301aa9a1b31ddd6f4e331c0ec",
+  "etag": "\"1790733713\"",
+  "last_modified": "Wed, 30 Sep 2026 02:01:53 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A236426F755245\\20260930T043746.619209Z_cd9bd304751e7c4f.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

@@ -1,0 +1,2320 @@
+{
+  "panel": {
+    "name": "発表中の防災情報",
+    "enName": "Alerts",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "r8demo": true,
+      "r8dev": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "Panel",
+    "id": "bosai_panel",
+    "priority": 1,
+    "type": {
+      "renew": 5
+    },
+    "disp": {
+      "japan": "japan",
+      "offices": "offices",
+      "class20s": "class20s"
+    },
+    "keywords": {
+      "search": [
+        "防災パネル",
+        "防災ぱねる",
+        "ぼうさいぱねる",
+        "ぼうさいパネル",
+        "bosaipanel",
+        "bousaipanel"
+      ],
+      "suggest": [
+        "竜巻注意情報",
+        "竜巻ちゅういじょうほう",
+        "竜巻注意じょうほう",
+        "たつまきちゅういじょうほう",
+        "tatumakityuuijouhou",
+        "tolnado",
+        "記録雨",
+        "きろくあめ",
+        "kirokuame",
+        "記録的短時間大雨情報",
+        "記録的たんじかんおおあめじょうほう",
+        "記録的短時間おおあめじょうほう",
+        "記録的短時間大雨じょうほう",
+        "きろくてきたんじかんおおあめじょうほう",
+        "kirokutekitannjikannooamejouhou",
+        "kirokutekitanjikannooamejouhou",
+        "れべる",
+        "レベル",
+        "reberu",
+        "level",
+        "警報",
+        "注意報",
+        "けいほう",
+        "ちゅういほう",
+        "keihou",
+        "tyuuihou",
+        "避難",
+        "ひなん",
+        "hinann",
+        "warning",
+        "警戒レベル",
+        "警戒れべる",
+        "けいかいれべる",
+        "けいかいレベル",
+        "keikaireberu",
+        "災害レベル",
+        "災害れべる",
+        "さいがいれべる",
+        "さいがいレベル",
+        "saigaireberu"
+      ],
+      "might": [
+        "色",
+        "color",
+        "colour",
+        "地震津波",
+        "じしんつなみ",
+        "jisintsunami",
+        "tunami",
+        "突風",
+        "とっぷう",
+        "toppuu",
+        "特別警報",
+        "とくべつけいほう",
+        "特別けいほう",
+        "tokubetukeihou"
+      ]
+    }
+  },
+  "warning": {
+    "name": "警報・注意報（地図）",
+    "enName": "Weather Warnings/Advisories(Map)",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "r8demo": true,
+      "r8dev": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "Warning",
+    "id": "bosai_warning",
+    "priority": 1,
+    "type": {
+      "map": "#contents=warning&elem=all",
+      "renew": 5,
+      "info": true
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 8,
+      "class20s": 10
+    },
+    "map": true,
+    "defaultOptionKey": "all",
+    "defaultOptionList": [
+      {
+        "key": "all",
+        "name": "全て",
+        "enName": "All"
+      },
+      {
+        "key": "rain",
+        "name": "大雨",
+        "enName": "Heavy Rain"
+      },
+      {
+        "key": "landslide",
+        "name": "土砂災害",
+        "enName": "Landslide"
+      },
+      {
+        "key": "tide",
+        "name": "高潮",
+        "enName": "Storm Surge"
+      },
+      {
+        "key": "flood",
+        "name": "氾濫",
+        "enName": "Flood"
+      },
+      {
+        "key": "wind",
+        "name": "暴風・強風",
+        "enName": "Storm/Gale"
+      },
+      {
+        "key": "wind_snow",
+        "name": "暴風雪・風雪",
+        "enName": "Snowstorm/Gale and Snow"
+      },
+      {
+        "key": "snow",
+        "name": "大雪",
+        "enName": "Heavy Snow"
+      },
+      {
+        "key": "wave",
+        "name": "波浪",
+        "enName": "High Wave"
+      },
+      {
+        "key": "thunder",
+        "name": "雷",
+        "enName": "Thunderstorm"
+      },
+      {
+        "key": "snow_melting",
+        "name": "融雪",
+        "enName": "Snow Melting"
+      },
+      {
+        "key": "fog",
+        "name": "濃霧",
+        "enName": "Dense Fog"
+      },
+      {
+        "key": "dry",
+        "name": "乾燥",
+        "enName": "Dry Air"
+      },
+      {
+        "key": "avalanche",
+        "name": "なだれ",
+        "enName": "Avalanche"
+      },
+      {
+        "key": "cold",
+        "name": "低温",
+        "enName": "Low Temperature"
+      },
+      {
+        "key": "frost",
+        "name": "霜",
+        "enName": "Frost"
+      },
+      {
+        "key": "ice_accretion",
+        "name": "着氷",
+        "enName": "Ice Accretion"
+      },
+      {
+        "key": "snow_accretion",
+        "name": "着雪",
+        "enName": "Snow Accretion"
+      }
+    ],
+    "keywords": {
+      "search": [
+        "警報・注意報（地図）",
+        "けいほう・ちゅういほう（ちず）",
+        "keihou",
+        "tyuuihou",
+        "warning",
+        "警報",
+        "注意報"
+      ],
+      "suggest": [
+        "特別警報",
+        "とくべつけいほう",
+        "特別けいほう",
+        "tokubetukeihou",
+        "土砂災害警戒情報",
+        "どしゃさいがいけいかいじょうほう",
+        "dosyasaigaikeikaijouhou",
+        "level",
+        "map",
+        "tizu"
+      ],
+      "might": [
+        "危険度",
+        "きけんど",
+        "kikendo",
+        "警戒れべる2",
+        "警戒レベル2",
+        "けいかいれべる2",
+        "けいかいレベル2",
+        "keikaireberu2",
+        "警戒れべる3",
+        "警戒レベル3",
+        "けいかいれべる3",
+        "けいかいレベル3",
+        "keikaireberu3",
+        "警戒れべる4",
+        "警戒レベル4",
+        "けいかいれべる4",
+        "けいかいレベル4",
+        "keikaireberu4",
+        "警戒れべる5",
+        "警戒レベル5",
+        "けいかいれべる5",
+        "けいかいレベル5",
+        "keikaireberu5",
+        "災害レベル",
+        "さいがいれべる",
+        "さいがいレベル",
+        "saigaireberu",
+        "level",
+        "避難",
+        "ひなん",
+        "hinann",
+        "竜巻",
+        "たつまき",
+        "tatumaki"
+      ]
+    }
+  },
+  "warning_summary": {
+    "name": "警報・注意報（発表状況）",
+    "enName": "Weather Warnings/Advisories",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "r8demo": true,
+      "r8dev": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "Warning",
+    "id": "bosai_warning_summary",
+    "priority": 1,
+    "type": {
+      "detail": "warning/#",
+      "renew": 5,
+      "info": true
+    },
+    "disp": {
+      "offices": "offices",
+      "class20s": "class20s"
+    },
+    "keywords": {
+      "search": [
+        "警報・注意報（発表状況）",
+        "けいほう・ちゅういほう（はっぴょうじょうきょう）",
+        "keihou",
+        "cyuuihou",
+        "tyuuihou",
+        "cyuihou",
+        "tyuihou",
+        "warning_summary",
+        "happyoujoukyou",
+        "警報",
+        "注意報"
+      ],
+      "suggest": [
+        "特別警報",
+        "とくべつけいほう",
+        "特別けいほう",
+        "tokubetukeihou",
+        "tokubetsukeihou",
+        "土砂災害警戒情報",
+        "どしゃさいがいけいかいじょうほう",
+        "dosyasaigaikeikaijouhou",
+        "発表状況",
+        "はっぴょうじょうきょう",
+        "happyoujoukyou",
+        "warning",
+        "level",
+        "危険度",
+        "きけんど",
+        "kikendo",
+        "警戒れべる2",
+        "警戒レベル2",
+        "けいかいれべる2",
+        "けいかいレベル2",
+        "keikaireberu2",
+        "警戒れべる3",
+        "警戒レベル3",
+        "けいかいれべる3",
+        "けいかいレベル3",
+        "keikaireberu3",
+        "警戒れべる4",
+        "警戒レベル4",
+        "けいかいれべる4",
+        "けいかいレベル4",
+        "keikaireberu4",
+        "警戒れべる5",
+        "警戒レベル5",
+        "けいかいれべる5",
+        "けいかいレベル5",
+        "keikaireberu5"
+      ],
+      "might": [
+        "災害れべる",
+        "災害レベル",
+        "さいがいれべる",
+        "さいがいレベル",
+        "saigaireberu",
+        "竜巻",
+        "たつまき",
+        "tatumaki"
+      ]
+    }
+  },
+  "warning_timeline": {
+    "name": "時系列情報（明日までの警報等の見通し）",
+    "enName": "Timeline of warnings",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "r8demo": true,
+      "r8dev": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "WarningTimeline",
+    "id": "bosai_warning_timeline",
+    "priority": 1,
+    "type": {
+      "detail": "warning_timeline/#",
+      "renew": 5,
+      "info": true
+    },
+    "disp": {
+      "offices": "offices",
+      "class20s": "class20s"
+    },
+    "defaultOptionKey": "all",
+    "defaultOptionList": [
+      {
+        "key": "all",
+        "name": "全て",
+        "enName": "All"
+      },
+      {
+        "key": "level",
+        "name": "大雨・土砂災害・高潮",
+        "enName": "Heavy Rain/Landslide/Storm Surge"
+      },
+      {
+        "key": "other",
+        "name": "その他",
+        "enName": "Other"
+      }
+    ],
+    "keywords": {
+      "search": [
+        "時系列情報",
+        "じけいれつじょうほう",
+        "warning_timeline",
+        "jikeiretu",
+        "明日までの警報",
+        "見通し"
+      ],
+      "suggest": [
+        "特別警報",
+        "とくべつけいほう",
+        "特別けいほう",
+        "tokubetukeihou",
+        "土砂災害警戒情報",
+        "どしゃさいがいけいかいじょうほう",
+        "dosyasaigaikeikaijouhou",
+        "今後の推移",
+        "こんごのすいい",
+        "jikeiretu",
+        "warning",
+        "level",
+        "危険度",
+        "きけんど",
+        "kikendo",
+        "警戒れべる2",
+        "警戒レベル2",
+        "けいかいれべる2",
+        "けいかいレベル2",
+        "keikaireberu2",
+        "警戒れべる3",
+        "警戒レベル3",
+        "けいかいれべる3",
+        "けいかいレベル3",
+        "keikaireberu3",
+        "警戒れべる4",
+        "警戒レベル4",
+        "けいかいれべる4",
+        "けいかいレベル4",
+        "keikaireberu4",
+        "警戒れべる5",
+        "警戒レベル5",
+        "けいかいれべる5",
+        "けいかいレベル5",
+        "keikaireberu5"
+      ],
+      "might": [
+        "危険度",
+        "きけんど",
+        "kikendo",
+        "災害れべる",
+        "災害レベル",
+        "さいがいれべる",
+        "さいがいレベル",
+        "saigaireberu",
+        "竜巻",
+        "たつまき",
+        "tatumaki"
+      ]
+    }
+  },
+  "probability": {
+    "name": "早期注意情報",
+    "enName": "Probability of warnings",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "r8demo": true,
+      "r8dev": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "Probability",
+    "id": "bosai_probability",
+    "priority": 1,
+    "type": {
+      "detail": "probability/#",
+      "renew": 5,
+      "info": true
+    },
+    "disp": {
+      "offices": "offices",
+      "class20s": "class20s"
+    },
+    "keywords": {
+      "search": [
+        "早期注意情報",
+        "早期ちゅういじょうほう",
+        "早期注意じょうほう",
+        "そうきちゅういじょうほう",
+        "soukityuuijouhou",
+        "probability"
+      ],
+      "suggest": [
+        "警報級の可能性",
+        "けいほうきゅうのかのうせい",
+        "keihoukyuunokanousei"
+      ],
+      "might": [
+        "中",
+        "高",
+        "warning",
+        "警戒れべる1",
+        "警戒レベル1",
+        "けいかいれべる1",
+        "けいかいレベル1",
+        "keikaireberu1"
+      ]
+    }
+  },
+  "level_landslide": {
+    "name": "土砂キキクル",
+    "enName": "Risk Maps (Landslide)",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "r8demo": true,
+      "r8dev": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "LevelLandslide",
+    "id": "bosai_level_landslide",
+    "priority": 1,
+    "type": {
+      "map": "%LANGrisk/#elements:land&",
+      "info": true,
+      "renew": 5
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 8,
+      "class20s": 10
+    },
+    "map": true,
+    "keywords": {
+      "search": [
+        "土砂キキクル",
+        "どしゃキキクル",
+        "どしゃききくる",
+        "doshakikikuru",
+        "土砂災害",
+        "どしゃさいがい",
+        "doshasaigai",
+        "危険度分布",
+        "きけんどぶんぷ",
+        "kikendobunpu"
+      ],
+      "suggest": [
+        "雨",
+        "rain",
+        "危険度分布",
+        "きけんどぶんぷ",
+        "kikendobunpu"
+      ],
+      "might": []
+    }
+  },
+  "level_rain": {
+    "name": "大雨キキクル",
+    "enName": "Risk Maps (Heavy Rain)",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "r8demo": true,
+      "r8dev": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "LevelRain",
+    "id": "bosai_level_rain",
+    "priority": 1,
+    "type": {
+      "map": "%LANGrisk/#elements:heavyrain&",
+      "info": true,
+      "renew": 5
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 8,
+      "class20s": 10
+    },
+    "map": true,
+    "keywords": {
+      "search": [
+        "大雨キキクル",
+        "おおあめキキクル",
+        "おおあめききくる",
+        "ooamekikikuru",
+        "大雨",
+        "おおあめ",
+        "ooame",
+        "危険度分布",
+        "きけんどぶんぷ",
+        "kikendobunpu"
+      ],
+      "suggest": [
+        "雨",
+        "rain",
+        "危険度分布",
+        "きけんどぶんぷ",
+        "kikendobunpu"
+      ],
+      "might": []
+    }
+  },
+  "level_inundation": {
+    "name": "浸水キキクル",
+    "enName": "Risk Maps (Inundation)",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "r8demo": true,
+      "r8dev": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "LevelInundation",
+    "id": "bosai_level_inundation",
+    "priority": 1,
+    "type": {
+      "map": "%LANGrisk/#elements:inund&",
+      "info": true,
+      "renew": 5
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 8,
+      "class20s": 10
+    },
+    "map": true,
+    "keywords": {
+      "search": [
+        "キキクル",
+        "ききくる",
+        "kikikuru",
+        "浸水",
+        "しんすい",
+        "sinsui",
+        "shinsui",
+        "危険度分布",
+        "きけんどぶんぷ",
+        "kikendobunpu"
+      ],
+      "suggest": [
+        "雨",
+        "rain",
+        "危険度分布",
+        "きけんどぶんぷ",
+        "kikendobunpu"
+      ],
+      "might": []
+    }
+  },
+  "level_flood": {
+    "name": "洪水キキクル",
+    "enName": "Risk Maps (Flood)",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "r8demo": true,
+      "r8dev": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "LevelFlood",
+    "id": "bosai_level_flood",
+    "priority": 1,
+    "type": {
+      "map": "%LANGrisk/#elements:flood&",
+      "info": true,
+      "renew": 5
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 8,
+      "class20s": 10
+    },
+    "map": true,
+    "keywords": {
+      "search": [
+        "洪水キキクル",
+        "こうずいキキクル",
+        "こうずいききくる",
+        "kouzuikikikuru",
+        "洪水",
+        "こうずい",
+        "kouzui",
+        "危険度分布",
+        "きけんどぶんぷ",
+        "kikendobunpu"
+      ],
+      "suggest": [
+        "雨",
+        "rain",
+        "危険度分布",
+        "きけんどぶんぷ",
+        "kikendobunpu"
+      ],
+      "might": []
+    }
+  },
+  "sjfcst_map": {
+    "name": "線状降水帯予測マップ",
+    "enName": "Localized Torrential Rain Forecast Map",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "r8demo": true,
+      "r8dev": true,
+      "bosai": true
+    },
+    "namespace": "SjfcstMap",
+    "id": "bosai_sjfcst_map",
+    "priority": 1,
+    "type": {
+      "map": "%LANGkaikotan/#elements:sjfcstmap",
+      "info": true,
+      "renew": 5
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 8,
+      "class20s": 10
+    },
+    "map": true,
+    "keywords": {
+      "search": [
+        "線状降水帯",
+        "せんじょうこうすいたい"
+      ],
+      "suggest": [
+        "rain",
+        "linear"
+      ],
+      "might": []
+    }
+  },
+  "typhoon": {
+    "name": "台風情報",
+    "enName": "Tropical Cyclone Information",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "Typhoon",
+    "id": "bosai_typhoon",
+    "priority": 1,
+    "type": {
+      "map": "#contents=typhoon",
+      "renew": 5
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 8,
+      "class20s": 10
+    },
+    "map": true,
+    "keywords": {
+      "search": [
+        "台風情報",
+        "台風じょうほう",
+        "たいふうじょうほう",
+        "taihuujouhou",
+        "typhoon"
+      ],
+      "suggest": [
+        "haricane",
+        "cyclone",
+        "tropicalstorm",
+        "予報円",
+        "よほうえん",
+        "yohouenn",
+        "暴風警戒域",
+        "ぼうふうけいかいいき",
+        "bouhuukeikaiiki",
+        "地図",
+        "ちず",
+        "tizu",
+        "map",
+        "予報予想",
+        "よほうよそう",
+        "yohouyosou"
+      ],
+      "might": [
+        "確率",
+        "かくりつ",
+        "進路図",
+        "針路図",
+        "しんろず",
+        "shinrozu",
+        "sinrozu",
+        "暴風域",
+        "ぼうふういき",
+        "bouhuuiki",
+        "強風域",
+        "きょうふういき",
+        "kyouhuuiki",
+        "非常に強い台風",
+        "ひじょうにつよいたいふう",
+        "hijounituyoi",
+        "猛烈な台風",
+        "もうれつなたいふう",
+        "mouretuna",
+        "超大型の台風",
+        "ちょうおおがたのたいふう",
+        "tyouoogata",
+        "tyouogata"
+      ]
+    }
+  },
+  "information": {
+    "name": "気象防災速報・気象解説情報等",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "r8demo": true,
+      "r8dev": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "Information",
+    "id": "bosai_information",
+    "priority": 1,
+    "type": {
+      "detail": "information/#",
+      "renew": 5
+    },
+    "disp": {
+      "japan": "japan",
+      "offices": "offices",
+      "class20s": "offices"
+    },
+    "keywords": {
+      "search": [
+        "気象情報",
+        "気象じょうほう",
+        "きしょうじょうほう",
+        "kisyoujouhou",
+        "information"
+      ],
+      "suggest": [
+        "竜巻注意情報",
+        "竜巻ちゅういじょうほう",
+        "竜巻注意じょうほう",
+        "たつまきちゅういじょうほう",
+        "tatumakityuuijouhou",
+        "tolnado",
+        "記録雨",
+        "きろくあめ",
+        "kirokuame",
+        "記録的短時間大雨情報",
+        "記録的たんじかんおおあめじょうほう",
+        "記録的短時間おおあめじょうほう",
+        "記録的短時間大雨じょうほう",
+        "きろくてきたんじかんおおあめじょうほう",
+        "kirokutekitannjikannooamejouhou",
+        "kirokutekitanjikannooamejouhou",
+        "線状降水帯発生",
+        "せんじょうこうすいたいはっせい",
+        "短時間大雪",
+        "たんじかんおおゆき",
+        "全般情報",
+        "ぜんぱんじょうほう",
+        "zenpanjouhou",
+        "地方情報",
+        "ちほうじょうほう",
+        "tihoujyouhou",
+        "府県情報",
+        "ふけんじょうほう",
+        "hukenjouhou"
+      ],
+      "might": [
+        "全般台風情報",
+        "ぜんぱんたいふうじょうほう",
+        "zenpantyphoonjouhou",
+        "zenpantaihuujouhou",
+        "潮位情報",
+        "ちょういじょうほう",
+        "tyouijouhou",
+        "cyoui",
+        "天候情報",
+        "てんこうじょうほう",
+        "tenkoujouhou",
+        "避難",
+        "ひなん",
+        "hinann",
+        "雷",
+        "かみなり",
+        "kaminari",
+        "スモッグ情報",
+        "すもっぐじょうほう",
+        "すもっぐ情報",
+        "スモッグじょうほう"
+      ]
+    }
+  },
+  "flood": {
+    "name": "指定河川洪水予報",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "r8demo": true,
+      "r8dev": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "Flood",
+    "id": "bosai_flood",
+    "priority": 1,
+    "type": {
+      "detail": "flood/#",
+      "renew": 5
+    },
+    "disp": {
+      "japan": "japan",
+      "offices": "offices",
+      "class20s": "class20s"
+    },
+    "keywords": {
+      "search": [
+        "指定河川洪水予報",
+        "指定かせんこうずいよほう",
+        "指定河川こうずいよほう",
+        "指定河川洪水よほう",
+        "していかせんこうずいよほう",
+        "shiteikasennkouzuiyohou",
+        "siteikasenkouzuiyohou",
+        "flood"
+      ],
+      "suggest": [
+        "浸水",
+        "しんすい",
+        "かわ",
+        "kawa",
+        "river",
+        "災害",
+        "さいがい",
+        "saigai",
+        "氾濫危険",
+        "はんらんきけん",
+        "hannrannkiken",
+        "hanrankiken",
+        "氾濫警戒",
+        "はんらんけいかい",
+        "hannrannkeikai",
+        "hanrankeikai",
+        "氾濫注意",
+        "はんらんちゅうい",
+        "hannranntyuui",
+        "hanrantyuui",
+        "水位",
+        "すいい",
+        "suii",
+        "flood",
+        "大雨",
+        "おおあめ",
+        "oame",
+        "ooame",
+        "ohame",
+        "水防団待機",
+        "すいぼうだんたいき",
+        "suiboudantaiki"
+      ],
+      "might": [
+        "決壊",
+        "けっかい",
+        "堤防",
+        "ていぼう",
+        "溢れる",
+        "あふれる",
+        "外水",
+        "内水",
+        "避難",
+        "ひなん",
+        "hinann",
+        "警戒レベル5",
+        "keikaireberu5",
+        "警戒レベル4",
+        "keikaireberu4",
+        "警戒レベル3",
+        "keikaireberu",
+        "警戒レベル3",
+        "keikaireberu",
+        "警戒レベル2",
+        "keikaireberu2"
+      ]
+    }
+  },
+  "floodindex": {
+    "name": "流域雨量指数の予測値",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "FloodIndex",
+    "id": "bosai_floodindex",
+    "priority": 1,
+    "type": {
+      "detail": "floodindex/#",
+      "renew": 5,
+      "info": true
+    },
+    "disp": {
+      "class20s": "class20s"
+    },
+    "keywords": {
+      "search": [
+        "流域雨量指数",
+        "流域うりょうしすう",
+        "流域雨量しすう",
+        "ryuikiuryousisu",
+        "floodindex"
+      ],
+      "suggest": [
+        "浸水",
+        "しんすい",
+        "かわ",
+        "kawa",
+        "river",
+        "sinsui",
+        "shinsui",
+        "氾濫",
+        "はんらん",
+        "水位",
+        "suii",
+        "大雨",
+        "おおあめ",
+        "oame",
+        "基準河川",
+        "きじゅんかせん",
+        "kizyunkasen"
+      ],
+      "might": [
+        "決壊",
+        "けっかい",
+        "堤防",
+        "ていぼう",
+        "溢れる",
+        "あふれる",
+        "外水",
+        "内水",
+        "避難",
+        "ひなん"
+      ]
+    }
+  },
+  "radar": {
+    "name": "雨雲の動き（雨・雷・竜巻）",
+    "enName": "Precipitation Nowcasts",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "Radar",
+    "id": "bosai_radar",
+    "priority": 1,
+    "type": {
+      "map": "%LANGnowc/#",
+      "info": true,
+      "renew": 5
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 8,
+      "class20s": 10
+    },
+    "map": true,
+    "defaultOptionKey": "hrpns",
+    "defaultOptionList": [
+      {
+        "key": "hrpns",
+        "name": "雨雲の動き",
+        "enName": "High-resolution Precipitation Nowcasts"
+      },
+      {
+        "key": "thns",
+        "name": "雷活動度",
+        "enName": "Thunder Nowcasts"
+      },
+      {
+        "key": "trns",
+        "name": "竜巻発生確度",
+        "enName": "Hazardous Wind Potential Nowcasts"
+      }
+    ],
+    "keywords": {
+      "search": [
+        "雨雲の動き",
+        "あまぐものうごき",
+        "レーダー",
+        "amagumonougoki"
+      ],
+      "suggest": [
+        "rain"
+      ],
+      "might": []
+    }
+  },
+  "kaikotan": {
+    "name": "今後の雨",
+    "enName": "Precipitation Analysis",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "Kaikotan",
+    "id": "bosai_kaikotan",
+    "priority": 1,
+    "type": {
+      "map": "%LANGkaikotan/#elements:slmcs&slmcs_fcst&rasrf",
+      "info": true,
+      "renew": 5
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 8,
+      "class20s": 10
+    },
+    "map": true,
+    "defaultOptionKey": "rasrf",
+    "defaultOptionList": [
+      {
+        "key": "rasrf",
+        "name": "1時間降水量",
+        "enName": "1-hour Precipitation"
+      },
+      {
+        "key": "rasrf03h",
+        "name": "3時間降水量",
+        "enName": "3-hour Precipitation"
+      },
+      {
+        "key": "rasrf24h",
+        "name": "24時間降水量",
+        "enName": "24-hour Precipitation"
+      }
+    ],
+    "keywords": {
+      "search": [
+        "今後の雨",
+        "こんごのあめ",
+        "レーダー",
+        "雨量"
+      ],
+      "suggest": [
+        "rain"
+      ],
+      "might": []
+    }
+  },
+  "snow": {
+    "name": "今後の雪",
+    "enName": "Snow Analysis/Forecasts",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "Snow",
+    "id": "bosai_snow",
+    "priority": 1,
+    "type": {
+      "map": "%LANGsnow/#",
+      "info": true,
+      "renew": 5
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 8,
+      "class20s": 10
+    },
+    "map": true,
+    "defaultOptionKey": "snowd",
+    "defaultOptionList": [
+      {
+        "key": "snowd",
+        "name": "積雪の深さ",
+        "enName": "Snow depth"
+      },
+      {
+        "key": "snowf03h",
+        "name": "3時間降雪量",
+        "enName": "3-hr. Snowfall amount"
+      },
+      {
+        "key": "snowf06h",
+        "name": "6時間降雪量",
+        "enName": "6-hr. Snowfall amount"
+      },
+      {
+        "key": "snowf12h",
+        "name": "12時間降雪量",
+        "enName": "12-hr. Snowfall amount"
+      },
+      {
+        "key": "snowf24h",
+        "name": "24時間降雪量",
+        "enName": "24-hr. Snowfall amount"
+      },
+      {
+        "key": "snowf48h",
+        "name": "48時間降雪量",
+        "enName": "48-hr. Snowfall amount"
+      },
+      {
+        "key": "snowf72h",
+        "name": "72時間降雪量",
+        "enName": "72-hr. Snowfall amount"
+      }
+    ],
+    "keywords": {
+      "search": [
+        "今後の雪",
+        "こんごのゆき",
+        "ゆき",
+        "konngonoyuki",
+        "kongonoyuki"
+      ],
+      "suggest": [
+        "snow",
+        "積雪深"
+      ],
+      "might": []
+    }
+  },
+  "forecast": {
+    "name": "天気予報（地図）",
+    "enName": "Weather Forecasts Map",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "Forecast",
+    "id": "bosai_forecast",
+    "priority": 1,
+    "type": {
+      "detail": "#contents=forecast",
+      "renew": 5,
+      "info": true
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 9,
+      "class20s": 10
+    },
+    "map": true,
+    "defaultOptionKey": "0day",
+    "defaultOptionList": [],
+    "keywords": {
+      "search": [
+        "天気予報",
+        "天気よほう",
+        "てんきよほう",
+        "tenkiyohou",
+        "forecast"
+      ],
+      "suggest": [
+        "週間予報",
+        "しゅうかんよほう",
+        "syuukannyohou",
+        "信頼度",
+        "しんらいど",
+        "信頼ど",
+        "sinnraido",
+        "sinraido",
+        "降水確率",
+        "こうすいかくりつ",
+        "降水かくりつ",
+        "kousuikakuritu"
+      ],
+      "might": [
+        "晴れ",
+        "雨",
+        "雪",
+        "曇り",
+        "はれ",
+        "あめ",
+        "ゆき",
+        "くもり",
+        "今日",
+        "明日",
+        "きょう",
+        "あす",
+        "あした",
+        "明後日",
+        "あさって",
+        "しあさって",
+        "曜日",
+        "週末",
+        "洗濯",
+        "せんたく",
+        "sentaku",
+        "傘",
+        "かさ",
+        "kasa"
+      ]
+    }
+  },
+  "forecast_table": {
+    "name": "天気予報（一覧表）",
+    "enName": "Weather Forecasts",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "Forecast",
+    "id": "bosai_forecast_table",
+    "priority": 1,
+    "type": {
+      "detail": "forecast/#",
+      "renew": 5
+    },
+    "disp": {
+      "japan": "japan",
+      "offices": "offices",
+      "class20s": "class20s"
+    },
+    "keywords": {
+      "search": [
+        "天気予報",
+        "天気よほう",
+        "てんきよほう",
+        "tenkiyohou",
+        "forecast"
+      ],
+      "suggest": [
+        "週間予報",
+        "しゅうかんよほう",
+        "syuukannyohou",
+        "信頼度",
+        "しんらいど",
+        "信頼ど",
+        "sinnraido",
+        "sinraido",
+        "降水確率",
+        "こうすいかくりつ",
+        "降水かくりつ",
+        "kousuikakuritu",
+        "地図",
+        "ちず",
+        "tizu",
+        "map"
+      ],
+      "might": [
+        "晴れ",
+        "雨",
+        "雪",
+        "曇り",
+        "はれ",
+        "あめ",
+        "ゆき",
+        "くもり",
+        "今日",
+        "明日",
+        "きょう",
+        "あす",
+        "あした",
+        "明後日",
+        "あさって",
+        "しあさって",
+        "曜日",
+        "週末",
+        "洗濯",
+        "せんたく",
+        "sentaku",
+        "傘",
+        "かさ",
+        "kasa"
+      ]
+    }
+  },
+  "forecaster_comment": {
+    "name": "気象台からのコメント",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "review": true,
+      "bosai": true
+    },
+    "namespace": "ForecasterComment",
+    "id": "bosai_forecaster_comment",
+    "priority": 1,
+    "type": {
+      "renew": 5,
+      "info": true
+    },
+    "disp": {
+      "offices": "offices",
+      "class20s": "offices"
+    },
+    "keywords": {
+      "search": [
+        "気象台からのコメント",
+        "気象台からのコメント",
+        "きしょうだいからのこめんと",
+        "yohoukannkomento",
+        "yohoukankomento",
+        "forecastercomment"
+      ],
+      "suggest": [
+        "予報官コメント",
+        "よほうかんコメント",
+        "よほうかんこめんと",
+        "予想",
+        "予報"
+      ],
+      "might": [
+        "量",
+        "防災"
+      ]
+    }
+  },
+  "weather_map": {
+    "name": "天気図",
+    "enName": "Weather Maps",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "WeatherMap",
+    "id": "bosai_weather_map",
+    "priority": 1,
+    "type": {
+      "renew": 5,
+      "detail": "weather_map/"
+    },
+    "disp": {
+      "japan": "japan",
+      "offices": "japan",
+      "class20s": "japan"
+    },
+    "keywords": {
+      "search": [
+        "天気図",
+        "てんきず",
+        "tenkizu",
+        "tennkizu",
+        "tenkizu",
+        "weather_map",
+        "chart"
+      ],
+      "suggest": [
+        "気圧配置",
+        "きあつはいち",
+        "kiatuhaiti"
+      ],
+      "might": [
+        "高気圧",
+        "低気圧",
+        "こうきあつ",
+        "ていきあつ",
+        "寒冷前線",
+        "温暖前線",
+        "停滞前線",
+        "閉塞前線",
+        "梅雨前線",
+        "秋雨前線",
+        "かんれいぜんせん",
+        "おんだんぜんせん",
+        "ていたいぜんせん",
+        "へいそくぜんせん",
+        "ばいうぜんせん",
+        "あきさめぜんせん"
+      ]
+    },
+    "defaultOptionKey": "now",
+    "defaultOptionList": [
+      {
+        "key": "now",
+        "name": "最新時刻",
+        "enName": "Analysis"
+      },
+      {
+        "key": "ft24",
+        "name": "24時間後の予想",
+        "enName": "Forecast for 24-hour"
+      },
+      {
+        "key": "ft48",
+        "name": "48時間後の予想",
+        "enName": "Forecast for 48-hour"
+      }
+    ]
+  },
+  "himawari": {
+    "name": "気象衛星ひまわり",
+    "enName": "Satellite Imagery",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "Himawari",
+    "id": "bosai_himawari",
+    "priority": 1,
+    "type": {
+      "map": "#contents=himawari&elem=ir",
+      "renew": 5
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 8,
+      "class20s": 10
+    },
+    "defaultOptionKey": "ir",
+    "defaultOptionList": [
+      {
+        "key": "vis",
+        "name": "可視画像",
+        "enName": "Visible"
+      },
+      {
+        "key": "ir",
+        "name": "赤外画像",
+        "enName": "Infrared"
+      },
+      {
+        "key": "vap",
+        "name": "水蒸気画像",
+        "enName": "Water vapor"
+      },
+      {
+        "key": "color",
+        "name": "トゥルーカラー再現画像",
+        "enName": "True color Reproduction"
+      },
+      {
+        "key": "strengthen",
+        "name": "雲頂強調画像",
+        "enName": "Color Enhanced"
+      }
+    ],
+    "map": true,
+    "keywords": {
+      "search": [
+        "ひまわり",
+        "himawari",
+        "気象衛星",
+        "きしょうえいせい",
+        "気象えいせい",
+        "kisyoueisei",
+        "satellite"
+      ],
+      "suggest": [
+        "雲",
+        "くも",
+        "kumo",
+        "赤外画像",
+        "せきがいがぞう",
+        "sekigaigazou",
+        "可視画像",
+        "かしがぞう",
+        "kasigazou",
+        "kashigazou",
+        "水蒸気画像",
+        "すいじょうきがぞう",
+        "suijyoukigazou",
+        "suijoukigazou",
+        "地図",
+        "ちず",
+        "tizu",
+        "map"
+      ],
+      "might": [
+        "積乱雲",
+        "せきらんうん",
+        "sekiranun",
+        "sekirannunn",
+        "雲の動き",
+        "くものうごき",
+        "kumonougoki",
+        "線状降水帯",
+        "線状こうすいたい",
+        "線状降水たい",
+        "senjokousuitai",
+        "せんじょうこうすいたい"
+      ]
+    }
+  },
+  "amedas": {
+    "name": "アメダス（地図）",
+    "enName": "Observation Map",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "Amedas",
+    "id": "bosai_amedas",
+    "priority": 1,
+    "type": {
+      "map": "#contents=amedas&elem=temp",
+      "renew": 5,
+      "info": true
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 8,
+      "class20s": 10
+    },
+    "map": true,
+    "defaultOptionKey": "temp",
+    "defaultOptionList": [
+      {
+        "key": "temp",
+        "name": "気温",
+        "enName": "Temperature"
+      },
+      {
+        "key": "precipitation10m",
+        "name": "10分間降水量",
+        "enName": "Precipitation (10-munite)"
+      },
+      {
+        "key": "precipitation1h",
+        "name": "1時間降水量",
+        "enName": "Precipitation (1-hour)"
+      },
+      {
+        "key": "precipitation3h",
+        "name": "3時間降水量",
+        "enName": "Precipitation (3-hour)"
+      },
+      {
+        "key": "precipitation24h",
+        "name": "24時間降水量",
+        "enName": "Precipitation (24-hour)"
+      },
+      {
+        "key": "wind",
+        "name": "風向・風速",
+        "enName": "Wind direction/speed"
+      },
+      {
+        "key": "sun1h",
+        "name": "日照時間",
+        "enName": "Sunshine duration"
+      },
+      {
+        "key": "snow",
+        "name": "積雪深",
+        "enName": "Snow depth"
+      },
+      {
+        "key": "snow6h",
+        "name": "6時間降雪量",
+        "enName": "Snow fall (6-hour)"
+      },
+      {
+        "key": "snow12h",
+        "name": "12時間降雪量",
+        "enName": "Snow fall (12-hour)"
+      },
+      {
+        "key": "snow24h",
+        "name": "24時間降雪量",
+        "enName": "Snow fall (24-hour)"
+      },
+      {
+        "key": "humidity",
+        "name": "湿度",
+        "enName": "Humidity"
+      },
+      {
+        "key": "obsStation",
+        "name": "地点名",
+        "enName": "Stations"
+      }
+    ],
+    "keywords": {
+      "search": [
+        "アメダス",
+        "あめだす",
+        "amedas"
+      ],
+      "suggest": [
+        "気温",
+        "きおん",
+        "kionn",
+        "降水量",
+        "こうすいりょう",
+        "kousuiryou",
+        "日照時間",
+        "にっしょうじかん",
+        "nissyoujikann",
+        "積雪深",
+        "せきせつしん",
+        "sekisetusinn",
+        "風向・風速",
+        "ふうこう・ふうそく",
+        "huukouhuusoku",
+        "気圧",
+        "きあつ",
+        "kiatu",
+        "地図",
+        "ちず",
+        "tizu",
+        "map"
+      ],
+      "might": [
+        "雨",
+        "あめ",
+        "ame",
+        "ゆき",
+        "yuki",
+        "snow",
+        "rain"
+      ]
+    }
+  },
+  "amedas_table": {
+    "name": "アメダス（一覧表）",
+    "enName": "Observation Table",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "Amedas",
+    "id": "bosai_amedas_table",
+    "priority": 1,
+    "type": {
+      "map": "#contents=amedas&elem=temp",
+      "renew": 5
+    },
+    "disp": {
+      "class20s": "class20s"
+    },
+    "keywords": {
+      "search": [
+        "アメダス",
+        "あめだす",
+        "amedas"
+      ],
+      "suggest": [
+        "気温",
+        "きおん",
+        "kionn",
+        "降水量",
+        "こうすいりょう",
+        "kousuiryou",
+        "積雪深",
+        "せきせつしん",
+        "sekisetusinn",
+        "風向・風速",
+        "ふうこう・ふうそく",
+        "huukouhuusoku"
+      ],
+      "might": [
+        "雨",
+        "あめ",
+        "ame",
+        "ゆき",
+        "yuki",
+        "snow",
+        "rain"
+      ]
+    }
+  },
+  "total_rain": {
+    "name": "降り始めからの総雨量",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "TotalRain",
+    "id": "bosai_total_rain",
+    "priority": 1,
+    "type": {
+      "renew": 5
+    },
+    "disp": {
+      "offices": "offices",
+      "class20s": "class20s"
+    },
+    "keywords": {
+      "search": [
+        "降り始めからの総雨量",
+        "ふりはじめ",
+        "furihajime",
+        "totalrain"
+      ],
+      "suggest": [
+        "降水量",
+        "こうすいりょう",
+        "kousuiryou",
+        "総雨量",
+        "そううりょう",
+        "souuryou"
+      ],
+      "might": [
+        "雨",
+        "あめ",
+        "ame",
+        "rain"
+      ]
+    }
+  },
+  "seawarning": {
+    "name": "海上警報・予報",
+    "enName": "Marine Warnings/Forecasts",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "SeaWarning",
+    "id": "bosai_seawarning",
+    "priority": 1,
+    "type": {
+      "map": "#contents=seawarning",
+      "info": true,
+      "renew": 5
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 5,
+      "class20s": 5
+    },
+    "map": true,
+    "fixedArea": {
+      "area_type": "japan",
+      "area_code": "010000"
+    },
+    "keywords": {
+      "search": [
+        "海上警報・予報",
+        "海上警報",
+        "海上予報",
+        "かいじょうけいほう",
+        "かいじょうよほう",
+        "kaijoukeihoo",
+        "kaijouyohou",
+        "seawarning",
+        "marine"
+      ],
+      "suggest": [
+        "海上風警報",
+        "海上濃霧警報",
+        "海上暴風警報",
+        "かいじょう",
+        "kaijou",
+        "地図",
+        "ちず",
+        "tizu",
+        "map",
+        "船舶",
+        "せんぱく",
+        "senpaku"
+      ],
+      "might": [
+        "波浪",
+        "はろう",
+        "harou",
+        "wind",
+        "wave",
+        "fog",
+        "storm",
+        "台風",
+        "たいふう",
+        "漁業",
+        "ぎょぎょう"
+      ]
+    }
+  },
+  "umimesh": {
+    "name": "海上分布予報",
+    "enName": "Distribution Marine Forecasts",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "Umimesh",
+    "id": "bosai_umimesh",
+    "priority": 1,
+    "type": {
+      "map": "%LANGumimesh/#",
+      "info": true,
+      "renew": 5
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 5,
+      "class20s": 5
+    },
+    "map": true,
+    "fixedArea": {
+      "area_type": "japan",
+      "area_code": "010000"
+    },
+    "defaultOptionKey": "wind",
+    "defaultOptionList": [
+      {
+        "key": "wind",
+        "name": "風向・風速",
+        "enName": "Wind"
+      },
+      {
+        "key": "wave",
+        "name": "波の高さ",
+        "enName": "Wave height"
+      },
+      {
+        "key": "vis",
+        "name": "視程",
+        "enName": "Visibility"
+      },
+      {
+        "key": "icing",
+        "name": "着氷の程度",
+        "enName": "Icing"
+      },
+      {
+        "key": "weather",
+        "name": "天気",
+        "enName": "Weather"
+      }
+    ],
+    "keywords": {
+      "search": [
+        "海上分布予報",
+        "かいじょうぶんぷよほう",
+        "kaijyoubunpuyohou",
+        "kaijoubunpuyohou",
+        "umimesh"
+      ],
+      "suggest": [
+        "風向・風速",
+        "ふうこう・ふうそく",
+        "huukouhuusoku",
+        "波の高さ",
+        "なみのたかさ",
+        "naminotakasa",
+        "視程",
+        "してい",
+        "sitei",
+        "shitei",
+        "着氷",
+        "ちゃくひょう",
+        "tyakuhyou",
+        "天気",
+        "てんき",
+        "tenki",
+        "地図",
+        "ちず",
+        "tizu",
+        "map"
+      ],
+      "might": [
+        "波浪",
+        "はろう",
+        "harou",
+        "wind",
+        "wave",
+        "海上",
+        "かいじょう",
+        "kaijou",
+        "船舶",
+        "せんぱく",
+        "senpaku",
+        "漁業",
+        "ぎょぎょう"
+      ]
+    }
+  },
+  "tidelevel": {
+    "name": "潮位観測情報",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "TideLevel",
+    "id": "bosai_tidelevel",
+    "priority": 1,
+    "type": {
+      "detail": "tidelevel/#",
+      "renew": 5
+    },
+    "disp": {
+      "class20s": "class20s"
+    },
+    "keywords": {
+      "search": [
+        "潮位観測情報",
+        "ちょういかんそくじょうほう",
+        "tyouikansokujouhou",
+        "tidelevel"
+      ],
+      "suggest": [
+        "潮位",
+        "ちょうい",
+        "tyoui",
+        "潮汐",
+        "ちょうせき",
+        "検潮所",
+        "けんちょうしょ",
+        "満潮",
+        "まんちょう",
+        "干潮",
+        "かんちょう"
+      ],
+      "might": [
+        "高潮",
+        "たかしお",
+        "津波",
+        "つなみ",
+        "台風",
+        "たいふう",
+        "潮汐表",
+        "tide",
+        "海面",
+        "かいめん"
+      ]
+    }
+  },
+  "tsunami": {
+    "name": "津波",
+    "enName": "Tsunami Warnings/Adovisories/Informations",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "Tsunami",
+    "id": "bosai_tsunami",
+    "priority": 1,
+    "type": {
+      "info": true,
+      "map": "#contents=tsunami",
+      "renew": 5
+    },
+    "disp": {
+      "japan": 5,
+      "offices": 8,
+      "class20s": 10
+    },
+    "map": true,
+    "keywords": {
+      "search": [
+        "津波警報・情報・予報",
+        "津波けいほう",
+        "津波じょうほう",
+        "津波よほう",
+        "つなみけいほう",
+        "つなみよほう",
+        "つなみけいほう・じょうほう・よほう",
+        "tsunami",
+        "tunami"
+      ],
+      "suggest": [
+        "津波注意報",
+        "つなみちゅういほう",
+        "地図",
+        "ちず",
+        "tizu",
+        "map",
+        "特別警報",
+        "とくべつけいほう",
+        "特別けいほう",
+        "tokubetukeihou"
+      ],
+      "might": [
+        "地震",
+        "じしん",
+        "おおつなみ",
+        "大津波",
+        "避難",
+        "ひなん",
+        "hinann",
+        "warning",
+        "wave"
+      ]
+    }
+  },
+  "earthquake": {
+    "name": "地震情報（一覧表）",
+    "enName": "Earthquake Information",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "Quake",
+    "id": "bosai_earthquake",
+    "priority": 1,
+    "type": {
+      "map": "#contents=earthquake_map&elem=int",
+      "renew": 5
+    },
+    "disp": {
+      "japan": "japan",
+      "offices": "offices",
+      "class20s": "class20s"
+    },
+    "keywords": {
+      "search": [
+        "地震情報（一覧表）",
+        "地震じょうほう",
+        "じしんじょうほう",
+        "jisinjouhou",
+        "earthquake"
+      ],
+      "suggest": [
+        "震度",
+        "しんど",
+        "一覧表",
+        "itiranhyo",
+        "いちらんひょう",
+        "sindo",
+        "マグニチュード",
+        "magnitude",
+        "M",
+        "magunityu-do"
+      ],
+      "might": [
+        "揺れ",
+        "ゆれ",
+        "断層",
+        "だんそう",
+        "緊急地震速報",
+        "きんきゅうじしんそくほう"
+      ]
+    }
+  },
+  "jishin_kaisetsu": {
+    "name": "地震解説資料",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "JishinKaisetsu",
+    "id": "bosai_jishin_kaisetsu",
+    "priority": 1,
+    "type": {
+      "renew": 5
+    },
+    "disp": {
+      "japan": "japan",
+      "offices": "offices",
+      "class20s": "class20s"
+    },
+    "keywords": {
+      "search": [
+        "地震解説資料",
+        "地震かいせつ",
+        "じしんかいせつ",
+        "jishinkaisetsu"
+      ],
+      "suggest": [
+        "地震",
+        "かざん",
+        "jishin",
+        "解説",
+        "かいせつ",
+        "kaisetsu"
+      ],
+      "might": []
+    }
+  },
+  "nteq": {
+    "name": "南海トラフ地震",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "Nteq",
+    "id": "nteq",
+    "priority": 1,
+    "type": {
+      "detail": "nteq/",
+      "renew": 5
+    },
+    "disp": {
+      "japan": "japan",
+      "offices": "japan",
+      "class20s": "japan"
+    },
+    "keywords": {
+      "search": [
+        "南海トラフ地震",
+        "なんかいとらふじしん",
+        "nannkaitorahuzishin",
+        "nankaitorahuzishin"
+      ],
+      "suggest": [
+        "trough",
+        "地震"
+      ],
+      "might": []
+    }
+  },
+  "volcano": {
+    "name": "噴火警報・予報",
+    "enName": "Volcanic Warnings",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "Volcano",
+    "id": "bosai_volcano",
+    "priority": 1,
+    "type": {
+      "map": "#contents=volcano",
+      "renew": 5,
+      "info": true
+    },
+    "disp": {
+      "japan": "japan",
+      "offices": "centers",
+      "class20s": "offices"
+    },
+    "map": true,
+    "keywords": {
+      "search": [
+        "噴火",
+        "火山",
+        "警報",
+        "予報"
+      ],
+      "suggest": [
+        "volcano"
+      ],
+      "might": []
+    }
+  },
+  "kazan_kaisetsu": {
+    "name": "火山解説資料",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "namespace": "KazanKaisetsu",
+    "id": "bosai_kazan_kaisetsu",
+    "priority": 1,
+    "type": {
+      "renew": 5
+    },
+    "disp": {
+      "japan": "japan",
+      "offices": "offices",
+      "class20s": "class20s"
+    },
+    "keywords": {
+      "search": [
+        "火山解説資料",
+        "火山かいせつ",
+        "かざんかいせつ",
+        "kazankaisetsu"
+      ],
+      "suggest": [
+        "火山",
+        "かざん",
+        "kazan",
+        "解説",
+        "かいせつ",
+        "kaisetsu"
+      ],
+      "might": []
+    }
+  },
+  "harerunimg": {
+    "name": "はれるん",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "priority": 1,
+    "type": {},
+    "disp": {
+      "japan": "japan",
+      "offices": "offices",
+      "class20s": "class20s"
+    },
+    "skip": true,
+    "keywords": {
+      "search": [],
+      "suggest": [],
+      "might": []
+    },
+    "id": "bosai_harerunimg"
+  },
+  "ad": {
+    "name": "広告",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "priority": 1,
+    "type": {},
+    "disp": {
+      "japan": "japan",
+      "offices": "offices",
+      "class20s": "class20s"
+    },
+    "skip": true,
+    "keywords": {
+      "search": [],
+      "suggest": [],
+      "might": []
+    },
+    "id": "bosai_ad"
+  }
+}

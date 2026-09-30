@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-CEA9636264C9D3",
+  "provider": "NOAA/NCEI",
+  "dataset": "climate-atlas",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:11.436614Z",
+  "request_url": "https://www.ncei.noaa.gov/products/climate-atlas",
+  "final_url": "https://www.ncei.noaa.gov/products/climate-atlas",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 117873,
+  "sha256": "be63230ac4a273179d5e0f2799dfa3ec8018f966457cbc8434ee6f2a12b3474c",
+  "etag": "\"1790715521-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 20:58:41 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-CEA9636264C9D3\\20260930T044711.436614Z_be63230ac4a27317.html",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

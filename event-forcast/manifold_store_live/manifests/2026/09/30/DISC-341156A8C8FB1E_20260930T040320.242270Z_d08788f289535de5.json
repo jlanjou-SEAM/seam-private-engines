@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-341156A8C8FB1E",
+  "provider": "NOAA/NCEI",
+  "dataset": "alerts",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:03:20.242270Z",
+  "request_url": "https://www.ncei.noaa.gov/alerts",
+  "final_url": "https://www.ncei.noaa.gov/alerts",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 32426,
+  "sha256": "d08788f289535de57b57d67eeab661e1833dc00bd062b9fa1f85eb65a7306a04",
+  "etag": "\"1790715611-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:00:11 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-341156A8C8FB1E\\20260930T040320.242270Z_d08788f289535de5.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

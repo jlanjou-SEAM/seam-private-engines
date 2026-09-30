@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-7D8914F652E9C1",
+  "provider": "USGS Water Data",
+  "dataset": "reliability-codes",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:31:56.034226Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/reliability-codes",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/reliability-codes",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 4100,
+  "sha256": "54afc6be88d03b5c09e6858a61418ea5345c97d15a7735eff77886d1c36eee87",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\30\\DISC-7D8914F652E9C1\\20260930T043156.034226Z_54afc6be88d03b5c.json",
+  "parent_id": "DISC-50BE965810B0D9",
+  "discovery_depth": 2
+}

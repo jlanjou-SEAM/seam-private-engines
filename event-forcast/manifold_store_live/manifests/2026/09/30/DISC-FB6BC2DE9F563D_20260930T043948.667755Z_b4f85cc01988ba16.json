@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-FB6BC2DE9F563D",
+  "provider": "NOAA/NCEI",
+  "dataset": "stormevents",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:48.667755Z",
+  "request_url": "https://www.ncei.noaa.gov/stormevents/",
+  "final_url": "https://www.ncei.noaa.gov/access/storm-events-database/",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 1162,
+  "sha256": "b4f85cc01988ba162c767ef5989aaaa0a215001882a62bf1735df58d0d2cd5c5",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-FB6BC2DE9F563D\\20260930T043948.667755Z_b4f85cc01988ba16.html",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

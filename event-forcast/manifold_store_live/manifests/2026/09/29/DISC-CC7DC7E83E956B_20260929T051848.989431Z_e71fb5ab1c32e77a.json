@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-CC7DC7E83E956B",
+  "provider": "NASA Earthdata",
+  "dataset": "alerts-outages",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:48.989431Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 2409039,
+  "sha256": "e71fb5ab1c32e77ab1320e807114ed99e140b505b205cc8f9335552a496b0ef9",
+  "etag": "\"1790659130\"",
+  "last_modified": "Tue, 29 Sep 2026 05:18:50 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\29\\DISC-CC7DC7E83E956B\\20260929T051848.989431Z_e71fb5ab1c32e77a.html",
+  "parent_id": "NASA-EARTHDATA",
+  "discovery_depth": 1
+}

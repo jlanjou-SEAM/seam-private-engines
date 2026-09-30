@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-FABAB0260C7536",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "awarness-right-behavior-with-earthquakes",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:47.954048Z",
+  "request_url": "https://www.ncm.gov.ae/pages/awarness-right-behavior-with-earthquakes?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/awarness-right-behavior-with-earthquakes?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43711,
+  "sha256": "08950fc2865d5194cc5850f04b2308b052c3b96c7453fe4a0b8b7c9f584c9e8e",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-FABAB0260C7536\\20260930T041047.954048Z_08950fc2865d5194.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

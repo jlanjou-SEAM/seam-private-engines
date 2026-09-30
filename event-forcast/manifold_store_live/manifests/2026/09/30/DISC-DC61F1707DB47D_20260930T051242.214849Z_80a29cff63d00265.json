@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-DC61F1707DB47D",
+  "provider": "NOAA/NDBC",
+  "dataset": "FBIS1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:12:42.214849Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/FBIS1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/FBIS1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 601976,
+  "sha256": "80a29cff63d0026599490951470ee0ee2103ac43bce5374bda71bf5677f1426f",
+  "etag": "\"92f78-65cac2d3eeda3\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-DC61F1707DB47D\\20260930T051242.214849Z_80a29cff63d00265.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

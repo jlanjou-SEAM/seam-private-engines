@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-CB543B5F5AF3BC",
+  "provider": "NOAA/NCEI",
+  "dataset": "value-of-data-USDM",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:43.649090Z",
+  "request_url": "https://www.ncei.noaa.gov/news/value-of-data-USDM",
+  "final_url": "https://www.ncei.noaa.gov/news/value-of-data-USDM",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43572,
+  "sha256": "3b141adf15854b29824dd87c3502501b4007931ce1ae0c1bdd0cbbfbbca77e9c",
+  "etag": "\"1790718349-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:45:49 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-CB543B5F5AF3BC\\20260930T044643.649090Z_3b141adf15854b29.html",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

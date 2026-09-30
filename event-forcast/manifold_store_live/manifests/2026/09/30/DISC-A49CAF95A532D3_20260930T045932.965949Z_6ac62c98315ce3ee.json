@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A49CAF95A532D3",
+  "provider": "NOAA/SWPC",
+  "dataset": "lasco-c3.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:59:32.965949Z",
+  "request_url": "https://services.swpc.noaa.gov/products/animations/lasco-c3.json",
+  "final_url": "https://services.swpc.noaa.gov/products/animations/lasco-c3.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 6435,
+  "sha256": "6ac62c98315ce3ee59c9f18331acf3b49e7524ee07b10c0f771c86f5b37d4f4a",
+  "etag": "\"1923-65cac1f162e6b\"",
+  "last_modified": "Wed, 30 Sep 2026 04:56:25 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-A49CAF95A532D3\\20260930T045932.965949Z_6ac62c98315ce3ee.json",
+  "parent_id": "DISC-DC635460D92E37",
+  "discovery_depth": 2
+}

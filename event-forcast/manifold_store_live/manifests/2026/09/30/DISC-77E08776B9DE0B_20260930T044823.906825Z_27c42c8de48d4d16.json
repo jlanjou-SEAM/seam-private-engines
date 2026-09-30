@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-77E08776B9DE0B",
+  "provider": "NOAA/NCEI",
+  "dataset": "2020-2025%20NCEI%20Roadmap-Final.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:23.906825Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2021-07/2020-2025%20NCEI%20Roadmap-Final.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-07/2020-2025%20NCEI%20Roadmap-Final.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 8209107,
+  "sha256": "27c42c8de48d4d16d4dfd7f794d77ad10c68394143e025a7dbe75a3db2d30f03",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:32:19 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-77E08776B9DE0B\\20260930T044823.906825Z_27c42c8de48d4d16.pdf",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

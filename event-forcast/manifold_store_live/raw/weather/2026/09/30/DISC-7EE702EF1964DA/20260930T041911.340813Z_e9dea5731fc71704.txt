@@ -1,0 +1,123 @@
+#
+#  Station Table format:
+#
+#  ProviderId|AFOS(HB5)Id|StationName|StationElevation|Latitude|Longitude|localTZ|StationLocation|
+#  StationType|NumberOfInstruments|NumberOfLevels|Maint/CalibSchedules|
+#  SiteDesc|
+#
+#  Provider Sta.Id  - Data provider station id
+#  AFOS(HB5)Id      - The AFOS or Handbook 5 id (NWS assigned)
+#  Name             - Text name of station
+#  Elevation        - Elevation of station (meters)
+#  Latitude         - Latitude of station (decimal)
+#  Longitude        - Longitude of station (decimal)
+#  local TZ         - local Timezone (i.e. MST7MDT)
+#  Station Location - Location of Station (Text)
+#  Station Type     - Type of station (i.e. tower, surface, floating platform,etc.)
+#  Number of Instruments - The number of reporting instruments for the station
+#  Number of Levels      - Number of Reporting Levels for the data (Level
+#                     information should be provided in the instrument table.)
+#  Maintenance/Calibration Schedules - Frequency of Maintenance/Calibration
+#  Site Description      - A text description of the site surroundings
+#
+#  *Note* Do not use the '#' in any of the fields below.  The '#' is a comment
+#  line marker.
+#
+330-0   |MN001|Twin Lakes I-35 Mile Post 1            |371.1000|43.50833|-93.35406|GMT|||1||||
+330-1   |MN002|Silver Lake TH 7 Mile Post 1           |311.8100|44.90678|-94.11910|GMT|||1||||
+330-2   |MN003|Little Chicago I-35 Mile Post 70       |304.6000|44.47850|-93.29243|GMT|||1||||
+330-3   |MN004|Rush City I-35 Mile Post 157           |281.2000|45.64292|-92.99275|GMT|||1||||
+330-4   |MN005|Rutledge I-35 Mile Post 198            |325.8000|46.21257|-92.83856|GMT|||1||||
+330-5   |MN006|Beaver Creek I-90 Mile Post 4          |442.2000|43.60832|-96.37794|GMT|||1||||
+330-6   |MN007|I-90 Mile Post 35                      |515.4000|43.63734|-95.76991|GMT|||1||||
+330-7   |MN008|I-90 Mile Post 67                      |459.7000|43.63869|-95.11854|GMT|||1||||
+330-8   |MN009|Blue Earth I-90 Mile Post 119          |330.4000|43.66305|-94.12244|GMT|||1||||
+330-9   |MN010|Dexter I-90 Mile Post 195              |430.0000|43.72716|-92.68137|GMT|||1||||
+330-10  |MN011|Jct CR 7 I-90 Mile Post 226            |399.1000|43.95564|-92.20515|GMT|||1||||
+330-11  |MN012|Ridgeway I-90 Mile Post 261            |401.9000|43.91192|-91.54358|GMT|||1||||
+330-12  |MN013|Dilworth I-94 Mile Post 5              |276.7000|46.84679|-96.66814|GMT|||1||||
+330-13  |MN014|Rothsay I-94 Mile Post 38              |370.4000|46.49066|-96.29125|GMT|||1||||
+330-14  |MN015|Alexandria I-94 Mile Post 104          |438.9000|45.83765|-95.36622|GMT|||1||||
+330-15  |MN016|Sauk Center I-94 Mile Post 128         |378.5000|45.71310|-94.93145|GMT|||1||||
+330-16  |MN017|Clearwater I-94 Mile Post 180          |303.4000|45.39469|-94.02561|GMT|||1||||
+330-17  |MN018|Shooks MN-1 Mile Post 34               |412.6000|47.87431|-94.43243|GMT|||1||||
+330-18  |MN019|Ely MN-1 Mile Post 275                 |449.1000|47.85440|-92.04811|GMT|||1||||
+330-19  |MN020|Emily MN-6 Mile Post 29                |383.4000|46.68822|-93.95449|GMT|||1||||
+330-20  |MN021|Clara City MN-7 Mile Post 89           |321.2000|44.94926|-95.40952|GMT|||1||||
+330-21  |MN022|Lester Prairie MN-7 Mile Post 161      |286.0000|44.90608|-93.98643|GMT|||1||||
+330-22  |MN023|Mayer TH 7 Mile Post 167               |292.9130|44.90590|-93.86945|GMT|||1||||
+330-23  |MN024|MN-7 Mile Post 11                      |249.9000|48.57236|-96.91488|GMT|||1||||
+330-24  |MN025|MN-11 Mile Post 62                     |327.4000|48.81951|-95.96101|GMT|||1||||
+330-25  |MN026|Brichdale MN-11 Mile Post 157          |344.8000|48.62768|-94.06709|GMT|||1||||
+330-26  |MN027|MN-11 Mile Post 199                    |340.4000|48.60179|-93.37344|GMT|||1||||
+330-27  |MN028|Lake Benton US-14 Mile Post 7          |595.8000|44.27026|-96.32004|GMT|||1||||
+330-28  |MN029|Byron US-14 Mile Post 200              |391.1000|44.02163|-92.70815|GMT|||1||||
+330-29  |MN030|Hendricks MN-19 Mile Post 2            |551.1000|44.45889|-96.43523|GMT|||1||||
+330-30  |MN031|Morton MN-19 Mile Post 78              |256.1000|44.54471|-94.99542|GMT|||1||||
+330-31  |MN032|Winthrop MN-19 Mile Post 108           |314.4000|44.54319|-94.41412|GMT|||1||||
+330-32  |MN033|Hanley Falls MN-23 Mile Post 94        |325.7000|44.69162|-95.61401|GMT|||1||||
+330-33  |MN034|MN-23 Mile Post 215                    |326.0000|45.61643|-94.02149|GMT|||1||||
+330-34  |MN035|Lastrup MN-25 Mile Post 140            |396.9000|46.14426|-94.10410|GMT|||1||||
+330-35  |MN036|Graceville MN-28 Mile Post 19          |347.3000|45.55822|-96.49392|GMT|||1||||
+330-36  |MN037|Langhei Township MN-29 Mile Post 46    |387.7000|45.48841|-95.56216|GMT|||1||||
+330-37  |MN038|Dovray MN-30 Mile Post 49              |476.4000|44.05717|-95.59730|GMT|||1||||
+330-38  |MN039|Waseca TH 14 Mile Post ??              |344.4240|44.05985|-93.49450|GMT|||1||||
+330-39  |MN040|Caledonia MN-44 Mile Post 60           |281.9000|43.71933|-91.43675|GMT|||1||||
+330-40  |MN041|Squaw Lake MN-46 Mile Post 25          |408.8000|47.60357|-94.12675|GMT|||1||||
+330-41  |MN042|Cannon Falls US-52 Mile Post 90        |369.9000|44.40925|-92.85847|GMT|||1||||
+330-42  |MN043|Georgeville MN-55 Mile Post 98         |380.7000|45.43236|-94.93237|GMT|||1||||
+330-43  |MN044|Mahnomen US-59 Mile Post 296           |373.4000|47.27417|-95.93363|GMT|||1||||
+330-44  |MN045|Madelia US-60 Mile Post 86             |303.3000|44.07556|-94.36825|GMT|||1||||
+330-45  |MN046|Anderson Road TH 53 Mile Post 5.5      |405.3840|46.79476|-92.15696|GMT|||1||||
+330-46  |MN047|Red Wing US-61 Mile Post 101           |316.4000|44.60102|-92.69779|GMT|||1||||
+330-47  |MN048|Grand Portage MN-61 Mile Post 146      |301.7000|47.97642|-89.68497|GMT|||1||||
+330-48  |MN049|Chamberlain MN-64 Mile Post 42         |446.8000|46.91173|-94.72292|GMT|||1||||
+330-49  |MN050|Pliny MN-65 Mile Post 98               |382.5000|46.33976|-93.26205|GMT|||1||||
+330-50  |MN051|Ball Bluff MN-65 Mile Post 145         |379.9000|46.97836|-93.27369|GMT|||1||||
+330-51  |MN052|Effie MN-1 Mile Post 194               |408.6000|47.84037|-93.48518|GMT|||1||||
+330-52  |MN053|N. of Upper Red Lake MN-72 Mile Post 40|359.2000|48.20715|-94.55401|GMT|||1||||
+330-53  |MN054|Tenney US-75 Mile Post 188             |299.7000|46.04313|-96.49418|GMT|||1||||
+330-54  |MN055|Ottertail MN-78 Mile Post 34           |409.7000|46.40366|-95.60213|GMT|||1||||
+330-55  |MN056|Gatzke MN-89 Mile Post 96              |356.3000|48.43646|-95.73119|GMT|||1||||
+330-56  |MN057|St. Vincent MN-171 Mile Post 2         |240.1000|48.97085|-97.20170|GMT|||1||||
+330-57  |MN058|Anthony MN-200 Mile Post 9             |356.5000|47.29594|-96.73165|GMT|||1||||
+330-58  |MN059|Mehurin US-212 Mile Post 1             |356.5000|44.93617|-96.44180|GMT|||1||||
+330-59  |MN060|East Grand Forks US-2 Mile Post 8      | 255.303|47.86831|-96.91684|GMT|||1||||
+330-60  |MN061|Cass Lake US-2 Mile Post 131           |414.0000|47.37123|-94.47964|GMT|||1||||
+330-61  |MN062|Lake Park US-10 Mile Post 32           |401.5000|46.87745|-96.11144|GMT|||1||||
+330-62  |MN063|Verndale US-10 Mile Post 94            |411.8000|46.41334|-95.05439|GMT|||1||||
+330-63  |MN064|Rice US-10 Mile Post 162               |324.2000|45.76654|-94.23284|GMT|||1||||
+330-64  |MN065|Canton US-52 Mile Post 2               |411.0000|43.51495|-91.88499|GMT|||1||||
+330-65  |MN066|Cotton US-53 Mile Post 41              |404.7000|47.21127|-92.48769|GMT|||1||||
+330-66  |MN067|Ash Lake US-53 Mile Post 129           |376.6000|48.29424|-92.97047|GMT|||1||||
+330-67  |MN068|Brooks US-59 Mile Post 331             |349.5000|47.77035|-96.00102|GMT|||1||||
+330-68  |MN069|Kellogg US-61 Mile Post 53             |226.1000|44.28482|-91.98967|GMT|||1||||
+330-69  |MN070|Rochester US-63 Mile Post 32           |389.8000|43.90234|-92.48230|GMT|||1||||
+330-70  |MN071|MN-71 Mile Post 43                     |435.1000|44.08369|-95.11995|GMT|||1||||
+330-71  |MN072|Margie US-71 Mile Post 379             | 381.627|48.13463|-93.87848|GMT|||1||||
+330-72  |MN073|Mankato US-169 Mile Post 52            |242.9000|44.15434|-94.03397|GMT|||1||||
+330-73  |MN074|St. Peter US-169 Mile Post 69          |230.6000|44.36554|-93.96315|GMT|||1||||
+330-74  |MN075|Belle Plaine US-169 Mile Post 86       |298.4000|44.57227|-93.84270|GMT|||1||||
+330-75  |MN076|Milaca US-169 Mile Post 200            |364.3000|45.87584|-93.66408|GMT|||1||||
+330-76  |MN077|Hinckley I-35 Mile Post 181            |314.8000|45.98504|-92.94818|GMT|||1||||
+330-77  |MN078|Roosevelt MN-11 Mile Post 108          |356.4000|48.78936|-95.05103|GMT|||1||||
+330-78  |MN079|New Prague MN-19 Mile Post 149         |307.1000|44.54364|-93.62482|GMT|||1||||
+158-0   |MN080|Thompson Hill I-35 Mile Post 248       | 386.483|46.71665|-92.25142|GMT|||1||||
+20103-1 |MN081|Pier 20                                | 185.476|46.74854|-92.09998|GMT|||1||||
+158-1   |MN082|I-35 and Garfield Avenue               | 351.398|46.77181|-92.11499|GMT|||1||||
+158-2   |MN083|Lafayette Tunnel MN-61 Mile Post 32    | 258.374|47.09438|-91.55177|GMT|||1||||
+330-83  |MN084|MN-53 and 135 - Midway                 | 435.366|47.50928|-92.53288|GMT|||1||||
+330-84  |MN085|I-494 and MN-5 I-494 Mile Post 18      | 254.103|44.86236|-93.21293|GMT|||1||||
+330-85  |MN086|Burnsville I-35W Mile Post 4           | 241.401|44.79849|-93.29016|GMT|||1||||
+330-86  |MN087|Maple Grove I-94 Mile Post 217         | 282.398|45.09621|-93.45002|GMT|||1||||
+330-87  |MN088|Little Canada I-694 Mile Post 46       | 285.219|45.03843|-93.06251|GMT|||1||||
+330-88  |MN089|Cayuga Street Br. I-35E Mile Post 109  | 254.770|44.96796|-93.09065|GMT|||1||||
+330-89  |MN090|MN-110 and I-494 MN-10 Mile Post 5     | 303.468|44.87517|-93.07298|GMT|||1||||
+158-3   |MN091|Twig MN-53 Mile Post 21                | 409.458|46.92407|-92.41307|GMT|||1||||
+330-91  |MN092|Mitchell Bridge MN-169 Mile Post 343   | 453.352|47.44509|-92.88758|GMT|||1||||
+20103-0 |MN093|Silver Cliff MN-61 Mile Post 30        | 304.822|47.06749|-91.59307|GMT|||1||||
+142-0   |MN094|I-35W at Mississippi I-35W Mile Post 19| 265.868|44.97811|-93.24572|GMT|||1||||
+20103-2 |MN095|Blatnick Bridge South Abutment         | 183.000|46.73409|-92.09713|GMT|||1||||
+330-95  |MN096|Albert Lea I-35 Mile Post 30           | 363.601|43.94569|-93.26788|GMT|||1||||
+158-10  |MN097|Atkinson Bridge I-35 Mile Post 231     | 362.712|46.62785|-92.53187|GMT|||1||||
+330-96  |MN098|I-94 at Red River Bridge               | 277.063|46.84710|-96.77743|GMT|||1||||

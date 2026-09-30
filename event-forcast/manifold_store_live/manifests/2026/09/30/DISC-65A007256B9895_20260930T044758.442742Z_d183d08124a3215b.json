@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-65A007256B9895",
+  "provider": "NOAA/NCEI",
+  "dataset": "microplastics",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:58.442742Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/microplastics/",
+  "final_url": "https://experience.arcgis.com/experience/b296879cc1984fda833a8acc93e31476/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 5433,
+  "sha256": "d183d08124a3215b7d102a980bd27ab2d198233375ce2b9d085ee37511f9a184",
+  "etag": "\"c98c69f8912ab37c0b4125a1728cef50\"",
+  "last_modified": "Fri, 24 Jul 2026 07:01:48 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-65A007256B9895\\20260930T044758.442742Z_d183d08124a3215b.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

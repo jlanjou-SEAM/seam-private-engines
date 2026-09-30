@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-D960A5B677E33E",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "https://radar.weather.gov",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:41.521668Z",
+  "request_url": "https://radar.weather.gov",
+  "final_url": "https://radar.weather.gov",
+  "status_code": 200,
+  "content_type": null,
+  "byte_length": 28400,
+  "sha256": "aa2afe4ae4b38a94280a9fa2d239044105e1f2265f2ac84df28af61ef52350c1",
+  "etag": null,
+  "last_modified": "Fri, 18 Sep 2026 20:25:33 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-D960A5B677E33E\\20260930T041841.521668Z_aa2afe4ae4b38a94.html",
+  "parent_id": "DISC-187AADF5F10B84",
+  "discovery_depth": 2
+}

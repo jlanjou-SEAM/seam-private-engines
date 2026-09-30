@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-DDDD1EFA1B9C60",
+  "provider": "NOAA/NCEI",
+  "dataset": "regional-climate-centers",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:21.052117Z",
+  "request_url": "https://www.ncei.noaa.gov/regional/regional-climate-centers",
+  "final_url": "https://www.ncei.noaa.gov/regional/regional-climate-centers",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 37477,
+  "sha256": "6118b049f692b579b929abbaae46e9d5eac452bf685a38afdf88a893d5593453",
+  "etag": "\"1790715473-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 20:57:53 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-DDDD1EFA1B9C60\\20260930T043921.052117Z_6118b049f692b579.html",
+  "parent_id": "DISC-3ECC3F5C6D976D",
+  "discovery_depth": 2
+}

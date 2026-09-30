@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-092FB8D78585C3",
+  "provider": "NOAA/NCEI",
+  "dataset": "tsunamis-earthquakes-volcanoes",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:16.332703Z",
+  "request_url": "https://www.ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes",
+  "final_url": "https://www.ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 32360,
+  "sha256": "407dcf0586645ef23bfea104654cc91f89eddb0441c26686fad7ba8eb2c2c355",
+  "etag": "\"1790717214-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:26:54 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-092FB8D78585C3\\20260930T044816.332703Z_407dcf0586645ef2.html",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

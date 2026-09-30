@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E5C80B480AE132",
+  "provider": "NOAA/NCEP",
+  "dataset": "report-and-forecast-solar-and-geophysical-activity",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:45.192971Z",
+  "request_url": "https://www.spaceweather.gov/products/report-and-forecast-solar-and-geophysical-activity",
+  "final_url": "https://www.spaceweather.gov/products/report-and-forecast-solar-and-geophysical-activity",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 68514,
+  "sha256": "5b32cb8625e6f61f132e2dcba39002aab1d8f5977ad9d037030f8a5b297f4135",
+  "etag": "\"1790734607\"",
+  "last_modified": "Wed, 30 Sep 2026 02:16:47 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E5C80B480AE132\\20260930T043745.192971Z_5b32cb8625e6f61f.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

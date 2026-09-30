@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-C1CD1FB28B0DE6",
+  "provider": "OpenWeather",
+  "dataset": "Openweather_website_terms_and_conditions_of_use.pdf",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:30.149465Z",
+  "request_url": "https://openweather.co.uk/api/files/file/Openweather_website_terms_and_conditions_of_use.pdf",
+  "final_url": "https://openweather.co.uk/api/files/file/Openweather_website_terms_and_conditions_of_use.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 72255,
+  "sha256": "2f571e5fa207656c740328fa0cf15d7bc5d632df0d49a6e49da545bcde74608f",
+  "etag": "\"6a774cebdfe3c3af00f211b4\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C1CD1FB28B0DE6\\20260930T040430.149465Z_2f571e5fa207656c.pdf",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

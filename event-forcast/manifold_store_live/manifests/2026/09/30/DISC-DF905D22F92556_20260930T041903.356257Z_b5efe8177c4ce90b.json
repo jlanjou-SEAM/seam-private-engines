@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-DF905D22F92556",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "2016%20El%20Nino%20480x480.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:03.356257Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/2016%20El%20Nino%20480x480.png?itok=IG3GivTd",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/2016%20El%20Nino%20480x480.png?itok=IG3GivTd",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 264581,
+  "sha256": "b5efe8177c4ce90b16fe4cbf3775bdff17e8c1bc17f5011486a8efac3500b212",
+  "etag": null,
+  "last_modified": "Mon, 17 Jul 2023 13:29:02 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-DF905D22F92556\\20260930T041903.356257Z_b5efe8177c4ce90b.png",
+  "parent_id": "DISC-12F9502270D672",
+  "discovery_depth": 2
+}

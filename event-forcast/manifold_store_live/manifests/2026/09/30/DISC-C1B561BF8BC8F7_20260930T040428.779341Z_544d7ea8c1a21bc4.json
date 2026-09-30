@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-C1B561BF8BC8F7",
+  "provider": "Tomorrow.io",
+  "dataset": "llms.txt",
+  "sector": "private",
+  "country": "US",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:28.779341Z",
+  "request_url": "https://docs.tomorrow.io/llms.txt",
+  "final_url": "https://docs.tomorrow.io/llms.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "byte_length": 10172,
+  "sha256": "544d7ea8c1a21bc428f5bf2328bd9d3773b6e626d5e82de02c79bfef05bc0948",
+  "etag": "W/\"27bc-RK0i1XEaOkzt3Cdkk+LsEZ4kQ+E\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C1B561BF8BC8F7\\20260930T040428.779341Z_544d7ea8c1a21bc4.txt",
+  "parent_id": "TOMORROWIO",
+  "discovery_depth": 1
+}

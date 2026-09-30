@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-674DEFD2A3D298",
+  "provider": "OpenWeather",
+  "dataset": "thunderstorm_with_rain_icon.svg",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:30.354268Z",
+  "request_url": "https://openweathermap.org/payload/api/media/file/thunderstorm_with_rain_icon.svg",
+  "final_url": "https://openweathermap.org/payload/api/media/file/thunderstorm_with_rain_icon.svg",
+  "status_code": 200,
+  "content_type": "image/svg+xml",
+  "byte_length": 2925,
+  "sha256": "2bc672f9812d5a923fda922c182b7db13c874bac1d092b5f07a20e0cce0f8ed9",
+  "etag": "\"6a74cf9b06c986f8b1203fb2\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-674DEFD2A3D298\\20260930T040430.354268Z_2bc672f9812d5a92.svg",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

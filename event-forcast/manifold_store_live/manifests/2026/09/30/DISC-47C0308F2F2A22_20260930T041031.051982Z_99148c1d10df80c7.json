@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-47C0308F2F2A22",
+  "provider": "PAGASA",
+  "dataset": "feeds",
+  "sector": "public",
+  "country": "PH",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "hazards"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:31.051982Z",
+  "request_url": "https://publicalert.pagasa.dost.gov.ph/feeds/",
+  "final_url": "https://publicalert.pagasa.dost.gov.ph/feeds/",
+  "status_code": 200,
+  "content_type": "application/atom+xml; charset=UTF-8",
+  "byte_length": 19062,
+  "sha256": "99148c1d10df80c70b5d7e7176ab565530df9e27e9524aa843c3db3f35adbb05",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-47C0308F2F2A22\\20260930T041031.051982Z_99148c1d10df80c7.xml",
+  "parent_id": "PAGASA",
+  "discovery_depth": 1
+}

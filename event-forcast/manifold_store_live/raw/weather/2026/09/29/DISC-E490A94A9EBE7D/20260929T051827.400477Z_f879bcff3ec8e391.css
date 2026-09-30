@@ -1,0 +1,43 @@
+.col-2-left-220{float:left;width:220px}
+.col-2-right-750{float:right;width:750px}
+.col-2-left-600{float:left;width:600px}
+.col-2-right-360{float:right;width:360px}
+h1{border-bottom:0}
+h3{border-bottom:1px solid #ccc}
+.loading{background:url('/cdo-web/images/noaa_loader.gif') 50% 50% no-repeat #f0f8fe;min-height:100px}
+.inputblock{background-color:#f4f4f4;border:1px solid #CCC}
+.inputblock .titles{width:200px;float:left;font-size:12px;font-weight:bold;text-align:right;margin-right:5px;margin-top:4px;line-height:20px}
+.inputblock .fields{float:left}
+.inputblock .fields input{background-color:#fff;border-top:1px solid #999;border-left:1px solid #ccc;border-bottom:1px solid #ccc;border-right:1px solid #ccc;width:350px;margin-bottom:0;font-size:16px;padding:5px}
+.inputblock button{border:0;color:#FFF;font-weight:bold;line-height:32px;margin:0;float:right;height:32px;width:100px;text-align:center}
+#cdoServicesURIs p{font-size:12px}
+.RESTrequests{border:1px solid #333;margin:0;padding:5px;margin-bottom:2px}
+.RESTrequests p{margin:0;padding-bottom:5px!important}
+#cdoServicesURIs h3{font-size:1em;background-color:#333;color:#fff;margin-bottom:0;padding:4px}
+.URIparameter{color:#090!important}
+.URIdetails{color:#090}
+#searchboxes{margin:0}
+.searchBlock li{margin-left:15px}
+#searchboxes .searchBlock{margin-bottom:20px}
+#searchboxes .pad .searchBlock .text{width:520px;font-size:10pt;float:left}
+.emailEntryBlock{margin:2.0em 0;border:1px solid #ccc;background-color:#f4f4f4;padding:10px}
+.emailEntryBlock label{margin:0 .5em 0 0;line-height:2.2em;float:left;font-weight:bold}
+.emailEntryBlock #email{padding:4px;font-size:16px;margin:2px 5px 0 0;width:360px;background-color:#fff;float:left}
+.emailEntryBlock button{margin:4px 0 0 0;float:right}
+table.webservices{margin:0 0 10px 0;padding:0;width:100%;font-size:.95em}
+table.webservices tbody tr:nth-child(2n){background-color:#f0f0f6}
+table.webservices th{background-image:none;background-color:#444;font-weight:normal;color:#fff;margin:5px 0;padding:7px 10px 7px 15px;text-transform:uppercase;vertical-align:middle}
+table.webservices td{text-align:left;padding:10px;border-bottom:1px solid #ccc;border-right:1px solid #ccc}
+table.webservices td:last-child{border-right:0}
+.codeblock{white-space:nowrap;overflow-x:auto;overflow-y:auto;_height:300px;max-height:300px}
+.codeblock strong{padding-bottom:3px}
+.codeblock br{margin-bottom:.5em}
+.codeblock pre br{margin-bottom:0}
+.alternateCodeLine{background-color:#f4f4f4}
+.jsonLabel{color:#7f0055;font-weight:bold}
+.baseurl{font-family:"Courier New",Courier,monospace;font-size:1.2em}
+.URIrequired a{text-decoration:underline;color:#090}
+th.path{width:425px}
+th.parametercolumn{width:100px;text-align:left}
+th.examplecolumn{width:300px;text-align:center}
+th.descriptioncolumn{text-align:left}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-74902228DEE25C",
+  "provider": "NOAA/NSSL",
+  "dataset": "RIDGEII",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:00.352264Z",
+  "request_url": "https://mrms.ncep.noaa.gov/RIDGEII/",
+  "final_url": "https://mrms.ncep.noaa.gov/RIDGEII/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 701,
+  "sha256": "45f7c2e0b7286e140b872932998b4ce1f49feb36f8ffc080fb96c54542c119a9",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-74902228DEE25C\\20260929T051800.352264Z_45f7c2e0b7286e14.html",
+  "parent_id": "NOAA-MRMS",
+  "discovery_depth": 1
+}

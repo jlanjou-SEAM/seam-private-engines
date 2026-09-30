@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-EE800456579ACB",
+  "provider": "NOAA/NCEP",
+  "dataset": "weather.css",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-29T05:17:45.226320Z",
+  "request_url": "https://nomads.ncep.noaa.gov/bundles/noaatemplating/css/weather.css?2.3.25",
+  "final_url": "https://nomads.ncep.noaa.gov/bundles/noaatemplating/css/weather.css?2.3.25",
+  "status_code": 200,
+  "content_type": "text/css",
+  "byte_length": 19076,
+  "sha256": "4ffdefddf77520ee2225f125413b77066055e999e2381bc3a21e1a448cbb32cc",
+  "etag": null,
+  "last_modified": "Thu, 08 Jun 2023 13:27:10 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-EE800456579ACB\\20260929T051745.226320Z_4ffdefddf77520ee.css",
+  "parent_id": "NOAA-NOMADS",
+  "discovery_depth": 1
+}

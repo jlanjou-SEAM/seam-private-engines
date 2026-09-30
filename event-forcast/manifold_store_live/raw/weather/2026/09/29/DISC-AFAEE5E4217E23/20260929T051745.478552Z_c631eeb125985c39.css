@@ -1,0 +1,33 @@
+
+footer{
+    display:block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
+#footer{
+    border-top: 1px solid #ccc;
+    overflow:hidden;
+    padding:1em 0;
+}
+#footerLogo{
+    margin-left:1em;
+    margin-bottom:1em;
+}
+#footer a{font-size:1.1rem;}
+#footer p{font-size:1.2rem;}
+
+@media screen and (max-width:680px){
+    #footerLogo{ 
+        margin-left:0; 
+        width:100%;
+        display:block;
+    }
+    .footer-legal > div.grid{ 
+        width:100% !important; 
+    }
+    .footer-legal ul.list-unstyled{ 
+        padding-left:1em; 
+        margin-bottom:1em; 
+    }
+}

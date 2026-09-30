@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-BD98E8A3EBFD25",
+  "provider": "NOAA/NCEP",
+  "dataset": "NCEP_PDD_MAG.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:25.865015Z",
+  "request_url": "https://mag.ncep.noaa.gov/docs/NCEP_PDD_MAG.pdf",
+  "final_url": "https://mag.ncep.noaa.gov/docs/NCEP_PDD_MAG.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 309418,
+  "sha256": "1c474bfb281dc1691bd5be23a470f7a5bf085a3a21bc5268201ebd6d288ef9c2",
+  "etag": null,
+  "last_modified": "Mon, 17 Aug 2026 18:43:06 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-BD98E8A3EBFD25\\20260930T041925.865015Z_1c474bfb281dc169.pdf",
+  "parent_id": "DISC-FA58CABCA4D1CB",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-4ACB9CF3C06B36",
+  "provider": "NOAA/NCEI",
+  "dataset": "what-will-punxsutawney-phils-six-week-weather-prediction-be",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:39.952123Z",
+  "request_url": "https://www.ncei.noaa.gov/news/what-will-punxsutawney-phils-six-week-weather-prediction-be",
+  "final_url": "https://www.ncei.noaa.gov/news/what-will-punxsutawney-phils-six-week-weather-prediction-be",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43050,
+  "sha256": "37e8f74e4b90790a554e2262ec0855a8a82429f84cc42dbf940e77bb2baf82d7",
+  "etag": "\"1790715861-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:04:21 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4ACB9CF3C06B36\\20260930T044639.952123Z_37e8f74e4b90790a.html",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-DC635460D92E37",
+  "provider": "NOAA/SWPC",
+  "dataset": "animations",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-29T05:17:29.376136Z",
+  "request_url": "https://services.swpc.noaa.gov/products/animations/",
+  "final_url": "https://services.swpc.noaa.gov/products/animations/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 3276,
+  "sha256": "cc6019a85246685b10baf2f32b7db91aec30e6545a445f30a8d2785dfd01d671",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\29\\DISC-DC635460D92E37\\20260929T051729.376136Z_cc6019a85246685b.html",
+  "parent_id": "SWPC-PRODUCTS",
+  "discovery_depth": 1
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A0F66D873A1CA1",
+  "provider": "NOAA/NCEP",
+  "dataset": "noaapart.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:31.114962Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/partnerships/noaapart.shtml",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/partnerships/noaapart.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 13027,
+  "sha256": "451af76127c794a8915efa620f829f9ecf08899bb09e5c3fba67399a52e3ddf7",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A0F66D873A1CA1\\20260930T041931.114962Z_451af76127c794a8.shtml",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

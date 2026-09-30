@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-079E2FEC4E89DD",
+  "provider": "NOAA/NDBC",
+  "dataset": "KATP.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:12:42.823798Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/KATP.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/KATP.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 296288,
+  "sha256": "581b7a001e9636f4f60c31ecd0fe1817c4fd75d782576b51566344cd0c785e9b",
+  "etag": "\"48560-65cac2d43047e\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-079E2FEC4E89DD\\20260930T051242.823798Z_581b7a001e9636f4.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

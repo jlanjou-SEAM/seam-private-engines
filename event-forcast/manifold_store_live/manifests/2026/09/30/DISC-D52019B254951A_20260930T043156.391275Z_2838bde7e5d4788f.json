@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-D52019B254951A",
+  "provider": "USGS Water Data",
+  "dataset": "topographic-codes",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:31:56.391275Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/topographic-codes",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/topographic-codes",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 4198,
+  "sha256": "2838bde7e5d4788fa8c7b3105cf17c31c56059c2d2cde1635f0518e0f08057db",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\30\\DISC-D52019B254951A\\20260930T043156.391275Z_2838bde7e5d4788f.json",
+  "parent_id": "DISC-50BE965810B0D9",
+  "discovery_depth": 2
+}

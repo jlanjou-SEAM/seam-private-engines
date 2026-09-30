@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-1CB76C3BE09424",
+  "provider": "NOAA/NCEI",
+  "dataset": "Jeff-Privette-500x540.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:46.637880Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2024-02/Jeff-Privette-500x540.jpg",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2024-02/Jeff-Privette-500x540.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 650283,
+  "sha256": "7a09f110f77b92848f05f3af884fee0284d2e893f0b28b81516e1450885aa0d8",
+  "etag": null,
+  "last_modified": "Tue, 06 Feb 2024 20:07:10 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-1CB76C3BE09424\\20260930T044646.637880Z_7a09f110f77b9284.jpg",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

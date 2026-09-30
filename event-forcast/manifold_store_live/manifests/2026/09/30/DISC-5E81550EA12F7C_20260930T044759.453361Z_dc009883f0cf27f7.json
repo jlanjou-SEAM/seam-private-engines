@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-5E81550EA12F7C",
+  "provider": "NOAA/NCEI",
+  "dataset": "ocean-exploration-data-atlas",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:59.453361Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/ocean-exploration-data-atlas/",
+  "final_url": "https://www.ncei.noaa.gov/maps/ocean-exploration-data-atlas/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 719,
+  "sha256": "dc009883f0cf27f7ce8e1ba920b30105d2d4fc95c88e1c4f441922f52c42f4c8",
+  "etag": "\"233-6546452ed2540\"",
+  "last_modified": "Tue, 16 Jun 2026 19:55:25 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-5E81550EA12F7C\\20260930T044759.453361Z_dc009883f0cf27f7.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

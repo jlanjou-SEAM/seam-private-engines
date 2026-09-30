@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-3C6E1A4BB1F025",
+  "provider": "USGS Water Data",
+  "dataset": "coordinate-method-codes",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:31:54.683609Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/coordinate-method-codes",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/coordinate-method-codes",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 4163,
+  "sha256": "df14cc03a6a43f080754eb21ac3c7e99861c0929fabe9887f5f75aaf1fdcd09b",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\30\\DISC-3C6E1A4BB1F025\\20260930T043154.683609Z_df14cc03a6a43f08.json",
+  "parent_id": "DISC-50BE965810B0D9",
+  "discovery_depth": 2
+}

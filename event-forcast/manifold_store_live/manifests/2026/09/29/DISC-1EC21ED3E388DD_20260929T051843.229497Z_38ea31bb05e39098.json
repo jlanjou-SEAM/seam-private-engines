@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-1EC21ED3E388DD",
+  "provider": "NOAA/CO-OPS",
+  "dataset": "datagetter",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "hydrology",
+    "coastal"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:43.229497Z",
+  "request_url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=20200101&end_date=20201231&station=8518750&product=hourly_height&datum=MLLW&time_zone=lst&units=metric&application=DataAPI_Sample&format=json",
+  "final_url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=20200101&end_date=20201231&station=8518750&product=hourly_height&datum=MLLW&time_zone=lst&units=metric&application=DataAPI_Sample&format=json",
+  "status_code": 200,
+  "content_type": "application/json;charset=UTF-8",
+  "byte_length": 542992,
+  "sha256": "38ea31bb05e39098fc06724ad8ad84f4aa3dc829d9ab0f92bf1b447439a0f249",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\29\\DISC-1EC21ED3E388DD\\20260929T051843.229497Z_38ea31bb05e39098.json",
+  "parent_id": "NOAA-COOPS",
+  "discovery_depth": 1
+}

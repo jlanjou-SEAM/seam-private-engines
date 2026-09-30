@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E30763CD7E0AA2",
+  "provider": "NOAA/NDBC",
+  "dataset": "CWAF1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:39.890397Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/CWAF1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/CWAF1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 73602,
+  "sha256": "2c81956aa31ea986d9c84486fb12c147e2382d5e184d2d7583e35fac0fe683fb",
+  "etag": "\"11f82-65ca63dadb188\"",
+  "last_modified": "Tue, 29 Sep 2026 21:55:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-E30763CD7E0AA2\\20260930T043339.890397Z_2c81956aa31ea986.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

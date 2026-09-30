@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-2FD0F8E0E9F567",
+  "provider": "NOAA/NCEI",
+  "dataset": "global-climate-202607",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:36.193331Z",
+  "request_url": "https://www.ncei.noaa.gov/news/global-climate-202607",
+  "final_url": "https://www.ncei.noaa.gov/news/global-climate-202607",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 44107,
+  "sha256": "13d36f42bc2b2990594da12c92f8893c5028c94fe4fb33c96987bdc685392a76",
+  "etag": "\"1790715799-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:03:19 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2FD0F8E0E9F567\\20260930T044836.193331Z_13d36f42bc2b2990.html",
+  "parent_id": "DISC-84CF7FAE813C86",
+  "discovery_depth": 2
+}

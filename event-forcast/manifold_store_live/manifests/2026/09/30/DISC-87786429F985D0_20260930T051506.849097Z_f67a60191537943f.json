@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-87786429F985D0",
+  "provider": "NOAA/NDBC",
+  "dataset": "FOXR1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:15:06.849097Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/FOXR1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/FOXR1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 749180,
+  "sha256": "f67a60191537943f55835e415d1144319488bcc7e634f3c0444b8d654ca3e139",
+  "etag": "\"b6e7c-65cac2d3f2453\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-87786429F985D0\\20260930T051506.849097Z_f67a60191537943f.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

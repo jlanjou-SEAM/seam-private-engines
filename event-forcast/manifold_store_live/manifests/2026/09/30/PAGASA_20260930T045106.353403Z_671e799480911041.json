@@ -1,0 +1,24 @@
+{
+  "candidate_id": "PAGASA",
+  "provider": "PAGASA",
+  "dataset": "Weather and climate services",
+  "sector": "public",
+  "country": "PH",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "hazards"
+  ],
+  "retrieved_utc": "2026-09-30T04:51:06.353403Z",
+  "request_url": "https://www.pagasa.dost.gov.ph/",
+  "final_url": "https://www.pagasa.dost.gov.ph/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 1739492,
+  "sha256": "671e799480911041cf049ef38c97cdbedc04af47acd230b883cb258f212b4a0a",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\PAGASA\\20260930T045106.353403Z_671e799480911041.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-70D1AC57A88072",
+  "provider": "NOAA/NDBC",
+  "dataset": "POTA2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:32:44.059835Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/POTA2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/POTA2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 203886,
+  "sha256": "6196d68afe985406b1c9454b6bdc19927725c739cedb7ab0f6d63a00e6cab194",
+  "etag": "\"31c6e-65cab685ced4b\"",
+  "last_modified": "Wed, 30 Sep 2026 04:05:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-70D1AC57A88072\\20260930T043244.059835Z_6196d68afe985406.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

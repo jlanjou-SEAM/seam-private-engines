@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E063DC73D78554",
+  "provider": "NOAA/NDBC",
+  "dataset": "PBPA2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:03.369133Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PBPA2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PBPA2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 91086,
+  "sha256": "04fff83c3ea483284376fd36d62b87043196a18cff830d1610f84ba1ee6b90de",
+  "etag": "\"163ce-65cab9e061b33\"",
+  "last_modified": "Wed, 30 Sep 2026 04:20:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-E063DC73D78554\\20260930T043303.369133Z_04fff83c3ea48328.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

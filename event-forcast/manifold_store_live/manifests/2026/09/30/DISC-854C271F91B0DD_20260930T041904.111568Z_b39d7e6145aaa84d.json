@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-854C271F91B0DD",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "app.css",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:04.111568Z",
+  "request_url": "https://madis-data.ncep.noaa.gov/MadisAircraftPublic/css/app.css",
+  "final_url": "https://madis-data.ncep.noaa.gov/MadisAircraftPublic/css/app.css",
+  "status_code": 200,
+  "content_type": "text/css",
+  "byte_length": 3033,
+  "sha256": "b39d7e6145aaa84de481580b2c526d523b1163b415ed9b23c7a8d6d24bc4144e",
+  "etag": null,
+  "last_modified": "Wed, 27 Aug 2025 15:34:12 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-854C271F91B0DD\\20260930T041904.111568Z_b39d7e6145aaa84d.css",
+  "parent_id": "DISC-E07FFAA6C8FF08",
+  "discovery_depth": 2
+}

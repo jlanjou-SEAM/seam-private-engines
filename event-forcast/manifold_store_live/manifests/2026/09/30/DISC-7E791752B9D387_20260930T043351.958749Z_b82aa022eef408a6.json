@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7E791752B9D387",
+  "provider": "NOAA/NDBC",
+  "dataset": "BARN6.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:51.958749Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/BARN6.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/BARN6.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 611376,
+  "sha256": "b82aa022eef408a6e48b9a0a288fb91b504de7bc0369fde8a2a6385f661f39d0",
+  "etag": "\"95430-65cab7a3ce4df\"",
+  "last_modified": "Wed, 30 Sep 2026 04:10:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-7E791752B9D387\\20260930T043351.958749Z_b82aa022eef408a6.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

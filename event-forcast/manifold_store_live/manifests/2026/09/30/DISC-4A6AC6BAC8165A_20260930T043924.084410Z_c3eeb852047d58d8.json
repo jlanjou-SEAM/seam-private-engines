@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-4A6AC6BAC8165A",
+  "provider": "NOAA/NCEI",
+  "dataset": "ols_orderstatus.getordnum",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:24.084410Z",
+  "request_url": "https://www.ncdc.noaa.gov/nespls/ols_orderstatus.getordnum",
+  "final_url": "https://www.ncei.noaa.gov/nespls/ols_orderstatus.getordnum",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 11524,
+  "sha256": "c3eeb852047d58d8242cae7b8ddc7c39c716ee069cf372d7f0a328d7e9703993",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4A6AC6BAC8165A\\20260930T043924.084410Z_c3eeb852047d58d8.getordnum",
+  "parent_id": "DISC-36AF1EC44F4269",
+  "discovery_depth": 2
+}

@@ -1,0 +1,368 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>
+            ATRAC | National Climatic Data Center (NCDC)
+        </title>
+        		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="National Climatic Data Center" />
+		<meta name="author" content="National Centers for Environmental Information (NCEI)" />
+		<meta name="application-name" content="" />
+		<link rel="shortcut icon" href="https://www.ncei.noaa.gov/themes/custom/ncei/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="144x144" href="/archive/atrac/images/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="/archive/atrac/images/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="/archive/atrac/images/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/archive/atrac/images/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" href="/archive/atrac/images/apple-touch-icon.png" />
+		<meta name="msapplication-tooltip" content=""/>
+		<meta name="msapplication-task" content="name=NCEI;action-uri=https://www.ncei.noaa.gov/;icon-uri=https://www.ncei.noaa.gov/themes/custom/ncei/favicon.ico" />
+		<meta name="msapplication-TileColor" content="#007EC6" />
+		<meta name="msapplication-TileImage" content="/archive/atrac/images/apple-touch-icon-144.png" />
+		<meta name="verify-v1" content="DjxBYfR0oM2KSNJl6i2BbxfTcXOGUnbglkT0QQj5KtI=" />
+
+        <!-- The following is a speed hack for IE browsers -->
+		<!--[if IE]><![endif]-->
+
+		<link type="text/css" rel="stylesheet" media="all" href="/archive/atrac/css/reset.css" />
+                <link type="text/css" rel="stylesheet" media="all" href="/archive/atrac/css/bootstrap-combined.min.css" />
+		<link type="text/css" rel="stylesheet" media="all" href="/archive/atrac/css/application.css" />
+		
+			
+				<link type="text/css" rel="stylesheet" media="screen and (max-width: 659px)" href="/archive/atrac/css/layout_320.css" />
+				<link type="text/css" rel="stylesheet" media="screen and (min-width: 660px) and (max-width: 1023px)" href="/archive/atrac/css/layout_640.css" />
+				<link type="text/css" rel="stylesheet" media="screen and (min-width: 1024px)" href="/archive/atrac/css/layout_1024.css" />
+			
+			
+		
+		<link type="text/css" rel="stylesheet" media="all" href="/archive/atrac/css/smoothness/jquery-ui-1.13.2.custom.min.css" />
+		<link type="text/css" rel="stylesheet" media="all" href="/archive/atrac/css/atrac.css" />
+		<link type="text/css" rel="stylesheet" media="all" href="/archive/atrac/css/datatables-1.13.4.css" />
+		<link type="text/css" rel="stylesheet" media="all" href="/archive/atrac/css/ncei-static.css" />
+		
+			<link type="text/css" rel="stylesheet" media="screen and (max-width: 659px)" href="/archive/atrac/css/atrac_layout_320.css" />
+			<link type="text/css" rel="stylesheet" media="screen and (min-width: 660px) and (max-width: 1023px)" href="/archive/atrac/css/atrac_layout_640.css" />
+		
+		<!--[if IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="/archive/atrac/css/ie8.css" />
+		<![endif]-->
+		<!--[if IE 7]>
+		<link type="text/css" rel="stylesheet" media="all" href="/archive/atrac/css/ie7.css" />
+		<![endif]-->
+		<!--[if lte IE 6]>
+		<link type="text/css" rel="stylesheet" media="all" href="/archive/atrac/css/ie6.css" />
+		<![endif]-->
+		<!--[if gte IE 6]>
+		<link type="text/css" rel="stylesheet" media="all" href="/archive/atrac/css/ie.css" />
+		<![endif]-->
+
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+		<script>WebFont.load({ google: { families: ['Open+Sans', 'Bitter'] } });</script>
+		<script type="text/javascript" src="/archive/atrac/js/lib/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="/archive/atrac/js/lib/jquery-ui-1.13.2.min.js"></script>
+		<script type="text/javascript" src="/archive/atrac/js/lib/jquery.dataTables-1.13.4.js"></script>
+		<script type="text/javascript" src="/archive/atrac/js/lib/datatables-plugins.js"></script>
+		<script type="text/javascript" src="/archive/atrac/js/lib/dataTables.fixedHeader-3.3.2.min.js"></script>
+		<script type="text/javascript" src="/archive/atrac/js/lib/jquery.scrollTo.min.js"></script>
+		<script type="text/javascript" src="/archive/atrac/js/lib/moment-with-locales.min.js"></script>
+		<!--[if lte IE 9]>
+			<script type="text/javascript" src="/archive/atrac/js/lib/html5shiv.min.js"></script>
+			<script type="text/javascript" src="/archive/atrac/js/lib/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="/archive/atrac/js/application.js"></script>
+		<script>
+			var contextPath = "/archive/atrac";
+		</script>
+		<script type="text/javascript" src="/archive/atrac/js/atrac.js"></script>
+		<script type="text/javascript">
+			var loggedIn = false;
+		</script>
+
+    </head>
+    <body>
+    	<div id="main">
+			<div class="ncei-static-container">
+  <div id="ncei-static-header" class="ncei-static ncei-static-header">
+    <!-- Required for 508 compliance -->
+    <a class="ncei-static-skip-link" href="#main-content" tabindex="0">Skip to main content</a>
+    <a class="ncei-static-skip-link" href="#site-search" tabindex="0">Skip to site search</a>
+    <header role="banner">
+      <div class="ncei-static-logo">
+        <a href="//www.ncei.noaa.gov/">
+          <img src="https://www.ncei.noaa.gov/themes/custom/ncei/logo.svg" title="Link to the NCEI Homepage" alt="Link to the NCEI Homepage">
+        </a>
+      </div>
+    </header>
+    <nav class="ncei-static-nav">
+      <div class="ncei-static-mobile-menu">
+        <a href="#">
+          <div> </div>
+          <div> </div>
+          <div> </div>
+        </a>
+      </div>
+      <div id="ncei-static-navigation" class="ncei-static-menu">
+        <ul>
+          <li><a href="//www.ncei.noaa.gov/">Home</a></li>
+          <li><a href="//www.ncei.noaa.gov/products">Products</a></li>
+          <li><a href="//www.ncei.noaa.gov/services">Services</a>
+            <ul>
+              <li><a href="//www.ncei.noaa.gov/access">Access</a></li>
+              <li><a href="//www.ncei.noaa.gov/archive">Archive</a></li>
+              <li><a href="//www.ncei.noaa.gov/certification">Certification</a></li>
+              <li><a href="//www.ncei.noaa.gov/maps-and-geospatial-products">Maps</a></li>
+              <li><a href="//www.ncei.noaa.gov/monitoring">Monitoring</a></li>
+              <li><a href="//www.ncei.noaa.gov/online-store">Online Store</a></li>
+              <li><a href="//www.ncei.noaa.gov/regional">Regional</a></li>
+              <li><a href="//www.ncei.noaa.gov/services/world-data-system">World Data System</a></li>
+            </ul>
+          </li>
+          <li><a href="//www.ncei.noaa.gov/resources">Resources</a>
+            <ul>
+              <li><a href="//www.ncei.noaa.gov/alerts">Alerts</a></li>
+              <li><a href="//www.ncei.noaa.gov/resources/education">Education</a></li>
+              <li><a href="//www.ncei.noaa.gov/resources/metadata">Metadata</a></li>
+              <li><a href="//www.ncei.noaa.gov/resources/newis">NEWIS</a></li>
+              <li><a href="//www.ncei.noaa.gov/weather-climate-links">Quick Links</a></li>
+            </ul>
+          </li>
+          <li><a href="//www.ncei.noaa.gov/news">News</a>
+            <ul>
+              <li><a href="//www.ncei.noaa.gov/bams-state-of-climate">BAMS</a></li>
+              <li><a href="//repository.library.noaa.gov/gsearch?terms=national%20centers%20for%20environmental%20information&ss_publishyear=2021">Publications</a></li>
+            </ul>
+          <li><a href="//www.ncei.noaa.gov/about">About</a>
+            <ul>
+              <li><a href="https://www.ncei.noaa.gov/about/our-impact">Our Impact</a></li>
+            </ul>
+          <li><a href="//www.ncei.noaa.gov/contact">Contact</a></li>
+          <li><a id="site-search" class="site-search"></a></li>
+          <li class="ncei-static-search">
+            <form title="Search NCEI" action="https://search.usa.gov/search" accept-charset="UTF-8" method="GET">
+              <input type="hidden" name="utf8" value="✓">
+              <input type="hidden" name="affiliate" id="affiliate" value="nceinoaa">
+              <input type="text" name="query" autocomplete="off" placeholder="Search NCEI" tabindex="0">
+              <button name="commit" type="submit">
+              <img src="https://www.ncei.noaa.gov/themes/custom/ncei/images/icons/src/search.svg" alt="Search NCEI" title="Search NCEI">Search</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+						<div id="breadcrumbs">
+				<div class="inset">
+					<a href="//www.ncei.noaa.gov/" title="National Centers for Environmental Information">Home</a>&nbsp;&gt;
+					
+					ATRAC
+					<div class="extraLinks">
+						<a href="/archive/atrac/index.html"><span class="linkBox atracBrandAbout"></span>About</a>
+						<a href="/archive/atrac/search.html"><span class="linkBox atracBrandSearch"></span>Search Projects</a>
+						<a href="/archive/atrac/collections.html"><span class="linkBox atracBrandInput"></span>Edit Projects</a>
+						<a href="/archive/atrac/help.html"><span class="linkBox atracBrandHelp"></span>Help</a>
+					</div>
+					<a id="main-content"></a>
+            <div id="legend" title="Legend" class="tempHidden">
+              <span class="bordered pending" title="Grey represents pending ingest or task"></span>
+              = Pending
+              <br/>
+              <span class="bordered ongoing" title="Green represents active ingest or task"></span>
+              = Activated
+              <br/>
+              <span class="bordered static" title="Blue represents completed ingest or task"></span>
+              = Completed
+              <br/>
+              <span class="bordered delayed" title="Yellow represents delayed task"></span>
+              = Delayed
+              <br/>
+              <span title="Single Event">
+                <img src="/archive/atrac/images/icons/eventmarker.png"/>
+              </span>
+              = Event
+              <br/>
+            </div>
+					<div id="sessionWarning" title="Session Timeout" class="tempHidden">
+						Your session will expire in 10 minutes.<br />
+						Click OK to extend the session for 90 minutes.<br />
+						If your session expires, unsubmitted document
+						information will be saved.
+					</div>
+				</div>
+			</div>
+
+			<div id="content" class="clearfix">
+				<div class="inset">
+					<h1>Advanced Tracking and Resource tool for Archive Collections</h1>
+										<div id="profileLinks">
+						
+	                    	
+							
+								<!--
+								<a class="hidden" href="/archive/atrac/edituser.html">Edit Profile</a>
+								<a class="icon hidden" href="/archive/atrac/edituser.html"><img src="/archive/atrac/images/icons/user.png" alt="user profile" /></a><br />
+								-->
+								<a href="/archive/atrac/login.html?path=index">Login</a>
+								<a class="icon" href="/archive/atrac/login.html?path=index"><img src="/archive/atrac/images/icons/login.png" alt="login" /></a>
+							
+						
+					</div>
+
+					<div class="col-2-left-600">
+						
+
+
+
+						<p>The Advanced Tracking and Resource tool for Archive Collections (ATRAC) provides a common interface for users to enter and display information on archiving projects at the NOAA National Centers for Environmental Information (NCEI).</p><br />
+						<br />
+						<div class="toolBlock">
+							<a href="collectionregistration.html" class="image atracBrandAbout"><img src="images/icons/archive.png" alt="Archive Data"></a>
+							<a href="collectionregistration.html">Archive Your Data</a>
+							<p>Submit a request to archive your data at NCEI</p>
+						</div>
+						<div class="toolBlock">
+							<a href="collectionregistration.html?archive=false" class="image atracBrandAbout"><img src="images/icons/metadata.png" alt="Create ISO Metadata"></a>
+							<a href="collectionregistration.html?archive=false">Create ISO Metadata</a>
+							<p>Create ISO-compliant metadata records using a user-friendly web form</p>
+						</div>
+						<div class="toolBlock">
+							<a href="search.html" class="image atracBrandAbout"><img src="images/icons/search.png" alt="Search Projects"></a>
+							<a href="search.html">Search Projects</a>
+							<p>Search for existing project status information</p>
+						</div>
+						<div class="toolBlock">
+							<a href="registration.html" class="image atracBrandAbout"><img src="images/icons/registration.png" alt="Create Account"></a>
+							<a href="registration.html">Create Account</a>
+							<p>Create a new user account (required for project registration)</p>
+						</div>
+				    </div>
+				    <aside class="helpBox">
+						<h2 class="atracBrandAbout">About</h2>
+						<div class="pad">
+							<p>For additional information about ATRAC, visit the following pages:</p>
+							<ul>
+								<li><a href="/archive/atrac/introduction.html">Introduction to ATRAC</a></li>
+								<li><a href="/archive/atrac/guidelines.html">Archiving Guidelines</a></li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+    <script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script></body>
+    <footer class="ncei-footer-container">
+  <div class="ncei-static-container">
+    <div class="ncei-static ncei-static-footer">
+      <div class="ncei-static-logo">
+        <a href="//www.ncei.noaa.gov/">
+        <img src="https://www.ncei.noaa.gov/themes/custom/ncei/components/images/logo/logo.svg" title="Link to NCEI's Homepage" alt="Link to NCEI's Homepage">
+        </a>
+      </div>
+      <div class="ncei-static-reference">
+        <div><h2 class="ncei-static-title">Follow us</h2>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/NOAANCEI/" title="Link to @NOAANCEI Facebook" target="_blank" rel="noopener noreferrer">
+                @NOAANCEI
+              <img src="https://www.ncei.noaa.gov/themes/custom/ncei/images/social-icons/svg/light/facebook25.svg" title="NCEI Facebook" alt="NCEI Facebook">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/noaadata/" title="Link to @NOAAData Instagram" target="_blank" rel="noopener noreferrer">
+                @NOAAData
+              <img src="https://www.ncei.noaa.gov/themes/custom/ncei/images/social-icons/svg/light/instagram.svg" title="NOAA Data Instagram" alt="NOAA Data Instagram">
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/NOAANCEI" title="Link to Weather &amp; Climate Twitter" target="_blank" rel="noopener noreferrer">
+                @NOAANCEI
+              <img src="https://www.ncei.noaa.gov/themes/custom/ncei/images/social-icons/svg/light/twitter16.svg" title="NCEI Climate Twitter" alt="NCEI Climate Twitter">
+              </a>
+            </li>
+            <li>
+              <a href="//www.ncei.noaa.gov/news.xml" title="Link to subscribe to NCEI News Feed">
+                News Feed
+              <img src="https://www.ncei.noaa.gov/themes/custom/ncei/images/social-icons/svg/light/rss25.svg" title="NCEI RSS Feed" alt="NCEI RSS Feed">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ncei-static-reference">
+        <div><h2 class="ncei-static-title">Contact us</h2>
+          <ul>
+            <li>
+              <a class="ncei-static-contact ncei-static-mailto" href="mailto:ncei.info@noaa.gov" title="Contact NCEI NOAA via email">
+                Email: ncei.info@noaa.gov
+            </a>
+            </li>
+            <li>
+              <a class="ncei-static-contact ncei-static-telephone" href="tel:8282714800" title="Call NCEI NOAA 828-271-4800">
+                Phone: (828) 271-4800
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ncei-static-container ncei-static-grey-background">
+    <div class="ncei-static ncei-static-footer-links">
+      <nav>
+        <ul>
+          <li>
+            <a href="//www.ncei.noaa.gov/sitemap">Sitemap</a>
+          </li>
+          <li>
+            <a href="//www.ncei.noaa.gov/privacy">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="https://www.noaa.gov/foia-freedom-of-information-act">Freedom of Information Act</a>
+          </li>
+          <li>
+            <a href="http://www.cio.noaa.gov/services_programs/info_quality.html">Information Quality</a>
+          </li>
+          <li>
+            <a href="http://www.noaa.gov/disclaimer.html">Disclaimer</a>
+          </li>
+          <li>
+            <a href="http://www.ncdc.noaa.gov/survey">Take Our Survey</a>
+          </li>
+          <li>
+            <a href="http://www.commerce.gov/">Department of Commerce</a>
+          </li>
+          <li>
+            <a href="http://www.noaa.gov/">NOAA</a>
+          </li>
+          <li>
+            <a href="http://www.nesdis.noaa.gov/">NESDIS</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	ga('create', 'UA-42795060-3', 'noaa.gov');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+</script>
+
+</html>

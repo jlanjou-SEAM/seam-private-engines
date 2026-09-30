@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-8D35DB078B735C",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "national-climate-202608",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:02.145299Z",
+  "request_url": "https://www.ncei.noaa.gov/news/national-climate-202608",
+  "final_url": "https://www.ncei.noaa.gov/news/national-climate-202608",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 47816,
+  "sha256": "835e31d8d43c9eb73768e7a0a2838a66a7e98557e9b58b37f50ef5c0613d7724",
+  "etag": "\"1790715588-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 20:59:48 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-8D35DB078B735C\\20260930T041902.145299Z_835e31d8d43c9eb7.html",
+  "parent_id": "DISC-12F9502270D672",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-50D25BBFD69BEE",
+  "provider": "NOAA/NCEP",
+  "dataset": "overview",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:50.127882Z",
+  "request_url": "https://www.ncei.noaa.gov/cloud-access/space-weather-portal/overview?program=SWPC-Models&inst=ENLIL",
+  "final_url": "https://www.ncei.noaa.gov/cloud-access/space-weather-portal/overview?program=SWPC-Models&inst=ENLIL",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 1114,
+  "sha256": "60af460b69297db3b4f5255f73ac06cfce96593af29207ef971729e8e5ea43c4",
+  "etag": "\"6ab546c8-3be\"",
+  "last_modified": "Thu, 24 Sep 2026 15:50:32 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-50D25BBFD69BEE\\20260930T043750.127882Z_60af460b69297db3.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

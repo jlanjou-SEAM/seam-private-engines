@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7A21F4497ED058",
+  "provider": "NOAA/NCEP",
+  "dataset": "education.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:31.575123Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/outreach/education.shtml",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/outreach/education.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 11122,
+  "sha256": "10c233cc0951dc3e69141080f8ab8691c49ae7032d90e42992f6341f0da01944",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7A21F4497ED058\\20260930T041931.575123Z_10c233cc0951dc3e.shtml",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

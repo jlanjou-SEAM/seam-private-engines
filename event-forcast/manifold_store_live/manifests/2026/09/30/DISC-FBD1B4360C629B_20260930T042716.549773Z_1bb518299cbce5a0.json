@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-FBD1B4360C629B",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "science-dome",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:27:16.549773Z",
+  "request_url": "https://www.ncm.gov.ae/pages/science-dome?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/science-dome?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43543,
+  "sha256": "1bb518299cbce5a0fef6f01152c81ab0f72534d29fb7cd3cf9c871580888c89b",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-FBD1B4360C629B\\20260930T042716.549773Z_1bb518299cbce5a0.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

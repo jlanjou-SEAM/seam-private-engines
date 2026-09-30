@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-1EA44E7D942344",
+  "provider": "INAMHI Ecuador",
+  "dataset": "wlwmanifest.xml",
+  "sector": "public",
+  "country": "EC",
+  "scientific_regime": [
+    "weather",
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:32:01.069116Z",
+  "request_url": "https://www.inamhi.gob.ec/wp-includes/wlwmanifest.xml",
+  "final_url": "https://www.inamhi.gob.ec/wp-includes/wlwmanifest.xml",
+  "status_code": 200,
+  "content_type": "text/xml",
+  "byte_length": 1045,
+  "sha256": "843351b8622c97ca4e5ffced1d4feb4a5ec506ea47ff67c699b4e26f8daa6543",
+  "etag": "\"415-58e9ea887c3c0\"",
+  "last_modified": "Sat, 27 Jul 2019 00:22:47 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-1EA44E7D942344\\20260930T043201.069116Z_843351b8622c97ca.xml",
+  "parent_id": "INAMHI-EC",
+  "discovery_depth": 1
+}

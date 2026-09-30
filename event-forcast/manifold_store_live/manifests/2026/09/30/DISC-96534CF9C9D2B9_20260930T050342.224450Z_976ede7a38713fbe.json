@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-96534CF9C9D2B9",
+  "provider": "NOAA/NDBC",
+  "dataset": "PACT2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:03:42.224450Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PACT2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PACT2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1013978,
+  "sha256": "976ede7a38713fbeb1ecbd2b9380bc469e647261bf0e66775c84b60789e66a9a",
+  "etag": "\"f78da-65cac09674bf2\"",
+  "last_modified": "Wed, 30 Sep 2026 04:50:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-96534CF9C9D2B9\\20260930T050342.224450Z_976ede7a38713fbe.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

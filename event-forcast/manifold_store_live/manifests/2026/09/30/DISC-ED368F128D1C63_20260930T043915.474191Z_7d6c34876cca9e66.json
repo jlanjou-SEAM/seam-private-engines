@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-ED368F128D1C63",
+  "provider": "NOAA/NCEI",
+  "dataset": "unlocking-hurricane-insights",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:15.474191Z",
+  "request_url": "https://www.ncei.noaa.gov/news/unlocking-hurricane-insights",
+  "final_url": "https://www.ncei.noaa.gov/news/unlocking-hurricane-insights",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 37705,
+  "sha256": "7d6c34876cca9e66eb2edd531197b78539602072011b6c7ecd8357cb9b14c3f5",
+  "etag": "\"1790723213-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 23:06:53 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-ED368F128D1C63\\20260930T043915.474191Z_7d6c34876cca9e66.html",
+  "parent_id": "DISC-55E151143C8956",
+  "discovery_depth": 2
+}

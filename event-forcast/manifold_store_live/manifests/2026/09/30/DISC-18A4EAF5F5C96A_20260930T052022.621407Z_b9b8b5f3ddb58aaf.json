@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-18A4EAF5F5C96A",
+  "provider": "NASA Earthdata",
+  "dataset": "obpg-server-outage-data-processing-web-tools-affected",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:22.621407Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/obpg-server-outage-data-processing-web-tools-affected",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/obpg-server-outage-data-processing-web-tools-affected",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 134721,
+  "sha256": "b9b8b5f3ddb58aaf8aece3833631233b2457ca7d34f7efc8b753c5c90fc5d7c3",
+  "etag": "\"1790745623\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-18A4EAF5F5C96A\\20260930T052022.621407Z_b9b8b5f3ddb58aaf.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

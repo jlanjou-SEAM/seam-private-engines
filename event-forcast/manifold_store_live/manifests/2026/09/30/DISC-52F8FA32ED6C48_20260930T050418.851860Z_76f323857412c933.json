@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-52F8FA32ED6C48",
+  "provider": "NOAA/NDBC",
+  "dataset": "HBYC1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:04:18.851860Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/HBYC1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/HBYC1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 999408,
+  "sha256": "76f323857412c933ae5ad173dcbc37b2bf901a78c2b635c710444968bbe9a0fe",
+  "etag": "\"f3ff0-65cac2d416670\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-52F8FA32ED6C48\\20260930T050418.851860Z_76f323857412c933.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

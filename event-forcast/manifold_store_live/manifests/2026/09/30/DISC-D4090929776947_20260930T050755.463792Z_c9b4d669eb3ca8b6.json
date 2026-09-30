@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-D4090929776947",
+  "provider": "NOAA/NCEP",
+  "dataset": "fnmoc",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T05:07:55.463792Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/fnmoc/",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/fnmoc/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 2125,
+  "sha256": "c9b4d669eb3ca8b6b7a22d8b6bb3e015ff7ee5fbb5835e2d4e439a7e604d463c",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-D4090929776947\\20260930T050755.463792Z_c9b4d669eb3ca8b6.html",
+  "parent_id": "DISC-DEC3DBB03E0B9A",
+  "discovery_depth": 2
+}

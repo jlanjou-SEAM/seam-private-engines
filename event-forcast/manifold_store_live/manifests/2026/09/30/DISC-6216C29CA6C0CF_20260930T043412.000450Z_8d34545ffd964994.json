@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-6216C29CA6C0CF",
+  "provider": "NOAA/NDBC",
+  "dataset": "MAXT2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:34:12.000450Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/MAXT2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/MAXT2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 407302,
+  "sha256": "8d34545ffd964994b7dcc15e69ae91172af71fd909248e0a6c1fe2bf2e41bf1a",
+  "etag": "\"63706-65cabafdf313e\"",
+  "last_modified": "Wed, 30 Sep 2026 04:25:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-6216C29CA6C0CF\\20260930T043412.000450Z_8d34545ffd964994.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

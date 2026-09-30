@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-705D146BF2EA4F",
+  "provider": "NOAA/NDBC",
+  "dataset": "KP58.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:46.850822Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/KP58.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/KP58.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 101990,
+  "sha256": "fa4402af107830d4058352aaf44ac133fa06a178de8307b0790ae34af2805af5",
+  "etag": "\"18e66-65cab569bacb4\"",
+  "last_modified": "Wed, 30 Sep 2026 04:00:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-705D146BF2EA4F\\20260930T043346.850822Z_fa4402af107830d4.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

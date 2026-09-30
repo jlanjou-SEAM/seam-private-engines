@@ -1,0 +1,54 @@
+{
+    "@context": [
+        {
+            "schema": "https://schema.org/",
+            "type": "@type",
+            "features": "schema:itemListElement",
+            "FeatureCollection": "schema:itemList"
+        }
+    ],
+    "type": "FeatureCollection",
+    "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations",
+    "features": [
+        {
+            "@type": "Feature",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/AL012-90100100001"
+        },
+        {
+            "@type": "Feature",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/AL012-90100100002"
+        },
+        {
+            "@type": "Feature",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/AL012-90100100003"
+        },
+        {
+            "@type": "Feature",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/AL012-90100100005"
+        },
+        {
+            "@type": "Feature",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/AL012-90100100006"
+        },
+        {
+            "@type": "Feature",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/AL012-90100300001"
+        },
+        {
+            "@type": "Feature",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/AL012-90100300002"
+        },
+        {
+            "@type": "Feature",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/AL012-90100300004"
+        },
+        {
+            "@type": "Feature",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/AL012-90100300005"
+        },
+        {
+            "@type": "Feature",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/AL012-90100300006"
+        }
+    ]
+}

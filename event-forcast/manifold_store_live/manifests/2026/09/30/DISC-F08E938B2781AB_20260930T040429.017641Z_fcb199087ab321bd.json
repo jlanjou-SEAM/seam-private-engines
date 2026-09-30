@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-F08E938B2781AB",
+  "provider": "OpenWeather",
+  "dataset": "llms-full.txt",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:29.017641Z",
+  "request_url": "https://openweathermap.org/llms-full.txt",
+  "final_url": "https://openweathermap.org/llms-full.txt",
+  "status_code": 200,
+  "content_type": "text/markdown; charset=utf-8",
+  "byte_length": 978846,
+  "sha256": "fcb199087ab321bd4fb25d8d745c6bb6be024fbcc04867e8a9c6a1b36e613a86",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F08E938B2781AB\\20260930T040429.017641Z_fcb199087ab321bd.txt",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

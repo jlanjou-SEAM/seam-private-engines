@@ -1,0 +1,23 @@
+body{margin:0;padding:0;line-height:1.4em;word-spacing:1px;letter-spacing:.2px;font:13px 'Open Sans',Helvetica,Arial,serif;color:#333}
+h1{font-size:16pt;font-weight:bold}
+h2{font-size:14pt;font-weight:bold}
+h3{font-size:12pt;font-weight:bold}
+h4{font-size:10pt;font-weight:bold}
+h5{font-size:8pt;font-weight:bold}
+h6{font-size:8pt;font-weight:normal}
+a:link,a:visited{background:transparent;color:#0057a5;text-decoration:underline}
+#nav,#breadcrumbs,#footer,#headDOC,#floating-banner{display:none}
+#header .inset,#content .inset{width:100%}
+#header{height:100px}
+#header a{font-size:1.8em}
+#header .inset{width:1024px;height:100px;background:url('/cdo-web/images/logos/logo_doc_60x60.png') 98% 20px no-repeat transparent}
+#header .inset .noaalink{display:block;float:left;height:70px;margin:0;padding:0;position:relative;width:258px;background:url("/cdo-web/images/logos/noaa_logo.png") center center no-repeat #fff}
+#header .inset .title{float:left;width:431px;height:70px;margin:0;overflow:hidden;padding:0;position:relative}
+#header .inset .title span{background:url('/cdo-web/images/logos/ncdc_logo.png') no-repeat top left #fff;width:738px;height:75px;display:block;position:absolute;left:0;top:0;z-index:10}
+#content{width:100%;margin:0;float:none;font-size:11pt}
+.cdoOptionContainer{margin-bottom:2em}
+.cdoOptionContainer h3{margin:.5em 0}
+a.cdoOption{color:#0057a5;display:block;margin:.25 0 1em 0}
+#content a[href^="http://"]:after,#content a[href^="https://"]:after{content:" (" attr(href) ")";font-size:90%}
+#content a[href^="/"]:after{content:" (https://www.ncei.noaa.gov" attr(href) ")";font-size:90%}
+.helpBox,.gettingStarted{page-break-before:always}

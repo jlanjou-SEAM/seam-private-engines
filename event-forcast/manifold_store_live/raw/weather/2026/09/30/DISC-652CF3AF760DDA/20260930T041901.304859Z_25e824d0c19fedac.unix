@@ -1,0 +1,159 @@
+                 INSTALL file for MADIS (Unix/Linux)
+                          MADIS Version 4.7
+                          May 11, 2025
+--------------------------------------------------------------------------------
+
+1)  Get the package
+
+    From the "Software Download" section on that page, there will be links
+    to the madis-4.7.tar.gz file containing:
+    
+    - Source code only
+    - Linux source
+
+    MADIS support of HP-UX, SunOS, AIX, IRIX/IRIX64 is deprcated. Last version 3.9
+
+2)  Install the package
+
+    - Buld your own binary version
+
+      The compilation options used to create the binaries were selected for
+      maximum portability across the various hardware architectures that run
+      under each operating system.  Only the default optimization levels have
+      been used with each compiler.  If desired, you may be able to gain 
+      performance improvements by changing the options for your system and 
+      building from the source.
+
+      The gfortran and ifort compiler was used for Linux.
+      For more details on the operating system versions that the API has
+      been built and tested with, see the "Supported Systems" section in
+      the README file in this directory.
+
+    - Decide where you want to install the package.  Make the top-level
+      directory (referred to here as $TOP).  (Note that the full path
+      through the $TOP directory must be < 239 characters.)
+
+    - cd $TOP
+      gunzip madis-4.7.tar.gz        [or gzip -d if gunzip doesn't work]
+      tar -xvf madis-4.7.tar
+
+3)  Build the API library and utility programs
+
+    - If you've downloaded a binary version you shouldn't have to do the
+      build step (unless you've encountered some problems, or want to
+      make optimizations for your system).
+
+    - The "SYSTEM DEPENDENT CONFIGURATION" section near the top of 
+      $TOP/src/makefile needs to be edited for your environment.
+      The following four items need to be set:
+
+      1) Location of the netCDF package. (NETCDF_INC, NETCDF_LIB)
+      2) Name of the fortran compiler.   (FC)
+      3) Compilation flags.              (FFLAGS)
+      4) Load flags.                     (LDFLAGS)
+
+      The makefile has sections showing the choices made for the systems for 
+      which binaries are distributed.  You may find this useful in determining
+      the settings for other environments.
+
+    - cd $TOP/src
+      make clean       (will clear out object files from previous version)
+      make             (will make the utilities & library)
+
+4)  Compiling/linking user-written programs
+
+    - You need to link to the MADIS library and to the netCDF library.  Always
+      compile with explicit zero init.  The netcdf library must be v2 compatible and the
+      netCDF-Fortran must be version netCDF-Fortran v4.6.1 or higher.
+      Assuming $TOP for the top-level MADIS directory and the netcdf is in the 
+      /usr/lib64 directory or netcdf lib is under $NCDF, a sample compilation/link command would be:
+      
+      $ export NETCDF_LDFLAGS_F="-L$NCDF -lnetcdff -lnetcdf"
+      $ export NETCDF_INCLUDE=$NCDF/../include
+      $ export ICC=gcc
+      $ export IFFLAGS="-finit-local-zero  -O2"
+      $ export IFC=gfortran
+      $ make
+
+      Or edit the compile line in teh makefile
+      gfortan ${FFLAGS} -finit-local-zero -o test.x test.f $TOP/lib/madislib.a $NCDF/lib/libnetcdf.a
+      gfortan ${FFLAGS} -finit-local-zero -o test.x test.f $TOP/lib/madislib.a -L/usr/lib64 -lnetcdff
+      gfortan ${FFLAGS} -finit-local-zero -o test.x test.f -L$NCDF -lnetcdff -lnetcdf
+      
+    - The following FFLAGS options are required at a minimum.  You may also
+      wish to review the notes on the FFLAGS settings in the makefile in
+      the src directory as far as other settings that can be used for 
+      portability, eliminating compiler warnings, etc.
+
+      Linux       gfortan FFLAGS=-finit-local-zero
+      Linux       ifort FFLAGS=-zero
+
+5)  Set up the run-time environment
+
+    The MADIS data directories are all relative to a top-level directory.
+    You can setup one or more sets of directories (for real-time, test data, 
+    archive, etc.) then point to the one you want with the MADIS_DATA
+    environment variable.  Here are the directories you need to setup
+    (using $DTOP as the top-level) depending on which MADIS datasets you're
+    planning on accessing:
+
+    MADIS Dataset                           Directory
+    -------------                           ---------
+    Surface (all sfc datasets)              $DTOP/point/maritime/netcdf
+                                            $DTOP/point/metar/netcdf
+                                            $DTOP/point/sao/netcdf
+                                            $DTOP/LDAD/coop/netCDF
+                                            $DTOP/LDAD/mesonet/netCDF
+                                            $DTOP/LDAD/urbanet/netCDF
+                                            $DTOP/LDAD/hfmetar/netCDF
+                                            $DTOP/LDAD/crn/netCDF
+                                            $DTOP/LDAD/mobile/netCDF
+                                            $DTOP/LDAD/nepp/netCDF
+                                            $DTOP/LDAD/rwis/netCDF
+    Surface (mesonet only)                  $DTOP/LDAD/mesonet/netCDF
+    Radiosondes                             $DTOP/point/raob/netcdf
+    NPN hourly winds                        $DTOP/point/profiler/netcdf
+    Aircraft data                           $DTOP/point/acars/netcdf
+    Aircraft data profiles at airports      $DTOP/point/acarsProfiles/netcdf
+    Radiometers                             $DTOP/point/radiometer/netcdf
+    Hydrological datasets                   $DTOP/LDAD/hydro/netCDF
+    Multi-Agency Profilers (MAP)            $DTOP/LDAD/profiler/netCDF
+    Satellite winds (operational )          $DTOP/point/HDW/netcdf
+                    (experimental 1h)       $DTOP/point/HDW1h/netcdf
+    Satellite soundings                     $DTOP/point/POES/netcdf
+    Satellite radiance                      $DTOP/point/satrad/netcdf
+    Snow dataset                            $DTOP/LDAD/snow/netCDF
+    WISDOM balloon winds                    $DTOP/LDAD/WISDOM/netCDF
+
+    Note that the full path through the $DTOP directory must be < 239
+    characters.
+
+    MADIS requires two environment variables at run-time:  
+
+    - MADIS_STATIC points to the static directory in the MADIS installation
+
+    - MADIS_DATA points to the top of the directory tree where the MADIS 
+      (or AWIPS) data files are stored.
+
+      setenv MADIS_STATIC $TOP/static          [C-shell]
+      setenv MADIS_DATA   $DTOP          
+
+      MADIS_STATIC=$TOP/static                 [Bourne shell]
+      MADIS_DATA=$DTOP
+
+      - AWIPS users should point MADIS_DATA to /data/fxa.
+
+6)  Disk space requirements
+
+    - The MADIS software requires about 20-30 MB after being built.
+
+    - Typical requirements per day for the different datasets can
+      be found by contacting MADIS support.
+
+7)  Sample data installation
+
+    Thirteen hours of data files are available for most of the datasets.
+    These are made available for anyone who wants to download some
+    data and try out the system before requesting real-time or archived 
+    data from MADIS. Contact MADIS support for sample data.  
+

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-CBD500B4E15839",
+  "provider": "NOAA/NDBC",
+  "dataset": "BUZM3.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:55.843594Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/BUZM3.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/BUZM3.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 102084,
+  "sha256": "ab11e1650276002231a0170105367c54b6ec4d1f7d7258987b89f67d1a572ec2",
+  "etag": "\"18ec4-65cab8c22bc72\"",
+  "last_modified": "Wed, 30 Sep 2026 04:15:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-CBD500B4E15839\\20260930T043355.843594Z_ab11e16502760022.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

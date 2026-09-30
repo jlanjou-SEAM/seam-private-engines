@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-0169561EBAD2C6",
+  "provider": "NOAA/NDBC",
+  "dataset": "l_wlevel",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:32.696164Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/l_wlevel/",
+  "final_url": "https://www.ndbc.noaa.gov/data/l_wlevel/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 1103,
+  "sha256": "909bac9d40f30a466f3ae44743ecdc2b2c926adc9c45c144e9b914a090799b97",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-0169561EBAD2C6\\20260930T041832.696164Z_909bac9d40f30a46.html",
+  "parent_id": "DISC-5A7C0E42A79699",
+  "discovery_depth": 2
+}

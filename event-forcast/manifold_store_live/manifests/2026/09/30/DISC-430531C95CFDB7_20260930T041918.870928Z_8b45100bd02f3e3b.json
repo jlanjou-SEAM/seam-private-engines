@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-430531C95CFDB7",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "fortHuachuca.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:18.870928Z",
+  "request_url": "https://madis-data.ncep.noaa.gov/cap/images/fortHuachuca.jpg",
+  "final_url": "https://madis-data.ncep.noaa.gov/cap/images/fortHuachuca.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 12967,
+  "sha256": "8b45100bd02f3e3bca17878b5e952fa4deb8c324cb6fe7c0a8c942d8e00f9a91",
+  "etag": null,
+  "last_modified": "Thu, 04 Sep 2014 17:24:30 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-430531C95CFDB7\\20260930T041918.870928Z_8b45100bd02f3e3b.jpg",
+  "parent_id": "DISC-EA5F21974F2B42",
+  "discovery_depth": 2
+}

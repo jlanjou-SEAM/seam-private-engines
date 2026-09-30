@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C559B31D51C945",
+  "provider": "NOAA/NCEP",
+  "dataset": "para",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:27.107848Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/hafs/para",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/hafs/para/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 2538,
+  "sha256": "feee1adf699e788070c9739c445fe1b7797d98dca05f675f016829e9fd7de8f3",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C559B31D51C945\\20260930T040627.107848Z_feee1adf699e7880.html",
+  "parent_id": "NOAA-NOMADS",
+  "discovery_depth": 1
+}

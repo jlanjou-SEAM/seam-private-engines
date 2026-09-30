@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-4C599D74B13147",
+  "provider": "NOAA/NSSL",
+  "dataset": "FLASH",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T04:38:01.080558Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/FLASH/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/FLASH/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 2995,
+  "sha256": "ebd0156014ea438f8a3e1b5e812a8125553139af723b9f1d321cc865e54ecf8c",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4C599D74B13147\\20260930T043801.080558Z_ebd0156014ea438f.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

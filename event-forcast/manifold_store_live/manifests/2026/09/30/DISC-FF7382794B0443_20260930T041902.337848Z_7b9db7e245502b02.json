@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-FF7382794B0443",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "Colorado%20River%20480x480.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:02.337848Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/Colorado%20River%20480x480.png?itok=ljQWtYMM",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/Colorado%20River%20480x480.png?itok=ljQWtYMM",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 267721,
+  "sha256": "7b9db7e245502b024cbcc693e1e907046d05f31ad1756554ef34a6b7052bfb02",
+  "etag": null,
+  "last_modified": "Wed, 09 Sep 2026 15:07:55 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-FF7382794B0443\\20260930T041902.337848Z_7b9db7e245502b02.png",
+  "parent_id": "DISC-12F9502270D672",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-587A4C89C63123",
+  "provider": "University at Albany",
+  "dataset": "current-nws-alerts-DBK8lP4a.js",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "soil"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:26.826352Z",
+  "request_url": "https://www.nysmesonet.org/assets/current-nws-alerts-DBK8lP4a.js",
+  "final_url": "https://www.nysmesonet.org/assets/current-nws-alerts-DBK8lP4a.js",
+  "status_code": 200,
+  "content_type": "application/javascript; charset=UTF-8",
+  "byte_length": 9718,
+  "sha256": "2e20863ec1640fbb4c82f71c962e922ce9676c573998ed83ce34d0067f844834",
+  "etag": "W/\"25f6-1a0a14d9634\"",
+  "last_modified": "Mon, 14 Sep 2026 19:03:31 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-587A4C89C63123\\20260930T040426.826352Z_2e20863ec1640fbb.js",
+  "parent_id": "NYMESONET",
+  "discovery_depth": 1
+}

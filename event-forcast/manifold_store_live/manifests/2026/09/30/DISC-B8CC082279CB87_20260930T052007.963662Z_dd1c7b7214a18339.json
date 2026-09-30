@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-B8CC082279CB87",
+  "provider": "NASA Earthdata",
+  "dataset": "suomi-npp-data-imagery-caution-advised",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:07.963662Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/suomi-npp-data-imagery-caution-advised",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/suomi-npp-data-imagery-caution-advised",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 175681,
+  "sha256": "dd1c7b7214a18339a3490980c04c8a9f829e614d3b700a085fddeda68e665af0",
+  "etag": "\"1790745609\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:09 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-B8CC082279CB87\\20260930T052007.963662Z_dd1c7b7214a18339.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

@@ -1,0 +1,33 @@
+Near-real-time space weather data from the NSF/NSO GONG network are now being 
+processed at NOAA/SWPC.  The most recent data products with known operational 
+applications are available here for near-real-time use.  They are organized 
+by product type, of which four are currently provided:
+
+zqs - FITS files (compressed with gzip) containing zeropoint-corrected hourly
+      synoptic maps of the photospheric magnetic field.  The filenames 
+      (mrzqs<YYMMDD>t<HHMM>c<CCCC>_<LLL>.fits.gz) encode the Carrington 
+      rotation number <CCCC> and longitude <LLL> of the left map edge, as 
+      well as the UT date <YYMMDD> and time <HHMM> of the latest contributing 
+      observation.  The 72 most recently generated files (>3 days) are 
+      maintained here.
+
+bqs - Same as zqs, but not zeropoint-corrected.
+
+cqe - Multi-frame FITS files (compressed with gzip) containing 10-minute 
+      cadence heliographic remaps of the magnetic flux, temporal variance, 
+      continuum intensity, and corresponding contributing pixel count.  The 
+      filenames (<XX>cqe<YYMMDD>t<HHMM>.fits.gz) encode the specific GONG site 
+      <XX>, as well as the UT date <YYMMDD> and time <HHMM> of the 
+      observation.  The GONG site is indicated by its two-letter abbreviation
+      (bb: Big Bear, ct: Cerro Tololo, le: Learmonth, ml: Mauna Loa, 
+      td: Teide, and ud: Udaipur).  The 288 most recently generated files 
+      (>12 hours) are maintained here.
+
+haf - FITS files (compressed with fpack) containing 1-minute cadence H-alpha 
+      intensity imagery of the Sun's chromosphere.  The filenames 
+      (<YYYYMMDDHHMMSSX>h.fits.fz) encode the UT date <YYYYMMDD> and time 
+      <HHMMSS> of the observation, as well as the GONG site <X> where the 
+      observation was acquired.  The GONG site is indicated by the first 
+      letter of the site name (B[ig Bear], C[erro Tololo], L[earmonth], 
+      M[auna Loa], T[eide], and U[daipur]).  The 244 most recently generated 
+      files (>1 hour) are maintained here.

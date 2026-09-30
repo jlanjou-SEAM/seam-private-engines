@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-A9DC938DA9BFDD",
+  "provider": "USGS Water Data",
+  "dataset": "time-series-metadata",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:31:53.603849Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-series-metadata",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-series-metadata",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 4716,
+  "sha256": "ecfc71cb93b92bf370719e71799bad68acdabcada346a525e130fbbb0945ab0e",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\30\\DISC-A9DC938DA9BFDD\\20260930T043153.603849Z_ecfc71cb93b92bf3.json",
+  "parent_id": "DISC-50BE965810B0D9",
+  "discovery_depth": 2
+}

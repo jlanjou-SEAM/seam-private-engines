@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-57F5B94E572587",
+  "provider": "NASA Earthdata",
+  "dataset": "daymet-data-access-temporarily-disabled-appeears",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:00.022184Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/daymet-data-access-temporarily-disabled-appeears",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/daymet-data-access-temporarily-disabled-appeears",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 136867,
+  "sha256": "7d0d587c4ed7297fca5bf85495b64b1bd90e4b10633395fa8c6c246433bd628a",
+  "etag": "\"1790745601\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:01 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-57F5B94E572587\\20260930T052000.022184Z_7d0d587c4ed7297f.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

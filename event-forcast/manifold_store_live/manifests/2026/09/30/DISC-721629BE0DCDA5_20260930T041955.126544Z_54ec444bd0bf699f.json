@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-721629BE0DCDA5",
+  "provider": "NOAA/NCEP",
+  "dataset": "current_usdm.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:55.126544Z",
+  "request_url": "https://droughtmonitor.unl.edu/data/png/current/current_usdm.png",
+  "final_url": "https://droughtmonitor.unl.edu/data/png/current/current_usdm.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 405165,
+  "sha256": "54ec444bd0bf699f57dc0c1c27c81d8a0150aebe405a691d0df94cccc51f9020",
+  "etag": "\"3ea22836a54bdd1:0\"",
+  "last_modified": "Wed, 23 Sep 2026 21:48:04 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-721629BE0DCDA5\\20260930T041955.126544Z_54ec444bd0bf699f.png",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

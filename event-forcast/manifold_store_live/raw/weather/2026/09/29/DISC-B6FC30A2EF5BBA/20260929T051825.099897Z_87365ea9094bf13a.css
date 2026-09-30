@@ -1,0 +1,75 @@
+/* Messages and Errors */
+#messageContainer,
+.messageBlock{
+	margin-bottom:1em;
+	overflow:hidden;
+	background-repeat:no-repeat;
+	background-position:20px center;
+	font-size:1.1em;
+	width:100%;
+	font-size:.9em;
+}
+
+.messageBlock p{
+	padding:10px 10px 10px 80px;
+	margin:0;
+	text-align:left;
+	_height:40px;
+	min-height:40px;
+	background-color:transparent;
+	line-height:1.35em
+}
+
+.messageBlock p span{
+	line-height:1.2em;
+	margin-bottom:5px;
+	display:inline-block
+}
+
+.msgError {
+	background-image:url('../images/icons/icon_warning.png');
+	background-color:#D7321C;
+	color:#fff;
+}
+
+.msgAlert {
+	background-image:url('../images/icons/icon_warning.png');
+	background-color:#FFD51D;
+	color:#444
+}
+
+.msgConfirm {
+	background-image: url('../images/icons/icon_warning.png');
+	background-color: #7FAA5B;
+	color: #fff
+}
+
+.msgSuccess {
+	background-image: url('../images/icons/icon_check.png');
+	background-color: #7FAA5B;
+	color: #fff
+}
+
+.msgCDOError {
+	background-color: #cc5858;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 0;
+	font-size: 1.2em;
+	margin-bottom: 10px
+}
+
+.msgError em {
+	color: #f66;
+	margin-bottom: 10px
+}
+
+.maintenanceBlock {
+	padding: 20px 20px 20px 190px;
+	background: url('../images/logos/noaa.jpg') 20px center no-repeat transparent;
+}
+
+.maintenanceBlock p {
+	font-weight: normal
+}

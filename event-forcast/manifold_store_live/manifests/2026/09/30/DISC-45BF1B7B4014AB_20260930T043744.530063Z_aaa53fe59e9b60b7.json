@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-45BF1B7B4014AB",
+  "provider": "NOAA/NCEP",
+  "dataset": "latest_xray_event.css",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:44.530063Z",
+  "request_url": "https://www.spaceweather.gov/themes/custom/swpc/css/latest_xray_event.css?tlrx65",
+  "final_url": "https://www.spaceweather.gov/themes/custom/swpc/css/latest_xray_event.css?tlrx65",
+  "status_code": 200,
+  "content_type": "text/css",
+  "byte_length": 663,
+  "sha256": "aaa53fe59e9b60b72ce6d660e0953c1c7a9026109d6334c339a0180b33cfe32c",
+  "etag": "\"297-6535d62477538\"",
+  "last_modified": "Wed, 03 Jun 2026 18:13:26 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-45BF1B7B4014AB\\20260930T043744.530063Z_aaa53fe59e9b60b7.css",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

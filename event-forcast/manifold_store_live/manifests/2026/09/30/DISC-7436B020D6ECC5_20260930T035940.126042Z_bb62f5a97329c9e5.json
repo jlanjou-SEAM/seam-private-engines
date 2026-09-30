@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-7436B020D6ECC5",
+  "provider": "USGS Water Data",
+  "dataset": "monitoring-locations",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T03:59:40.126042Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations?f=html",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations?f=html",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 30402,
+  "sha256": "bb62f5a97329c9e5a772d0c8b86af77ec4064aaa2447d72fd1254e447f602fe3",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\30\\DISC-7436B020D6ECC5\\20260930T035940.126042Z_bb62f5a97329c9e5.html",
+  "parent_id": "USGS-WATER-COLLECTIONS",
+  "discovery_depth": 1
+}

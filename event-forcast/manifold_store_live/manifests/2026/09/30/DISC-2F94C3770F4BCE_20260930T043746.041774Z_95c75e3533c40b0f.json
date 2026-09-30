@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-2F94C3770F4BCE",
+  "provider": "NOAA/NCEP",
+  "dataset": "aurora-30-minute-forecast",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:46.041774Z",
+  "request_url": "https://www.spaceweather.gov/products/aurora-30-minute-forecast",
+  "final_url": "https://www.spaceweather.gov/products/aurora-30-minute-forecast",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 74503,
+  "sha256": "95c75e3533c40b0f107f66253190d2c33e38104b254e246f3ce362a4c6b1e058",
+  "etag": "\"1790733623\"",
+  "last_modified": "Wed, 30 Sep 2026 02:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2F94C3770F4BCE\\20260930T043746.041774Z_95c75e3533c40b0f.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

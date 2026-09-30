@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-DDFD335E76A93E",
+  "provider": "NOAA/NCEI",
+  "dataset": "value-data-case-study-reinsurance",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:41.688336Z",
+  "request_url": "https://www.ncei.noaa.gov/news/value-data-case-study-reinsurance",
+  "final_url": "https://www.ncei.noaa.gov/news/value-data-case-study-reinsurance",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 41118,
+  "sha256": "4a6b0f556c2e139e00b1519a9aa3055b999cd0c26168bbbefc9ae9559d733a93",
+  "etag": "\"1790729221-gzip\"",
+  "last_modified": "Wed, 30 Sep 2026 00:47:01 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-DDFD335E76A93E\\20260930T044641.688336Z_4a6b0f556c2e139e.html",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

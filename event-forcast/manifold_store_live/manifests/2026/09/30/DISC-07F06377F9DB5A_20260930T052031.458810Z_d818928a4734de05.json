@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-07F06377F9DB5A",
+  "provider": "NASA Earthdata",
+  "dataset": "noaa-21",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:31.458810Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/noaa-21",
+  "final_url": "https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/noaa-21",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 150044,
+  "sha256": "d818928a4734de05aa18489ef2230e22ee0adc0b9fc9536a494df65d01d74df3",
+  "etag": "\"1790745632\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:32 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-07F06377F9DB5A\\20260930T052031.458810Z_d818928a4734de05.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

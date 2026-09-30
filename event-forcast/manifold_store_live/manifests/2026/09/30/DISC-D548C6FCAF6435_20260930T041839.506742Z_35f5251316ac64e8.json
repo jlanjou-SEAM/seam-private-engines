@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-D548C6FCAF6435",
+  "provider": "NOAA/SWPC",
+  "dataset": "solar-wind-speed.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:39.506742Z",
+  "request_url": "https://services.swpc.noaa.gov/products/summary/solar-wind-speed.json",
+  "final_url": "https://services.swpc.noaa.gov/products/summary/solar-wind-speed.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 59,
+  "sha256": "35f5251316ac64e8c342cc832d335a0f9fabd7283ec8f91f044e7861d388f50a",
+  "etag": "\"3b-65cab9054748e\"",
+  "last_modified": "Wed, 30 Sep 2026 04:16:30 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-D548C6FCAF6435\\20260930T041839.506742Z_35f5251316ac64e8.json",
+  "parent_id": "DISC-E9DCF2D47D27D9",
+  "discovery_depth": 2
+}

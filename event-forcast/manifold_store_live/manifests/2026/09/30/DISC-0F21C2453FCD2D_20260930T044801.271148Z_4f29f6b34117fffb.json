@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-0F21C2453FCD2D",
+  "provider": "NOAA/NCEI",
+  "dataset": "ttt_coastal_locations",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:01.271148Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/ttt_coastal_locations/",
+  "final_url": "https://www.ncei.noaa.gov/maps/ttt_coastal_locations/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 4796,
+  "sha256": "4f29f6b34117fffb81232d4aecb31293c4ac74a4e6183c064dd0a8b8b18a0e97",
+  "etag": "\"1220-6310416f43fc0\"",
+  "last_modified": "Sun, 23 Mar 2025 15:24:55 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-0F21C2453FCD2D\\20260930T044801.271148Z_4f29f6b34117fffb.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

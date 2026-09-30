@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-88742EB2EB0024",
+  "provider": "NOAA/SWPC",
+  "dataset": "jpegs.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:24.679658Z",
+  "request_url": "https://services.swpc.noaa.gov/products/ccor2/jpegs.json",
+  "final_url": "https://services.swpc.noaa.gov/products/ccor2/jpegs.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 299104,
+  "sha256": "b21024d6209c74464495336647ea7416810da561580ab341cbc4128bc6a2293b",
+  "etag": "\"49060-65cab9057e771\"",
+  "last_modified": "Wed, 30 Sep 2026 04:16:31 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-88742EB2EB0024\\20260930T041824.679658Z_b21024d6209c7446.json",
+  "parent_id": "DISC-68539D413377BD",
+  "discovery_depth": 2
+}

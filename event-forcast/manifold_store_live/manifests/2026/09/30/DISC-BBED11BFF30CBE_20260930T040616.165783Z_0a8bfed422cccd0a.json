@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-BBED11BFF30CBE",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "72_hr_historical_obs.pdf",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:16.165783Z",
+  "request_url": "https://www.bom.gov.au/catalogue/72_hr_historical_obs.pdf",
+  "final_url": "https://www.bom.gov.au/catalogue/72_hr_historical_obs.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 240331,
+  "sha256": "0a8bfed422cccd0a6416ebe82d246d1e7c33218165d0d80df4ff0a07aee1ff88",
+  "etag": "\"8251c9-3aacb-61b9b350a1d00\"",
+  "last_modified": "Mon, 24 Jun 2024 04:28:04 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-BBED11BFF30CBE\\20260930T040616.165783Z_0a8bfed422cccd0a.pdf",
+  "parent_id": "BOM-DATA",
+  "discovery_depth": 1
+}

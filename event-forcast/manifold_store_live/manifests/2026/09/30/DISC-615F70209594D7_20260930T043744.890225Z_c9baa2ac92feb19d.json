@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-615F70209594D7",
+  "provider": "NOAA/NCEP",
+  "dataset": "3-day-forecast",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:44.890225Z",
+  "request_url": "https://www.spaceweather.gov/products/3-day-forecast",
+  "final_url": "https://www.spaceweather.gov/products/3-day-forecast",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 67969,
+  "sha256": "c9baa2ac92feb19dfee9703c94456bfee0529b7eacf61426630061f6db708657",
+  "etag": "\"1790733648\"",
+  "last_modified": "Wed, 30 Sep 2026 02:00:48 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-615F70209594D7\\20260930T043744.890225Z_c9baa2ac92feb19d.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

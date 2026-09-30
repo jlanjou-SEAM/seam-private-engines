@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-69EA0B8DB47707",
+  "provider": "NOAA/SWPC",
+  "dataset": "geoelectric",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:17.544305Z",
+  "request_url": "https://services.swpc.noaa.gov/products/animations/geoelectric/",
+  "final_url": "https://services.swpc.noaa.gov/products/animations/geoelectric/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 605,
+  "sha256": "c8e29f4ced600dc119c513c3b5ec23bdd14875d8a1dbebc59fbed22abd4fc2b1",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-69EA0B8DB47707\\20260930T041817.544305Z_c8e29f4ced600dc1.html",
+  "parent_id": "DISC-DC635460D92E37",
+  "discovery_depth": 2
+}

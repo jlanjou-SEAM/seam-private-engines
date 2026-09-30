@@ -1,0 +1,145 @@
+{
+    "type":"object",
+    "title":"Latest field measurements",
+    "properties":{
+        "geometry":{
+            "format":"geometry-any",
+            "x-ogc-role":"primary-geometry"
+        },
+        "field_measurements_series_id":{
+            "type":"string",
+            "title":"Field measurements series ID",
+            "example":"WDA-STABLE-SERIES-0001",
+            "description":"A unique identifier representing a single collection series. This corresponds to the `id` field in the `field-measurements-metadata` endpoint. Collection series are defined as the set of field measurements at a given monitoring location for a single parameter code using a single reading type.\n"
+        },
+        "field_visit_id":{
+            "type":"string",
+            "format":"uuid",
+            "title":"Field visit ID",
+            "example":"00000000-0000-0000-0000-000000000002",
+            "description":"A universally unique identifier (UUID) for the field visit. Multiple measurements may be made during a single field visit.\n"
+        },
+        "parameter_code":{
+            "type":"string",
+            "title":"Parameter code",
+            "example":"00060",
+            "description":"Parameter codes are 5-digit codes used to identify the constituent measured and the units of measure. A complete list of parameter codes and associated groupings can be found at [https://api.waterdata.usgs.gov/ogcapi/v1/collections/parameter-codes/items](https://api.waterdata.usgs.gov/ogcapi/v1/collections/parameter-codes/items).\n"
+        },
+        "monitoring_location_id":{
+            "type":"string",
+            "title":"Monitoring location ID",
+            "example":"USGS-09380000",
+            "description":"A unique identifier representing a single monitoring location. This corresponds to the `id` field in the `monitoring-locations` endpoint. Monitoring location IDs are created by combining the agency code of the agency responsible for the monitoring location (e.g. USGS) with the ID number of the monitoring location (e.g. 02238500), separated by a hyphen (e.g. USGS-02238500).\n"
+        },
+        "observing_procedure_code":{
+            "type":"string",
+            "title":"Observing procedure code",
+            "example":"S",
+            "description":"A short code corresponding to the observing procedure for the field measurement."
+        },
+        "observing_procedure":{
+            "type":"string",
+            "title":"Observing procedure",
+            "example":"GW level, calib steel tape",
+            "description":"Water measurement or water-quality observing procedure descriptions."
+        },
+        "value":{
+            "type":"string",
+            "title":"Value",
+            "example":"579.40",
+            "description":"The value of the observation. Values are transmitted as strings in the JSON response format in order to preserve precision.\n"
+        },
+        "unit_of_measure":{
+            "type":"string",
+            "title":"Unit of measure",
+            "example":"ft3/s",
+            "description":"A human-readable description of the units of measurement associated with an observation."
+        },
+        "time":{
+            "type":"string",
+            "title":"Time",
+            "example":"2024-06-15",
+            "description":"The date an observation represents. You can query this field using date-times or intervals, adhering to RFC 3339, or using ISO 8601 duration objects. Intervals may be bounded or half-bounded (double-dots at start or end).\nExamples:\n\n  - A date-time: \"2018-02-12T23:20:50Z\"\n  - A bounded interval: \"2018-02-12T00:00:00Z/2018-03-18T12:31:12Z\"\n  - Half-bounded intervals: \"2018-02-12T00:00:00Z/..\" or \"../2018-03-18T12:31:12Z\"\n  - Duration objects: \"P1M\" for data from the past month or \"PT36H\" for the last 36 hours\n\nOnly features that have a `time` that intersects the value of datetime are selected. If a feature has multiple temporal properties, it is the decision of the server whether only a single temporal property is used to determine the extent or all relevant temporal properties.\n",
+            "x-ogc-role":"primary-instant"
+        },
+        "qualifier":{
+            "type":"string",
+            "title":"Qualifier",
+            "example":"Ice",
+            "description":"This field indicates any qualifiers associated with an observation, for instance if a sensor may have been impacted by ice or if values were estimated.\n"
+        },
+        "vertical_datum":{
+            "type":"string",
+            "title":"Vertical datum",
+            "example":"NAVD88",
+            "description":"The datum used to determine altitude and vertical position at the monitoring location. A list of codes is available at [https://api.waterdata.usgs.gov/ogcapi/v1/collections/altitude-datums/items](https://api.waterdata.usgs.gov/ogcapi/v1/collections/altitude-datums/items).\n"
+        },
+        "approval_status":{
+            "type":"string",
+            "title":"Approval Status",
+            "example":"Approved",
+            "description":"Some of the data that you have obtained from this U.S. Geological Survey database may not have received Director's approval.  Any such data values are qualified as provisional and are subject to revision.  Provisional data are released on the condition that neither the USGS nor the United States Government may be held liable for any damages resulting from its use. This field reflects the approval status of each record, and is either \"Approved\", meaining processing review has been completed and the data is approved for publication, or \"Provisional\" and subject to revision. For more information about provisional data, go to [https://waterdata.usgs.gov/provisional-data-statement/](https://waterdata.usgs.gov/provisional-data-statement/).\n",
+            "enum":[
+                "Provisional",
+                "Approved"
+            ]
+        },
+        "measuring_agency":{
+            "type":"string",
+            "title":"Measuring agency",
+            "example":"USGS",
+            "description":"The agency performing the measurement."
+        },
+        "last_modified":{
+            "type":"string",
+            "title":"Last modified date",
+            "example":"2025-06-16T14:13:28+00:00",
+            "description":"The last time a record was refreshed in our database. This may happen due to regular operational processes and does not necessarily indicate anything about the measurement has changed.\nYou can query this field using date-times or intervals, adhering to RFC 3339, or using ISO 8601 duration objects. Intervals may be bounded or half-bounded (double-dots at start or end).\nExamples:\n\n  - A date-time: \"2018-02-12T23:20:50Z\"\n  - A bounded interval: \"2018-02-12T00:00:00Z/2018-03-18T12:31:12Z\"\n  - Half-bounded intervals: \"2018-02-12T00:00:00Z/..\" or \"../2018-03-18T12:31:12Z\"\n  - Duration objects: \"P1M\" for data from the past month or \"PT36H\" for the last 36 hours\n\nOnly features that have a `last_modified` that intersects the value of datetime are selected.\n"
+        },
+        "control_condition":{
+            "type":"string",
+            "title":"Control condition",
+            "example":"Clear",
+            "description":"The state of the control feature at the time of observation.\n"
+        },
+        "measurement_rated":{
+            "type":"string",
+            "title":"Measurement rating",
+            "example":"Fair",
+            "description":"A qualitative estimate of the quality of a measurement.\n"
+        },
+        "year":{
+            "type":"integer",
+            "title":"Year",
+            "example":2020,
+            "description":"The calendar year the field measurement was taken.\n"
+        },
+        "month":{
+            "type":"integer",
+            "title":"Month",
+            "example":6,
+            "description":"The calendar month the field measurement was taken. If null, the month is unknown.\n"
+        },
+        "day":{
+            "type":"integer",
+            "title":"Day",
+            "example":15,
+            "description":"The day of the month the field measurement was taken. If null, the day is unknown.\n"
+        },
+        "time_of_day":{
+            "type":"string",
+            "format":"time",
+            "title":"Time of Day",
+            "example":"12:00:00+00:00",
+            "description":"The time of day the field measurement was taken. If null, the time of day is unknown.\n"
+        },
+        "sublocation_identifier":{
+            "type":"string",
+            "title":"Sublocation identifier",
+            "example":"Downstream",
+            "description":"An optional human-readable identifier used to specify where measurements are recorded at a monitoring location.\n"
+        }
+    },
+    "$schema":"http://json-schema.org/draft/2019-09/schema",
+    "$id":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-field-measurements/schema"
+}

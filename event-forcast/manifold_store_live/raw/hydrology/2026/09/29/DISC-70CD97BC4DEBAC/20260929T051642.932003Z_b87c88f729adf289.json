@@ -1,0 +1,128 @@
+{
+    "@context":"https://schema.org/docs/jsonldcontext.jsonld",
+    "@type":"DataCatalog",
+    "@id":"https://api.waterdata.usgs.gov/",
+    "url":"https://api.waterdata.usgs.gov/",
+    "name":"USGS Water Data APIs",
+    "description":"The United States Geological Survey (USGS) collects water data at monitoring locations across the United States using both automated sensors and manual data collection. These APIs provide access to that data, alongside metadata about data collections and monitoring locations, in standardized machine-readable formats.\n",
+    "keywords":[
+        "geospatial",
+        "data",
+        "api",
+        "hydrology",
+        "USGS"
+    ],
+    "termsOfService":"https://creativecommons.org/publicdomain/zero/1.0/",
+    "license":"https://creativecommons.org/publicdomain/zero/1.0/",
+    "provider":{
+        "@type":"Organization",
+        "name":"US Geological Survey - Water Data for the Nation",
+        "url":"https://waterdata.usgs.gov",
+        "address":{
+            "@type":"PostalAddress",
+            "streetAddress":null,
+            "postalCode":null,
+            "addressLocality":null,
+            "addressRegion":null,
+            "addressCountry":null
+        },
+        "contactPoint":{
+            "@type":"Contactpoint",
+            "email":"wdfn@usgs.gov",
+            "telephone":null,
+            "faxNumber":null,
+            "url":"https://waterdata.usgs.gov/questions-comments/?referrerUrl=https://api.waterdata.usgs.gov",
+            "hoursAvailable":{
+                "opens":null,
+                "description":null
+            },
+            "contactType":"pointOfContact",
+            "description":null
+        }
+    },
+    "dataset":{
+        "@type":"Dataset",
+        "@id":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily",
+        "name":"Daily values environmental data retrieval (EDR)",
+        "description":"Daily data provide one data value to represent water conditions for the day. Throughout much of the history of the USGS, the primary water data available was daily data collected manually at the monitoring location once each day. With improved availability of computer storage and automated transmission of data, the daily data published today are generally a statistical summary or metric of the continuous data collected each day, such as the daily mean, minimum, or maximum value. Daily data are automatically calculated from the continuous data of the same parameter code and are described by parameter code and a statistic code. These data have also been referred to as \u201cdaily values\u201d or \u201cDV\u201d.\n",
+        "license":"https://creativecommons.org/publicdomain/zero/1.0/",
+        "keywords":[
+            "automated",
+            "daily",
+            "statistics",
+            "current",
+            "single location",
+            "edr",
+            "data"
+        ],
+        "spatial":[
+            {
+                "@type":"Place",
+                "geo":{
+                    "@type":"GeoShape",
+                    "box":"-180,-90 180,90"
+                }
+            }
+        ],
+        "temporalCoverage":"None/None",
+        "url":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily",
+        "distribution":[
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1?f=json",
+                "encodingFormat":"application/json",
+                "description":"The landing page of this server as JSON",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1?f=html",
+                "encodingFormat":"text/html",
+                "description":"The landing page of this server as HTML",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily?f=json",
+                "encodingFormat":"application/json",
+                "description":"This document as JSON",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily?f=jsonld",
+                "encodingFormat":"application/ld+json",
+                "description":"This document as RDF (JSON-LD)",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily?f=html",
+                "encodingFormat":"text/html",
+                "description":"This document as HTML",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily/locations?f=json",
+                "encodingFormat":"application/vnd.cov+json",
+                "description":"locations query for this collection as JSON",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily/locations?f=html",
+                "encodingFormat":"text/html",
+                "description":"locations query for this collection as HTML",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/edr/daily/locations?f=csv",
+                "encodingFormat":"text/csv; charset=utf-8",
+                "description":"locations query for this collection as csv",
+                "inLanguage":"en-US"
+            }
+        ]
+    }
+}

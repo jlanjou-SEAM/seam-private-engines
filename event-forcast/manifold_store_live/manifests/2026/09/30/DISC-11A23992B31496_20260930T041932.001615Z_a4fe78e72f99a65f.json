@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-11A23992B31496",
+  "provider": "NOAA/NCEP",
+  "dataset": "seminars",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:32.001615Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/outreach/seminars/",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/outreach/seminars/",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 10952,
+  "sha256": "a4fe78e72f99a65f8a1c09a451cba313568040ab4dc6e5a288e5f7bef529b142",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-11A23992B31496\\20260930T041932.001615Z_a4fe78e72f99a65f.html",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

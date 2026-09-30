@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-A4B2CCFA20E9AC",
+  "provider": "Japan Meteorological Agency",
+  "dataset": "targetTc.json",
+  "sector": "public",
+  "country": "JP",
+  "scientific_regime": [
+    "weather",
+    "seismic",
+    "hazards"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:05.010198Z",
+  "request_url": "https://www.jma.go.jp/bosai/typhoon/data/targetTc.json",
+  "final_url": "https://www.jma.go.jp/bosai/typhoon/data/targetTc.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 105,
+  "sha256": "9a11d00b3708a84856c8f45080c19224381c804a0dc71f8fc3fdb983080a4fd1",
+  "etag": "\"3d880080235620afe7cdd75cbd579ca0\"",
+  "last_modified": "Wed, 30 Sep 2026 03:42:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A4B2CCFA20E9AC\\20260930T041005.010198Z_9a11d00b3708a848.json",
+  "parent_id": "JMA-BOSAI",
+  "discovery_depth": 1
+}

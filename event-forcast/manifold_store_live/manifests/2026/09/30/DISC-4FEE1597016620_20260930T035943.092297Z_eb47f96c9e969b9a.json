@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-4FEE1597016620",
+  "provider": "USGS Water Data",
+  "dataset": "peaks",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T03:59:43.092297Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/peaks?f=json",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/peaks?f=json",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 4464,
+  "sha256": "eb47f96c9e969b9a56aa589e4d92cba0e25f652832dbb8448e0c46aa72793ecb",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\30\\DISC-4FEE1597016620\\20260930T035943.092297Z_eb47f96c9e969b9a.json",
+  "parent_id": "USGS-WATER-COLLECTIONS",
+  "discovery_depth": 1
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C9ADE2E163D6C2",
+  "provider": "Turkish State Meteorological Service",
+  "dataset": "sitemap.xml",
+  "sector": "public",
+  "country": "TR",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:11:00.440230Z",
+  "request_url": "https://www.mgm.gov.tr/sitemap.xml",
+  "final_url": "https://www.mgm.gov.tr/sitemap.xml",
+  "status_code": 200,
+  "content_type": "text/xml",
+  "byte_length": 794,
+  "sha256": "ac62c7f14ef29ad2f408c8bc2b8288503651ce40879feca8dc098a306736bae4",
+  "etag": "\"8e3cd0134bd81:0\"",
+  "last_modified": "Fri, 08 Apr 2022 06:36:39 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C9ADE2E163D6C2\\20260930T041100.440230Z_ac62c7f14ef29ad2.xml",
+  "parent_id": "MGM-TURKEY",
+  "discovery_depth": 1
+}

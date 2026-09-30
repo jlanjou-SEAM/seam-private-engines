@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-8AAE2FB49F8FE7",
+  "provider": "NOAA/NDBC",
+  "dataset": "CHAO3.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:46.910235Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/CHAO3.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/CHAO3.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1014542,
+  "sha256": "8c8b51254477f4ffc06ad291ce9f85772ac92090bcb8ba9092561b73eb9b5f57",
+  "etag": "\"f7b0e-65cab6855407c\"",
+  "last_modified": "Wed, 30 Sep 2026 04:05:19 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-8AAE2FB49F8FE7\\20260930T043346.910235Z_8c8b51254477f4ff.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-58398948DEF997",
+  "provider": "NOAA/NSSL",
+  "dataset": "Model_SurfaceTemp",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T04:38:19.696341Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/Model_SurfaceTemp/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/Model_SurfaceTemp/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 6334,
+  "sha256": "e0a146f5df2abda17442a6aa99a2ea4ea2cd967664c7299f8541c2196b41dc0c",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-58398948DEF997\\20260930T043819.696341Z_e0a146f5df2abda1.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-6E90B86E80052C",
+  "provider": "NOAA/NCEI",
+  "dataset": "2186",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T05:10:15.455159Z",
+  "request_url": "https://www.ncei.noaa.gov/node/2186",
+  "final_url": "https://www.ncei.noaa.gov/services/world-data-system/v-dat-working-group",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 45399,
+  "sha256": "85ae3769761488fd3d95d80e84f0c0e4314cdae4868a74d9c0230445878cc177",
+  "etag": "\"1790744267-gzip\"",
+  "last_modified": "Wed, 30 Sep 2026 04:57:47 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6E90B86E80052C\\20260930T051015.455159Z_85ae3769761488fd.html",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

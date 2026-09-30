@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-945FC4CEC31C6C",
+  "provider": "US EIA",
+  "dataset": "monthly",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "power",
+    "energy"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:19.698384Z",
+  "request_url": "https://www.eia.gov/totalenergy/data/monthly/",
+  "final_url": "https://www.eia.gov/totalenergy/data/monthly/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 189705,
+  "sha256": "c6f56fd01619afbcc8e1dddbd70c1b41c9d7c04a029e60ceb87f516ce180d716",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\power\\2026\\09\\30\\DISC-945FC4CEC31C6C\\20260930T040419.698384Z_c6f56fd01619afbc.html",
+  "parent_id": "EIA-API",
+  "discovery_depth": 1
+}

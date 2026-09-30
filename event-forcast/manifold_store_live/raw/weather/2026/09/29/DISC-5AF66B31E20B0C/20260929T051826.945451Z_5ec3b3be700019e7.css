@@ -1,0 +1,13 @@
+.ui-datepicker{padding:2px;font-size:.8em;box-shadow:none}
+.ui-datepicker select.ui-datepicker-month,.ui-datepicker select.ui-datepicker-year{background-color:#fff}
+.ui-datepicker-calendar{margin:0 0 .2em 0}
+.ui-datepicker-calendar .ui-state-disabled,.ui-datepicker-calendar .ui-state-disabled:hover,.ui-datepicker-calendar .ui-datepicker-unselectable,.ui-datepicker-calendar .ui-datepicker-unselectable:hover,.ui-datepicker-calendar .ui-datepicker-unselectable .ui-state-default,.ui-datepicker-calendar .ui-datepicker-unselectable .ui-state-default:hover,.ui-datepicker-calendar .ui-datepicker-unselectable .ui-state-hover{background-color:#fff!important;color:#999}
+.ui-datepicker-calendar .ui-state-hover{background-color:#e0e0e8!important}
+.ui-datepicker-calendar tbody tr{background-color:#fff!important}
+.ui-datepicker-calendar td{padding:1px!important}
+.noaa-daterange-inrange .ui-state-default{background-image:none;background-color:#245bab!important;color:#fff!important;font-weight:bold!important}
+.noaa-daterange-inrange .ui-state-default:hover{background-color:#4e8cc7!important}
+.noaa-daterange-startday .ui-state-active,.noaa-daterange-end-day .ui-state-active,.ui-datepicker-current-day .ui-state-active{background-image:none;background-color:#0c346f!important;color:#fff!important;font-weight:bold!important}
+.noaa-daterange-startday .ui-state-active:hover,.noaa-daterange-end-day .ui-state-active:hover,.ui-datepicker-current-day .ui-state-active:hover{background-color:#0c346f!important}
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{background-color:#fff;background-image:none;color:#444;font-family:'Open Sans',Arial,Verdana,Helvetica,Tahoma,Trebuchet,sans-serif;font-weight:normal;text-transform:uppercase;border:1px solid #444}
+.ui-datepicker-calendar tbody tr{background-color:transparent!important;border-bottom:none!important}

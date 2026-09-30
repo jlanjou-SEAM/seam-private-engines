@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-DAB2309E004190",
+  "provider": "NOAA/NCEP",
+  "dataset": "snow_probhazards_d8_14_contours.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:43.606225Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/predictions/threats/snow_probhazards_d8_14_contours.png",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/predictions/threats/snow_probhazards_d8_14_contours.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 870448,
+  "sha256": "2a9e40a7e27c41fa02f38d00f8d81f715eda72f64d0ab2d12662f18390f16c55",
+  "etag": null,
+  "last_modified": "Tue, 29 Sep 2026 19:13:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-DAB2309E004190\\20260930T041943.606225Z_2a9e40a7e27c41fa.png",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

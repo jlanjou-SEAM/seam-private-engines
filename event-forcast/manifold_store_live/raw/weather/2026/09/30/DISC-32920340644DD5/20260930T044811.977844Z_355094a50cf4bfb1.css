@@ -1,0 +1,19 @@
+.col-2-left-600{width:100%;float:none}
+.col-2-left-600:after{content:"";display:block;font-size:0;height:0;clear:both;visibility:hidden}
+h2{margin:0 0 .15em 0;padding:0}
+#cdoForm{margin:0;padding:0}
+#cdoForm select{padding:4px;margin:0;display:inline-block;cursor:pointer}
+#cdoForm select option{padding:0;margin:3px}
+#cdoForm input.noaa-daterange-input,#selectedSearchString{padding:7px}
+.cdoSearchBlock{background-color:#fff;margin-top:20px}
+.cdoSearchBlock h2{margin:0 20px 20px 20px;padding:20px 0 0 0}
+.cdoFormStep{position:relative;margin:.5em 0 2em 0}
+#selectedDataset,.noaa-daterange-input,#selectedResultType,#selectedSearchString{width:640px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+.noaa-daterange-container{position:relative;cursor:pointer}
+#searchSubmit{padding:7px;width:100px;text-transform:uppercase;float:right}
+.formDisabled{cursor:default!important}
+.searchButton.formDisabled:hover{background-color:#245bab}
+aside.helpBox{float:none;width:100%}
+aside.helpBox:after{content:"";display:block;font-size:0;height:0;clear:both;visibility:hidden}
+#cdoForm .noaa-daterange-dialog input[type="text"]:hover,#cdoForm .noaa-daterange-dialog input[type="text"]:focus{border:none!important}
+.noaa-daterange-dialog{position:absolute;left:0;top:33px;z-index:20;width:429px;cursor:default}

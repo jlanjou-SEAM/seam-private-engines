@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-717D78C3513130",
+  "provider": "NOAA/NCEI",
+  "dataset": "daily-summaries",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:12.436232Z",
+  "request_url": "https://www.ncei.noaa.gov/access/search/data-search/daily-summaries",
+  "final_url": "https://www.ncei.noaa.gov/access/search/data-search/daily-summaries/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 433,
+  "sha256": "2e66a5c144210f50c2094fb5a4edaa96d1a5265f5710ad88c3695e5e52e59131",
+  "etag": "\"1b1-658c669334300\"",
+  "last_modified": "Tue, 11 Aug 2026 14:37:32 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-717D78C3513130\\20260929T051812.436232Z_2e66a5c144210f50.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

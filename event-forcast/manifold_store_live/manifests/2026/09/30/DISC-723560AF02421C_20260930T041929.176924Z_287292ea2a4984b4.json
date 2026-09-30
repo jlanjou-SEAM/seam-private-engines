@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-723560AF02421C",
+  "provider": "NOAA/NCEP",
+  "dataset": "teleconnections.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:29.176924Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/teleconnections.shtml",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/teleconnections.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 19958,
+  "sha256": "287292ea2a4984b4a0dcacd193d012e3281e5ed779bbd93e3d5e526b69472a30",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-723560AF02421C\\20260930T041929.176924Z_287292ea2a4984b4.shtml",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

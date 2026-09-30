@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F44F11821F0B20",
+  "provider": "NOAA/NCEP",
+  "dataset": "skipgraphic.gif",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:27.667550Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/nwscwi/skipgraphic.gif",
+  "final_url": "https://www.cpc.ncep.noaa.gov/nwscwi/skipgraphic.gif",
+  "status_code": 200,
+  "content_type": "image/gif",
+  "byte_length": 50,
+  "sha256": "a6d226933c37dfc8b00da58efb6654f6b15d287c9d05a8997419f1c36a1d4af1",
+  "etag": null,
+  "last_modified": "Thu, 13 Jun 2002 09:31:40 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F44F11821F0B20\\20260930T041927.667550Z_a6d226933c37dfc8.gif",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

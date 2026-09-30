@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-36141BE5EDEC39",
+  "provider": "NOAA/NDBC",
+  "dataset": "MOKH1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:50.674371Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/MOKH1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/MOKH1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1014918,
+  "sha256": "5619f187d4ec22f2cc8d4e04ee2b7040c2df8af922f8af0d9e55b4fd2f76f549",
+  "etag": "\"f7c86-65cab685ad23e\"",
+  "last_modified": "Wed, 30 Sep 2026 04:05:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-36141BE5EDEC39\\20260930T043350.674371Z_5619f187d4ec22f2.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-98A1B48F93B0B2",
+  "provider": "Turkish State Meteorological Service",
+  "dataset": "radar.aspx",
+  "sector": "public",
+  "country": "TR",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:27:36.594790Z",
+  "request_url": "https://www.mgm.gov.tr/sondurum/radar.aspx",
+  "final_url": "https://www.mgm.gov.tr/sondurum/radar.aspx",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 39274,
+  "sha256": "a1466dccc95b1b9209b66374c15719211ff801d282a0693513ee8ced515d5ee9",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-98A1B48F93B0B2\\20260930T042736.594790Z_a1466dccc95b1b92.aspx",
+  "parent_id": "MGM-TURKEY",
+  "discovery_depth": 1
+}

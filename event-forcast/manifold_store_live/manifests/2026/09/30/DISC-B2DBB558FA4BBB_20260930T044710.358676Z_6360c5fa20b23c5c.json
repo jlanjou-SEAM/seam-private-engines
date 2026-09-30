@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-B2DBB558FA4BBB",
+  "provider": "NOAA/NCEI",
+  "dataset": "house.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:10.358676Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2025-09/house.jpg",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2025-09/house.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 36138,
+  "sha256": "6360c5fa20b23c5ce19b369acf992df977ae0e799122c229587f6ef3ba0c7b9d",
+  "etag": null,
+  "last_modified": "Fri, 19 Sep 2025 14:33:49 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-B2DBB558FA4BBB\\20260930T044710.358676Z_6360c5fa20b23c5c.jpg",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

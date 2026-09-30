@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-75E541C9250DE0",
+  "provider": "NOAA/NCEI",
+  "dataset": "nceis-cooperative-institutes-partners-science",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:56.312879Z",
+  "request_url": "https://www.ncei.noaa.gov/news/nceis-cooperative-institutes-partners-science",
+  "final_url": "https://www.ncei.noaa.gov/news/nceis-cooperative-institutes-partners-science",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 41693,
+  "sha256": "30ccd5278563de86a51b702b37038b76f57dfa5f8b35967a4961175e1e608134",
+  "etag": "\"1790719444-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 22:04:04 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-75E541C9250DE0\\20260930T044656.312879Z_30ccd5278563de86.html",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

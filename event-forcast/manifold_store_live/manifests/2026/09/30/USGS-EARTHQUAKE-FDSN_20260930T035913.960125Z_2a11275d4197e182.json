@@ -1,0 +1,22 @@
+{
+  "candidate_id": "USGS-EARTHQUAKE-FDSN",
+  "provider": "USGS",
+  "dataset": "FDSN earthquake web service",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T03:59:13.960125Z",
+  "request_url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+  "final_url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 34875,
+  "sha256": "2a11275d4197e182fdcd6a343a2647fce1bd803ba2678383a19741364861769f",
+  "etag": null,
+  "last_modified": "Wed, 30 Sep 2026 03:59:14 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\seismic\\2026\\09\\30\\USGS-EARTHQUAKE-FDSN\\20260930T035913.960125Z_2a11275d4197e182.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

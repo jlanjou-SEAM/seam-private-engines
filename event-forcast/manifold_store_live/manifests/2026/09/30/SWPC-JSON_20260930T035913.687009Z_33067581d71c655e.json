@@ -1,0 +1,23 @@
+{
+  "candidate_id": "SWPC-JSON",
+  "provider": "NOAA/SWPC",
+  "dataset": "Space Weather JSON directory",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T03:59:13.687009Z",
+  "request_url": "https://services.swpc.noaa.gov/json/",
+  "final_url": "https://services.swpc.noaa.gov/json/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 2630,
+  "sha256": "33067581d71c655e21866d9f13fe5ce9754bfa4627d8e05989c0e107207c7a50",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\SWPC-JSON\\20260930T035913.687009Z_33067581d71c655e.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

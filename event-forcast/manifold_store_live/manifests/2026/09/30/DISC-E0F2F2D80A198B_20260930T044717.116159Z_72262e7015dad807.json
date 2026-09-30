@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-E0F2F2D80A198B",
+  "provider": "NOAA/NCEI",
+  "dataset": "Water%20Resources.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:17.116159Z",
+  "request_url": "http://www.ncei.noaa.gov/sites/default/files/2021-09/Water%20Resources.jpg",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-09/Water%20Resources.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 161365,
+  "sha256": "72262e7015dad80776ba57db50f30ba09033a355320413d76ea8bb0af8f27c1e",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:34:09 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E0F2F2D80A198B\\20260930T044717.116159Z_72262e7015dad807.jpg",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

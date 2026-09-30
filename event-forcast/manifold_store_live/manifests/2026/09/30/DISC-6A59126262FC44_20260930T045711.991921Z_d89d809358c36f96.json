@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-6A59126262FC44",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "maps-tropical-storms",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:57:11.991921Z",
+  "request_url": "https://www.ncm.gov.ae/maps-tropical-storms?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/maps-tropical-storms?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43561,
+  "sha256": "d89d809358c36f96bb81e7753d7d0e40871002a274e36b6aadb036b59c352bc9",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6A59126262FC44\\20260930T045711.991921Z_d89d809358c36f96.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

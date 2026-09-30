@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F2537E2C6281B2",
+  "provider": "NASA Earthdata",
+  "dataset": "asdc-ingest-archive-unavailable-may-20-2026",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:14.134676Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/asdc-ingest-archive-unavailable-may-20-2026",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/asdc-ingest-archive-unavailable-may-20-2026",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 135497,
+  "sha256": "7243f9cc04a1f4d913a634ec35f28ec927c6813f9bc243373dc694db8558241f",
+  "etag": "\"1790745615\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:15 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-F2537E2C6281B2\\20260930T052014.134676Z_7243f9cc04a1f4d9.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-D601DFE9BEB465",
+  "provider": "NOAA/NSSL",
+  "dataset": "MergedReflectivityAtLowestAltitude",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:28.460537Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/MergedReflectivityAtLowestAltitude/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/MergedReflectivityAtLowestAltitude/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 176691,
+  "sha256": "367d2632733a99afee5707416a4ca2213b9ab84205b446f7eef8fc05309eb97f",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-D601DFE9BEB465\\20260930T050828.460537Z_367d2632733a99af.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

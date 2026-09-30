@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-0791429812BFFC",
+  "provider": "University at Albany",
+  "dataset": "manifest.json",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "soil"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:26.655359Z",
+  "request_url": "https://www.nysmesonet.org/manifest.json",
+  "final_url": "https://www.nysmesonet.org/manifest.json",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 1783,
+  "sha256": "de87eb3ff82e56cc8722211aee80abe01474c52baed29c16419a36ccf695af07",
+  "etag": "W/\"6f7-DRzo+g3zHhrPheddHlw147tLENI\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-0791429812BFFC\\20260930T040426.655359Z_de87eb3ff82e56cc.json",
+  "parent_id": "NYMESONET",
+  "discovery_depth": 1
+}

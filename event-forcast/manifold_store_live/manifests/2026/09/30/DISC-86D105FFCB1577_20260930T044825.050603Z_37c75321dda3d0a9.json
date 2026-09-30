@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-86D105FFCB1577",
+  "provider": "NOAA/NCEI",
+  "dataset": "NOAA%20Records%20Schedule.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:25.050603Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2022-10/NOAA%20Records%20Schedule.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2022-10/NOAA%20Records%20Schedule.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 345736,
+  "sha256": "37c75321dda3d0a913688fbc93c955e9ddb112792178c446822a4f5a1f42a93a",
+  "etag": null,
+  "last_modified": "Mon, 07 Nov 2022 04:27:37 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-86D105FFCB1577\\20260930T044825.050603Z_37c75321dda3d0a9.pdf",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

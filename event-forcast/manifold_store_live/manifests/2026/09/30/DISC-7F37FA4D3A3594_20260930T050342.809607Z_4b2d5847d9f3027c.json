@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7F37FA4D3A3594",
+  "provider": "NOAA/NDBC",
+  "dataset": "PACF1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:03:42.809607Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PACF1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PACF1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1016422,
+  "sha256": "4b2d5847d9f3027c6a9e154e0789d915aad53b8ae59669252bce0807339e0558",
+  "etag": "\"f8266-65cac0967309a\"",
+  "last_modified": "Wed, 30 Sep 2026 04:50:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-7F37FA4D3A3594\\20260930T050342.809607Z_4b2d5847d9f3027c.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

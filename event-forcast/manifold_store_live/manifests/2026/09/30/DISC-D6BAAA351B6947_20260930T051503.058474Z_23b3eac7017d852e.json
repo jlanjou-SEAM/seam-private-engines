@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-D6BAAA351B6947",
+  "provider": "NOAA/NDBC",
+  "dataset": "FRCB6.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:15:03.058474Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/FRCB6.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/FRCB6.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1011910,
+  "sha256": "23b3eac7017d852e2f4701cd0c4439dc2bc508d79108060a21e536eb82017c46",
+  "etag": "\"f70c6-65cac2d3f7272\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-D6BAAA351B6947\\20260930T051503.058474Z_23b3eac7017d852e.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

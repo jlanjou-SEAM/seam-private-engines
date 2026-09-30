@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-14A0484E23C758",
+  "provider": "Finnish Meteorological Institute",
+  "dataset": "Radar.BdhPYbUb.css",
+  "sector": "public",
+  "country": "FI",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "air_quality"
+  ],
+  "retrieved_utc": "2026-09-30T04:05:58.944064Z",
+  "request_url": "https://en.ilmatieteenlaitos.fi/v3.0.0/_nuxt/Radar.BdhPYbUb.css",
+  "final_url": "https://en.ilmatieteenlaitos.fi/v3.0.0/_nuxt/Radar.BdhPYbUb.css",
+  "status_code": 200,
+  "content_type": "text/css",
+  "byte_length": 507,
+  "sha256": "c7055085b031ad5082de75e419c55305149c09cab2a337852499bde073fce186",
+  "etag": "\"92f0eefae30a6b91b5c729b0fa4d715b\"",
+  "last_modified": "Tue, 29 Sep 2026 11:04:27 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-14A0484E23C758\\20260930T040558.944064Z_c7055085b031ad50.css",
+  "parent_id": "FMI-OPEN",
+  "discovery_depth": 1
+}

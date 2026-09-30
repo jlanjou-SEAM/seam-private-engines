@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-EF517B7D78822E",
+  "provider": "NOAA/NCEI",
+  "dataset": "Toolkit_Bathymetry.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:55.904247Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/Toolkit_Bathymetry.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/Toolkit_Bathymetry.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 1146929,
+  "sha256": "9f5d294379b41e201de217073f2df0d8e447d7d5715197a7717d19421354a6ed",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:14:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-EF517B7D78822E\\20260930T043955.904247Z_9f5d294379b41e20.pdf",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

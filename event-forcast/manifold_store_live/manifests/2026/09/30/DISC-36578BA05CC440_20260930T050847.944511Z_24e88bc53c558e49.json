@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-36578BA05CC440",
+  "provider": "NOAA/NSSL",
+  "dataset": "SeamlessHSRHeight",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:47.944511Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/SeamlessHSRHeight/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/SeamlessHSRHeight/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 152007,
+  "sha256": "24e88bc53c558e493efd6a61967046be146849e36430eec6b379b2502b499060",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-36578BA05CC440\\20260930T050847.944511Z_24e88bc53c558e49.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-18C3A42298212E",
+  "provider": "NOAA/NCEI",
+  "dataset": "CD-ROM.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:24.884654Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/inline-images/CD-ROM.png",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/inline-images/CD-ROM.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 69168,
+  "sha256": "23f37eb76f2f1f679485fff15aafe90ce3a1e1da5c05bc916f3b51eab431ce3c",
+  "etag": null,
+  "last_modified": "Thu, 10 Jul 2025 19:08:08 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-18C3A42298212E\\20260930T043924.884654Z_23f37eb76f2f1f67.png",
+  "parent_id": "DISC-36AF1EC44F4269",
+  "discovery_depth": 2
+}

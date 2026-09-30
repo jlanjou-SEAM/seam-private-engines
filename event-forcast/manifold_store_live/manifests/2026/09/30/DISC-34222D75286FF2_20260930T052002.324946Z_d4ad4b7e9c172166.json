@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-34222D75286FF2",
+  "provider": "NASA Earthdata",
+  "dataset": "viirs-omps-data-outage",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:02.324946Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/viirs-omps-data-outage",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/viirs-omps-data-outage",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 134329,
+  "sha256": "d4ad4b7e9c172166b47e84dc1da75a7a3e290104cf459d08415480892f7213da",
+  "etag": "\"1790745648\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:48 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-34222D75286FF2\\20260930T052002.324946Z_d4ad4b7e9c172166.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

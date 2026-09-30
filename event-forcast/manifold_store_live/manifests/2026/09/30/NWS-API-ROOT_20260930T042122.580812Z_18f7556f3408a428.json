@@ -1,0 +1,22 @@
+{
+  "candidate_id": "NWS-API-ROOT",
+  "provider": "NOAA/NWS",
+  "dataset": "NWS API root",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:21:22.580812Z",
+  "request_url": "https://api.weather.gov/",
+  "final_url": "https://api.weather.gov/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 9495,
+  "sha256": "18f7556f3408a428bb2cedb5e38759db789f9aa228afcdf60335bb34c7a636ad",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\NWS-API-ROOT\\20260930T042122.580812Z_18f7556f3408a428.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-9080A4C693BE31",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "Observations-XML.pdf",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:15.190194Z",
+  "request_url": "https://www.bom.gov.au/catalogue/Observations-XML.pdf",
+  "final_url": "https://www.bom.gov.au/catalogue/Observations-XML.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 197056,
+  "sha256": "7b7fd4abd369be7faf0b2d6d46f466e94f8fe1e67dc66d1ea31e14b0f3e24e39",
+  "etag": "\"bd92b3-301c0-5fdea0c69fb00\"",
+  "last_modified": "Mon, 12 Jun 2023 07:55:56 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-9080A4C693BE31\\20260930T040615.190194Z_7b7fd4abd369be7f.pdf",
+  "parent_id": "BOM-DATA",
+  "discovery_depth": 1
+}

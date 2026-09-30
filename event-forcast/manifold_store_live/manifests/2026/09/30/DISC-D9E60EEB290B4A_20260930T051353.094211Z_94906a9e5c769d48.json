@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-D9E60EEB290B4A",
+  "provider": "NOAA/NDBC",
+  "dataset": "MGIP4.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:13:53.094211Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/MGIP4.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/MGIP4.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1012568,
+  "sha256": "94906a9e5c769d48e0c0d3b648523a93da0a1fbbb100f5aeacde456943b2b558",
+  "etag": "\"f7358-65cac2d475209\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-D9E60EEB290B4A\\20260930T051353.094211Z_94906a9e5c769d48.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

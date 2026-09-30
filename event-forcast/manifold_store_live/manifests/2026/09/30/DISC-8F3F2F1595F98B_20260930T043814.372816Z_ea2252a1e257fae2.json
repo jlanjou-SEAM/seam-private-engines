@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-8F3F2F1595F98B",
+  "provider": "NOAA/NSSL",
+  "dataset": "MergedAzShear_3-6kmAGL",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T04:38:14.372816Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/MergedAzShear_3-6kmAGL/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/MergedAzShear_3-6kmAGL/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 175692,
+  "sha256": "ea2252a1e257fae2f9052a64821e1d9b8e04f93e6797b6f6d7d37e6aa6747e7d",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-8F3F2F1595F98B\\20260930T043814.372816Z_ea2252a1e257fae2.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

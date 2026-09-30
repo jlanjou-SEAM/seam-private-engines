@@ -1,0 +1,2014 @@
+{
+    "@context": [
+        {
+            "schema": "https://schema.org/",
+            "type": "@type",
+            "features": "schema:itemListElement",
+            "FeatureCollection": "schema:itemList"
+        }
+    ],
+    "type": "FeatureCollection",
+    "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics",
+    "features": [
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2003.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2004.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2005.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2006.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2007.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2008.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2009.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2010.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2011.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2012.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2013.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2014.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2017.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2018.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2019.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2020.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2021.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2022.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2023.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ026.2024.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ027.1987.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ027.1988.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ031.1991.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ031.1992.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ031.1993.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ032.1959.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ032.1960.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ032.1962.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ032.1963.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ032.1964.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ032.1966.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ032.1967.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ032.1968.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ032.1969.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ033.1955.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ033.1956.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ033.1957.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ033.1958.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ033.1959.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ033.1960.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ033.1962.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ033.1963.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ033.1964.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ033.1966.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ033.1967.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ033.1968.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ033.1969.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.1994.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.1995.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.1996.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.1997.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.1998.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.1999.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.2000.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.2001.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.2002.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.2003.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.2004.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.2005.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.2006.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.2007.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.2008.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.2009.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ034.2010.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ035.2012.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ035.2013.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ035.2018.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ035.2019.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ035.2023.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ036.2012.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ036.2013.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ036.2014.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ036.2015.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ036.2016.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ036.2017.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ036.2018.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ036.2019.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ036.2020.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ036.2021.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ036.2022.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02OJ036.2023.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1924.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1925.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1926.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1927.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1928.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1929.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1930.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1931.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1932.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1933.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1934.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1935.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1936.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1937.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1938.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1939.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1940.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1941.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA001.1942.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA002.1929.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA002.1930.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1932.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1933.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1934.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1935.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1936.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1937.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1938.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1939.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1940.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1941.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1942.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1943.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1944.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1945.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1946.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1947.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1948.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1949.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1950.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1951.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1952.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1953.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1954.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1955.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1956.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1957.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1958.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1959.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1960.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1961.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1962.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1963.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1964.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1965.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1966.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1967.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1968.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1969.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1970.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1971.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1972.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1973.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1974.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1975.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1978.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1979.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1980.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1981.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1982.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1990.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1991.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1992.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1993.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA003.1994.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA005.1965.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA005.1970.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA005.1971.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA005.1972.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA005.1974.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1968.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1969.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1970.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1971.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1972.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1973.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1974.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1975.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1976.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1977.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1978.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1979.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1980.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1981.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA006.1982.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1968.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1969.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1970.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1971.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1972.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1973.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1974.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1975.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1976.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1977.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1978.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1979.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1980.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1981.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1982.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1983.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1984.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1985.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1986.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1987.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1988.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1989.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1990.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1991.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1992.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1993.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1994.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1995.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1996.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1997.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1998.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.1999.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2000.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2001.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2002.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2003.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2004.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2005.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2006.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2007.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2008.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2009.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2012.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2013.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2014.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2015.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2016.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2017.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2018.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2019.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2020.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2021.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2022.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA007.2023.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA009.1972.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA009.1973.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA009.1975.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA009.1976.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA009.1977.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA009.1978.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA009.1979.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PA009.1981.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB001.1925.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB001.1926.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB001.1927.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1919.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1920.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1921.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1922.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1928.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1929.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1930.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1931.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1932.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1933.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1934.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1935.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1936.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1937.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1938.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1939.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1940.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1941.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1942.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1943.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1944.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1945.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1946.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1947.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1948.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1949.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1950.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1951.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1952.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1953.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1954.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1955.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1956.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1957.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1958.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1959.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1960.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1961.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1962.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1963.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1964.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1965.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1966.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1967.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1968.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1969.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1970.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1971.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1972.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1973.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1974.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1975.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1977.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1978.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1979.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1980.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1981.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1982.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1985.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1986.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1987.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1988.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1989.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1990.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1991.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1992.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1993.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB002.1994.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1950.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1951.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1952.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1953.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1954.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1955.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1956.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1957.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1958.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1959.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1960.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1961.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1962.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1963.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1964.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1970.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1971.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1981.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1985.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1987.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1989.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1991.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1993.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1994.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1995.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB003.1996.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1951.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1952.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1953.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1954.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1955.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1956.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1957.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1958.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1959.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1960.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1962.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1963.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1964.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB004.1965.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1952.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1953.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1954.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1955.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1956.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1957.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1958.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1959.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1960.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1961.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1962.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1963.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1964.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1965.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1966.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB005.1967.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1965.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1966.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1967.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1968.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1969.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1970.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1971.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1972.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1973.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1974.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1975.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1976.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1977.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1978.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1979.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1980.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1981.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1982.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1983.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1984.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1985.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1986.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1987.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1988.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1989.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1990.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1991.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1992.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1993.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1994.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1995.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1996.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1997.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1998.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.1999.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2000.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2001.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2004.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2005.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2006.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2007.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2008.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2009.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2010.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2011.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2012.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2013.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2014.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2015.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2016.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2017.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2018.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2019.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2020.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2021.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2022.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2023.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB006.2024.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB007.1967.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB007.1968.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB007.1969.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB007.1970.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB007.1971.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB007.1972.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB008.1956.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB008.1957.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB008.1958.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB008.1968.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1966.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1967.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1968.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1969.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1970.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1971.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1972.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1973.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1974.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1975.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1976.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1977.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1978.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1979.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1980.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1981.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1982.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1983.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1984.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1985.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1986.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1987.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1988.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1989.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1990.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1991.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1992.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1993.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1994.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1995.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1996.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1997.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1998.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.1999.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2000.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2001.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2002.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2003.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2004.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2005.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2006.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2007.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2008.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2009.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2010.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2011.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2012.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2013.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2014.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2015.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2016.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2017.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2018.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2019.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2020.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2021.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2022.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2023.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB019.2024.discharge-debit"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB020.1954.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB020.1955.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB020.1956.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB020.1963.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB020.1964.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB020.1965.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB020.1966.level-niveaux"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-statistics/items/02PB024.1969.discharge-debit"
+        }
+    ]
+}

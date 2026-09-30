@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-52969139618896",
+  "provider": "NOAA/NCEI",
+  "dataset": "2013_Open_Data_Policy_-_Managing_Information_as_an_Asset.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:26.867640Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2022-10/2013_Open_Data_Policy_-_Managing_Information_as_an_Asset.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2022-10/2013_Open_Data_Policy_-_Managing_Information_as_an_Asset.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 6126025,
+  "sha256": "319d2098e2206645d8029779e9bc034d0e68e5ebfc4f9422b974b2acc2c3e9e0",
+  "etag": null,
+  "last_modified": "Mon, 07 Nov 2022 04:27:55 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-52969139618896\\20260930T044826.867640Z_319d2098e2206645.pdf",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

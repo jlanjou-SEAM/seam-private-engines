@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-415C5E91B9B1AB",
+  "provider": "NOAA/NCEI",
+  "dataset": "partnerships-other-archives",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T05:09:29.583255Z",
+  "request_url": "https://www.ncei.noaa.gov/data-submission/partnerships-other-archives",
+  "final_url": "https://www.ncei.noaa.gov/data-submission/partnerships-other-archives",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 32577,
+  "sha256": "bcb4d83a3d66b64b15adca7674f3b78928fed70a85c7fd3ec0bb5cdcdfa0a7c9",
+  "etag": "\"1790744258-gzip\"",
+  "last_modified": "Wed, 30 Sep 2026 04:57:38 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-415C5E91B9B1AB\\20260930T050929.583255Z_bcb4d83a3d66b64b.html",
+  "parent_id": "DISC-1E2CA270F9BA9D",
+  "discovery_depth": 2
+}

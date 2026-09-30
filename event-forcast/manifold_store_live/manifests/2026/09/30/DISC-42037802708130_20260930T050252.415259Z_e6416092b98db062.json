@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-42037802708130",
+  "provider": "NOAA/NDBC",
+  "dataset": "RCKM4.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:02:52.415259Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/RCKM4.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/RCKM4.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1012756,
+  "sha256": "e6416092b98db06294e175d5878e9f6e0f508c6232ef406695cab9a631cd78c6",
+  "etag": "\"f7414-65cac2d51d17d\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-42037802708130\\20260930T050252.415259Z_e6416092b98db062.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

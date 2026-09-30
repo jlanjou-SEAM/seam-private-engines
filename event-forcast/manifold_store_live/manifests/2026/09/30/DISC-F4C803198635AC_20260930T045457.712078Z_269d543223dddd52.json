@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-F4C803198635AC",
+  "provider": "IPMA",
+  "dataset": "obs-surface.geojson",
+  "sector": "public",
+  "country": "PT",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T04:54:57.712078Z",
+  "request_url": "https://api.ipma.pt/open-data/observation/meteorology/stations/obs-surface.geojson",
+  "final_url": "https://api.ipma.pt/open-data/observation/meteorology/stations/obs-surface.geojson",
+  "status_code": 200,
+  "content_type": "text/plain; charset=UTF-8",
+  "byte_length": 452273,
+  "sha256": "269d543223dddd525993278abd1b3d49f689ff5b9c89f530a6da0812363a3047",
+  "etag": "\"8e7-6e6b1-65cabc4565e45\"",
+  "last_modified": "Wed, 30 Sep 2026 04:31:03 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F4C803198635AC\\20260930T045457.712078Z_269d543223dddd52.geojson",
+  "parent_id": "IPMA-API",
+  "discovery_depth": 1
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-2895C6CEC6AEA2",
+  "provider": "NOAA/NDBC",
+  "dataset": "TOKW1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:27:52.828820Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/TOKW1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/TOKW1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1017363,
+  "sha256": "b8866d85e1999320e2c7e1153066846bf9e7279d4cb3f1367602e973732b6e00",
+  "etag": "\"f8613-65cab8c393a27\"",
+  "last_modified": "Wed, 30 Sep 2026 04:15:21 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-2895C6CEC6AEA2\\20260930T042752.828820Z_b8866d85e1999320.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

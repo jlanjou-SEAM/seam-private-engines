@@ -1,0 +1,23 @@
+{
+  "candidate_id": "CONAGUA-MX",
+  "provider": "CONAGUA Mexico",
+  "dataset": "Hydrometeorological data",
+  "sector": "public",
+  "country": "MX",
+  "scientific_regime": [
+    "weather",
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T03:59:21.460602Z",
+  "request_url": "https://smn.conagua.gob.mx/",
+  "final_url": "https://smn.conagua.gob.mx/es/",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 60817,
+  "sha256": "af9e42af5763a199a838d435e2b8df3f2646a80d7ad95d3ed3d936157f6c2ddc",
+  "etag": null,
+  "last_modified": "Wed, 30 Sep 2026 03:59:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\CONAGUA-MX\\20260930T035921.460602Z_af9e42af5763a199.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

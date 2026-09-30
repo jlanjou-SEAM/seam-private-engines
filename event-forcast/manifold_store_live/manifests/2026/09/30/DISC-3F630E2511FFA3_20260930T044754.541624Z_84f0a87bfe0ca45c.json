@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-3F630E2511FFA3",
+  "provider": "NOAA/NCEI",
+  "dataset": "trackline-geophysics",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:54.541624Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/trackline-geophysics/",
+  "final_url": "https://www.ncei.noaa.gov/maps/trackline-geophysics/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 710,
+  "sha256": "84f0a87bfe0ca45c4bd5c3a864be9a5f24ab9e27150e6c469af6692be601bde5",
+  "etag": "\"22a-602ac19fe7180\"",
+  "last_modified": "Fri, 11 Aug 2023 21:07:34 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-3F630E2511FFA3\\20260930T044754.541624Z_84f0a87bfe0ca45c.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

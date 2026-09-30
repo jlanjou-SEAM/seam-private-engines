@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-E804F43776750B",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "August%202026%20480x480.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:02.022177Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/August%202026%20480x480.png?itok=pFJvDQk6",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/August%202026%20480x480.png?itok=pFJvDQk6",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 228695,
+  "sha256": "ae177f3f4cfc8f49c639177bfa2a250fbd8756e6fe3c364ca55fc463cb57d26f",
+  "etag": null,
+  "last_modified": "Thu, 10 Sep 2026 15:01:49 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E804F43776750B\\20260930T041902.022177Z_ae177f3f4cfc8f49.png",
+  "parent_id": "DISC-12F9502270D672",
+  "discovery_depth": 2
+}

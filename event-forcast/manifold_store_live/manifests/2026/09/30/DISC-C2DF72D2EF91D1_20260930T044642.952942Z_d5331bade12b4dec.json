@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-C2DF72D2EF91D1",
+  "provider": "NOAA/NCEI",
+  "dataset": "space-weather-data-takes-flight",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:42.952942Z",
+  "request_url": "https://www.ncei.noaa.gov/news/space-weather-data-takes-flight",
+  "final_url": "https://www.ncei.noaa.gov/news/space-weather-data-takes-flight",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 40781,
+  "sha256": "d5331bade12b4dec4639a0e9fdaa648502c6714cf7dee28711be75f3b3be9527",
+  "etag": "\"1790719033-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:57:13 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C2DF72D2EF91D1\\20260930T044642.952942Z_d5331bade12b4dec.html",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

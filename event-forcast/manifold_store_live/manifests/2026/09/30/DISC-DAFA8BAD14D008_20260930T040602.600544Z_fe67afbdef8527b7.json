@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-DAFA8BAD14D008",
+  "provider": "IPMA",
+  "dataset": "distrits-islands.json",
+  "sector": "public",
+  "country": "PT",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:02.600544Z",
+  "request_url": "https://api.ipma.pt/open-data/distrits-islands.json",
+  "final_url": "https://api.ipma.pt/open-data/distrits-islands.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 10071,
+  "sha256": "fe67afbdef8527b704b5d15044441787a8fb281a2b80111472004cf05f5d3cd9",
+  "etag": "\"3de-2757-5d28f776204a4\"",
+  "last_modified": "Tue, 07 Dec 2021 14:48:28 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-DAFA8BAD14D008\\20260930T040602.600544Z_fe67afbdef8527b7.json",
+  "parent_id": "IPMA-API",
+  "discovery_depth": 1
+}

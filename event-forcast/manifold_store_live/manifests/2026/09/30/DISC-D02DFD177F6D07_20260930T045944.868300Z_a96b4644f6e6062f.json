@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-D02DFD177F6D07",
+  "provider": "NOAA/SWPC",
+  "dataset": "zqs",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:59:44.868300Z",
+  "request_url": "https://services.swpc.noaa.gov/products/gong/zqs/",
+  "final_url": "https://services.swpc.noaa.gov/products/gong/zqs/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 8127,
+  "sha256": "a96b4644f6e6062f6f3eef7b1aa8430bdc64292724c71a3c2cbea0685704a07e",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-D02DFD177F6D07\\20260930T045944.868300Z_a96b4644f6e6062f.html",
+  "parent_id": "DISC-BBC29E6791CFA8",
+  "discovery_depth": 2
+}

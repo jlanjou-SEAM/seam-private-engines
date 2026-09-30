@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-2A04A507B4E298",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "icon-flood.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:44.710163Z",
+  "request_url": "https://www.nco.ncep.noaa.gov/status/css/images/icon-flood.png",
+  "final_url": "https://www.nco.ncep.noaa.gov/status/css/images/icon-flood.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 20386,
+  "sha256": "426b20b73209d76b52e16f8794cdd8e668e45909e42913c0ba5556b0e9d85b7c",
+  "etag": null,
+  "last_modified": "Tue, 14 Feb 2023 16:18:18 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2A04A507B4E298\\20260930T041844.710163Z_426b20b73209d76b.png",
+  "parent_id": "DISC-187AADF5F10B84",
+  "discovery_depth": 2
+}

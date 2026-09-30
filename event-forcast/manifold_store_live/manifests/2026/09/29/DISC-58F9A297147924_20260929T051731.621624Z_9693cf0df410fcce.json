@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-58F9A297147924",
+  "provider": "DXMaps",
+  "dataset": "feed.xml",
+  "sector": "private_or_community",
+  "country": "US",
+  "scientific_regime": [
+    "radio",
+    "rf_propagation"
+  ],
+  "retrieved_utc": "2026-09-29T05:17:31.621624Z",
+  "request_url": "https://www.dxmaps.com/feed.xml",
+  "final_url": "https://www.dxmaps.com/feed.xml",
+  "status_code": 200,
+  "content_type": "text/xml",
+  "byte_length": 4837,
+  "sha256": "9693cf0df410fcce1165c2e36edc248e7677e41dc03eefff623b7620aeaa1ee3",
+  "etag": "\"3ff2fe6a68db1:0\"",
+  "last_modified": "Thu, 16 Jan 2025 11:36:35 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\radio\\2026\\09\\29\\DISC-58F9A297147924\\20260929T051731.621624Z_9693cf0df410fcce.xml",
+  "parent_id": "DXMAPS-001",
+  "discovery_depth": 1
+}

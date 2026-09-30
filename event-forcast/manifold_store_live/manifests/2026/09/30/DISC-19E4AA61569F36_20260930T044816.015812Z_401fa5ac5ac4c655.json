@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-19E4AA61569F36",
+  "provider": "NOAA/NCEI",
+  "dataset": "geomagnetic-data",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:16.015812Z",
+  "request_url": "https://www.ncei.noaa.gov/products/geomagnetic-data",
+  "final_url": "https://www.ncei.noaa.gov/products/geomagnetic-data",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 38285,
+  "sha256": "401fa5ac5ac4c655420dc650d2d66d4aff48b730a95bcd180b25f2fd8a0d6108",
+  "etag": "\"1790716008-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:06:48 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-19E4AA61569F36\\20260930T044816.015812Z_401fa5ac5ac4c655.html",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

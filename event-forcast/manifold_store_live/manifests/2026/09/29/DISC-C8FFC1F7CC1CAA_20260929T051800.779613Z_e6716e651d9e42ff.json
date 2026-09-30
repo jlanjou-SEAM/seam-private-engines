@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-C8FFC1F7CC1CAA",
+  "provider": "NOAA/NSSL",
+  "dataset": "heartbeat-50m",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:00.779613Z",
+  "request_url": "https://mrms.ncep.noaa.gov/heartbeat-50m",
+  "final_url": "https://mrms.ncep.noaa.gov/heartbeat-50m",
+  "status_code": 200,
+  "content_type": null,
+  "byte_length": 50000000,
+  "sha256": "e6716e651d9e42ff9526b0a092483e4e271be3ad31c1948f30ecc8064456d891",
+  "etag": null,
+  "last_modified": "Tue, 29 Sep 2026 05:07:02 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-C8FFC1F7CC1CAA\\20260929T051800.779613Z_e6716e651d9e42ff.bin",
+  "parent_id": "NOAA-MRMS",
+  "discovery_depth": 1
+}

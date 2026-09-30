@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A0509D2A6A84ED",
+  "provider": "NASA Earthdata",
+  "dataset": "suomi-npp-viirs-data-product-geolocation-anomaly-may-2024",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:19:50.850214Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/suomi-npp-viirs-data-product-geolocation-anomaly-may-2024",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/suomi-npp-viirs-data-product-geolocation-anomaly-may-2024",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 150365,
+  "sha256": "3b203e447bc2808fe7f28c93486bcb62ad135657b1ab40f94e89565d230b1a1c",
+  "etag": "\"1790745592\"",
+  "last_modified": "Wed, 30 Sep 2026 05:19:52 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-A0509D2A6A84ED\\20260930T051950.850214Z_3b203e447bc2808f.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

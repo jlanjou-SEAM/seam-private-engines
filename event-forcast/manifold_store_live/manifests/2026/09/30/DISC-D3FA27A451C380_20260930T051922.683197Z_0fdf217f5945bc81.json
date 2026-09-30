@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-D3FA27A451C380",
+  "provider": "NOAA/NDBC",
+  "dataset": "BKTL1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:19:22.683197Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/BKTL1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/BKTL1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 769860,
+  "sha256": "0fdf217f5945bc811db46d360d44170e1e42cc9bf640fbfd4519ec3bdbe5b920",
+  "etag": "\"bbf44-65cac62b93f95\"",
+  "last_modified": "Wed, 30 Sep 2026 05:15:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-D3FA27A451C380\\20260930T051922.683197Z_0fdf217f5945bc81.txt",
+  "parent_id": "DISC-CE899AD4C09D51",
+  "discovery_depth": 2
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-7F6E59063A8BAE",
+  "provider": "OpenWeather",
+  "dataset": "discord.svg",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:29.771827Z",
+  "request_url": "https://openweathermap.org/payload/api/media/file/discord.svg",
+  "final_url": "https://openweathermap.org/payload/api/media/file/discord.svg",
+  "status_code": 200,
+  "content_type": "image/svg+xml",
+  "byte_length": 6243,
+  "sha256": "50c9b28ceaf58067d00b27b09749e952f3e9e1a44621136aee4dfe51c6376677",
+  "etag": "\"6a74cfa006c986f8b1204046\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7F6E59063A8BAE\\20260930T040429.771827Z_50c9b28ceaf58067.svg",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

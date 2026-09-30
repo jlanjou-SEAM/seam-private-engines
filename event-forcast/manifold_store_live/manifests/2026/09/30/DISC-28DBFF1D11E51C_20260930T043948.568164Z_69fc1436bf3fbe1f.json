@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-28DBFF1D11E51C",
+  "provider": "NOAA/NCEI",
+  "dataset": "us-climate-normals",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:48.568164Z",
+  "request_url": "https://www.ncei.noaa.gov/products/us-climate-normals",
+  "final_url": "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 97387,
+  "sha256": "69fc1436bf3fbe1f95168d9df35ac89f17e266bf2da9b8b755be15054aae1a1a",
+  "etag": "\"1790715649-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:00:49 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-28DBFF1D11E51C\\20260930T043948.568164Z_69fc1436bf3fbe1f.html",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

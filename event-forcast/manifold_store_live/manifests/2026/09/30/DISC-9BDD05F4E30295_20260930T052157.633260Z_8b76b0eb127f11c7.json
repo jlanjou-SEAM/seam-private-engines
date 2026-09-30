@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-9BDD05F4E30295",
+  "provider": "UK Met Office",
+  "dataset": "land-observations-data-with-nearest-geohash-sample",
+  "sector": "public",
+  "country": "GB",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T05:21:57.633260Z",
+  "request_url": "https://datahub.metoffice.gov.uk/sample-model-data/observations/download/land-observations-data-with-nearest-geohash-sample",
+  "final_url": "https://datahub.metoffice.gov.uk/sample-model-data/observations/download/land-observations-data-with-nearest-geohash-sample",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 14526,
+  "sha256": "8b76b0eb127f11c7084d8dc683316826dbc78464b2f24dc4f9689ff7bf82f848",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-9BDD05F4E30295\\20260930T052157.633260Z_8b76b0eb127f11c7.json",
+  "parent_id": "DISC-DDCB1F8C1F1F28",
+  "discovery_depth": 2
+}

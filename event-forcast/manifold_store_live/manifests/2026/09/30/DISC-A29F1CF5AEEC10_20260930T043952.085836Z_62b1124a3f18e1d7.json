@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-A29F1CF5AEEC10",
+  "provider": "NOAA/NCEI",
+  "dataset": "conus-climate-divisions",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:52.085836Z",
+  "request_url": "https://www.ncei.noaa.gov/access/monitoring/reference-maps/conus-climate-divisions",
+  "final_url": "https://www.ncei.noaa.gov/access/monitoring/reference-maps/conus-climate-divisions",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 71023,
+  "sha256": "62b1124a3f18e1d7e4240329a67cbe3c7ae71cfed3960c266dffb4187fbd04cd",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A29F1CF5AEEC10\\20260930T043952.085836Z_62b1124a3f18e1d7.html",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

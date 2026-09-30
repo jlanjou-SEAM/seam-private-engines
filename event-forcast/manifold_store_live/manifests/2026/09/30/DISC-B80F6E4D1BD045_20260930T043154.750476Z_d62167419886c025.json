@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-B80F6E4D1BD045",
+  "provider": "USGS Water Data",
+  "dataset": "counties",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:31:54.750476Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/counties",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/counties",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 4128,
+  "sha256": "d62167419886c0253da4c7bdd535661961df469457ac8571a2c984bcf985501d",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\30\\DISC-B80F6E4D1BD045\\20260930T043154.750476Z_d62167419886c025.json",
+  "parent_id": "DISC-50BE965810B0D9",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C2E9BAE0923792",
+  "provider": "NOAA/SWPC",
+  "dataset": "d-rap",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:59:32.227258Z",
+  "request_url": "https://services.swpc.noaa.gov/products/animations/d-rap/",
+  "final_url": "https://services.swpc.noaa.gov/products/animations/d-rap/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 658,
+  "sha256": "a57452296b0cfddf7762aa9ca0b809f55d5ea25aa65961c4b4d61a3db0c01b91",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-C2E9BAE0923792\\20260930T045932.227258Z_a57452296b0cfddf.html",
+  "parent_id": "DISC-DC635460D92E37",
+  "discovery_depth": 2
+}

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en" dir="text_direction">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  ;(function (w, d, s, l, i) {
+    w[l] = w[l] || []
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : ''
+    j.async = true
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+    f.parentNode.insertBefore(j, f)
+  })(window, document, 'script', 'dataLayer', 'GTM-TKQR8KP')
+</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8" />
+<link href="https://api.waterdata.usgs.gov/ogcapi/v1/static/css/common.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://api.waterdata.usgs.gov/ogcapi/v1/static/css/custom.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://api.waterdata.usgs.gov/ogcapi/v1/static/css/wdfnviz.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="https://api.waterdata.usgs.gov/ogcapi/v1/static/css/site-alert.css" rel="stylesheet" type="text/css" media="screen" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <meta charset="utf-8" />
+    <title>
+       Latest continuous
+      
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="language" content="" />
+    <meta name="description" content="USGS Water Data APIs" />
+    <meta name="keywords" content="geospatial,data,api,hydrology,USGS" />
+    <meta name="wda_environment_name" content="production-v1" />
+    <meta name="wda_build_version" content="1.4.0-471dfc76" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/favicon/site.webmanifest" />
+    <link rel="shortcut icon" href="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/favicon/favicon.ico" />
+    <link rel="mask-icon" href="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/favicon/safari-pinned-tab.svg" color="#007150" />
+    <link rel="stylesheet" href="https://api.waterdata.usgs.gov/ogcapi/v1/static/css/default.css" />
+    <link rel="stylesheet" href="https://api.waterdata.usgs.gov/ogcapi/v1/static/css/main.css" />
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    
+    <meta name="twitter:image:src"
+          content="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/logo.png" />
+    <meta property="og:image"
+          content="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/logo.png" />
+    <meta name="twitter:site" content="USGS Water Data APIs" />
+    <meta property="og:site_name" content="USGS Water Data APIs" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+          content=" Latest continuous" />
+    <meta property="og:title"
+          content=" Latest continuous" />
+    <meta name="twitter:description" content="The United States Geological Survey (USGS) collects water data at monitoring locations across the United States using both automated sensors and manual data collection. These APIs provide access to that data, alongside metadata about data collections and monitoring locations, in standardized machine-readable formats.
+" />
+    <meta property="og:description" content="The United States Geological Survey (USGS) collects water data at monitoring locations across the United States using both automated sensors and manual data collection. These APIs provide access to that data, alongside metadata about data collections and monitoring locations, in standardized machine-readable formats.
+" />
+    <meta property="og:type" content="website" />
+    
+      
+        <link rel="root" type="application/json" title="The landing page of this server as JSON" href="https://api.waterdata.usgs.gov/ogcapi/v1?f=json" />
+      
+    
+      
+        <link rel="root" type="text/html" title="The landing page of this server as HTML" href="https://api.waterdata.usgs.gov/ogcapi/v1?f=html" />
+      
+    
+      
+        <link rel="alternate" type="application/json" title="This document as JSON" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous?f=json" />
+      
+    
+      
+        <link rel="alternate" type="application/ld+json" title="This document as RDF (JSON-LD)" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous?f=jsonld" />
+      
+    
+      
+        <link rel="canonical" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous?f=html" />
+      
+    
+      
+        <link rel="http://www.opengis.net/def/rel/ogc/1.0/schema" type="application/schema+json" title="Schema of collection in JSON" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/schema?f=json" />
+      
+    
+      
+        <link rel="http://www.opengis.net/def/rel/ogc/1.0/schema" type="text/html" title="Schema of collection in HTML" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/schema?f=html" />
+      
+    
+      
+        <link rel="http://www.opengis.net/def/rel/ogc/1.0/queryables" type="application/schema+json" title="Queryables for this collection as JSON" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/queryables?f=json" />
+      
+    
+      
+        <link rel="http://www.opengis.net/def/rel/ogc/1.0/queryables" type="text/html" title="Queryables for this collection as HTML" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/queryables?f=html" />
+      
+    
+      
+        <link rel="items" type="application/geo+json" title="Items as GeoJSON" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/items?f=json" />
+      
+    
+      
+        <link rel="items" type="application/ld+json" title="Items as RDF (GeoJSON-LD)" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/items?f=jsonld" />
+      
+    
+      
+        <link rel="items" type="text/html" title="Items as HTML" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/items?f=html" />
+      
+    
+      
+        <link rel="items" type="text/csv; charset=utf-8" title="Items as CSV" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/items?f=csv" />
+      
+    
+    
+  </head>
+  <body>
+    <!-- BEGIN USGS Applications Header Template -->
+    <!-- Below: WDFN Analytics Tag -->
+    <noscript><iframe sandbox
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TTF8M2Z"
+        height="0"
+        width="0"
+        style="display: none;
+               visibility: hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe sandbox
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TKQR8KP"
+        height="0"
+        width="0"
+        style="display: none;
+               visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    <section class="usa-banner" aria-label="Official website of the United States government">
+  <div class="usa-accordion">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img aria-hidden="true"
+               class="usa-banner__header-flag"
+               src="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/us_flag_small.png"
+               alt="" />
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action">Here’s how you know</p>
+        </div>
+        <button type="button" class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner-default">
+          <span class="usa-banner__button-text">Here’s how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner-default">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img"
+               src="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/icon-dot-gov.svg"
+               role="img"
+               alt=""
+               aria-hidden="true" />
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Official websites use .gov</strong>
+              <br />
+              A <strong>.gov</strong> website belongs to an official
+              government organization in the United States.
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img"
+               src="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/icon-https.svg"
+               role="img"
+               alt=""
+               aria-hidden="true" />
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Secure .gov websites use HTTPS</strong>
+              <br />
+              A <strong>lock</strong> (
+              <span class="icon-lock">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     width="52"
+                     height="64"
+                     viewBox="0 0 52 64"
+                     class="usa-banner__lock-image"
+                     role="img"
+                     aria-labelledby="banner-lock-description-default"
+                     focusable="false">
+                  <title id="banner-lock-title-default">Lock</title>
+                  <desc id="banner-lock-description-default">Locked padlock icon</desc>
+                  <path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z" />
+                </svg>
+              </span>) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive
+              information only on official, secure websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div class="usa-overlay"></div>
+    <header class="usa-header usa-header--extended usgs-header" role="banner" style="width: 100%">
+  <div class="usgs-header-container">
+    <div class="usa-navbar">
+      <div class="usa-logo" id="extended-logo">
+        <a href="https://www.usgs.gov">
+          <img alt="USGS Home" src="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/logo.png" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <nav aria-label="Primary navigation" role="navigation" class="usa-nav">
+    <div class="usa-nav__inner">
+      <button class="usa-nav__close">
+        <img src="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/usa-icons/close.svg" role="img" alt="Close" />
+      </button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <a href="https://api.waterdata.usgs.gov/" class="usa-nav__link">
+            <span>Water Data APIs</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a href="https://api.waterdata.usgs.gov/ogcapi/v1/collections" class="usa-nav__link">
+            <span>OGC API Catalog</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-docs">
+            <span>Documentation</span>
+          </button>
+          <ul id="nav-docs" class="usa-nav__submenu" hidden="">
+            <li class="usa-nav__submenu-item">
+              <a href="https://api.waterdata.usgs.gov/docs/ogcapi">Long-form documentation</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="https://api.waterdata.usgs.gov/ogcapi/v1/openapi?f=html">OpenAPI/Swagger documentation</a>
+            </li>
+          </ul>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a href="https://waterdata.usgs.gov/" class="usa-nav__link">
+            <span>Water Data Home</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-connect">
+            <span>Connect</span>
+          </button>
+          <ul id="nav-connect" class="usa-nav__submenu" hidden="">
+            <li class="usa-nav__submenu-item">
+              <a href="https://www.instagram.com/usgs_water/">USGS Water Resources Instagram</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="https://www.facebook.com/USGSWater/">USGS Water Resources Facebook</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="https://waterdata.usgs.gov/questions-comments/?referrerUrl=https://api.waterdata.usgs.gov">Questions or Comments</a>
+            </li>
+            <li class="usa-nav__submenu-item">
+              <a href="https://waterdata.usgs.gov/blog/">Water Data for the Nation Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a href="/signup/" class="usa-nav__link">
+            <span>Get an API Key</span>
+          </a>
+        </li>
+        
+        
+          
+        
+          
+        
+          
+            
+            <li class="usa-nav__primary-item" style="margin-left: auto; margin-right: 0">
+              <a href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous?f=json" class="usa-nav__link">
+                <span>json</span>
+              </a>
+            </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+    <!--
+  Informational site alert shown on every HTML page.
+
+  Markup mirrors the alert on https://api.waterdata.usgs.gov/ so the two sites match.
+  Two notes on the class list:
+    - `usa-alert--info` on the inner div is redundant with `usa-site-alert--info` on the
+      section (both resolve to the same colors and icon), but it is what the reference
+      site emits, so it is kept for parity.
+    - `usa-list` on the text element is what supplies the 2ch left padding the reference
+      site renders. The reference site puts it on a `<ul>` with no `<li>` children; we use
+      a `<p>` instead so the markup stays valid and screen readers do not announce an
+      empty list. Computed styles are otherwise identical.
+
+  Styles come from static/css/site-alert.css (see that file for why it exists).
+-->
+<section data-nosnippet id="info-site-alert" class="usa-site-alert usa-site-alert--info" aria-label="Informational site alert">
+  <div class="usa-alert usa-alert--info">
+    <div class="usa-alert__body">
+      <p class="usa-alert__text usa-list">
+        How are we doing? We want to hear from you. Take our quick
+        <a class="usa-link" href="https://usgswaterresources.gov1.qualtrics.com/jfe/form/SV_8dm8zHyBQ639KGq">survey</a>
+        to tell us what you think.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <main id="main-content">
+      
+      <div class="grid-container">
+        <nav class="usa-breadcrumb" aria-label="Breadcrumbs,," style="margin-top: 2rem; padding: 0">
+          <div class="usa-nav__inner">
+            <ol class="usa-breadcrumb__list">
+              
+  
+  <li class="usa-breadcrumb__list-item">
+    <a class="usa-breadcrumb__link" href="https://api.waterdata.usgs.gov/ogcapi/v1">Home</a>
+  </li>
+  <li class="usa-breadcrumb__list-item">
+    <a class="usa-breadcrumb__link" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections">Collections</a>
+  </li>
+  <li class="usa-breadcrumb__list-item">
+    <a class="usa-breadcrumb__link" href="">Latest continuous</a>
+  </li>
+
+            </ol>
+          </div>
+        </nav>
+        
+  <section id="collection">
+    <div class="grid-container" style="max-width: 1400px">
+      <div class="usa-prose" style="margin-bottom: 1rem; margin-top: 1rem">
+        <h1>Latest continuous</h1>
+        <p style="max-width: 87.5rem">This endpoint provides the most recent observation for each time series of continuous data. Continuous data are collected via automated sensors installed at a monitoring location. They are collected at a high frequency and often at a fixed 15-minute interval. Depending on the specific monitoring location, the data may be transmitted automatically via telemetry and be available on WDFN within minutes of collection, while other times the delivery of data may be delayed if the monitoring location does not have the capacity to automatically transmit data. Continuous data are described by parameter name and parameter code. These data might also be referred to as &#34;instantaneous values&#34; or &#34;IV&#34;
+</p>
+      </div>
+      <!--
+          <p>
+
+
+
+              <span class="text-bg-primary bg-primary">data</span>
+
+
+
+              <span class="text-bg-primary bg-primary">automated</span>
+
+
+
+              <span class="text-bg-primary bg-primary">subhourly</span>
+
+
+
+              <span class="text-bg-primary bg-primary">measured</span>
+
+
+
+              <span class="text-bg-primary bg-primary">computed</span>
+
+
+
+              <span class="text-bg-primary bg-primary">current</span>
+
+
+
+              <span class="text-bg-primary bg-primary">single location</span>
+
+
+
+              <span class="text-bg-primary bg-primary">features</span>
+
+
+
+              <span class="text-bg-primary bg-primary">latest</span>
+
+
+
+          </p>
+        -->
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+        <ul class="usa-card-group">
+          <li class="usa-card tablet:grid-col-6 desktop:grid-col-4">
+            <div class="usa-card__container">
+              <div class="usa-card__header">
+                <h4 class="usa-card__heading">Browse the data</h4>
+              </div>
+              <div class="usa-card__body">
+                <p>
+                  Explore latest continuous observations in your browser! Requests made in a browser will default
+                  to returning HTML responses; add <code>f=json</code> to your query to always get the JSON response.
+                </p>
+              </div>
+              <div class="usa-card__footer">
+                <a href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/items" class="usa-button">Browse through latest continuous observations</a>
+              </div>
+            </div>
+          </li>
+          <li class="usa-card tablet:grid-col-6 desktop:grid-col-4">
+            <div class="usa-card__container">
+              <div class="usa-card__header">
+                <h4 class="usa-card__heading">Read the docs</h4>
+              </div>
+              <div class="usa-card__body">
+                <p>
+                  The OpenAPI documentation lists available query parameters and has a helpful query-builder interface you
+                  can use to bootstrap your requests.
+                </p>
+              </div>
+              <div class="usa-card__footer">
+                <a href="https://api.waterdata.usgs.gov/ogcapi/v1/openapi?f=html#/latest-continuous" class="usa-button">OpenAPI documentation for the latest continuous endpoint</a>
+              </div>
+            </div>
+          </li>
+          <li class="usa-card tablet:grid-col-6 desktop:grid-col-4">
+            <div class="usa-card__container">
+              <div class="usa-card__header">
+                <h4 class="usa-card__heading">See the data dictionary</h4>
+              </div>
+              <div class="usa-card__body">
+                <p>Field names, types, and definitions are provided as both an HTML table and a JSON schema file.</p>
+              </div>
+              <div class="usa-card__footer">
+                <a href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/schema" class="usa-button">Latest continuous schema</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+          
+        
+      
+      
+      <h3>Other links</h3>
+      <ul style="columns: 3">
+        
+          <li>
+            <a title="root" href="https://api.waterdata.usgs.gov/ogcapi/v1?f=json">
+              <span>The landing page of this server as JSON</span> (<span>application/json</span>)
+            </a>
+          </li>
+        
+          <li>
+            <a title="root" href="https://api.waterdata.usgs.gov/ogcapi/v1?f=html">
+              <span>The landing page of this server as HTML</span> (<span>text/html</span>)
+            </a>
+          </li>
+        
+          <li>
+            <a title="alternate" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous?f=json">
+              <span>This document as JSON</span> (<span>application/json</span>)
+            </a>
+          </li>
+        
+          <li>
+            <a title="alternate" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous?f=jsonld">
+              <span>This document as RDF (JSON-LD)</span> (<span>application/ld+json</span>)
+            </a>
+          </li>
+        
+          <li>
+            <a title="self" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous?f=html">
+              <span>This document as HTML</span> (<span>text/html</span>)
+            </a>
+          </li>
+        
+          <li>
+            <a title="http://www.opengis.net/def/rel/ogc/1.0/schema" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/schema?f=json">
+              <span>Schema of collection in JSON</span> (<span>application/schema+json</span>)
+            </a>
+          </li>
+        
+          <li>
+            <a title="http://www.opengis.net/def/rel/ogc/1.0/schema" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/schema?f=html">
+              <span>Schema of collection in HTML</span> (<span>text/html</span>)
+            </a>
+          </li>
+        
+          <li>
+            <a title="http://www.opengis.net/def/rel/ogc/1.0/queryables" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/queryables?f=json">
+              <span>Queryables for this collection as JSON</span> (<span>application/schema+json</span>)
+            </a>
+          </li>
+        
+          <li>
+            <a title="http://www.opengis.net/def/rel/ogc/1.0/queryables" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/queryables?f=html">
+              <span>Queryables for this collection as HTML</span> (<span>text/html</span>)
+            </a>
+          </li>
+        
+          <li>
+            <a title="items" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/items?f=json">
+              <span>Items as GeoJSON</span> (<span>application/geo+json</span>)
+            </a>
+          </li>
+        
+          <li>
+            <a title="items" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/items?f=jsonld">
+              <span>Items as RDF (GeoJSON-LD)</span> (<span>application/ld+json</span>)
+            </a>
+          </li>
+        
+          <li>
+            <a title="items" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/items?f=html">
+              <span>Items as HTML</span> (<span>text/html</span>)
+            </a>
+          </li>
+        
+          <li>
+            <a title="items" href="https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/items?f=csv">
+              <span>Items as CSV</span> (<span>text/csv; charset=utf-8</span>)
+            </a>
+          </li>
+        
+      </ul>
+      
+        
+          <h3>Reference Systems</h3>
+          <ul style="columns: 3">
+            
+              <li>
+                <a title="http://www.opengis.net/def/crs/OGC/1.3/CRS84" href="http://www.opengis.net/def/crs/OGC/1.3/CRS84"><span>http://www.opengis.net/def/crs/OGC/1.3/CRS84</span></a>
+              </li>
+            
+              <li>
+                <a title="http://www.opengis.net/def/crs/OGC/1.3/CRS83" href="http://www.opengis.net/def/crs/OGC/1.3/CRS83"><span>http://www.opengis.net/def/crs/OGC/1.3/CRS83</span></a>
+              </li>
+            
+              <li>
+                <a title="http://www.opengis.net/def/crs/OGC/1.3/CRS27" href="http://www.opengis.net/def/crs/OGC/1.3/CRS27"><span>http://www.opengis.net/def/crs/OGC/1.3/CRS27</span></a>
+              </li>
+            
+          </ul>
+        
+        
+      
+    </div>
+  </section>
+
+      </div>
+    </main>
+    <footer style="background-color: #f0f0f0">
+      <div class="text-center">
+        Powered by 
+        
+        
+        <a title="pygeoapi" href="https://pygeoapi.io"><img alt="An image of the pygeoapi logo. The link goes to the pygeoapi homepage." src="https://api.waterdata.usgs.gov/ogcapi/v1/static/img/pygeoapi.png" class="mx-1" title="pygeoapi logo" style="height: 24px; vertical-align: middle" /></a>
+        
+        0.24.0
+      </div>
+    </footer>
+    
+    <!-- BEGIN USGS Footer Template -->
+<footer class="footer">
+  <div class="tmp-container">
+    <!-- .footer-wrap -->
+    <!-- .footer-doi -->
+    <div class="footer-doi">
+      <!-- footer nav links -->
+      <ul class="menu nav">
+        <li class="first leaf menu-links menu-level-1"><a href="https://www.doi.gov/privacy">DOI Privacy Policy</a></li>
+        <li class="leaf menu-links menu-level-1"><a href="https://www.usgs.gov/policies-and-notices">Legal</a></li>
+        <li class="leaf menu-links menu-level-1">
+          <a href="https://www.usgs.gov/accessibility-and-us-geological-survey">Accessibility</a>
+        </li>
+        <li class="leaf menu-links menu-level-1"><a href="https://www.usgs.gov/sitemap">Site Map</a></li>
+        <li class="last leaf menu-links menu-level-1"><a href="https://answers.usgs.gov/">Contact USGS</a></li>
+      </ul>
+      <!--/ footer nav links -->
+    </div>
+    <!-- /.footer-doi -->
+    <hr />
+    <!-- .footer-utl-links -->
+    <div class="footer-doi">
+      <ul class="menu nav">
+        <li class="first leaf menu-links menu-level-1">
+          <a href="https://www.doi.gov/">U.S. Department of the Interior</a>
+        </li>
+        <li class="leaf menu-links menu-level-1"><a href="https://www.doioig.gov/">DOI Inspector General</a></li>
+        <li class="leaf menu-links menu-level-1"><a href="https://www.whitehouse.gov/">White House</a></li>
+        <li class="leaf menu-links menu-level-1">
+          <a href="https://www.whitehouse.gov/omb/management/egov/">E-gov</a>
+        </li>
+        <li class="leaf menu-links menu-level-1"><a href="https://www.doi.gov/pmb/eeo/no-fear-act">No Fear Act</a></li>
+        <li class="last leaf menu-links menu-level-1">
+          <a href="https://www.usgs.gov/about/organization/science-support/foia">FOIA</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.footer-utl-links -->
+    <!-- .footer-social-links -->
+    <div class="footer-social-links">
+      <ul class="social">
+        <li class="follow">Follow</li>
+        <li class="twitter">
+          <a href="https://twitter.com/usgs" target="_blank">
+            <i class="fa fa-twitter-square"><span class="only">Twitter</span></i>
+          </a>
+        </li>
+        <li class="facebook">
+          <a href="https://facebook.com/usgeologicalsurvey" target="_blank">
+            <i class="fa fa-facebook-square"><span class="only">Facebook</span></i>
+          </a>
+        </li>
+        <li class="github">
+          <a href="https://github.com/usgs" target="_blank">
+            <i class="fa fa-github"><span class="only">GitHub</span></i>
+          </a>
+        </li>
+        <li class="flickr">
+          <a href="https://flickr.com/usgeologicalsurvey" target="_blank">
+            <i class="fa fa-flickr"><span class="only">Flickr</span></i>
+          </a>
+        </li>
+        <li class="youtube">
+          <a href="https://youtube.com/usgs" target="_blank">
+            <i class="fa fa-youtube-play"><span class="only">YouTube</span></i>
+          </a>
+        </li>
+        <li class="instagram">
+          <a href="https://instagram.com/usgs" target="_blank">
+            <i class="fa fa-instagram"><span class="only">Instagram</span></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.footer-social-links -->
+  </div>
+  <!-- /.footer-wrap -->
+</footer>
+<!-- END USGS Footer Template- -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKQR8KP"
+        height="0"
+        width="0"
+        style="display: none;
+               visibility: hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <script>
+      // Requests and embeds JSON-LD representation of current page
+      var xhr = new XMLHttpRequest()
+      var path = window.location.protocol + '//' + window.location.host + window.location.pathname + '?f=jsonld'
+      xhr.open('GET', path)
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          var head = document.getElementsByTagName('head')[0]
+          var jsonld_datablock = document.createElement('script')
+          jsonld_datablock.type = 'application/ld+json'
+          //remove full context path, because search engines don't expect it here, pyld requires it.
+          jsonld_datablock.textContent = xhr.responseText.replace('docs/jsonldcontext.jsonld', '')
+          head.appendChild(jsonld_datablock)
+        }
+      }
+      xhr.send()
+    </script>
+    <script src="https://api.waterdata.usgs.gov/ogcapi/v1/static/js/wdfnviz.umd.js"></script>
+  </body>
+</html>

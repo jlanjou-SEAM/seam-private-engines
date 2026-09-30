@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-26054AFED8A1F2",
+  "provider": "University of Wisconsin SSEC",
+  "dataset": "products",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:28.083918Z",
+  "request_url": "http://stratus.ssec.wisc.edu/products/",
+  "final_url": "https://stratus.ssec.wisc.edu/products/",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 96,
+  "sha256": "d6b0b643d1d376f7bb5ff7a6db6d267c145d1bb715bdb6dcd81dc9768813c824",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-26054AFED8A1F2\\20260930T040428.083918Z_d6b0b643d1d376f7.html",
+  "parent_id": "SSEC-DATA",
+  "discovery_depth": 1
+}

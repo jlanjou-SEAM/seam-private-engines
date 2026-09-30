@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-4553206A07CA22",
+  "provider": "NOAA/NDBC",
+  "dataset": "TLVT2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:57:50.977783Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/TLVT2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/TLVT2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1013696,
+  "sha256": "a62e9450a660574a2a5edfd231f07730d559f833bd5edb205d11b421971e4471",
+  "etag": "\"f77c0-65cac096e589a\"",
+  "last_modified": "Wed, 30 Sep 2026 04:50:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-4553206A07CA22\\20260930T045750.977783Z_a62e9450a660574a.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

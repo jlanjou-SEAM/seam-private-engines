@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-D233616506FBC6",
+  "provider": "NOAA/NCEI",
+  "dataset": "contact",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:09.306080Z",
+  "request_url": "https://www.ncei.noaa.gov/contact",
+  "final_url": "https://www.ncei.noaa.gov/contact",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 38048,
+  "sha256": "34cd6c0d1e2b85b12950477ff15ff2bdd3d645d45f86221dfaea8335132c334c",
+  "etag": "\"1790657699-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 04:54:59 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-D233616506FBC6\\20260929T051809.306080Z_34cd6c0d1e2b85b1.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-FB034E2DE745F6",
+  "provider": "NOAA/NSSL",
+  "dataset": "LayerCompositeReflectivity_ANC",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:19.916212Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/LayerCompositeReflectivity_ANC/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/LayerCompositeReflectivity_ANC/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 170883,
+  "sha256": "d560ab5d897edd0066f8fe67a6dd999213fb8dc28569c61b42cc0c14202c257a",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-FB034E2DE745F6\\20260930T050819.916212Z_d560ab5d897edd00.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

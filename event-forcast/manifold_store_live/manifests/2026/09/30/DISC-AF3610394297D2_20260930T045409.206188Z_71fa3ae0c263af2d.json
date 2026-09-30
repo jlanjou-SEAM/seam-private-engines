@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-AF3610394297D2",
+  "provider": "University of Oklahoma / Oklahoma State",
+  "dataset": "Oklahoma.MosaicBREF.png",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "soil"
+  ],
+  "retrieved_utc": "2026-09-30T04:54:09.206188Z",
+  "request_url": "https://data.mesonet.org/data/nids/maps/realtime/Oklahoma.MosaicBREF.png",
+  "final_url": "https://data.mesonet.org/data/nids/maps/realtime/Oklahoma.MosaicBREF.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 116259,
+  "sha256": "71fa3ae0c263af2d330149064c9066ea02598c954f2803822ed91e982fa79e79",
+  "etag": "\"1aed097-1c623-65cac15ea1fec\"",
+  "last_modified": "Wed, 30 Sep 2026 04:53:52 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-AF3610394297D2\\20260930T045409.206188Z_71fa3ae0c263af2d.png",
+  "parent_id": "OKMESONET",
+  "discovery_depth": 1
+}

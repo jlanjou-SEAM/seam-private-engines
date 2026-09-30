@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-BCA3A738C1B8BE",
+  "provider": "NOAA/NCEI",
+  "dataset": "data-licensing",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:16.723376Z",
+  "request_url": "https://www.ncei.noaa.gov/data-submission/data-licensing",
+  "final_url": "https://www.ncei.noaa.gov/data-submission/data-licensing",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 29561,
+  "sha256": "8c92fc5c9be1c58f952ff352d0c8a702731e59dace92ef384a6a19a723816cb5",
+  "etag": "\"1790716417-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:13:37 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-BCA3A738C1B8BE\\20260930T043916.723376Z_8c92fc5c9be1c58f.html",
+  "parent_id": "DISC-1E2CA270F9BA9D",
+  "discovery_depth": 2
+}

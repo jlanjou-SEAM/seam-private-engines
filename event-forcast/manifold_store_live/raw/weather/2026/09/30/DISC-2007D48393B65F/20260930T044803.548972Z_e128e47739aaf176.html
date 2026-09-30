@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Monthly Summaries</title>
+<meta name="description" content="Monthly summaries provides monthly averages and extremes of temperature and precipitation using global daily station data." />
+<meta name="keywords" content="NCEI,map,maps,GIS,online,data,download,climate,radar,station,marine,monthly,daily" />
+<meta name="author" content="NCEI GIS Team" />
+<meta name="publisher" content="National Centers for Environmental Information" />
+
+<meta property="og:title" content="Monthly Summaries" />
+<meta property="og:description" content="Monthly summaries provides monthly averages and extremes of temperature and precipitation using global daily station data." />
+<meta property="og:site_name" content="National Centers for Environmental Information (NCEI)" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.ncei.noaa.gov/maps/" />
+<meta property="og:image" content="resources/icons/favicon-196x196.png" /> 
+<meta name="google-site-verification" content="1ZaJDRX5s-ys4y5YrPDH0C-ZL54ED66JQysr7h72KHs" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="resources/icons/apple-touch-icon-144x144-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/icons/apple-touch-icon-114x114-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="resources/icons/apple-touch-icon-72x72-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="resources/icons/apple-touch-icon-57x57-precomposed.png" />
+
+<meta name="msapplication-TileImage" content="resources/icons/ms-touch-icon-144x144-precomposed.png" />
+<meta name="msapplication-TileColor" content="#0057a5" />
+<link type="image/x-icon" rel="shortcut icon" href="resources/icons/favicon.ico" />
+<link rel="shortcut icon" sizes="196x196" href="resources/icons/favicon-196x196.png">
+
+<link type="text/css" rel="stylesheet" media="screen" href="resources/css/normalize.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="//js.arcgis.com/3.20/esri/css/esri.css">
+<link type="text/css" rel="stylesheet" media="screen" href="resources/css/smoothness/jquery-ui.min.css">
+<link type="text/css" rel="stylesheet" media="screen" href="resources/css/base.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="resources/css/desktop.css" />
+<link type="text/css" rel="stylesheet" media="print" href="resources/css/print.css" />
+<!-- Growler: css -->
+<link rel="stylesheet" href="../../maps/dijits/js/ncei/Growler.css">
+
+<script src="../config/monthly-summaries.js"></script>
+
+<!-- Growler: div style -->
+<style>
+	.upperRight {
+		position: absolute;
+		top: 70px;
+		right: 20px;
+		z-index: 40;
+		width: 450px;
+	}
+</style>
+
+<script>
+	var tierDomain = window.location.hostname;
+
+	// Growler: loading widget
+	var dojoConfig = {
+		async: true,
+    packages: [{
+			name: "ncei",
+			location: "https://"+tierDomain+"/maps/dijits/js/ncei"
+    }]
+  };
+
+	var mobile = extjs_mobile;
+	var siteTitle = extjs_siteTitle;
+	var applicationTier = extjs_applicationTier;
+	var js_gisUrl = extjs_gisUrl;
+	var js_cdoHelpUrl = extjs_cdoHelpUrl;
+	var js_gisHost = extjs_gisHost;
+	var js_tdsHost = extjs_tdsHost;
+	var js_tdsUrl = extjs_tdsUrl;
+	var js_ordsHost = extjs_ordsHost;
+	var js_ordsUrl = extjs_ordsUrl;
+	var js_nceiUrl = extjs_nceiUrl;
+	var js_nceiMapsUrl = extjs_nceiMapsUrl;
+</script>
+
+<script src="resources/scripts/min/jquery-3.7.1.min.js" ></script>
+<script src="resources/scripts/min/jquery-ui-1.14.1.min.js"></script>
+
+<script defer src="//js.arcgis.com/3.21/"></script>
+
+<script src="applicationObjects/mvBaseLayerObject.js"></script>
+<script src="applicationObjects/mvDataRendererObject.js"></script>
+<script src="applicationObjects/mvDataAccessObject.js"></script>
+<script src="applicationObjects/mvThemeObject.js"></script>
+<script src="applicationObjects/mvExtentObject.js"></script>
+<script src="applicationObjects/mvParamObject.js"></script>
+<script src="applicationObjects/mvLayerDefObject.js"></script>
+<script src="applicationObjects/mvLayerObject.js"></script>
+<script src="applicationObjects/mvModuleObject.js"></script>
+<script src="applicationObjects/mvJSModuleObject.js"></script>
+<script src="applicationObjects/mvGalleryObject.js"></script>
+<script src="applicationObjects/mvCalendarObject.js"></script>
+<script src="applicationObjects/mvToolObject.js"></script>
+<script src="applicationObjects/mvMapProperties.js"></script>
+<script src="applicationObjects/mvSymbolObject.js"></script>
+<script src="applicationObjects/mvDynamicSymbolObject.js"></script>
+<script src="applicationObjects/mvDynamicSymbolsObject.js"></script>
+<script src="applicationObjects/mvESRIObjects.js"></script>
+
+<script>
+	mvParamObject.view = extjs_view;
+	mvParamObject.loadParams["app"] = extjs_app;
+	mvParamObject.loadParams["cfg"] = extjs_cfg;
+	mvParamObject.loadParams["theme"] = extjs_theme;
+
+	// Add shim in here for the startsWith IE support issue
+	if (!String.prototype.startsWith) {
+		String.prototype.startsWith = function(searchString, position){
+			position = position || 0;
+			return this.substr(position, searchString.length) === searchString;
+		};
+	}
+
+	function initialize() {
+		mvApp.start();
+	}
+</script>
+</head>
+
+<body id="body" lang="en" onload="initialize();" class="cdo">
+<div id="mainWindow" class="mainWindow clearfix">
+
+	<!-- Growler: div -->
+	<div class="upperRight">
+		<div id="growlerDijit"></div>
+	</div>
+
+	<div id="UITitle" class="mobile UITitle clearfix">
+			<map name="noaa-ncei">
+				<area shape="rect" coords="0,0,250,60" href="https://www.ncei.noaa.gov/" title="Link to NCEI's Homepage" alt="Link to NCEI's Homepage" target="_blank"/>
+			</map>
+			<table border="0" class="banner" cellpadding="1" cellspacing="0">
+				<tr class="banner-upper">
+					<td width="250" align="left">
+						<img class="ncei-header-image" name="nesdisleft" src="resources/images/logo.svg" usemap="#noaa-ncei" border="0" height="50" width="250" alt="NCEI Logo" />
+					</td>
+					<td class="banner-map-title" align="left">Monthly Summaries</td>
+				</tr>
+			</table>
+		<div id="UIOptions" class="desktop UIOptions clearfix no-print"></div>
+	</div>
+
+	<div id="UINavMenu" class="clearfix no-print" style="display:none;">
+		<div id="uiMainMenu">
+			<ul id="mainMenuInternalContent">
+				<li><a href="//www.ncei.noaa.gov">NCEI Home</a></li>
+				<li><a href="/maps" style="background-image:url('resources/images/menu/ic_explore_white_18dp.png');">Maps</a></li>
+				<li><a href="/maps/ncei/help/" style="background-image:url('resources/images/menu/ic_help_white_18dp.png');" target="_blank">Maps Help</a></li>
+				<li><a href="//www.ncdc.noaa.gov/cdo-web/" style="background-image:url('resources/images/menu/ic_view_agenda_white_18dp.png');">Climate Data Online</a></li>
+				<li><a href="//www.drought.gov" style="background-image:url('resources/images/menu/ic_trending_up_white_18dp.png');" target="_blank">National Drought Portal</a></li>
+				<li><a href="//www.climate.gov" style="background-image:url('resources/images/menu/ic_info_outline_white_18dp.png');" target="_blank">Climate.gov</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="UIMapfinderDialog" title="Mapfinder" class="clearfix no-print" style="display:none;">
+		<div id="mapfinderLogo"></div>
+		<div id="mapfinderInternalContent">
+			<div class="mfTabHeader">
+				<ul id="mfTabHeaderList"></ul>
+			</div>
+			<div id="mapfinderMenuContent" class="mfTabContent"></div>
+			<div id="mapfinderFooterContent">
+				<input type="checkbox" id="chkExtent" value="">
+				<label for="chkExtent">Maintain the current map view/location when switching between maps</label>
+			</div>
+		</div>
+	</div>
+
+	<div id="mainLoadDialog" class="no-print" style="display:none;">
+		<div class="NCEIHeader clearfix">
+			<div class="inset">
+				<img src="resources/images/noaa_logo_small.gif" class="logoSmall" alt="NOAA Logo" title="Image of the NOAA logo">
+				<div class="headerNOAA">NOAA</div>
+				<div class="headerNCEI">National Centers for<br />Environmental Information</div>
+			</div>
+		</div>
+		<div class="loadPadding">
+			<h1 id="introMemo">NCEI GIS Mapping</h1>
+			<img id="loadIcon" alt="NOAA Logo" title="NOAA Logo" src="resources/images/noaa_logo_90x90.gif" />
+			<div id="loadErrorText" style="display:none;"></div>
+			<div id="loadPercContainer" class="loadPercContainer">
+				<div id="loadPercGraph"></div>
+				<div id="loadPercText">Loading - <span id="loadPercTextValue">1</span>%</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- start footer -->
+	<div class="footer" id="footerDiv">
+		<div id="footer-content">
+			<div id="footer-structure">
+				<ul>
+					<li><a href="https://www.ncei.noaa.gov/sitemap" title="NCEI's Sitemap">Sitemap</a></li>
+					<li><a href="https://www.ncei.noaa.gov/privacy" title="NOAA's Privacy Policy">Privacy Policy</a></li>
+					<li><a href="https://www.noaa.gov/foia-freedom-of-information-act" title="Freedom of Information Act">Freedom Of Information Act</a></li>
+					<li><a href="https://www.cio.noaa.gov/services_programs/info_quality.html" title="Information Quality">Information Quality</a></li>
+					<li><a href="https://www.noaa.gov/disclaimer.html" title="Disclaimer">Disclaimer</a></li>
+					<!--<li><a href="https://www.ncdc.noaa.gov/survey" title="Take Our Site Survey">Take Our Survey</a></li>-->
+					<li><a href="https://www.commerce.gov/" title="United States Department of Commerce">Department of Commerce</a></li>
+					<li><a href="http://www.noaa.gov" title="NOAA">NOAA</a></li>
+					<li><a href="https://www.nesdis.noaa.gov/" title="NESDIS">NESDIS</a></li>
+					<li><a href="https://www.ncei.noaa.gov/contact" title="Contact Us">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+
+	<div id="UIMapCanvas" class="UIMapCanvas clearfix">
+
+		<div id="uiLabel" class="uiTitleElements clearfix" style="display:none;"></div>
+
+		<div id="uiCoords" class="uiFooterElements clearfix" style="display:none;"></div>
+
+		<ul id="uiResultsBreadcrumb" style="display:none;"></ul>
+
+		<div id="map" class="clearfix"></div>
+
+		<div id="UIToolDialog" title="Tools" class="clearfix no-print" style="display:none;">
+			<div id="toolbarTools" class="clearfix"></div>
+			<div id="toolbarFunctions" class="clearfix"></div>
+		</div>
+
+		<div id="UICenterMarker">
+			<div class="dot"></div>
+			<div class="pulse"></div>
+		</div>
+
+		<div id="UILocatorDialog" title="Locator" class="clearfix" style="display:block;">
+			<div id="geosearch"></div>
+		</div>
+
+		<div id="UILegendDialog" title="Legend" class="clearfix" style="display:none;"></div>
+
+		<div id="UIBasemapsDialog" title="Basemaps" class="clearfix" style="display:none;"></div>
+
+		<div id="UIHelpDialog" title="Help" class="clearfix" style="display:none;"></div>
+
+		<div id="UIPrintLabel" class="PrintLabel clearfix"></div>
+		<div id="UIPrintDialog" title="Print" class="clearfix" style="display:none;"></div>
+
+		<div id="UIMarineDialog" title="Marine" class="clearfix" style="display:none;"></div>
+
+		<div id="UISimpleAdvancedDialog" title="Data Access Options" class="clearfix" style="display:none;"></div>
+
+		<div id="UIWMORes40Dialog" title="WMO Resolution 40" class="clearfix" style="display:none;"></div>
+
+		<div id="UIGraphDialog" title="Graph" class="clearfix" style="display:none;"></div>
+
+		<div id="UITDSDialog" title="TDSDownload" class="clearfix" style="display:none;"></div>
+
+		<div id="UILoadingIcon" class="no-print" style="display:none;"></div>
+
+		<div id="paleoInfo" style="display:none;">
+		<div class="title">Avg. Annual Temperatures (1961-1990)<button class="paleoInfoLink" onclick="paleoMenu.info();">i</button></div>
+			<div class="content">
+				<img src="resources/legends/hadcru_230x24.png" alt="Paleo legend" title="Paleo legend image with color coded temperature scale">
+			</div>
+		</div>
+
+		<div id="UISidebarPanel" class="no-print active tabLRWindow" style="display:none;">
+			<div id="sidebarTabs" class="tabLRHeader clearfix">
+				<ul>
+					<li><a class="UIButton active" onclick="mvSidebar.openTab('sidebarLayers');" id="tabLR1a">Layers</a></li>
+					<li><a class="UIButton" style="display:none;" onclick="mvSidebar.openTab('sidebarResults');" id="tabLR2a">Results</a></li>
+				</ul>
+			</div>
+			<div id="sidebarBody">
+				<div id="sidebarContent">
+					<div id="sidebarLayers" class="ui-tabs-panel"></div>
+					<div id="sidebarResults" class="ui-tabs-panel" style="display:none;">
+						<div id="uiResultHeader"></div>
+						<div id="uiResultContent"><p class="result-text"><strong>No map selection made</strong><br /><br />Use search to find a location<br />or use the select tools to view items on the map</p></div>
+						<div id="uiResultFooter"></div>
+					</div>
+				</div>
+			</div>
+			<div id="UISidebarPanel_minmax" class="uiMinmax active">Toggle Sidebar</div>
+		</div>
+
+		<div id="UIInfoDialog" title="Info" class="clearfix" style="display:none;" itemscope itemtype="http://schema.org/WebApplication">
+			<div class="logoDark">
+				<div class="NCEIHeader clearfix">
+					<div class="inset">
+						<img src="resources/images/noaa_logo_small.gif" class="logoSmall" alt="NOAA Logo" title="Image of the NOAA logo">
+						<div class="headerNOAA">NOAA</div>
+						<div class="headerNCEI">National Centers for<br />Environmental Information</div>
+					</div>
+				</div>
+				<div class="center">
+					<h2 itemprop="name">Monthly Summaries</h2>
+					<h3><span itemprop="version">Version 3.1.0 [December 2021]</span></h3>
+				</div>
+			</div>
+			<div class="content">
+				<h4>About this map</h4>
+				<p itemprop="description">Monthly summaries provides monthly averages and extremes of temperature and precipitation using global daily station data.</p>
+				
+				<hr />
+				<div><strong>Requirements:</strong> <span itemprop="browserRequirements">Requires HTML5 and Javascript</span></div>
+				<div><strong>Developers:</strong> <span itemprop="author">NCEI GIS Team</span></div>
+				<hr />
+				<h2>Contact Information</h2>
+				<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<h3>Address</h3>
+					<div itemprop="streetAddress">151 Patton Avenue</div>
+					<div><span itemprop="addressLocality">Asheville</span>, <span itemprop="addressRegion">NC</span>&nbsp;&nbsp;<span itemprop="postalCode">28801-5001</span></div>
+				</div>
+				<div><strong>Telephone:</strong> <span itemprop="telephone"><a href="tel:1-828-271-4800">1-828-271-4800</a></span></div>
+				<div><strong>Email:</strong> <a href="mailto:ncei.orders@noaa.gov" itemprop="email">ncei.orders@noaa.gov</a></div>
+				<div><strong>Website:</strong> <a href="https://www.ncei.noaa.gov/maps-and-geospatial-products" itemprop="url">Maps and Geospatial Products</a></div>
+			</div>
+		</div>
+
+		<div id="UIOptionsWindow" class="no-print uiPane clearfix inset" style="display:none;">
+			<div id="uiOptions" class="clearfix"></div>
+		</div>
+
+		<div id="UIAlertDialog" class="clearfix" style="display:none;"></div>
+	</div>
+
+</div> <!-- main window -->
+
+
+<script src="resources/scripts/min/d3.v3.min.js"></script>
+
+<script src="layerHandlers/mvDynamicLayerHandler.js"></script>
+<script src="layerHandlers/mvDynamicSymbolsHandler.js"></script>
+<script src="layerHandlers/mvFeatureLayerHandler.js"></script>
+<script src="layerHandlers/mvWMSMapServiceLayer.js"></script>
+<script src="layerHandlers/mvWMSLayerHandler.js"></script>
+<script src="layerHandlers/mvMapImageLayerHandler.js"></script>
+<script src="layerHandlers/mvLayerHandler.js"></script>
+<script src="layerHandlers/mvLegendHandler.js"></script>
+<script src="layerHandlers/mvLayerDefinitionsHandler.js"></script>
+<script src="layerHandlers/mvLayerDefinitionsSupport.js"></script>
+<script src="core/mvApp.js"></script>
+<script src="core/mvAppInternal.js"></script>
+<script src="core/mvLoadingProgress.js"></script>
+<script src="core/mvUIManager.js"></script>
+<script src="core/mvEvents.js"></script>
+<script src="core/mvLoadConfig.js"></script>
+<script src="core/mvUtils.js"></script>
+<script src="core/mvGraphicsManager.js"></script>
+<script src="core/mvLayerRendererInteraction.js"></script>
+<script src="core/mvLayerRendererManager.js"></script>
+<script src="core/mvResultFormatters.js"></script>
+<script src="core/mvResultManager.js"></script>
+<script src="core/mvSymbolManager.js"></script>
+<script src="core/mvToolManager.js"></script>
+<script src="core/mvPopupMobileManager.js"></script>
+<script src="tools/mvGeoQuery.js"></script>
+<script src="tools/mvIdentify.js"></script>
+<script src="tools/mvLocation.js"></script>
+<script src="tools/mvMarineRectangle.js"></script>
+<script src="tools/mvMeasure.js"></script>
+<script src="tools/mvPan.js"></script>
+<script src="tools/mvPolygon.js"></script>
+<script src="tools/mvProximity.js"></script>
+<script src="tools/mvProximityDual.js"></script>
+<script src="tools/mvRectangle.js"></script>
+<script src="tools/mvTDSRectangle.js"></script>
+<script src="tools/mvToolbar.js"></script>
+<script src="graphs/mvGraph.js"></script>
+<script src="graphs/mvCDOGraph.js"></script>
+<script src="graphs/mvHucsGraph.js"></script>
+<script src="graphs/mvNidisGraph.js"></script>
+<script src="graphs/mvRiverGraph.js"></script>
+<script src="graphs/mvSoilGraph.js"></script>
+<script src="widgets/mvCalendar.js"></script>
+<script src="widgets/mvLayerOption.js"></script>
+<script src="widgets/mvMarineWindow.js"></script>
+<script src="widgets/mvTDSDownloadWindow.js"></script>
+<script src="widgets/mvThreddsCalendar.js"></script>
+<script src="wms/mvDateUtils.js"></script>
+<script src="ui/mvAlert.js"></script>
+<script src="ui/mvBasemaps.js"></script>
+<script src="ui/mvDialog.js"></script>
+<script src="ui/mvHelp.js"></script>
+<script src="ui/mvInfo.js"></script>
+<script src="ui/mvLayerList.js"></script>
+<script src="ui/mvLegend.js"></script>
+<script src="ui/mvLocator.js"></script>
+<script src="ui/mvMapfinder.js"></script>
+<script src="ui/mvPrint.js"></script>
+<script src="ui/mvSidebar.js"></script>
+<script src="graphs/mvGraphDialog.js"></script>
+
+<script src="resources/scripts/webfont.js"></script>
+<script>WebFont.load({google:{families:['Source+Sans+Pro:400,700']}});</script>
+
+<script src="resources/scripts/min/ga.min.js"></script>
+<script src="https://www.ncei.noaa.gov/maps/config/gis-helper.js"></script>
+<script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script></body>
+</html>

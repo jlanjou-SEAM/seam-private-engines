@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E9C951847D5F92",
+  "provider": "NOAA/NCEP",
+  "dataset": "threats.php",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:42.457848Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/predictions/threats/threats.php",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/predictions/threats/threats.php",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 28930,
+  "sha256": "2d9b5f6a876615a050e691ad962854371ac149e779ebd6bcc19dbf7b062c0543",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E9C951847D5F92\\20260930T041942.457848Z_2d9b5f6a876615a0.php",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

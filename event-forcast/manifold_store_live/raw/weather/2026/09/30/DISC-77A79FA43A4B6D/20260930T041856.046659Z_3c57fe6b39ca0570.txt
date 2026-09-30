@@ -1,0 +1,26 @@
+
+          SATWND QC Accept List:  "1" => Flag observation as good
+
+Satellite |IR    |VIS   |WV    |S10   |S11
+begin-------------------------------------
+end---------------------------------------
+
+Example Entries **************************
+GOES-10-X |0     |0     |0     |1     |1  
+GOES-12-O |0     |1     |0     |0     |0  
+
+
+Wind Product Types
+------------------
+IR  = infrared 
+VIS = visible 
+WV  = water vapor 
+S10 = GOES sounder channel 10
+S11 = GOES sounder channel 11
+
+Satellites
+----------
+GOES-10-O   GOES-10, operational products
+GOES-10-X   GOES-10, experimental products
+GOES-12-O   GOES-12, operational products
+GOES-12-X   GOES-12, experimental products

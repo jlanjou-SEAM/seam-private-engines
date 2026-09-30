@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-6EF090C6586FA2",
+  "provider": "NOAA/NCEI",
+  "dataset": "oads",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:58.883272Z",
+  "request_url": "https://www.ncei.noaa.gov/access/oads/",
+  "final_url": "https://www.ncei.noaa.gov/access/ocean-carbon-acidification-data-system-portal/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 6903,
+  "sha256": "65e1a224a1df41c82bd071bfe7fbe7e8ffffa628ab38d40983d60e8b52a318ad",
+  "etag": "\"1a5b-63362876ad100\"",
+  "last_modified": "Tue, 22 Apr 2025 18:55:32 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6EF090C6586FA2\\20260930T044758.883272Z_65e1a224a1df41c8.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

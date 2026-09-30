@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-26C2CF72D48665",
+  "provider": "IPMA",
+  "dataset": "weather-type-classe.json",
+  "sector": "public",
+  "country": "PT",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:02.967936Z",
+  "request_url": "https://api.ipma.pt/open-data/weather-type-classe.json",
+  "final_url": "https://api.ipma.pt/open-data/weather-type-classe.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 4954,
+  "sha256": "8727e4e98344696bbb086680cebd165b3d5d52ec19f96ec781bde5c69efe1a16",
+  "etag": "\"5ad-135a-61a49cb1eebc0\"",
+  "last_modified": "Fri, 07 Jun 2024 09:55:03 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-26C2CF72D48665\\20260930T040602.967936Z_8727e4e98344696b.json",
+  "parent_id": "IPMA-API",
+  "discovery_depth": 1
+}

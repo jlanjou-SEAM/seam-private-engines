@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F5C7B6FF7CA261",
+  "provider": "NOAA/NCEP",
+  "dataset": "seaesrt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:46.891971Z",
+  "request_url": "https://www.spaceweather.gov/products/seaesrt",
+  "final_url": "https://www.spaceweather.gov/products/seaesrt",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 70806,
+  "sha256": "53467e258f3c5734bf470b7a4f171b0d24493246030c270636cf36006636b23b",
+  "etag": "\"1790734112\"",
+  "last_modified": "Wed, 30 Sep 2026 02:08:32 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F5C7B6FF7CA261\\20260930T043746.891971Z_53467e258f3c5734.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

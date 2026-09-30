@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-304DFB6600FE00",
+  "provider": "Montana State University",
+  "dataset": "feed.xml",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "soil"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:26.862913Z",
+  "request_url": "https://climate.umt.edu/feed.xml",
+  "final_url": "https://climate.umt.edu/feed.xml",
+  "status_code": 200,
+  "content_type": "application/xml",
+  "byte_length": 116313,
+  "sha256": "0cfeebea703c999166cac752d57d924ba21f4393ee60f67cd82fad7f9e167fe8",
+  "etag": "\"6abbeca6-1c659\"",
+  "last_modified": "Tue, 29 Sep 2026 16:51:50 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-304DFB6600FE00\\20260930T040426.862913Z_0cfeebea703c9991.xml",
+  "parent_id": "MONTANA-MESONET",
+  "discovery_depth": 1
+}

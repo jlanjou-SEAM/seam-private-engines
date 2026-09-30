@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-EF236F3B991E39",
+  "provider": "NOAA/NCEI",
+  "dataset": "NCEI_Drought_Infographic_FINAL_508c.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:24.060293Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2023-07/NCEI_Drought_Infographic_FINAL_508c.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2023-07/NCEI_Drought_Infographic_FINAL_508c.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 810139,
+  "sha256": "3fb1074f60351fa12057c1bfbe8d977551a50bb80b7bc819397b498d045b25ed",
+  "etag": null,
+  "last_modified": "Mon, 17 Jul 2023 14:02:27 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-EF236F3B991E39\\20260930T044724.060293Z_3fb1074f60351fa1.pdf",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

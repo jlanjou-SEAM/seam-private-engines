@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-EBEA5717509471",
+  "provider": "University of Wisconsin SSEC",
+  "dataset": "kalpana",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:27.898637Z",
+  "request_url": "http://www.ssec.wisc.edu/data/kalpana/",
+  "final_url": "https://www.ssec.wisc.edu/data/kalpana/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 879,
+  "sha256": "273ec0de3ceb0655ddfe7d0178ab21d29b775e41e4012bd0eab6f9f7c2f7d26e",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-EBEA5717509471\\20260930T040427.898637Z_273ec0de3ceb0655.html",
+  "parent_id": "SSEC-DATA",
+  "discovery_depth": 1
+}

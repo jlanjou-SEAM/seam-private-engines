@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-B085BF26E76331",
+  "provider": "NOAA/SWPC",
+  "dataset": "10cm-flux.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:39.477722Z",
+  "request_url": "https://services.swpc.noaa.gov/products/summary/10cm-flux.json",
+  "final_url": "https://services.swpc.noaa.gov/products/summary/10cm-flux.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 46,
+  "sha256": "b7e507a57e0a5ee4dd10bea47580eb4bcc18ce10a17c0189855e556d7539fe8b",
+  "etag": "\"2e-65cab90a739cb\"",
+  "last_modified": "Wed, 30 Sep 2026 04:16:36 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-B085BF26E76331\\20260930T041839.477722Z_b7e507a57e0a5ee4.json",
+  "parent_id": "DISC-E9DCF2D47D27D9",
+  "discovery_depth": 2
+}

@@ -1,0 +1,54 @@
+{
+    "@context": [
+        {
+            "schema": "https://schema.org/",
+            "type": "@type",
+            "features": "schema:itemListElement",
+            "FeatureCollection": "schema:itemList"
+        }
+    ],
+    "type": "FeatureCollection",
+    "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements",
+    "features": [
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items/00000990-ed8b-4c54-acf9-c1f6d9da5762"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items/00000b34-1004-4976-8ccd-68e6873695a9"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items/00001430-3da5-4ad1-b597-8187e68e573c"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items/0000145b-3cf1-4437-a08b-7971a76717ff"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items/00001f5f-96a9-454a-9657-0de856cd0248"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items/0000201b-e49f-419a-af22-20e55b719890"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items/00002177-fbe4-44ef-88a4-9cc1275c54e3"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items/00002739-57fd-4161-b0b3-65fcb1f5581c"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items/000027c2-14ad-43bd-a34d-4533d2402671"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/channel-measurements/items/00002833-edf5-44ad-9b7c-031e91e0a4d4"
+        }
+    ]
+}

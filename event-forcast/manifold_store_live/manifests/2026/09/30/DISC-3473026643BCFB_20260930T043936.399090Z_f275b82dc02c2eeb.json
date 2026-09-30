@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-3473026643BCFB",
+  "provider": "NOAA/NCEI",
+  "dataset": "ocean-data-format-codes",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:36.399090Z",
+  "request_url": "https://www.ncei.noaa.gov/resources/ocean-data-format-codes",
+  "final_url": "https://www.ncei.noaa.gov/resources/ocean-data-format-codes",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 45389,
+  "sha256": "f275b82dc02c2eeb0692ab75105178d02f9a7d6671a5be8aa3d3fdd7e22ccce8",
+  "etag": "\"1790719903-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 22:11:43 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-3473026643BCFB\\20260930T043936.399090Z_f275b82dc02c2eeb.html",
+  "parent_id": "DISC-75E894A6737DF7",
+  "discovery_depth": 2
+}

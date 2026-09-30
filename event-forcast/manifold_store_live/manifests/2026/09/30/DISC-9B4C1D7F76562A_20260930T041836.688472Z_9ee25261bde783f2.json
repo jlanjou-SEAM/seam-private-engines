@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-9B4C1D7F76562A",
+  "provider": "NOAA/SWPC",
+  "dataset": "cqe",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:36.688472Z",
+  "request_url": "https://services.swpc.noaa.gov/products/gong/cqe/",
+  "final_url": "https://services.swpc.noaa.gov/products/gong/cqe/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 26037,
+  "sha256": "9ee25261bde783f222a7fe7b0bb542259a3f8f2bbf04292a067dcf19c76c69f3",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-9B4C1D7F76562A\\20260930T041836.688472Z_9ee25261bde783f2.html",
+  "parent_id": "DISC-BBC29E6791CFA8",
+  "discovery_depth": 2
+}

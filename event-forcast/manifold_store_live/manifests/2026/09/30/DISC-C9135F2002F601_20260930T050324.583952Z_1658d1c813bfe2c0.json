@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C9135F2002F601",
+  "provider": "NOAA/NDBC",
+  "dataset": "PKYF1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:03:24.583952Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PKYF1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PKYF1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 73414,
+  "sha256": "1658d1c813bfe2c05a1baf5a91d36d228936692b3fb6a328c23259a832bc101a",
+  "etag": "\"11ec6-65cac1bbc4809\"",
+  "last_modified": "Wed, 30 Sep 2026 04:55:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-C9135F2002F601\\20260930T050324.583952Z_1658d1c813bfe2c0.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

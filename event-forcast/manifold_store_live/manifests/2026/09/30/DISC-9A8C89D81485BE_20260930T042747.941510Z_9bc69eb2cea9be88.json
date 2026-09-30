@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-9A8C89D81485BE",
+  "provider": "NOAA/NDBC",
+  "dataset": "VAKF1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:27:47.941510Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/VAKF1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/VAKF1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1016328,
+  "sha256": "9bc69eb2cea9be88dd69b5bbe822ec6fcb60162a0bf567d031b6b8077f77011e",
+  "etag": "\"f8208-65cab8c3a209e\"",
+  "last_modified": "Wed, 30 Sep 2026 04:15:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-9A8C89D81485BE\\20260930T042747.941510Z_9bc69eb2cea9be88.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

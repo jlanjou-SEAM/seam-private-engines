@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-260C0592BA1C9F",
+  "provider": "NOAA/NCEI",
+  "dataset": "logistics-shipping",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:27.214347Z",
+  "request_url": "https://www.ncei.noaa.gov/about/our-impact/logistics-shipping",
+  "final_url": "https://www.ncei.noaa.gov/about/our-impact/logistics-shipping",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 34413,
+  "sha256": "6de2c14690fe48fed1c3b15fbc1929a4144bfe63eae5da9124bfc00f16240320",
+  "etag": "\"1790726309-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 23:58:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-260C0592BA1C9F\\20260930T044727.214347Z_6de2c14690fe48fe.html",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

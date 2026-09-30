@@ -1,0 +1,2014 @@
+{
+    "@context": [
+        {
+            "schema": "https://schema.org/",
+            "type": "@type",
+            "features": "schema:itemListElement",
+            "FeatureCollection": "schema:itemList"
+        }
+    ],
+    "type": "FeatureCollection",
+    "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks",
+    "features": [
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1934.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1935.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1936.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1937.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1938.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1939.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1940.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1941.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1942.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1943.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1944.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1945.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1946.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1947.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1948.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1949.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1950.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1951.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1952.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1953.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1954.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1955.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1956.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1957.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1958.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1959.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1960.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1961.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1962.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1963.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1964.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1965.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1966.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1967.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1968.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1969.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1970.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1972.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1973.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1975.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1976.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1977.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1978.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1979.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1980.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1981.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1982.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1983.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1984.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1985.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1986.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1987.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1988.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1989.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1990.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1991.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1992.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1993.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1994.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1995.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1996.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1997.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1998.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.1999.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2000.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2001.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2002.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2003.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2004.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2005.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2006.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2007.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2008.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2009.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2010.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2011.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2012.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2012.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2013.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2013.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT FORT KENT.2014.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2011.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2011.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2012.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2012.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2013.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2013.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2014.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2014.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2015.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2015.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2016.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2016.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2017.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2017.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2018.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2018.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2019.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2019.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2020.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2020.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2021.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2021.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2022.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2022.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2023.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2023.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2024.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2024.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2025.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2025.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1952.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1953.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1954.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1955.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1956.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1957.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1958.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1959.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1960.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1961.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1962.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1963.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1964.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1965.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1966.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1967.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1968.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1969.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1970.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1971.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1972.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1973.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1974.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1975.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1976.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1977.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1978.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1979.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1980.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1981.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1982.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1983.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1984.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1985.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1986.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1987.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1988.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1989.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1990.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1991.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1993.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1994.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1995.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1996.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1997.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1998.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.1999.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2000.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2001.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2002.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2003.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2004.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2005.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2006.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2007.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2008.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2009.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2010.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2011.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2011.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2012.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2012.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2013.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2013.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2014.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2014.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2015.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2016.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2016.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2017.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2017.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2018.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2018.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2019.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2019.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2020.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2020.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2021.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2021.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2022.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2022.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2023.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2023.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2024.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2024.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2025.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/ST. FRANCIS RIVER AT OUTLET OF GLASIER LAKE.2025.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1980.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1981.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1982.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1983.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1984.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1985.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1986.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1987.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1989.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1990.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1991.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1992.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1993.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1994.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2002.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2003.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2004.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2005.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2006.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2007.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2008.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2009.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2010.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2011.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2011.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2012.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2013.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2013.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2014.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2015.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2015.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2016.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2016.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2017.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2017.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2018.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2018.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2019.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2019.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2020.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2020.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2021.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2021.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2022.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2022.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2023.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2024.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2024.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2025.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.2025.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1968.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1969.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1970.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1972.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1973.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1974.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1975.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1978.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT EDMUNDSTON.1979.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1981.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1982.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1983.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1984.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1985.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1986.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1987.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1988.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1989.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1990.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1991.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1992.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1993.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1994.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1995.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1996.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1997.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1998.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.1999.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2000.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2001.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2002.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2003.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2004.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2005.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2006.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2007.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2008.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2009.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2010.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2011.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2012.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2012.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2013.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2013.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2014.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/FISH RIVER NEAR FORT KENT.2014.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2011.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2011.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2012.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2012.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2013.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2013.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2014.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2014.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2015.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2016.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2016.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2017.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2017.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2018.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2019.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2019.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2020.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2020.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2021.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2021.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2022.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2022.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2023.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2023.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2024.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2024.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1931.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1932.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1933.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1934.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1935.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1936.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1937.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1938.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1939.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1940.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1941.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1942.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1943.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1944.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1945.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1946.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1947.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1948.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1949.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1950.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1951.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1952.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1953.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1954.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1955.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1956.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1957.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1958.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1959.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1960.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1961.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1962.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1963.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1964.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1965.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1966.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1967.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1968.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1969.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1970.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1971.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1973.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1975.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1976.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1977.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1978.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1979.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1980.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1981.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1982.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1983.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1984.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1985.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1986.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1987.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1988.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1989.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1990.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1992.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1993.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1994.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1995.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1996.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1997.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1998.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.1999.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2000.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2001.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2002.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2003.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2004.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2005.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2006.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2007.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2008.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2009.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2010.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2011.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2011.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2012.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2012.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2013.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2013.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2014.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2014.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2015.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2016.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2016.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2017.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2017.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2018.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2019.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2019.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2020.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2020.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2021.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2021.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2022.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2022.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2023.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2023.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2024.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/SAINT JOHN RIVER AT GRAND FALLS.2024.discharge-debit.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1963.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1964.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1965.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1966.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1967.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1968.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1969.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1970.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1971.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1972.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1973.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1974.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1975.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1976.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1977.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1978.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1979.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1981.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1982.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1983.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1984.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1985.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1986.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1987.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1988.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1989.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1990.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GREEN RIVER NEAR RIVIERE-VERTE.1991.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/BLACK BROOK NEAR ST-ANDRE-DE-MADAWASKA.1972.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/BLACK BROOK NEAR ST-ANDRE-DE-MADAWASKA.1973.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/BLACK BROOK NEAR ST-ANDRE-DE-MADAWASKA.1974.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2011.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2011.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2012.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2012.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2013.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2013.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2014.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2014.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2015.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2015.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2016.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2016.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2017.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2017.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2018.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2018.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2019.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2019.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2020.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2020.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2021.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2021.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2022.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2022.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2023.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2023.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2024.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2024.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2025.level-niveaux.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.2025.level-niveaux.minimum-minimale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1977.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1978.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1979.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1980.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1981.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1982.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1983.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1984.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1985.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1986.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1987.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1989.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1990.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1991.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1992.discharge-debit.maximum-maximale"
+        },
+        {
+            "@type": "schema:Place",
+            "@id": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items/GRANDE RIVIERE AT VIOLETTE BRIDGE.1993.discharge-debit.maximum-maximale"
+        }
+    ]
+}

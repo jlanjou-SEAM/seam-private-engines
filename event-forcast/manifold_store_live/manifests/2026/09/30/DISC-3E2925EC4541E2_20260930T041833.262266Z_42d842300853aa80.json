@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-3E2925EC4541E2",
+  "provider": "NOAA/NDBC",
+  "dataset": "oceansites",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:33.262266Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/oceansites/",
+  "final_url": "https://www.ndbc.noaa.gov/data/oceansites/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 2395,
+  "sha256": "42d842300853aa80e9a98196c8c378dc649b10a05e2d2af3dc708208077e9cb2",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-3E2925EC4541E2\\20260930T041833.262266Z_42d842300853aa80.html",
+  "parent_id": "DISC-5A7C0E42A79699",
+  "discovery_depth": 2
+}

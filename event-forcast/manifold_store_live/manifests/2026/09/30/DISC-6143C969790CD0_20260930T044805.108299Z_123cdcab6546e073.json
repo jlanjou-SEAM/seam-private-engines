@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-6143C969790CD0",
+  "provider": "NOAA/NCEI",
+  "dataset": "radar",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:05.108299Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/radar/",
+  "final_url": "https://www.ncei.noaa.gov/maps/radar/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 18737,
+  "sha256": "123cdcab6546e073b0bca80489b7dbf72a1947d2c417a48150f3266dcbc0d4ec",
+  "etag": "\"4895-647bbbd152540\"",
+  "last_modified": "Tue, 06 Jan 2026 17:45:17 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6143C969790CD0\\20260930T044805.108299Z_123cdcab6546e073.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

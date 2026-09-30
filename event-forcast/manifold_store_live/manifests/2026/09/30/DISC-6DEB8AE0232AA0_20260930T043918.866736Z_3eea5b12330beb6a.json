@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-6DEB8AE0232AA0",
+  "provider": "NOAA/NCEI",
+  "dataset": "FY2022%20Q3%20SOS%20Newsletter.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:18.866736Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2023-10/FY2022%20Q3%20SOS%20Newsletter.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2023-10/FY2022%20Q3%20SOS%20Newsletter.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 942751,
+  "sha256": "3eea5b12330beb6a9b915e9b83c7412aff2e83496ee8a682a834772deb54cf5d",
+  "etag": null,
+  "last_modified": "Thu, 26 Oct 2023 06:43:31 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6DEB8AE0232AA0\\20260930T043918.866736Z_3eea5b12330beb6a.pdf",
+  "parent_id": "DISC-9D0226951FD2F4",
+  "discovery_depth": 2
+}

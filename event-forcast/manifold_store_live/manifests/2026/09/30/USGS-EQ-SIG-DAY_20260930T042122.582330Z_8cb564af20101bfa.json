@@ -1,0 +1,22 @@
+{
+  "candidate_id": "USGS-EQ-SIG-DAY",
+  "provider": "USGS",
+  "dataset": "Significant earthquakes past day",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T04:21:22.582330Z",
+  "request_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_day.geojson",
+  "final_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_day.geojson",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 1067,
+  "sha256": "8cb564af20101bfa1ab2d5d2737ae2839e004e688d7da70770ca068a24acd5da",
+  "etag": null,
+  "last_modified": "Wed, 30 Sep 2026 04:20:28 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\seismic\\2026\\09\\30\\USGS-EQ-SIG-DAY\\20260930T042122.582330Z_8cb564af20101bfa.geojson",
+  "parent_id": null,
+  "discovery_depth": 0
+}

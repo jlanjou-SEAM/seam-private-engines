@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-8CEFF719BDB0EB",
+  "provider": "NOAA/NCEI",
+  "dataset": "global-oceanographic-data-archaeology-and-rescue",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:19.831870Z",
+  "request_url": "https://www.ncei.noaa.gov/products/ocean-climate-laboratory/global-oceanographic-data-archaeology-and-rescue",
+  "final_url": "https://www.ncei.noaa.gov/products/ocean-climate-laboratory/global-oceanographic-data-archaeology-and-rescue",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 31574,
+  "sha256": "4298fecff3d29f8a833f058c743367bd31756e64333bd873fab6385d0ebac493",
+  "etag": "\"1790725051-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 23:37:31 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-8CEFF719BDB0EB\\20260930T044819.831870Z_4298fecff3d29f8a.html",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

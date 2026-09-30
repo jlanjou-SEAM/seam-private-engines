@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-729202CF596363",
+  "provider": "NOAA/NCEI",
+  "dataset": "print.min.css",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:27.134843Z",
+  "request_url": "https://www.ncei.noaa.gov/cdo-web/resources-3.7/css/min/print.min.css",
+  "final_url": "https://www.ncei.noaa.gov/cdo-web/resources-3.7/css/min/print.min.css",
+  "status_code": 200,
+  "content_type": "text/css",
+  "byte_length": 1665,
+  "sha256": "860f06dfdda7ae49a256387993fa7d3a71fe67129cacd829059fb2b35f5cac62",
+  "etag": null,
+  "last_modified": "Wed, 10 Sep 2025 18:56:44 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-729202CF596363\\20260929T051827.134843Z_860f06dfdda7ae49.css",
+  "parent_id": "NOAA-CDO",
+  "discovery_depth": 1
+}

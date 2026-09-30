@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-B3BE1A173C3B7B",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "awarness-rain-floods",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:46.607587Z",
+  "request_url": "https://www.ncm.gov.ae/pages/awarness-rain-floods?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/awarness-rain-floods?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43591,
+  "sha256": "439568c731708fa7a28442779a19ba65327a437239ddfbf74002174e2ad1bed8",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-B3BE1A173C3B7B\\20260930T041046.607587Z_439568c731708fa7.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

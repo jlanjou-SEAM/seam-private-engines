@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-AEC5E1FFE7EFB5",
+  "provider": "NOAA/NCEP",
+  "dataset": "temp_probhazards_d8_14_contours.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:42.801462Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/predictions/threats/temp_probhazards_d8_14_contours.png",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/predictions/threats/temp_probhazards_d8_14_contours.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 924759,
+  "sha256": "6687c2a05379f92b409bc82b0fe5815a136e171b8fb5c746cd76838c717e08a2",
+  "etag": null,
+  "last_modified": "Tue, 29 Sep 2026 19:13:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-AEC5E1FFE7EFB5\\20260930T041942.801462Z_6687c2a05379f92b.png",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

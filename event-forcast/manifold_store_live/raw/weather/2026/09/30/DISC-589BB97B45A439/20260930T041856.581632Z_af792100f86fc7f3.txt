@@ -1,0 +1,23 @@
+
+          SATSND QC Accept List:  "1" => Flag observation as good
+
+Satellite |T     |MVMR
+begin-------------------------------------
+end---------------------------------------
+
+Example Entries **************************
+NOAA-15   |1     |1
+NOAA-16   |1     |1
+NOAA-18   |1     |1
+
+
+Temperature Product Types
+------------------
+T = Temperature
+MVMR = Mixing Ratio
+
+Satellites
+----------
+NOAA-15     NOAA-15, operational products
+NOAA-16     NOAA-16, operational products
+NOAA-18     NOAA-18, operational products

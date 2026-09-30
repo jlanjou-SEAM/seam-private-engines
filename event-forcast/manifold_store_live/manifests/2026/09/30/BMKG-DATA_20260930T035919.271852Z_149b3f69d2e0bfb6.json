@@ -1,0 +1,24 @@
+{
+  "candidate_id": "BMKG-DATA",
+  "provider": "BMKG Indonesia",
+  "dataset": "Meteorology climatology geophysics data",
+  "sector": "public",
+  "country": "ID",
+  "scientific_regime": [
+    "weather",
+    "seismic",
+    "tsunami"
+  ],
+  "retrieved_utc": "2026-09-30T03:59:19.271852Z",
+  "request_url": "https://data.bmkg.go.id/",
+  "final_url": "https://data.bmkg.go.id/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 25858,
+  "sha256": "149b3f69d2e0bfb641271fcd880cd9c97deebb5236052058781b68a6a8c58dd7",
+  "etag": null,
+  "last_modified": "Wed, 30 Sep 2026 03:59:19 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\BMKG-DATA\\20260930T035919.271852Z_149b3f69d2e0bfb6.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

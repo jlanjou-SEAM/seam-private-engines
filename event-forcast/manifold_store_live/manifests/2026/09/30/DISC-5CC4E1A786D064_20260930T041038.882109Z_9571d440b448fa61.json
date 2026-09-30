@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-5CC4E1A786D064",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "dry-temperature",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:38.882109Z",
+  "request_url": "https://www.ncm.gov.ae/maps-aws-stations/dry-temperature?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/maps-aws-stations/dry-temperature?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43641,
+  "sha256": "9571d440b448fa615233cd8c89acd423c4f769bf2dc08df63fe6724749f78f05",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-5CC4E1A786D064\\20260930T041038.882109Z_9571d440b448fa61.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

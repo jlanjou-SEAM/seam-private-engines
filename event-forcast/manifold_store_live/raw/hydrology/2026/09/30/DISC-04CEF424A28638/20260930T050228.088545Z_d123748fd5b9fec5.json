@@ -1,0 +1,115 @@
+{
+    "id":"time-zone-codes",
+    "links":[
+        {
+            "type":"application/json",
+            "rel":"root",
+            "title":"The landing page of this server as JSON",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1?f=json"
+        },
+        {
+            "type":"text/html",
+            "rel":"root",
+            "title":"The landing page of this server as HTML",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1?f=html"
+        },
+        {
+            "type":"application/json",
+            "rel":"self",
+            "title":"This document as JSON",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-zone-codes?f=json"
+        },
+        {
+            "type":"application/ld+json",
+            "rel":"alternate",
+            "title":"This document as RDF (JSON-LD)",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-zone-codes?f=jsonld"
+        },
+        {
+            "type":"text/html",
+            "rel":"alternate",
+            "title":"This document as HTML",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-zone-codes?f=html"
+        },
+        {
+            "type":"application/schema+json",
+            "rel":"http://www.opengis.net/def/rel/ogc/1.0/schema",
+            "title":"Schema of collection in JSON",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-zone-codes/schema?f=json"
+        },
+        {
+            "type":"text/html",
+            "rel":"http://www.opengis.net/def/rel/ogc/1.0/schema",
+            "title":"Schema of collection in HTML",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-zone-codes/schema?f=html"
+        },
+        {
+            "type":"application/schema+json",
+            "rel":"http://www.opengis.net/def/rel/ogc/1.0/queryables",
+            "title":"Queryables for this collection as JSON",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-zone-codes/queryables?f=json"
+        },
+        {
+            "type":"text/html",
+            "rel":"http://www.opengis.net/def/rel/ogc/1.0/queryables",
+            "title":"Queryables for this collection as HTML",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-zone-codes/queryables?f=html"
+        },
+        {
+            "type":"application/geo+json",
+            "rel":"items",
+            "title":"Items as GeoJSON",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-zone-codes/items?f=json"
+        },
+        {
+            "type":"application/ld+json",
+            "rel":"items",
+            "title":"Items as RDF (GeoJSON-LD)",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-zone-codes/items?f=jsonld"
+        },
+        {
+            "type":"text/html",
+            "rel":"items",
+            "title":"Items as HTML",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-zone-codes/items?f=html"
+        },
+        {
+            "type":"text/csv; charset=utf-8",
+            "rel":"items",
+            "title":"Items as CSV",
+            "href":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/time-zone-codes/items?f=csv"
+        }
+    ],
+    "title":"Time zone codes",
+    "description":"The ISO 8601 standard defines time zone offsets as a numerical value added to a local time to convert it to Coordinated Universal Time (UTC), either as +hh:mm or -hh:mm, or represented by the letter Z to explicitly indicate UTC. For example, +05:30 means 5 hours and 30 minutes ahead of UTC, while -08:00 means 8 hours behind UTC. The offset Z specifically signifies UTC.\n",
+    "keywords":[
+        "metadata",
+        "features"
+    ],
+    "extent":{
+        "spatial":{
+            "bbox":[
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ],
+            "crs":"http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+        },
+        "temporal":{
+            "interval":[
+                [
+                    null,
+                    null
+                ]
+            ]
+        }
+    },
+    "itemType":"feature",
+    "crs":[
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    ],
+    "storageCrs":"http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+}

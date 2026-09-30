@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-602AD0FAF45224",
+  "provider": "NOAA/NDBC",
+  "dataset": "UNLA2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:27:48.963549Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/UNLA2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/UNLA2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1013696,
+  "sha256": "b243d6cd5e719dc29343e13b6e4d72add1a70744509af7278b7143e0bd5afbc0",
+  "etag": "\"f77c0-65cab8c39d27f\"",
+  "last_modified": "Wed, 30 Sep 2026 04:15:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-602AD0FAF45224\\20260930T042748.963549Z_b243d6cd5e719dc2.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

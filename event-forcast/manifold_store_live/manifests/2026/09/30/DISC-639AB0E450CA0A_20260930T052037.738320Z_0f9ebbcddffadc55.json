@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-639AB0E450CA0A",
+  "provider": "EarthScope/IRIS",
+  "dataset": "login",
+  "sector": "research",
+  "country": "US",
+  "scientific_regime": [
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:37.738320Z",
+  "request_url": "https://ds.iris.edu/account/login/?next=/ds/nodes/dmc/data/formats/miniseed/",
+  "final_url": "https://ds.iris.edu/account/login/?next=/ds/nodes/dmc/data/formats/miniseed/",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 25142,
+  "sha256": "0f9ebbcddffadc55d30ed19c6524b907fcc9ed0cf9a28a3d87eab327dd942034",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\seismic\\2026\\09\\30\\DISC-639AB0E450CA0A\\20260930T052037.738320Z_0f9ebbcddffadc55.html",
+  "parent_id": "DISC-BC78786585A056",
+  "discovery_depth": 2
+}

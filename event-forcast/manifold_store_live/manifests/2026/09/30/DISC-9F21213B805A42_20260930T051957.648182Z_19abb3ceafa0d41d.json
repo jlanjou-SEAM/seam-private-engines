@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-9F21213B805A42",
+  "provider": "NASA Earthdata",
+  "dataset": "sedac-data-information-longer-available",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:19:57.648182Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/sedac-data-information-longer-available",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/sedac-data-information-longer-available",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 135783,
+  "sha256": "19abb3ceafa0d41df5cbfbaebae8aa92d87052fb71a1dcc311726e1ae733eb97",
+  "etag": "\"1790745598\"",
+  "last_modified": "Wed, 30 Sep 2026 05:19:58 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-9F21213B805A42\\20260930T051957.648182Z_19abb3ceafa0d41d.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

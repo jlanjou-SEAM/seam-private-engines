@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-4B6143506C00B9",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "melbourne.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:55:07.933831Z",
+  "request_url": "https://reg.bom.gov.au/vic/observations/melbourne.shtml",
+  "final_url": "https://reg.bom.gov.au/vic/observations/melbourne.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 72611,
+  "sha256": "be2370d7da528a84fa508ec5b671dcf2c1a865e820a1b020adf607ea0cbe3c55",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4B6143506C00B9\\20260930T045507.933831Z_be2370d7da528a84.shtml",
+  "parent_id": "BOM-DATA",
+  "discovery_depth": 1
+}

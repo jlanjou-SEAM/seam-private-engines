@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-DCA35CBBF8F702",
+  "provider": "Iowa State University",
+  "dataset": "soilt_day1.png",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "surface",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T05:10:26.136074Z",
+  "request_url": "https://mesonet.agron.iastate.edu/data/soilt_day1.png?1790742084",
+  "final_url": "https://mesonet.agron.iastate.edu/data/soilt_day1.png?1790742084",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 175248,
+  "sha256": "88045cf14830ffd1709c94a0e2cd0cb439f80cb8bf0ffb136cf7a74f6593511b",
+  "etag": "\"2ac90-65c999cf9c64a\"",
+  "last_modified": "Tue, 29 Sep 2026 06:51:33 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-DCA35CBBF8F702\\20260930T051026.136074Z_88045cf14830ffd1.png",
+  "parent_id": "IEM",
+  "discovery_depth": 1
+}

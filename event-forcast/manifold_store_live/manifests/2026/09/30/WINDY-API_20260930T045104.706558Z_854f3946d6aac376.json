@@ -1,0 +1,23 @@
+{
+  "candidate_id": "WINDY-API",
+  "provider": "Windy",
+  "dataset": "Weather API",
+  "sector": "private",
+  "country": "CZ",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:51:04.706558Z",
+  "request_url": "https://api.windy.com/",
+  "final_url": "https://api.windy.com/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 56316,
+  "sha256": "854f3946d6aac3766d8c4dff5a8708afbc54184bbe1be50f3c9e3c2538a8486c",
+  "etag": "\"1334fk8\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\WINDY-API\\20260930T045104.706558Z_854f3946d6aac376.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

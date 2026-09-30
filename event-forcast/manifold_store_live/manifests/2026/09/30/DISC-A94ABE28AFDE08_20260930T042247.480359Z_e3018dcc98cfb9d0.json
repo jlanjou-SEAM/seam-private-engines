@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-A94ABE28AFDE08",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "nmesonet_soil_moisture.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:22:47.480359Z",
+  "request_url": "https://madis.ncep.noaa.gov/nmesonet_soil_moisture.shtml",
+  "final_url": "https://madis.ncep.noaa.gov/nmesonet_soil_moisture.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 31128,
+  "sha256": "e3018dcc98cfb9d0454cd0ccebf38acebdedb8df1c45ea08cbe15dd1ee42fe49",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A94ABE28AFDE08\\20260930T042247.480359Z_e3018dcc98cfb9d0.shtml",
+  "parent_id": "NOAA-MADIS",
+  "discovery_depth": 1
+}

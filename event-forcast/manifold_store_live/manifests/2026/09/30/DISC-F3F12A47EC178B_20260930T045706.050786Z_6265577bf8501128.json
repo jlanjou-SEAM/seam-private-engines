@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F3F12A47EC178B",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "cloud-seeding",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:57:06.050786Z",
+  "request_url": "https://www.ncm.gov.ae/pages/cloud-seeding?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/cloud-seeding?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43549,
+  "sha256": "6265577bf8501128b57c72a93350e6aa51f7237d4187d1c5aa4ac6989e6df938",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F3F12A47EC178B\\20260930T045706.050786Z_6265577bf8501128.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

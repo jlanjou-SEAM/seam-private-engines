@@ -1,0 +1,83 @@
+	.normalText { font-family: Arial, Helvetica, sans-serif; }
+	.footerText {
+		 	font-family: Arial, Helvetica, sans-serif;
+		 	font-size : smaller;
+	}
+	.whiteFooterText {
+		 	font-family: Arial, Helvetica, sans-serif;
+		 	font-size : smaller;
+			color: white;
+	}
+	.whiteText {
+		 	font-family: Arial, Helvetica, sans-serif;
+		 	color: white;
+	}
+	.ctlMenu {
+		 	font-family: Arial, Helvetica, sans-serif;
+		 	font-size : 10pt;
+		 	color: White;
+			/*background-color : #639CB3;*/
+			background-color: #28648C;
+	}
+	H1{	font-family: Arial, Helvetica, sans-serif; }
+	H2{ font-family: Arial, Helvetica, sans-serif; }
+	H3{ font-family: Arial, Helvetica, sans-serif; }
+	
+	.alink { FONT-FAMILY: arial, helvetica, sans-serif;
+			 COLOR: blue;
+			 }
+	.alink:hover { COLOR: red; TEXT-DECORATION: underline; 	}
+	.slink { FONT-FAMILY: arial, helvetica, sans-serif;
+		 	 font-size : smaller;
+			 COLOR: blue;
+			 }
+	.slink:hover { COLOR: red; TEXT-DECORATION: underline; }
+	.wlink { FONT-FAMILY: arial, helvetica, sans-serif;
+			 COLOR: white;
+			 }
+	.wlink:hover { COLOR: yellow; TEXT-DECORATION: underline; }
+	.tblDataCen {
+		font-family : Arial, Helvetica, sans-serif;
+		text-align : center;
+		font-weight: Bold;
+		}
+	.tblData {
+		font-family : Arial, Helvetica, sans-serif;
+		}
+	.tblHead {
+	font-family : Arial, Helvetica, sans-serif;
+	font-weight: Bold;
+	color: white;
+	background-color : #28648C;
+/*	vertical-align : center; */
+	text-align: center;
+	}
+	.tblHeadLink {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : smaller;
+	color: White;
+	background-color : #28648C;
+	}
+	.tblHeadLink:hover {
+	color: Yellow;
+	}
+	.stdFooterTopLine{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	background-color : #28648C;
+	color: White;
+	font-size : 12px;
+	}
+	.stdFooterTopLine:hover{
+	  color: #00FF00;
+	}
+	.stdFooterBottomLine{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #28648C;
+	/*background-color : #639CB3;*/
+	background-color: #DAE3E8;
+	font-size : 14px;
+	}
+	.stdFooterBottomLine:hover{
+	  color:red
+	}

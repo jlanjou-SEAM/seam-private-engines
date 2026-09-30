@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-15F829505565D4",
+  "provider": "NOAA/NDBC",
+  "dataset": "VCVA2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:27:47.540644Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/VCVA2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/VCVA2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 894222,
+  "sha256": "feaa74b7d12e95e6f468ebff1eff56757af7ae7b6406b1649cc9b486f3dc4f56",
+  "etag": "\"da50e-65cab8c3a6ad6\"",
+  "last_modified": "Wed, 30 Sep 2026 04:15:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-15F829505565D4\\20260930T042747.540644Z_feaa74b7d12e95e6.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

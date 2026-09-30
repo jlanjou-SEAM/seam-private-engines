@@ -1,0 +1,31 @@
+		.mainMenu{
+			font-family : Arial, Helvetica, sans-serif;
+			font-size : 16px;
+			color : White;
+			text-decoration : none;
+			font-weight : bolder;
+		}
+		.mainMenu:hover{
+			color: #00FF00;
+		}
+
+		.submenu{
+			font-family : Arial, Helvetica, sans-serif;
+			font-size : 10pt;
+			color : White;
+			/*background-color : #639CB3; */
+			background-color : #28648C;
+		}
+		.submenu:hover{
+			color: #00FF00;
+		}
+		.submenuhead{
+			font-family : Arial, Helvetica, sans-serif;
+			font-size : 12pt;
+			font-weight: Bold;
+			color : White;
+			background-color : #28648C;
+		}
+		.submenuhead:hover{
+			color: #00FF00;
+		}

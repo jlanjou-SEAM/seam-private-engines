@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-55274C8A84637C",
+  "provider": "NOAA/NSSL",
+  "dataset": "NLDN_CG_001min_AvgDensity",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T04:38:22.794311Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/NLDN_CG_001min_AvgDensity/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/NLDN_CG_001min_AvgDensity/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 359823,
+  "sha256": "b4a764a2908ca22f2db41d21506ce2ccf084550b0a4584f7078cc6bcc86e685c",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-55274C8A84637C\\20260930T043822.794311Z_b4a764a2908ca22f.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

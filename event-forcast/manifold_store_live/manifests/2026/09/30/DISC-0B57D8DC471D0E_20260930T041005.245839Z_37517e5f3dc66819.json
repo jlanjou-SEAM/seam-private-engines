@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-0B57D8DC471D0E",
+  "provider": "Japan Meteorological Agency",
+  "dataset": "flood_xml.json",
+  "sector": "public",
+  "country": "JP",
+  "scientific_regime": [
+    "weather",
+    "seismic",
+    "hazards"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:05.245839Z",
+  "request_url": "https://www.jma.go.jp/bosai/flood/data/r8/flood_xml.json",
+  "final_url": "https://www.jma.go.jp/bosai/flood/data/r8/flood_xml.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 3,
+  "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "etag": "\"58e0494c51d30eb3494f7c9198986bb9\"",
+  "last_modified": "Sun, 27 Sep 2026 07:45:41 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-0B57D8DC471D0E\\20260930T041005.245839Z_37517e5f3dc66819.json",
+  "parent_id": "JMA-BOSAI",
+  "discovery_depth": 1
+}

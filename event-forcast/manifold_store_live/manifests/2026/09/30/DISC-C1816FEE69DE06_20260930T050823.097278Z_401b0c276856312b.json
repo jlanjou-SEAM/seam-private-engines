@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-C1816FEE69DE06",
+  "provider": "NOAA/NSSL",
+  "dataset": "LtgJumpGrid",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:23.097278Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/LtgJumpGrid/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/LtgJumpGrid/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 146207,
+  "sha256": "401b0c276856312bb5804a7421f70047d94199934d53b7a5bb5789a17ef83f26",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C1816FEE69DE06\\20260930T050823.097278Z_401b0c276856312b.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

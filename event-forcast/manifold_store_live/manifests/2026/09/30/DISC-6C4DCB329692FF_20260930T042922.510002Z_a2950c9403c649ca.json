@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-6C4DCB329692FF",
+  "provider": "NOAA/SWPC",
+  "dataset": "haf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:29:22.510002Z",
+  "request_url": "https://services.swpc.noaa.gov/products/gong/haf/",
+  "final_url": "https://services.swpc.noaa.gov/products/gong/haf/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 21765,
+  "sha256": "a2950c9403c649ca31aa4ef228255ef72088acadb20da80409df8f7fcf34def9",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-6C4DCB329692FF\\20260930T042922.510002Z_a2950c9403c649ca.html",
+  "parent_id": "DISC-BBC29E6791CFA8",
+  "discovery_depth": 2
+}

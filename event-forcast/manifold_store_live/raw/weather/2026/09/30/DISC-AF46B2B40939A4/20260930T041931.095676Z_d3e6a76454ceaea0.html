@@ -1,0 +1,898 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:m="https://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="schema.DC" href="https://purl.org/dc/elements/1.1/" />
+<!-- #BeginEditable "doctitle" -->
+<title>NOAA Climate Test Bed</title>
+<!-- #EndEditable -->
+<meta name="DC.title" content="About NOAA's Climate Test Bed" />
+<meta name="DC.description" content="About NOAA's Climate Test Bed" />
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" />
+<meta name="DC.date.created" scheme="ISO8601" content="June 24th 2015" />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.keywords" content="Climate, Prediction, Test Bed, CTB, R2O, O2R, STI" />
+<meta name="DC.publisher" content="NOAA's National Weather Service" />
+<meta name="DC.contributor" content="National Weather Service" />
+<meta name="DC.rights" content="https://www.weather.gov/disclaimer.php" />
+<meta name="rating" content="General" />
+<meta name="robots" content="index,follow" />
+
+<link href="https://www.weather.gov/css/weatherstyle.css" rel="stylesheet" type="text/css" />
+<link href="https://www.weather.gov/css/template.css" rel="stylesheet" type="text/css" />
+<link href="https://www.weather.gov/css/myfcst.css" rel="stylesheet" type="text/css" />
+<link href="https://www.weather.gov/css/ForecastSearch.css" rel="stylesheet" type="text/css" />
+<link href="https://www.weather.gov/css/pointforecast.css" rel="stylesheet" type="text/css" />
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+
+<script 
+  src="https://cdn.jsdelivr.net/npm/jquery-hoverintent@1.10.2/jquery.hoverIntent.min.js" 
+  integrity="sha384-lszzQ0QZ95PDaSTI2Eva2PIpOxI83DZegjEwa9s57ndy7OXuQ7HxWAJxLOCzCa/j" 
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="https://www.weather.gov/js/ForecastSearch.js"></script>
+			
+<script type="text/javascript" src="https://www.weather.gov/js/topNavMenu.js"></script>
+
+<!-- options 
+fx: 
+    blindX
+    blindY
+    blindZ
+    cover
+    curtainX
+    curtainY
+    fade
+    fadeZoom
+    growX
+    growY
+    scrollUp
+    scrollDown
+    scrollLeft
+    scrollRight
+    scrollHorz
+    scrollVert
+    shuffle
+    slideX
+    slideY
+    toss
+    turnUp
+    turnDown
+    turnLeft
+    turnRight
+    uncover
+    wipe
+    zoom
+ The speed option defines the number of milliseconds it will take to transition from one slide to the next. 
+ The timeout option specifies how many milliseconds will elapse between the start of each transition.
+ The pause option causes the slideshow to pause when the mouse hovers over the slide. 
+ The random option causes the slides to be shown in random order, rather than sequential.
+ -->
+<!--<script type="text/javascript">
+$(document).ready (function () {
+	$.loadImages(['photos/1.jpg',
+	'photos/2.jpg',
+	'photos/3.jpg',
+	'photos/4.jpg'], function () {	
+		$('#slideshow').cycle({ 
+   		fx: 'fade',
+   		timeout: 5000, 
+  	  speed:  2500, 
+  	  pause: 1,
+  	  before: onBefore
+
+	}); 
+	function onBefore() { 
+ 	   $('#title') 
+        .html(this.alt); 
+	};			
+});
+});
+</script>
+-->
+<style type="text/css">
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+        animation: 18s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+	     left: 0;
+	}
+	20% {
+	     left: 0;
+	}
+	25% {
+	     left: -100%;
+	}
+	45% {
+	     left: -100%;
+	}
+	50% {
+	     left: -200%;
+	}
+	70% {
+	     left: -200%;
+	}
+	75% {
+	     left: -300%;
+	}
+	95% {
+	     left: -300%;
+	}
+	100% {
+	     left: -400%;
+	}
+}
+</style>
+</head>
+
+<body> 
+
+        <div class="header">
+			<div class="header-content">
+			<a href="https://www.noaa.gov" class="header-nws">
+            <img src="noaa-log.jpg" height="60" />
+            </a>
+            <a href="https://www.cpc.ncep.noaa.gov/products/CTB/index.html" class="header-nws">
+            <img src="ctbhead.png" height="60" />
+            </a>
+
+			<a href="https://www.commerce.gov" class="header-doc">
+          <img src="https://www.weather.gov/css/images/header_doc.png" width="135" height="60" /> 
+            </a>
+			</div>
+		</div>
+
+		<div class="header-shadow">
+			<div class="header-shadow-content"></div>
+		</div>
+
+	
+
+<div class="center">
+
+			<div class="content">
+	<!--		<div class="topnav">  -->
+ 				<ul id="topnav">
+ 					<li>
+                                            <script type="text/javascript">
+                                                function goBack()
+                                                {
+                                                    if (document.referrer.toLowerCase().indexOf("/products/CTB/index.html") != -1)
+                                                    {
+                                                        history.back();
+                                                    }
+                                                    else
+                                                    {
+                                                        document.location.href = " https://www.cpc.ncep.noaa.gov/products/CTB/index.html";
+                                                    }
+                                                }
+                                            </script>
+ 						<div class="topMenuNavList home">
+ 							<a href="#" onclick="goBack();">&nbsp;&nbsp;&nbsp;HOME</a>
+ 						</div>
+ 					</li>
+        			<li>	
+        				<div class="topMenuNavList section-link">
+        					<a href="https://www.cpc.ncep.noaa.gov/products/CTB/nmme.htm">
+							NMME</a>
+        				</div>
+           			<div style="opacity: 0;z-index:4;" class="sub">
+           				   <ul>
+            				<li>
+                					  
+									Data  
+                				</li>
+                				
+								
+                				<li>
+                					<a href="https://www.earthsystemgrid.org/search.html?Project=NMME" title="Phase-II data"> 
+									
+									&nbsp;&nbsp;&nbsp;&nbsp;Phase-II data  </a> 
+                				</li>
+                				
+                				<li>
+                					<a href="https://iridl.ldeo.columbia.edu/SOURCES/.Models/.NMME/" title="Phase-I data"> 
+									
+									&nbsp;&nbsp;&nbsp;&nbsp;Phase-I data  </a> 
+                				</li>
+
+
+								<li>
+                					<a href="https://www.cpc.ncep.noaa.gov/products/NMME/" title="CPC forecasts"> 
+									
+									CPC forecasts  </a> 
+                				</li>
+                				
+                			 	<li>
+                					<a href="https://www.cpc.ncep.noaa.gov/products/CTB/nmme_pub.htm" title="Publications"> 
+									
+									Publications  </a> 
+                				</li>
+
+                				
+                				<li>
+                					<a href="https://www.cpc.ncep.noaa.gov/products/CTB/nmme_telecon.htm" title="Teleconferences">
+									Teleconferences</a>
+                				</li>
+                		<!--		<li>
+                					<a href="https://www.cpc.ncep.noaa.gov/products/CTB/nmme.htm" title="Meetings">  
+									Meetings  </a>
+                				</li>
+
+                				<li>
+                					<a href="https://www.cpc.ncep.noaa.gov/products/CTB/nmme.htm" title="Documents"> 
+									Documents  </a> 
+                				</li>
+								-->
+                			</ul>
+            			</div>        			
+            		</li>
+        		<li>	
+        				<div class="topMenuNavList section-link">
+        					<a href="https://www.cpc.ncep.noaa.gov/products/CTB/cfs.htm">CFS IMPROVEMENT</a>
+        				</div>
+           				<div style="opacity: 0;" class="sub">
+           				            				<ul>
+            				                				<li>
+                					<a href="https://www.cpc.ncep.noaa.gov/products/CTB/cfs_telecon.htm" title="CMDTF Telecons">
+									CMDTF Telecons</a>
+                				</li>
+                		<!--		<li>
+                					<a href="https://aa.usno.navy.mil/" title="Astronomical Data">
+									Astronomical Data</a>
+                				</li>-->
+                				            				</ul>
+            			</div>
+            			
+        			</li>
+        		<li>	
+        				<div class="topMenuNavList section-link">
+        					<a href="https://www.cpc.ncep.noaa.gov/products/CTB/rean.htm">CLIMATE REANALYSIS</a>
+        				</div>
+           		<!--		<div style="opacity: 0;" class="sub">
+           				        <ul>
+            				    <li>
+                					<a href="https://www.nws.noaa.gov/nwr/" title="NOAA Weather Radio">
+									NOAA Weather Radio</a>
+                				</li>
+                				<li>
+                					<a href="https://www.weather.gov/om/brochures.shtml" title="Brochures">
+									Brochures</a>
+                				</li>
+                				</ul>
+            				</div>
+            			-->
+        			</li>
+        		<li>	
+        				<div class="topMenuNavList section-link">
+        					<a href="https://www.cpc.ncep.noaa.gov/products/CTB/cliprod.htm">
+							TOOLS / PRODUCTS</a>
+        				</div>
+           		
+        			</li>
+        		<li>	
+        				<div class="topMenuNavList section-link">
+        					OPPORTUNITIES
+        				</div>
+                                        <div style="opacity: 0;" class="sub">
+           				    <ul>
+            				        <li>
+                					<a href="https://cpo.noaa.gov/funding-opportunities/" title="Climate Program Office">MAPP</a>
+                				</li>
+                				<li>
+                				<!--	<a href="https://owaq.noaa.gov/Funding/Current-Opportunities" title="Office of Weather and Air Quality"> -->
+							<a href="https://wpo.noaa.gov/fy25-notice-of-funding-opportunity-nofo/"  target="_blank" rel="noopener" title="Weather Program Office">WPO </a>
+                				</li>
+                			    </ul>
+            			        </div>
+        			</li>
+
+
+        	</ul>
+        	</div>
+		</div>
+		
+	
+	
+	<div class="center-content">
+		
+		
+   <div class="full-width-border">
+			<div class="partial-width-borderbottom" style="width: 960;">
+			
+				<!-- area for the myforecast widget and wwamap data -->
+				<div class="one-sixth-first">
+					        <script type="text/javascript" src="https://www.weather.gov/js/jquery-cookie.js"></script>
+        <script type="text/javascript" src="https://www.weather.gov/js/MyForecastWidget.js"></script>
+        <div id="myfcst-widget">
+            <div id="myfcst" style="height: 335px" class="style82">
+   <p style="margin-bottom: 0px; " class="style83">
+   <a href="https://www.cpc.ncep.noaa.gov/products/CTB/ov.htm" style="text-decoration: none">
+	<strong class="style120">Overview</strong></a>
+            
+                          <p style="margin-bottom: 0px; " class="style84">
+        <a href="https://www.cpc.ncep.noaa.gov/products/CTB/management.htm" style="text-decoration: none">
+          <strong class="style120">Management</strong></a>
+
+            
+                  <p style="margin-bottom: 0px; " class="style84">
+        <a href="https://www.cpc.ncep.noaa.gov/products/CTB/projs.htm" style="text-decoration: none">
+          <strong class="style120">Projects</strong></a>
+
+        <p style="margin-bottom: 0px; " class="style84">
+          <a href="https://www.cpc.ncep.noaa.gov/products/CTB/seminars.htm" style="text-decoration: none"><span class="yellow">
+			<strong class="style120">Seminars</strong></span></a>
+          
+          <p style="margin-bottom: 0px; " class="style84">
+          <a href="https://www.cpc.ncep.noaa.gov/products/CTB/mts.htm" style="text-decoration: none"><span class="yellow">
+			<strong class="style120">Meetings</strong></span></a>
+          
+          <p style="margin-bottom: 0px; " class="style84">          
+          <a href="https://www.cpc.ncep.noaa.gov/products/CTB/docs.htm" style="text-decoration: none"><span class="yellow">
+			<strong class="style120">Documents</strong>	</span></a>
+          
+          <p style="margin-bottom: 0px; " class="style121">          
+       <span class="style122">          
+       <a href="https://www.cpc.ncep.noaa.gov/products/CTB/openpb.htm" style="text-decoration: none">
+			<strong class="style120">Outstanding Forecast Challenges</strong></a></span>
+          
+          <p style="margin-bottom: 0px; " class="style84">
+          <a href="https://vlab.noaa.gov/web/osti-r2o/climate" target="_blank" rel="noopener" style="text-decoration: none"><span class="yellow">
+			<strong class="style120">STI R2O Climate</strong></span>
+			</a>          
+
+
+            </div>
+            
+        </div>
+				</div><!-- end of <div class="one-sixth-first"> -->
+				
+   <div>                          
+				    
+            <table style="margin-top: 0; width: 800px;" border="0" cellpadding="0" cellspacing="4" class="style155">
+        <tr>
+      <td valign="top" style="padding-left:2; padding-top:0; padding-bottom:0; text-indent:0; line-height:100%" colspan="2" width="520" class="style116">
+
+      <p style="margin-top: 18; margin-left:24; width: 520px;" align="left" class="style61">
+
+      <font size="3">
+		&nbsp;
+		</font>
+		<span class="style166">DEVELOPMENT PRIORITY AREAS</span>
+		</p>
+    
+  <!--   	<div id="title" style="text-align: right"></div> -->
+ <!--	<div style="z-index:2;" id="slideshow">
+		<a href="https://www.cpc.ncep.noaa.gov/products/CTB/nmme.htm">
+		<img src="photos/1.jpg" width="518" height="292" alt="slideshow01" class="style151" /></a>
+		<a href="https://www.cpc.ncep.noaa.gov/products/CTB/cfs.htm">
+        <img src="photos/2.jpg" width="518" height="292" alt="slideshow02" class="style151" /></a>
+		<a href="https://www.cpc.ncep.noaa.gov/products/CTB/cliprod.htm">
+		<img src="photos/3.jpg" width="518" height="292" alt="slideshow03" class="style151" /></a>
+		<a href="https://www.cpc.ncep.noaa.gov/products/CTB/rean.htm">
+		<img src="photos/4.jpg" width="518" height="292" alt="slideshow04" class="style151" /></a>
+	</div> --><!-- slideshow -->
+     
+<!--<span style='position:absolute;z-index:2;
+left:90px;right:90px;top:162px'> -->
+	<div style="margin-left: 6px;z-index:2;" id="slider">
+		<figure>
+			<a href="https://www.cpc.ncep.noaa.gov/products/CTB/nmme.htm">
+			<img src="photos/1.jpg" width="518" height="292" alt="slideshow01" class="style151" /></a>
+			<a href="https://www.cpc.ncep.noaa.gov/products/CTB/cfs.htm">
+			<img src="photos/2.jpg" width="518" height="292" alt="slideshow02" class="style151" /></a>
+			<a href="https://www.cpc.ncep.noaa.gov/products/CTB/cliprod.htm">
+			<img src="photos/3.jpg" width="518" height="292" alt="slideshow03" class="style151" /></a>
+			<a href="https://www.cpc.ncep.noaa.gov/products/CTB/rean.htm">
+			<img src="photos/4.jpg" width="518" height="292" alt="slideshow04" class="style151" /></a>
+			<a href="https://www.cpc.ncep.noaa.gov/products/CTB/nmme.htm">
+			<img src="photos/1.jpg" width="518" height="292" alt="slideshow01" class="style151" /></a>
+		</figure>
+	</div>
+
+<!--</span>  -->
+          
+                
+</td>
+
+<td valign="top" style="padding-left:6; padding-top:0; padding-bottom:0; text-indent:4; line-height:100%; background-color: #F0FDFF;">
+				&nbsp;
+				<p style="line-height: 100%;
+				margin-bottom: 0px;
+				text-indent: 0;
+				margin-left: 20px;
+				margin-right: 8px;
+				color: #003300;
+				font-size: 14pt;
+				" class="style181"><strong>MISSION</strong></p>
+				<p style="margin-bottom: 0px;
+				margin-left: 20px;
+				margin-right: 8px;
+				color: #003300;
+				" class="style179"><span style="font-family: Arial, Helvetica, sans-serif;
+				font-size: 12pt;">				<em>To accelerate the transition of scientific advances from the 
+				climate research community to improved NOAA climate forecast 
+				products and services. </em> </span></p>
+				
+				<p style="line-height: 100%;
+				margin-bottom: 3px;
+				margin-left: 20px;
+				margin-right: 8px;
+				color: #003300;
+				font-size: 14pt;" class="style182">
+		
+		<strong>VISION</strong></p>
+				<p style="margin-bottom: 0px;
+				margin-left: 20px;
+				margin-right: 8px;
+				color: #003300;
+				" class="style179"><span style="font-family: Arial, Helvetica, sans-serif;
+				font-size: 12pt;"><em>To significantly 
+				increase the accuracy, reliability, and scope of NOAA's suite of 
+				operational climate forecast products to meet the needs of a 
+				diverse user community.</em></span></p>
+		<p>&nbsp;</p>
+		
+				
+				
+</td>
+	
+				
+				
+    
+    </tr>
+              
+			</table>
+			
+	</div>	
+
+			</div><!-- end of <div class="partial-width-borderbottom"> -->
+			<p></p>
+		</div><!-- <div class="full-width-border"> -->
+		
+		<div class="partial-width-borderbottom feature-block" style="width: 100%;">
+			<!-- area for features, frontpage thumbs, and custom page -->
+<!--<p class="style167">Recent Activities</p>-->
+<p class="style167">Recent Documents</p>
+
+<table style="width: 956px;">
+
+<tr>
+								<td class="style147">
+								<a href="https://www.cpc.ncep.noaa.gov/products/CTB/Documents/NMME%20Review%20for%202020_Final_508done.pdf">  
+								<img src="RecentAct/nmme_rpt_2020.png" width="184" class="style146" />
+								</a> 
+								</td>
+								<td class="style148">
+								<p><!--<img src="new1.gif" width="28" height="11" style="border-color:#FFFFFF"/>--><span style="font-size: 12pt;margin-top: 6px;margin-left: 12px;">
+<strong>The North American Multi-Model Ensemble Operational Phase 2019-2020 Annual Report</strong>&nbsp;&nbsp;</span> </p>
+<p><!--<img src="new1.gif" width="28" height="11" style="border-color:#FFFFFF"/>--><span style="font-size: 10pt;margin-left: 12px;margin-top: 6px;">
+<strong><em>Summary</em></strong></span> </p>
+<p class="style145">
+The North American Multi-Model Ensemble (NMME) continued to deliver benefits to the subseasonal-to-seasonal operational forecast entity within NOAA, the Climate Prediction Center (CPC), and to the larger research community. Overall data usage from the operational data delivery point remained stable, with about 3000 active users each month. Data was delivered on time for all months, though in one month there was a quality issue corresponding to a major component upgrade. The system continues to produce skillful information that can be easily translated into official outlooks, with the modeling suite showing skill over the North America domain in almost every issuance since 2012, for both temperature and precipitation. Regionalized verifications, as well as those focused on specific seasons, have provided insight into what modes contribute to low-skill outlooks, feeding back from operations to research. The number of products being derived from the NMME models is increasing, with several new applications under development by NOAA and other entities, showing how the research can feed into operational entities. The NMME model suite continues to evolve, as older models are retired and replaced with new models; model replacements from three modeling centers are planned for 2021. Understanding the dependencies and implementing some initial internal controls to document and track downstream dependencies, as well as informing users of the sustainable reliability, will be critical in the coming years.
+</p>
+
+
+								                                                                
+
+                                </td>
+				</tr>
+
+
+            <!--   <tr>
+								<td class="style147">
+								<a href="https://www.cpc.ncep.noaa.gov/products/CTB/nmme.htm">
+								<img src="RecentAct/nmme_rpt_2020.png" width="124" class="style146" /></a></td>
+								<td class="style148">
+								<p class="style145"><strong><em>June 6, 2019</em></strong>&nbsp;&nbsp; The North American Multi-Model Ensemble (NMME) forecast products have been widely used for decision making since 2011.  The quality of the prediction is an important focus for service improvement.  Dr. Sarah Strazzo of Climate Prediction Center conducted a study on four types of NMME seasonal forecasts (uncalibrated<sup style="font-size:75%; vertical-align:super;">1</sup>,   
+	<a target="_blank" rel="noopener noreferrer" href="https://journals.ametsoc.org/doi/pdf/10.1175/WAF-D-16-0115.1">
+								 Probability Anomaly Correlation (PAC) calibrated</a> (van den Dool <em>et al.</em> 2017),
+	<a target="_blank" rel="noopener noreferrer" href="https://www.weather.gov/media/sti/climate/STIP/42CDPW/42cdpw-SStrazzo.pdf">
+								“Calibration, Bridging, and Merging” (CBaM) post-processed</a> (Strazzo <em>et al.</em> 2018), and “Bridged”<sup style="font-size:75%; vertical-align:super;">2</sup> NMME forecasts) 
+								over the period of 2012-2018 and presented her findings in the June teleconference.  Her results showed overall more hits and correct negatives than false positives and misses from contingency table of verification.  The observation of more above than below normal temperatures was captured by uncalibrated, PAC calibrated, and CBaM post-processed forecasts, among which uncalibrated and PAC calibrated forecasts over-predicted above normal temperatures while CBaM post-processed and “Bridged” over-predicted below normal temperatures.  Moreover, PAC calibrated precipitation forecasts achieved impressive Heidke skill scores, and NMME forecasts, particularly the post-processed versions, tended to outperform ENSO-derived forecasts in general.  Her results further showed “hits” also increased as predicted probabilities increased, a good indication of “forecast opportunity” potential.  In her summary, Dr. Strazzo shared with audience her promising thoughts to leverage other predictability sources, specifically to improve the prediction of winter below normal temperatures.</p>
+
+<p style="text-align: justify;margin-left:6px;margin-right:0px;margin-top:6px;margin-bottom: 0px;color:black;">
+<sup style="font-size:75%; vertical-align:super;">1)</sup>  NMME includes CFSv2, CanCM3, CanCM4, GFDL-CM2.1, GFDL-FLOR, NASA-GEOS, and NCAR-RSMAS-CCSM4 participant models.  Probabilities are calculated as ensemble frequencies relative to model mean terciles.
+</p>
+<p style="text-align: justify;margin-left:6px;margin-right:0px;margin-top:3px;margin-bottom: 0px;color:black;">
+<sup style="font-size:75%; vertical-align:super;">2)</sup> Uses bridged forecasts (1-month lead) as a stand-in for empirical ENSO-derived forecasts.
+</p>
+								                                                                <p class="style177"><strong>References</strong></p>
+                                                                <p class="style145">Strazzo, S.,  D. Collins, A. Schepen, Q. J. Wang, E. Becker, and L. Jia, 2018: Seasonal prediction of North American temperature and precipitation using the Calibration, Bridging, and Merging (CBaM) method.  <em>NWS Sci. Technol. Infusion Clim. Bull., 42nd NOAA Annu. Clim. Diagn. Predict. Workshop</em>, Norman, OK, National Oceanic and Atmospheric Administration</em>, 177-180, doi:10.7289/V5/CDPW-NWS-42nd-2018.</p>
+
+<p class="style145">van den Dool, H., E. Becker, L.-C. Chen, and Q. Zhang, 2017:  The probability anomaly correlation and calibration of probabilistic forecasts. <em> Wea. Forecasting</em>, 199-206.</p>
+
+                                </td>
+				</tr>
+		-->
+		
+		<!--		<tr>
+								<td class="style147">
+								<a href="https://www.cpc.ncep.noaa.gov/products/CTB/seminars.htm"> 
+								<img src="RecentAct/YXue120517_web.jpg" width="180" /></a></td>
+								<td class="style148">
+								<p class="style183"><strong><em>December 5, 2017 </em></strong>&nbsp;&nbsp; 
+								Prof. Yongkang Xue of the University of California, Los Angeles gave a CPC/CTB seminar on the relationship of spring land surface and subsurface temperature anomalies and subsequent downstream late spring-summer droughts/floods in North America and East Asia.  
+								His study revealed such remote effect is the first order forcing of the drought and compatible to SST&#8217;s, thus can be used to improve prediction of high-impact events in the regions of North America and East Asia. The dynamical mechanisms were explored and the challenges in applications and model improvement discussed.  Many ideas from audience in Q&A after the presentation showed common interests of strengthening collaboration between 
+								the university research and NCEP operation to accelerate high impact short-term climate prediction skill improvement for better public services.</p>
+								<p class="style177"><font size="2">(More information:&nbsp;<a href="https://www.cpc.ncep.noaa.gov/products/CTB/Forthcoming/CTB_YKXue_120517.pdf">Abstract</a>,&nbsp; 
+								<a href="https://www.cpc.ncep.noaa.gov/products/CTB/seminars_files/YXue-CTB120517.pdf">Presentation pdf</a>)</font></p>
+								</td>
+				</tr>
+          -->      
+ 
+
+
+	<!--			<tr>
+								<td style="width: 96px" class="style147">
+								<a href="https://www.cpc.ncep.noaa.gov/products/CTB/mts-arch/SubX-2017/GroupPhoto-2017SubXMeeting.jpg">
+								<img src="https://www.cpc.ncep.noaa.gov/products/CTB/RecentAct/gp-photo-2017subx_sm.jpg" width="184" /></a></td>
+								<td class="style148">
+								<p class="style145"><strong><em>September 13-15, 2017</em></strong>&nbsp;&nbsp; The NMME/SubX Science meeting was held at the NOAA Center for Weather and Climate Prediction in College Park, MD on 13-15 September 2017. The objective of the meeting is to highlight the extensive ongoing research into seasonal and subseasonal climate prediction, using retrospective and/or realtime forecast data from the North American Multi-Model Ensemble (NMME) and Subseasonal Experiment (SubX).  Succeeded from NMME, the SubX project expands the interagency effort to subseasonal  prediction research to test individual and multi-model ensemble predictions at timescales of weeks 3-4 and beyond through interaction between participant research teams.</p> 
+								<p class="style177">( More information:
+							&nbsp;<a href="https://www.cpc.ncep.noaa.gov/products/CTB/mts.htm">News Report, Agenda, Abstracts</a>)</p>
+								</td>
+				</tr>
+
+-->
+
+
+
+	         <!--    <tr>
+								<td class="style147">	
+								<a href="cfs.htm">								
+								<img src="RecentAct/CMDTF.png" width="184" /></a></td>
+								<td class="style148">
+								<p style="text-align:justify" class="style145">
+								<strong><em>May 31, 2016</em></strong>&nbsp;&nbsp; 
+								The May CMDTF telecon was dedicated to the Common Infrastructure for Modeling the Earth (<a target="_blank" rel="noopener noreferrer" href="https://www2.cgd.ucar.edu/sites/default/files/events/related/cime-background.pdf">CIME</a>). First, Dr. Mariana Vertenstein of NCAR/CESM gave an overview on CIME. The development of CIME, a stand-alone system independent of prognostic components, is to facilitate infrastructure modernization, enable separation of infrastructure from scientific development codes and eliminate duplication of efforts in responding to 2015 summit of US Global Change Research Program (USGCRP) / Interagency Group on Integrative Modeling (IGIM). The CIME scripting and testing infrastructure provides flexible and extendible out-of-the box configuration capabilities and utilities, such as parallel input/output, statistical ensemble test, load balancing utility, timing utilities etc. A new user friendly parallel workflow/diagnostics is described by automated CESM running with parallel post-processing utilities, which facilitate ability for users to not only run the model but also easily visualize model data.&nbsp; Next, Dr. Cecelia Deluca of NOAA/ESRL introduced the CIME-NEMS pilot project, which is going to provide access to the mediator (aka coupler) associated with the NOAA Environmental Modeling System (<a target="_blank" rel="noopener" href="https://www.emc.ncep.noaa.gov/index.php?branch=NEMS">NEMS</a>) through the CIME repository maintained by NCAR, allowing community access to key elements of the NOAA operational system in an established, research-friendly environment that helps to make the NEMS mediator a &#8220;community&#8221; component. Follow-up discussions centered around operation benefits,
+								<em>i.e.</em> the ISI focus and the ensemble capability 
+								<em>etc.</em></p> 
+								</td>
+				</tr>
+
+-->
+
+
+
+
+
+<!--				<tr>
+								<td class="style1">
+								<a href="https://www.cpc.ncep.noaa.gov/products/CTB/seminars.htm"> 
+								<img src="RecentAct/KTGuevara_web.jpg" width="180" /></a></td>
+								<td class="style148">
+								<p class="style145"><img src="new1.gif" width="28" height="11" style="border-color:#FFFFFF"/>
+								<font size="2"><strong><em>November 12, 2015</em></strong>&nbsp;&nbsp; 
+								Dr. Ken Takahashi from Geophysical Institute of 
+								Peru gave a CPC/CTB seminar entitled &quot;Eastern 
+								Pacific Feedbacks and the Forecast of Extreme El 
+								Niño Events&quot; at the NOAA Center for Weather and Climate Prediction, College Park MD. His research demonstrated 
+								that extreme El Niño events, such as the ones in 1982-1983 and 1997-1998, corresponded to a separate dynamical regime 
+								resulted from nonlinear feedbacks in the eastern Pacific, where the triggering of deep convection and the associated amplification of Bjerknes feedback played an important role in the growth of extreme El Niño events. It 
+								further showed large westerly wind around August can be a predictor of kick-starting extreme El Niño 
+								event.&nbsp;&nbsp;&nbsp; </font></p>
+								<p class="style145"><font size="2">(More information:&nbsp; 								<a href="https://www.cpc.ncep.noaa.gov/products/CTB/Forthcoming/CTB_KTGuevara.pdf">Abstract</a>,&nbsp; 
+								<a href="https://www.cpc.ncep.noaa.gov/products/CTB/seminars_files/KTGuevara-CTB111215.pptx">Presentation pptx</a>)</font></p>
+								</td>
+				</tr>
+
+-->
+
+
+
+
+
+
+				
+
+
+				
+				
+
+
+	<!--			<tr>
+								<td class="style147">
+								
+							
+								
+								<a href="https://www.cpc.ncep.noaa.gov/products/ctb/climate/CTB/nmme_telecon.htm">							
+								<img src="RecentAct/nmme-telecon.png" width="184" class="style146" /></a></td>
+								<td class="style148">
+								<p class="style150">
+								<font size="2">The June NMME monthly telecon was held on June 4, 2015. The discussion was led by Dr. van den Dool&#8217;s presentation, which called attention to a few issues in producing daily mean that should be treated 
+								appropriately in the NMME Phase-II data production.  After discussions, the participants agreed to add specific production information in the data document for better understanding and applications by users. The 
+								need of comparison by different approaches in creating daily mean 
+								was addressed as O2R. &nbsp;&nbsp;&nbsp;&nbsp; 
+							</font></p> 
+								</td>
+				</tr>
+-->
+
+</table>
+
+    <p></p>
+      </div><!-- end of <div class="partial-width-borderbottom feature-block"> -->
+  
+  
+		
+<!--		<div class="full-width-first">
+		<div class="full-width-first communication-links">
+         	<div class="one-third-first nopad" style="width: 479px">
+				<div class="myforecast-current" style="float:left;padding:0px 0px 0px 0px; width: 146px;">
+					<a style="text-decoration:none;" href="https://twitter.com/usNWSgov" target="_blank" rel="noopener noreferrer">
+					<img src="https://www.weather.gov/css/images/twitter.png" height="16" width="16" style="float: left" />&nbsp;&nbsp;Follow 
+					NWS on Twitter
+                	</a></div>
+                        	<div class="myforecast-current" style="float:left;padding:0px 0px 0px 0px;">
+                	<a style="text-decoration:none;" href="https://www.facebook.com/US.National.Weather.Service.gov" target="_blank" rel="noopener noreferrer">
+					<img src="https://www.weather.gov/css/images/fb.png" height="16" width="16" />&nbsp;&nbsp;Follow 
+					NWS on Facebook
+					</a>
+                            </div>
+         	</div>
+            <div class="one-half-last nopad">
+               	<span class="txt-rt myforecast-current">
+                    <div class="myforecast-current" style="float:left;padding:0px 20px 0px 0px;">
+                		<a href="https://www.weather.gov/rss_page.php?site_name=nws" target="_blank" rel="noopener" style="text-decoration:none;font-size:11px;">
+							<img src="https://www.weather.gov/css/images/rss.png" height="16" width="16" />&nbsp;&nbsp;NWS 
+						RSS Feed
+						</a>
+                	</div>
+                                	
+                	</span>
+            </div>
+            
+        </div>
+   		
+	
+		</div>
+	 -->	
+		
+	<div style="clear:both;"></div>
+		
+</div><!-- <div class="center-content"> -->
+
+</div><!-- end of <div class="center"> -->
+
+<!-- sitemap area -->
+<div class="footer">
+			<style type="text/css">
+		.footer-column-head a:link, .footer-column-head a:visited {
+		color: #ED7A08;		
+		}
+		    		    		    
+		    .style61 {
+				color: #000000;
+				margin-bottom: 6px;
+				margin-top: 6px;
+				font-weight: bold;
+}
+
+		    		    
+		    .style82 {
+		    background-image: url('mnmt.jpg');
+				
+}
+
+.style83 {
+				line-height: 150%;
+				margin-left: 4px;
+				margin-top: 6px;
+}
+.style84 {
+				line-height: 150%;
+				margin-top: 4px;
+				margin-left: 4px;
+}
+
+		    
+		    .style116 {
+				background-color: #F0FDFF;
+}
+
+		    .style120 {
+				font-size: 9pt;
+				text-decoration: none;
+				color: #993300;
+
+}
+
+		    .style121 {
+				line-height: 150%;
+				margin-top: 4px;
+				margin-left: 16px;
+				text-indent: -12px;
+}
+
+		    .style122 {
+				color: #999999;
+}
+
+		    .style124 {
+				text-align: left;
+				font-weight: bold;
+				margin-bottom: 0px;
+				font-size: 18pt;
+				color: #003366;
+				font-family: Arial;
+				line-height: 130%;
+}
+
+		    			
+
+		    .style145 {
+				margin-left: 12px;
+				line-height: 120%;
+				text-align:justify;
+				margin-top:3px;
+				margin-bottom: 0px;
+				font-size: 10pt;
+}
+
+
+		    .style146 {
+				margin-left: 12px;
+				border-style: solid;
+				border-width: 2px;
+				vertical-align: middle;
+}
+
+
+		    .style147 {
+				text-align:justify;
+				vertical-align: middle;
+}
+
+
+		    .style148 {
+				margin-left: 12px;
+				text-align:justify;
+				font-family: Arial, Helvetica, sans-serif;
+				vertical-align: top;
+}
+
+
+		    .style151 {
+				border-style: solid;
+				border-width: 0px;
+}
+
+    
+		    .style155 {
+				border-right-width: 0;
+				border-bottom-width: 0;
+				background-color: #C5E5F5;
+}
+           		      
+            .style166 {
+				text-align: left;
+				font-weight: bold;
+				margin-bottom: 0px;
+				font-size: 18pt;
+				color: #003366;
+				font-family: Arial;
+				line-height: 130%;
+}
+
+		    .style167 {
+				text-align: left;
+				font-weight: bold;
+				margin-bottom: 6px;
+				font-size: 18pt;
+				color: #003366;
+				font-family: Arial;
+				line-height: 130%;
+}
+
+		    .style177 {
+				line-height: 100%;
+				margin-top: 6px;
+				margin-bottom: 0px;
+}
+
+.style179 {
+				line-height: 1.2;
+				margin-bottom: 0px;
+				text-indent: 0;
+				margin-left: 20px;
+				margin-right: 12px;
+				color: #003300;
+				font-size: 12pt;
+				margin-top: 12px;
+}
+
+
+.style181 {
+				line-height: 100%;
+				margin-bottom: 0px;
+				text-indent: 0;
+				margin-left: 8px;
+				color: #003300;
+				margin-top: 4px;
+				text-align: justify;
+
+}
+
+.style182 {
+				line-height: 100%;
+				margin-bottom: 3px;
+				margin-top: 18px;
+				margin-left: 20px;
+				margin-right: 8px;
+				color: #003300;
+				font-size: 12pt;
+}
+
+		    		    		    
+		    
+.style183 {
+	margin-left: 3px;
+	line-height: 110%;
+	text-align: justify;
+	margin-top: 12px;
+	margin-bottom: 0px;
+	font-size: 9pt;
+}
+
+		    		    		    
+		    
+</style>
+		    
+		    
+
+		
+	<!-- legal footer area -->
+	<div class="footer-legal">
+				<div class="footer-legal-content" style="border-top: 1px solid #94C6EF">
+			<div class="footer-legal-gov">
+				<a href="https://www.usa.gov/">
+                <img src="https://www.weather.gov/css/images/usa_gov.png" height="30" width="110" /></a>
+			</div> 
+			
+			<div class="footer-legal-column" style="left: 60px; top: 0px"> 
+   					<a href="https://www.commerce.gov/">US Dept of Commerce</a><br>
+     				<a href="https://www.noaa.gov/">National Oceanic and 
+					Atmospheric Administration</a><br>
+     				<a href="https://www.weather.gov/">National Weather Service</a><br>
+     				<a href="https://www.cpc.ncep.noaa.gov/products/CTB">NOAA Climate Test Bed</a><br>
+     				<a href="mailto:Jiayu.Zhou@noaa.gov">Web Contact: NWS OSTI Climate</a>     			
+   			</div> 
+ 			
+ 			<div class="footer-legal-column2">
+ 				<a href="https://www.weather.gov/disclaimer">Disclaimer</a><br>
+   				<a href="https://www.cio.noaa.gov/services_programs/info_quality.html">
+				Information Quality</a><br>
+   				<a href="https://www.weather.gov/help">Help</a>
+   				
+   			</div>
+
+   			<div class="footer-legal-column3">
+   				<a href="https://www.weather.gov/privacy">Privacy Policy</a><br>
+  				<a href="https://www.noaa.gov/foia-freedom-of-information-act">Freedom of Information 
+				Act (FOIA)</a>
+ 			</div>
+ 		</div>
+	
+</div><!-- end of <div class="footer-legal"> -->
+
+
+</body></html>

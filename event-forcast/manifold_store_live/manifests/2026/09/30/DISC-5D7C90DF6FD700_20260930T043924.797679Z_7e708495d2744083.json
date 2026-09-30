@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-5D7C90DF6FD700",
+  "provider": "NOAA/NCEI",
+  "dataset": "certification",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:24.797679Z",
+  "request_url": "https://www.ncei.noaa.gov/certification",
+  "final_url": "https://www.ncei.noaa.gov/services/certification",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 36874,
+  "sha256": "7e708495d2744083a83d1860e6210de92426204586392f4c0c3f9ff93b13b9e8",
+  "etag": "\"1790715461-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 20:57:41 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-5D7C90DF6FD700\\20260930T043924.797679Z_7e708495d2744083.html",
+  "parent_id": "DISC-36AF1EC44F4269",
+  "discovery_depth": 2
+}

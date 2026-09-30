@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-A347DB7373A9C0",
+  "provider": "OpenWeather",
+  "dataset": "instagram-logo.svg",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:29.232575Z",
+  "request_url": "https://openweathermap.org/payload/api/media/file/instagram-logo.svg",
+  "final_url": "https://openweathermap.org/payload/api/media/file/instagram-logo.svg",
+  "status_code": 200,
+  "content_type": "image/svg+xml",
+  "byte_length": 2556,
+  "sha256": "70d3876a58b9c4dcf1400aa2d690d12285d3cf32b2a96ecadaba6eaabec2173e",
+  "etag": "\"6a74cf9906c986f8b1203f8a\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A347DB7373A9C0\\20260930T040429.232575Z_70d3876a58b9c4dc.svg",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

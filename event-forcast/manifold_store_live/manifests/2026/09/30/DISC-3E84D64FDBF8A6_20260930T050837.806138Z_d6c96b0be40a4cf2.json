@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-3E84D64FDBF8A6",
+  "provider": "NOAA/NSSL",
+  "dataset": "RadarAccumulationQualityIndex_72H",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:37.806138Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/RadarAccumulationQualityIndex_72H/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/RadarAccumulationQualityIndex_72H/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 6780,
+  "sha256": "d6c96b0be40a4cf2acac38d8cb45e6bb6d5b2db33892b4718d3025b2a6456fba",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-3E84D64FDBF8A6\\20260930T050837.806138Z_d6c96b0be40a4cf2.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

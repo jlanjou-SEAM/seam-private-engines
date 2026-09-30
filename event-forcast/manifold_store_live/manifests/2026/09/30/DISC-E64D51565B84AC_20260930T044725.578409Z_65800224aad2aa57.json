@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-E64D51565B84AC",
+  "provider": "NOAA/NCEI",
+  "dataset": "1823",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:25.578409Z",
+  "request_url": "https://www.ncei.noaa.gov/node/1823",
+  "final_url": "https://www.ncei.noaa.gov/about/our-impact/fishing-forecast-services",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 29720,
+  "sha256": "65800224aad2aa57d97fe58a99dbacdb49adc8312e2e9c5a92a2815be575fe14",
+  "etag": "\"1790724104-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 23:21:44 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E64D51565B84AC\\20260930T044725.578409Z_65800224aad2aa57.html",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

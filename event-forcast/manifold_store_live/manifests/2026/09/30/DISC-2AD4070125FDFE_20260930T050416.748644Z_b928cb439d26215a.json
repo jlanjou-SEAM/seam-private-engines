@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-2AD4070125FDFE",
+  "provider": "NOAA/NDBC",
+  "dataset": "GBTF1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:04:16.748644Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/GBTF1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/GBTF1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 73414,
+  "sha256": "b928cb439d26215acd847cdb0dd16805cb43966fcc0acb426d801c004f12d94c",
+  "etag": "\"11ec6-65cac2d405501\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-2AD4070125FDFE\\20260930T050416.748644Z_b928cb439d26215a.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

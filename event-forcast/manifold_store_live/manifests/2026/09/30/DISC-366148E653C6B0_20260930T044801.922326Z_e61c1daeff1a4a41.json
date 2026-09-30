@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-366148E653C6B0",
+  "provider": "NOAA/NCEI",
+  "dataset": "swdi",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:01.922326Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/swdi/",
+  "final_url": "https://www.ncei.noaa.gov/maps/swdi/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 12343,
+  "sha256": "e61c1daeff1a4a414f5d76ab5e2af8fad08217419e2e38f440446e29fcde0b33",
+  "etag": "\"2f9b-63ce0eb66fd00\"",
+  "last_modified": "Thu, 21 Aug 2025 14:29:40 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-366148E653C6B0\\20260930T044801.922326Z_e61c1daeff1a4a41.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

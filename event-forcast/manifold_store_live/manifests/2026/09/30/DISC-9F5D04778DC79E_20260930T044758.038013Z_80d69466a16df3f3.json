@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-9F5D04778DC79E",
+  "provider": "NOAA/NCEI",
+  "dataset": "gulf-data-atlas",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:58.038013Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/gulf-data-atlas/",
+  "final_url": "https://www.ncei.noaa.gov/maps/gulf-data-atlas/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 152,
+  "sha256": "80d69466a16df3f32cd230bc1991003bce7bf5bc96e022bf25d65ac54420db61",
+  "etag": "\"98-63c5901aaf180\"",
+  "last_modified": "Thu, 14 Aug 2025 20:20:38 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-9F5D04778DC79E\\20260930T044758.038013Z_80d69466a16df3f3.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

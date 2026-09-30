@@ -1,0 +1,129 @@
+{
+  "key": "rain_snow",
+  "name": "大雨・台風",
+  "enName": "Heavy Rain/Typhoon",
+  "allow": {
+    "test": true,
+    "develop": true,
+    "bosai": true
+  },
+  "contents": {
+    "japan": [
+      {
+        "position": "L",
+        "order": "1",
+        "name": "radar"
+      },
+      {
+        "position": "R",
+        "order": "2",
+        "name": "kaikotan"
+      },
+      {
+        "position": "L",
+        "order": "3",
+        "name": "amedas",
+        "drawinfo": "amedas!precipitation1h"
+      },
+      {
+        "position": "R",
+        "order": "4",
+        "name": "typhoon"
+      }
+    ],
+    "offices": [
+      {
+        "position": "L",
+        "order": "1",
+        "name": "panel"
+      },
+      {
+        "position": "L",
+        "order": "2",
+        "name": "warning_timeline"
+      },
+      {
+        "position": "L",
+        "order": "3",
+        "name": "probability"
+      },
+      {
+        "position": "L",
+        "order": "4",
+        "name": "information"
+      },
+      {
+        "position": "L",
+        "order": "5",
+        "name": "flood"
+      },
+      {
+        "position": "L",
+        "order": "6",
+        "name": "forecaster_comment"
+      },
+      {
+        "position": "R",
+        "order": "7",
+        "name": "radar"
+      },
+      {
+        "position": "R",
+        "order": "8",
+        "name": "typhoon"
+      },
+      {
+        "position": "R",
+        "order": "9",
+        "name": "amedas"
+      }
+    ],
+    "class20s": [
+      {
+        "position": "L",
+        "order": "1",
+        "name": "panel"
+      },
+      {
+        "position": "L",
+        "order": "2",
+        "name": "warning_timeline"
+      },
+      {
+        "position": "L",
+        "order": "3",
+        "name": "probability"
+      },
+      {
+        "position": "L",
+        "order": "4",
+        "name": "information"
+      },
+      {
+        "position": "L",
+        "order": "5",
+        "name": "flood"
+      },
+      {
+        "position": "L",
+        "order": "6",
+        "name": "forecaster_comment"
+      },
+      {
+        "position": "R",
+        "order": "7",
+        "name": "radar"
+      },
+      {
+        "position": "R",
+        "order": "8",
+        "name": "typhoon"
+      },
+      {
+        "position": "L",
+        "order": "9",
+        "name": "amedas_table"
+      }
+    ]
+  }
+}

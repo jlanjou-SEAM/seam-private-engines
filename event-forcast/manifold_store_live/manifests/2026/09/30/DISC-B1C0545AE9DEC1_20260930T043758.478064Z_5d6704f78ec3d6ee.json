@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-B1C0545AE9DEC1",
+  "provider": "NOAA/NSSL",
+  "dataset": "BrightBandTopHeight",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:58.478064Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/BrightBandTopHeight/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/BrightBandTopHeight/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 170460,
+  "sha256": "5d6704f78ec3d6eee2a144ce0c1d6ce13fc04d0eaea677f3a4842a2850f6b93b",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-B1C0545AE9DEC1\\20260930T043758.478064Z_5d6704f78ec3d6ee.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

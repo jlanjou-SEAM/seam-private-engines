@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-676AA3BCCE20BA",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "director-of-national-center-of-meteorology",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:34.909155Z",
+  "request_url": "https://www.ncm.gov.ae/pages/director-of-national-center-of-meteorology?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/director-of-national-center-of-meteorology?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43723,
+  "sha256": "daced3442219fb54bbd79c911d260e583e2d1f494efdc27d24046fd54bbcb96e",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-676AA3BCCE20BA\\20260930T041034.909155Z_daced3442219fb54.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

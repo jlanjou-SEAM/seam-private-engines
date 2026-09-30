@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F927309477FEA5",
+  "provider": "NOAA/NDBC",
+  "dataset": "ASBO1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:51.795044Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/ASBO1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/ASBO1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 598216,
+  "sha256": "ddc570700d245f2fd8882dcfa6d0f9ca31c6f6870a2fa3e148e31cfe2bb0134f",
+  "etag": "\"920c8-65cab7a3cd540\"",
+  "last_modified": "Wed, 30 Sep 2026 04:10:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-F927309477FEA5\\20260930T043351.795044Z_ddc570700d245f2f.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

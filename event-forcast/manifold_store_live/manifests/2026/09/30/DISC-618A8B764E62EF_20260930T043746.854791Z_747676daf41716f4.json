@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-618A8B764E62EF",
+  "provider": "NOAA/NCEP",
+  "dataset": "relativistic-electron-forecast-model",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:46.854791Z",
+  "request_url": "https://www.spaceweather.gov/products/relativistic-electron-forecast-model",
+  "final_url": "https://www.spaceweather.gov/products/relativistic-electron-forecast-model",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 73134,
+  "sha256": "747676daf41716f48ee45f77c015b3962a5c3c7f85785431390b4dfddf2d8a71",
+  "etag": "\"1790733668\"",
+  "last_modified": "Wed, 30 Sep 2026 02:01:08 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-618A8B764E62EF\\20260930T043746.854791Z_747676daf41716f4.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

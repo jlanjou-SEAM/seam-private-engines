@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-E6AFBAA00C04A2",
+  "provider": "NOAA/NCEI",
+  "dataset": "collections",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:14.767464Z",
+  "request_url": "https://data.noaa.gov/onestop/collections?q=%2Bnwlon%20%2Bports",
+  "final_url": "https://data.noaa.gov/onestop/collections?q=%2Bnwlon%20%2Bports",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 407,
+  "sha256": "f36cf42fe7ee3500f7bac5a81562cf21aed171e438a178b4bf36ddc43230b528",
+  "etag": "\"fb-65695712aa540\"",
+  "last_modified": "Tue, 14 Jul 2026 17:21:49 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\DISC-E6AFBAA00C04A2\\20260929T051814.767464Z_f36cf42fe7ee3500.html",
+  "parent_id": "NOAA-NCEI",
+  "discovery_depth": 1
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-7336524C7FCE60",
+  "provider": "NOAA/NCEI",
+  "dataset": "frequently-asked-questions",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:16.936908Z",
+  "request_url": "https://www.ncei.noaa.gov/data-submission/frequently-asked-questions",
+  "final_url": "https://www.ncei.noaa.gov/data-submission/frequently-asked-questions",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 37748,
+  "sha256": "61641c89a7468b9049be4c91b079dad90c6dcb71693c5c892bd372d1f1f957fb",
+  "etag": "\"1790715992-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:06:32 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7336524C7FCE60\\20260930T043916.936908Z_61641c89a7468b90.html",
+  "parent_id": "DISC-1E2CA270F9BA9D",
+  "discovery_depth": 2
+}

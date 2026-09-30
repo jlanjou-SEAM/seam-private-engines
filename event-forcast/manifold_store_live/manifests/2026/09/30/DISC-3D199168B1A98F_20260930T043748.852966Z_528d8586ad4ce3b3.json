@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-3D199168B1A98F",
+  "provider": "NOAA/NCEP",
+  "dataset": "ace-real-time-solar-wind",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:48.852966Z",
+  "request_url": "https://www.spaceweather.gov/products/ace-real-time-solar-wind",
+  "final_url": "https://www.spaceweather.gov/products/ace-real-time-solar-wind",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 90178,
+  "sha256": "528d8586ad4ce3b3ff383739adc67cf7a6d02d20241828e2b365041c5e564230",
+  "etag": "\"1790733726\"",
+  "last_modified": "Wed, 30 Sep 2026 02:02:06 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-3D199168B1A98F\\20260930T043748.852966Z_528d8586ad4ce3b3.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

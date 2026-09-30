@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-1395A94A75C359",
+  "provider": "NOAA/NCEI",
+  "dataset": "Karen%20Grissom.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:45.938959Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2026-04/Karen%20Grissom.png",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2026-04/Karen%20Grissom.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 384765,
+  "sha256": "48729f5b7cdceaf2e4b20fec4ac079406052fceec76d48afc3c9466c04437940",
+  "etag": null,
+  "last_modified": "Mon, 27 Apr 2026 14:25:25 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-1395A94A75C359\\20260930T044645.938959Z_48729f5b7cdceaf2.png",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

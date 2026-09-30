@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-B52DDF1019FA14",
+  "provider": "NOAA/NCEP",
+  "dataset": "gdas.20260928",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T05:09:15.531469Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/obsproc/prod/gdas.20260928/",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/obsproc/prod/gdas.20260928/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 19648,
+  "sha256": "f1edbb4f06293ede1c7ce3464619b5c46d8c828f8613eb207ec9eca5c9c25878",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-B52DDF1019FA14\\20260930T050915.531469Z_f1edbb4f06293ede.20260928",
+  "parent_id": "DISC-20AD72E9BF4668",
+  "discovery_depth": 2
+}

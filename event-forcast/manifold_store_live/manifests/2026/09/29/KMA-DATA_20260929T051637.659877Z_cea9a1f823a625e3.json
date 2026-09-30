@@ -1,0 +1,23 @@
+{
+  "candidate_id": "KMA-DATA",
+  "provider": "Korea Meteorological Administration",
+  "dataset": "KMA data portal",
+  "sector": "public",
+  "country": "KR",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-29T05:16:37.659877Z",
+  "request_url": "https://data.kma.go.kr/",
+  "final_url": "https://data.kma.go.kr/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 508,
+  "sha256": "cea9a1f823a625e3ec2e58d46917cb94d60515688e2c6114cc7b4e39ad55fb13",
+  "etag": null,
+  "last_modified": "Tue, 29 Nov 2022 04:38:56 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\KMA-DATA\\20260929T051637.659877Z_cea9a1f823a625e3.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-DE5D65DA7C7918",
+  "provider": "NOAA/NCEP",
+  "dataset": "psurge",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:20:48.585875Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/psurge/",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/psurge/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 2197,
+  "sha256": "84f1b0b4d3b7f5753b83724848c143617e791edec4d5007607be4aa829f760b3",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-DE5D65DA7C7918\\20260930T042048.585875Z_84f1b0b4d3b7f575.html",
+  "parent_id": "DISC-A50F57E95E161E",
+  "discovery_depth": 2
+}

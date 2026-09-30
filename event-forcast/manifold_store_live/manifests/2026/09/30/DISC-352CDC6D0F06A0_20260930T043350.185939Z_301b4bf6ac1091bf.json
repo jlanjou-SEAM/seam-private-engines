@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-352CDC6D0F06A0",
+  "provider": "NOAA/NDBC",
+  "dataset": "MEYC1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:50.185939Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/MEYC1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/MEYC1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1014824,
+  "sha256": "301b4bf6ac1091bf0bb941c79d10fc2ee645224f81a038825485d0542b0ff55f",
+  "etag": "\"f7c28-65cab685a2a46\"",
+  "last_modified": "Wed, 30 Sep 2026 04:05:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-352CDC6D0F06A0\\20260930T043350.185939Z_301b4bf6ac1091bf.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

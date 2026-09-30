@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-9D8F5CF426323D",
+  "provider": "OpenWeather",
+  "dataset": "forecast30",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:30.622626Z",
+  "request_url": "https://openweathermap.org/api/forecast30",
+  "final_url": "https://openweathermap.org/api/forecast30",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 494369,
+  "sha256": "0198a13817a4626271144177960bf4d24896dc5da6f035a25a11afb9bcd2644f",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-9D8F5CF426323D\\20260930T040430.622626Z_0198a13817a46262.html",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

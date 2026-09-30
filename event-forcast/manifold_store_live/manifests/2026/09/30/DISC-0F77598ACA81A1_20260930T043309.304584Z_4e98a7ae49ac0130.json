@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-0F77598ACA81A1",
+  "provider": "NOAA/NDBC",
+  "dataset": "OSGN6.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:33:09.304584Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/OSGN6.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/OSGN6.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1013978,
+  "sha256": "4e98a7ae49ac013059c70bb969bf94128934e5ab2866f385ad4334fd46629351",
+  "etag": "\"f78da-65cabc1dd7a6d\"",
+  "last_modified": "Wed, 30 Sep 2026 04:30:21 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-0F77598ACA81A1\\20260930T043309.304584Z_4e98a7ae49ac0130.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A665C9C61151BD",
+  "provider": "NOAA/NCEP",
+  "dataset": "goes-electron-flux",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:47.549940Z",
+  "request_url": "https://www.spaceweather.gov/products/goes-electron-flux",
+  "final_url": "https://www.spaceweather.gov/products/goes-electron-flux",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 72597,
+  "sha256": "2c67ae8d3b79cda4305dff128142fff4112291c75a6cfa7b1d3d9f1babec8d9c",
+  "etag": "\"1790733852\"",
+  "last_modified": "Wed, 30 Sep 2026 02:04:12 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A665C9C61151BD\\20260930T043747.549940Z_2c67ae8d3b79cda4.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

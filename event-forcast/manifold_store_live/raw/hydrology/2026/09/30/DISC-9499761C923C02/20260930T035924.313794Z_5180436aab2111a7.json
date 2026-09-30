@@ -1,0 +1,164 @@
+{
+    "@context":"https://schema.org/docs/jsonldcontext.jsonld",
+    "@type":"DataCatalog",
+    "@id":"https://api.waterdata.usgs.gov/",
+    "url":"https://api.waterdata.usgs.gov/",
+    "name":"USGS Water Data APIs",
+    "description":"The United States Geological Survey (USGS) collects water data at monitoring locations across the United States using both automated sensors and manual data collection. These APIs provide access to that data, alongside metadata about data collections and monitoring locations, in standardized machine-readable formats.\n",
+    "keywords":[
+        "geospatial",
+        "data",
+        "api",
+        "hydrology",
+        "USGS"
+    ],
+    "termsOfService":"https://creativecommons.org/publicdomain/zero/1.0/",
+    "license":"https://creativecommons.org/publicdomain/zero/1.0/",
+    "provider":{
+        "@type":"Organization",
+        "name":"US Geological Survey - Water Data for the Nation",
+        "url":"https://waterdata.usgs.gov",
+        "address":{
+            "@type":"PostalAddress",
+            "streetAddress":null,
+            "postalCode":null,
+            "addressLocality":null,
+            "addressRegion":null,
+            "addressCountry":null
+        },
+        "contactPoint":{
+            "@type":"Contactpoint",
+            "email":"wdfn@usgs.gov",
+            "telephone":null,
+            "faxNumber":null,
+            "url":"https://waterdata.usgs.gov/questions-comments/?referrerUrl=https://api.waterdata.usgs.gov",
+            "hoursAvailable":{
+                "opens":null,
+                "description":null
+            },
+            "contactType":"pointOfContact",
+            "description":null
+        }
+    },
+    "dataset":{
+        "@type":"Dataset",
+        "@id":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous",
+        "name":"Continuous values",
+        "description":"Continuous data are collected via automated sensors installed at a monitoring location. They are collected at a high frequency and often at a fixed 15-minute interval. Depending on the specific monitoring location, the data may be transmitted automatically via telemetry and be available on WDFN within minutes of collection, while other times the delivery of data may be delayed if the monitoring location does not have the capacity to automatically transmit data. Continuous data are described by parameter name and parameter code (pcode). These data might also be referred to as \"instantaneous values\" or \"IV\".\n",
+        "license":"https://creativecommons.org/publicdomain/zero/1.0/",
+        "keywords":[
+            "data",
+            "automated",
+            "subhourly",
+            "measured",
+            "computed",
+            "current",
+            "single location",
+            "features"
+        ],
+        "spatial":[
+            {
+                "@type":"Place",
+                "geo":{
+                    "@type":"GeoShape",
+                    "box":"-180,-90 180,90"
+                }
+            }
+        ],
+        "temporalCoverage":"None/None",
+        "url":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous",
+        "distribution":[
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1?f=json",
+                "encodingFormat":"application/json",
+                "description":"The landing page of this server as JSON",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1?f=html",
+                "encodingFormat":"text/html",
+                "description":"The landing page of this server as HTML",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous?f=json",
+                "encodingFormat":"application/json",
+                "description":"This document as JSON",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous?f=jsonld",
+                "encodingFormat":"application/ld+json",
+                "description":"This document as RDF (JSON-LD)",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous?f=html",
+                "encodingFormat":"text/html",
+                "description":"This document as HTML",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/schema?f=json",
+                "encodingFormat":"application/schema+json",
+                "description":"Schema of collection in JSON",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/schema?f=html",
+                "encodingFormat":"text/html",
+                "description":"Schema of collection in HTML",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/queryables?f=json",
+                "encodingFormat":"application/schema+json",
+                "description":"Queryables for this collection as JSON",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/queryables?f=html",
+                "encodingFormat":"text/html",
+                "description":"Queryables for this collection as HTML",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json",
+                "encodingFormat":"application/geo+json",
+                "description":"Items as GeoJSON",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=jsonld",
+                "encodingFormat":"application/ld+json",
+                "description":"Items as RDF (GeoJSON-LD)",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=html",
+                "encodingFormat":"text/html",
+                "description":"Items as HTML",
+                "inLanguage":"en-US"
+            },
+            {
+                "@type":"DataDownload",
+                "contentURL":"https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=csv",
+                "encodingFormat":"text/csv; charset=utf-8",
+                "description":"Items as CSV",
+                "inLanguage":"en-US"
+            }
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-3639B1F8EF0DD8",
+  "provider": "Iowa State University",
+  "dataset": "stations.py",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:24.023182Z",
+  "request_url": "https://mesonet.agron.iastate.edu/json/stations.py?help",
+  "final_url": "https://mesonet.agron.iastate.edu/json/stations.py?help",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 24072,
+  "sha256": "6ae0c54f10e34ad8043467f42dcd709ebb35e3379163361ed38302f812c15299",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-3639B1F8EF0DD8\\20260930T040424.023182Z_6ae0c54f10e34ad8.py",
+  "parent_id": "IEM-API",
+  "discovery_depth": 1
+}

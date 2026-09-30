@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-ACC1DBE8F0DEC1",
+  "provider": "NOAA/SWPC",
+  "dataset": "propagated-solar-wind-1-hour.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "geomagnetic"
+  ],
+  "retrieved_utc": "2026-09-29T05:17:31.465125Z",
+  "request_url": "https://services.swpc.noaa.gov/products/geospace/propagated-solar-wind-1-hour.json",
+  "final_url": "https://services.swpc.noaa.gov/products/geospace/propagated-solar-wind-1-hour.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 6696,
+  "sha256": "8c6f5a10d957fe4a2b53eefdbff8b443edafe902f57de8076f89501ad30c743f",
+  "etag": "\"1a28-65c983eb8b757\"",
+  "last_modified": "Tue, 29 Sep 2026 05:13:37 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\29\\DISC-ACC1DBE8F0DEC1\\20260929T051731.465125Z_8c6f5a10d957fe4a.json",
+  "parent_id": "SWPC-GEOSPACE",
+  "discovery_depth": 1
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-143ADEDDCA5C66",
+  "provider": "NOAA/NCEP",
+  "dataset": "seaice_analysis",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T05:00:39.736403Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/seaice_analysis/",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/seaice_analysis/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 2215,
+  "sha256": "62faa69e5ca8c7604b9945e1a60dd94995900d8b5e7a57d040fc5048da6c7cef",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-143ADEDDCA5C66\\20260930T050039.736403Z_62faa69e5ca8c760.html",
+  "parent_id": "DISC-D22BC7D3DC8861",
+  "discovery_depth": 2
+}

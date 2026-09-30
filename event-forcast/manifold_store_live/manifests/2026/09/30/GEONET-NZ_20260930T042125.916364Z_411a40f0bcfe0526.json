@@ -1,0 +1,24 @@
+{
+  "candidate_id": "GEONET-NZ",
+  "provider": "GeoNet",
+  "dataset": "GeoNet API",
+  "sector": "public_research",
+  "country": "NZ",
+  "scientific_regime": [
+    "seismic",
+    "volcanic",
+    "geophysical"
+  ],
+  "retrieved_utc": "2026-09-30T04:21:25.916364Z",
+  "request_url": "https://api.geonet.org.nz/",
+  "final_url": "https://api.geonet.org.nz/",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 129163,
+  "sha256": "411a40f0bcfe0526e2eea1807fb5d407201b7f7f21aa93378dcfa3cd5157eb48",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\seismic\\2026\\09\\30\\GEONET-NZ\\20260930T042125.916364Z_411a40f0bcfe0526.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

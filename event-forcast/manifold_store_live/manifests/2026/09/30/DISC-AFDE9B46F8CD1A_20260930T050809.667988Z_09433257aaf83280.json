@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-AFDE9B46F8CD1A",
+  "provider": "NOAA/NSSL",
+  "dataset": "ALASKA",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:09.667988Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/ALASKA/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/ALASKA/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 17098,
+  "sha256": "09433257aaf83280ac9b4716a11f5b90a243460a6a397378c78da6b7f1d2afab",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-AFDE9B46F8CD1A\\20260930T050809.667988Z_09433257aaf83280.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-3AC8D7A663C83A",
+  "provider": "NOAA/NCEP",
+  "dataset": "ncep.list.nomads-ftpprd",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:21.178346Z",
+  "request_url": "https://www.lstsrv.ncep.noaa.gov/mailman/listinfo/ncep.list.nomads-ftpprd",
+  "final_url": "https://www.lstsrv.ncep.noaa.gov/mailman/listinfo/ncep.list.nomads-ftpprd",
+  "status_code": 200,
+  "content_type": "text/html; charset=us-ascii",
+  "byte_length": 6579,
+  "sha256": "2dc757553acc21652185151523e616f08a82f3d93781b1b27cd0fae8840ea1cb",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-3AC8D7A663C83A\\20260930T043721.178346Z_2dc757553acc2165.html",
+  "parent_id": "DISC-D942EE6B440543",
+  "discovery_depth": 2
+}

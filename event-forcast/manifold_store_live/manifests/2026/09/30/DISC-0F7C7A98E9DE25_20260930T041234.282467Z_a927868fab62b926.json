@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-0F7C7A98E9DE25",
+  "provider": "NOAA/NDBC",
+  "dataset": "TAQT2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:12:34.282467Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/TAQT2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/TAQT2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1014260,
+  "sha256": "a927868fab62b9269f55e1ca9c3da81c43176482ed6d315a3253a2aebdec5de5",
+  "etag": "\"f79f4-65cab685f3351\"",
+  "last_modified": "Wed, 30 Sep 2026 04:05:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-0F7C7A98E9DE25\\20260930T041234.282467Z_a927868fab62b926.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

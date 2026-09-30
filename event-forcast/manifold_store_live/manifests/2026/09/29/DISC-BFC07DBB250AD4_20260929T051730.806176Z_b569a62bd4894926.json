@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-BFC07DBB250AD4",
+  "provider": "NOAA/SWPC",
+  "dataset": "ovation_aurora_latest.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-29T05:17:30.806176Z",
+  "request_url": "https://services.swpc.noaa.gov/json/ovation_aurora_latest.json",
+  "final_url": "https://services.swpc.noaa.gov/json/ovation_aurora_latest.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 918847,
+  "sha256": "b569a62bd4894926ca9c88229d6c8363a65bd8b3ee032aa4b93b8f60746f9e59",
+  "etag": "\"e053f-65c9847f20279\"",
+  "last_modified": "Tue, 29 Sep 2026 05:16:12 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\29\\DISC-BFC07DBB250AD4\\20260929T051730.806176Z_b569a62bd4894926.json",
+  "parent_id": "SWPC-JSON",
+  "discovery_depth": 1
+}

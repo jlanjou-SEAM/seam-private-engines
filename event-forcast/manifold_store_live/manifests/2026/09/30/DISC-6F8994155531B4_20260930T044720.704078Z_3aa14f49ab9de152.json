@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-6F8994155531B4",
+  "provider": "NOAA/NCEI",
+  "dataset": "billions",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:20.704078Z",
+  "request_url": "https://www.ncei.noaa.gov/access/billions/",
+  "final_url": "https://www.ncei.noaa.gov/access/billions/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 13445,
+  "sha256": "3aa14f49ab9de1525740ad3337ec1486f83f45ef38152012759b354548f1f4e4",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6F8994155531B4\\20260930T044720.704078Z_3aa14f49ab9de152.html",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

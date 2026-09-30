@@ -1,0 +1,23 @@
+{
+  "candidate_id": "UK-METOFFICE",
+  "provider": "UK Met Office",
+  "dataset": "DataHub",
+  "sector": "public",
+  "country": "GB",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:21:25.587650Z",
+  "request_url": "https://datahub.metoffice.gov.uk/",
+  "final_url": "https://datahub.metoffice.gov.uk/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 46259,
+  "sha256": "781e462c7d8d69d705f46e7a6dfd576446d9c4c0295e7d36459a2962a58ff29a",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\UK-METOFFICE\\20260930T042125.587650Z_781e462c7d8d69d7.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

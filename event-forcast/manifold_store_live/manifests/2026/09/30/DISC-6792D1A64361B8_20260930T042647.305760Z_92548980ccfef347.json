@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-6792D1A64361B8",
+  "provider": "Finnish Meteorological Institute",
+  "dataset": "catalog.search",
+  "sector": "public",
+  "country": "FI",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "air_quality"
+  ],
+  "retrieved_utc": "2026-09-30T04:26:47.305760Z",
+  "request_url": "https://www.paikkatietohakemisto.fi/geonetwork/srv/eng/catalog.search",
+  "final_url": "https://www.paikkatietohakemisto.fi/geonetwork/srv/eng/catalog.search",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 15705,
+  "sha256": "92548980ccfef3470062c49588d8448eb8dfbb38e705ea94c5b95f888429a23c",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6792D1A64361B8\\20260930T042647.305760Z_92548980ccfef347.search",
+  "parent_id": "FMI-OPEN",
+  "discovery_depth": 1
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-EDC1CE8A091FCB",
+  "provider": "OpenWeather",
+  "dataset": "telegram-logo.svg",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:29.515620Z",
+  "request_url": "https://openweathermap.org/payload/api/media/file/telegram-logo.svg",
+  "final_url": "https://openweathermap.org/payload/api/media/file/telegram-logo.svg",
+  "status_code": 200,
+  "content_type": "image/svg+xml",
+  "byte_length": 316,
+  "sha256": "dc71fd79fb2d41922151f71c5c15bcae21811385e6279d49196fe90cb576020a",
+  "etag": "\"6a74cf9906c986f8b1203f8e\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-EDC1CE8A091FCB\\20260930T040429.515620Z_dc71fd79fb2d4192.svg",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

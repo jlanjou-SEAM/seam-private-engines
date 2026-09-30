@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-88A1658C290486",
+  "provider": "OpenWeather",
+  "dataset": "stations",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:29.113517Z",
+  "request_url": "https://openweathermap.org/stations",
+  "final_url": "https://openweathermap.org/api/stations",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 348784,
+  "sha256": "b87988e992ddc3846a88482f4352ede3fdb1560baa5682cf341dd259b26e1019",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-88A1658C290486\\20260930T040429.113517Z_b87988e992ddc384.html",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C1BD6E2DA16DB6",
+  "provider": "Met Éireann",
+  "dataset": "manifest.json",
+  "sector": "public",
+  "country": "IE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:07.279965Z",
+  "request_url": "https://opendata.met.ie/manifest.json",
+  "final_url": "https://opendata.met.ie/manifest.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 474,
+  "sha256": "74a5f7f66c64317989249dfe3c98f72d8858a18d7674b35360b10f45f8832365",
+  "etag": "\"39f451e814ab0577c7e5fc3e1fc2da9b\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C1BD6E2DA16DB6\\20260930T040607.279965Z_74a5f7f66c643179.json",
+  "parent_id": "METIE-OPEN",
+  "discovery_depth": 1
+}

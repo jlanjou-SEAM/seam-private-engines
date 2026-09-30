@@ -1,0 +1,23 @@
+{
+  "candidate_id": "KMD",
+  "provider": "Kenya Meteorological Department",
+  "dataset": "Weather/climate services",
+  "sector": "public",
+  "country": "KE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:51:06.514995Z",
+  "request_url": "https://meteo.go.ke/",
+  "final_url": "https://meteo.go.ke/",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 146824,
+  "sha256": "72620cef16596aabdf37b4209090ebacb27dd98b6348f9d91e87773b34e90f7a",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\KMD\\20260930T045106.514995Z_72620cef16596aab.html",
+  "parent_id": null,
+  "discovery_depth": 0
+}

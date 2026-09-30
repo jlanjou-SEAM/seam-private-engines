@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-0A0BC2582E0939",
+  "provider": "NOAA/NDBC",
+  "dataset": "FPTM4.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:12:12.568244Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/FPTM4.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/FPTM4.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 548678,
+  "sha256": "35a499dea3301845c620227627562c04e234129b4d0c2dee9129e1568a8f0149",
+  "etag": "\"85f46-65cac1bb9a05c\"",
+  "last_modified": "Wed, 30 Sep 2026 04:55:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-0A0BC2582E0939\\20260930T051212.568244Z_35a499dea3301845.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

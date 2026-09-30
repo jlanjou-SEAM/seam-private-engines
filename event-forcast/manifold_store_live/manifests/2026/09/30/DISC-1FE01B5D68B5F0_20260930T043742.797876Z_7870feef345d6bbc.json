@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-1FE01B5D68B5F0",
+  "provider": "NOAA/NCEP",
+  "dataset": "fens_wave.20260928",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:42.797876Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/fnmoc/prod/fens_wave.20260928/",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/fnmoc/prod/fens_wave.20260928/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 2278,
+  "sha256": "7870feef345d6bbce5a53254fec6bec8b41cce21151c1cbc26b006044013ad27",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-1FE01B5D68B5F0\\20260930T043742.797876Z_7870feef345d6bbc.20260928",
+  "parent_id": "DISC-DEC3DBB03E0B9A",
+  "discovery_depth": 2
+}

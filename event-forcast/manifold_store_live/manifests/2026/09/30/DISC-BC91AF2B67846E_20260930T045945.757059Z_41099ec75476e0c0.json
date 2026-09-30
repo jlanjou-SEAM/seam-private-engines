@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-BC91AF2B67846E",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "snow_project.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:59:45.757059Z",
+  "request_url": "https://madis.ncep.noaa.gov/snow_project.shtml",
+  "final_url": "https://madis.ncep.noaa.gov/snow_project.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 33318,
+  "sha256": "41099ec75476e0c00c6fd61ad926f42b6548a29bb7546642279b26271f388c19",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-BC91AF2B67846E\\20260930T045945.757059Z_41099ec75476e0c0.shtml",
+  "parent_id": "DISC-7D6865D58F6D82",
+  "discovery_depth": 2
+}

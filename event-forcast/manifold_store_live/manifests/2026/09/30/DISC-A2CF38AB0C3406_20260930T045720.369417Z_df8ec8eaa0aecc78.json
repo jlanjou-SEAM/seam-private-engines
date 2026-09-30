@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A2CF38AB0C3406",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "job-applications",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:57:20.369417Z",
+  "request_url": "https://www.ncm.gov.ae/pages/job-applications?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/job-applications?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43567,
+  "sha256": "df8ec8eaa0aecc781f4669d7dce5a47c6ea199891ef5aec82b28d16f389da4b7",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A2CF38AB0C3406\\20260930T045720.369417Z_df8ec8eaa0aecc78.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-31FE036D160FB3",
+  "provider": "Environment and Climate Change Canada",
+  "dataset": "items",
+  "sector": "public",
+  "country": "CA",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:54:20.870623Z",
+  "request_url": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items?f=json",
+  "final_url": "https://api.weather.gc.ca/collections/hydrometric-annual-peaks/items?f=json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 323240,
+  "sha256": "285b6869bb0b41890df7d2160216579b7eac1890872513bad47ce94d947de1e8",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-31FE036D160FB3\\20260930T045420.870623Z_285b6869bb0b4189.json",
+  "parent_id": "CANADA-GEOMET-COLLECTIONS",
+  "discovery_depth": 1
+}

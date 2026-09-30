@@ -1,0 +1,83 @@
+/* HOTFIX - Tables Styles - 1/14/2026 - v2 */
+div .table,
+.table {
+  --border: solid 1px hsl(210, 5%, 57%) calc(hsl(210, 5%, 57%) + 35%));
+  --table-head-background-color: hsl(216, 57%, 20%);
+  --table-body-background-color: hsl(210, 5%, 88%);
+  --clr-white: hsl(180, 0%, 100%);
+
+
+  padding-block: 0;
+  margin-block: 0;
+  border-inline: var(--border);
+  border-spacing: 0;
+
+  & thead {
+    & tr {
+
+      & td,
+      & th {
+        text-align: center;
+        font-weight: semi-bold;
+        color: var(--clr-white);
+        text-transform: uppercase;
+        background-color: var(--table-head-background-color);
+      }
+    }
+  }
+
+
+  & tbody {
+    & tr {
+      & td {
+        padding: 1em;
+        border-bottom: var(--border);
+
+
+        & img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+
+
+
+  & tr:nth-child(even) {
+    background-color: var(--clr-white);
+  }
+
+
+  & tr:nth-child(odd) {
+    background-color: var(--table-body-background-color);
+  }
+}
+
+
+@media (max-width: 900px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap; // Crucial for preventing content from wrapping
+    -webkit-overflow-scrolling: touch; // Smooth scrolling on iOS
+  }
+
+
+  // You must now manually set the display for the table's children
+  thead,
+  tbody,
+  tr {
+    display: inline-block; // Allows them to line up horizontally
+  }
+
+
+  // Set a minimum width on cells to prevent them from collapsing
+  th,
+  td {
+    min-width: 150px; // Adjust this value based on your content
+  }
+}
+
+/* END HOTFIX - Tables Styles - 1/14/2026 - v2 */

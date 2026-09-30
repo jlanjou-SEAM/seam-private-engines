@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-9E1001B423776A",
+  "provider": "NOAA/NCEI",
+  "dataset": "global-hourly",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:38.278952Z",
+  "request_url": "https://www.ncei.noaa.gov/data/global-hourly/",
+  "final_url": "https://www.ncei.noaa.gov/data/global-hourly/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 1232,
+  "sha256": "1e3a6a049c549f413956b1558946ae4809ba8e919a1bbe02fc09155b810f7d79",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-9E1001B423776A\\20260930T043938.278952Z_1e3a6a049c549f41.html",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

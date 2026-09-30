@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-10B79FF04954CA",
+  "provider": "NOAA/NCEI",
+  "dataset": "stennis.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:02.945377Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2021-10/stennis.png",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-10/stennis.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 529588,
+  "sha256": "3352149d8f9c73764c4b18408b39571832aebbb680f8c460dc83772ca03731dc",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:35:32 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-10B79FF04954CA\\20260930T044702.945377Z_3352149d8f9c7376.png",
+  "parent_id": "DISC-469667E7F9FB99",
+  "discovery_depth": 2
+}

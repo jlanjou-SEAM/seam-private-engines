@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-6EB1B2F7930BBD",
+  "provider": "NOAA/NCEI",
+  "dataset": "station-histories",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:18.731719Z",
+  "request_url": "https://www.ncei.noaa.gov/products/land-based-station/station-histories",
+  "final_url": "https://www.ncei.noaa.gov/products/land-based-station/station-histories",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 31935,
+  "sha256": "bbbb8fd55e074e52bd413fb2301aa1c294b6806f01814e8782808b2208ec2bb6",
+  "etag": "\"1790716963-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:22:43 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6EB1B2F7930BBD\\20260930T044818.731719Z_bbbb8fd55e074e52.html",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

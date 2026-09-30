@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-461B08E0EC9767",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "omo_precip.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:22:47.659653Z",
+  "request_url": "https://madis.ncep.noaa.gov/omo_precip.shtml",
+  "final_url": "https://madis.ncep.noaa.gov/omo_precip.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 30710,
+  "sha256": "34efb1e6a1a4cc7e7ce92662392426fe21aaec4bf1829e67073acea6e0bf78eb",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-461B08E0EC9767\\20260930T042247.659653Z_34efb1e6a1a4cc7e.shtml",
+  "parent_id": "NOAA-MADIS",
+  "discovery_depth": 1
+}

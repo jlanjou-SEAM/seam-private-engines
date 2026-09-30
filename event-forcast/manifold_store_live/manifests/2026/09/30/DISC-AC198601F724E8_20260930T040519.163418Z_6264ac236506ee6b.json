@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-AC198601F724E8",
+  "provider": "Environment and Climate Change Canada",
+  "dataset": "items",
+  "sector": "public",
+  "country": "CA",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:05:19.163418Z",
+  "request_url": "https://api.weather.gc.ca/collections/marineweather-realtime/items?f=html",
+  "final_url": "https://api.weather.gc.ca/collections/marineweather-realtime/items?f=html",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 216402,
+  "sha256": "6264ac236506ee6b3fc169572ff4b99772db96d525c1980e0c05263dcdb19bee",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-AC198601F724E8\\20260930T040519.163418Z_6264ac236506ee6b.html",
+  "parent_id": "CANADA-GEOMET-COLLECTIONS",
+  "discovery_depth": 1
+}

@@ -1,0 +1,589 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<script src="https://www.weather.gov/source/nws/govshutdown.js" defer></script>
+<head>
+
+  <title>Fast Downloading of GRIB Files</title>
+
+  <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+  <meta content="NCEP Web Team" name="GENERATOR">
+  <meta name="keywords"
+  content="GRIB fast downloading NOMADS Climate,Climate Prediction Center,National Weather Service,National Oceanic &amp; Atmospheric Administration, NOAA,El Nino,La Nina,ENSO,climate outlooks,El Nino Advisory,La Nina Advisory,droughts,hurricanes,Threats Assessment,Drought Assessment,Drought Monitor,CLimate Diagnostics Bulletin,6-10 day outlook,8-14 day outlook, 6-10 day forecast,8-14 day forecast,MRF,UV Index,North Atlantic Oscillation,NAO,Pacific Decadal Oscillation,PDO,sea surface temperatures,SST,Palmer Drought Severity Index, African Desk,outlooks,expert assessments,monitoring,advisories,stratosphere,temperature,precipitation,snow cover,snowfall,soil moisture,OLR,ozone,degree days,CLIMATE,CLIMATE PREDICTION CENTER,EL NINO,LA NINA, CLIMATE OUTLOOKS,HURRICANES,ASSESSMENTS,SNOW,STRATOSPHERE,DROUGHT,OZONE,DEGREE DAYS">
+
+
+  <link href="/nwscwi/main.css" type="text/css" rel="STYLESHEET">
+</head>
+<body leftmargin="0" background="/nwscwi/background.gif" 
+      topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+<table cellspacing="0" cellpadding="0" width="100%" background="/nwscwi/topbanner.jpg" border="0">
+  <tr>
+    <td align="right" height="19">
+      <a href="#contents"><img height="1" alt="Skip Navigation Links"
+         src="/nwscwi/skipgraphic.gif" width="1" border="0"></a>
+      <a href="https://www.nws.noaa.gov/" class="homepagelinks"><span class="nwslink">www.nws.noaa.gov</span></a>&nbsp;</td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+  <tr>
+    <td rowspan="2"><a href="https://www.noaa.gov/">
+      <img height="78" alt="NOAA logo - Click to go to the NOAA home page"
+      src="/nwscwi/noaaleft.jpg" width="85" border="0"></a></td>
+    <td align="left"><img height="20" alt="National Weather Service"
+      src="/nwscwi/nws_title.jpg" width="500" border="0"></td>
+    <td rowspan="2" width="100%" background="/nwscwi/ncep_bkgrnd.jpg">&nbsp;</td>
+    <td rowspan="2" align="right"><a href="https://www.nws.noaa.gov/">
+      <img height="78" alt="NWS logo - Click to go to the NWS home page"
+      src="/nwscwi/nwsright.jpg" width="85" border="0"></a></td>
+  </tr>
+  <tr>
+    <td><img height="58" alt="Climate Prediction Center" src="/nwscwi/cpc.jpg"
+             width="500" border="0"></td>    <!-- Put your center header image here. -->
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" background="/nwscwi/navbkgrnd.gif" border="0">
+  <tr>
+    <td align="left" valign="top" width="94"><img height="23" alt="" src="/nwscwi/navbarleft.jpg" width
+="94" border="0"></td>
+    <td class="nav" align="center" width="15%">
+      <a href="https://www.cpc.ncep.noaa.gov/products/site_index.html" class="menu">Site Map</a></td> <!-- Build a text only sitemap, and link to it via this
+                                                    sitemap button just below the banner.
+                                                    The sitemap should include a heirarchy of links
+                                                    from NOAA, to the NWS, to NCEP, and then through your site. -->
+    <td class="nav" align="right" width="15%">
+      <a href="https://www.nws.noaa.gov/pa/" class="menu">News</a></td>
+    <td class="yellow" align="right" width="20%">
+      <form action="https://www.firstgov.gov/fgsearch/index.jsp" name="query">
+        <label for="search">Search</label>&nbsp;</td>
+    <td align="left" class="searchinput" width="20%" nowrap>
+      <input type="hidden" name="parsed" value="true">
+      <input type="hidden" name="rn" value="3">
+      <input type="hidden" name="in0" value="domain">
+      <input type="hidden" name="dom0" value="nws.noaa.gov, weather.gov, wrh.noaa.gov, srh.noaa.gov, crh.noaa.gov, prh.noaa.gov, arh.noaa.gov, alaska.net/~nwsar, erh.noaa.gov, ncep.noaa.gov, ncep.noaa.gov, spc.noaa.gov, nhc.noaa.gov, sec.noaa.gov, aviationweather.gov, aviationweather.noaa.gov, weather.noaa.gov, roc.noaa.gov, nohrsc.nws.gov, nwstc.noaa.gov, wdtb.noaa.gov, npmoc.navy.mil, ndbc.noaa.gov">
+      <input type="text" name="mw0" value="All NWS Search" id="search" size="20" maxlength="256">
+      <input type="submit" name="Go2" value="Go"></td>
+    <td width="10%">&nbsp;</form></td>
+    <td align="right" valign="bottom" width="24"><img height="23" alt="" src="/nwscwi/navbarendcap.jpg"
+ width="24" border="0"></td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="670" border="0">
+  <tr valign="top">
+    <td width="137"><br>
+      <table cellspacing="0" cellpadding="2" width="137" border="0">
+        <!-- Do not remove this section. You will need this when the City,St/zip search is implemented nationwide.-->
+        <!-- <tr align="left" valign="top">
+                <td class="searchinput">
+                  <div id="Layer2" style="position:absolute; width:200px; height:115px; z-index:2; visibility: hidden">Search by city or zip code. Press enter or select the go button to submit request</div>
+                  <form method="POST" action="https://www.srh.noaa.gov/zipcity.php">
+                  <span class="yellow">Local forecast by<br>&quot;City, St&quot; or Zip Code</span><br>
+                  <input type="text" name="inputstring" size="9" value="City, St">
+                  <input type="submit" name="Go2" value="Go"></form></td>
+        </tr> -->
+        <tr>
+          <td class="searchinput" align="left">
+            <form action="https://www.firstgov.gov/fgsearch/index.jsp" name="query">
+              <input type="hidden" name="parsed" value="true">
+              <input type="hidden" name="rn" value="3">
+              <input type="hidden" name="in0" value="domain">
+              <input type="hidden" name="dom0" value="www.cpc.ncep.noaa.gov"> <!-- Change "center.noaa.gov" to your center's domain -->
+              <span class="yellow">CPC Search</span><br>             <!-- Change "Center" to your center's initials -->
+              <input type="text" name="mw0" id="search"  size="9" maxLength="256" value="CPC search"> <!-- Change "Center" to your center's initials -->
+              <input type="submit" name="Go2" value="Go">
+          </form></td>
+        </tr>
+        <tr>
+          <td class="white">
+            <span class="yellow">About Us</span><br>
+            &nbsp;&nbsp;&nbsp;<a href="https://www.cpc.ncep.noaa.gov/information/who_we_are/mission.html" class="menu">Our Mission</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="https://www.cpc.ncep.noaa.gov/information/who_we_are/" class="menu">Who We Are</a><br><br>
+            <span class="yellow">Contact Us</span><br>
+            &nbsp;&nbsp;&nbsp;<a href="https://www.cpc.ncep.noaa.gov/information/personnel/contacts.html" class="menu">CPC Information</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="https://www.cpc.ncep.noaa.gov/comment-form.html" class="menu">CPC Web Team</a><br><br>           
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td valign="top" align="center" width="533"><a name="contents"></a>
+
+<!-- Begin content area -->
+
+<table border="0" cellPadding="2" cellSpacing="0" align="center" width="533">
+ <tr><td>&nbsp;</td></tr>
+ <tr>
+  <td>
+   <font face="verdana,arial,serif" size="1" color="#000000">
+   <a href="https://www.cpc.ncep.noaa.gov/" class="homepagelinks"><b>HOME</b></a> &gt; 
+   <a href="https://www.cpc.ncep.noaa.gov/products/monitoring_and_data/" class="homepagelinks">Monitoring and Data</a> &gt; 
+   <a href="https://www.cpc.ncep.noaa.gov/products/monitoring_and_data/oadata.html" class="homepagelinks">Oceanic & Atmospheric Data</a> &gt;
+   Meteorlogical Data Servers</font>
+  </td>
+ </tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr>
+  <td align="center">
+
+<!-- Change Banner -->
+
+  </td>
+ </tr>
+ <tr><td>&nbsp;</td></tr>
+
+
+<tr><td align="center">
+
+<table cellspacing="2" cellpadding="2" width="530">
+
+<tr><td align="center">
+<font face="verdana,arial,serif" size="4" color="#000000">
+<b>Fast Downloading of GRIB Files</b></font>
+</td></tr>
+
+<tr><td align="center">
+<font face="verdana,arial,serif" size="4" color="#000000">
+<b> Partial http transfers</b>
+</font>
+</td></tr>
+
+<tr><td>&nbsp;</td></tr>
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>Introduction</b></font>
+</td></tr>
+
+
+<tr><td>
+<p>
+Downloading meteorological data can be a pain.  Servers are under-powered,
+connections are slow and the "bean counters" figure that 800 GB will store
+a trillion spreadsheets so who would want more disk space?  Can't help with
+the last problem but downloading data in GRIB files can be made
+faster. </p>
+
+<p>
+Often people only need a few fields from a GRIB file.  For
+example, the GFS forecasts contain over 600 fields per forecast time.
+Many people are only interested in a few fields such as
+the precipitation or 500 mb heights.  Assuming we only wanted
+two fields, downloading 600+ fields to get two fields is just silly.
+
+</p>
+
+</td></tr>
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>If You are Lucky, it is Simple</b></font>
+</td></tr>
+
+<tr><td>
+<p>
+Some datasets have pre-configured scripts to download the data.
+See <a href="get_gfs.html">Part 2</a> for more information.
+
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>Details</b></font>
+</td></tr>
+
+<tr><td>
+<p>
+The http protocol allows "random access" reading;
+however, that means that we need an index file and a http
+program that supports random access.  For the index file, we
+can modify a <a href="https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2.html">
+wgrib2</a> inventory.  For the random-access http(s) program, we
+can use <a href="https://curl.haxx.se/">cURL</a>.  Both are freely
+available, widely used, work on many platforms and are easily
+scripted/automated/put into a cronjob.
+</p>
+
+
+<p>
+The basic format of the quick download is,
+</p>
+<p>
+&nbsp&nbsp&nbsp;get_inv.pl INV_URL | grep (options) FIELDS | get_grib.pl GRIB_URL OUTPUT<br>
+&nbsp&nbsp<br>
+&nbsp&nbsp&nbsp;INV_URL is the URL of a wgrib/wgrib2 inventory<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;ex. https://nomad3.ncep.noaa.gov/pub/gfs/rotating/gblav.t00z.pgrbf12.inv <br>
+&nbsp&nbsp<br>
+&nbsp&nbsp&nbsp;grep (options) FIELDS selects the desired fields (wgrib compatible)<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;ex. grep -F ":HGT:500 mb:"     selects ":HGT:500 mb"<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;ex. grep -E ":(HGT|TMP):500 mb:"  selects ":HGT:500 mb:" and ":TMP:500 mb:" <br>
+
+&nbsp&nbsp<br>
+&nbsp&nbsp&nbsp;GRIB_URL is the URL of the grib file<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;ex. https://nomad3.ncep.noaa.gov/pub/gfs/rotating/gblav.t00z.pgrbf12 <br>
+
+&nbsp&nbsp<br>
+&nbsp&nbsp&nbsp;OUTPUT is the name of the for the downloaded grib file<br>
+</p>
+<p>
+The "get_inv.pl INV_URL" downloads the wgrib inventory off the net and adds
+a range field.  The "grep FIELDS" uses the grep command to select desired
+fields from the inventory.  Use of the "grep FIELDS" is similar to the
+procedure used when using wgrib/wgrib2 to extract fields.  The "get_grib.pl
+GRIB_URL OUTPUT" uses the filtered inventory to select the fields
+from GRIB_URL to download. The selected fields are saved in OUTPUT.
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>Examples</b></font>
+</td></tr>
+
+<tr><td>
+<font color=blue>
+get_inv.pl https://nomad3.ncep.noaa.gov/pub/gfs/rotating/gblav.t00z.pgrbf12.inv | \ <br>
+grep ":HGT:500 mb:" | \ <br>
+get_grib.pl https://nomad3.ncep.noaa.gov/pub/gfs/rotating/gblav.t00z.pgrbf12 out.grb<br>
+</font>
+
+&nbsp&nbsp<br>
+The above example can be written on one line without the back slashes.  (Back slashes
+are the unix convention indicating the line is continued on the next line.)  The
+example downloads the the 500 mb height from the 12 hour (f12) from the 00Z (t00z)
+GFS fcst from the NCEP NOMAD2 server.  
+
+&nbsp&nbsp<br>
+&nbsp&nbsp<br>
+
+<font color=blue>
+get_inv.pl https://nomad2.ncep.noaa.gov/pub/gfs/rotating/gblav.t00z.pgrbf12.inv | \ <br>
+egrep "(:HGT:500 mb:|:TMP:1000 mb:)" | \ <br>
+get_grib.pl https://nomad2.ncep.noaa.gov/pub/gfs/rotating/gblav.t00z.pgrbf12 out.grb<br>
+</font>
+
+
+&nbsp&nbsp<br>
+The above example is similar to the earlier example except it downloads both the
+500 mb height and the 1000 mb temperature.
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>Warning: Metacharacters</b></font>
+</tr></td>
+<tr><td>
+
+<p> In the beginning, you could filter the inventory with strings like
+<pre>
+  egrep ":(UGRD|VGRD|TMP|HGT):(1000|500|200) mb:"
+  egrep "(:UGRD:200 mb:|:TMP:2 m above ground:)"
+</pre>
+
+First egrep was deprecated and was replaced by "grep -E".  No big deal.
+Then someone decided to put egrep wildcards into the official level information.
+Imagine trying to do 
+
+<pre>
+  grep -E "(:UGRD:200 mb:|:HGT:PV=2e-06 (Km^2/kg/s) surface:)"
+</pre>
+
+You see the problem.  The HGT level field contains "(" and ")".
+To get rid of the special meaning of "(" and ")", they should
+be quote by \( and \). The caret "^" also has a special meaning
+and should be quoted too.  The fixed line is
+
+<pre>
+  grep -E "(:UGRD:200 mb:|:HGT:PV=2e-06 \(Km\^2/kg/s\) surface:)"
+</pre>
+
+You should backquote all the regex metacharacters including 
+
+<pre> 
+\,^,$,.,|,?,*,+,(,),[,],{,}
+</pre>
+
+
+</td></tr>
+
+
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>Sample Script</b></font>
+</tr></td>
+
+<tr><td>
+<p>  Here is an example of downloading a year of R2 data.
+
+<font color=blue>
+<blockquote>
+#!/bin/sh<br>
+# simple script to download 4x daily V winds at 10mb<br>
+# from the R2 archive<br>
+<br>
+set -x<br>
+date=197901<br>
+enddate=197912<br>
+while [ $date -le $enddate ]<br>
+do<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+    url="https://nomad3.ncep.noaa.gov/pub/reanalysis-2/6hr/pgb/pgb.$date"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+    get_inv.pl "${url}.inv" | grep ":VGRD:" | grep ":10 mb" | \<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+    get_grib.pl "${url}" pgb.$date<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+    date=$(($date + 1))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+    if [ $(($date % 100)) -eq 13 ] ; then<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       date=$(($date - 12 + 100));<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+    fi<br>
+done<br>
+</blockquote>
+</font>
+
+
+</tr></td>
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>Requirements</b></font>
+</td></tr>
+<tr><td>
+<ol>
+<li> perl
+<li> grep
+<li> <a href="https://curl.haxx.se/">cURL</a>
+<li> grib files and their wgrib inventory on an http server
+<li> <a href="https://ftp.cpc.ncep.noaa.gov/wd51we/fast_downloading_grib/get_inv.pl">get_inv.pl</a>
+<li> <a href="https://ftp.cpc.ncep.noaa.gov/wd51we/fast_downloading_grib/get_grib.pl">get_grib.pl</a>
+</ol>
+</td></tr>
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>Configuration (UNIX/Linux)</b></font>
+</td></tr>
+<tr><td>
+The first two lines of get_inv.pl and get_grib.pl need to be modified.
+The first line should point to your perl interpreter. The
+second line needs to point to the location of curl if it is not
+on your path.<br><br>
+</td></tr>
+
+
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>Usage: Windows</b></font>
+</td></tr>
+<tr><td>
+<br>
+There have been some reports that the perl scripts didn't work on Windows machines.
+The problem was solved by Alexander Ryan.<br>
+<blockquote>
+Hi Wesley,<br>
+<br>
+thought this might be of some use to your win32 users.<br>
+<br> 
+I had the following problem when running the get_grib.pl file as per your instructions.<br>
+<br> 
+run this<br>
+grep ":UGRD:" < my_inv | get_grib.pl $URL ugrd.grb<br>
+and I would get the error No download! No matching grib fields. on further <br>
+investigation I found that it was just skipping the while STDIN part of the <br>
+code. a few google searches later and I found that for some strange reason in <br>
+the pipe I needed to specify the path or command for perl even though the file <br>
+associations for .pl are set up. (don't fiqure)<br>
+<br> 
+this works for me<br>
+<br> 
+grep ":UGRD:" < my_inv | PERL get_grib.pl $URL ugrd.grb<br>
+<br>
+Regards and thanks for the fine service<br>
+Alexander Ryan<br>
+
+</blockquote>
+<br><br>Another email from Alexander<br><br>
+<blockquote>
+Hi Wesley,<br>
+Further to my last email here are some details regarding the enviorment I run this all on for your referance.
+<br><br> 
+My computer is P4 1.7GHz with 1Gb Ram running Windows 2000 service pack 4<br>
+Perl version :V5.6.1 provided by <a href="https://www.activestate.com">https://www.activestate.com</a><br>
+cUrl Version: 7.15.4 from <a href="https://curl.haxx.se/">https://curl.haxx.se/</a><br>
+grep & egrep: win32 versions of grep and egrep, I found both at 
+<a href="https://unxutils.sourceforge.net">https://unxutils.sourceforge.net</a>
+who provide some useful ports of common GNU utilities to native Win32. (no cygwin required) <br>
+<br> 
+so far this is working fine<br>
+<br>
+Regards Alexander<br>
+<br>
+<br>
+</blockquote>
+<br>
+<p>  Apparently,<br>
+&nbsp<br>
+&nbsp&nbsp&nbsp;get_inv.pl INV_URL | grep FIELDS | perl get_grib.pl URL OUTPUT<br>
+&nbsp<br>
+should work. Linux users probably will gravitate towards the cygwin system because it
+includes bash, an X-server, compilers and the usual unix tools.<br><br>
+
+</td></tr>
+
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>Tips</b></font>
+</td></tr>
+
+<tr><td>
+If you want to download multiple fields, for example, precipitation and 2 meter temperature, you
+can type,
+&nbsp<br>
+&nbsp<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp;URL="https://www.ftp.ncep.noaa.gov/data/nccf/com/gfs/prod/gfs.2006070312/gfs.t12z.pgrb2f00"<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp;get_inv.pl $URL.idx | egrep ':(PRATE|TMP:2 m above gnd):' | get_grib.pl $URL out<br>
+&nbsp<br>
+
+The above code will put the precipiation and 2-m temp in the file out. Of course, egrep understands 
+regular expressions which is a very powerful feature.
+
+<p>
+If you are doing multiple downloads from the same file, you can save time by keeping a local 
+copy of the inventory.  For example,<br>
+&nbsp<br>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp;URL="https://www.ftp.ncep.noaa.gov/data/nccf/com/gfs/prod/gfs.2006070312/gfs.t12z.pgrb2f00"<br>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp;get_inv.pl $URL.idx > my_inv<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp;grep ":UGRD:" < my_inv | get_grib.pl $URL ugrd.grb<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp;grep ":VGRD:" < my_inv | get_grib.pl $URL vgrd.grb<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp;grep ":TMP:" < my_inv | get_grib.pl $URL tmp.grb<br>
+&nbsp<br>
+The above code saves two extra downloads of the inventory.
+
+&nbsp<br>
+<p>
+Some people have slow internet connections.  A user was complaining about bad
+downloads.  Turns out that the user was using a modem and cURL
+was "timing out".  The user solved the problem by adding the following options to 
+the cURL command "-y 30 -Y 30" which are found within get_inv.pl and get_grib.pl.
+The options tell curl to only "time out" when the download rate is less than 30 bytes
+per second for 30 seconds.  Glad I don't have to use a modem.
+</tr></td>
+
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>Notes for Data Providers</b></font>
+</td></tr>
+<tr><td>
+<p>The grib data needs to accessable be on an http server.  Often this is a
+minor change in the httpd configuration.
+</p>
+<p>
+The users will need a wgrib inventory (grib-1) or a wgrib2 inventory 
+(grib-2).  It is convenient if the inventory is in the same directory as the data files 
+and uses the '.inv' suffix convention.  The inventory can be created by,<br>
+&nbsp<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp;<font color=red>GRIB-1:<font color=black> wgrib -s grib_file > grib_file.inv
+&nbsp<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp;<font color=red>GRIB-2:<font color=black> wgrib2 -s grib_file > grib_file.inv
+<br>
+&nbsp;<br>
+</p>
+</td></tr>
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>GRIB-2</b></font>
+</td></tr>
+
+<tr><td>
+<p>
+Grib-2 has been supported since the summer of 2006.
+</td></tr>
+
+
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>Notes</b></font>
+</td></tr>
+
+<tr><td>
+<p>
+In theory, curl allows random access to FTP servers but in practice we
+found this to be slow (each random access is its own FTP session).
+Support for the FTP access was dropped 2/2005 because we want
+data providers to use the faster http protocol.
+</p>
+
+<td></tr>
+
+<tr><td align="center">
+<font face="verdana,arial,serif" color="#000000" size="4">
+<b>Regional Subsetting</b></font>
+</td></tr>
+
+<tr><td>
+<p>
+The need for regional subsetting grows as the grids get finer
+and finer.  With grib2, it may be possible to do regional
+subsetting on the client side but that would be some tricky coding
+if possible. Right now, I am happy with the g2subset software that is
+running on the nomads servers.  This server software is faster
+than the grib1 software (ftp2u/ftp4u) even with the overhead
+of the jpeg2000 decompression.  
+
+</td></tr>
+
+
+
+
+<tr><td>
+<hr>
+</td></tr>
+
+
+<tr><td>
+<font face="verdana,arial,serif" color="#000000" size=-1>
+Created: 1/21/2005, modified 6/2017 information, modified 9/2020 to remove the news about https <br>
+comments: Wesley.Ebisuzaki@noaa.gov</font>
+</td></tr>
+
+</table>
+
+
+<!--  End of Content area  -->
+<!--   ...............................................Footer Portion.........................................    -->
+ <tr>
+  <td>
+   <table width="500">
+    <tr>
+     <td colSpan="3"><hr></td>
+    </tr>
+    <TR vAlign="top">
+     <TD class="gray">
+      <A href="https://www.noaa.gov/" class="homepagelinks"><SPAN class="gray">NOAA/</SPAN></A>
+      <A href="https://www.nws.noaa.gov/" class="homepagelinks"><SPAN class="gray">National Weather Service</SPAN></A><BR>
+      <A href="https://www.ncep.noaa.gov/" class="homepagelinks"><SPAN class="gray">National Centers for Environmental Prediction</SPAN></a><BR>
+        Climate Prediction Center<BR>
+        5830 University Research Court<BR>
+        College Park, Maryland 20740<BR>
+      <A href="https://www.cpc.ncep.noaa.gov/comment-form.html" class="homepagelinks"><SPAN class="gray">Climate Prediction Center Web Team</SPAN></A><BR>
+        Page last modified: November 5, 2002
+     </TD>
+     <TD>
+      <A href="https://www.nws.noaa.gov/disclaimer.html" class="homepagelinks"><SPAN class="gray">Disclaimer</SPAN></A>
+     </TD>
+     <TD align="right">
+      <A href="https://www.noaa.gov/privacy.html" class="homepagelinks"> <SPAN class="gray">Privacy Notice</SPAN></A>
+     </TD>
+    </TR>
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+</tr>
+ </table>
+<p><small><a href="https://www.weather.gov/notice.html">Privacy Policy</a></small></body>
+</html>

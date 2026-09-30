@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-59E70DF58E6F26",
+  "provider": "NOAA/NCEP",
+  "dataset": "info.php",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T05:07:36.042690Z",
+  "request_url": "https://nomads.ncep.noaa.gov/info.php?page=opendap_grib_migration",
+  "final_url": "https://nomads.ncep.noaa.gov/info.php?page=opendap_grib_migration",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 20524,
+  "sha256": "1cec3a342f18cbe61e56deaff3f819522512cfce539ce4da8b7fd829c19d74a2",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-59E70DF58E6F26\\20260930T050736.042690Z_1cec3a342f18cbe6.php",
+  "parent_id": "DISC-D942EE6B440543",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-D67570D052455E",
+  "provider": "Environment and Climate Change Canada",
+  "dataset": "items",
+  "sector": "public",
+  "country": "CA",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:48.726074Z",
+  "request_url": "https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=html",
+  "final_url": "https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=html",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 515296,
+  "sha256": "254f48dddd473e005770d7eb277cc33cb94bd3620ec5b473af393a2ecbfdbd95",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-D67570D052455E\\20260930T040448.726074Z_254f48dddd473e00.html",
+  "parent_id": "CANADA-GEOMET-COLLECTIONS",
+  "discovery_depth": 1
+}

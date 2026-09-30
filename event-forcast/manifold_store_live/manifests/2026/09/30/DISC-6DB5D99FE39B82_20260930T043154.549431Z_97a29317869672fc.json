@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-6DB5D99FE39B82",
+  "provider": "USGS Water Data",
+  "dataset": "coordinate-datum-codes",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:31:54.549431Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/coordinate-datum-codes",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/coordinate-datum-codes",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 4232,
+  "sha256": "97a29317869672fcc85e29895e10175971a7a370a70bb0ec809d9778b85771c2",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\30\\DISC-6DB5D99FE39B82\\20260930T043154.549431Z_97a29317869672fc.json",
+  "parent_id": "DISC-50BE965810B0D9",
+  "discovery_depth": 2
+}

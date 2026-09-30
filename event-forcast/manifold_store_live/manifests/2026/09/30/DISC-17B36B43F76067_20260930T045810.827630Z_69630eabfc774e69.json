@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-17B36B43F76067",
+  "provider": "NOAA/NDBC",
+  "dataset": "SLVM5.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:58:10.827630Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/SLVM5.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/SLVM5.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 608650,
+  "sha256": "69630eabfc774e6984d3999bb55d11f094fab32bd983912e00bad23be240a80f",
+  "etag": "\"9498a-65cac1bbd2e80\"",
+  "last_modified": "Wed, 30 Sep 2026 04:55:29 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-17B36B43F76067\\20260930T045810.827630Z_69630eabfc774e69.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

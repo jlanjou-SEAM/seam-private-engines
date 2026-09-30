@@ -1,0 +1,357 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>CPC - Climate Weather Linkage: Teleconnections</title>
+  <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+  <meta content="NCEP Web Team" name="GENERATOR">
+  <link href="/nwscwi/main.css" type="text/css" rel="STYLESHEET">
+  <script language="Javascript" type="text/javascript">
+   function show_tab(nam)
+   {
+    document.getElementById("TABAAOGFS").style.display= "none";
+    document.getElementById("TABAAOENS").style.display= "none";
+    document.getElementById("TABNAOGFS").style.display= "none";
+    document.getElementById("TABNAOENS").style.display= "none";
+    document.getElementById("TABPNAGFS").style.display= "none";
+    document.getElementById("TABPNAENS").style.display= "none";
+    document.getElementById("TABAOGFS").style.display= "none";
+    document.getElementById("TABAOENS").style.display= "none";
+    document.getElementById(nam).style.display = "block";
+   }
+  </script></head>
+<body leftmargin="0" background="/nwscwi/background.gif" 
+      topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+
+<table cellspacing="0" cellpadding="0" width="100%" border="0" background="/nwscwi/topbanner.jpg" >
+	<tbody>
+		<tr>
+			<td align="right" height="19">
+				<a href="#contents"><img height="1" alt="Skip Navigation Links" src="/nwscwi/skipgraphic.gif" width="1" border="0"></a>
+				<a href="https://www.weather.gov/" class="homepagelinks"><SPAN class="nwslink">www.weather.gov</span></a>&nbsp;
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- -->
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+	<tbody>
+		<tr>
+			<td rowSpan="2"><A href="https://www.noaa.gov/">
+			<img height="78" alt="NOAA logo - Click to go to the NOAA home page" src="/nwscwi/noaaleft.jpg" width="85" border="0"></a></td>
+			<td align="left"><img height="20" alt="National Weather Service" src="/nwscwi/nws_title.jpg" width="500" border="0"></td>
+			<td rowspan="2" width="100%" background="/nwscwi/ncep_bkgrnd.jpg">&nbsp;</td>
+			<td rowspan="2" align="right"><a href="https://www.weather.gov/">
+			<img height="78" alt="NWS logo - Click to go to the NWS home page" src="/nwscwi/nwsright.jpg" width="85" border="0"></a></td>
+		</tr>
+		<tr>
+			<td><img height="58" alt="Climate Prediction Center" src="/nwscwi/cpc.jpg" width="500" border="0"></td>
+		</tr>
+	</tbody>
+</table>
+<!-- -->
+<table cellspacing="0" cellpadding="0" width="100%" background="/nwscwi/navbkgrnd.gif" border="0">
+	<tbody>
+		<tr>
+			<td align="left" width="135"><img height="23" alt="" src="/nwscwi/navbarleft.jpg" width="94" border="0"></td>
+			<td class="nav" align="center" width="10%">
+				<a href="/" class="menu" title="to the climate prediction center home page">home</a>
+			</td>
+			<td class="nav" align="center" width="10%">
+				<a href="/products/site_index.shtml" class="menu" title="to Climate Prediction Center site map">Site Map</a>
+			</td>
+			<td class="nav" align="right" width="10%">
+				<a href="https://www.weather.gov/news/" class="menu" title="to National Weather Service news page">News</a>
+			</td>
+			<td class="nav" align="right" width="19%">
+				<a href="https://www.weather.gov/organization/" class="menu">Organization</a>
+			</td>
+			<td class="searchinput" align="right" width="30%">
+				<form method="get" action="https://search.usa.gov/search" style="margin-bottom:0; margin-top:0;">
+				<label for="Search"><span class="yellow">Search</span>&nbsp;&nbsp;</label>
+				<input type="hidden" name="affiliate" value="weather.gov" />
+				<input type="hidden" name="v:project" value="firstgov" />
+				<input name="query" type="text" value="" size="20" maxlength="256" id="Search" />
+				<input type="submit" value="Go" />
+				</form>
+			</td>
+			<td align="right"><img height="23" alt="" src="/nwscwi/navbarendcap.jpg" width="24" border="0"></td>
+		</tr>
+	</tbody>
+</table>       <!-- Use virtual include, because this should be in a common place within your DocumentRoot. -->
+<table cellspacing="0" cellpadding="0" width="670" border="0">
+  <tr valign="top">
+    <td width="137"><br>
+            <table cellspacing="0" cellpadding="0" width="137" border="0">
+        <!-- Do not remove this section. You will need this when the City,St/zip search is implemented nationwide.-->
+        <!-- <tr align="left" valign="top">
+                <td class="searchinput">
+                  <div id="Layer2" style="position:absolute; width:200px; height:115px; z-index:2; visibility: hidden">Search by city or zip code. Press enter or select the go button to submit request</div>
+                  <form method="POST" action="http://www.srh.noaa.gov/zipcity.php">
+                  <span class="yellow">Local forecast by<br>&quot;City, St&quot; or Zip Code</span><br>
+                  <input type="text" name="inputstring" size="9" value="City, St">
+                  <input type="submit" name="Go2" value="Go"></form></td>
+        </tr> -->
+<!--
+         <tr>
+          <td class="searchinput" align="left">
+           <form method="get" action="http://firstgovsearch.gov/search"
+                 style="margin-bottom:0; margin-top:0;">
+            <label for="Search">
+            <span class="yellow">Search&nbsp;the CPC</span></label>
+            <input type="hidden" name="affiliate" value="ncep.noaa.gov" />
+            <input type="hidden" name="v:sources"
+                  value="firstgov-affiliates-search" />
+            <input type="hidden" name="v:project" value="firstgov" />
+            <input type="hidden" name="query"
+                  value="site:www.cpc.ncep.noaa.gov" />
+            <input name="query" type="text" value="All CPC" size="10" maxlength="256"
+                  id="Search"/>
+            <input type="submit" value="Go"  />
+           </form>
+          </td>
+         </tr>
+-->
+
+         <tr>
+          <td class="searchinput" align="left">
+
+           <form method="get" action="https://search.usa.gov/search"
+                 style="margin-bottom:0; margin-top:0;">
+            <label for="Search">
+            <span class="yellow">Search</span></label>
+            <input type="hidden" name="affiliate" value="ncep.noaa.gov" />
+            <input type="hidden" name="v:sources"
+                  value="firstgov-affiliates-search" />
+            <input type="hidden" name="v:project" value="firstgov" />
+            <input type="hidden" name="query"
+                  value="site:www.cpc.ncep.noaa.gov" />
+            <input name="query" type="text" value="" size="10" maxlength="256"
+                  id="Search"/>
+            <input type="submit" value="Go"  />
+           </form>
+
+          </td>
+         </tr>
+
+
+
+        <tr>
+          <td class="white" id="menuitem">
+
+            <a href="/products/forecasts/" class="menu"><font color="#F0E68C">Climate Outlooks</font></a><br><br>
+
+            <a href="/products/precip/CWlink/MJO/climwx.shtml" class="menu"><span class="yellow">Climate &amp; Weather Link</span></a><br>
+            &nbsp;&nbsp;&nbsp;<a href="/products/precip/CWlink/MJO/enso.shtml"class="menu">El Ni&ntilde;o/La Ni&ntilde;a</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="/products/precip/CWlink/MJO/mjo.shtml"class="menu">MJO</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="/products/precip/CWlink/daily_ao_index/teleconnections.shtml" class="menu">Teleconnections</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/products/precip/CWlink/daily_ao_index/ao.shtml" class="menu">AO</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/products/precip/CWlink/pna/nao.shtml" class="menu">NAO</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/products/precip/CWlink/pna/pna.shtml" class="menu">PNA</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/products/precip/CWlink/daily_ao_index/aao/aao.shtml" class="menu">AAO</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="/products/precip/CWlink/MJO/block.shtml"class="menu">Blocking</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="/products/precip/CWlink/stormtracks/mstrack.shtml"class="menu">Storm Tracks</a><br><br>
+
+<!--  
+            <a href="" class="menu"><font color="#F0E68C">Current Conditions</font></a><br><br>
+            <a href="" class="menu"><font color="#F0E68C">Climatology</font></a><br><br>
+            <a href="" class="menu"><font color="#F0E68C">Global Climate</font></a><br><br> 
+-->
+            <a href="/products/outreach/glossary.shtml" class="menu"><font color="#F0E68C">Climate Glossary</font></a><br><br>
+<!--            
+            <a href="" class="menu"><font color="#F0E68C">Education</font></a><br><br>          
+-->
+            <a href="/products/outreach/" class="menu"><font color="#F0E68C">Outreach</font></a><br><br>
+
+            <span class="yellow">About Us</span><br>
+            &nbsp;&nbsp;&nbsp;<a href="/information/who_we_are/mission.shtml">Our Mission</a><br>
+            &nbsp;&nbsp;&nbsp;<a href="/information/who_we_are/index.shtml">Who We Are</a><br><br>
+
+            <span class="yellow">Contact Us</span><br>
+            &nbsp;&nbsp;&nbsp;<a href="/comment-form.php">Web Team</a><br><br>
+            
+          </td>
+        </tr>
+         <TR><TD>&nbsp;</TD></TR>
+         <TR>
+          <TD class="white" id="menuitem">
+           <a href="https://www.usa.gov/"><img src="/nwscwi/usagov_logo_color_110wb.gif" alt="USA.gov is the U.S. Government's official Web portal to all Federal, state and local government Web resources and services." width="110" height="30" border="0"></a>
+          </TD>
+         </TR>
+      </table>
+   <!-- Use virtual include, because this should be in a common place within your DocumentRoot. -->
+    </td>
+    <td valign="top" align="center" width="533"><a name="contents"></a>
+      <!-- Content area -->
+<table border="0" cellPadding="2" cellSpacing="0" width="533">
+ <tr>
+  <td>
+   <font face="verdana,arial,serif" size="1" color="#000000"><a href="/" class="homepagelinks"><strong>HOME</strong></a> &gt; <a href="/products/precip/CWlink/MJO/climwx.shtml" class="homepagelinks">Climate &amp; Weather Linkage </a> &gt; AAO, NAO, PNA &amp; AO</font>
+  </td>
+ </tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr>
+  <td align="center">
+   <h1>AAO, NAO, PNA &amp; AO</h1>
+  </td>
+ </tr>
+
+ <tr><td>&nbsp;</td></tr>
+ <tr>
+  <td>
+
+   <ul>
+    <li type=square><font face="verdana,arial,serif" size="2" color="#000000"><a href="/products/precip/CWlink/daily_ao_index/aao/aao.shtml">AAO (Antarctic Oscillation)</a></font></li>
+    <li type=square><font face="verdana,arial,serif" size="2" color="#000000"><a href="/products/precip/CWlink/pna/nao.shtml">NAO (North Atlantic Oscillation)</a></font></li>
+    <li type=square><font face="verdana,arial,serif" size="2" color="#000000"><a href="/products/precip/CWlink/pna/pna.shtml">PNA (Pacific-North American Pattern)</a></font></li>
+    <li type=square><font face="verdana,arial,serif" size="2" color="#000000"><a href="/products/precip/CWlink/daily_ao_index/ao.shtml">AO (Arctic Oscillation)</a></font><br><br></li>
+    <li type=square><font face="verdana,arial,serif" size="2" color="#000000"><a href="/products/precip/CWlink/daily_ao_index/history/history.shtml">Archive of Daily Indices</a></font></li>
+    <li type=square><font face="verdana,arial,serif" size="2" color="#000000"><a href="/data/teledoc/telecontents.shtml">Monthly Teleconnection Indices</a></font></li>
+   </ul>
+  </td>
+ </tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+  <td>
+   <table style="border-color: black; border-style: solid; border-width: thin;" width="533">
+    <tr>
+     <td align="justify">
+      <font face="verdana,arial,serif" size="1">Click on product title to go to product page. Move cursor over product parameter name to display the graphic -- click to enlarge.
+       Links to these same products are also available below.</font>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <table border="1" cellPadding="0" cellSpacing="0" width="533">
+       <tr>
+        <td>
+         <table cellspacing="0" cellpadding="0" width="533" border="0" align="center" name="Tabs">
+          <tr>
+           <td class="nav" id="menuitem" align="center" bgcolor="#0A2390" colspan="2" width="49%">
+             <a href="/products/precip/CWlink/daily_ao_index/aao/aao.shtml" title="to AAO page" class="homepagelinks"><font color="#F0E68C">AAO</font></a>
+           </td>
+           <td width="1%">&nbsp;</td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#0A2390" colspan="2" width="49%">
+             <a href="/products/precip/CWlink/pna/nao.shtml" title="to NAO page" class="homepagelinks"><font color="#F0E68C">NAO</font></a>
+           </td>
+          </tr>
+          <tr>
+           <td class="nav" id="menuitem" align="center" bgcolor="#0A2390">
+             <a href="/products/precip/CWlink/daily_ao_index/aao/aao.gfs.fcst.png" OnMouseOver="show_tab('TABAAOGFS')" title="GFS AAO Outlooks graphics" class="homepagelinks">GFS Outlooks</a>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#0A2390">
+             <a href="/products/precip/CWlink/daily_ao_index/aao/aao.gefs.sprd2.png" OnMouseOver="show_tab('TABAAOENS')" title="Ensemble Mean AAO Outlooks graphics" class="homepagelinks">Ensemble Mean Outlooks</a>
+           </td>
+           <td width="1%">&nbsp;</td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#0A2390">
+             <a href="/products/precip/CWlink/pna/nao.gfs.fcst.png" OnMouseOver="show_tab('TABNAOGFS')" title="GFS NAO Outlooks graphics" class="homepagelinks">GFS Outlooks</a>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#0A2390">
+             <a href="/products/precip/CWlink/pna/nao.gefs.sprd2.png" OnMouseOver="show_tab('TABNAOENS')" title="Ensemble Mean NAO Outlooks graphics" class="homepagelinks">Ensemble Mean Outlooks</a>
+            </td>
+          </tr>
+          <tr><td>&nbsp;</td></tr>
+          <tr>
+           <td class="nav" id="menuitem" align="center" bgcolor="#0A2390" colspan="2" width="49%">
+             <a href="/products/precip/CWlink/pna/pna.shtml" title="to PNA page" class="homepagelinks"><font color="#F0E68C">PNA</font></a>
+           </td>
+           <td width="1%">&nbsp;</td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#0A2390" colspan="2" width="49%">
+             <a href="/products/precip/CWlink/daily_ao_index/ao.shtml" title="to AO page" class="homepagelinks"><font color="#F0E68C">AO</font></a>
+           </td>
+          </tr>
+          <tr>
+           <td class="nav" id="menuitem" align="center" bgcolor="#0A2390">
+             <a href="/products/precip/CWlink/pna/pna.gfs.fcst.png" OnMouseOver="show_tab('TABPNAGFS')" title="GFS PNA Outlooks graphics" class="homepagelinks">GFS Outlooks</a>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#0A2390">
+             <a href="/products/precip/CWlink/pna/pna.gefs.sprd2.png" OnMouseOver="show_tab('TABPNAENS')" title="Ensemble Mean PNA Outlooks graphics" class="homepagelinks">Ensemble Mean Outlooks</a>
+           </td>
+           <td width="1%">&nbsp;</td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#0A2390">
+             <a href="/products/precip/CWlink/daily_ao_index/ao.gfs.fcst.png" OnMouseOver="show_tab('TABAOGFS')" title="GFS AO Outlooks graphics" class="homepagelinks">GFS Outlooks</a>
+           </td>
+           <td class="nav" id="menuitem" align="center" bgcolor="#0A2390">
+             <a href="/products/precip/CWlink/daily_ao_index/ao.gefs.sprd2.png" OnMouseOver="show_tab('TABAOENS')" title="Ensemble Mean AO Outlooks graphics" class="homepagelinks">Ensemble Mean Outlooks</a>
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+      </table>
+      <table width="533" cellpadding="0" cellspacing="0" align="center">
+       <tr>
+        <td>
+         <div id="TABAAOGFS" style="display:block;" align="center">
+         <img src="/products/precip/CWlink/daily_ao_index/aao/aao.gfs.fcst.png" alt="GFS AAO Outlooks" style="width:618px;height:auto;">
+         </div>
+         <div id="TABAAOENS" style="display:none;" align="center">
+          <img src="/products/precip/CWlink/daily_ao_index/aao/aao.gefs.sprd2.png" alt="Ensemble Mean AAO Outlooks" style="width:618px;height:auto;">
+         </div>
+         <div id="TABNAOGFS" style="display:none;" align="center">
+          <img src="/products/precip/CWlink/pna/nao.gfs.fcst.png" alt="GFS NAO Outlooks" style="width:618px;height:auto;">
+         </div>
+         <div id="TABNAOENS" style="display:none;" align="center">
+          <img src="/products/precip/CWlink/pna/nao.gefs.sprd2.png" alt="Ensemble Mean NAO Outlooks" style="width:618px;height:auto;">
+         </div>
+         <div id="TABPNAGFS" style="display:none;" align="center">
+          <img src="/products/precip/CWlink/pna/pna.gfs.fcst.png" alt="GFS PNA Outlooks" style="width:618px;height:auto;">
+         </div>
+         <div id="TABPNAENS" style="display:none;" align="center">
+          <img src="/products/precip/CWlink/pna/pna.gefs.sprd2.png" alt="Ensemble Mean PNA Outlooks" style="width:618px;height:auto;">
+         </div>
+         <div id="TABAOGFS" style="display:none;" align="center">
+          <img src="/products/precip/CWlink/daily_ao_index/ao.gfs.fcst.png" alt="GFS AO Outlooks" style="width:618px;height:auto;">
+         </div>
+         <div id="TABAOENS" style="display:none;" align="center">
+          <img src="/products/precip/CWlink/daily_ao_index/ao.gefs.sprd2.png" alt="Ensemble Mean AO Outlooks" style="width:618px;height:auto;">
+         </div>
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<!-- End of Content  -->
+            <!-- This is the body content file of the current sub-directory. -->
+      <table cellspacing="0" cellpadding="0" width="99%" border="0">
+	<tbody>
+		<tr>
+			<td colspan="3"><hr></td>
+		</tr>
+		<tr valign="top">
+			<td class="gray">
+				<a href="http://www.noaa.gov/" class="homepagelinks"><span class="gray">NOAA/</span></a>
+				<a href="http://www.nws.noaa.gov/" class="homepagelinks"><span class="gray">National Weather Service</span></a><br>
+				<a href="http://www.ncep.noaa.gov/" class="homepagelinks"><span class="gray">NOAA Center for Weather and Climate Prediction </span></a><br>
+				Climate Prediction Center<br>
+				5830 University Research Court <br>
+				Riverdale Park, MD 20737 <br>
+				Page Author:<a href="/comment-form.html" class="homepagelinks"><span class="gray"> Climate Prediction Center Internet Team</span></a><br>
+   <!-- Use virtual include, because this should be in a common place within your DocumentRoot. -->
+       Page last modified: January 26, 2012
+      			</td>
+			<td>
+				<a href="http://www.weather.gov/disclaimer.php" class="homepagelinks"><span class="gray">Disclaimer</span></a><br>
+				<a href="http://www.cio.noaa.gov/Policy_Programs/info_quality.html" class="homepagelinks"><span class="gray">Information Quality</span></a><br>
+				<a href="http://www.nws.noaa.gov/credits.php" class="homepagelinks"><span class="gray">Credits</span></a><br>
+				<a href="http://www.nws.noaa.gov/glossary/" class="homepagelinks"><span class="gray">Glossary</span></a><br>
+			</td>
+			<td align="right">
+				<a href="http://www.weather.gov/privacy.php" class="homepagelinks"><span class="gray">Privacy Policy</span></a><br>
+				<a href="http://www.rdc.noaa.gov/%7Efoia/" class="homepagelinks"><span class="gray">Freedom of Information Act (FOIA)</span></a><br>
+				<a href="http://www.nws.noaa.gov/admin.php" class="homepagelinks"><span class="gray">About Us</span></a><br>
+				<a href="http://www.nws.noaa.gov/careers.php" class="homepagelinks"><span class="gray">Career Opportunities</span></a><br>
+			</td>
+		</tr>
+	</tbody>
+</table>
+   <!-- Use virtual include, because this should be in a common place within your DocumentRoot. -->
+    </td>
+  </tr> 
+</table>
+</body>
+</html>

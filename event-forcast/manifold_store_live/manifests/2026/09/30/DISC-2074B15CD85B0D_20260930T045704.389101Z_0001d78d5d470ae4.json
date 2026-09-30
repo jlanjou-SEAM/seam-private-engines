@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-2074B15CD85B0D",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "aviation-forecast-section",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:57:04.389101Z",
+  "request_url": "https://www.ncm.gov.ae/pages/aviation-forecast-section?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/aviation-forecast-section?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43621,
+  "sha256": "0001d78d5d470ae4818b1922dbed3d04f9261e04f952799f0ed5aa2969baab2f",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2074B15CD85B0D\\20260930T045704.389101Z_0001d78d5d470ae4.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

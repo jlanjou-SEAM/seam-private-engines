@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-AAD9AEF7445EEF",
+  "provider": "NOAA/NDBC",
+  "dataset": "VTBT2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:27:46.594318Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/VTBT2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/VTBT2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1015388,
+  "sha256": "f65e750d8f511740cbb801468d60e47b3de820b1dc6748556bf08ac0f1b34af2",
+  "etag": "\"f7e5c-65cab8c3aa956\"",
+  "last_modified": "Wed, 30 Sep 2026 04:15:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-AAD9AEF7445EEF\\20260930T042746.594318Z_f65e750d8f511740.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

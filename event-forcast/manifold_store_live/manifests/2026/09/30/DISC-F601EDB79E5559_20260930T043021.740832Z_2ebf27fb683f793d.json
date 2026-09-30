@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F601EDB79E5559",
+  "provider": "Colorado State University CIRA",
+  "dataset": "feed",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:30:21.740832Z",
+  "request_url": "https://www.cira.colostate.edu/feed/",
+  "final_url": "https://www.cira.colostate.edu/feed/",
+  "status_code": 200,
+  "content_type": "application/rss+xml; charset=UTF-8",
+  "byte_length": 1157,
+  "sha256": "2ebf27fb683f793dc42e06e0c450a07095d6105e8244123f7b626e132a651921",
+  "etag": "\"7191b5cadbb8ca338f7b81698490bfb0\"",
+  "last_modified": "Tue, 29 Sep 2026 18:02:08 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-F601EDB79E5559\\20260930T043021.740832Z_2ebf27fb683f793d.xml",
+  "parent_id": "CSU-CIRA",
+  "discovery_depth": 1
+}

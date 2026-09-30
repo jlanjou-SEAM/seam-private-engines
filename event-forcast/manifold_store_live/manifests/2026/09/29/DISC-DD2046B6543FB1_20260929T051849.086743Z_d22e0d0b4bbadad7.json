@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-DD2046B6543FB1",
+  "provider": "US EPA",
+  "dataset": "isAvailable",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "environmental",
+    "air_quality"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:49.086743Z",
+  "request_url": "https://aqs.epa.gov/data/api/metaData/isAvailable",
+  "final_url": "https://aqs.epa.gov/data/api/metaData/isAvailable",
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "byte_length": 300,
+  "sha256": "d22e0d0b4bbadad773dcfcadb8f44323bdd4d595efda2cc000d4940c5653eba6",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\environmental\\2026\\09\\29\\DISC-DD2046B6543FB1\\20260929T051849.086743Z_d22e0d0b4bbadad7.json",
+  "parent_id": "EPA-AQS",
+  "discovery_depth": 1
+}

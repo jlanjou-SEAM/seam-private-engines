@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-25F2D660EE61D0",
+  "provider": "NOAA/NSSL",
+  "dataset": "GaugeInflIndex_72H_Pass1",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T04:38:03.963927Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/GaugeInflIndex_72H_Pass1/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/GaugeInflIndex_72H_Pass1/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 6740,
+  "sha256": "a57c1e8729bf345cc64c0342367f7c4952e245e81954c5f3bc65297daa74d07b",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-25F2D660EE61D0\\20260930T043803.963927Z_a57c1e8729bf345c.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

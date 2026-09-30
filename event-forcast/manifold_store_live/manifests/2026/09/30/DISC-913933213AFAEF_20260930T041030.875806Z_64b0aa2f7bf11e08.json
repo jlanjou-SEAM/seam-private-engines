@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-913933213AFAEF",
+  "provider": "PAGASA",
+  "dataset": "radar",
+  "sector": "public",
+  "country": "PH",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "hazards"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:30.875806Z",
+  "request_url": "https://www.pagasa.dost.gov.ph/radar",
+  "final_url": "https://www.pagasa.dost.gov.ph/radar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 135002,
+  "sha256": "64b0aa2f7bf11e0889271af69efb8a94d0cbe695ced21e8fc208648a70fbf67b",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-913933213AFAEF\\20260930T041030.875806Z_64b0aa2f7bf11e08.html",
+  "parent_id": "PAGASA",
+  "discovery_depth": 1
+}

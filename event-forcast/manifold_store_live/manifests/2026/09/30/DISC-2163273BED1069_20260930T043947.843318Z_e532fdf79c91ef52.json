@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-2163273BED1069",
+  "provider": "NOAA/NCEI",
+  "dataset": "cooperative-weather-observations-publication",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:47.843318Z",
+  "request_url": "https://www.ncei.noaa.gov/access/search/publications/cooperative-weather-observations-publication/",
+  "final_url": "https://www.ncei.noaa.gov/access/search/publications/cooperative-weather-observations-publication/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 24652,
+  "sha256": "e532fdf79c91ef529166a70aeb77ac62b2e7392fbf86e7d66f873d3aa201aeed",
+  "etag": "\"5fb0-658c669428540\"",
+  "last_modified": "Tue, 11 Aug 2026 14:37:33 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2163273BED1069\\20260930T043947.843318Z_e532fdf79c91ef52.html",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

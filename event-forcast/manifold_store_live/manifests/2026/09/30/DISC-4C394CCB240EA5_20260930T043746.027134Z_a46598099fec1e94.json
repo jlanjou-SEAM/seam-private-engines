@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-4C394CCB240EA5",
+  "provider": "NOAA/NCEP",
+  "dataset": "solar-and-geophysical-event-reports",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:37:46.027134Z",
+  "request_url": "https://www.spaceweather.gov/products/solar-and-geophysical-event-reports",
+  "final_url": "https://www.spaceweather.gov/products/solar-and-geophysical-event-reports",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 68059,
+  "sha256": "a46598099fec1e94302c4f3b5a2c83de2ae5abce9d8a124882e85ea928595556",
+  "etag": "\"1790733609\"",
+  "last_modified": "Wed, 30 Sep 2026 02:00:09 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-4C394CCB240EA5\\20260930T043746.027134Z_a46598099fec1e94.html",
+  "parent_id": "DISC-BE0DA761A49193",
+  "discovery_depth": 2
+}

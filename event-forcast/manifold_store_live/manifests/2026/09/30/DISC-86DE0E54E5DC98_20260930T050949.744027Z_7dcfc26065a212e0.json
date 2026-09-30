@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-86DE0E54E5DC98",
+  "provider": "NOAA/NCEI",
+  "dataset": "hurricane-density-dataset",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T05:09:49.744027Z",
+  "request_url": "https://www.ncei.noaa.gov/news/hurricane-density-dataset",
+  "final_url": "https://www.ncei.noaa.gov/news/hurricane-density-dataset",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 42115,
+  "sha256": "7dcfc26065a212e0744e9ec73e72c804784b512369aa1cef8405ce410d7bab22",
+  "etag": "\"1790744990-gzip\"",
+  "last_modified": "Wed, 30 Sep 2026 05:09:50 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-86DE0E54E5DC98\\20260930T050949.744027Z_7dcfc26065a212e0.html",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

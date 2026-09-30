@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-49E75AA2B7060A",
+  "provider": "NOAA/NCEI",
+  "dataset": "ghcnh",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:01.944208Z",
+  "request_url": "https://www.ncei.noaa.gov/maps/ghcnh/",
+  "final_url": "https://www.ncei.noaa.gov/maps/ghcnh/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 1403,
+  "sha256": "5803a58d6e21ac76061089fa3592c5034b77c215b9c2e9ba4aa0c55e3c11552a",
+  "etag": "\"4df-65afb048e7500\"",
+  "last_modified": "Tue, 08 Sep 2026 16:13:40 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-49E75AA2B7060A\\20260930T044801.944208Z_5803a58d6e21ac76.html",
+  "parent_id": "DISC-D6225EB62704F9",
+  "discovery_depth": 2
+}

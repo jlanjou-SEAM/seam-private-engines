@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-7C22753A7C7839",
+  "provider": "NOAA/NDBC",
+  "dataset": "SWPV2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:28:02.271002Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/SWPV2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/SWPV2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1012474,
+  "sha256": "c7484d2e36023522000275f17753dbaa5cdeed408294df7dab643b2578553369",
+  "etag": "\"f72fa-65cab8c386f08\"",
+  "last_modified": "Wed, 30 Sep 2026 04:15:21 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-7C22753A7C7839\\20260930T042802.271002Z_c7484d2e36023522.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

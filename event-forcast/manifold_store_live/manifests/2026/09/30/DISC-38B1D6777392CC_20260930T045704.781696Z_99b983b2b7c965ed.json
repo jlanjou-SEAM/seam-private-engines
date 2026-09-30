@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-38B1D6777392CC",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "tsunami-early-warning-center",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:57:04.781696Z",
+  "request_url": "https://www.ncm.gov.ae/pages/tsunami-early-warning-center?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/tsunami-early-warning-center?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43639,
+  "sha256": "99b983b2b7c965ed87bc634d53286122f6b9dafd90aee3f61b9d7e20dc4f3c25",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-38B1D6777392CC\\20260930T045704.781696Z_99b983b2b7c965ed.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

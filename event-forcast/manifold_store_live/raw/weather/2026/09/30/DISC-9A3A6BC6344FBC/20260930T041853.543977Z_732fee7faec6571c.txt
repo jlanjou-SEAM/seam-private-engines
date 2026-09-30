@@ -1,0 +1,48 @@
+
+           RAOB QC Accept List:  "1" => Flag observation as good 
+
+StaID     |P(bottom)|P(top)   |P   |Ht  |T   |Dpd |Wind
+begin-------------------------------------------------------
+end---------------------------------------------------------
+
+Example Entries ********************************************
+YEV       |01       |01       |0   |0   |1   |0   |0   
+CHH       |10       |15       |1   |1   |1   |1   |1   
+CHH       |04       |05       |1   |1   |1   |0   |0   
+VBG       |00       |00       |1   |1   |1   |1   |1   
+
+P level codes
+-------------
+00   all 
+01   sfc
+02  1000 
+03   925 
+04   850 
+05   700 
+06   500 
+07   400 
+08   300 
+09   250 
+10   200 
+11   150 
+12   100 
+13    70 
+14    50 
+15    30 
+16    20 
+17    10 
+18     7 
+19     5 
+20     3 
+21     2 
+22     1
+
+- Pressure units are mb.  
+
+- All levels (mandatory, significant, etc.) with pressure between P(bottom) 
+  and P(top) are affected.  
+
+- P(bottom) must be >= P(top), e.g., P(bottom) = 1000 and P(top) = 700 is OK,
+  P(bottom) = 700 and P(top) = 1000 is not.
+
+- Level code 00 will affect all levels for the station.

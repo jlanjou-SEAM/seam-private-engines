@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-B52563AB23B2A5",
+  "provider": "NOAA/NCEI",
+  "dataset": "sky-watcher-cloud-chart-noaa-nasa-spanish-version.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:59.647806Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/sky-watcher-cloud-chart-noaa-nasa-spanish-version.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/sky-watcher-cloud-chart-noaa-nasa-spanish-version.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 2652714,
+  "sha256": "cc53af62c691ceb648608f3d4957cadeb6493b3b9a65fa4c31683064403e9ffc",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:24:18 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-B52563AB23B2A5\\20260930T043959.647806Z_cc53af62c691ceb6.pdf",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

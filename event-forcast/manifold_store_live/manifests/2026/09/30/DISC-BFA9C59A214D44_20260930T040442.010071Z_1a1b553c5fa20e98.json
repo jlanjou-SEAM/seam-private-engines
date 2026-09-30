@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-BFA9C59A214D44",
+  "provider": "WeatherAPI.com",
+  "dataset": "llms.txt-available-green",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:42.010071Z",
+  "request_url": "https://img.shields.io/badge/llms.txt-available-green",
+  "final_url": "https://img.shields.io/badge/llms.txt-available-green",
+  "status_code": 200,
+  "content_type": "image/svg+xml;charset=utf-8",
+  "byte_length": 1313,
+  "sha256": "1a1b553c5fa20e98d8eddd555869f1556cc7ecb0a156cf6cf733f64bce3c03cf",
+  "etag": null,
+  "last_modified": "Sat, 26 Sep 2026 09:48:45 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-BFA9C59A214D44\\20260930T040442.010071Z_1a1b553c5fa20e98.xml",
+  "parent_id": "WEATHERAPI",
+  "discovery_depth": 1
+}

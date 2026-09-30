@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-2A0665495B5927",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "all_dcp_locations.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:00.470938Z",
+  "request_url": "https://hads.ncep.noaa.gov/images/all_dcp_locations.jpg",
+  "final_url": "https://hads.ncep.noaa.gov/images/all_dcp_locations.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 1926401,
+  "sha256": "0a5b83e0a2b9cf8954266871d940960502290e49614a946316d803fe59bdc842",
+  "etag": null,
+  "last_modified": "Tue, 04 Mar 2025 16:27:36 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2A0665495B5927\\20260930T041900.470938Z_0a5b83e0a2b9cf89.jpg",
+  "parent_id": "DISC-984A4AB343800E",
+  "discovery_depth": 2
+}

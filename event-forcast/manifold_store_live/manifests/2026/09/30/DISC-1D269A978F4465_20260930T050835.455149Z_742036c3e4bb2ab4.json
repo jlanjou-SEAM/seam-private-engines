@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-1D269A978F4465",
+  "provider": "NOAA/NSSL",
+  "dataset": "PrecipFlag",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:35.455149Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/PrecipFlag/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/PrecipFlag/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 141453,
+  "sha256": "742036c3e4bb2ab45e2adfd8fcc4d147b4476b2654e0353b9cfb6b9a2cba5d6d",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-1D269A978F4465\\20260930T050835.455149Z_742036c3e4bb2ab4.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

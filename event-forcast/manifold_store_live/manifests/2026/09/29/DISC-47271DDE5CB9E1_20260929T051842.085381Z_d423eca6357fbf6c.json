@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-47271DDE5CB9E1",
+  "provider": "NOAA/CO-OPS",
+  "dataset": "bootstrap.css",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "hydrology",
+    "coastal"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:42.085381Z",
+  "request_url": "https://api.tidesandcurrents.noaa.gov/api/prod/css/bootstrap.css",
+  "final_url": "https://api.tidesandcurrents.noaa.gov/api/prod/css/bootstrap.css",
+  "status_code": 200,
+  "content_type": "text/css",
+  "byte_length": 133557,
+  "sha256": "d423eca6357fbf6ccce3f785a18e5a4d95b4f3538329b2d73cc82dce34884e5f",
+  "etag": "W/\"133557-1778756300000\"",
+  "last_modified": "Thu, 14 May 2026 10:58:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\29\\DISC-47271DDE5CB9E1\\20260929T051842.085381Z_d423eca6357fbf6c.css",
+  "parent_id": "NOAA-COOPS",
+  "discovery_depth": 1
+}

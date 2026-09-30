@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-5A29F8EDBEBBCB",
+  "provider": "UCAR/Unidata",
+  "dataset": "satellite.html",
+  "sector": "research",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:24.483239Z",
+  "request_url": "https://thredds.ucar.edu/thredds/catalog/idd/satellite.html",
+  "final_url": "https://thredds.ucar.edu/thredds/catalog/idd/satellite.html",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 14413,
+  "sha256": "dd2d4762720959134555e279c9024e1cc5ec2f75c2db00834614d3d302bda459",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-5A29F8EDBEBBCB\\20260930T040424.483239Z_dd2d476272095913.html",
+  "parent_id": "UCAR-THREDDS",
+  "discovery_depth": 1
+}

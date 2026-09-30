@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-0EEBF671682149",
+  "provider": "NOAA/SWPC",
+  "dataset": "natec-dif.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:18.766423Z",
+  "request_url": "https://services.swpc.noaa.gov/products/animations/natec-dif.json",
+  "final_url": "https://services.swpc.noaa.gov/products/animations/natec-dif.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 2201,
+  "sha256": "a49ff3b9b0499b4d3e0005e8587d7732ba8d3adee131bbd774561b419e6fa630",
+  "etag": "\"899-5e3c806eb0adc\"",
+  "last_modified": "Thu, 14 Jul 2022 18:25:32 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-0EEBF671682149\\20260930T041818.766423Z_a49ff3b9b0499b4d.json",
+  "parent_id": "DISC-DC635460D92E37",
+  "discovery_depth": 2
+}

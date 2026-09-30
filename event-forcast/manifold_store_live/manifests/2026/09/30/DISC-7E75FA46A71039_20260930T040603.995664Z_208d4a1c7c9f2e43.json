@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-7E75FA46A71039",
+  "provider": "IPMA",
+  "dataset": "precipitation-classe.json",
+  "sector": "public",
+  "country": "PT",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "seismic"
+  ],
+  "retrieved_utc": "2026-09-30T04:06:03.995664Z",
+  "request_url": "https://api.ipma.pt/open-data/precipitation-classe.json",
+  "final_url": "https://api.ipma.pt/open-data/precipitation-classe.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 578,
+  "sha256": "208d4a1c7c9f2e4336af82040375ab463e0f7074fe641912b2a20821b49b482c",
+  "etag": "\"5b2-242-596b0dbf89920\"",
+  "last_modified": "Wed, 06 Nov 2019 17:27:12 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7E75FA46A71039\\20260930T040603.995664Z_208d4a1c7c9f2e43.json",
+  "parent_id": "IPMA-API",
+  "discovery_depth": 1
+}

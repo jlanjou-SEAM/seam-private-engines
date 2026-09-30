@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-6EC268F01F1C55",
+  "provider": "NOAA/NCEI",
+  "dataset": "weather-data-beyond-forecast",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:44.188381Z",
+  "request_url": "https://www.ncei.noaa.gov/news/weather-data-beyond-forecast",
+  "final_url": "https://www.ncei.noaa.gov/news/weather-data-beyond-forecast",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 39858,
+  "sha256": "8e7a8e0e374d00170139a099d45d2b6e92a70b513b70b20fcb5a40eb85746b15",
+  "etag": "\"1790717134-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 21:25:34 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6EC268F01F1C55\\20260930T044644.188381Z_8e7a8e0e374d0017.html",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-EF717688605135",
+  "provider": "NOAA/NCEI",
+  "dataset": "Toolkit_Tsunami.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:56.083093Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/Toolkit_Tsunami.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/Toolkit_Tsunami.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 749812,
+  "sha256": "20117d6fb30e8eb744bceebb35b9e57bd84ec06bcd1dc702b51a0f61a0abf825",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:14:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-EF717688605135\\20260930T043956.083093Z_20117d6fb30e8eb7.pdf",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

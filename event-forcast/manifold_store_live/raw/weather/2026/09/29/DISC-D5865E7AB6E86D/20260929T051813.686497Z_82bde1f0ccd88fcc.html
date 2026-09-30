@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta name="generator" content="Hugo 0.147.3">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NCEI Search, Discovery, &amp; Data Access</title>
+    <link rel="shortcut icon" href="/access/search/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="/access/search/js/drupalalert.js" defer></script>
+    <link href="/access/search/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <style>
+        .dark-container {
+            background: #f1f3f6;
+        }
+
+        .icon-topics i {
+            font-size: 3em;
+        }
+
+        .icon-div {
+            width: 5em;
+            height: 5em;
+            border-radius: 50%;
+            transition: all 0.25s ease;
+        }
+
+        .icon-div:hover {
+            box-shadow: 0 0 1rem rgba(0,0,0, .4);
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+<script>
+    function toggle() {
+        const govBanner = document.getElementById("gov-banner");
+        if (govBanner.style.display === "none") {
+            govBanner.style.display = "block";
+        } else {
+            govBanner.style.display = "none";
+        }
+    }
+</script>
+<a class="visually-hidden-focusable" href="#main-content">Skip to main content</a>
+<div class="text-sm" style="background-color: #f0f0f0;">
+        <header>
+            <div class="container mx-auto px-4">
+                <div class="d-flex justify-content-center align-items-center gap-2">
+                    <img
+                            src="https://designsystem.digital.gov/assets/img/us_flag_small.png"
+                            alt="U.S. flag"
+                            class="w-auto"
+                            style="height: 10px;"
+                    />
+                    <span style="color: #565c65;">
+                          An official website of the United States government
+                    </span>
+
+                    <button
+                            class="btn ml-auto py-1"
+                            style="color: #005ea2;"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#gov-banner"
+                            aria-expanded="false"
+                            aria-controls="gov-banner"
+                    >
+                        Here's how you know
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div id="gov-banner" class="collapse">
+            <div class="pt-4 pb-8" style="background-color: #f0f0f0">
+                <div class="container mx-auto px-4">
+                    <div class="d-flex">
+                        
+                        <div class="d-flex align-items-start p-2">
+                            <img
+                                    src="https://designsystem.digital.gov/assets/img/icon-dot-gov.svg"
+                                    class="p-2"
+                                    alt="Dot gov"
+                                    style=""
+                            />
+                            <div class="p-2">
+                                <p class="mb-1" style="font-weight: bold;">The .gov means it’s official.</p>
+                                <p>
+                                    Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+                                </p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="d-flex align-items-start p-2">
+                            <img
+                                    src="https://designsystem.digital.gov/assets/img/icon-https.svg"
+                                    class="p-2"
+                                    alt="Https"
+                                    style=""
+                            />
+                            <div class="p-2">
+                                <p class="mb-1" style="font-weight: bold;">The site is secure.</p>
+                                <p class="">
+                                    The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<header>
+    <nav class="navbar container-fluid d-flex" style="background-color: #162e51">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.ncei.noaa.gov" alt="NCEI Home" title="NCEI Home" rel="home">
+            <img src="/access/search/img/logo.svg"
+            alt="National Centers for Environmental Information"
+            title="National Centers for Environmental Information logo" width="320px"
+            />
+            </a>
+        </div>
+    </nav>
+    <nav role="navigation" class="navbar container-fluid" style="background-color: #0076d6;">
+        <div class="container-fluid">
+            <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb" class="mt-3 d-flex align-items-center mb-3 mb-md-0 me-md-auto"><ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/access/search/" id="collection" class="link">
+      <strong>
+      NCEI Search, Discovery, &amp; Data Access
+      </strong>
+    </a>
+  </li>
+</ol>
+
+<style>
+  .breadcrumb {
+      --bs-breadcrumb-divider-color: white;
+      --bs-breadcrumb-item-active-color: white;
+
+      a {
+          text-decoration: none;
+          color: white;
+
+          &:hover, &:focus {
+              text-decoration: underline;
+              text-decoration-thickness: 1px;
+              text-underline-offset: 5px;
+          }
+      }
+  }
+
+
+</style>
+</nav>
+            <nav><ul class="nav">
+    <li class="nav-item dropdown ">
+        <a class="btn api-dropdown nav-link dropdown-toggle"
+           id="apiDocumentationDropdownMenu"
+           href="/access/search/documentation"
+           role="button"
+           data-bs-toggle="dropdown"
+           aria-expanded="false">
+            <i class="bi bi-stack"></i>
+            <strong>
+                API Documentation
+            </strong>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="/access/search/documentation/data-service/" class="text-nowrap text-decoration-none dropdown-item">
+                    Data Service
+                </a>
+                
+                <a href="/access/search/documentation/order-service/" class="text-nowrap text-decoration-none dropdown-item">
+                    Order Service
+                </a>
+                
+                <a href="/access/search/documentation/search-service/" class="text-nowrap text-decoration-none dropdown-item">
+                    Search Service
+                </a>
+                
+                <a href="/access/search/documentation/support-service/" class="text-nowrap text-decoration-none dropdown-item">
+                    Support Service
+                </a>
+                
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-pages">
+        <a
+                href="/access/search/order-status"
+        id="order"
+        class="text-nowrap"
+        >
+        <i class="bi bi-check-circle-fill me-1"></i>
+        <strong>
+            Order Status
+        </strong>
+        </a>
+    </li>
+    <li class="nav-item nav-pages">
+        
+        <div id="cartbutton" cartURL="/access/search/cart"></div>
+    </li>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<style>
+    .nav-pages a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+
+        &:hover, &:focus {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 5px;
+        }
+    }
+
+    .api-dropdown {
+        text-decoration: none;
+        color: white;
+        --bs-btn-color: white;
+        --bs-btn-bg: #0076d6;
+        --bs-btn-border-color: #0076d6;
+        --bs-btn-hover-color: white;
+        --bs-btn-hover-bg: #005396;
+        --bs-btn-hover-border-color: #005396;
+        --bs-btn-active-color: white;
+        --bs-btn-active-bg: #003b6b;
+        --bs-btn-active-border-color: #003b6b;
+
+        &:hover, &:focus {
+            text-decoration: none;
+            color: white;
+        }
+
+        a {
+            color: black;
+        }
+    }
+
+
+</style>
+</nav>
+        </div>
+
+    </nav>
+    <div id="ncei-alert" class="container-fluid alert alert-danger m-0 d-flex flex-column align-items-center visually-hidden"></div>
+</header>
+<script src="https://touchpoints.app.cloud.gov/touchpoints/971ed9fd.js" async></script>
+<style>
+    .navbar-brand {
+        display: flex;
+        padding: 19px 0 14.25px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+</style>
+
+
+
+    <main id="main-content">
+        
+<div class="container-fluid p-0">
+  <div class="p-5 mb-4 bg-dark text-center text-white hero">
+    <div class="container-fluid py-3 hero-container">
+      <h1 class="display-5">NCEI Search, Discovery, & Data Access</h1>
+      <div class="col-lg-6 mx-auto hero-instruction-container">
+        <p class="lead text-center mb-4">Find and download historical weather, climate, and other environmental data from NCEI's most popular datasets.</p>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 pt-4 my-3">
+            <form role="search" action="dataset-search" method="get">
+              <!--        <label for="dataset-search">Search Datasets</label>-->
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Search datasets" id="dataset-search" name="text"
+                       aria-label="search available datasets" aria-describedby="button-search">
+                <button id="button-search" type="submit" class="btn ae-primary btn-primary">Search</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center pb-5">
+    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 justify-content-evenly py-3">
+        <div class="col py-3 px-4">
+            <div class="card card-shadow mb-3 h-100">
+                <img src="img/pl23_fizh1966.jpg" class="card-img-top" alt="photo of person cataloguing weather data">
+                <div class="card-body">
+                    <div class="col p-2">
+                        <h2>Search</h2>
+                        <p class="lead">Search or explore featured NCEI data collections</p>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <div class="col mt-1 mb-5">
+                        <a class="hover-underline-animation" aria-label="explore available datasets" href="/access/search/dataset-search/" style="text-decoration: none">
+                            <p class="fs-3 mb-1">
+                                Explore Datasets
+                                <i class="bi bi-arrow-right" aria-hidden="true">
+                                    <use xlink:href="#arrow-right"></use>
+                                </i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col py-3 px-4">
+            <div class="card card-shadow mb-3 h-100">
+                <img src="img/pubweathermap.jpg" class="card-img-top" alt="example image of a publication weather map">
+                <div class="card-body">
+                    <div class="col p-2">
+                        <h2>Publications</h2>
+                        <p class="lead">Featuring monthly, annual, serial publications and their corresponding images</p>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <div class="col mt-1 mb-5">
+                        <a class="hover-underline-animation" aria-label="explore publication section" href="/access/search/publications/" style="text-decoration: none">
+                            <p class="fs-3 mb-1">
+                                Explore Publications
+                                <i class="bi bi-arrow-right" aria-hidden="true">
+                                    <use xlink:href="#arrow-right"></use>
+                                </i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col py-3 px-4">
+            <div class="card card-shadow mb-3 h-100">
+                <img src="img/fast.jpg" class="card-img-top" alt="find a station map with clustered stations">
+                <div class="card-body">
+                    <div class="col p-2">
+                        <h2>Find-a-Station</h2>
+                        <p class="lead">Locate specific stations</p>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <div class="col mt-1 mb-5">
+                        <a class="hover-underline-animation" aria-label="explore available stations" href="/access/search/find-a-station/" style="text-decoration: none">
+                            <p class="fs-3 mb-1">
+                                Explore Stations
+                                <i class="bi bi-arrow-right" aria-hidden="true">
+                                    <use xlink:href="#arrow-right"></use>
+                                </i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="dark-container">-->
+<!--  <div class="container">-->
+<!--    <div class="row">-->
+<!--      <div class="py-3">-->
+<!--        <h2>Browse by topic</h2>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="row">-->
+<!--      <div class="container-md icon-topics mb-5 pb-3">
+    <div class="row justify-content-center">
+
+
+
+
+
+
+        
+        <div class="col-md-1 col-sm-3 m-4">
+            <a href="/access/search/topics/climate.html" class="btn icon-div m-2 text-decoration-none" role="button">
+                <i class="bi bi-globe m-2 d-flex align-items-center justify-content-center" id="weather-icon" style="color: white;"></i>
+                <label for="weather-icon" class="m-3 d-flex align-items-center justify-content-center">Climate</label>
+            </a>
+        </div>
+
+        <div class="col-md-1 col-sm-3 m-4">
+            <a href="/access/search/topics/land/surface.html" class="btn icon-div m-2 text-decoration-none" role="button">
+                <i class="bi bi-file-image m-2 d-flex align-items-center justify-content-center" id="weather-icon" style="color: white;"></i>
+                <label for="weather-icon" class="m-3 d-flex align-items-center justify-content-center">Land/Surface</label>
+            </a>
+        </div>
+
+        <div class="col-md-1 col-sm-3 m-4">
+            <a href="/access/search/topics/ocean.html" class="btn icon-div m-2 text-decoration-none" role="button">
+                <i class="bi bi-hurricane m-2 d-flex align-items-center justify-content-center" id="weather-icon" style="color: white;"></i>
+                <label for="weather-icon" class="m-3 d-flex align-items-center justify-content-center">Ocean</label>
+            </a>
+        </div>
+
+        <div class="col-md-1 col-sm-3 m-4">
+            <a href="/access/search/topics/radar.html" class="btn icon-div m-2 text-decoration-none" role="button">
+                <i class="bi bi-radar m-2 d-flex align-items-center justify-content-center" id="weather-icon" style="color: white;"></i>
+                <label for="weather-icon" class="m-3 d-flex align-items-center justify-content-center">Radar</label>
+            </a>
+        </div>
+
+        <div class="col-md-1 col-sm-3 m-4">
+            <a href="/access/search/topics/satellite.html" class="btn icon-div m-2 text-decoration-none" role="button">
+                <i class="bi bi-rocket-takeoff m-2 d-flex align-items-center justify-content-center" id="weather-icon" style="color: white;"></i>
+                <label for="weather-icon" class="m-3 d-flex align-items-center justify-content-center">Satellite</label>
+            </a>
+        </div>
+
+        <div class="col-md-1 col-sm-3 m-4">
+            <a href="/access/search/topics/weather.html" class="btn icon-div m-2 text-decoration-none" role="button">
+                <i class="bi bi-cloud-lightning-rain m-2 d-flex align-items-center justify-content-center" id="weather-icon" style="color: white;"></i>
+                <label for="weather-icon" class="m-3 d-flex align-items-center justify-content-center">Weather</label>
+            </a>
+        </div>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+
+        
+
+    </div>
+</div>
+
+<style>
+
+.icon-div {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    transition: all 0.25s ease;
+    background-color: #007EC6;
+}
+
+.icon-div:hover {
+    box-shadow: 0 0 1rem rgba(0,0,0, .4);
+    transform: scale(1.03);
+    background-color: #007EC6;;
+}
+</style>
+-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div class="dark-container pb-5">
+  <div class="container text-center">
+    <div class="row p-4">
+        <div class="col p-5">
+            <div class="card mb-3 h-100">
+                <div class="card-body">
+                    <div class="col p-2">
+                        <h2>Quick Links</h2>
+                        <p class="lead">Explore featured datasets</p>
+                    </div>
+                    <div class="col p-2">
+                        <ul style="list-style-type: none" class="px-0">
+                          <li>
+                            <div class="my-3">
+                              <a href="/access/search/datasets/global-historical-climatology-network-hourly/" class="hover-underline-animation" style="color: #007ec6; text-decoration: none;">
+                                  <p class="card-title fs-3 mb-1" style="font-size: x-large;">Global Historical Climatology Network-hourly (GHCNh), Version 1</>
+                              </a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="my-3">
+                              <a href="/access/search/datasets/local-climatological-data-v2/" class="hover-underline-animation" style="color: #007ec6; text-decoration: none;">
+                                <p class="card-title fs-3 mb-1">Local Climatological Data (LCD), Version 2</p>
+                              </a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="my-3">
+                              <a href="/access/search/datasets/global-summary-of-the-month/" class="hover-underline-animation" style="color: #007ec6; text-decoration: none;">
+                                  <p class="card-title fs-3 mb-1">Global Summary of the Month (GSOM), Version 1</p>
+                              </a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="my-3">
+                              <a href="/access/search/datasets/global-summary-of-the-year/" class="hover-underline-animation" style="color: #007ec6; text-decoration: none;">
+                                  <p class="card-title fs-3 mb-1">Global Summary of the Year (GSOY), Version 1</p>
+                              </a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="my-3">
+                              <a href="/access/search/datasets/daily-summaries/" class="hover-underline-animation" style="color: #007ec6; text-decoration: none;">
+                                  <p class="card-title fs-3 mb-1">Global Historical Climatology Network - Daily (GHCN-Daily), Version 3</p>
+                              </a>
+                            </div>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- The words of the prophets are written on the subway walls and tenement halls. -->
+<!--		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}-->
+<!--		{{ range $paginator.Pages }}-->
+<!--			{{ .Render "summary" }}-->
+<!--		{{ end }}-->
+
+<style>
+    .hero-container h1 {
+      color: white;
+      margin: 0;
+      text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero-instruction-container p {
+      color: white;
+      margin: 0;
+      text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8);
+    }
+
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: #0087ca;
+    }
+
+    .hover-underline-animation::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #0087ca;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline-animation:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .icon-div {
+      width: 5em;
+      height: 5em;
+      border-radius: 50%;
+      transition: all 0.25s ease;
+      background-color: #007EC6;
+    }
+
+    .icon-div:hover {
+      box-shadow: 0 0 1rem rgba(0,0,0, .4);
+      transform: scale(1.03);
+      background-color: #007EC6;;
+    }
+
+    .card-shadow {
+        transition: all 0.25s ease;
+    }
+
+    .card-shadow:hover {
+        box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
+    }
+</style>
+
+    </main>
+
+
+<footer>
+  <div class="main-content">
+    <div class="col-lg-6 mb-3">
+      <a href="/" alt="Home" title="Home" rel="home" class="d-flex align-items-center">
+        <img src="/access/search/img/logo.svg" class="logo-footer mx-auto"
+        alt="National Centers for Environmental Information"
+        title="National Centers for Environmental Information logo" />
+      </a>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <div class="col-lg-3 mb-3">
+      <h5>Follow Us</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="https://www.facebook.com/NOAANCEI/" class="facebook"
+             title="Link to @NOAANCEI Facebook">@NOAANCEI</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.instagram.com/noaadata/" class="instagram"
+             title="Link to @NOAAData Instagram">@NOAAData</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://twitter.com/NOAANCEI" class="twitter" title="Link to @NOAANCEI Twitter">@NOAANCEI</a>
+        </li>
+        <li class="nav-item">
+          <a href="/news.xml" class="rss" title="Link to subscribe to NCEI News Feed">News Feed</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-lg-3 mb-3">
+      <h5>Contact Us</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="mailto:ncei.info@noaa.gov" class="nav-link mailto" title="Contact NCEI NOAA via email"
+             data-extlink="">
+            Email: ncei.info@noaa.gov
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="tel:18282714800" class="nav-link" title="Call NCEI NOAA 828-271-4800">Phone: (828)
+            271-4800</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav
+    role="navigation"
+    class="nesdis-links"
+  >
+    <ul class="container">
+      <li>
+        <a href="/privacy" class="nav-link" data-drupal-link-system-path="node/106">
+          Privacy Policy
+        </a>
+      </li>
+      <li>
+        <a href="http://www.rdc.noaa.gov/~foia/" class="nav-link">
+          Freedom of Information Act
+        </a>
+      </li>
+      <li>
+        <a
+          href="http://www.cio.noaa.gov/services_programs/info_quality.html"
+          class="nav-link"
+        >
+          Information Quality
+        </a>
+      </li>
+      <li>
+        <a href="http://www.noaa.gov/disclaimer.html" class="nav-link">Disclaimer</a>
+      </li>
+      <li>
+        <a href="http://www.ncdc.noaa.gov/survey" class="nav-link">Take Our Survey</a>
+      </li>
+      <li>
+        <a href="http://www.commerce.gov/" class="nav-link">Department of Commerce</a>
+      </li>
+      <li>
+        <a href="http://www.noaa.gov/" class="nav-link">NOAA</a>
+      </li>
+      <li>
+        <a href="http://www.nesdis.noaa.gov/" class="nav-link">NESDIS</a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+
+
+<style>
+    footer {
+        background-color: #162e51;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        * {
+            font-size: 1rem;
+            color: white;
+        }
+
+        h5 {
+            font-size: 1.25rem;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 3rem 0 3rem 0;
+
+            .nav-link {
+                color: #9bdaf1;
+                padding: .1rem 0;
+            }
+
+            .nav-item {
+                margin-bottom: .25rem;
+            }
+
+            svg.mailto {
+                width: 16px;
+                height: 16px;
+                padding-right: 0.2em;
+                fill: #0076d6;
+            }
+
+            .logo-footer {
+                width: 320px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            a {
+                color: #9bdaf1;
+                text-decoration: none;
+
+                &:hover, &:focus {
+                    text-decoration: underline;
+                    text-underline-offset: .25em;
+                }
+
+                &svg{
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &[href^="mailto:"]::after {
+                    background: url("/access/search/icons/extlink_s.png") no-repeat -22px center transparent;
+                    width: 10px;
+                    height: 10px;
+                    padding-left: 12px !important;
+                    text-decoration: none;
+                    display: inline-block;
+                    content: "";
+                    margin-left: 2px;
+                }
+
+                &[href^="tel:"]::after {
+                    background: url("/access/search/icons/extlink_s.png") no-repeat -42px center transparent;
+                    width: 10px;
+                    height: 10px;
+                    padding-left: 12px !important;
+                    text-decoration: none;
+                    display: inline-block;
+                    content: "";
+                    margin-left: 2px;
+                }
+
+                &:after {
+                    margin-left: 5px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    content: " ";
+                    overflow: visible;
+                }
+
+                &.facebook:after {
+                    background-image: url("/access/search/icons/facebook25.svg");
+                    background-size: 26px 26px;
+                }
+
+                &.instagram:after {
+                    background-image: url("/access/search/icons/instagram.svg");
+                    background-size: 15px 15px;
+                }
+
+                &.twitter:after {
+                    background-image: url("/access/search/icons/twitter16.svg");
+                    background-size: 28px 28px;
+                }
+
+                &.rss:after {
+                    background-image: url("/access/search/icons/rss25.svg");
+                    background-size: 22px 22px;
+                }
+            }
+        }
+
+
+        .nesdis-links {
+            background-color: #071628;
+
+            ul {
+                list-style-type: "|   ";
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                padding: .5rem 0;
+                gap: 2rem;
+
+                li:first-child {
+                    list-style-type: none;
+                }
+
+                a {
+                    color: #ffffff;
+
+                    &:hover {
+                        color: #face00
+                    }
+
+                    &:focus {
+                        outline: 2px solid white;
+                        outline-offset: 2px;
+                        border-radius: 6px;
+                        color: #d9d9d9;
+                    }
+
+
+                }
+            }
+
+
+
+
+        }
+    }
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1Q1BML6E5"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E1Q1BML6E5');
+</script>
+<script async src="https://siteimproveanalytics.com/js/siteanalyze_6294131.js"></script>
+<script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script></body>
+</html>

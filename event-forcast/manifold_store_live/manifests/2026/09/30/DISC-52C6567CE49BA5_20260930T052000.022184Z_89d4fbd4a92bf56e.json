@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-52C6567CE49BA5",
+  "provider": "NASA Earthdata",
+  "dataset": "delay-viirs-data-delivery",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:00.022184Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/delay-viirs-data-delivery",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/delay-viirs-data-delivery",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 151498,
+  "sha256": "89d4fbd4a92bf56e67f3e828043bff02a02dc86dd8157158c0a88145d9eae519",
+  "etag": "\"1790745601\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:01 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-52C6567CE49BA5\\20260930T052000.022184Z_89d4fbd4a92bf56e.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

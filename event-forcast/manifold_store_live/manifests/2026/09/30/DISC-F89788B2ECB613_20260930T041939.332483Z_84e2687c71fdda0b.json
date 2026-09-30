@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F89788B2ECB613",
+  "provider": "NOAA/NCEP",
+  "dataset": "off01_temp.gif",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:39.332483Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/predictions/long_range/lead01/off01_temp.gif",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/predictions/long_range/lead01/off01_temp.gif",
+  "status_code": 200,
+  "content_type": "image/gif",
+  "byte_length": 229804,
+  "sha256": "84e2687c71fdda0b3f032afeed5305f90406aacbb8a0982034413055afba4cb4",
+  "etag": null,
+  "last_modified": "Thu, 17 Sep 2026 12:31:40 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F89788B2ECB613\\20260930T041939.332483Z_84e2687c71fdda0b.gif",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

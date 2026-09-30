@@ -1,0 +1,23 @@
+{
+  "candidate_id": "HKO-OPEN",
+  "provider": "Hong Kong Observatory",
+  "dataset": "Open data",
+  "sector": "public",
+  "country": "HK",
+  "scientific_regime": [
+    "weather",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-29T05:16:37.729137Z",
+  "request_url": "https://www.hko.gov.hk/en/abouthko/opendata_intro.htm",
+  "final_url": "https://www.hko.gov.hk/en/abouthko/opendata_intro.htm",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 85505,
+  "sha256": "bfb1e01a9c1d4055adcd728835ae1d820dd1015376ff991076856f1c31b77486",
+  "etag": "W/\"6a962e21-14e01\"",
+  "last_modified": "Tue, 01 Sep 2026 01:45:05 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\29\\HKO-OPEN\\20260929T051637.729137Z_bfb1e01a9c1d4055.htm",
+  "parent_id": null,
+  "discovery_depth": 0
+}

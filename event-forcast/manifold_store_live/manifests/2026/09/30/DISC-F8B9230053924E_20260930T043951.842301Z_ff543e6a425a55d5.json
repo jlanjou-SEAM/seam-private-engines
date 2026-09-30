@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-F8B9230053924E",
+  "provider": "NOAA/NCEI",
+  "dataset": "wind1996.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:51.842301Z",
+  "request_url": "http://www.ncei.noaa.gov/sites/default/files/2021-09/wind1996.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-09/wind1996.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 105007,
+  "sha256": "ff543e6a425a55d5942222a2e95c245fe68996155b67a5d21695c96778983f44",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:34:04 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-F8B9230053924E\\20260930T043951.842301Z_ff543e6a425a55d5.pdf",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

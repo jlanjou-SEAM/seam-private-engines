@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-DF858BAFEEF70F",
+  "provider": "NOAA/NCEP",
+  "dataset": "observation-type-area.php",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:24.052124Z",
+  "request_url": "https://mag.ncep.noaa.gov/observation-type-area.php",
+  "final_url": "https://mag.ncep.noaa.gov/observation-type-area.php",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 31469,
+  "sha256": "12cd9cfd73fc06e47f21174fe776b2e02f52f09d853fa17317f86d339bd4c51d",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-DF858BAFEEF70F\\20260930T041924.052124Z_12cd9cfd73fc06e4.php",
+  "parent_id": "DISC-FA58CABCA4D1CB",
+  "discovery_depth": 2
+}

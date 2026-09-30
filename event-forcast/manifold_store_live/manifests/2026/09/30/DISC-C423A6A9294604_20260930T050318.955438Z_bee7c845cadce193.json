@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C423A6A9294604",
+  "provider": "NOAA/NDBC",
+  "dataset": "PORO3.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:03:18.955438Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/PORO3.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/PORO3.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 996306,
+  "sha256": "bee7c845cadce19399bf51e1db9393c8820180d6c85928d90ac15e4351fb1677",
+  "etag": "\"f33d2-65cac0968fd88\"",
+  "last_modified": "Wed, 30 Sep 2026 04:50:22 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-C423A6A9294604\\20260930T050318.955438Z_bee7c845cadce193.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

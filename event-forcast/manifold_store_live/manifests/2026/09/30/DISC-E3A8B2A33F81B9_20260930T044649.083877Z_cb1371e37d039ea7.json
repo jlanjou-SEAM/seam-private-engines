@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-E3A8B2A33F81B9",
+  "provider": "NOAA/NCEI",
+  "dataset": "locations",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:49.083877Z",
+  "request_url": "https://www.ncei.noaa.gov/locations",
+  "final_url": "https://www.ncei.noaa.gov/about/locations",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 38408,
+  "sha256": "cb1371e37d039ea7507e6990ea54797df8931d316790097b3d35e7caa2ea285d",
+  "etag": "\"1790715511-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 20:58:31 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E3A8B2A33F81B9\\20260930T044649.083877Z_cb1371e37d039ea7.html",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

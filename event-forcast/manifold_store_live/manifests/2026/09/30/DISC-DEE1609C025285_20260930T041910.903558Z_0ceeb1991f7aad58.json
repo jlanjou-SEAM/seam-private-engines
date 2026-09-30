@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-DEE1609C025285",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "ORDOTStation.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:10.903558Z",
+  "request_url": "https://madis-data.ncep.noaa.gov/madisPublic1/data/stations/ORDOTStation.txt",
+  "final_url": "https://madis-data.ncep.noaa.gov/madisPublic1/data/stations/ORDOTStation.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "byte_length": 16609,
+  "sha256": "0ceeb1991f7aad58d52f39e9a83cd7943ecee24dfce963c8255b9309fe239126",
+  "etag": "\"40e1-65ca565b96234\"",
+  "last_modified": "Tue, 29 Sep 2026 20:55:06 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-DEE1609C025285\\20260930T041910.903558Z_0ceeb1991f7aad58.txt",
+  "parent_id": "DISC-A3689D86E0CBCC",
+  "discovery_depth": 2
+}

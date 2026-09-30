@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-BE310058B0449E",
+  "provider": "NOAA/NCEI",
+  "dataset": "international-geomagnetic-reference-field",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:16.789028Z",
+  "request_url": "https://www.ncei.noaa.gov/products/international-geomagnetic-reference-field",
+  "final_url": "https://www.ncei.noaa.gov/products/international-geomagnetic-reference-field",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 54933,
+  "sha256": "d7f111699cf2cb556414c1ef7fc8e3f7293839f0198d3fc99825b0e6d9090f61",
+  "etag": "\"1790715533-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 20:58:53 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-BE310058B0449E\\20260930T044816.789028Z_d7f111699cf2cb55.html",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

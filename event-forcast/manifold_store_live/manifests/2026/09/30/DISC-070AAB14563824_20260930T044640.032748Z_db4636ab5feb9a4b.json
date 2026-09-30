@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-070AAB14563824",
+  "provider": "NOAA/NCEI",
+  "dataset": "480x480%20Groundhog%20pic%202026.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:40.032748Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/480x480%20Groundhog%20pic%202026.png?itok=7jppdaZg",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/480x480%20Groundhog%20pic%202026.png?itok=7jppdaZg",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 295375,
+  "sha256": "db4636ab5feb9a4b0f481240bc09b948d973b9054d8f191ce2ca141c25650e31",
+  "etag": null,
+  "last_modified": "Fri, 30 Jan 2026 13:45:15 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-070AAB14563824\\20260930T044640.032748Z_db4636ab5feb9a4b.png",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

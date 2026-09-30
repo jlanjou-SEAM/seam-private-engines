@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-95DA2BC1E037FA",
+  "provider": "NOAA/NCEI",
+  "dataset": "hurricane%20teaser.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:15.801521Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/hurricane%20teaser.png?itok=TywJ3-VM",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/styles/600x300/public/field/image/hurricane%20teaser.png?itok=TywJ3-VM",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 248994,
+  "sha256": "7c82fabfdf3f92544a85ccc555bd1fec480846576b45c5592ca150bb2c6cc324",
+  "etag": null,
+  "last_modified": "Wed, 21 Aug 2024 15:19:54 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-95DA2BC1E037FA\\20260930T043915.801521Z_7c82fabfdf3f9254.png",
+  "parent_id": "DISC-55E151143C8956",
+  "discovery_depth": 2
+}

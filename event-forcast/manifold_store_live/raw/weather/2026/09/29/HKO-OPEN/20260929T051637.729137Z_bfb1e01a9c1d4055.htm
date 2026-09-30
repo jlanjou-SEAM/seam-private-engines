@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hong Kong Observatory Open Data｜Hong Kong Observatory(HKO)｜e-Services</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hko api,hong kong observatory api,hko open data,weather api,open data hong kong">
+    <meta name="description" content="Observatory’s data sets released on Government Open Data Portal. An Open Data Application Programming Interface (API) and the related documentation are available to facilitate retrieval of required data.">
+    <meta name="recordId" content="2018123100000035782">
+    <meta name="lang" content="en">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Hong Kong Observatory Open Data" />
+	<meta property="og:description" content="Observatory’s data sets released on Government Open Data Portal. An Open Data Application Programming Interface (API) and the related documentation are available to facilitate retrieval of required data." />
+	<meta property="og:image" content="https://www.hko.gov.hk" />
+	<meta property="og:url" content="https://www.hko.gov.hk/en/abouthko/opendata_intro.htm" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+.abc{
+display: none;
+}
+		#desktop_opendata_tb td, #desktop_opendata_tb th, #mobile_content {padding: 5px 10px 5px 10px;}
+#desktop_opendata_tb {
+	border: 1px solid #000;
+}
+.mobile_content_item {
+	border: 1px solid #1a58ab;
+	margin-bottom: 10px;
+}
+.mobile_content_item_title {
+	background-color: #1a58ab;
+	padding: 5px 10px 5px 10px;
+}
+.mobile_content_item a {
+	color: white;
+}
+.mobile_content_item_table {
+	display: table;
+}
+.mobile_content_item_row {
+	display: table-row;
+}
+.mobile_content_item_right, .mobile_content_item_left {
+	display: table-cell;
+	border: 1px solid #1a58ab;
+	border-collapse: collapse;
+	padding: 5px 10px 5px 10px;
+}
+.mobile_content_item_left {
+	min-width: 100px;
+}
+.mobile_content_item_right {
+	width: 100%;
+}
+#mobile_content {
+	display: none;
+}
+#docLinks {
+    padding: 16px 0px 16px 0px;
+	margin: 0px;
+}
+.mobile_content_item_title a:hover {
+	text-decoration: none !important;
+	color: white;
+}
+@media screen and (max-width: 800px){
+	#mobile_content {
+		display: block;
+	}
+	#desktop_opendata_tb {
+		display: none;
+	}
+	#docLinks {
+		padding: 0px;
+		margin: 10px;
+	}
+}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+
+    <script type="text/javascript">
+		
+var menu_id = '6';
+var section_id = '2018010100000010007';
+
+           //
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">Skip Content</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>Hong Kong Observatory Open Data</h1>
+                <div class="border_blank">
+                    <a id="wcag_content" name="wcag_content"></a>
+<table border="1" id="desktop_opendata_tb" style="width: 100%;">
+    <tbody>
+        <tr>
+            <th style="min-width: 180px;">Name of Dataset</th>
+            <th>Frequency of Update (e.g. real-time; daily; weekly; monthly ...)</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-hong-kong-heat-index"
+                    target="_blank" rel="noopener">Hong Kong Heat Index</a></td>
+            <td>Every 10 Minutes</td>
+            <td>Provide the 10 most recent 10-minute mean Hong Kong Heat Index (the data provided is provisional)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-wet-bulb-globe-temperature"
+                    target="_blank" rel="noopener">Wet Bulb Globe Temperature</a></td>
+            <td>Every 10 Minutes</td>
+            <td>Provide the 10 most recent 60-minute mean Wet Bulb Globe Temperature (the data provided is provisional)</td>
+        </tr>
+
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-cloud-to-cloud-lightning-count"
+                    target="_blank" rel="noopener">Daily total cloud-to-cloud lightning count over Hong Kong
+                    territory</a></td>
+            <td>Monthly</td>
+            <td>Data on daily total cloud-to-cloud lightning count over Hong Kong territory (Please visit the reference
+                link for other climate information)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-cloud-to-ground-lightning-count"
+                    target="_blank" rel="noopener">Daily total cloud-to-ground lightning count over Hong Kong
+                    territory</a></td>
+            <td>Monthly</td>
+            <td>Data on daily total cloud-to-ground lightning count over Hong Kong territory (Please visit the reference
+                link for other climate information)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-monthly-total-potential-evapotranspiration"
+                    target="_blank" rel="noopener">Monthly total potential evapotranspiration
+                </a></td>
+            <td>Monthly</td>
+            <td>Data on monthly total potential evapotranspiration</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-grass-min-temp" target="_blank"
+                    rel="noopener">Daily grass minimum temperature</a></td>
+            <td>Monthly</td>
+            <td>Data on daily grass minimum temperature (Please visit the reference link for other climate information)
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-sea-temp" target="_blank"
+                    rel="noopener">Daily mean sea temperature</a></td>
+            <td>Monthly</td>
+            <td>Data on daily mean sea temperature (Please visit the reference link for other climate information)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-number-of-hours-of-reduced-visibility"
+                    target="_blank" rel="noopener">Daily number of hours of reduced visibility</a></td>
+            <td>Monthly</td>
+            <td>Data on daily number of hours of reduced visibility (Please visit the reference link for other climate
+                information)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-hourly-ambient-gamma-radiation-level-in-hong-kong"
+                    target="_blank" rel="noopener">Hourly ambient gamma radiation level in Hong Kong</a></td>
+            <td>Hourly</td>
+            <td>Provide hourly data on ambient gamma radiation level in Hong Kong (the data provided is provisional)
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-maximum-mean-heat-index" target="_blank"
+                    rel="noopener">Daily maximum and mean Hong Kong Heat Index</a></td>
+            <td>Monthly</td>
+            <td>Data on daily maximum and mean Hong Kong Heat Index (Please visit the reference link for other climate
+                information)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-dew-point" target="_blank"
+                    rel="noopener">Daily mean dew point temperature</a></td>
+            <td>Monthly</td>
+            <td>Data on daily mean dew point temperature (Please visit the reference link for other climate information)
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-wet-bulb" target="_blank"
+                    rel="noopener">Daily mean wet bulb temperature</a></td>
+            <td>Monthly</td>
+            <td>Data on daily mean wet bulb temperature (Please visit the reference link for other climate information)
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-tropical-cyclone-best-track-data"
+                    target="_blank" rel="noopener">Tropical cyclone best track data (post analysis)</a></td>
+            <td>Yearly</td>
+            <td>Provide data on post analysed position and intensity of tropical cyclones over the western North Pacific
+                and the South China Sea</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-amount-of-cloud" target="_blank"
+                    rel="noopener">Daily mean amount of cloud</a></td>
+            <td>Monthly</td>
+            <td>Data on daily mean amount of cloud (Please visit the reference link for other climate information)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-pressure" target="_blank"
+                    rel="noopener">Daily mean pressure</a></td>
+            <td>Monthly</td>
+            <td>Data on daily mean pressure (Please visit the reference link for other climate information)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-total-evaporation" target="_blank"
+                    rel="noopener">Daily total evaporation</a></td>
+            <td>Monthly</td>
+            <td>Data on daily total evaporation (Please visit the reference link for other climate information)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-rainfall-in-the-past-hour" target="_blank"
+                    rel="noopener">Rainfall in the past hour from automatic weather station</a></td>
+            <td>Every 15 Minutes</td>
+            <td>This dataset provides rainfall amount measured at automatic weather station during the 1-hour period
+                ending at the observation time. Please note the following in using this dataset:
+                <ul>(i) The rainfall data in this dataset is originated from automatic weather stations. In particular,
+                    the source of rainfall data of automatic weather station &ldquo;Hong Kong Observatory&rdquo; in this
+                    dataset is different from the official record of Hong Kong Observatory rainfall data as given in the
+                    climatological database, other weather bulletins such as Current Weather Report, Yesterday&rsquo;s
+                    Weather and Radiation Level, etc.</ul>
+                <ul>(ii) The rainfall data in this dataset is provisional. Only limited data validation has been carried
+                    out. Users should take note of this limitation in using the data.</ul>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-gregorian-lunar-calendar-conversion-table"
+                    target="_blank" rel="noopener">Gregorian-Lunar calendar conversion table</a></td>
+            <td>Yearly</td>
+            <td>Convert Gregorian date to Lunar date (in Chinese only)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-gridded-rainfall-nowcast-in-hong-kong"
+                    target="_blank" rel="noopener">Gridded rainfall nowcast in Hong Kong</a></td>
+            <td>Every 12 Minutes</td>
+            <td>Provide half-hourly gridded rainfall nowcast data in Hong Kong up to the next two hours</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-total-rainfall" target="_blank"
+                    rel="noopener">Daily total rainfall</a></td>
+            <td>Monthly</td>
+            <td>Data on daily total rainfall (Please visit the reference link for other climate information)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-relative-humidity" target="_blank"
+                    rel="noopener">Daily mean relative humidity</a></td>
+            <td>Monthly</td>
+            <td>Data on daily mean relative humidity (Please visit the reference link for other climate information)
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-south-china-coastal-waters-bulletin"
+                    target="_blank" rel="noopener">South China Coastal Waters bulletin</a></td>
+            <td>7 times daily and when there is update</td>
+            <td>Provide South China Coastal Waters bulletin</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-regional-weather-past-24-hour-temperature-difference"
+                    target="_blank" rel="noopener">Regional weather in Hong Kong - past 24-hour temperature
+                    difference</a></td>
+            <td>Every 10 Minutes</td>
+            <td>Provide regional weather in Hong Kong - past 24-hour temperature difference (the data provided is
+                provisional)</td>
+        </tr>
+        <tr>
+            <td><a href="https://portal.csdi.gov.hk/geoportal/?datasetId=hko_rcd_1629267205235_11788" target="_blank"
+                    rel="noopener">Hong Kong Observatory resource centre</a></td>
+            <td>As and when there is update</td>
+            <td>Provide information on Hong Kong Observatory resource centre</td>
+        </tr>
+        <tr>
+            <td><a href="https://portal.csdi.gov.hk/geoportal/?datasetId=hko_rcd_1634995599372_15888" target="_blank"
+                    rel="noopener">Network of weather stations in Hong Kong</a></td>
+            <td>As and when there is update</td>
+            <td>Provide information on the network of weather stations in Hong Kong</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-9-day-weather-forecast" target="_blank"
+                    rel="noopener">9-day weather forecast</a></td>
+            <td>Twice daily and when there is update</td>
+            <td>Provide 9-day weather forecast of Hong Kong</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-current-weather-report" target="_blank"
+                    rel="noopener">Current weather report</a></td>
+            <td>Hourly and when there is update</td>
+            <td>Provide current weather report of Hong Kong</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-local-weather-forecast" target="_blank"
+                    rel="noopener">Local weather forecast</a></td>
+            <td>Hourly and when there is update</td>
+            <td>Provide local weather forecast for today and/or tomorrow</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-weather-warning-information" target="_blank"
+                    rel="noopener">Weather warning information</a></td>
+            <td>As and when there is update</td>
+            <td>Provide detailed information of weather warning(s) in force</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-weather-warning-summary" target="_blank"
+                    rel="noopener">Weather warning summary</a></td>
+            <td>As and when there is update</td>
+            <td>Provide a summary of the weather warning(s) in force in Hong Kong</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-special-weather-tips" target="_blank"
+                    rel="noopener">Special weather tips</a></td>
+            <td>As and when there is update</td>
+            <td>Provide special weather tips in force in Hong Kong</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-quick-earthquake-messages" target="_blank"
+                    rel="noopener">Quick earthquake messages</a></td>
+            <td>As and when there is update</td>
+            <td>Provide information on earthquakes of magnitude 6.0 or above worldwide, as analyzed by the Hong Kong
+                Observatory</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-locally-felt-earth-tremor-report"
+                    target="_blank" rel="noopener">Locally felt earth tremor report</a></td>
+            <td>As and when there is update</td>
+            <td>Provide reports on earth tremors felt in Hong Kong</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-temperature-info-hko" target="_blank"
+                    rel="noopener">Daily maximum, mean and minimum temperatures</a></td>
+            <td>Monthly</td>
+            <td>Data on daily maximum, mean and minimum temperatures (Please visit the reference link for other climate
+                information)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-regional-weather-latest-10-min-mean-visibility"
+                    target="_blank" rel="noopener">Regional weather in Hong Kong &ndash; the latest 10-minute mean
+                    visibility</a></td>
+            <td>Every 10 Minutes</td>
+            <td>Provide regional weather in Hong Kong - latest 10-minute mean visibility (the data provided is
+                provisional)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-cloud-ground-lightning-count-past-hour"
+                    target="_blank" rel="noopener">Lightning count over Hong Kong territory in the past hour</a></td>
+            <td>Hourly</td>
+            <td>Provide cloud-to-ground and cloud-to-cloud lightning count over Hong Kong territory in the past hour
+                (the data provided is provisional)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-tc-track-info" target="_blank"
+                    rel="noopener">Tropical cyclone track information</a></td>
+            <td>As and when there is update</td>
+            <td>Provide tropical cyclone track information</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-times-of-sunrise-suntransit-sunset"
+                    target="_blank" rel="noopener">Times of sunrise, sun transit, sunset</a></td>
+            <td>Yearly</td>
+            <td>Provide times of sunrise, sun transit, sunset</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-times-of-moonrise-moontransit-moonset"
+                    target="_blank" rel="noopener">Times of moonrise, moon transit, moonset</a></td>
+            <td>Yearly</td>
+            <td>Provide times of moonrise, moon transit, moonset</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-hourly-heights-of-tides" target="_blank"
+                    rel="noopener">Predicted tidal information (Hourly heights of astronomical tides)</a></td>
+            <td>Yearly</td>
+            <td>Provide predicted tidal information (Hourly heights of astronomical tides)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-times-and-heights-of-high-and-low-tides"
+                    target="_blank" rel="noopener">Predicted tidal information (Times and heights of astronomical high
+                    and low tides)</a></td>
+            <td>Yearly</td>
+            <td>Provide predicted tidal information (Times and heights of astronomical high and low tides)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-smart-lamppost-weather-data" target="_blank"
+                    rel="noopener">Smart lampposts real-time experimental meteorological data (Post quality checks)</a>
+            </td>
+            <td>Every 10 Minutes</td>
+            <td>This dataset provides experimental meteorological data collected by the smart lampposts, including air
+                temperature, relative humidity, 10-minute mean wind direction and speed.</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-weather-and-radiation-level-report"
+                    target="_blank" rel="noopener">Weather and radiation level report</a></td>
+            <td>Daily</td>
+            <td>Provide weather and radiation level report</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-tidal-info" target="_blank"
+                    rel="noopener">Latest tidal information</a></td>
+            <td>Every 5 Minutes</td>
+            <td>Provide latest tidal information</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-fifteen-minute-mean-uv-index"
+                    target="_blank" rel="noopener">Latest 15-minute mean UV index from 7:00 a.m. to 6:00 p.m. Hong Kong
+                    time</a></td>
+            <td>Every 15 Minutes from 7:00 a.m. to 6:00 p.m. Hong Kong time</td>
+            <td>Provide the latest 15-minute mean UV index from 7:00 a.m. to 6:00 p.m. Hong Kong time</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-global-solar-radiation" target="_blank"
+                    rel="noopener">Daily global solar radiation</a></td>
+            <td>Monthly</td>
+            <td>Data on daily global solar radiation (Please visit the reference link for other climate information)
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-maximum-mean-uv-index" target="_blank"
+                    rel="noopener">Daily maximum and mean UV indices</a></td>
+            <td>Monthly</td>
+            <td>Data on daily maximum and mean UV indices (Please visit the reference link for other climate
+                information)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-total-bright-sunshine" target="_blank"
+                    rel="noopener">Daily total bright sunshine (hours)</a></td>
+            <td>Monthly</td>
+            <td>Data on daily total bright sunshine (Please visit the reference link for other climate information)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-max-and-min-air-temp-since-midnight"
+                    target="_blank" rel="noopener">Regional weather in Hong Kong &ndash; the maximum and minimum air
+                    temperature from 1-minute mean temperatures since midnight</a></td>
+            <td>Every 10 Minutes</td>
+            <td>Provide regional weather in Hong Kong - the maximum and minimum air temperature from 1-minute mean
+                temperatures since midnight (the data provided is provisional)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-one-minute-mean-air-temp" target="_blank"
+                    rel="noopener">Regional weather in Hong Kong &ndash; the latest 1-minute mean air temperature</a>
+            </td>
+            <td>Every 10 Minutes</td>
+            <td>Provide regional weather in Hong Kong - the latest 1-minute mean air temperature (the data provided is
+                provisional)</td>
+        </tr>
+        <tr>
+            <td><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-one-minute-mean-rh" target="_blank"
+                    rel="noopener">Regional weather in Hong Kong &ndash; the latest 1-minute mean relative humidity</a>
+            </td>
+            <td>Every 10 Minutes</td>
+            <td>Provide regional weather in Hong Kong - the latest 1-minute mean relative humidity (the data provided is
+                provisional)</td>
+        </tr>
+        <tr style="height: 18px;">
+            <td style="height: 18px;"><a
+                    href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-prevailing-wind-direction"
+                    target="_blank" rel="noopener">Daily prevailing wind direction</a></td>
+            <td style="height: 18px;">Monthly</td>
+            <td style="height: 18px;">Data on daily prevailing wind direction (Please visit the reference link for other
+                climate information)</td>
+        </tr>
+        <tr style="height: 18px;">
+            <td style="height: 18px;"><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-wind-speed"
+                    target="_blank" rel="noopener">Daily mean wind speed</a></td>
+            <td style="height: 18px;">Monthly</td>
+            <td style="height: 18px;">Data on daily mean wind speed (Please visit the reference link for other climate
+                information)</td>
+        </tr>
+        <tr style="height: 18px;">
+            <td style="height: 18px;"><a
+                    href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-ten-minute-wind-info" target="_blank"
+                    rel="noopener">Regional weather in Hong Kong &ndash; the latest 10-minute mean wind direction and
+                    wind speed and maximum gust</a></td>
+            <td style="height: 18px;">Every 10 Minutes</td>
+            <td style="height: 18px;">Provide regional weather in Hong Kong - the latest 10-minute mean wind direction
+                and wind speed and maximum gust (the data provided is provisional)</td>
+        </tr>
+        <tr style="height: 18px;">
+            <td style="height: 18px;"><a
+                    href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-one-minute-mean-sea-level-pressure"
+                    target="_blank" rel="noopener">Regional weather in Hong Kong &ndash; the latest 1-minute mean sea
+                    level pressure</a></td>
+            <td style="height: 18px;">Every 10 Minutes</td>
+            <td style="height: 18px;">Provide regional weather in Hong Kong - the latest 1-minute mean sea level
+                pressure (the data provided is provisional)</td>
+        </tr>
+        <tr style="height: 18px;">
+            <td style="height: 18px;"><a
+                    href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-one-minute-solar-radiation-info"
+                    target="_blank" rel="noopener">Regional weather in Hong Kong &ndash; the latest 1-minute global
+                    solar radiation and direct solar radiation and diffuse radiation </a></td>
+            <td style="height: 18px;">Every 10 Minutes</td>
+            <td style="height: 18px;">Provide regional weather in Hong Kong - the latest 1-minute global solar radiation
+                and direct solar radiation and diffuse radiation (the data provided is provisional)</td>
+        </tr>
+        <tr style="height: 18px;">
+            <td style="height: 18px;"><a
+                    href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-one-minute-mean-grass-temp"
+                    target="_blank" rel="noopener">Regional weather in Hong Kong &ndash; the latest 1-minute mean grass
+                    temperature from 5:00 p.m. to 8:00 a.m. the following date Hong Kong time</a></td>
+            <td style="height: 18px;">Every 10 Minutes from 5:00 p.m. to 8:00 a.m. the following date Hong Kong time
+            </td>
+            <td style="height: 18px;">Provide regional weather in Hong Kong - the latest 1-minute mean grass temperature
+                from 5:00 p.m. to 8:00 a.m. the following date Hong Kong time (the data provided is provisional)</td>
+        </tr>
+    </tbody>
+</table>
+<div id="mobile_content">
+
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-hong-kong-heat-index" target="_blank"
+                rel="noopener">Hong Kong Heat Index </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide the 10 most recent 10-minute mean Hong Kong Heat Index (the data provided is provisional)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 10 Minutes</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-wet-bulb-globe-temperature" target="_blank"
+                rel="noopener">Wet Bulb Globe Temperature </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide the 10 most recent 60-minute mean Wet Bulb Globe Temperature (the data provided is provisional)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 10 Minutes</div>
+            </div>
+        </div>
+    </div>
+  
+     <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-cloud-to-cloud-lightning-count" target="_blank"
+                rel="noopener">Daily total cloud-to-cloud lightning count over Hong Kong territory </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily total cloud-to-cloud lightning count over Hong Kong territory (Please visit the reference link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+
+     <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-cloud-to-ground-lightning-count" target="_blank"
+                rel="noopener">Daily total cloud-to-ground lightning count over Hong Kong territory </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily total cloud-to-ground lightning count over Hong Kong territory (Please visit the reference link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+        <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-monthly-total-potential-evapotranspiration" target="_blank"
+                rel="noopener">Monthly total potential evapotranspiration </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on monthly total potential evapotranspiration</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-grass-min-temp" target="_blank"
+                rel="noopener">Daily grass minimum temperature </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily grass minimum temperature (Please visit the
+                    reference link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-sea-temp" target="_blank"
+                rel="noopener">Daily mean sea temperature </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily mean sea temperature (Please visit the reference
+                    link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-number-of-hours-of-reduced-visibility"
+                target="_blank" rel="noopener">Daily number of hours of reduced visibility </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily number of hours of reduced visibility (Please visit
+                    the reference link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-hourly-ambient-gamma-radiation-level-in-hong-kong"
+                target="_blank" rel="noopener">Hourly ambient gamma radiation level in Hong Kong </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide hourly data on ambient gamma radiation level in Hong Kong
+                    (the data provided is provisional)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Hourly</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-maximum-mean-heat-index" target="_blank"
+                rel="noopener">Daily maximum and mean Hong Kong Heat Index </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily maximum and mean Hong Kong Heat Index (Please visit
+                    the reference link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-dew-point" target="_blank"
+                rel="noopener">Daily mean dew point temperature</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily mean dew point temperature (Please visit the
+                    reference link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-wet-bulb" target="_blank"
+                rel="noopener">Daily mean wet bulb temperature</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily mean wet bulb temperature (Please visit the
+                    reference link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-tropical-cyclone-best-track-data" target="_blank"
+                rel="noopener">Tropical cyclone best track data (post analysis)</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide data on post analysed position and intensity of tropical
+                    cyclones over the western North Pacific and the South China Sea</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Yearly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-amount-of-cloud" target="_blank"
+                rel="noopener">Daily mean amount of cloud </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily mean amount of cloud (Please visit the reference
+                    link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-pressure" target="_blank"
+                rel="noopener">Daily mean pressure </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily mean pressure (Please visit the reference link for
+                    other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-total-evaporation" target="_blank"
+                rel="noopener">Daily total evaporation </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily total evaporation (Please visit the reference link
+                    for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-rainfall-in-the-past-hour" target="_blank"
+                rel="noopener">Rainfall in the past hour from automatic weather station </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">This dataset provides rainfall amount measured at automatic
+                    weather station during the 1-hour period ending at the observation time. Please note the following
+                    in using this dataset:
+                    <ul>(i) The rainfall data in this dataset is originated from automatic weather stations. In
+                        particular, the source of rainfall data of automatic weather station &ldquo;Hong Kong
+                        Observatory&rdquo; in this dataset is different from the official record of Hong Kong
+                        Observatory rainfall data as given in the climatological database, other weather bulletins such
+                        as Current Weather Report, Yesterday&rsquo;s Weather and Radiation Level, etc.</ul>
+                    <ul>(ii) The rainfall data in this dataset is provisional. Only limited data validation has been
+                        carried out. Users should take note of this limitation in using the data.</ul>
+                </div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 15 Minutes</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-gregorian-lunar-calendar-conversion-table"
+                target="_blank" rel="noopener">Gregorian-Lunar calendar conversion table </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Convert Gregorian date to Lunar date (in Chinese only)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Yearly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-gridded-rainfall-nowcast-in-hong-kong"
+                target="_blank" rel="noopener">Gridded rainfall nowcast in Hong Kong</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide half-hourly gridded rainfall nowcast data in Hong Kong up
+                    to the next two hours</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 12 Minutes</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-total-rainfall" target="_blank"
+                rel="noopener">Daily total rainfall</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily total rainfall (Please visit the reference link for
+                    other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-relative-humidity" target="_blank"
+                rel="noopener">Daily mean relative humidity</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily mean relative humidity (Please visit the reference
+                    link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-south-china-coastal-waters-bulletin"
+                target="_blank" rel="noopener">South China Coastal Waters bulletin</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide South China Coastal Waters bulletin</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">7 times daily and when there is update</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-regional-weather-past-24-hour-temperature-difference"
+                target="_blank" rel="noopener">Regional weather in Hong Kong - past 24-hour temperature difference</a>
+        </div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide regional weather in Hong Kong - past 24-hour temperature
+                    difference (the data provided is provisional)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 10 Minutes</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://portal.csdi.gov.hk/geoportal/?datasetId=hko_rcd_1629267205235_11788" target="_blank"
+                rel="noopener">Hong Kong Observatory resource centre</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide information on Hong Kong Observatory resource centre
+                </div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">As and when there is update</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://portal.csdi.gov.hk/geoportal/?datasetId=hko_rcd_1634995599372_15888" target="_blank"
+                rel="noopener">Network of weather stations in Hong Kong</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide information on the network of weather stations in Hong
+                    Kong</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">As and when there is update</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-9-day-weather-forecast" target="_blank"
+                rel="noopener">9-day weather forecast</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide 9-day weather forecast of Hong Kong</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Twice daily and when there is update</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-current-weather-report" target="_blank"
+                rel="noopener">Current weather report</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide current weather report of Hong Kong</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Hourly and when there is update</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-local-weather-forecast" target="_blank"
+                rel="noopener">Local weather forecast</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide local weather forecast for today and/or tomorrow</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Hourly and when there is update</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-weather-warning-information" target="_blank"
+                rel="noopener">Weather warning information</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide detailed information of weather warning(s) in force</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">As and when there is update</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-weather-warning-summary" target="_blank"
+                rel="noopener">Weather warning summary</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide a summary of the weather warning(s) in force in Hong Kong
+                </div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">As and when there is update</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-special-weather-tips" target="_blank"
+                rel="noopener">Special weather tips</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide special weather tips in force in Hong Kong</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">As and when there is update</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-quick-earthquake-messages" target="_blank"
+                rel="noopener">Quick earthquake messages</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide information on earthquakes of magnitude 6.0 or above
+                    worldwide, as analyzed by the Hong Kong Observatory</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">As and when there is update</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-locally-felt-earth-tremor-report" target="_blank"
+                rel="noopener">Locally felt earth tremor report</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide reports on earth tremors felt in Hong Kong</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">As and when there is update</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-temperature-info-hko" target="_blank"
+                rel="noopener">Daily maximum, mean and minimum temperatures</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily maximum, mean and minimum temperatures (Please
+                    visit the reference link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-regional-weather-latest-10-min-mean-visibility"
+                target="_blank" rel="noopener">Regional weather in Hong Kong &ndash; the latest 10-minute mean
+                visibility</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide regional weather in Hong Kong - latest 10-minute mean
+                    visibility (the data provided is provisional)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 10 Minutes</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-cloud-ground-lightning-count-past-hour"
+                target="_blank" rel="noopener">Lightning count over Hong Kong territory in the past hour</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide cloud-to-ground and cloud-to-cloud lightning count over
+                    Hong Kong territory in the past hour (the data provided is provisional)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Hourly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a href="https://data.gov.hk/en-data/dataset/hk-hko-rss-tc-track-info"
+                target="_blank" rel="noopener">Tropical cyclone track information</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide tropical cyclone track information</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">As and when there is update</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-times-of-sunrise-suntransit-sunset" target="_blank"
+                rel="noopener">Times of sunrise, sun transit, sunset</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide times of sunrise, sun transit, sunset</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Yearly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-times-of-moonrise-moontransit-moonset"
+                target="_blank" rel="noopener">Times of moonrise, moon transit, moonset</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide times of moonrise, moon transit, moonset</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Yearly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-hourly-heights-of-tides" target="_blank"
+                rel="noopener">Predicted tidal information (Hourly heights of astronomical tides)</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide predicted tidal information (Hourly heights of
+                    astronomical tides)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Yearly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-times-and-heights-of-high-and-low-tides"
+                target="_blank" rel="noopener">Predicted tidal information (Times and heights of astronomical high and
+                low tides)</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide predicted tidal information (Times and heights of
+                    astronomical high and low tides)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Yearly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-smart-lamppost-weather-data" target="_blank"
+                rel="noopener">Smart lampposts real-time experimental meteorological data (Post quality checks)</a>
+        </div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">This dataset provides experimental meteorological data collected
+                    by the smart lampposts, including air temperature, relative humidity, 10-minute mean wind direction
+                    and speed.</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 10 Minutes</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-weather-and-radiation-level-report" target="_blank"
+                rel="noopener">Weather and radiation level report</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide weather and radiation level report</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Daily</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-tidal-info" target="_blank"
+                rel="noopener">Latest tidal information</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide latest tidal information</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 5 Minutes</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-fifteen-minute-mean-uv-index"
+                target="_blank" rel="noopener">Latest 15-minute mean UV index from 7:00 a.m. to 6:00 p.m. Hong Kong
+                time</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide the latest 15-minute mean UV index from 7:00 a.m. to 6:00
+                    p.m. Hong Kong time</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 15 Minutes from 7:00 a.m. to 6:00 p.m. Hong Kong time</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-global-solar-radiation" target="_blank"
+                rel="noopener">Daily global solar radiation</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily global solar radiation (Please visit the reference
+                    link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-maximum-mean-uv-index" target="_blank"
+                rel="noopener">Daily maximum and mean UV indices</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily maximum and mean UV indices (Please visit the
+                    reference link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-total-bright-sunshine" target="_blank"
+                rel="noopener">Daily total bright sunshine (hours)</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily total bright sunshine (Please visit the reference
+                    link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-max-and-min-air-temp-since-midnight"
+                target="_blank" rel="noopener">Regional weather in Hong Kong &ndash; the maximum and minimum air
+                temperature from 1-minute mean temperatures since midnight</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide regional weather in Hong Kong - the maximum and minimum
+                    air temperature from 1-minute mean temperatures since midnight (the data provided is provisional)
+                </div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 10 Minutes</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-one-minute-mean-air-temp" target="_blank"
+                rel="noopener">Regional weather in Hong Kong &ndash; the latest 1-minute mean air temperature</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide regional weather in Hong Kong - the latest 1-minute mean
+                    air temperature (the data provided is provisional)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 10 Minutes</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-one-minute-mean-rh" target="_blank"
+                rel="noopener">Regional weather in Hong Kong &ndash; the latest 1-minute mean relative humidity</a>
+        </div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide regional weather in Hong Kong - the latest 1-minute mean
+                    relative humidity (the data provided is provisional)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 10 Minutes</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-prevailing-wind-direction" target="_blank"
+                rel="noopener">Daily prevailing wind direction</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily prevailing wind direction (Please visit the
+                    reference link for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-daily-mean-wind-speed" target="_blank"
+                rel="noopener">Daily mean wind speed</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Data on daily mean wind speed (Please visit the reference link
+                    for other climate information)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Monthly</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-ten-minute-wind-info" target="_blank"
+                rel="noopener">Regional weather in Hong Kong &ndash; the latest 10-minute mean wind direction and wind
+                speed and maximum gust </a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide regional weather in Hong Kong - the latest 10-minute mean
+                    wind direction and wind speed and maximum gust (the data provided is provisional)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 10 Minutes</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-one-minute-mean-sea-level-pressure"
+                target="_blank" rel="noopener">Regional weather in Hong Kong &ndash; the latest 1-minute mean sea level
+                pressure</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide regional weather in Hong Kong - the latest 1-minute mean
+                    sea level pressure (the data provided is provisional)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 10 Minutes</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-one-minute-solar-radiation-info"
+                target="_blank" rel="noopener">Regional weather in Hong Kong &ndash; the latest 1-minute global solar
+                radiation and direct solar radiation and diffuse radiation</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide regional weather in Hong Kong - the latest 1-minute
+                    global solar radiation and direct solar radiation and diffuse radiation (the data provided is
+                    provisional)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 10 Minutes</div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_content_item">
+        <div class="mobile_content_item_title"><a
+                href="https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-one-minute-mean-grass-temp" target="_blank"
+                rel="noopener">Regional weather in Hong Kong &ndash; the latest 1-minute mean grass temperature from
+                5:00 p.m. to 8:00 a.m. the following date Hong Kong time</a></div>
+        <div class="mobile_content_item_table">
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Description</div>
+                <div class="mobile_content_item_right">Provide regional weather in Hong Kong - the latest 1-minute mean
+                    grass temperature from 5:00 p.m. to 8:00 a.m. the following date Hong Kong time (the data provided
+                    is provisional)</div>
+            </div>
+            <div class="mobile_content_item_row">
+                <div class="mobile_content_item_left">Frequency of Update</div>
+                <div class="mobile_content_item_right">Every 10 Minutes from 5:00 p.m. to 8:00 a.m. the following date
+                    Hong Kong time</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="docLinks">
+    <div class="docLink">Hong Kong Observatory Open Data API is now available. Please click here for the <a
+            href="https://data.weather.gov.hk/weatherAPI/doc/HKO_Open_Data_API_Documentation.pdf">Documentation</a>.
+    </div>
+    <div class="docLink">Please refer to <a id="" href="../../en/readme/readme.htm">this webpage</a> for details about
+        using data and materials on the HKO website.</div>
+</div>
+<script>var last_revision_date = '1 September 2026';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A1405AC7BA0057",
+  "provider": "NOAA/NDBC",
+  "dataset": "CRYV2.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:15:32.130337Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/CRYV2.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/CRYV2.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 1013884,
+  "sha256": "f699f3c56abd346342aca578fd17db6bde15029521cc4ba4efc7858a6a4b458d",
+  "etag": "\"f787c-65cac2d3c74d6\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-A1405AC7BA0057\\20260930T051532.130337Z_f699f3c56abd3463.txt",
+  "parent_id": "DISC-D9627078B76644",
+  "discovery_depth": 2
+}

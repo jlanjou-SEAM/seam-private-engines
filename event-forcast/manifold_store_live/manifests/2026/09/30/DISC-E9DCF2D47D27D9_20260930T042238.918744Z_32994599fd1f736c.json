@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E9DCF2D47D27D9",
+  "provider": "NOAA/SWPC",
+  "dataset": "summary",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:22:38.918744Z",
+  "request_url": "https://services.swpc.noaa.gov/products/summary/",
+  "final_url": "https://services.swpc.noaa.gov/products/summary/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 658,
+  "sha256": "32994599fd1f736ca568cd60851be48bdf3643b71fcc50e2b3acced9a33d3403",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-E9DCF2D47D27D9\\20260930T042238.918744Z_32994599fd1f736c.html",
+  "parent_id": "SWPC-PRODUCTS",
+  "discovery_depth": 1
+}

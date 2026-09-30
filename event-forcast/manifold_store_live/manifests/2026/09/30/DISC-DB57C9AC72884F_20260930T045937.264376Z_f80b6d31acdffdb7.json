@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-DB57C9AC72884F",
+  "provider": "NOAA/SWPC",
+  "dataset": "fits",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:59:37.264376Z",
+  "request_url": "https://services.swpc.noaa.gov/products/ccor2/fits/",
+  "final_url": "https://services.swpc.noaa.gov/products/ccor2/fits/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 327908,
+  "sha256": "f80b6d31acdffdb71d6b72cc7ab1a7284807cbf89d0a0c58a881e8be8c636ef0",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-DB57C9AC72884F\\20260930T045937.264376Z_f80b6d31acdffdb7.html",
+  "parent_id": "DISC-68539D413377BD",
+  "discovery_depth": 2
+}

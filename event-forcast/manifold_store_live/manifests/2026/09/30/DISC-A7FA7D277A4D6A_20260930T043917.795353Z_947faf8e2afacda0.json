@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-A7FA7D277A4D6A",
+  "provider": "NOAA/NCEI",
+  "dataset": "SOS_FY2025_Executive_Summary.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:17.795353Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2025-12/SOS_FY2025_Executive_Summary.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2025-12/SOS_FY2025_Executive_Summary.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 907983,
+  "sha256": "947faf8e2afacda016aabec56c9264e970724eaa8f2e57894cadc480b396bf25",
+  "etag": null,
+  "last_modified": "Mon, 15 Dec 2025 14:56:04 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A7FA7D277A4D6A\\20260930T043917.795353Z_947faf8e2afacda0.pdf",
+  "parent_id": "DISC-9D0226951FD2F4",
+  "discovery_depth": 2
+}

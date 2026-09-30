@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-8D8D6B61CB36E8",
+  "provider": "NOAA/NCEI",
+  "dataset": "ocean-physics",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:48:20.830133Z",
+  "request_url": "https://www.ncei.noaa.gov/products/ocean-physics",
+  "final_url": "https://www.ncei.noaa.gov/products/ocean-physics",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 33576,
+  "sha256": "fd1d2a761fbb42d8f03179df8db7c85f11e293a0d4ee92a96f2697afdcfd5acc",
+  "etag": "\"1790724287-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 23:24:47 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-8D8D6B61CB36E8\\20260930T044820.830133Z_fd1d2a761fbb42d8.html",
+  "parent_id": "DISC-EDC6078DE4604F",
+  "discovery_depth": 2
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-06EAA8DB154626",
+  "provider": "WeatherAPI.com",
+  "dataset": "conditions.json",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:42.451590Z",
+  "request_url": "https://www.weatherapi.com/docs/conditions.json",
+  "final_url": "https://www.weatherapi.com/docs/conditions.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 434774,
+  "sha256": "005405be614ecebe1fb3f6e16101c27dc8dc7f82435e53f168e36638ae3205e5",
+  "etag": "\"ad93f3a8dcf6dc1:0\"",
+  "last_modified": "Mon, 08 Jun 2026 00:20:50 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-06EAA8DB154626\\20260930T040442.451590Z_005405be614ecebe.json",
+  "parent_id": "WEATHERAPI",
+  "discovery_depth": 1
+}

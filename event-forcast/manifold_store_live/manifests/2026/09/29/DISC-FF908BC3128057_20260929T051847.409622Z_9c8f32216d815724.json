@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-FF908BC3128057",
+  "provider": "NOAA Aviation Weather Center",
+  "dataset": "airsigmet2_0.xsd",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "aviation",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:47.409622Z",
+  "request_url": "https://aviationweather.gov/data/schema/airsigmet2_0.xsd",
+  "final_url": "https://aviationweather.gov/data/schema/airsigmet2_0.xsd",
+  "status_code": 200,
+  "content_type": "application/octet-stream",
+  "byte_length": 4187,
+  "sha256": "9c8f32216d81572424d8e7bfe7810288bf005a31e9c81e250eb4608a28fcd1a7",
+  "etag": "\"6aaaf524-105b\"",
+  "last_modified": "Wed, 16 Sep 2026 19:59:32 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\aviation\\2026\\09\\29\\DISC-FF908BC3128057\\20260929T051847.409622Z_9c8f32216d815724.xsd",
+  "parent_id": "AVIATION-WX-API",
+  "discovery_depth": 1
+}

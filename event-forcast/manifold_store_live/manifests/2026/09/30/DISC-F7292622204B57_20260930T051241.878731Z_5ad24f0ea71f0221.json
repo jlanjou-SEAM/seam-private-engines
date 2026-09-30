@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-F7292622204B57",
+  "provider": "NOAA/NDBC",
+  "dataset": "EFLA1.txt",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T05:12:41.878731Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/realtime2/EFLA1.txt",
+  "final_url": "https://www.ndbc.noaa.gov/data/realtime2/EFLA1.txt",
+  "status_code": 200,
+  "content_type": "text/plain; charset=ISO-8859-1",
+  "byte_length": 682346,
+  "sha256": "5ad24f0ea71f02216e31764bf9fc4ff092bd5b6611064093ccc594c5982afcc2",
+  "etag": "\"a696a-65cac2d3e3224\"",
+  "last_modified": "Wed, 30 Sep 2026 05:00:23 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-F7292622204B57\\20260930T051241.878731Z_5ad24f0ea71f0221.txt",
+  "parent_id": "DISC-2BBE8903E268F5",
+  "discovery_depth": 2
+}

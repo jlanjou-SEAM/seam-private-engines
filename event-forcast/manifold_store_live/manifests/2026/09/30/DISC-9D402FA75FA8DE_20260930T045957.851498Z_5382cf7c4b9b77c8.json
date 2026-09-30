@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-9D402FA75FA8DE",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "global-climate-202608",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:59:57.851498Z",
+  "request_url": "https://www.ncei.noaa.gov/news/global-climate-202608",
+  "final_url": "https://www.ncei.noaa.gov/news/global-climate-202608",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 44354,
+  "sha256": "5382cf7c4b9b77c84902c301be762abc85aa377ad7af4f2b5cee0bf263558559",
+  "etag": "\"1790743767-gzip\"",
+  "last_modified": "Wed, 30 Sep 2026 04:49:27 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-9D402FA75FA8DE\\20260930T045957.851498Z_5382cf7c4b9b77c8.html",
+  "parent_id": "DISC-12F9502270D672",
+  "discovery_depth": 2
+}

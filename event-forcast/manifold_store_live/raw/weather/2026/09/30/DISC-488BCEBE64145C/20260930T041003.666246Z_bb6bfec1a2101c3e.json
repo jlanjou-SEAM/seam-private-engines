@@ -1,0 +1,343 @@
+[
+  {
+    "key": "default",
+    "name": "今注目の防災情報",
+    "enName": "Important Information from JMA",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "contents": {
+      "japan":[
+        {
+          "position": "L",
+          "order": "1",
+          "name": "panel"
+        },
+        {
+          "position": "R",
+          "order": "2",
+          "name": "warning"
+        },
+        {
+          "position": "L",
+          "order": "3",
+          "name": "information"
+        }
+      ],
+      "offices": [
+        {
+          "position": "L",
+          "order": "1",
+          "name": "panel"
+        },
+        {
+          "position": "L",
+          "order": "2",
+          "name": "forecast_table"
+        },
+        {
+          "position": "R",
+          "order": "2",
+          "name": "amedas"
+        },
+        {
+          "position": "R",
+          "order": "1",
+          "name": "radar"
+        }
+      ],
+      "class20s": [
+        {
+          "position": "L",
+          "order": "1",
+          "name": "panel"
+        },
+        {
+          "position": "L",
+          "order": "2",
+          "name": "forecast_table"
+        },
+        {
+          "position": "R",
+          "order": "2",
+          "name": "amedas_table"
+        },
+        {
+          "position": "R",
+          "order": "1",
+          "name": "radar"
+        }
+      ]
+    }
+  },
+  {
+    "key": "forecast",
+    "name": "天気",
+    "enName": "Weather",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "contents": {
+      "japan":[
+        {
+          "position": "L",
+          "order": "1",
+          "name": "forecast"
+        },
+        {
+          "position": "R",
+          "order": "2",
+          "name": "amedas"
+        },
+        {
+          "position": "L",
+          "order": "3",
+          "name": "radar"
+        },
+        {
+          "position": "R",
+          "order": "4",
+          "name": "kaikotan"
+        },
+        {
+          "position": "L",
+          "order": "5",
+          "name": "weather_map"
+        },
+        {
+          "position": "R",
+          "order": "6",
+          "name": "himawari"
+        }
+      ],
+      "offices": [
+        {
+          "position": "L",
+          "order": "1",
+          "name": "panel"
+        },
+        {
+          "position": "L",
+          "order": "2",
+          "name": "forecast_table"
+        },
+        {
+          "position": "R",
+          "order": "3",
+          "name": "radar"
+        },
+        {
+          "position": "R",
+          "order": "4",
+          "name": "amedas"
+        }
+      ],
+      "class20s": [
+        {
+          "position": "L",
+          "order": "1",
+          "name": "panel"
+        },
+        {
+          "position": "L",
+          "order": "2",
+          "name": "forecast_table"
+        },
+        {
+          "position": "R",
+          "order": "3",
+          "name": "radar"
+        },
+        {
+          "position": "L",
+          "order": "4",
+          "name": "amedas_table"
+        }
+      ]
+    }
+  },
+  {
+    "key": "rain_level",
+    "name": "キキクル",
+    "enName": "Risk Maps",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "contents": {
+      "japan": [
+        {
+          "position": "L",
+          "order": "1",
+          "name": "radar"
+        },
+        {
+          "position": "R",
+          "order": "2",
+          "name": "level_inundation"
+        },
+        {
+          "position": "L",
+          "order": "3",
+          "name": "level_landslide"
+        },
+        {
+          "position": "R",
+          "order": "4",
+          "name": "level_flood"
+        }
+      ],
+      "offices": [
+        {
+          "position": "L",
+          "order": "1",
+          "name": "radar"
+        },
+        {
+          "position": "R",
+          "order": "2",
+          "name": "level_inundation"
+        },
+        {
+          "position": "L",
+          "order": "3",
+          "name": "level_landslide"
+        },
+        {
+          "position": "R",
+          "order": "4",
+          "name": "level_flood"
+        }
+      ],
+      "class20s": [
+        {
+          "position": "L",
+          "order": "1",
+          "name": "radar"
+        },
+        {
+          "position": "R",
+          "order": "2",
+          "name": "level_inundation"
+        },
+        {
+          "position": "L",
+          "order": "3",
+          "name": "level_landslide"
+        },
+        {
+          "position": "R",
+          "order": "4",
+          "name": "level_flood"
+        }
+      ]
+    }
+  },
+  {
+    "key": "rain_snow",
+    "allow": {},
+    "contents": {
+      "japan": [],
+      "offices": [],
+      "class20s": []
+    }
+  },
+  {
+    "key": "earthquake_volcano",
+    "name": "地震・火山",
+    "enName": "Earthquake/Volcano",
+    "allow": {
+      "test": true,
+      "develop": true,
+      "bosai": true
+    },
+    "contents": {
+      "japan": [
+        {
+          "position": "L",
+          "order": "1",
+          "name": "panel"
+        },
+        {
+          "position": "L",
+          "order": "2",
+          "name": "earthquake"
+        },
+        {
+          "position": "R",
+          "order": "3",
+          "name": "tsunami"
+        },
+        {
+          "position": "L",
+          "order": "4",
+          "name": "nteq"
+        },
+        {
+          "position": "R",
+          "order": "5",
+          "name": "volcano"
+        }
+      ],
+      "offices": [
+        {
+          "position": "L",
+          "order": "1",
+          "name": "panel"
+        },
+        {
+          "position": "L",
+          "order": "2",
+          "name": "earthquake"
+        },
+        {
+          "position": "R",
+          "order": "3",
+          "name": "tsunami"
+        },
+        {
+          "position": "L",
+          "order": "4",
+          "name": "nteq"
+        },
+        {
+          "position": "R",
+          "order": "5",
+          "name": "volcano"
+        }
+      ],
+      "class20s": [
+        {
+          "position": "L",
+          "order": "1",
+          "name": "panel"
+        },
+        {
+          "position": "L",
+          "order": "2",
+          "name": "earthquake"
+        },
+        {
+          "position": "R",
+          "order": "3",
+          "name": "tsunami"
+        },
+        {
+          "position": "L",
+          "order": "4",
+          "name": "nteq"
+        },
+        {
+          "position": "R",
+          "order": "5",
+          "name": "volcano"
+        }
+      ]
+    }
+  }
+]

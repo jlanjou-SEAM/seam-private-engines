@@ -1,0 +1,45 @@
+{
+    "name": "Yoast.com",
+    "start_url": "https://yoast.com/",
+    "display": "minimal-ui",
+    "dir": "ltr",
+    "lang": "en-US",
+    "background_color": "#fff",
+    "theme_color": "#fff",
+    "description": "Yoast helps you with your website optimization, whether it be through our widely used SEO software or our online SEO courses: we're here to help.",
+    "icons": [
+        {
+            "src": "/app/themes/yoast-theme/images/yoast-logo-icon-120x120.png",
+            "sizes": "120x120",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/images/yoast_icon_180x180.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/app/uploads/2015/09/cropped-Yoast_Favicon_512x512-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/app/themes/yoast-theme/images/yoast-logo-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "short_name": "Yoast",
+    "chrome_settings_overrides": {
+        "search_provider": {
+            "name": "Yoast",
+            "search_url": "https://yoast.com/?s={searchTerms}",
+            "keyword": "yoast",
+            "favicon_url": "https://yoast.com/favicon.ico"
+        }
+    }
+}

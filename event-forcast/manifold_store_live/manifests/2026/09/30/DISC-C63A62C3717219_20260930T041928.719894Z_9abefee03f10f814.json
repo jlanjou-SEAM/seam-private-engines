@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C63A62C3717219",
+  "provider": "NOAA/NCEP",
+  "dataset": "navbarleft.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:28.719894Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/nwscwi/navbarleft.jpg",
+  "final_url": "https://www.cpc.ncep.noaa.gov/nwscwi/navbarleft.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 826,
+  "sha256": "9abefee03f10f8145f98d4c09109e063766c674e4e04cfd5d0a37d965db9ac0b",
+  "etag": null,
+  "last_modified": "Thu, 13 Jun 2002 09:31:20 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-C63A62C3717219\\20260930T041928.719894Z_9abefee03f10f814.jpg",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

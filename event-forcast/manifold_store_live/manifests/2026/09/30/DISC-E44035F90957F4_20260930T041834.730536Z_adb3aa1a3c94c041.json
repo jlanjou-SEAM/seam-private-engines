@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E44035F90957F4",
+  "provider": "NOAA/NDBC",
+  "dataset": "swden",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "marine",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:34.730536Z",
+  "request_url": "https://www.ndbc.noaa.gov/data/swden/",
+  "final_url": "https://www.ndbc.noaa.gov/data/swden/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 3353,
+  "sha256": "adb3aa1a3c94c041856fa010989f657daac73da03f7b6ab66bd9888546412d4c",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\marine\\2026\\09\\30\\DISC-E44035F90957F4\\20260930T041834.730536Z_adb3aa1a3c94c041.html",
+  "parent_id": "DISC-5A7C0E42A79699",
+  "discovery_depth": 2
+}

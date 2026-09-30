@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-DEA5EF610B2789",
+  "provider": "NOAA/NCEI",
+  "dataset": "Ken%20Casey.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:45.696896Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/2024-12/Ken%20Casey.png",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2024-12/Ken%20Casey.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 452777,
+  "sha256": "007e129931ecbb4817c87d22a7a4145de35b691dd5fff208fb75f4a661444e92",
+  "etag": null,
+  "last_modified": "Tue, 31 Dec 2024 14:45:46 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-DEA5EF610B2789\\20260930T044645.696896Z_007e129931ecbb48.png",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

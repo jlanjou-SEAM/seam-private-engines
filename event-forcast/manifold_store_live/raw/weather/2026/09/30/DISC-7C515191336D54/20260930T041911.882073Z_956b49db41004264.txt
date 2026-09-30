@@ -1,0 +1,96 @@
+#
+#  Station Table format:
+#
+#  ProviderId|AFOS(HB5)Id|StationName|StationElevation|Latitude|Longitude|localTZ|StationLocation|
+#  StationType|NumberOfInstruments|NumberOfLevels|Maint/CalibSchedules|
+#  SiteDesc|
+#
+#  Provider Sta.Id  - Data provider station id
+#  AFOS(HB5)Id      - The AFOS or Handbook 5 id (NWS assigned)
+#  Name             - Text name of station
+#  Elevation        - Elevation of station (meters)
+#  Latitude         - Latitude of station (decimal)
+#  Longitude        - Longitude of station (decimal)
+#  local TZ         - local Timezone (i.e. MST7MDT)
+#  Station Location - Location of Station (Text)
+#  Station Type     - Type of station (i.e. tower, surface, floating
+#  platform,etc.)
+#  Number of Instruments - The number of reporting instruments for the station
+#  Number of Levels      - Number of Reporting Levels for the data (Level
+#                     information should be provided in the instrument table.)
+#  Maintenance/Calibration Schedules - Frequency of Maintenance/Calibration
+#  Site Description      - A text description of the site surroundings
+#
+#  *Note* Do not use the '#' in any of the fields below.  The '#' is a comment
+#  line marker.
+#
+IA000|RDAI4|Adair (I-80)                           | 450.0| 41.4963| -94.7263|GMT|||1||||
+IA001|RALI4|Algona (US 18)                         | 337.0| 43.0830| -94.3985|GMT|||1||||
+IA002|RTNI4|Alton (IA10)                           | 430.0| 42.9978| -96.0843|GMT|||1||||
+IA003|RTOI4|Altoona (I-80/US 65)                   | 262.0| 41.6597| -93.5222|GMT|||1||||
+IA004|RAMI4|Ames (I-35)                            | 313.0| 42.0340| -93.5702|GMT|||1||||
+IA005|RAKI4|Ankeny (I-35)                          | 264.0| 41.7618| -93.5697|GMT|||1||||
+IA006|RAVI4|Avoca (I-80)                           | 378.0| 41.4982| -95.2915|GMT|||1||||
+IA007|RBUI4|Burlington (US 34)                     | 218.0| 40.8130| -91.0992|GMT|||1||||
+IA008|RCAI4|Carroll (US 30)                        | 389.0| 42.0785| -94.8975|GMT|||1||||
+IA009|RCDI4|Cedar Rapids (I-380)                   | 236.0| 41.9780| -91.6745|GMT|||1||||
+IA010|RCII4|Cedar Rapids (US 30)                   | 246.0| 41.9300| -91.6838|GMT|||1||||
+IA011|RCNI4|Centerville (IA 2)                     | 295.0| 40.7397| -93.0027|GMT|||1||||
+IA012|RCBI4|Council Bluffs (I-80)                  | 268.0| 41.2325| -95.8662|GMT|||1||||
+IA013|RCEI4|Creston (US 34)                        | 389.0| 41.0498| -94.3080|GMT|||1||||
+IA014|RDVI4|Davenport (I-80/I-280)                 | 206.0| 41.6023| -90.6777|GMT|||1||||
+IA015|RDCI4|Decorah (IA 9)                         | 310.0| 43.2455| -91.6997|GMT|||1||||
+IA016|RDSI4|Des Moines (I-35)                      | 224.0| 41.5275| -93.7723|GMT|||1||||
+IA017|RDMI4|Des Moines (I-235)                     | 254.0| 41.5957| -93.6113|GMT|||1||||
+IA018|RDEI4|De Soto (I-80/US 169)                  | 292.0| 41.5415| -94.0112|GMT|||1||||
+IA019|RDWI4|De Witt (US 30/US 61)                  | 241.0| 41.8262| -90.5705|GMT|||1||||
+IA020|RDBI4|Dubuque (US 20)                        | 250.0| 42.4903| -90.7310|GMT|||1||||
+IA021|RFDI4|Fort Dodge (US 20)                     | 286.0| 42.4463| -94.1835|GMT|||1||||
+IA022|RGRI4|Grinnell (I-80)                        | 281.0| 41.6975| -92.7257|GMT|||1||||
+IA023|RIAI4|Iowa City (US 218)                     | 254.0| 41.6575| -91.5988|GMT|||1||||
+IA024|RIOI4|Iowa City (I-80)                       | 250.0| 41.6887| -91.5812|GMT|||1||||
+IA025|RJFI4|Jefferson (IA 4)                       | 310.0| 42.0518| -94.3783|GMT|||1||||
+IA026|RLEI4|Leon (I-35)/IA 2)                      | 349.0| 40.7387| -93.8417|GMT|||1||||
+IA027|RMNI4|Manchester (US 20)                     | 309.0| 42.4710| -91.4473|GMT|||1||||
+IA028|RMQI4|Maquoketa (US 61/IA 64)                | 251.0| 42.0685| -90.6835|GMT|||1||||
+IA029|RMTI4|Marshalltown (US 30)                   | 291.0| 42.0037| -92.9617|GMT|||1||||
+IA030|RMCI4|Mason City (I-35)                      | 377.0| 43.0380| -93.3418|GMT|||1||||
+IA031|RMVI4|Missouri Valley (I-29)                 | 310.0| 41.5495| -95.9173|GMT|||1||||
+IA032|RMPI4|Mount Pleasant (US 218)                | 133.0| 40.8957| -91.5555|GMT|||1||||
+IA033|RNHI4|New Hampton (US 18)                    | 327.0| 43.0672| -92.4592|GMT|||1||||
+IA034|RONI4|Onawa (I-29)                           | 303.0| 41.8653| -96.1032|GMT|||1||||
+IA035|ROSI4|Osceola (I-35)                         | 334.0| 41.0257| -93.7978|GMT|||1||||
+IA036|ROTI4|Ottumwa (US 63)                        | 196.0| 41.0168| -92.4212|GMT|||1||||
+IA037|RPLI4|Pella (IA 163)                         | 271.0| 41.3902| -92.8725|GMT|||1||||
+IA038|RROI4|Red Oak (US 34/US 71)                  | 291.0| 40.9800| -94.9838|GMT|||1||||
+IA039|RSDI4|Sidney (I-29/IA 2)                     | 288.0| 40.6900| -95.7848|GMT|||1||||
+IA040|RSGI4|Sigourney (IA 92)                      | 203.0| 41.3363| -92.3145|GMT|||1||||
+IA041|RSCI4|Sioux City (I-29)                      | 350.0| 42.4822| -96.0787|GMT|||1||||
+IA042|RSPI4|Spencer (US 18)                        | 453.0| 43.1268| -95.0888|GMT|||1||||
+IA043|RSLI4|Storm Lake (US 71/IA 3)                | 405.0| 42.7475| -95.1515|GMT|||1||||
+IA044|RTPI4|Tipton (I-80)                          | 236.0| 41.6450| -91.1265|GMT|||1||||
+IA045|RURI4|Urbana (I-380)                         | 302.0| 42.3125| -91.9758|GMT|||1||||
+IA046|RWLI4|Waterloo (US 20)                       | 269.0| 42.4557| -92.3090|GMT|||1||||
+IA047|RWII4|Williams (I-35)                        | 350.0| 42.5875| -93.5315|GMT|||1||||
+IA048|RWBI4|Williamsburg (I-80)                    | 260.0| 41.6877| -92.0087|GMT|||1||||
+IA049|RHAI4|Hanlontown (I-35)                      | 333.0| 43.3922| -93.3498|GMT|||1||||
+IA050|RSBI4|Steamboat Rock (US20)                  | 320.0| 42.4534| -93.0583|GMT|||1||||
+IA051|RIGI4|Ida Grove (HW 59)                      | 411.0| 42.3515| -95.4783|GMT|||1||||
+IA052|RCRI4|Cedar Rapids (US30)                    | 236.0| 41.9259| -91.5499|GMT|||1||||
+IA053|RCFI4|Colfax (I-80)                          | 246.0| 41.6893| -93.2648|GMT|||1||||
+IA054|RSYI4|Sibley (HW 60/HW 9)                    | 479.8| 43.4335| -95.7149|GMT|||1||||
+IA055|RBFI4|West of Bedford (HW 2)                 | 335.5| 40.6773| -94.7149|GMT|||1||||
+IA056|RDYI4|West of Eddyville (HW 137)             | 243.7| 41.1465| -92.6436|GMT|||1||||
+IA057|RTMI4|East of Tama (HW 30/HW 21)             | 250.7| 41.9649| -92.2983|GMT|||1||||
+IA058|RPFI4|Plainfield                             | 294.0| 42.8332| -92.5371|GMT|||1||||
+IA059|IA059|Cantril                                | 211.0| 40.6578| -92.0621|GMT|||1||||
+IA060|IA060|Denison                                | 427.0| 41.9185| -95.3439|GMT|||1||||
+IAM01|IAM01|Hwys 218 and 92 Intersection           | 223.0| 41.2913| -91.5332|GMT|||1||||
+IAM02|IAM02|Hwy 150 near Maynard                   | 356.0| 42.7739| -91.9023|GMT|||1||||
+IAP02|IAP02|Iowa and Missouri Border               | 154.0| 40.4648| -91.5681|GMT|||1||||
+IAP03|IAP03|Lime Springs                           | 396.0| 43.4336| -92.3046|GMT|||1||||
+IAP01|IAP01|Osceola                                | 372.0| 42.4496| -94.6584|GMT|||1||||
+IA064|IA064|Estherville                            | 391.0| 43.3993| -94.7973|GMT|||1||||
+IA061|IA061|Quad Cities                            | 177.0| 41.5171| -90.5131|GMT|||1||||
+IA062|IA062|Sioux City Maintenance                 | 347.0| 42.5497| -96.3479|GMT|||1||||
+IA063|IA063|Rockwell City                          | 386.0| 42.4501| -94.6700|GMT|||1||||

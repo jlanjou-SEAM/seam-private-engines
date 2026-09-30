@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-955A295402A38E",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "climate-reports-yearly",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:27:21.305269Z",
+  "request_url": "https://www.ncm.gov.ae/services/climate-reports-yearly?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/services/climate-reports-yearly?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43629,
+  "sha256": "14f16317efedfe7d2817fdf2104eefedc3dc67f352881d272183ddc5257a4a35",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-955A295402A38E\\20260930T042721.305269Z_14f16317efedfe7d.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

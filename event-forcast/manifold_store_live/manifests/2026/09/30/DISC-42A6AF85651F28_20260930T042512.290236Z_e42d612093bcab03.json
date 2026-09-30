@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-42A6AF85651F28",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "anon-ftp.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T04:25:12.290236Z",
+  "request_url": "https://www.bom.gov.au/catalogue/anon-ftp.shtml",
+  "final_url": "https://www.bom.gov.au/catalogue/anon-ftp.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 34189,
+  "sha256": "e42d612093bcab0357ea75752f5563662042cfe98b69773a303b7c261d3d3c04",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-42A6AF85651F28\\20260930T042512.290236Z_e42d612093bcab03.shtml",
+  "parent_id": "BOM-DATA",
+  "discovery_depth": 1
+}

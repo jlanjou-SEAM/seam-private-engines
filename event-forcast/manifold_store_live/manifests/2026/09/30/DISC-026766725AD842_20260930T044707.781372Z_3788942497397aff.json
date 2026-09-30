@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-026766725AD842",
+  "provider": "NOAA/NCEI",
+  "dataset": "CapeHatteras_0.JPG",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:07.781372Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/CapeHatteras_0.JPG",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/CapeHatteras_0.JPG",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 405376,
+  "sha256": "3788942497397aff52378a1ddc944cb11495684f308bbe49d6b798dd8f7767ca",
+  "etag": null,
+  "last_modified": "Tue, 24 Feb 2026 15:27:53 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-026766725AD842\\20260930T044707.781372Z_3788942497397aff.JPG",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

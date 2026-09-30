@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-29F0834AA21F0E",
+  "provider": "NOAA/NCEP",
+  "dataset": "JAWF_Monitoring",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:31.258495Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/JAWF_Monitoring/",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/JAWF_Monitoring/",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 13209,
+  "sha256": "1a241d85c511d84c869f36e8afb0eb3f6e3b83951ab5c037890acd740694e1ab",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-29F0834AA21F0E\\20260930T041931.258495Z_1a241d85c511d84c.html",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

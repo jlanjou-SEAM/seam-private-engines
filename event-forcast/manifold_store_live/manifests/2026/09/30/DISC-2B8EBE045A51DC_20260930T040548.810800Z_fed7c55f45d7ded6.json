@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-2B8EBE045A51DC",
+  "provider": "Environment and Climate Change Canada",
+  "dataset": "queryables",
+  "sector": "public",
+  "country": "CA",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-30T04:05:48.810800Z",
+  "request_url": "https://api.weather.gc.ca/collections/ahccd-annual/queryables?f=json",
+  "final_url": "https://api.weather.gc.ca/collections/ahccd-annual/queryables?f=json",
+  "status_code": 200,
+  "content_type": "application/schema+json",
+  "byte_length": 2682,
+  "sha256": "fed7c55f45d7ded6a4a871bc7c53414667e027a5f4362e0e857eefe2c38a85a4",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-2B8EBE045A51DC\\20260930T040548.810800Z_fed7c55f45d7ded6.json",
+  "parent_id": "CANADA-GEOMET-COLLECTIONS",
+  "discovery_depth": 1
+}

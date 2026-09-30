@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-BF3CC4AC32D432",
+  "provider": "NOAA/NCEP",
+  "dataset": "sdohomeweb.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:55.769559Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/expert_assessment/sdohomeweb.png",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/expert_assessment/sdohomeweb.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 586815,
+  "sha256": "1dce7dcdf3775b87ed97dae80c75d81c95f8f41728f4cea559ed1105d69a9277",
+  "etag": null,
+  "last_modified": "Thu, 17 Sep 2026 14:17:55 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-BF3CC4AC32D432\\20260930T041955.769559Z_1dce7dcdf3775b87.png",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

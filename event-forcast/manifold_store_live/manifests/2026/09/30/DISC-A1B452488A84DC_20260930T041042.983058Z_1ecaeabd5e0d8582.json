@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A1B452488A84DC",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "https://albahar.ncm.gov.ae?lang=ar",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:42.983058Z",
+  "request_url": "https://albahar.ncm.gov.ae?lang=ar",
+  "final_url": "https://albahar.ncm.gov.ae?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 17088,
+  "sha256": "1ecaeabd5e0d8582af2249bea51a31061df77d5bc4f2a644dfbd2411406e3d6e",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-A1B452488A84DC\\20260930T041042.983058Z_1ecaeabd5e0d8582.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

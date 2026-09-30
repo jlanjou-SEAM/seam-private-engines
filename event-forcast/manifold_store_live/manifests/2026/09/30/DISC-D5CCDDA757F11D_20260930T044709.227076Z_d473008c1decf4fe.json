@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-D5CCDDA757F11D",
+  "provider": "NOAA/NCEI",
+  "dataset": "ContainerShip.png",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:09.227076Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/ContainerShip.png",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/ContainerShip.png",
+  "status_code": 200,
+  "content_type": "image/png",
+  "byte_length": 118294,
+  "sha256": "d473008c1decf4fe88a2d5557229809f20dce44f8fdb2b1407e5630f085a9b98",
+  "etag": null,
+  "last_modified": "Tue, 24 Feb 2026 15:31:16 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-D5CCDDA757F11D\\20260930T044709.227076Z_d473008c1decf4fe.png",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

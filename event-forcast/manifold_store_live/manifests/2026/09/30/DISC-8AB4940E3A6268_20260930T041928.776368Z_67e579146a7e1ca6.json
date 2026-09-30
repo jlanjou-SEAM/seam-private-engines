@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-8AB4940E3A6268",
+  "provider": "NOAA/NCEP",
+  "dataset": "navbarendcap.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:28.776368Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/nwscwi/navbarendcap.jpg",
+  "final_url": "https://www.cpc.ncep.noaa.gov/nwscwi/navbarendcap.jpg",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 852,
+  "sha256": "67e579146a7e1ca6d9e7e86421dd0a5e699df78a1a0335cfe8851d5ac6bc02d3",
+  "etag": null,
+  "last_modified": "Fri, 14 Mar 2003 13:52:15 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-8AB4940E3A6268\\20260930T041928.776368Z_67e579146a7e1ca6.jpg",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

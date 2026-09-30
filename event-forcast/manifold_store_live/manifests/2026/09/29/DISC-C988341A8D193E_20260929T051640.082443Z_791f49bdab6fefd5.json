@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-C988341A8D193E",
+  "provider": "USGS Water Data",
+  "dataset": "queryables",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "hydrology"
+  ],
+  "retrieved_utc": "2026-09-29T05:16:40.082443Z",
+  "request_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/queryables?f=html",
+  "final_url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/queryables?f=html",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 25622,
+  "sha256": "791f49bdab6fefd5c162e431ef62185b9c51f66da568bd1e55eb70dfada3bc25",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\hydrology\\2026\\09\\29\\DISC-C988341A8D193E\\20260929T051640.082443Z_791f49bdab6fefd5.html",
+  "parent_id": "USGS-WATER-COLLECTIONS",
+  "discovery_depth": 1
+}

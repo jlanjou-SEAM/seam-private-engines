@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-E29A763E083566",
+  "provider": "NOAA/NCEI",
+  "dataset": "v2",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:50.191497Z",
+  "request_url": "https://www.ncei.noaa.gov/data/coop-hourly-precipitation/v2/",
+  "final_url": "https://www.ncei.noaa.gov/data/coop-hourly-precipitation/v2/",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 1410,
+  "sha256": "b7af4d3b3c2126380def9cf7ed8284a753a6bdbad5b4f1ea279e0bc51df985fb",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E29A763E083566\\20260930T043950.191497Z_b7af4d3b3c212638.html",
+  "parent_id": "DISC-74CE8552AA80C6",
+  "discovery_depth": 2
+}

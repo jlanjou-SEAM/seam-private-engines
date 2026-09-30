@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-FCE14819B43DB5",
+  "provider": "NOAA/NSSL",
+  "dataset": "MergedReflectivityQComposite",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "radar",
+    "precipitation"
+  ],
+  "retrieved_utc": "2026-09-30T05:08:29.700858Z",
+  "request_url": "https://mrms.ncep.noaa.gov/2D/MergedReflectivityQComposite/",
+  "final_url": "https://mrms.ncep.noaa.gov/2D/MergedReflectivityQComposite/",
+  "status_code": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "byte_length": 167979,
+  "sha256": "a14418b8605183a9fa7cb25d5b49b069d23de981eb0cecab2d2615dbb4958201",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-FCE14819B43DB5\\20260930T050829.700858Z_a14418b8605183a9.html",
+  "parent_id": "DISC-2C853BC32E10B2",
+  "discovery_depth": 2
+}

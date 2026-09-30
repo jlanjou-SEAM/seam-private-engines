@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-A100F7B2AF0296",
+  "provider": "NASA Earthdata",
+  "dataset": "aster-swir-anomaly",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:19:45.304502Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/aster-swir-anomaly",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/aster-swir-anomaly",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 138950,
+  "sha256": "da6d5ca018de7ba7a1496da958356c82fcff586cac5ef86107bee67e3cb65101",
+  "etag": "\"1790745640\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:40 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-A100F7B2AF0296\\20260930T051945.304502Z_da6d5ca018de7ba7.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-00EDE3765CFCE5",
+  "provider": "University of Utah / Synoptic",
+  "dataset": "air-temperature",
+  "sector": "education",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:27.677597Z",
+  "request_url": "https://viewer.synopticdata.com/map/data/now/air-temperature?layers=",
+  "final_url": "https://viewer.synopticdata.com/map/data/now/air-temperature?layers=",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 3707,
+  "sha256": "d466ced3f788ffd6fdad21da5ee707b7b523a5272f410c407f6d9ffb8397c78f",
+  "etag": "\"590c3201e7d80144f68293943774efd6\"",
+  "last_modified": "Wed, 30 Sep 2026 00:41:03 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-00EDE3765CFCE5\\20260930T040427.677597Z_d466ced3f788ffd6.html",
+  "parent_id": "MESO-WEST",
+  "discovery_depth": 1
+}

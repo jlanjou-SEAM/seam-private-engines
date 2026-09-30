@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-AAB7BDCE601885",
+  "provider": "NOAA/SWPC",
+  "dataset": "sunspot_report.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:02:41.689410Z",
+  "request_url": "https://services.swpc.noaa.gov/json/sunspot_report.json",
+  "final_url": "https://services.swpc.noaa.gov/json/sunspot_report.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 177746,
+  "sha256": "da960bd8a1ab6ff5d7810be7761b06fe81aa83e929b7fca0e40bb0cd8a8beb21",
+  "etag": "\"2b652-65cab5b016ca2\"",
+  "last_modified": "Wed, 30 Sep 2026 04:01:36 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-AAB7BDCE601885\\20260930T040241.689410Z_da960bd8a1ab6ff5.json",
+  "parent_id": "SWPC-JSON",
+  "discovery_depth": 1
+}

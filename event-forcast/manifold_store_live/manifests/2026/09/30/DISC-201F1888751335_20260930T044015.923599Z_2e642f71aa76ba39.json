@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-201F1888751335",
+  "provider": "NOAA/NCEI",
+  "dataset": "CAAG_data_outputs.mp4",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:40:15.923599Z",
+  "request_url": "https://www.ncei.noaa.gov/monitoring-content/cag/videos/CAAG_data_outputs.mp4",
+  "final_url": "https://www.ncei.noaa.gov/monitoring-content/cag/videos/CAAG_data_outputs.mp4",
+  "status_code": 200,
+  "content_type": "video/mp4",
+  "byte_length": 67108864,
+  "sha256": "2e642f71aa76ba3928191657110c0d81f4c36839dec136d1ed13123a6c769f69",
+  "etag": "\"7ab29be-63e9be562570b\"",
+  "last_modified": "Fri, 12 Sep 2025 14:59:09 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-201F1888751335\\20260930T044015.923599Z_2e642f71aa76ba39.mp4",
+  "parent_id": "DISC-08374859A39ED1",
+  "discovery_depth": 2
+}

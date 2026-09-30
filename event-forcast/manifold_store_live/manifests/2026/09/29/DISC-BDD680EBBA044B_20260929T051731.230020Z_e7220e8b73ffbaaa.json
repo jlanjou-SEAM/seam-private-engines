@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-BDD680EBBA044B",
+  "provider": "NOAA/SWPC",
+  "dataset": "rtsw_ephemerides_1h.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-29T05:17:31.230020Z",
+  "request_url": "https://services.swpc.noaa.gov/json/rtsw/rtsw_ephemerides_1h.json",
+  "final_url": "https://services.swpc.noaa.gov/json/rtsw/rtsw_ephemerides_1h.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 761400,
+  "sha256": "e7220e8b73ffbaaa05f708df9ae69c5406a734ef49d4a67a6b8cc578b346e17e",
+  "etag": "\"b9e38-65c9848b402b7\"",
+  "last_modified": "Tue, 29 Sep 2026 05:16:24 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\29\\DISC-BDD680EBBA044B\\20260929T051731.230020Z_e7220e8b73ffbaaa.json",
+  "parent_id": "SWPC-RTSW",
+  "discovery_depth": 1
+}

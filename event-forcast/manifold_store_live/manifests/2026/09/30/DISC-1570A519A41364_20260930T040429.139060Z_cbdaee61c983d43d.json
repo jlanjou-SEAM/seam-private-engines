@@ -1,0 +1,22 @@
+{
+  "candidate_id": "DISC-1570A519A41364",
+  "provider": "OpenWeather",
+  "dataset": "App_Store.svg",
+  "sector": "private",
+  "country": "GB",
+  "scientific_regime": [
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:29.139060Z",
+  "request_url": "https://openweathermap.org/payload/api/media/file/App_Store.svg",
+  "final_url": "https://openweathermap.org/payload/api/media/file/App_Store.svg",
+  "status_code": 200,
+  "content_type": "image/svg+xml",
+  "byte_length": 15098,
+  "sha256": "cbdaee61c983d43d24c36220858d64cd4f9ec6270fb4e73d9fd32036b6fc7b15",
+  "etag": "\"6a74cf9906c986f8b1203f81\"",
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-1570A519A41364\\20260930T040429.139060Z_cbdaee61c983d43d.svg",
+  "parent_id": "OPENWEATHER",
+  "discovery_depth": 1
+}

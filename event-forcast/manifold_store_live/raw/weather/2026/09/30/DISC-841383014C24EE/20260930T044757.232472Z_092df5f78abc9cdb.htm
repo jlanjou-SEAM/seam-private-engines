@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Deepwater Horizon Response Data Atlas</title>
+    <link rel="stylesheet" type="text/css" href="styles/mapStyle.css" />
+    <style type="text/css">
+      @import "https://serverapi.arcgisonline.com/jsapi/arcgis/2.8/js/dojo/dijit/themes/Soria/Soria.css";
+      .soria .dijitTextBox  {
+              width: 95%;
+      }
+      .soria .dijitReset {
+		font-family:Arial,Verdana,Helvetica,sans-serif;
+		font-size:12px;
+		font-weight:bold;
+      }
+    </style>
+
+    <script type="text/javascript">
+      !document.firstChild.children && (document.firstChild.children = true);
+
+      var dojoConfig = { 
+        parseOnLoad: true
+      };
+    </script>
+
+    <script type="text/javascript" src="https://serverapi.arcgisonline.com/jsapi/arcgis/?v=2.8"></script>
+    <script type="text/javascript" src="javascripts/mapFunctions.js"></script>
+
+    <script type="text/javascript" src="../../common/javascripts/Federated-Analytics.js"></script>
+
+    <script type="text/javascript">
+      dojo.require("dijit.dijit");
+      dojo.require("dijit.Dialog");
+      dojo.require("dijit.form.Button");
+      dojo.require("dijit.form.CheckBox");
+      dojo.require("dijit.form.Form");
+      dojo.require("dijit.form.TextBox");
+      dojo.require("dijit.layout.AccordionContainer");
+      dojo.require("dijit.layout.BorderContainer");
+      dojo.require("dijit.layout.ContentPane");
+      dojo.require("dijit.layout.TabContainer");
+      dojo.require("dijit.TitlePane");
+      dojo.require("dojo.number");
+      dojo.require("dojox.data.CsvStore");
+      dojo.require("esri.map");
+      dojo.require("esri.arcgis.utils");
+      dojo.require("esri.dijit.BasemapGallery");
+      dojo.require("esri.dijit.Scalebar");
+      dojo.require("esri.tasks.find");
+      dojo.require("esri.toolbars.draw");
+
+      var loading;
+      var map, startExtent;
+      var csvStore;
+      var dwhLayer, dataLayer, boundaryLayer, searchExtentBox, highlightLayer, mouseLayer;
+      var ctdLayer, trackLayer;
+      var cruiseSearch;
+      var tb;
+      var switchPane = false;
+
+      function init()  {
+
+        // determine if information being passed through URL address
+        // for instance, https://www.ncddc.noaa.gov/website/google_maps/DWHAtlas/mapsAtlas.htm?cruise=Brooks McCall 13
+        urlObject = esri.urlToObject(document.location.href);
+        if (urlObject.query)  {
+          urlObject = esri.urlToObject(window.location.href);
+          urlObject.query = urlObject.query || {};
+          cruiseSearch = urlObject.query.cruise;
+        }
+
+        loading = dojo.byId("loadingImg");
+        // create map
+        startExtent = new esri.geometry.Extent(-10899580,1971735,-9011280,3850250, new esri.SpatialReference({wkid:3857}));
+        map = new esri.Map("map",{
+            logo:false,
+            extent:startExtent,
+            wrapAround180:true
+        });
+
+        createBasemapGallery();
+
+        dojo.connect(map, 'onLoad', function(mapLayout) {
+          var scalebar = new esri.dijit.Scalebar({
+            map: map,
+            scalebarUnit:'english'
+          });
+          //resize the map when the browser resizes
+          dojo.connect(dijit.byId('map'), 'resize', map,map.resize);
+          initDrawBox();
+          //after map loads, listen to mouse move and drag events
+          dojo.connect(map, "onMouseMove", showCoordinates);
+          dojo.connect(map, "onMouseDrag", showCoordinates);
+          dojo.connect(map, "onUpdateStart", UpdateStart);
+          dojo.connect(map, "onUpdateEnd", UpdateEnd);
+          loadDWHLocation();
+          if (cruiseSearch != undefined)  initCruiseSearch();
+        });
+
+        // add layers to map
+        var basemap = new esri.layers.ArcGISTiledMapServiceLayer("https://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer");
+        map.addLayer(basemap);
+
+        // initialize graphic layers ... this order is important if features are to be clicked on the map
+        // always make sure dataLayer graphic is the last one listed as its click feature has precedence over any other graphic
+        dwhLayer = new esri.layers.GraphicsLayer();
+        map.addLayer(dwhLayer);
+        boundaryLayer = new esri.layers.GraphicsLayer();
+        map.addLayer(boundaryLayer);
+        searchExtentBox = new esri.layers.GraphicsLayer();
+        map.addLayer(searchExtentBox);
+        mouseLayer = new esri.layers.GraphicsLayer();
+        map.addLayer(mouseLayer);
+        dataLayer = new esri.layers.GraphicsLayer();
+        map.addLayer(dataLayer);
+        highlightLayer = new esri.layers.GraphicsLayer();
+        map.addLayer(highlightLayer);
+
+        // show dialog
+        if (cruiseSearch == undefined)  dijit.byId("introPage").show();
+        dijit.byId("shutdownPage").hide();
+      }
+
+      dojo.addOnLoad(init);
+    </script>
+
+  </head>
+  <body class="soria">
+    <div class="dijitHidden">
+    <div data-dojo-type="dijit.Dialog" style="width:500px;" id="shutdownPage">
+      <div style="font-family:arial;font-size:18px;height:350px;border:1px solid #769dc4;padding:0 10px;width:500px;"><p>
+      <center><b>GOVERNMENT SHUTDOWN</b><center>
+      </div>
+    </div>
+    <div data-dojo-type="dijit.Dialog" style="width:500px;" data-dojo-props="title:'Deepwater Horizon Response Data Atlas'" id="introPage">
+      <div style="font-family:arial;font-size:12px;height:225px;border:1px solid #769dc4;padding:0 10px;width:500px;"><p>
+      The purpose of this interactive, online mapping application is to provide access to data collected during the Deepwater Horizon incident as they become available.
+      <p/>
+      Using the dropdown menu along the left side of the map, you can search for data one of three ways: by collection source, by spatial extent of the cruise, or by type of data collected. Any results will be displayed in the sidebar on the right side of the map, color-coded to match points plotted on the map. Either click on a point on the map or a result in the sidebar to get access to the data.
+      <p/>
+      <center><font color="red"><b>NOTE</center>
+      <center>You must allow JavaScripting in your web browser.</center>
+      <center> You must disable any pop-up blocking in your web browser.</center>
+      <center>This application has been tested in Google Chrome, Internet Explorer,<br>and Mozilla Firefox.</center>
+      </b>
+      </font>
+      </div>
+    </div>
+    </div>
+    <div id="mainWindow" dojotype="dijit.layout.BorderContainer" design="headline" gutters="false" style="width:100%; height:100%;">
+      <!--<div id="header" dojotype="dijit.layout.ContentPane" region="top" style="height:85px;margin:0;padding:0;">-->
+      <div id="header" dojotype="dijit.layout.ContentPane" region="top" style="height:55px;margin:0;padding:0;">
+      <!-- ARN
+        <img src="images/DWH2.jpg">
+      -->
+
+        <!-- GWR ncei header -->
+        <div id="nceiheader" style="width:100%; background-color:#112E51">
+          <a href="https://www.ncei.noaa.gov/" title="National Centers for Environmental Information, National Oceanic and Atmospheric Administration">
+            <img src="images/map-banner.png" alt="National Centers for Environmental Information, National Oceanic and Atmospheric Administration" height="50px" style="vertical-align:middle; padding:3px 5px; margin-right:100px";></a>
+          <!--<a href="https://deepseacoraldata.noaa.gov/" title="Deep Sea Coral Data"><span style="font-size:20px">Deepwater Horizon Respncse Data Atlas</span></a>-->
+          <span style="font-size:20px">Deepwater Horizon Response Data Atlas</span>
+          <!--<a href="https://www.fisheries.noaa.gov/national/habitat-conservation/deep-sea-coral-habitat" title="NOAA Deep Sea Coral Research and Technology Program">-->
+            <!--<img src="images/DSCelement.jpg" alt="NOAA Deep Sea Coral Research and Technology Program" height="50px" style="vertical-align:middle; padding:3px 5px; float:right";></a>-->
+        </div>
+
+      </div>
+      <div dojotype="dijit.layout.ContentPane" region="left" id="leftPane" >
+        <div id="accordionLayers" dojoType="dijit.layout.AccordionContainer">
+          <div class="element" title="Search by Source" dojoType="dijit.layout.ContentPane" onShow="setInitPane()";>
+            <center><b>You can search for data based on the collection source</b></center>
+            <p/>
+            &nbsp;&nbsp;<b>Ships</b><br/>
+            <table colspan="3" class="smallTextNormal">
+              <tr><td width="5"></td><td><input id="All Ships" name="All Ships" dojoType="dijit.form.CheckBox" value="true" onClick="checkAllShips();processData()";></td><td>All Ships</td></tr>
+              <tr><td width="5"></td><td><input id="American Diver" name="American Diver" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>American Diver</td></tr>
+              <tr><td width="5"></td><td><input id="Arctic" name="Arctic" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Arctic</td></tr>
+              <tr><td width="5"></td><td><input id="Brooks McCall" name="Brooks McCall" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Brooks McCall</td></tr>
+              <tr><td width="5"></td><td><input id="Bunny Bordelon" name="Bunny Bordelon" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Bunny Bordelon</td></tr>
+              <tr><td width="5"></td><td><input id="Cape Hatteras" name="Cape Hatteras" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Cape Hatteras</td></tr>
+              <tr><td width="5"></td><td><input id="Delaware II" name="Delaware II" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Delaware II</td></tr>
+              <tr><td width="5"></td><td><input id="Ferrel" name="Ferrel" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Ferrel</td></tr>
+              <tr><td width="5"></td><td><input id="Gordon Gunter" name="Gordon Gunter" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Gordon Gunter</td></tr>
+              <tr><td width="5"></td><td><input id="Gyre" name="Gyre" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Gyre</td></tr>
+              <tr><td width="5"></td><td><input id="Henry Bigelow" name="Henry Bigelow" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Henry Bigelow</td></tr>
+              <tr><td width="5"></td><td><input id="HOS Davis" name="HOS Davis" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>HOS Davis</td></tr>
+              <tr><td width="5"></td><td><input id="Jack Fitz" name="Jack Fitz" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Jack Fitz</td></tr>
+              <tr><td width="5"></td><td><input id="Meg Skansi" name="Meg Skansi" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Meg Skansi</td></tr>
+              <tr><td width="5"></td><td><input id="Nancy Foster" name="Nancy Foster" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Nancy Foster</td></tr>
+              <tr><td width="5"></td><td><input id="Ocean Veritas" name="Ocean Veritas" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Ocean Veritas</td></tr>
+              <tr><td width="5"></td><td><input id="Pelican" name="Pelican" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Pelican</td></tr>
+              <tr><td width="5"></td><td><input id="Pisces" name="Pisces" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Pisces</td></tr>
+              <tr><td width="5"></td><td><input id="Rachel Bordelon" name="Rachel Bordelon" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Rachel Bordelon</td></tr>
+              <tr><td width="5"></td><td><input id="Ryan Chouest" name="Ryan Chouest" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Ryan Chouest</td></tr>
+              <tr><td width="5"></td><td><input id="Seward Johnson" name="Seward Johnson" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Seward Johnson</td></tr>
+              <tr><td width="5"></td><td><input id="Specialty Diver" name="Specialty Diver" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Specialty Diver</td></tr>
+              <tr><td width="5"></td><td><input id="Thomas Jefferson" name="Thomas Jefferson" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Thomas Jefferson</td></tr>
+              <tr><td width="5"></td><td><input id="Walton Smith" name="Walton Smith" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Walton Smith</td></tr>
+              <tr><td width="5"></td><td><input id="Wes Bordelon" name="Wes Bordelon" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Wes Bordelon</td></tr>
+            </table>
+            &nbsp;&nbsp;<b>Gliders</b><br/>
+            <table colspan="3" class="smallTextNormal">
+              <tr><td width="5"></td><td><input id="All Gliders" name="All Gliders" dojoType="dijit.form.CheckBox" value="true" onClick="checkAllGliders();processData()";></td><td>All Gliders</td></tr>
+              <tr><td width="5"></td><td><input id="48900" name="48900" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Glider 48900</td></tr>
+              <tr><td width="5"></td><td><input id="48901" name="48901" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Glider 48901</td></tr>
+              <tr><td width="5"></td><td><input id="48902" name="48902" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Glider 48902</td></tr>
+              <tr><td width="5"></td><td><input id="48903" name="48903" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Glider 48903</td></tr>
+              <tr><td width="5"></td><td><input id="48904" name="48904" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Glider 48904</td></tr>
+              <tr><td width="5"></td><td><input id="48905" name="48905" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Glider 48905</td></tr>
+              <tr><td width="5"></td><td><input id="48906" name="48906" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Glider 48906</td></tr>
+              <tr><td width="5"></td><td><input id="48908" name="48908" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Glider 48908</td></tr>
+              <tr><td width="5"></td><td><input id="48909" name="48909" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Glider 48909</td></tr>
+              <tr><td width="5"></td><td><input id="48910" name="48910" dojoType="dijit.form.CheckBox" value="true" onClick="processData()";></td><td>Glider 48910</td></tr>
+            </table>
+          </div>
+          <div class="element" title="Search by Extent" dojoType="dijit.layout.ContentPane" onShow="resetMap();">
+          <center><b>You can search for data based on spatial extent</b></center>
+          <p/>
+          <ul>
+            <li>To start the creation of a search box, click the "Draw Box" button.</li>
+            <li>Holding your left mouse button, drag the outline of a box on the map.</li>
+            <li>Release your left mouse button to stop the outline of the box on your map.</li>
+            <li>Your search area box will be drawn on the map in purple and results will be displayed on the map and listed in the right panel.</li>
+            <li>The points plotted on the map represent the center point of a cruise.</li>
+            <li>You might see points plotted outside the box, which means that some portion of the cruise occurred within your defined search box.</li>
+            <li>To remove results from the map, click "Clear Box" button.</li>
+          </ul>
+          <center><button dojoType="dijit.form.Button" type="button" name="drawBox" onClick="tb.activate(esri.toolbars.Draw.EXTENT);"><b>Draw Box</b></button>&nbsp;&nbsp;&nbsp;&nbsp;<button dojoType="dijit.form.Button" type="button" name="clearBox" onClick="clearBox(); "><b>Clear Box</b></button></center>
+          </div>
+          <div class="element" title="Search by Data Type" dojoType="dijit.layout.ContentPane" onShow="resetMap();">
+          <center><b>You can search for data based on what was collected</b></center>
+          <p/>
+            <table colspan="3" class="smallTextNormal">
+              <tr><td width="5"></td><td><input id="acoustics" name="acoustics" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Acoustics</td></tr>
+              <tr><td width="5"></td><td><input id="btex" name="btex" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Benzene, Toluene, Ethylbenzene, Xylenes (BTEX)</td></tr>
+              <tr><td width="5"></td><td><input id="chlorophyll" name="chlorophyll" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Chlorophyll</td></tr>
+              <tr><td width="5"></td><td><input id="cdom" name="cdom" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Color Dissolved Organic Matter (CDOM)</td></tr>
+              <tr><td width="5"></td><td><input id="ctd" name="ctd" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Conductivity, Temperature, Depth (CTD)</td></tr>
+              <tr><td width="5"></td><td><input id="dispersant" name="dispersant" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Dispersant</td></tr>
+              <tr><td width="5"></td><td><input id="lamotte" name="lamotte" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Dissolved Oxygen (LaMotte)</td></tr>
+<!--
+              <tr><td width="5"></td><td><input id="winkler" name="winkler" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Dissolved Oxygen (Winkler)</td></tr>
+ -->
+              <tr><td width="5"></td><td><input id="fluorometry" name="fluorometry" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Fluorometry</td></tr>
+              <tr><td width="5"></td><td><input id="LISST" name="LISST" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Laser In-situ Scattering and Transmissometery (LISST)</td></tr>
+              <tr><td width="5"></td><td><input id="methane" name="methane" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Methane</td></tr>
+              <tr><td width="5"></td><td><input id="pah" name="pah" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Polycyclic Aromatic Hydrocarbons (PAH)</td></tr>
+              <tr><td width="5"></td><td><input id="sediments" name="sediments" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Sediments</td></tr>
+              <tr><td width="5"></td><td><input id="tph" name="tph" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Total Petroleum Hydrocarbons (TPH)</td></tr>
+              <tr><td width="5"></td><td><input id="voa" name="voa" dojoType="dijit.form.CheckBox" value="true" onClick="processDataTypeSearch()";></td><td>Volatile Organics Analysis (VOA)</td></tr>
+            </table>
+            <p/>            
+          </div>
+        </div>
+      </div>
+      <div id="map" class="shadow" dojotype="dijit.layout.ContentPane" region="center" >
+        <img id="loadingImg" src="images/Blue-004-loading.gif" style="position:absolute; right:50%; top:50%; z-index:100;" />
+        <div id="results" style="position:absolute; right:45%; bottom:10px; padding: 2px; border:solid 1px #79663b; color:#000; background-color:#fff; padding: 2px; z-index:50; font-family: arial; font-size: 12px; font-weight: bold;"></div>
+        <div style="position:absolute; right:5px; top:5px; z-Index:999;">
+          <div dojoType="dijit.TitlePane" title="Basemap" closable="false"  open="false">
+            <div dojoType="dijit.layout.ContentPane" style="width:380px; height:280px; overflow:auto;">
+            <div id="basemapGallery" ></div></div>
+          </div>
+        </div>
+        <div id="coords" style="position:absolute; right:10px; bottom:10px; color:#000; z-index:50; font-family: arial; font-size: 12px;"></div>
+      </div>
+      <div dojotype="dijit.layout.ContentPane" region="right" id="rightPane" >
+        <div style="width:100%; height:100%; background: #FFFFFF;" id="itemsDiv">
+          <ul id="itemsList">
+          </ul>
+        </div>
+      </div>
+      <!-- ARN
+      <div id="footer" dojotype="dijit.layout.ContentPane" region="bottom" >
+        <table class="footer" align="center">
+         <tr valign="middle" align="center">
+         <td>
+           <a href="https://www.commerce.gov/" title="U.S. Department of Commerce" target="_self"><font color="black">U.S. Department of Commerce</a> |</font>
+           <a href="https://www.noaa.gov" title="National Oceanic &amp; Atmospheric Administration" target="_self"><font color="black">NOAA</a> |</font>
+           <a href="https://www.nesdis.noaa.gov" title="National Environmental Satellites, Data, and Information Services" target="_self"><font color="black">NESDIS</a> |</font>
+           <a href="https://www.ncei.noaa.gov" title="National Centers for Environmental Information" target="_self"><font color="black">NCEI</a> |</font>
+           <a href="https://www.ncddc.noaa.gov" title="National Centers for Environmental Information - Mississippi" target="_self"><font color="black">NCEI-MS</a></font>
+           <br/>
+           <a href="https://www.noaa.gov/disclaimer.html" title="Link to National Oceanic &amp; Atmospheric Administration Disclaimer" target="_self"><font color="black">Disclaimer</a> |</font>
+           <a href="https://www.noaa.gov/privacy.html" title="Link to National Oceanic &amp; Atmospheric Administration Privacy Policy"><font color="black">Privacy Policy</a> |</font>
+           <a href="https://www.copyright.gov/title17/92chap4.html#403" title="Copyright Notice"><font color="black">Copyright Notice</a> |</font>
+           <a href="https://www.usa.gov" target="_self" title="The U.S. Government's Official Web Portal"><font color="black">USA.gov</a></font>
+         </td>
+         <td width="20"></td>
+         <td> 
+           <a href="https://www.cio.noaa.gov/services_programs/info_quality.html" title="Link to National Oceanic &amp; Atmospheric Administration Information Quality" target="_self"><font color="black">Information Quality</a> |</font>
+           <a href="https://www.rdc.noaa.gov/~foia/" title="Link to National Oceanic &amp; Atmospheric Administration FOIA"><font color="black">Freedom of Information Act (FOIA)</a></font>
+           <br/>
+           <a href="https://www.ncddc.noaa.gov/about-ncddc" title="Contact NCEI-MS"><font color="black">Customer Service</a> |</font>
+           <a href="mailto:ncddcwebmaster@noaa.gov?subject=NCDDC%20Public%20web%20site" title="Email NCEI-MS webmaster"><font color="black">ncddcwebmaster@noaa.gov</a></font>
+         </td>
+         <td></td>
+	   </tr>
+        </table>
+      </div>
+      -->
+
+      <!-- GWR ncei footer -->
+      <!--<div id="footer" data-dojo-type="dijit.layout.ContentPane"  data-dojo-props="region:'bottom'" style="font-size:12px;font-family:Helvetica,Arial;height:35px;font-weight:bold">-->
+      <div id="footer" data-dojo-type="dijit.layout.ContentPane"  data-dojo-props="region:'bottom'" style="font-size:12px;font-family:Helvetica,Arial;height:20px;font-weight:bold">
+        <table class="footer" align="center">
+          <tr valign="middle" align="center">
+            <td>
+              <a href="https://www.ncei.noaa.gov/privacy" title="NOAA's Privacy Policy">Privacy Policy</a> |
+              <a href="https://www.noaa.gov/foia-freedom-of-information-act" title="Freedom of Information Act">Freedom Of Information Act</a> |
+              <a href="https://www.cio.noaa.gov/services_programs/info_quality.html" title="Information Quality">Information Quality</a> |
+              <a href="https://www.noaa.gov/disclaimer.html" title="Disclaimer">Disclaimer</a> |
+              <!--<a href="https://www.ncdc.noaa.gov/survey" title="Take Our Site Survey">Take Our Survey</a> | -->
+              <a href="https://www.commerce.gov/" title="United States Department of Commerce">Department of Commerce</a> |
+              <a href="https://www.noaa.gov/" title="NOAA">NOAA</a> |</font>
+              <a href="https://www.nesdis.noaa.gov/" title="NESDIS">NESDIS</a> |
+              <a href="mailto:ncei.info@noaa.gov" rel="nofollow">Contact Us</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+
+    </div>
+  <script id="_fed_an_ua_tag" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script></body>
+</html>

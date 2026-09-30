@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-7A4E610157E350",
+  "provider": "NOAA/NCEP MADIS",
+  "dataset": "index.htm",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "surface",
+    "hydrology",
+    "aviation"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:38.129038Z",
+  "request_url": "http://agebb.missouri.edu/weather/stations/index.htm",
+  "final_url": "http://agebb.missouri.edu/weather/stations/index.htm",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 13110,
+  "sha256": "995e9833f952a519ac11c536f5a22510a047790420f8dc06b9462c16ce112efd",
+  "etag": "\"0bbe54f52abd31:0\"",
+  "last_modified": "Wed, 21 Feb 2018 20:26:54 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7A4E610157E350\\20260930T041838.129038Z_995e9833f952a519.htm",
+  "parent_id": "DISC-D7F33AB1FAE56F",
+  "discovery_depth": 2
+}

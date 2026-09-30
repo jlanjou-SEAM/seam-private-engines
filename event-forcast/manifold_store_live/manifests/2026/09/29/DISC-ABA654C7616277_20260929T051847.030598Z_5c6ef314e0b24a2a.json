@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-ABA654C7616277",
+  "provider": "NOAA Aviation Weather Center",
+  "dataset": "itws",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "aviation",
+    "weather"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:47.030598Z",
+  "request_url": "https://aviationweather.gov/data/itws/",
+  "final_url": "https://aviationweather.gov/data/itws/",
+  "status_code": 200,
+  "content_type": "text/html",
+  "byte_length": 31497,
+  "sha256": "5c6ef314e0b24a2a91b6ba186cf596f6b8dbff1f1e282fef77570292edf8c514",
+  "etag": "\"6aaaf527-7b09\"",
+  "last_modified": "Wed, 16 Sep 2026 19:59:35 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\aviation\\2026\\09\\29\\DISC-ABA654C7616277\\20260929T051847.030598Z_5c6ef314e0b24a2a.html",
+  "parent_id": "AVIATION-WX-API",
+  "discovery_depth": 1
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-BC3B362CEDD93E",
+  "provider": "UCAR/Unidata",
+  "dataset": "gridded-data",
+  "sector": "research",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:04:25.040357Z",
+  "request_url": "https://www.unidata.ucar.edu/data/gridded-data",
+  "final_url": "https://www.unidata.ucar.edu/data/gridded-data",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 44169,
+  "sha256": "e5ed569bd54bc763da26220d3c687f8cd5805cf763f3f6e628ab826a8a30789c",
+  "etag": "W/\"1790736164\"",
+  "last_modified": "Wed, 30 Sep 2026 02:42:44 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-BC3B362CEDD93E\\20260930T040425.040357Z_e5ed569bd54bc763.html",
+  "parent_id": "UCAR-IDV",
+  "discovery_depth": 1
+}

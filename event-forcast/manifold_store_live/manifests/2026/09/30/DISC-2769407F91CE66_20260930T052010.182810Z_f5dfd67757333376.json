@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-2769407F91CE66",
+  "provider": "NASA Earthdata",
+  "dataset": "giovanni-unavailable-during-maintenance-period-wednesday-april-8-2026-1800-utc",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "earth_observation"
+  ],
+  "retrieved_utc": "2026-09-30T05:20:10.182810Z",
+  "request_url": "https://www.earthdata.nasa.gov/data/alerts-outages/giovanni-unavailable-during-maintenance-period-wednesday-april-8-2026-1800-utc",
+  "final_url": "https://www.earthdata.nasa.gov/data/alerts-outages/giovanni-unavailable-during-maintenance-period-wednesday-april-8-2026-1800-utc",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 135007,
+  "sha256": "f5dfd67757333376b851b26b469a938f86faefb5504296146e715d87c4f2c56a",
+  "etag": "\"1790745611\"",
+  "last_modified": "Wed, 30 Sep 2026 05:20:11 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\30\\DISC-2769407F91CE66\\20260930T052010.182810Z_f5dfd67757333376.html",
+  "parent_id": "DISC-CC7DC7E83E956B",
+  "discovery_depth": 2
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-7EEF503C5545E7",
+  "provider": "NOAA/NCEI",
+  "dataset": "advancing-study-extreme-events",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:46:43.228962Z",
+  "request_url": "https://www.ncei.noaa.gov/news/advancing-study-extreme-events",
+  "final_url": "https://www.ncei.noaa.gov/news/advancing-study-extreme-events",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 40756,
+  "sha256": "36bb980f957ca82d2057f708e21db30eb064bb64453a6a83262b43051b2bc951",
+  "etag": "\"1790725197-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 23:39:57 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-7EEF503C5545E7\\20260930T044643.228962Z_36bb980f957ca82d.html",
+  "parent_id": "DISC-79C173D060BC9B",
+  "discovery_depth": 2
+}

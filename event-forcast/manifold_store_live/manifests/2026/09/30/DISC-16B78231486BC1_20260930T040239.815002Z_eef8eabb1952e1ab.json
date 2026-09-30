@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-16B78231486BC1",
+  "provider": "NOAA/SWPC",
+  "dataset": "noaa-scales.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:02:39.815002Z",
+  "request_url": "https://services.swpc.noaa.gov/products/noaa-scales.json",
+  "final_url": "https://services.swpc.noaa.gov/products/noaa-scales.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 1100,
+  "sha256": "eef8eabb1952e1ab89278fbba0459776d66695534c811a00899bc16fe1fb2cd1",
+  "etag": "\"44c-65cab576300d1\"",
+  "last_modified": "Wed, 30 Sep 2026 04:00:35 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-16B78231486BC1\\20260930T040239.815002Z_eef8eabb1952e1ab.json",
+  "parent_id": "SWPC-PRODUCTS",
+  "discovery_depth": 1
+}

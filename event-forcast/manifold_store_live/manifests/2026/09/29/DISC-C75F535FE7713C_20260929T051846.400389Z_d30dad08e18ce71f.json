@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-C75F535FE7713C",
+  "provider": "NOAA NESDIS / AWS",
+  "dataset": "rss.xml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "satellite",
+    "weather",
+    "space"
+  ],
+  "retrieved_utc": "2026-09-29T05:18:46.400389Z",
+  "request_url": "https://registry.opendata.aws/rss.xml",
+  "final_url": "https://registry.opendata.aws/rss.xml",
+  "status_code": 200,
+  "content_type": "application/xml",
+  "byte_length": 9672332,
+  "sha256": "d30dad08e18ce71f692f85c0f4889c1392c4c610b8c73e7d1555c7837648eba3",
+  "etag": "\"3cc3e08c11acae64280c3d48b5b54ebc-2\"",
+  "last_modified": "Mon, 28 Sep 2026 16:54:56 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\satellite\\2026\\09\\29\\DISC-C75F535FE7713C\\20260929T051846.400389Z_d30dad08e18ce71f.xml",
+  "parent_id": "NOAA-GOES-AWS",
+  "discovery_depth": 1
+}

@@ -1,0 +1,25 @@
+{
+  "candidate_id": "DISC-17FE6C261431E2",
+  "provider": "Australian Bureau of Meteorology",
+  "dataset": "IDT60900.shtml",
+  "sector": "public",
+  "country": "AU",
+  "scientific_regime": [
+    "weather",
+    "marine",
+    "radar",
+    "satellite"
+  ],
+  "retrieved_utc": "2026-09-30T05:23:39.263983Z",
+  "request_url": "https://reg.bom.gov.au/products/IDT60900.shtml",
+  "final_url": "http://reg.bom.gov.au/tas/observations/hobart.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 55478,
+  "sha256": "0dd373d0442c9521850424755a527d384313ce222fd36407de3124db24e3e4ba",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-17FE6C261431E2\\20260930T052339.263983Z_0dd373d0442c9521.shtml",
+  "parent_id": "DISC-FB35D231555AEB",
+  "discovery_depth": 2
+}

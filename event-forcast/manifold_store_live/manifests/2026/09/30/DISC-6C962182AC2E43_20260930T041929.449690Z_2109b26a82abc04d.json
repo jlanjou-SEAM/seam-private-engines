@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-6C962182AC2E43",
+  "provider": "NOAA/NCEP",
+  "dataset": "Global-Monsoon.shtml",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T04:19:29.449690Z",
+  "request_url": "https://www.cpc.ncep.noaa.gov/products/Global_Monsoons/Global-Monsoon.shtml",
+  "final_url": "https://www.cpc.ncep.noaa.gov/products/Global_Monsoons/Global-Monsoon.shtml",
+  "status_code": 200,
+  "content_type": "text/html; charset=utf-8",
+  "byte_length": 47258,
+  "sha256": "2109b26a82abc04d4fbf28b999ca892bb414b8444dcfa64bc59c486044a84f4b",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-6C962182AC2E43\\20260930T041929.449690Z_2109b26a82abc04d.shtml",
+  "parent_id": "DISC-880FD001F1337B",
+  "discovery_depth": 2
+}

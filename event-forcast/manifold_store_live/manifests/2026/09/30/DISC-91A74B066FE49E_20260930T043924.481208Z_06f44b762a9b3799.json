@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-91A74B066FE49E",
+  "provider": "NOAA/NCEI",
+  "dataset": "Non-FedPymtPolicy_0611v3.pdf",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:39:24.481208Z",
+  "request_url": "http://www.ncei.noaa.gov/sites/default/files/2021-09/Non-FedPymtPolicy_0611v3.pdf",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/2021-09/Non-FedPymtPolicy_0611v3.pdf",
+  "status_code": 200,
+  "content_type": "application/pdf",
+  "byte_length": 15944,
+  "sha256": "06f44b762a9b379972c1c341a9f4cc858e216dd967ae03ca4ea279df17d836d4",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 17:34:38 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-91A74B066FE49E\\20260930T043924.481208Z_06f44b762a9b3799.pdf",
+  "parent_id": "DISC-36AF1EC44F4269",
+  "discovery_depth": 2
+}

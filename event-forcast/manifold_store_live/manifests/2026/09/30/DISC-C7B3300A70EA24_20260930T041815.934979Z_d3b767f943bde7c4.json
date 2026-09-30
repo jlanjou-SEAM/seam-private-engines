@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-C7B3300A70EA24",
+  "provider": "NOAA/SWPC",
+  "dataset": "suvi-secondary-131-carrington-grid.json",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "solar"
+  ],
+  "retrieved_utc": "2026-09-30T04:18:15.934979Z",
+  "request_url": "https://services.swpc.noaa.gov/products/flares/suvi-secondary-131-carrington-grid.json",
+  "final_url": "https://services.swpc.noaa.gov/products/flares/suvi-secondary-131-carrington-grid.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 936,
+  "sha256": "d3b767f943bde7c4d0c08f63e1f8ce1d43f42e64dd6037ca0499ddbcff07a377",
+  "etag": "\"3a8-65cab8f8b09bc\"",
+  "last_modified": "Wed, 30 Sep 2026 04:16:17 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\30\\DISC-C7B3300A70EA24\\20260930T041815.934979Z_d3b767f943bde7c4.json",
+  "parent_id": "DISC-E8172E06FF06AA",
+  "discovery_depth": 2
+}

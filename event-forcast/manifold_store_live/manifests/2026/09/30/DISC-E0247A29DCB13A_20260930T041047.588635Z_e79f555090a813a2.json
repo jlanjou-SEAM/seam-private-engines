@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-E0247A29DCB13A",
+  "provider": "UAE National Center of Meteorology",
+  "dataset": "awarness-thick-fog-poses",
+  "sector": "public",
+  "country": "AE",
+  "scientific_regime": [
+    "weather",
+    "climate"
+  ],
+  "retrieved_utc": "2026-09-30T04:10:47.588635Z",
+  "request_url": "https://www.ncm.gov.ae/pages/awarness-thick-fog-poses?lang=ar",
+  "final_url": "https://www.ncm.gov.ae/pages/awarness-thick-fog-poses?lang=ar",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 43615,
+  "sha256": "e79f555090a813a2c9e54742a54cb37fb76690d40f5bb81789ec624081779aa6",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-E0247A29DCB13A\\20260930T041047.588635Z_e79f555090a813a2.html",
+  "parent_id": "NCM-UAE",
+  "discovery_depth": 1
+}

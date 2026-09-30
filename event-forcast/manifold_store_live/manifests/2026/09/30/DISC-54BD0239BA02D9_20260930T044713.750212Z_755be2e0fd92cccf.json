@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-54BD0239BA02D9",
+  "provider": "NOAA/NCEI",
+  "dataset": "Energy.jpg",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:13.750212Z",
+  "request_url": "https://www.ncei.noaa.gov/sites/default/files/styles/wide_full_width_image_no_crop/public/2021-08/Energy.jpg?itok=_8-E26YQ",
+  "final_url": "https://www.ncei.noaa.gov/sites/default/files/styles/wide_full_width_image_no_crop/public/2021-08/Energy.jpg?itok=_8-E26YQ",
+  "status_code": 200,
+  "content_type": "image/jpeg",
+  "byte_length": 172034,
+  "sha256": "755be2e0fd92cccf80b68c2e7d403ff1ae0fba73b624ea42050b8fad0531b665",
+  "etag": null,
+  "last_modified": "Mon, 02 May 2022 18:48:31 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-54BD0239BA02D9\\20260930T044713.750212Z_755be2e0fd92cccf.jpg",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "DISC-FF5F9D9DF98F78",
+  "provider": "NOAA/NCEP",
+  "dataset": "airport_temps",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "models"
+  ],
+  "retrieved_utc": "2026-09-30T05:09:34.843526Z",
+  "request_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/rtma/prod/airport_temps/",
+  "final_url": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/rtma/prod/airport_temps/",
+  "status_code": 200,
+  "content_type": "text/html;charset=ISO-8859-1",
+  "byte_length": 2705,
+  "sha256": "77cd6477516cd5b970b32f74435285759ea3b4abf500b80397c00e74c35eaad3",
+  "etag": null,
+  "last_modified": null,
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-FF5F9D9DF98F78\\20260930T050934.843526Z_77cd6477516cd5b9.html",
+  "parent_id": "DISC-178287A818443A",
+  "discovery_depth": 2
+}

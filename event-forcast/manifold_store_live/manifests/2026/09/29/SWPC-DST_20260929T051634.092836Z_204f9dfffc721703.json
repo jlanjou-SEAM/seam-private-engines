@@ -1,0 +1,23 @@
+{
+  "candidate_id": "SWPC-DST",
+  "provider": "NOAA/SWPC",
+  "dataset": "Kyoto Dst",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "space_weather",
+    "geomagnetic"
+  ],
+  "retrieved_utc": "2026-09-29T05:16:34.092836Z",
+  "request_url": "https://services.swpc.noaa.gov/products/kyoto-dst.json",
+  "final_url": "https://services.swpc.noaa.gov/products/kyoto-dst.json",
+  "status_code": 200,
+  "content_type": "application/json",
+  "byte_length": 7414,
+  "sha256": "204f9dfffc721703ec4d9e058f3fb41c58b11046960423ea9cbeed2d8531150e",
+  "etag": "\"1cf6-65c983efde7bc\"",
+  "last_modified": "Tue, 29 Sep 2026 05:13:41 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\space_weather\\2026\\09\\29\\SWPC-DST\\20260929T051634.092836Z_204f9dfffc721703.json",
+  "parent_id": null,
+  "discovery_depth": 0
+}

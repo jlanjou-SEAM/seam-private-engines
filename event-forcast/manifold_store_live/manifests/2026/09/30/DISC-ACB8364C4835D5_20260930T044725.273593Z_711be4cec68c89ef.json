@@ -1,0 +1,24 @@
+{
+  "candidate_id": "DISC-ACB8364C4835D5",
+  "provider": "NOAA/NCEI",
+  "dataset": "1824",
+  "sector": "public",
+  "country": "US",
+  "scientific_regime": [
+    "weather",
+    "climate",
+    "marine"
+  ],
+  "retrieved_utc": "2026-09-30T04:47:25.273593Z",
+  "request_url": "https://www.ncei.noaa.gov/node/1824",
+  "final_url": "https://www.ncei.noaa.gov/about/our-impact/weather-service-providers",
+  "status_code": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "byte_length": 31201,
+  "sha256": "711be4cec68c89ef2a2be97531004b3bb33d99dd97efe8b591bf9bc116a656b3",
+  "etag": "\"1790726315-gzip\"",
+  "last_modified": "Tue, 29 Sep 2026 23:58:35 GMT",
+  "raw_path": "D:\\GitLive\\Continuum_Weather_Threaded_Test_Package\\manifold_store_live\\raw\\weather\\2026\\09\\30\\DISC-ACB8364C4835D5\\20260930T044725.273593Z_711be4cec68c89ef.html",
+  "parent_id": "DISC-5F8226FDC68567",
+  "discovery_depth": 2
+}
