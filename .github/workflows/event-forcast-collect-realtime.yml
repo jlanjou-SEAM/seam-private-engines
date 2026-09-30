@@ -76,32 +76,26 @@ jobs:
           from datetime import datetime, timezone
 
           tracker_file = Path("${{ github.workspace }}/backend/event-forcast/continuum/event_tracker.json")
+          volcanic_events = []
 
-          if not tracker_file.exists():
-              live_data = {
-                  "schema": "SEAM_LIVE_FEED_V1",
-                  "generated_utc": datetime.now(timezone.utc).isoformat(),
-                  "sources_loaded": 118,
-                  "event_count": 0,
-                  "events": []
-              }
-          else:
+          if tracker_file.exists():
               with open(tracker_file, 'r') as f:
                   tracker = json.load(f)
-
-              volcanic_events = []
               if 'events' in tracker:
                   for event_id, event_data in tracker['events'].items():
                       if event_data.get('signature_class') == 'volcanic' and event_data.get('status') == 'active':
                           volcanic_events.append(event_data)
+              generated_utc = tracker.get('generated_utc', datetime.now(timezone.utc).isoformat())
+          else:
+              generated_utc = datetime.now(timezone.utc).isoformat()
 
-              live_data = {
-                  "schema": "SEAM_LIVE_FEED_V1",
-                  "generated_utc": tracker.get('generated_utc', datetime.now(timezone.utc).isoformat()),
-                  "sources_loaded": 118,
-                  "event_count": len(volcanic_events),
-                  "events": volcanic_events
-              }
+          live_data = {
+              "schema": "SEAM_LIVE_FEED_V1",
+              "generated_utc": generated_utc,
+              "sources_loaded": 6746,
+              "event_count": len(volcanic_events),
+              "events": volcanic_events
+          }
 
           output_dir = Path("${{ github.workspace }}/frontend/public/data")
           output_dir.mkdir(parents=True, exist_ok=True)
