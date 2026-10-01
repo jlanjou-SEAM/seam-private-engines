@@ -35,11 +35,13 @@ def step3_query_manifold_with_seam():
     log_step(3, "Invoking SEAM engine to query manifold for volcanic events...")
 
     if not SEAM_RUNTIME.exists():
-        log_step(3, f"ERROR: SEAM runtime not found at {SEAM_RUNTIME}")
+        log_step(3, f"WARN: SEAM runtime not found at {SEAM_RUNTIME}; skipping Step 3")
+        log_step(3, f"      Events will be extracted from official alerts and manifold data only")
         return None
 
     if not MANIFOLD_FILE.exists():
-        log_step(3, f"ERROR: Manifold not found at {MANIFOLD_FILE}")
+        log_step(3, f"WARN: Manifold not found at {MANIFOLD_FILE}; skipping Step 3")
+        log_step(3, f"      Events will be extracted from official alerts only")
         return None
 
     # Run SEAM engine with question about volcanic events

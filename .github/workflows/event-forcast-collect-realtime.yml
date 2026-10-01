@@ -27,24 +27,27 @@ jobs:
           cd ${{ github.workspace }}/backend/event-forcast
           bash build.sh
 
-      - name: Run Multi-Cycle Collection Pipeline (C-optimized, ~60-90s)
+      - name: Step 1 - Collect raw data from 6,746 verified sources
         run: |
           cd ${{ github.workspace }}/backend/event-forcast
-          echo "Starting C-based high-performance runner: 6,746 verified sources"
+          echo "Step 1: Polling 6,746 verified data sources for raw observations..."
           time ./multi_cycle_runner 2>&1 | tee collection.log
-          echo "Collection complete"
+          echo "Step 1 complete: Raw data collection finished"
 
       - name: Set up Python for SEAM processing
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
-      - name: Set up Python for SEAM processing
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
+      - name: Step 2 - Ingest raw data into manifold
+        run: |
+          cd ${{ github.workspace }}/backend/event-forcast
+          echo "Step 2: Converting raw collected data into manifold ARCV format..."
+          python3 continuum_recover_ingest_v7_threaded.py continuum/continuum_combined_registry.json --store continuum/manifold_store_live --workers 32 --passes 1 2>&1 | tail -20
+          echo "Manifold ingestion complete"
+          ls -lh continuum/manifold_store_live/ 2>/dev/null || echo "Manifold store not yet available"
 
-      - name: Process collected data through SEAM pipeline
+      - name: Step 3-5 - SEAM analysis and event extraction
         env:
           PUBLIC_REPO_PATH: ${{ github.workspace }}/backend/event-forcast
           SEAM_OUTPUT_ROOT: ${{ github.workspace }}/backend/event-forcast
@@ -54,9 +57,9 @@ jobs:
           SEAM_RUN_ONCE: 1
         run: |
           cd ${{ github.workspace }}/backend/event-forcast
-          echo "Processing: Analyze manifold and official alerts for SEAM events"
+          echo "Steps 3-5: Querying manifold with SEAM engine to extract events with confidence ratings..."
           python3 backend_processor_live.py 2>&1 | tail -20
-          echo "Event processing complete"
+          echo "Steps 3-5 complete: SEAM-derived events extracted and tracker updated"
           ls -lh continuum/event_tracker.json 2>/dev/null || echo "Event tracker generating..."
 
       - name: Copy cycle logs to frontend
