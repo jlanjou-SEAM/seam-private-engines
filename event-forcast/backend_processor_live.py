@@ -123,17 +123,41 @@ def step5_check_official_status(tracker):
         # Match to existing events or create new
         evt_id = alert_data.get('event_id', f"OFFICIAL-{alert_source}")
         if evt_id not in tracker.get('events', {}):
-            # Create new event from official alert
+            # Create new event from official alert with location and prediction
+            location = alert_data.get('location', [0, 0])
+            if isinstance(location, dict):
+                location = [location.get('latitude', 0), location.get('longitude', 0)]
+
             tracker['events'][evt_id] = {
                 'event_id': evt_id,
                 'source': alert_source,
+                'name': alert_data.get('name', alert_source),
+                'location': location,
                 'status': alert_data.get('status', 'ACTIVE'),
+                'signature_class': alert_data.get('type', 'volcanic'),
+                'prediction': {
+                    'confidence': alert_data.get('confidence', 0.85),
+                    'detected_utc': alert_data.get('detected_utc', datetime.now(timezone.utc).isoformat()),
+                    'event_time_utc': alert_data.get('event_time_utc', datetime.now(timezone.utc).isoformat())
+                },
                 'official_alert': alert_data,
                 'created_utc': datetime.now(timezone.utc).isoformat()
             }
         else:
-            # Update existing event with official alert
-            tracker['events'][evt_id]['official_alert'] = alert_data
+            # Update existing event with official alert and ensure location/prediction
+            evt = tracker['events'][evt_id]
+            if 'location' not in evt:
+                location = alert_data.get('location', [0, 0])
+                if isinstance(location, dict):
+                    location = [location.get('latitude', 0), location.get('longitude', 0)]
+                evt['location'] = location
+            if 'prediction' not in evt:
+                evt['prediction'] = {
+                    'confidence': alert_data.get('confidence', 0.85),
+                    'detected_utc': alert_data.get('detected_utc', datetime.now(timezone.utc).isoformat()),
+                    'event_time_utc': alert_data.get('event_time_utc', datetime.now(timezone.utc).isoformat())
+                }
+            evt['official_alert'] = alert_data
 
     log_step(5, f"Tracker updated with official alerts: {len(tracker.get('events', {}))} total events")
     return tracker

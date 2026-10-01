@@ -83,7 +83,13 @@ jobs:
                   tracker = json.load(f)
               if 'events' in tracker:
                   for event_id, event_data in tracker['events'].items():
-                      if event_data.get('signature_class') == 'volcanic' and event_data.get('status') == 'active':
+                      # Include any event with volcanic signature or official alert status ACTIVE
+                      is_volcanic = event_data.get('signature_class') == 'volcanic'
+                      is_active = event_data.get('status', '').upper() == 'ACTIVE'
+                      has_location = 'location' in event_data and len(event_data.get('location', [])) >= 2
+                      has_prediction = 'prediction' in event_data
+
+                      if (is_volcanic or is_active) and has_location and has_prediction:
                           volcanic_events.append(event_data)
               generated_utc = tracker.get('generated_utc', datetime.now(timezone.utc).isoformat())
           else:
@@ -102,7 +108,7 @@ jobs:
           with open(output_dir / "live.json", 'w') as f:
               json.dump(live_data, f, indent=2)
 
-          print(f"Generated live.json with {len(volcanic_events)} volcanic events")
+          print(f"Generated live.json: {len(volcanic_events)} events with location and prediction")
           EOF
 
       - name: Copy collected data to frontend repo
