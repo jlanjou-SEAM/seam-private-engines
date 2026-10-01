@@ -128,13 +128,27 @@ def step5_check_official_status(tracker):
             if isinstance(location, dict):
                 location = [location.get('latitude', 0), location.get('longitude', 0)]
 
+            # Build location object with all fields frontend needs
+            location_obj = alert_data.get('location', {})
+            if isinstance(location_obj, list) and len(location_obj) >= 2:
+                location_obj = {'latitude': location_obj[0], 'longitude': location_obj[1]}
+
+            # Ensure location has all required fields for frontend
+            if isinstance(location_obj, dict):
+                location_obj['best_effort_lat'] = location_obj.get('best_effort_lat') or location_obj.get('latitude', 0)
+                location_obj['best_effort_lon'] = location_obj.get('best_effort_lon') or location_obj.get('longitude', 0)
+
             tracker['events'][evt_id] = {
                 'event_id': evt_id,
                 'source': alert_source,
                 'name': alert_data.get('name', alert_source),
-                'location': location,
+                'location': location_obj,
                 'status': alert_data.get('status', 'ACTIVE'),
                 'signature_class': alert_data.get('type', 'volcanic'),
+                'confidence': alert_data.get('confidence', 0.85),
+                'confidence_history': alert_data.get('confidence_history', []),
+                'projected_event_time': alert_data.get('projected_event_time') or alert_data.get('event_time_utc'),
+                'identification_to_alert_minutes': alert_data.get('identification_to_alert_minutes', 0),
                 'prediction': {
                     'confidence': alert_data.get('confidence', 0.85),
                     'detected_utc': alert_data.get('detected_utc', datetime.now(timezone.utc).isoformat()),
