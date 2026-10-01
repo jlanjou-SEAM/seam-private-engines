@@ -83,13 +83,9 @@ jobs:
                   tracker = json.load(f)
               if 'events' in tracker:
                   for event_id, event_data in tracker['events'].items():
-                      # Include any event with volcanic signature or official alert status ACTIVE
-                      is_volcanic = event_data.get('signature_class') == 'volcanic'
-                      is_active = event_data.get('status', '').upper() == 'ACTIVE'
-                      has_location = 'location' in event_data and len(event_data.get('location', [])) >= 2
-                      has_prediction = 'prediction' in event_data
-
-                      if (is_volcanic or is_active) and has_location and has_prediction:
+                      # Include any ACTIVE event (processor ensures all required fields present)
+                      is_active = event_data.get('status', '').upper() == 'ACTIVE' or (event_data.get('official_alert', {}).get('status') == 'ACTIVE')
+                      if is_active:
                           volcanic_events.append(event_data)
               generated_utc = tracker.get('generated_utc', datetime.now(timezone.utc).isoformat())
           else:
