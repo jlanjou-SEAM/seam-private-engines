@@ -2,19 +2,53 @@
   {
     "event_id": "vol_pac_26_001",
     "name": "Kīlauea, Hawaii",
+    "signature_class": "volcanic",
+    "status": "active",
     "type": "volcanic",
-    "status": "ACTIVE",
+    "confidence": 0.97,
     "location": {
+      "best_effort_lat": 19.42,
+      "best_effort_lon": -155.29,
       "latitude": 19.42,
-      "longitude": -155.29
+      "longitude": -155.29,
+      "name": "Kīlauea",
+      "state_province": "Hawaii",
+      "country": "USA"
     },
     "region": "Hawaii",
     "country": "USA",
-    "confidence": 0.97,
     "detected_utc": "2026-05-16T19:43:42Z",
+    "projected_event_time": "2026-09-28T15:05:00Z",
     "event_time_utc": "2026-09-28T15:05:00Z",
     "alert_level": "WARNING",
     "description": "Kīlauea volcano eruption ongoing with high seismic activity",
-    "official_source": "USGS Hawaiian Volcano Observatory"
+    "official_source": "USGS Hawaiian Volcano Observatory",
+    "confidence_history": [
+      {
+        "timestamp_utc": "2026-05-16T19:43:42Z",
+        "seam_phi": 0.97
+      }
+    ],
+    "official_alert": {
+      "event_id": "vol_pac_26_001",
+      "name": "Kīlauea, Hawaii",
+      "type": "volcanic",
+      "status": "ACTIVE",
+      "issued_utc": "2026-09-28T14:15:00Z",
+      "location": {
+        "latitude": 19.42,
+        "longitude": -155.29
+      },
+      "region": "Hawaii",
+      "country": "USA",
+      "confidence": 0.97,
+      "detected_utc": "2026-05-16T19:43:42Z",
+      "event_time_utc": "2026-09-28T15:05:00Z",
+      "alert_level": "WARNING",
+      "description": "Kīlauea volcano eruption ongoing with high seismic activity",
+      "official_source": "USGS Hawaiian Volcano Observatory"
+    },
+    "identification_to_alert_minutes": 1966,
+    "signal_summary": "Strong volcanic seismic signal detected with eruption confirmation"
   }
 ]
