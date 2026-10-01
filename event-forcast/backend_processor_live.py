@@ -138,6 +138,7 @@ def step5_check_official_status(tracker):
                 location_obj['best_effort_lat'] = location_obj.get('best_effort_lat') or location_obj.get('latitude', 0)
                 location_obj['best_effort_lon'] = location_obj.get('best_effort_lon') or location_obj.get('longitude', 0)
 
+            detected = alert_data.get('detected_utc', datetime.now(timezone.utc).isoformat())
             tracker['events'][evt_id] = {
                 'event_id': evt_id,
                 'source': alert_source,
@@ -146,12 +147,14 @@ def step5_check_official_status(tracker):
                 'status': alert_data.get('status', 'ACTIVE'),
                 'signature_class': alert_data.get('type', 'volcanic'),
                 'confidence': alert_data.get('confidence', 0.85),
-                'confidence_history': alert_data.get('confidence_history', []),
+                'first_detected_utc': detected,
+                'confidence_history': alert_data.get('confidence_history', [{'seam_phi': alert_data.get('confidence', 0.85), 'timestamp_utc': detected}]),
                 'projected_event_time': alert_data.get('projected_event_time') or alert_data.get('event_time_utc'),
                 'identification_to_alert_minutes': alert_data.get('identification_to_alert_minutes', 0),
+                'signal_summary': alert_data.get('signal_summary', ''),
                 'prediction': {
                     'confidence': alert_data.get('confidence', 0.85),
-                    'detected_utc': alert_data.get('detected_utc', datetime.now(timezone.utc).isoformat()),
+                    'detected_utc': detected,
                     'event_time_utc': alert_data.get('event_time_utc', datetime.now(timezone.utc).isoformat())
                 },
                 'official_alert': alert_data,
