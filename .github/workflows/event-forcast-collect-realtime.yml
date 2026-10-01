@@ -39,19 +39,12 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Process collected data through SEAM pipeline
-        env:
-          PUBLIC_REPO_PATH: ${{ github.workspace }}/backend/event-forcast
-          SEAM_OUTPUT_ROOT: ${{ github.workspace }}/backend/event-forcast
-          SEAM_ROOT: ${{ github.workspace }}/backend/event-forcast
-          SEAM_RETRIEVAL_MODE: live
-          SEAM_BACKFILL_HOURS: 0
-          SEAM_RUN_ONCE: 1
+      - name: Run Step 5 Native SEAM Reconciliation
         run: |
           cd ${{ github.workspace }}/backend/event-forcast
-          echo "Step 2-5: SEAM ingest, query, event verification, and official status check"
-          python3 backend_processor_live.py 2>&1 | tail -20
-          echo "SEAM pipeline complete"
+          echo "Step 5: Running native SEAM reconciliation against manifold..."
+          python3 processes/step5_recursive_official_analysis/step5_native_reconciliation.py 2>&1 | tail -30
+          echo "SEAM reconciliation complete - events generated from manifold emergence"
           ls -lh continuum/event_tracker.json 2>/dev/null || echo "Event tracker generating..."
 
       - name: Copy cycle logs to frontend
