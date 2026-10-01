@@ -44,22 +44,19 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run Step 4 Operational Event Matrix
+      - name: Process collected data through SEAM pipeline
+        env:
+          PUBLIC_REPO_PATH: ${{ github.workspace }}/backend/event-forcast
+          SEAM_OUTPUT_ROOT: ${{ github.workspace }}/backend/event-forcast
+          SEAM_ROOT: ${{ github.workspace }}/backend/event-forcast
+          SEAM_RETRIEVAL_MODE: live
+          SEAM_BACKFILL_HOURS: 0
+          SEAM_RUN_ONCE: 1
         run: |
           cd ${{ github.workspace }}/backend/event-forcast
-          echo "Step 4: Generating event matrix from manifold with SEAM confidence..."
-          export SEAM_ROOT="${{ github.workspace }}/backend/event-forcast"
-          python3 processes/step4_operational_event_matrix/step4_operational_event_matrix.py 2>&1 | tail -20
-          echo "Event matrix complete"
-          ls -lh continuum/event_matrix.json 2>/dev/null || echo "Event matrix not generated"
-
-      - name: Run Step 5 Native SEAM Reconciliation
-        run: |
-          cd ${{ github.workspace }}/backend/event-forcast
-          echo "Step 5: Running native SEAM reconciliation..."
-          export SEAM_ROOT="${{ github.workspace }}/backend/event-forcast"
-          python3 processes/step5_recursive_official_analysis/step5_native_reconciliation.py 2>&1 | tail -30
-          echo "SEAM events generated from manifold emergence"
+          echo "Processing: Analyze manifold and official alerts for SEAM events"
+          python3 backend_processor_live.py 2>&1 | tail -20
+          echo "Event processing complete"
           ls -lh continuum/event_tracker.json 2>/dev/null || echo "Event tracker generating..."
 
       - name: Copy cycle logs to frontend
