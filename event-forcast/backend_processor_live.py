@@ -18,12 +18,12 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 PUBLIC_REPO = Path(os.environ.get("PUBLIC_REPO_PATH",
-    "C:/Users/jpalmer/Documents/Codex/2026-09-22/https-github-com-jlanjou-seam-seam/work/continuum-event-forcast-clean"))
+    Path(__file__).resolve().parents[2] / "continuum-event-forcast"))
 
 MANIFOLD_FILE = PUBLIC_REPO / "continuum/output/manifold.arcv"
 EVENT_TRACKER = PUBLIC_REPO / "continuum/event_tracker.json"
 SEAM_RUNTIME = Path(os.environ.get("SEAM_RUNTIME_PATH",
-    "D:/Ground Up/05-Continuum Engine/mnt/data/SEAM_66_MANIFOLD_RUNTIME"))
+    Path(__file__).resolve().parent / "seam_runtime"))
 
 def log_step(step, msg):
     """Log with timestamp"""

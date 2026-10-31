@@ -23,7 +23,7 @@ except ImportError:
     pass
 
 # Configuration
-PUBLIC_REPO_PATH = Path(os.environ.get("PUBLIC_REPO_PATH", "C:/Users/jpalmer/Documents/Codex/2026-09-22/https-github-com-jlanjou-seam-seam/work/continuum-event-forcast-clean"))
+PUBLIC_REPO_PATH = Path(os.environ.get("PUBLIC_REPO_PATH", Path(__file__).resolve().parents[2] / "continuum-event-forcast"))
 COMBINED_LOG_FILE = PUBLIC_REPO_PATH / "curated/COMBINED_LOG.json"
 
 def extract_event_metadata(event_data):

@@ -15,12 +15,13 @@ from pathlib import Path
 from datetime import datetime, timezone, timedelta
 
 PUBLIC_REPO = Path(os.environ.get("PUBLIC_REPO_PATH",
-    "C:/Users/jpalmer/Documents/Codex/2026-09-22/https-github-com-jlanjou-seam-seam/work/continuum-event-forcast-clean"))
+    Path(__file__).resolve().parents[2] / "continuum-event-forcast"))
 
 CYCLE_LOG = PUBLIC_REPO / "continuum" / "cycle_log.json"
 EVENT_TRACKER = PUBLIC_REPO / "continuum" / "event_tracker.json"
 SOURCE_HEALTH = PUBLIC_REPO / "continuum" / "source_health.json"
-SEAM_RUNTIME = Path("D:/Ground Up/05-Continuum Engine/mnt/data/SEAM_66_MANIFOLD_RUNTIME")
+SEAM_RUNTIME = Path(os.environ.get("SEAM_RUNTIME_PATH",
+    Path(__file__).resolve().parent / "seam_runtime"))
 
 MAX_CYCLES = 10  # 10 cycles per 5-min window = ~1 every 30 seconds
 TIMEOUT_SECONDS = 300  # 5-minute window

@@ -39,6 +39,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install SEAM runtime dependencies
+        run: python3 -m pip install --quiet numpy
+
       - name: Step 2 - Ingest raw data into manifold
         run: |
           cd ${{ github.workspace }}/backend/event-forcast
