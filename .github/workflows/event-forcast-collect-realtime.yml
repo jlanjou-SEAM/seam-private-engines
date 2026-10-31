@@ -50,9 +50,18 @@ jobs:
           echo "Manifold ingestion complete"
           ls -lh continuum/manifold_store_live/ 2>/dev/null || echo "Manifold store not yet available"
 
+      - name: Checkout public frontend repo
+        uses: actions/checkout@v4
+        with:
+          repository: jlanjou-SEAM/Continuum-Event-Forcast
+          fetch-depth: 1
+          path: frontend
+          token: ${{ secrets.SEAM_GITHUB_TOKEN }}
+
       - name: Step 3-5 - SEAM analysis and event extraction
         env:
           PUBLIC_REPO_PATH: ${{ github.workspace }}/backend/event-forcast
+          MANIFOLD_PATH: ${{ github.workspace }}/frontend/continuum/output/manifold.arcv
           SEAM_OUTPUT_ROOT: ${{ github.workspace }}/backend/event-forcast
           SEAM_ROOT: ${{ github.workspace }}/backend/event-forcast
           SEAM_RETRIEVAL_MODE: live
@@ -70,14 +79,6 @@ jobs:
           mkdir -p ${{ github.workspace }}/frontend/continuum
           cp -v ${{ github.workspace }}/backend/event-forcast/continuum/cycle_log.json ${{ github.workspace }}/frontend/continuum/ 2>/dev/null || echo "cycle_log.json not yet available"
           cp -v ${{ github.workspace }}/backend/event-forcast/continuum/event_tracker.json ${{ github.workspace }}/frontend/continuum/ 2>/dev/null || echo "event_tracker.json not yet available"
-
-      - name: Checkout public frontend repo
-        uses: actions/checkout@v4
-        with:
-          repository: jlanjou-SEAM/Continuum-Event-Forcast
-          fetch-depth: 1
-          path: frontend
-          token: ${{ secrets.SEAM_GITHUB_TOKEN }}
 
       - name: Generate live.json from event tracker
         run: |

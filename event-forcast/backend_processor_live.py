@@ -20,7 +20,8 @@ from datetime import datetime, timezone
 PUBLIC_REPO = Path(os.environ.get("PUBLIC_REPO_PATH",
     Path(__file__).resolve().parents[2] / "continuum-event-forcast"))
 
-MANIFOLD_FILE = PUBLIC_REPO / "continuum/output/manifold.arcv"
+MANIFOLD_FILE = Path(os.environ.get("MANIFOLD_PATH",
+    PUBLIC_REPO / "continuum/output/manifold.arcv"))
 EVENT_TRACKER = PUBLIC_REPO / "continuum/event_tracker.json"
 SEAM_RUNTIME = Path(os.environ.get("SEAM_RUNTIME_PATH",
     Path(__file__).resolve().parent / "seam_runtime"))
