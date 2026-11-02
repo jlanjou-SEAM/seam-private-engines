@@ -119,27 +119,23 @@ jobs:
           print(f"Generated live.json: {len(volcanic_events)} events with location and prediction")
           EOF
 
-      - name: Copy collected data to frontend repo
-        run: |
-          # Copy data from backend to frontend
-          for dir in realtime nonrealtime official streams state continuum; do
-            if [ -d "${{ github.workspace }}/backend/event-forcast/$dir" ]; then
-              mkdir -p "${{ github.workspace }}/frontend/$dir"
-              cp -r "${{ github.workspace }}/backend/event-forcast/$dir"/* "${{ github.workspace }}/frontend/$dir/" 2>/dev/null || true
-            fi
-          done
-
+      # Publish allowlist only. The public Pages site reads exactly these files:
+      #   public/data/live.json, continuum/event_tracker.json, continuum/cycle_log.json
+      # Raw store (continuum/manifold_store_live), the combined registry, and streams/
+      # are NOT published here; copying them made the public repo ~3 GB and broke Pages builds.
       - name: Commit and push to frontend repo
         run: |
           cd ${{ github.workspace }}/frontend
           git config user.name "SEAM Bot"
           git config user.email "seam@github.local"
-          # Add all directories including public/data and cycle logs
-          for dir in realtime nonrealtime official streams state continuum public; do
-            if [ -d "$dir" ]; then
-              git add -A "$dir/"
+          for f in public/data/live.json continuum/event_tracker.json continuum/cycle_log.json; do
+            if [ -f "$f" ]; then
+              git add -- "$f"
             fi
           done
+          if git diff --cached --name-only | grep -q '^continuum/manifold_store_live/\|^streams/'; then
+            echo "Refusing to publish raw store or streams to public repo"; exit 1
+          fi
           if ! git diff --quiet --cached; then
             git commit -m "chore: realtime data collection + cycle timing logs [skip ci]"
             git push origin main
