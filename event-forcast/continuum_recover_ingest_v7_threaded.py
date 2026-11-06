@@ -734,7 +734,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("registry", nargs="?", default="continuum_source_registry_v4.json")
     ap.add_argument("--store", default="manifold_store")
-    ap.add_argument("--timeout", type=float, default=12.0)
+    ap.add_argument("--timeout", type=float, default=4.0)
     ap.add_argument("--max-new", type=int, default=2000)
     ap.add_argument("--max-new-per-parent", type=int, default=150)
     ap.add_argument("--max-test", type=int, default=0)
