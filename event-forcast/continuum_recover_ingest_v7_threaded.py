@@ -639,10 +639,36 @@ def apply_probe_result(c, result, store, known, candidates, args, stats):
 
     return "changed"
 
+CADENCE_PERIOD = {"fast": 1, "medium": 6, "slow": 72, "unknown": 6}
+
+def classify_cadence(c):
+    """Tier from observed history. Unknown until 3 observations and a measured interval."""
+    a = c.get("availability") or {}
+    n = int(a.get("observation_count") or 0)
+    m = a.get("median_change_interval_sec")
+    if n < 3 or m is None:
+        return "unknown"
+    if m <= 1800:
+        return "fast"
+    if m <= 6 * 3600:
+        return "medium"
+    return "slow"
+
+def is_due(c, cycle):
+    tier = classify_cadence(c)
+    c["cadence"] = tier
+    return cycle % CADENCE_PERIOD[tier] == 0
+
 def run_pass(reg, path, store, args, pass_number):
     candidates = reg.get("candidates", [])
     known = {source_url(c): c for c in candidates if source_url(c)}
     selected = [c for c in candidates if not args.only or c.get("candidate_id") == args.only]
+    tier_counts = {}
+    for c in candidates:
+        k = classify_cadence(c)
+        tier_counts[k] = tier_counts.get(k, 0) + 1
+    if args.tiered:
+        selected = [c for c in selected if is_due(c, args.cycle)]
     if args.max_test > 0:
         selected = selected[:args.max_test]
 
@@ -663,6 +689,9 @@ def run_pass(reg, path, store, args, pass_number):
         "workers": args.workers,
         "per_host": args.per_host,
         "checkpoint_every": args.checkpoint_every,
+        "cycle": args.cycle,
+        "tiered": args.tiered,
+        "tier_counts": tier_counts,
     }
 
     print(f"\n=== PASS {pass_number}/{args.passes} ===")
@@ -744,6 +773,8 @@ def main():
     ap.add_argument("--per-host", type=int, default=4)
     ap.add_argument("--checkpoint-every", type=int, default=100)
     ap.add_argument("--progress-every", type=int, default=50)
+    ap.add_argument("--tiered", action="store_true", help="only check sources due in this cycle by cadence tier")
+    ap.add_argument("--cycle", type=int, default=None, help="cycle number; defaults to the counter in <store>/cycle_state.json")
     args = ap.parse_args()
 
     if args.passes < 1 or args.workers < 1 or args.per_host < 1:
@@ -752,6 +783,12 @@ def main():
     path = Path(args.registry).resolve()
     store = Path(args.store).resolve()
     reg = json.loads(path.read_text(encoding="utf-8"))
+
+    state_path = store / "cycle_state.json"
+    if args.cycle is None:
+        prev = json.loads(state_path.read_text(encoding="utf-8")).get("cycle", 0) if state_path.exists() else 0
+        args.cycle = prev + 1
+    store.mkdir(parents=True, exist_ok=True)
 
     overall_started = utcnow()
     pass_reports = []
@@ -787,6 +824,7 @@ def main():
         "final_candidate_count": len(reg.get("candidates",[])),
     }
 
+    atomic_write_json(state_path, {"cycle": args.cycle, "updated_utc": iso(overall_finished)})
     atomic_write_json(store/"pass_report.json", final_report)
     append_jsonl(store/"session_log.jsonl", final_report)
 

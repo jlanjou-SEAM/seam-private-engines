@@ -47,7 +47,7 @@ jobs:
           cd ${{ github.workspace }}/backend/event-forcast
           echo "Step 2: Converting raw collected data into manifold ARCV format..."
           set -o pipefail
-          python3 continuum_recover_ingest_v7_threaded.py continuum/continuum_combined_registry.json --store continuum/manifold_store_live --workers 32 --passes 1 --timeout 4 2>&1 | tail -20
+          python3 continuum_recover_ingest_v7_threaded.py continuum/continuum_combined_registry.json --store continuum/manifold_store_live --workers 32 --passes 1 --timeout 4 --tiered 2>&1 | tail -20
           # Read the ingest's own result instead of trusting the tail output.
           python3 -c "import json,sys; r=json.load(open('continuum/manifold_store_live/pass_report.json')); t=r['totals']; print('Ingest result:', 'duration_sec=%s' % r['overall_duration_sec'], 'tested=%s changed=%s unchanged=%s errors=%s' % (t['tested'], t['changed_preserved'], t['unchanged_no_body']+t['body_checked_unchanged'], t['errors']))"
           echo "Manifold ingestion complete"
