@@ -33,7 +33,7 @@ def iso_utc(rfc):
 
 def parse_cap_items(store: Path):
     items, seen = [], set()
-    for xml_path in sorted((store / "raw").rglob("*.xml")):
+    for xml_path in sorted((store / "raw" / "official_confirmation").rglob("*.xml")):
         try:
             root = ET.parse(xml_path).getroot()
         except ET.ParseError:

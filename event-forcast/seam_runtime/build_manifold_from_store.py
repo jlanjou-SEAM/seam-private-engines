@@ -12,6 +12,9 @@ from datetime import datetime
 from hashlib import sha256
 from pathlib import Path
 
+# Official confirmation sources are read only by official_match.py, after SEAM has run.
+EXCLUDED_FROM_SEAM = {"official_confirmation"}
+
 TS_RE = re.compile(r"(\d{8}T\d{6})\.(\d+)Z")
 
 
@@ -27,7 +30,7 @@ def build(store: Path, out: Path):
     raw_root = store / "raw"
     if not raw_root.is_dir():
         raise SystemExit(f"no raw store at {raw_root}")
-    entries, seen, skipped = [], set(), 0
+    entries, seen, skipped, excluded = [], set(), 0, 0
     for p in sorted(raw_root.rglob("*")):
         if not p.is_file():
             continue
@@ -38,6 +41,9 @@ def build(store: Path, out: Path):
             continue
         seen.add(digest)
         parts = p.relative_to(raw_root).parts
+        if parts and parts[0] in EXCLUDED_FROM_SEAM:
+            excluded += 1
+            continue
         disc = next((x for x in parts if x.startswith("DISC-")), None)
         entries.append({
             "file_name": p.name,
@@ -56,7 +62,7 @@ def build(store: Path, out: Path):
     payload = json.dumps(outer, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_bytes(base64.b64encode(payload))
-    return {"entries": len(entries), "duplicates_skipped": skipped, "out": str(out)}
+    return {"entries": len(entries), "duplicates_skipped": skipped, "excluded_official": excluded, "out": str(out)}
 
 
 def main():
