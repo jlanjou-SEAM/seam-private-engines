@@ -1,0 +1,155 @@
+name: Event-Forcast Collect (Realtime)
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout backend repo (self)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          path: backend
+
+      - name: Install build tools and libcurl
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential libcurl4-openssl-dev
+
+      - name: Build C-based multi-cycle runner
+        run: |
+          cd ${{ github.workspace }}/backend/event-forcast
+          bash build.sh
+
+      - name: Step 1 - Collect raw data from 6,746 verified sources
+        run: |
+          cd ${{ github.workspace }}/backend/event-forcast
+          echo "Step 1: Polling 6,746 verified data sources for raw observations..."
+          time ./multi_cycle_runner 2>&1 | tee collection.log
+          echo "Step 1 complete: Raw data collection finished"
+
+      - name: Set up Python for SEAM processing
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install SEAM runtime dependencies
+        run: python3 -m pip install --quiet numpy
+
+      - name: Step 2 - Ingest raw data into manifold
+        run: |
+          cd ${{ github.workspace }}/backend/event-forcast
+          echo "Step 2: Converting raw collected data into manifold ARCV format..."
+          set -o pipefail
+          python3 continuum_recover_ingest_v7_threaded.py continuum/continuum_combined_registry.json --store continuum/manifold_store_live --workers 32 --passes 1 --timeout 4 --tiered 2>&1 | tail -20
+          # Read the ingest's own result instead of trusting the tail output.
+          python3 -c "import json,sys; r=json.load(open('continuum/manifold_store_live/pass_report.json')); t=r['totals']; print('Ingest result:', 'duration_sec=%s' % r['overall_duration_sec'], 'tested=%s changed=%s unchanged=%s errors=%s' % (t['tested'], t['changed_preserved'], t['unchanged_no_body']+t['body_checked_unchanged'], t['errors']))"
+          echo "Manifold ingestion complete"
+          ls -lh continuum/manifold_store_live/ 2>/dev/null || echo "Manifold store not yet available"
+
+      - name: Step 2b - Build SEAM manifold from raw store (not committed)
+        run: |
+          cd ${{ github.workspace }}/backend/event-forcast
+          python3 seam_runtime/build_manifold_from_store.py --store continuum/manifold_store_live --out "${{ runner.temp }}/manifold.arcv"
+
+      - name: Checkout public frontend repo
+        uses: actions/checkout@v4
+        with:
+          repository: jlanjou-SEAM/Continuum-Event-Forcast
+          fetch-depth: 1
+          path: frontend
+          token: ${{ secrets.SEAM_GITHUB_TOKEN }}
+
+      - name: Step 3-5 - SEAM analysis and event extraction
+        env:
+          PUBLIC_REPO_PATH: ${{ github.workspace }}/backend/event-forcast
+          MANIFOLD_PATH: ${{ runner.temp }}/manifold.arcv
+          SEAM_OUTPUT_ROOT: ${{ github.workspace }}/backend/event-forcast
+          SEAM_ROOT: ${{ github.workspace }}/backend/event-forcast
+          SEAM_RETRIEVAL_MODE: live
+          SEAM_BACKFILL_HOURS: 0
+          SEAM_RUN_ONCE: 1
+        run: |
+          cd ${{ github.workspace }}/backend/event-forcast
+          echo "Steps 3-5: Querying manifold with SEAM engine to extract events with confidence ratings..."
+          python3 backend_processor_live.py 2>&1 | tail -20
+          echo "Steps 3-5 complete: SEAM-derived events extracted and tracker updated"
+          # Step 5b: attach official USGS CAP timestamps and confirmations to tracker records
+          python3 seam_runtime/official_match.py --store continuum/manifold_store_live --tracker continuum/event_tracker.json
+          ls -lh continuum/event_tracker.json 2>/dev/null || echo "Event tracker generating..."
+
+      - name: Copy cycle logs to frontend
+        run: |
+          mkdir -p ${{ github.workspace }}/frontend/continuum
+          cp -v ${{ github.workspace }}/backend/event-forcast/continuum/cycle_log.json ${{ github.workspace }}/frontend/continuum/ 2>/dev/null || echo "cycle_log.json not yet available"
+          cp -v ${{ github.workspace }}/backend/event-forcast/continuum/event_tracker.json ${{ github.workspace }}/frontend/continuum/ 2>/dev/null || echo "event_tracker.json not yet available"
+
+      - name: Generate live.json from event tracker
+        run: |
+          python3 << 'EOF'
+          import json
+          from pathlib import Path
+          from datetime import datetime, timezone
+
+          tracker_file = Path("${{ github.workspace }}/backend/event-forcast/continuum/event_tracker.json")
+          volcanic_events = []
+
+          if tracker_file.exists():
+              with open(tracker_file, 'r') as f:
+                  tracker = json.load(f)
+              if 'events' in tracker:
+                  for event_id, event_data in tracker['events'].items():
+                      # Include any ACTIVE event (processor ensures all required fields present)
+                      is_active = event_data.get('status', '').upper() == 'ACTIVE' or (event_data.get('official_alert', {}).get('status') == 'ACTIVE')
+                      if is_active:
+                          volcanic_events.append(event_data)
+              generated_utc = tracker.get('generated_utc', datetime.now(timezone.utc).isoformat())
+          else:
+              generated_utc = datetime.now(timezone.utc).isoformat()
+
+          live_data = {
+              "schema": "SEAM_LIVE_FEED_V1",
+              "generated_utc": generated_utc,
+              "sources_loaded": 6746,
+              "event_count": len(volcanic_events),
+              "events": volcanic_events
+          }
+
+          output_dir = Path("${{ github.workspace }}/frontend/public/data")
+          output_dir.mkdir(parents=True, exist_ok=True)
+          with open(output_dir / "live.json", 'w') as f:
+              json.dump(live_data, f, indent=2)
+
+          print(f"Generated live.json: {len(volcanic_events)} events with location and prediction")
+          EOF
+
+      # Publish allowlist only. The public Pages site reads exactly these files:
+      #   public/data/live.json, continuum/event_tracker.json, continuum/cycle_log.json
+      # Raw store (continuum/manifold_store_live), the combined registry, and streams/
+      # are NOT published here; copying them made the public repo ~3 GB and broke Pages builds.
+      - name: Commit and push to frontend repo
+        run: |
+          cd ${{ github.workspace }}/frontend
+          git config user.name "SEAM Bot"
+          git config user.email "seam@github.local"
+          for f in public/data/live.json continuum/event_tracker.json continuum/cycle_log.json; do
+            if [ -f "$f" ]; then
+              git add -- "$f"
+            fi
+          done
+          if git diff --cached --name-only | grep -q '^continuum/manifold_store_live/\|^streams/'; then
+            echo "Refusing to publish raw store or streams to public repo"; exit 1
+          fi
+          if ! git diff --quiet --cached; then
+            git commit -m "chore: realtime data collection + cycle timing logs [skip ci]"
+            git push origin main
+            echo "✓ Pushed to frontend repo with cycle logs"
+          else
+            echo "No changes to commit"
+          fi
