@@ -56,7 +56,8 @@ jobs:
       - name: Step 2b - Build SEAM manifold from raw store (not committed)
         run: |
           cd ${{ github.workspace }}/backend/event-forcast
-          python3 seam_runtime/build_manifold_from_store.py --store continuum/manifold_store_live --out "${{ runner.temp }}/manifold.arcv"
+          # Query-specific manifold per run contract (MANIFOLD spec VIII): regime + reveal time; official excluded
+          python3 seam_runtime/build_manifold_from_store.py --store continuum/manifold_store_live --out "${{ runner.temp }}/manifold.arcv" --regimes volcanic,seismic,geophysical --reveal-utc "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
       - name: Checkout public frontend repo
         uses: actions/checkout@v4
