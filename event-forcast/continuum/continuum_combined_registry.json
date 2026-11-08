@@ -3,7 +3,7 @@
     "name": "Continuum Weather Combined Registry",
     "version": "interleaved-1.0",
     "created_utc": "2026-09-30T05:29:08.882535Z",
-    "candidate_count": 6746,
+    "candidate_count": 6747,
     "cycle_order": [
       "live",
       "non_live",
@@ -5207,7 +5207,7 @@
     },
     {
       "candidate_id": "METIE-OPEN",
-      "provider": "Met \u00c3\u2030ireann",
+      "provider": "Met Ã‰ireann",
       "dataset": "Open Data",
       "scientific_regime": [
         "weather",
@@ -5283,7 +5283,7 @@
     },
     {
       "candidate_id": "METIE-EDR",
-      "provider": "Met \u00c3\u2030ireann",
+      "provider": "Met Ã‰ireann",
       "dataset": "EDR observations API",
       "scientific_regime": [
         "weather",
@@ -6858,7 +6858,7 @@
     },
     {
       "candidate_id": "DMC-CL",
-      "provider": "Direcci\u00c3\u00b3n Meteorol\u00c3\u00b3gica de Chile",
+      "provider": "DirecciÃ³n MeteorolÃ³gica de Chile",
       "dataset": "Meteorological data",
       "scientific_regime": [
         "weather",
@@ -74434,7 +74434,7 @@
     },
     {
       "candidate_id": "DISC-C1BD6E2DA16DB6",
-      "provider": "Met \u00c3\u2030ireann",
+      "provider": "Met Ã‰ireann",
       "dataset": "manifest.json",
       "scientific_regime": [
         "weather",
@@ -74510,7 +74510,7 @@
     },
     {
       "candidate_id": "DISC-7A93829E904B1D",
-      "provider": "Met \u00c3\u2030ireann",
+      "provider": "Met Ã‰ireann",
       "dataset": "collections",
       "scientific_regime": [
         "weather",
@@ -509314,7 +509314,7 @@
     },
     {
       "candidate_id": "DISC-134781A3DEB1FB",
-      "provider": "Met \u00c3\u2030ireann",
+      "provider": "Met Ã‰ireann",
       "dataset": "openapi.json",
       "scientific_regime": [
         "weather",
@@ -517228,6 +517228,65 @@
         "json_timestamp_path": null
       },
       "poll_group": "large"
+    },
+    {
+      "candidate_id": "USGS-HVO-CAP",
+      "provider": "USGS Volcano Hazards Program (HANS)",
+      "dataset": "CAP alerts RSS (all observatories; HVO items are Kilauea, volcano 332010)",
+      "scientific_regime": [
+        "volcanic"
+      ],
+      "content_type": "xml",
+      "source_kind": "seed",
+      "parent_id": null,
+      "discovery_depth": 0,
+      "access": {
+        "landing_url": "https://volcanoes.usgs.gov/hans-public/",
+        "data_endpoint": "https://volcanoes.usgs.gov/hans-public/rss/cap/",
+        "protocol": "https",
+        "adapter": "auto_discover",
+        "authentication": "none_or_unknown"
+      },
+      "availability": {
+        "mode": "observed",
+        "observed_change_intervals_sec": [],
+        "observation_count": 0,
+        "change_count": 0
+      },
+      "discovery": {
+        "enabled": true,
+        "first_seen_utc": null,
+        "last_seen_utc": null,
+        "method": "seed",
+        "discovered_children": 0,
+        "records_observed_last_probe": 0
+      },
+      "health": {
+        "status": "discovery",
+        "http_reachable": null,
+        "payload_valid": false,
+        "payload_changes": null,
+        "notes": "USGS HANS CAP feed; current alerts for all observatories",
+        "last_payload_sha256": null,
+        "last_etag": null,
+        "last_modified": null
+      },
+      "sector": "public",
+      "country": "US",
+      "region": "United States",
+      "access_policy": "public",
+      "ingest": {
+        "enabled": true,
+        "preserve_raw": true,
+        "unchanged_checks": 0
+      },
+      "change_probe": {
+        "method": "auto",
+        "url": null,
+        "json_timestamp_path": null
+      },
+      "poll_group": "live",
+      "cadence_override": "fast"
     }
   ]
 }

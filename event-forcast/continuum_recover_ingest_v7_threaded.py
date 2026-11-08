@@ -642,7 +642,10 @@ def apply_probe_result(c, result, store, known, candidates, args, stats):
 CADENCE_PERIOD = {"fast": 1, "medium": 6, "slow": 72, "unknown": 6}
 
 def classify_cadence(c):
-    """Tier from observed history. Unknown until 3 observations and a measured interval."""
+    """Tier from observed history. Unknown until 3 observations and a measured interval.
+    A registry entry may pin its tier with cadence_override (e.g. alert feeds)."""
+    if c.get("cadence_override") in CADENCE_PERIOD:
+        return c["cadence_override"]
     a = c.get("availability") or {}
     n = int(a.get("observation_count") or 0)
     m = a.get("median_change_interval_sec")
