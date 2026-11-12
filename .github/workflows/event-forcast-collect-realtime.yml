@@ -4,10 +4,19 @@ on:
   schedule:
     - cron: '*/5 * * * *'
   workflow_dispatch:
+  workflow_call:
+    secrets:
+      SEAM_GITHUB_TOKEN:
+        required: true
+
+concurrency:
+  group: forecast-live-publisher
+  cancel-in-progress: false
 
 jobs:
   collect:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
@@ -41,6 +50,10 @@ jobs:
 
       - name: Install SEAM runtime dependencies
         run: python3 -m pip install --quiet numpy
+
+      - name: Test live feed publication
+        working-directory: backend/event-forcast
+        run: python3 -m unittest test_publish_live_feed.py
 
       - name: Step 2 - Ingest raw data into manifold
         run: |
@@ -88,44 +101,12 @@ jobs:
           cp -v ${{ github.workspace }}/backend/event-forcast/continuum/cycle_log.json ${{ github.workspace }}/frontend/continuum/ 2>/dev/null || echo "cycle_log.json not yet available"
           cp -v ${{ github.workspace }}/backend/event-forcast/continuum/event_tracker.json ${{ github.workspace }}/frontend/continuum/ 2>/dev/null || echo "event_tracker.json not yet available"
 
-      - name: Generate live.json from event tracker
+      - name: Publish current observations and native prediction status
         run: |
-          python3 << 'EOF'
-          import json
-          from pathlib import Path
-          from datetime import datetime, timezone
-
-          tracker_file = Path("${{ github.workspace }}/backend/event-forcast/continuum/event_tracker.json")
-          volcanic_events = []
-
-          if tracker_file.exists():
-              with open(tracker_file, 'r') as f:
-                  tracker = json.load(f)
-              if 'events' in tracker:
-                  for event_id, event_data in tracker['events'].items():
-                      # Include any ACTIVE event (processor ensures all required fields present)
-                      is_active = event_data.get('status', '').upper() == 'ACTIVE' or (event_data.get('official_alert', {}).get('status') == 'ACTIVE')
-                      if is_active:
-                          volcanic_events.append(event_data)
-              generated_utc = tracker.get('generated_utc', datetime.now(timezone.utc).isoformat())
-          else:
-              generated_utc = datetime.now(timezone.utc).isoformat()
-
-          live_data = {
-              "schema": "SEAM_LIVE_FEED_V1",
-              "generated_utc": generated_utc,
-              "sources_loaded": 6746,
-              "event_count": len(volcanic_events),
-              "events": volcanic_events
-          }
-
-          output_dir = Path("${{ github.workspace }}/frontend/public/data")
-          output_dir.mkdir(parents=True, exist_ok=True)
-          with open(output_dir / "live.json", 'w') as f:
-              json.dump(live_data, f, indent=2)
-
-          print(f"Generated live.json: {len(volcanic_events)} events with location and prediction")
-          EOF
+          python3 backend/event-forcast/publish_live_feed.py \
+            --tracker backend/event-forcast/continuum/event_tracker.json \
+            --analysis backend/event-forcast/seam_runtime/volcanic_analysis.json \
+            --output frontend/public/data/live.json
 
       # Publish allowlist only. The public Pages site reads exactly these files:
       #   public/data/live.json, continuum/event_tracker.json, continuum/cycle_log.json
