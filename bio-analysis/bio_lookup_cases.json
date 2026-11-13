@@ -1,0 +1,7 @@
+{
+  "note": "Initial cases reproduce archived control experiments. These are lookup examples, not dosing recommendations. Add explicit cases to expand coverage; no dose is inferred from the compound catalog.",
+  "cases": [
+    {"id":"famotidine-40mg-once-daily", "label":"Famotidine", "compound":"C8H15N7O2S3", "dose":"40 mg", "interval":"once daily"},
+    {"id":"ammonia-1mg-once-daily", "label":"Ammonia", "compound":"NH3", "dose":"1 mg", "interval":"once daily"}
+  ]
+}

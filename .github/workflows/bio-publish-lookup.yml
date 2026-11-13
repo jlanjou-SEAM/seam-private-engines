@@ -1,0 +1,49 @@
+name: Bio publish GitHub lookup
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 */6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'bio-analysis/**'
+      - '.github/workflows/bio-publish-lookup.yml'
+permissions:
+  contents: read
+concurrency:
+  group: bio-lookup-publisher
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: backend
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/checkout@v4
+        with:
+          repository: jlanjou-SEAM/continuum-bio-analysis
+          token: ${{ secrets.SEAM_GITHUB_TOKEN }}
+          path: frontend
+      - name: Generate exact-input lookup results with the private engine
+        run: |
+          python -m unittest discover -s backend/bio-analysis -p test_bio_lookup.py
+          python backend/bio-analysis/publish_bio_lookup.py \
+            --cases backend/bio-analysis/bio_lookup_cases.json \
+            --output frontend/public/bio-lookup \
+            --revision "$GITHUB_SHA"
+      - name: Publish result data only
+        working-directory: frontend
+        run: |
+          git config user.name "SEAM Bio Publisher"
+          git config user.email "bio-publisher@github.local"
+          git add -- public/bio-lookup
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh Bio lookup results"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
