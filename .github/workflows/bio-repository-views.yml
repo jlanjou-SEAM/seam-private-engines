@@ -1,0 +1,38 @@
+name: Bio repository views counter
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 */6 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: bio-lookup-publisher
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: backend
+      - uses: actions/checkout@v4
+        with:
+          repository: jlanjou-SEAM/continuum-bio-analysis
+          token: ${{ secrets.SEAM_GITHUB_TOKEN }}
+          path: frontend
+      - name: Read repository traffic
+        env:
+          GH_TOKEN: ${{ secrets.SEAM_GITHUB_TOKEN }}
+        run: python3 backend/bio-analysis/publish_repository_views.py frontend/public/repository-views.json
+      - name: Publish counter
+        working-directory: frontend
+        run: |
+          git config user.name "SEAM Bio Publisher"
+          git config user.email "bio-publisher@github.local"
+          git add -- public/repository-views.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update repository views counter"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
