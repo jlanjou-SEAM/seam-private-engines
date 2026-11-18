@@ -98,12 +98,11 @@ jobs:
         run: |
           mkdir -p ${{ github.workspace }}/frontend/continuum
           cp -v ${{ github.workspace }}/backend/event-forcast/continuum/cycle_log.json ${{ github.workspace }}/frontend/continuum/ 2>/dev/null || echo "cycle_log.json not yet available"
-          cp -v ${{ github.workspace }}/backend/event-forcast/continuum/event_tracker.json ${{ github.workspace }}/frontend/continuum/ 2>/dev/null || echo "event_tracker.json not yet available"
 
       - name: Publish current observations and native prediction status
         run: |
           python3 backend/event-forcast/publish_live_feed.py \
-            --tracker backend/event-forcast/continuum/event_tracker.json \
+            --tracker frontend/continuum/event_tracker.json \
             --analysis backend/event-forcast/seam_runtime/volcanic_analysis.json \
             --output frontend/public/data/live.json
 
