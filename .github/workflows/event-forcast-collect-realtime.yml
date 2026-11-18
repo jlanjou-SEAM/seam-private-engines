@@ -54,7 +54,7 @@ jobs:
 
       - name: Test live feed publication
         working-directory: backend/event-forcast
-        run: python3 -m unittest test_publish_live_feed.py
+        run: python3 -m unittest test_publish_live_feed.py test_backend_processor.py
 
       - name: Step 2 - Ingest raw data into manifold
         run: |
@@ -80,7 +80,7 @@ jobs:
           path: frontend
           token: ${{ secrets.SEAM_GITHUB_TOKEN }}
 
-      - name: Step 3-5 - SEAM analysis and event extraction
+      - name: Run operator diagnostics
         env:
           PUBLIC_REPO_PATH: ${{ github.workspace }}/backend/event-forcast
           MANIFOLD_PATH: ${{ runner.temp }}/manifold.arcv
@@ -91,10 +91,8 @@ jobs:
           SEAM_RUN_ONCE: 1
         run: |
           cd ${{ github.workspace }}/backend/event-forcast
-          echo "Steps 3-5: Querying manifold with SEAM engine to extract events with confidence ratings..."
+          set -o pipefail
           python3 backend_processor_live.py 2>&1 | tail -20
-          echo "Steps 3-5 complete: SEAM-derived events extracted and tracker updated"
-          ls -lh continuum/event_tracker.json 2>/dev/null || echo "Event tracker generating..."
 
       - name: Copy cycle logs to frontend
         run: |
